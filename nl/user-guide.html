@@ -218,6 +218,7 @@
                         <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span>E-mail Loggen</span></a></li>
                         <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Kansen</span></a></li>
                         <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Taken & Tickets</span></a></li>
+                        <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Notificaties</span></a></li>
                         <li><a href="#troubleshooting"><span class="material-symbols-outlined">help</span> <span>Probleemoplossing</span></a></li>
                         <li><a href="#faq"><span class="material-symbols-outlined">quiz</span> <span>Veelgestelde Vragen</span></a></li>
                     </ul>
@@ -288,6 +289,7 @@
                         <li><strong>Record Groepering</strong>: <span>Groepeer opportunities, taken en tickets op fase of status</span></li>
                         <li><strong>E-maildeelnemers</strong>: <span>Bekijk Odoo-contactinformatie van alle e-maildeelnemers</span></li>
                         <li><strong>Recente Activiteiten</strong>: <span>Bekijk recente berichten uit Odoo-gesprekken voor elk contact</span></li>
+                        <li><strong>Notificatie-organisatie</strong>: <span>Identificeer en organiseer Odoo-notificatie-e-mails met modulebadges, vermeldingsdetectie en snelle filtering</span></li>
                     </ul>
                 </section>
 
@@ -409,6 +411,71 @@
                     </ul>
                     <h3>Helpdesk Tickets Beheren</h3>
                     <p><strong>Vereisten:</strong> <span>Odoo Helpdesk module (alleen Enterprise)</span></p>
+                </section>
+
+                <!-- Notification Organization Section -->
+                <section id="notifications" class="guide-section">
+                    <h2><span class="material-symbols-outlined">notifications</span> <span>Notificatie-organisatie</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>Organiseer Odoo-notificatie-e-mails direct in uw Gmail-inbox. De extensie identificeert notificatie-e-mails van Odoo en voegt visuele badges toe zodat u direct kunt zien bij welke module ze horen en of u bent vermeld.</p>
+
+                    <h3>Vereiste: E-mailnotificaties Inschakelen in Odoo</h3>
+                    <p>Om deze functie te laten werken, moet uw Odoo-gebruiker geconfigureerd zijn om notificaties per e-mail te ontvangen (niet in de Odoo-inbox):</p>
+                    <ol>
+                        <li>Ga in Odoo naar uw Profiel (menu rechtsboven > Mijn Profiel)</li>
+                        <li>Zoek onder Voorkeuren de instelling "Notificatie"</li>
+                        <li>Selecteer "Beheer via e-mails" (in plaats van "Beheer in Odoo")</li>
+                    </ol>
+                    <div class="info-box">
+                        <span>Dit zorgt ervoor dat Odoo notificatie-e-mails naar uw Gmail stuurt, waar de extensie ze kan identificeren en organiseren.</span>
+                    </div>
+
+                    <h3>Instellen</h3>
+                    <ol class="steps-list">
+                        <li><strong>Vind uw notificatie-e-mail in Odoo</strong><br><span>Controleer een recente Odoo-notificatie-e-mail in Gmail en bekijk het afzenderadres (bijv. notifications@uwbedrijf.com). U kunt ook uw Odoo-beheerder vragen naar het uitgaande notificatie-e-mailadres.</span></li>
+                        <li><strong>Open de extensie-instellingen</strong><br><span>Klik in de Gmail-zijbalk op de menuknop (drie verticale puntjes) en selecteer Instellingen.</span></li>
+                        <li><strong>Voer het notificatie-e-mailadres in</strong><br><span>Ga naar het tabblad Notificaties en plak het e-mailadres. De extensie begint direct met het identificeren van notificatie-e-mails.</span></li>
+                    </ol>
+                    <div class="info-box">
+                        <strong>Tip:</strong> <span>Als u niet zeker weet welk e-mailadres Odoo gebruikt voor notificaties, controleer dan een recente notificatie-e-mail in Gmail en bekijk het afzenderadres.</span>
+                    </div>
+
+                    <h3>Modulebadges</h3>
+                    <p>Kleurgecodeerde badges verschijnen naast notificatie-e-mails in uw inbox, en tonen welke Odoo-module de notificatie heeft gegenereerd:</p>
+                    <ul>
+                        <li>Kans (CRM) — paarse badge</li>
+                        <li>Taak (Project) — blauwe badge</li>
+                        <li>Ticket (Helpdesk) — oranje badge</li>
+                        <li>Factuur (Facturatie) — groene badge</li>
+                        <li>En meer: Inkoop, Mailing, Urenstaat, etc.</li>
+                    </ul>
+
+                    <h3>Vermeldingsbadges</h3>
+                    <p>Wanneer iemand u vermeldt in een Odoo-record (met @ of bij naam), verschijnt een speciale badge op de notificatie-e-mail:</p>
+                    <ul>
+                        <li><strong>Rode "Vermeld"-badge</strong>: <span>U heeft een ongelezen vermelding — u heeft deze thread in Gmail niet geopend sinds de vermelding</span></li>
+                        <li><strong>Grijze "Vermeld"-badge</strong>: <span>U heeft deze vermelding al gezien — u heeft de thread in Gmail geopend na de vermelding</span></li>
+                    </ul>
+                    <div class="info-box">
+                        <strong>Hoe het werkt:</strong> <span>Vermeldingsdetectie is gebaseerd op de berichten die zijn opgeslagen in het Odoo-record, niet op de e-mail zelf. De extensie controleert de chatter van het record op @vermeldingen of verwijzingen naar uw naam. Dit betekent:</span>
+                        <ul style="margin-top: 0.5rem;">
+                            <li>Als u onlangs bent overgeschakeld van "Beheer in Odoo" naar "Beheer via e-mails", kunnen oudere threads een "Vermeld"-badge tonen voor vermeldingen die plaatsvonden voordat u e-mails begon te ontvangen — ook al verschijnt de vermelding niet in een Gmail-e-mail.</li>
+                            <li>De gelezen/ongelezen status wordt bepaald door of u de thread in Gmail heeft geopend na de vermelding. Zodra u de thread opent, wordt de badge grijs.</li>
+                        </ul>
+                    </div>
+
+                    <h3>Snelle Toegang</h3>
+                    <p>Een "Odoo Notifications"-snelkoppeling verschijnt in de linker zijbalk van Gmail, onder uw labels. Klik erop om uw inbox direct te filteren en alleen Odoo-notificatie-e-mails te tonen.</p>
+                    <div class="info-box">
+                        <strong>Opmerking:</strong> <span>De snelkoppeling verschijnt pas na het configureren van een notificatie-e-mail in Instellingen > Notificaties.</span>
+                    </div>
+
+                    <h3>Aanpassing</h3>
+                    <p>Elke notificatiefunctie kan onafhankelijk worden in-/uitgeschakeld in Instellingen > Notificaties:</p>
+                    <ul>
+                        <li>Modulebadges — kleurgecodeerde modulebadges tonen/verbergen</li>
+                        <li>Vermeldingsbadges — vermeldingsdetectiebadges tonen/verbergen</li>
+                        <li>Zijbalk-snelkoppeling — Odoo Notifications-link in de Gmail-zijbalk tonen/verbergen</li>
+                    </ul>
                 </section>
 
                 <!-- Troubleshooting Section -->

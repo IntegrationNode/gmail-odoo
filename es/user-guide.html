@@ -218,6 +218,7 @@
                         <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span>Registro de Emails</span></a></li>
                         <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Oportunidades</span></a></li>
                         <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Tareas y Tickets</span></a></li>
+                        <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Notificaciones</span></a></li>
                         <li><a href="#troubleshooting"><span class="material-symbols-outlined">help</span> <span>Solución de Problemas</span></a></li>
                         <li><a href="#faq"><span class="material-symbols-outlined">quiz</span> <span>Preguntas Frecuentes</span></a></li>
                     </ul>
@@ -288,6 +289,7 @@
                         <li><strong>Agrupación de Registros</strong>: <span>Agrupa oportunidades, tareas y tickets por etapa o estado</span></li>
                         <li><strong>Participantes del Email</strong>: <span>Ver información de contacto en Odoo de todos los participantes del email</span></li>
                         <li><strong>Actividades Recientes</strong>: <span>Ver mensajes recientes de las conversaciones de Odoo para cada contacto</span></li>
+                        <li><strong>Organización de Notificaciones</strong>: <span>Identifica y organiza los emails de notificación de Odoo con badges de módulo, detección de menciones y filtrado rápido</span></li>
                     </ul>
                 </section>
 
@@ -409,6 +411,71 @@
                     </ul>
                     <h3>Gestionar Tickets de Helpdesk</h3>
                     <p><strong>Requisitos:</strong> <span>Módulo Helpdesk de Odoo (solo Enterprise)</span></p>
+                </section>
+
+                <!-- Notification Organization Section -->
+                <section id="notifications" class="guide-section">
+                    <h2><span class="material-symbols-outlined">notifications</span> <span>Organización de Notificaciones</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>Organiza los emails de notificación de Odoo directamente en tu bandeja de entrada de Gmail. La extensión identifica los emails de notificación de Odoo y añade badges visuales para que puedas ver al instante a qué módulo pertenecen y si te han mencionado.</p>
+
+                    <h3>Prerrequisito: Activar Notificaciones por Email en Odoo</h3>
+                    <p>Para que esta función funcione, tu usuario de Odoo debe estar configurado para recibir notificaciones por email (no en la bandeja de Odoo):</p>
+                    <ol>
+                        <li>En Odoo, ve a tu Perfil (menú superior derecho > Mi Perfil)</li>
+                        <li>En Preferencias, busca la configuración de "Notificación"</li>
+                        <li>Selecciona "Gestionar por correo" (en lugar de "Gestionar en Odoo")</li>
+                    </ol>
+                    <div class="info-box">
+                        <span>Esto asegura que Odoo envíe emails de notificación a tu Gmail, donde la extensión puede identificarlos y organizarlos.</span>
+                    </div>
+
+                    <h3>Configuración</h3>
+                    <ol class="steps-list">
+                        <li><strong>Encuentra tu email de notificación en Odoo</strong><br><span>Revisa un email de notificación reciente de Odoo en Gmail y mira la dirección del remitente (ej: notifications@tuempresa.com). Alternativamente, pregunta a tu administrador de Odoo por el email de notificación saliente.</span></li>
+                        <li><strong>Abre los Ajustes de la extensión</strong><br><span>En la barra lateral de Gmail, haz clic en el botón de menú (tres puntos verticales) y selecciona Ajustes.</span></li>
+                        <li><strong>Introduce el email de notificación</strong><br><span>Ve a la pestaña Notificaciones y pega la dirección de email. La extensión comenzará a identificar los emails de notificación inmediatamente.</span></li>
+                    </ol>
+                    <div class="info-box">
+                        <strong>Consejo:</strong> <span>Si no estás seguro de qué email usa Odoo para las notificaciones, revisa un email de notificación reciente en Gmail y mira la dirección del remitente.</span>
+                    </div>
+
+                    <h3>Badges de Módulo</h3>
+                    <p>Aparecen badges con código de color junto a los emails de notificación en tu bandeja, mostrando qué módulo de Odoo generó la notificación:</p>
+                    <ul>
+                        <li>Oportunidad (CRM) — badge morado</li>
+                        <li>Tarea (Proyecto) — badge azul</li>
+                        <li>Ticket (Helpdesk) — badge naranja</li>
+                        <li>Factura (Facturación) — badge verde</li>
+                        <li>Y más: Compras, Mailing, Parte de horas, etc.</li>
+                    </ul>
+
+                    <h3>Badges de Mención</h3>
+                    <p>Cuando alguien te menciona en un registro de Odoo (usando @ o por nombre), aparece un badge especial en el email de notificación:</p>
+                    <ul>
+                        <li><strong>Badge rojo "Mencionado"</strong>: <span>Tienes una mención sin leer — no has abierto este hilo en Gmail desde la mención</span></li>
+                        <li><strong>Badge gris "Mencionado"</strong>: <span>Ya has visto esta mención — abriste el hilo en Gmail después de ser mencionado</span></li>
+                    </ul>
+                    <div class="info-box">
+                        <strong>Cómo funciona:</strong> <span>La detección de menciones se basa en los mensajes almacenados en el registro de Odoo, no en el email en sí. La extensión revisa el chatter del registro buscando @menciones o referencias a tu nombre. Esto significa:</span>
+                        <ul style="margin-top: 0.5rem;">
+                            <li>Si recientemente cambiaste de "Gestionar en Odoo" a "Gestionar por correo", hilos antiguos pueden mostrar un badge "Mencionado" por menciones que ocurrieron antes de empezar a recibir emails — aunque la mención no aparezca en ningún email de Gmail.</li>
+                            <li>El estado leído/no leído se determina según si has abierto el hilo en Gmail después de ser mencionado. Una vez abres el hilo, el badge se vuelve gris.</li>
+                        </ul>
+                    </div>
+
+                    <h3>Acceso Rápido</h3>
+                    <p>Un acceso directo "Odoo Notifications" aparece en la barra lateral izquierda de Gmail, debajo de tus etiquetas. Haz clic para filtrar tu bandeja y mostrar solo los emails de notificación de Odoo.</p>
+                    <div class="info-box">
+                        <strong>Nota:</strong> <span>El acceso directo solo aparece después de configurar un email de notificación en Ajustes > Notificaciones.</span>
+                    </div>
+
+                    <h3>Personalización</h3>
+                    <p>Cada función de notificación se puede activar/desactivar independientemente en Ajustes > Notificaciones:</p>
+                    <ul>
+                        <li>Badges de módulo — mostrar/ocultar los badges con código de color</li>
+                        <li>Badges de mención — mostrar/ocultar los badges de detección de menciones</li>
+                        <li>Acceso directo en barra lateral — mostrar/ocultar el enlace Odoo Notifications en la barra lateral de Gmail</li>
+                    </ul>
                 </section>
 
                 <!-- Troubleshooting Section -->

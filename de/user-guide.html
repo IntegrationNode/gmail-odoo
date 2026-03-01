@@ -218,6 +218,7 @@
                         <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span>E-Mail-Protokollierung</span></a></li>
                         <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Chancen</span></a></li>
                         <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Aufgaben & Tickets</span></a></li>
+                        <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Benachrichtigungen</span></a></li>
                         <li><a href="#troubleshooting"><span class="material-symbols-outlined">help</span> <span>Fehlerbehebung</span></a></li>
                         <li><a href="#faq"><span class="material-symbols-outlined">quiz</span> <span>FAQ</span></a></li>
                     </ul>
@@ -288,6 +289,7 @@
                         <li><strong>Datensatz-Gruppierung</strong>: <span>Gruppieren Sie Opportunities, Aufgaben und Tickets nach Phase oder Status</span></li>
                         <li><strong>E-Mail-Teilnehmer</strong>: <span>Odoo-Kontaktinformationen aller E-Mail-Teilnehmer anzeigen</span></li>
                         <li><strong>Letzte Aktivitäten</strong>: <span>Aktuelle Nachrichten aus Odoo-Konversationen für jeden Kontakt anzeigen</span></li>
+                        <li><strong>Benachrichtigungsorganisation</strong>: <span>Identifizieren und organisieren Sie Odoo-Benachrichtigungs-E-Mails mit Modul-Badges, Erwähnungserkennung und Schnellzugriffsfilterung</span></li>
                     </ul>
                 </section>
 
@@ -409,6 +411,71 @@
                     </ul>
                     <h3>Helpdesk-Tickets verwalten</h3>
                     <p><strong>Voraussetzungen:</strong> <span>Odoo Helpdesk-Modul (nur Enterprise)</span></p>
+                </section>
+
+                <!-- Notification Organization Section -->
+                <section id="notifications" class="guide-section">
+                    <h2><span class="material-symbols-outlined">notifications</span> <span>Benachrichtigungsorganisation</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>Organisieren Sie Odoo-Benachrichtigungs-E-Mails direkt in Ihrem Gmail-Posteingang. Die Erweiterung identifiziert Benachrichtigungs-E-Mails von Odoo und fügt visuelle Badges hinzu, damit Sie sofort sehen können, zu welchem Modul sie gehören und ob Sie erwähnt wurden.</p>
+
+                    <h3>Voraussetzung: E-Mail-Benachrichtigungen in Odoo aktivieren</h3>
+                    <p>Damit diese Funktion funktioniert, muss Ihr Odoo-Benutzer so konfiguriert sein, dass Benachrichtigungen per E-Mail empfangen werden (nicht im Odoo-Posteingang):</p>
+                    <ol>
+                        <li>Gehen Sie in Odoo zu Ihrem Profil (Menü oben rechts > Mein Profil)</li>
+                        <li>Unter Einstellungen finden Sie die "Benachrichtigung"-Einstellung</li>
+                        <li>Wählen Sie "Per E-Mail verwalten" (statt "In Odoo verwalten")</li>
+                    </ol>
+                    <div class="info-box">
+                        <span>Dies stellt sicher, dass Odoo Benachrichtigungs-E-Mails an Ihr Gmail sendet, wo die Erweiterung sie identifizieren und organisieren kann.</span>
+                    </div>
+
+                    <h3>Einrichtung</h3>
+                    <ol class="steps-list">
+                        <li><strong>Finden Sie Ihre Benachrichtigungs-E-Mail in Odoo</strong><br><span>Überprüfen Sie eine kürzliche Odoo-Benachrichtigungs-E-Mail in Gmail und schauen Sie auf die Absenderadresse (z.B. notifications@ihrfirma.com). Alternativ fragen Sie Ihren Odoo-Administrator nach der ausgehenden Benachrichtigungs-E-Mail.</span></li>
+                        <li><strong>Öffnen Sie die Erweiterungseinstellungen</strong><br><span>Klicken Sie in der Gmail-Seitenleiste auf die Menütaste (drei vertikale Punkte) und wählen Sie Einstellungen.</span></li>
+                        <li><strong>Geben Sie die Benachrichtigungs-E-Mail ein</strong><br><span>Gehen Sie zum Reiter Benachrichtigungen und fügen Sie die E-Mail-Adresse ein. Die Erweiterung beginnt sofort mit der Identifizierung von Benachrichtigungs-E-Mails.</span></li>
+                    </ol>
+                    <div class="info-box">
+                        <strong>Tipp:</strong> <span>Wenn Sie nicht sicher sind, welche E-Mail Odoo für Benachrichtigungen verwendet, überprüfen Sie eine kürzliche Benachrichtigungs-E-Mail in Gmail und schauen Sie auf die Absenderadresse.</span>
+                    </div>
+
+                    <h3>Modul-Badges</h3>
+                    <p>Farbcodierte Badges erscheinen neben Benachrichtigungs-E-Mails in Ihrem Posteingang und zeigen, welches Odoo-Modul die Benachrichtigung ausgelöst hat:</p>
+                    <ul>
+                        <li>Chance (CRM) — lila Badge</li>
+                        <li>Aufgabe (Projekt) — blaues Badge</li>
+                        <li>Ticket (Helpdesk) — oranges Badge</li>
+                        <li>Rechnung (Rechnungsstellung) — grünes Badge</li>
+                        <li>Und mehr: Einkauf, Mailing, Zeiterfassung, etc.</li>
+                    </ul>
+
+                    <h3>Erwähnungs-Badges</h3>
+                    <p>Wenn jemand Sie in einem Odoo-Datensatz erwähnt (mit @ oder namentlich), erscheint ein spezielles Badge auf der Benachrichtigungs-E-Mail:</p>
+                    <ul>
+                        <li><strong>Rotes "Erwähnt"-Badge</strong>: <span>Sie haben eine ungelesene Erwähnung — Sie haben diesen Thread in Gmail seit der Erwähnung nicht geöffnet</span></li>
+                        <li><strong>Graues "Erwähnt"-Badge</strong>: <span>Sie haben diese Erwähnung bereits gesehen — Sie haben den Thread in Gmail nach der Erwähnung geöffnet</span></li>
+                    </ul>
+                    <div class="info-box">
+                        <strong>So funktioniert es:</strong> <span>Die Erwähnungserkennung basiert auf den im Odoo-Datensatz gespeicherten Nachrichten, nicht auf der E-Mail selbst. Die Erweiterung prüft den Chatter des Datensatzes auf @Erwähnungen oder Verweise auf Ihren Namen. Das bedeutet:</span>
+                        <ul style="margin-top: 0.5rem;">
+                            <li>Wenn Sie kürzlich von "In Odoo verwalten" zu "Per E-Mail verwalten" gewechselt haben, können ältere Threads ein "Erwähnt"-Badge für Erwähnungen anzeigen, die vor dem E-Mail-Empfang stattfanden — auch wenn die Erwähnung in keiner Gmail-E-Mail erscheint.</li>
+                            <li>Der Gelesen/Ungelesen-Status wird dadurch bestimmt, ob Sie den Thread in Gmail nach der Erwähnung geöffnet haben. Sobald Sie den Thread öffnen, wird das Badge grau.</li>
+                        </ul>
+                    </div>
+
+                    <h3>Schnellzugriff</h3>
+                    <p>Eine "Odoo Notifications"-Verknüpfung erscheint in der linken Gmail-Seitenleiste unter Ihren Labels. Klicken Sie darauf, um Ihren Posteingang sofort zu filtern und nur Odoo-Benachrichtigungs-E-Mails anzuzeigen.</p>
+                    <div class="info-box">
+                        <strong>Hinweis:</strong> <span>Die Verknüpfung erscheint erst nach Konfiguration einer Benachrichtigungs-E-Mail in Einstellungen > Benachrichtigungen.</span>
+                    </div>
+
+                    <h3>Anpassung</h3>
+                    <p>Jede Benachrichtigungsfunktion kann unabhängig in Einstellungen > Benachrichtigungen aktiviert/deaktiviert werden:</p>
+                    <ul>
+                        <li>Modul-Badges — farbcodierte Modul-Badges ein-/ausblenden</li>
+                        <li>Erwähnungs-Badges — Erwähnungserkennungs-Badges ein-/ausblenden</li>
+                        <li>Seitenleisten-Verknüpfung — Odoo Notifications-Link in der Gmail-Seitenleiste ein-/ausblenden</li>
+                    </ul>
                 </section>
 
                 <!-- Troubleshooting Section -->

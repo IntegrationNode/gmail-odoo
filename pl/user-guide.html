@@ -218,6 +218,7 @@
                         <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span>Logowanie e-maili</span></a></li>
                         <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Szanse sprzedaży</span></a></li>
                         <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Zadania i zgłoszenia</span></a></li>
+                        <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Powiadomienia</span></a></li>
                         <li><a href="#troubleshooting"><span class="material-symbols-outlined">help</span> <span>Rozwiązywanie problemów</span></a></li>
                         <li><a href="#faq"><span class="material-symbols-outlined">quiz</span> <span>FAQ</span></a></li>
                     </ul>
@@ -288,6 +289,7 @@
                         <li><strong>Grupowanie Rekordów</strong>: <span>Grupuj szanse, zadania i zgłoszenia według etapu lub statusu</span></li>
                         <li><strong>Uczestnicy E-maila</strong>: <span>Zobacz informacje kontaktowe Odoo wszystkich uczestników e-maila</span></li>
                         <li><strong>Ostatnie Aktywności</strong>: <span>Zobacz ostatnie wiadomości z konwersacji Odoo dla każdego kontaktu</span></li>
+                        <li><strong>Organizacja Powiadomień</strong>: <span>Identyfikuj i organizuj e-maile powiadomień Odoo za pomocą odznak modułów, wykrywania wzmianek i szybkiego filtrowania</span></li>
                     </ul>
                 </section>
 
@@ -409,6 +411,71 @@
                     </ul>
                     <h3>Zarządzanie zgłoszeniami Helpdesk</h3>
                     <p><strong>Wymagania:</strong> <span>Moduł Odoo Helpdesk (tylko Enterprise)</span></p>
+                </section>
+
+                <!-- Notification Organization Section -->
+                <section id="notifications" class="guide-section">
+                    <h2><span class="material-symbols-outlined">notifications</span> <span>Organizacja Powiadomień</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>Organizuj e-maile z powiadomieniami Odoo bezpośrednio w skrzynce odbiorczej Gmail. Rozszerzenie identyfikuje e-maile z powiadomieniami od Odoo i dodaje wizualne odznaki, abyś mógł natychmiast zobaczyć, do którego modułu należą i czy zostałeś wspomniany.</p>
+
+                    <h3>Wymaganie wstępne: Włącz Powiadomienia E-mail w Odoo</h3>
+                    <p>Aby ta funkcja działała, Twój użytkownik Odoo musi być skonfigurowany do otrzymywania powiadomień e-mailem (nie w skrzynce Odoo):</p>
+                    <ol>
+                        <li>W Odoo przejdź do swojego Profilu (menu w prawym górnym rogu > Mój Profil)</li>
+                        <li>W Preferencjach znajdź ustawienie "Powiadomienie"</li>
+                        <li>Wybierz "Zarządzaj przez e-maile" (zamiast "Zarządzaj w Odoo")</li>
+                    </ol>
+                    <div class="info-box">
+                        <span>To zapewnia, że Odoo wysyła e-maile z powiadomieniami do Twojego Gmaila, gdzie rozszerzenie może je identyfikować i organizować.</span>
+                    </div>
+
+                    <h3>Konfiguracja</h3>
+                    <ol class="steps-list">
+                        <li><strong>Znajdź swój e-mail powiadomień w Odoo</strong><br><span>Sprawdź ostatni e-mail z powiadomieniem Odoo w Gmailu i zobacz adres nadawcy (np. notifications@twojafirma.com). Alternatywnie zapytaj administratora Odoo o wychodzący adres e-mail powiadomień.</span></li>
+                        <li><strong>Otwórz Ustawienia rozszerzenia</strong><br><span>Na pasku bocznym Gmaila kliknij przycisk menu (trzy pionowe kropki) i wybierz Ustawienia.</span></li>
+                        <li><strong>Wprowadź e-mail powiadomień</strong><br><span>Przejdź do zakładki Powiadomienia i wklej adres e-mail. Rozszerzenie natychmiast zacznie identyfikować e-maile z powiadomieniami.</span></li>
+                    </ol>
+                    <div class="info-box">
+                        <strong>Wskazówka:</strong> <span>Jeśli nie wiesz, jakiego e-maila Odoo używa do powiadomień, sprawdź ostatni e-mail z powiadomieniem w Gmailu i zobacz adres nadawcy.</span>
+                    </div>
+
+                    <h3>Odznaki Modułów</h3>
+                    <p>Kolorowe odznaki pojawiają się obok e-maili z powiadomieniami w Twojej skrzynce, pokazując, który moduł Odoo wygenerował powiadomienie:</p>
+                    <ul>
+                        <li>Szansa (CRM) — fioletowa odznaka</li>
+                        <li>Zadanie (Projekt) — niebieska odznaka</li>
+                        <li>Zgłoszenie (Helpdesk) — pomarańczowa odznaka</li>
+                        <li>Faktura (Fakturowanie) — zielona odznaka</li>
+                        <li>I więcej: Zakupy, Mailing, Karta czasu pracy, itp.</li>
+                    </ul>
+
+                    <h3>Odznaki Wzmianek</h3>
+                    <p>Gdy ktoś wspomina Cię w rekordzie Odoo (używając @ lub imienia), specjalna odznaka pojawia się na e-mailu z powiadomieniem:</p>
+                    <ul>
+                        <li><strong>Czerwona odznaka "Wspomniany"</strong>: <span>Masz nieprzeczytaną wzmiankę — nie otworzyłeś tego wątku w Gmailu od wzmianki</span></li>
+                        <li><strong>Szara odznaka "Wspomniany"</strong>: <span>Już widziałeś tę wzmiankę — otworzyłeś wątek w Gmailu po wzmiance</span></li>
+                    </ul>
+                    <div class="info-box">
+                        <strong>Jak to działa:</strong> <span>Wykrywanie wzmianek opiera się na wiadomościach przechowywanych w rekordzie Odoo, nie na samym e-mailu. Rozszerzenie sprawdza chatter rekordu w poszukiwaniu @wzmianek lub odniesień do Twojego imienia. To oznacza:</span>
+                        <ul style="margin-top: 0.5rem;">
+                            <li>Jeśli niedawno przeszedłeś z "Zarządzaj w Odoo" na "Zarządzaj przez e-maile", starsze wątki mogą pokazywać odznakę "Wspomniany" dla wzmianek, które miały miejsce przed rozpoczęciem otrzymywania e-maili — nawet jeśli wzmianka nie pojawi się w żadnym e-mailu Gmail.</li>
+                            <li>Status przeczytane/nieprzeczytane jest określany na podstawie tego, czy otworzyłeś wątek w Gmailu po wzmiance. Po otwarciu wątku odznaka zmienia kolor na szary.</li>
+                        </ul>
+                    </div>
+
+                    <h3>Szybki Dostęp</h3>
+                    <p>Skrót "Odoo Notifications" pojawia się na lewym pasku bocznym Gmaila, pod Twoimi etykietami. Kliknij, aby natychmiast przefiltrować skrzynkę i pokazać tylko e-maile z powiadomieniami Odoo.</p>
+                    <div class="info-box">
+                        <strong>Uwaga:</strong> <span>Skrót pojawia się dopiero po skonfigurowaniu e-maila powiadomień w Ustawienia > Powiadomienia.</span>
+                    </div>
+
+                    <h3>Dostosowanie</h3>
+                    <p>Każda funkcja powiadomień może być włączona/wyłączona niezależnie w Ustawienia > Powiadomienia:</p>
+                    <ul>
+                        <li>Odznaki modułów — pokaż/ukryj kolorowe odznaki modułów</li>
+                        <li>Odznaki wzmianek — pokaż/ukryj odznaki wykrywania wzmianek</li>
+                        <li>Skrót paska bocznego — pokaż/ukryj link Odoo Notifications na pasku bocznym Gmaila</li>
+                    </ul>
                 </section>
 
                 <!-- Troubleshooting Section -->
