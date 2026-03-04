@@ -745,13 +745,15 @@
       "initialRelease": "Rilascio Iniziale",
       "plusFeatures": "Funzionalità PLUS"
     },
-    "v0320": {
+    "v0400": {
       "notificationOrganization": "Organizzazione Notifiche",
       "notificationOrganizationDesc": "Un nuovo set di strumenti per gestire le notifiche Odoo in Gmail:",
       "moduleBadges": "Badge modulo (Attività, Ticket, Opportunità...) appaiono sulle email di notifica per identificarle a colpo d'occhio",
       "mentionedBadge": "Badge \"Menzionato\" evidenzia le email in cui qualcuno ti ha taggato — rosso se non letto, grigio se letto (richiede Vista Conversazione)",
       "sidebarShortcut": "Scorciatoia di accesso rapido nella barra laterale di Gmail per filtrare tutte le notifiche Odoo",
-      "configurable": "Completamente configurabile — attiva o disattiva ogni funzione di notifica indipendentemente nelle Impostazioni"
+      "configurable": "Completamente configurabile — attiva o disattiva ogni funzione di notifica indipendentemente nelle Impostazioni",
+      "generalImprovements": "Miglioramenti generali di stabilità e esperienza utente",
+      "settingsScrollFix": "Corretto il menu impostazioni che non si chiudeva durante lo scorrimento della pagina"
     },
     "v0313": {
       "minorImprovements": "Miglioramenti minori"
