@@ -748,6 +748,9 @@
       "initialRelease": "Rilascio Iniziale",
       "plusFeatures": "Funzionalità PLUS"
     },
+    "v0401": {
+      "bugFixes": "Correzioni di bug e miglioramenti della stabilità"
+    },
     "v0400": {
       "notificationOrganization": "Organizzazione Notifiche",
       "notificationOrganizationDesc": "Un nuovo set di strumenti per gestire le notifiche Odoo in Gmail:",
