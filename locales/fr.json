@@ -749,6 +749,9 @@
       "initialRelease": "Version initiale",
       "plusFeatures": "Fonctionnalités PLUS"
     },
+    "v0402": {
+      "bugFixes": "Améliorations internes de stabilité et de rapport d'erreurs"
+    },
     "v0401": {
       "bugFixes": "Corrections de bugs et améliorations de stabilité"
     },

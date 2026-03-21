@@ -749,6 +749,9 @@
       "initialRelease": "Pierwsze wydanie",
       "plusFeatures": "Funkcje PLUS"
     },
+    "v0402": {
+      "bugFixes": "Wewnętrzne ulepszenia stabilności i raportowania błędów"
+    },
     "v0401": {
       "bugFixes": "Poprawki błędów i ulepszenia stabilności"
     },

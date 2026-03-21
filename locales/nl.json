@@ -618,13 +618,13 @@
     "thirdParty": {
       "title": "Diensten van Derden",
       "paymentProcessing": "Betalingsverwerking",
-      "polarIntro": "De Extensie gebruikt Polar (https://polar.sh/) voor abonnementsbeheer en betalingsverwerking. Wanneer u zich abonneert op het PLUS abonnement, verzamelt Polar:",
-      "polar1": "Uw e-mailadres voor accountbeheer en ontvangstbewijzen",
+      "polarIntro": "De Extensie gebruikt Polar (https://polar.sh/) voor abonnementsbeheer en betalingsverwerking. Wanneer je je abonneert op het PLUS-plan, verzamelt Polar:",
+      "polar1": "Je e-mailadres voor accountbeheer en bonnen",
       "polar2": "Betalingsinformatie (veilig verwerkt door Stripe, niet opgeslagen door de Extensie)",
       "polar3": "Abonnementsstatus en factureringsinformatie",
       "polarPolicy": "Polar Privacybeleid:",
       "important": "Belangrijk:",
-      "importantDesc": "Betalingsgegevens worden volledig door Polar en Stripe verwerkt. De Extensie ontvangt of bewaart nooit uw creditcardinformatie.",
+      "importantDesc": "Betalingsgegevens worden volledig afgehandeld door Polar en Stripe. De Extensie ontvangt of slaat nooit je creditcardgegevens op.",
       "gmailIntegration": "Gmail Integratie",
       "inboxsdkDesc": "De Extensie gebruikt InboxSDK (https://www.inboxsdk.com/) om te integreren met de Gmail-interface. InboxSDK is een bibliotheek die de Extensie helpt om met de Gmail UI te communiceren om de zijbalk weer te geven en e-mailcontacten te detecteren. InboxSDK verzamelt, verzendt of bewaart geen e-mailgegevens.",
       "analytics": "Analytics",
@@ -748,6 +748,9 @@
       "dependencies": "Afhankelijkheden",
       "initialRelease": "Eerste Release",
       "plusFeatures": "PLUS Functies"
+    },
+    "v0402": {
+      "bugFixes": "Interne stabiliteits- en foutrapportageverbeteringen"
     },
     "v0401": {
       "bugFixes": "Bugfixes en stabiliteitsverbeteringen"
