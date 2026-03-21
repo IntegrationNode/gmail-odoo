@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YPS5MV3D6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0YPS5MV3D6');
+    </script>
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="xKPbWajMDc/S7ajdSojzTA" async></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Schritt-für-Schritt-Anleitung zum Erstellen von API Keys in Odoo 14 bis 19. Erfahren Sie die Unterschiede zwischen den Versionen und wie Sie einen persistenten Schlüssel für externe Integrationen einrichten.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog/odoo-api-key-setup.html">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-api-key-setup.html">
+    <link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog/odoo-api-key-setup.html">
+    <link rel="alternate" hreflang="fr" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog/odoo-api-key-setup.html">
+    <link rel="alternate" hreflang="de" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog/odoo-api-key-setup.html">
+    <link rel="alternate" hreflang="it" href="https://integrationnode.github.io/odoo-integration-gmail-docs/it/blog/odoo-api-key-setup.html">
+    <link rel="alternate" hreflang="pt" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pt/blog/odoo-api-key-setup.html">
+    <link rel="alternate" hreflang="nl" href="https://integrationnode.github.io/odoo-integration-gmail-docs/nl/blog/odoo-api-key-setup.html">
+    <link rel="alternate" hreflang="pl" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pl/blog/odoo-api-key-setup.html">
+    <link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-api-key-setup.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog/odoo-api-key-setup.html">
+    <meta property="og:title" content="So erstellen Sie einen API Key in Odoo (Alle Versionen)">
+    <meta property="og:description" content="Schritt-für-Schritt-Anleitung zum Erstellen von API Keys in Odoo 14 bis 19, mit Screenshots für jede Version.">
+    <meta property="og:image" content="https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png">
+    <meta property="og:site_name" content="Odoo Integration for Gmail">
+    <meta property="article:published_time" content="2026-03-21">
+    <meta property="article:author" content="OdooIntegrations Team">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="So erstellen Sie einen API Key in Odoo (Alle Versionen)">
+    <meta name="twitter:description" content="Schritt-für-Schritt-Anleitung zum Erstellen von API Keys in Odoo 14 bis 19, mit Screenshots für jede Version.">
+    <meta name="twitter:image" content="https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png">
+
+    <title>So erstellen Sie einen API Key in Odoo (Alle Versionen) | Odoo Integration für Gmail</title>
+    <link rel="icon" type="image/png" href="https://integrationnode.github.io/odoo-integration-gmail-docs/favicon.png">
+    <link rel="stylesheet" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fonts/outlined.css">
+    <link rel="stylesheet" href="https://integrationnode.github.io/odoo-integration-gmail-docs/style.css">
+
+    <!-- Schema.org Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "How to Create an Odoo API Key: Step-by-Step Guide for Every Version",
+        "description": "Learn how to generate an API key in Odoo 14 through 19+ to connect external tools like browser extensions, scripts, and integrations.",
+        "image": "https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png",
+        "author": {
+            "@type": "Organization",
+            "name": "OdooIntegrations Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "OdooIntegrations",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://integrationnode.github.io/odoo-integration-gmail-docs/favicon.png"
+            }
+        },
+        "datePublished": "2026-03-21T00:00:00+00:00",
+        "dateModified": "2026-03-21T00:00:00+00:00",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-api-key-setup.html"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="pricing-header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../" class="logo">Odoo Integration für Gmail</a>
+                <div class="nav-links">
+                    <a href="../#features">Funktionen</a>
+                    <a href="../pricing.html">Preise</a>
+                    <a href="../user-guide.html">Handbuch</a>
+                    <a href="../blog.html" class="active">Blog</a>
+                    <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-sm btn-primary">Installieren</a>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">language</span>
+                            <span class="lang-current">DE</span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="lang-menu" role="menu"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Article Hero -->
+    <section class="article-hero">
+        <div class="container">
+            <a href="../blog.html" class="article-back">
+                <span class="material-symbols-outlined">arrow_back</span>
+                <span>Zurück zum Blog</span>
+            </a>
+            <h1>So erstellen Sie einen API Key in Odoo (Alle Versionen)</h1>
+            <div class="article-meta">
+                <span class="article-date">21. März 2026</span>
+                <span class="article-author">OdooIntegrations Team</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="article-section">
+        <div class="container">
+            <div class="article-content">
+                <!-- Intro -->
+                <p class="article-intro">API Keys ermöglichen es externen Tools — wie unserer Gmail-Erweiterung — sich sicher mit Ihrer Odoo-Instanz zu verbinden, ohne Ihr Passwort zu verwenden. Der Erstellungsprozess variiert je nach Odoo-Version leicht. Diese Anleitung deckt alle Versionen von Odoo 14 bis 19 mit Schritt-für-Schritt-Anweisungen ab.</p>
+
+                <!-- Section 1: Before You Begin -->
+                <h2>
+                    <span class="section-number">1</span>
+                    <span>Bevor Sie beginnen</span>
+                </h2>
+                <p>Stellen Sie vor dem Erstellen eines API Keys sicher, dass Sie diese Voraussetzungen erfüllen:</p>
+                <ul>
+                    <li>Sie müssen in Ihrer Odoo-Instanz angemeldet sein</li>
+                    <li>Sie benötigen ein internes Benutzerkonto (kein Portal-Benutzer)</li>
+                    <li>Sie sollten wissen, welche Odoo-Version Sie verwenden</li>
+                </ul>
+                <p class="tip-box">Um Ihre Odoo-Version zu überprüfen, schauen Sie unten auf der Einstellungsseite nach oder fragen Sie Ihren Systemadministrator.</p>
+                <figure class="article-figure">
+                    <img src="../../../assets/blog/01-profile-menu.png" alt="Odoo-Profilmenü mit der Option My Profile" class="lightbox-img">
+                    <figcaption>Odoo-Profilmenü mit der Option My Profile</figcaption>
+                </figure>
+
+                <!-- Section 2: Odoo 14-15 -->
+                <h2>
+                    <span class="section-number">2</span>
+                    <span>Odoo 14-15</span>
+                </h2>
+                <p>In Odoo 14 und 15 finden Sie API Keys im Abschnitt 'Developer API Keys' in Ihren Benutzereinstellungen.</p>
+                <p>Navigieren Sie zu: Profilsymbol (oben rechts) → My Profile → Reiter Account Security</p>
+
+                <div class="warning-box">
+                    <span class="material-symbols-outlined">warning</span>
+                    <span>Nur Odoo 15: Wenn Sie den Abschnitt 'Developer API Keys' nicht sehen, müssen Sie zuerst Developer Mode aktivieren. Gehen Sie zu Settings → Developer Tools → Entwicklermodus aktivieren, dann kehren Sie zu Ihrem Profil zurück.</span>
+                </div>
+
+                <ol>
+                    <li>Klicken Sie auf 'New API Key'</li>
+                    <li>Geben Sie einen Namen für Ihren Schlüssel ein (z.B. 'Gmail Extension')</li>
+                    <li>Klicken Sie auf die Bestätigungsschaltfläche</li>
+                    <li>Kopieren Sie den generierten Schlüssel sofort — er kann später nicht erneut abgerufen werden</li>
+                </ol>
+                <p>In diesen Versionen sind API Keys permanent — sie laufen nie ab.</p>
+
+                <!-- No screenshots available for v14-15 -->
+
+                <!-- Section 3: Odoo 16-17 -->
+                <h2>
+                    <span class="section-number">3</span>
+                    <span>Odoo 16-17</span>
+                </h2>
+                <p>Ab Odoo 16 wurde der Abschnitt API Keys umbenannt und erfordert keinen Developer Mode mehr.</p>
+                <p>Navigieren Sie zu: Profilsymbol (oben rechts) → My Profile → Reiter Account Security</p>
+                <ol>
+                    <li>Klicken Sie auf 'New API Key'</li>
+                    <li>Geben Sie einen Namen für Ihren Schlüssel ein (z.B. 'Gmail Extension')</li>
+                    <li>Klicken Sie auf die Bestätigungsschaltfläche</li>
+                    <li>Kopieren Sie den generierten Schlüssel sofort — er kann später nicht erneut abgerufen werden</li>
+                </ol>
+                <p>API Keys in Odoo 16-17 sind permanent — sie laufen nie ab.</p>
+
+                <h3>Odoo 16</h3>
+                <figure class="article-figure">
+                    <img src="../../../assets/blog/06-v16-account-security.png" alt="Reiter Account Security mit dem Abschnitt API Keys in Odoo 16" class="lightbox-img">
+                    <figcaption>Reiter Account Security mit dem Abschnitt API Keys in Odoo 16</figcaption>
+                </figure>
+                <figure class="article-figure">
+                    <img src="../../../assets/blog/08-v16-wizard-name.png" alt="API-Key-Erstellungsassistent in Odoo 16" class="lightbox-img">
+                    <figcaption>API-Key-Erstellungsassistent in Odoo 16</figcaption>
+                </figure>
+                <figure class="article-figure">
+                    <img src="../../../assets/blog/10-v16-key-result.png" alt="Generierter API Key in Odoo 16" class="lightbox-img">
+                    <figcaption>Generierter API Key in Odoo 16</figcaption>
+                </figure>
+
+                <h3>Odoo 17</h3>
+                <figure class="article-figure">
+                    <img src="../../../assets/blog/07-v17-account-security.png" alt="Reiter Account Security mit dem Abschnitt API Keys in Odoo 17" class="lightbox-img">
+                    <figcaption>Reiter Account Security mit dem Abschnitt API Keys in Odoo 17</figcaption>
+                </figure>
+                <figure class="article-figure">
+                    <img src="../../../assets/blog/09-v17-wizard-name.png" alt="API-Key-Erstellungsassistent in Odoo 17" class="lightbox-img">
+                    <figcaption>API-Key-Erstellungsassistent in Odoo 17</figcaption>
+                </figure>
+                <figure class="article-figure">
+                    <img src="../../../assets/blog/11-v17-key-result.png" alt="Generierter API Key in Odoo 17" class="lightbox-img">
+                    <figcaption>Generierter API Key in Odoo 17</figcaption>
+                </figure>
+
+                <!-- Section 4: Odoo 18 -->
+                <h2>
+                    <span class="section-number">4</span>
+                    <span>Odoo 18</span>
+                </h2>
+                <p>Odoo 18 führt die Ablaufzeit für Schlüssel ein. Beim Erstellen eines API Keys müssen Sie wählen, wie lange er gültig sein soll.</p>
+                <p>Navigieren Sie zu: Profilsymbol (oben rechts) → My Profile → Reiter Account Security</p>
+                <ol>
+                    <li>Klicken Sie auf 'New API Key'</li>
+                    <li>Geben Sie einen Namen für Ihren Schlüssel ein (z.B. 'Gmail Extension')</li>
+                    <li>Wählen Sie im Dauer-Selektor 'Persistent Key'</li>
+                    <li>Klicken Sie auf 'Generate key'</li>
+                    <li>Kopieren Sie den generierten Schlüssel sofort — er kann später nicht erneut abgerufen werden</li>
+                </ol>
+
+                <div class="warning-box">
+                    <span class="material-symbols-outlined">warning</span>
+                    <span>Wenn Sie nicht 'Persistent Key' auswählen, läuft Ihr API Key nach der gewählten Dauer ab, und die Erweiterung funktioniert nicht mehr. Sie müssten einen neuen Schlüssel erstellen und die Erweiterung neu konfigurieren.</span>
+                </div>
+
+                <figure class="article-figure">
+                    <img src="../../../assets/blog/12-v18-account-security.png" alt="Reiter Account Security mit API Keys und Ablaufdatum-Spalte in Odoo 18" class="lightbox-img">
+                    <figcaption>Reiter Account Security mit API Keys und Ablaufdatum-Spalte in Odoo 18</figcaption>
+                </figure>
+                <figure class="article-figure">
+                    <img src="../../../assets/blog/13-v18-wizard-duration.png" alt="API-Key-Erstellungsassistent mit Dauer-Selektor in Odoo 18" class="lightbox-img">
+                    <figcaption>API-Key-Erstellungsassistent mit Dauer-Selektor in Odoo 18</figcaption>
+                </figure>
+                <figure class="article-figure">
+                    <img src="../../../assets/blog/14-v18-key-result.png" alt="Generierter API Key in Odoo 18" class="lightbox-img">
+                    <figcaption>Generierter API Key in Odoo 18</figcaption>
+                </figure>
+
+                <!-- Section 5: Odoo 19+ -->
+                <h2>
+                    <span class="section-number">5</span>
+                    <span>Odoo 19+</span>
+                </h2>
+                <p>Odoo 19 hat die Benutzereinstellungsoberfläche neu gestaltet. Der Pfad und die Schaltflächennamen haben sich geändert, aber der Prozess ist ähnlich wie bei Odoo 18.</p>
+                <p>Navigieren Sie zu: Profilsymbol (oben rechts) → My Preferences → Reiter Security</p>
+                <ol>
+                    <li>Klicken Sie auf 'Add API Key'</li>
+                    <li>Geben Sie einen Namen für Ihren Schlüssel ein (z.B. 'Gmail Extension')</li>
+                    <li>Wählen Sie im Dauer-Selektor 'Persistent Key'</li>
+                    <li>Klicken Sie auf 'Generate key'</li>
+                    <li>Kopieren Sie den generierten Schlüssel sofort — er kann später nicht erneut abgerufen werden</li>
+                </ol>
+
+                <div class="warning-box">
+                    <span class="material-symbols-outlined">warning</span>
+                    <span>Wie bei Odoo 18: Wählen Sie immer 'Persistent Key', um ein Ablaufen zu vermeiden.</span>
+                </div>
+
+                <p>In Odoo 19 werden vorhandene API Keys als Karten (Kanban-Ansicht) statt als Liste angezeigt.</p>
+
+                <figure class="article-figure">
+                    <img src="../../../assets/blog/15-v19-preferences-security.png" alt="Reiter Security mit API Keys in Kanban-Ansicht in Odoo 19" class="lightbox-img">
+                    <figcaption>Reiter Security mit API Keys in Kanban-Ansicht in Odoo 19</figcaption>
+                </figure>
+                <figure class="article-figure">
+                    <img src="../../../assets/blog/16-v19-wizard-duration.png" alt="API-Key-Erstellungsassistent mit Dauer-Selektor in Odoo 19" class="lightbox-img">
+                    <figcaption>API-Key-Erstellungsassistent mit Dauer-Selektor in Odoo 19</figcaption>
+                </figure>
+                <figure class="article-figure">
+                    <img src="../../../assets/blog/17-v19-key-result.png" alt="Generierter API Key in Odoo 19" class="lightbox-img">
+                    <figcaption>Generierter API Key in Odoo 19</figcaption>
+                </figure>
+
+                <!-- Section 6: Quick Reference -->
+                <h2>
+                    <span class="section-number">6</span>
+                    <span>Kurzübersicht</span>
+                </h2>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.95em;">
+                        <thead>
+                            <tr style="background: var(--bg-secondary, #f5f5f5);">
+                                <th style="padding: 12px 16px; text-align: left; border-bottom: 2px solid var(--border-color, #e0e0e0);">Version</th>
+                                <th style="padding: 12px 16px; text-align: left; border-bottom: 2px solid var(--border-color, #e0e0e0);">Pfad</th>
+                                <th style="padding: 12px 16px; text-align: left; border-bottom: 2px solid var(--border-color, #e0e0e0);">Schaltfläche</th>
+                                <th style="padding: 12px 16px; text-align: left; border-bottom: 2px solid var(--border-color, #e0e0e0);">Dev Mode</th>
+                                <th style="padding: 12px 16px; text-align: left; border-bottom: 2px solid var(--border-color, #e0e0e0);">Ablauf</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Odoo 14 -->
+                            <tr>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">Odoo 14</td>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">My Profile → Account Security</td>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">New API Key</td>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">Nein</td>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">Permanent</td>
+                            </tr>
+                            <!-- Odoo 15 -->
+                            <tr>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">Odoo 15</td>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">My Profile → Account Security</td>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">New API Key</td>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">Ja</td>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">Permanent</td>
+                            </tr>
+                            <!-- Odoo 16-17 -->
+                            <tr>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">Odoo 16-17</td>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">My Profile → Account Security</td>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">New API Key</td>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">Nein</td>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">Permanent</td>
+                            </tr>
+                            <!-- Odoo 18 -->
+                            <tr>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">Odoo 18</td>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">My Profile → Account Security</td>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">New API Key</td>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">Nein</td>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">Muss 'Persistent' auswählen</td>
+                            </tr>
+                            <!-- Odoo 19+ -->
+                            <tr>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">Odoo 19+</td>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">My Preferences → Security</td>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">Add API Key</td>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">Nein</td>
+                                <td style="padding: 10px 16px; border-bottom: 1px solid var(--border-color, #e0e0e0);">Muss 'Persistent' auswählen</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Section 7: Troubleshooting -->
+                <h2>
+                    <span class="section-number">7</span>
+                    <span>Fehlerbehebung</span>
+                </h2>
+
+                <h3>Fehler 'Invalid API Key'</h3>
+                <p>Überprüfen Sie, ob Sie den gesamten Schlüssel ohne zusätzliche Leerzeichen kopiert haben. Wenn Sie Odoo 18+ verwenden, stellen Sie sicher, dass der Schlüssel nicht abgelaufen ist — erstellen Sie einen neuen mit 'Persistent Key' ausgewählt.</p>
+
+                <h3>'API Key expired'</h3>
+                <p>Dies passiert in Odoo 18+, wenn der Schlüssel ohne Auswahl von 'Persistent Key' erstellt wurde. Erstellen Sie einen neuen Schlüssel und wählen Sie 'Persistent Key' als Dauer.</p>
+
+                <h3>API-Key-Schaltfläche nicht gefunden</h3>
+                <p>In Odoo 15 müssen Sie zuerst Developer Mode aktivieren (Settings → Developer Tools → Aktivieren). In Odoo 19+ wurde der Abschnitt nach My Preferences → Security verschoben (nicht Account Security).</p>
+
+                <h3>Fehler 'Connection timeout'</h3>
+                <p>Überprüfen Sie, ob Ihre Odoo-URL korrekt und erreichbar ist. Stellen Sie sicher, dass https:// enthalten ist und entfernen Sie einen abschließenden Schrägstrich.</p>
+
+                <!-- CTA -->
+                <div class="article-cta">
+                    <h3>Bereit zur Verbindung?</h3>
+                    <p>Jetzt, da Sie Ihren API Key haben, installieren Sie die Erweiterung und verbinden Sie Ihre Odoo-Instanz in Sekunden mit Gmail.</p>
+                    <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/" target="_blank" class="btn btn-primary btn-lg">Erweiterung holen</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Odoo Integration für Gmail</h4>
+                    <p><span>Entwickelt von</span> <strong>OdooIntegrations Team</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Ressourcen</h4>
+                    <ul>
+                        <li><a href="../">Startseite</a></li>
+                        <li><a href="../pricing.html">Preise</a></li>
+                        <li><a href="../user-guide.html">Handbuch</a></li>
+                        <li><a href="../changelog.html">Verlauf</a></li>
+                        <li><a href="../comparison.html">Vergleich</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../privacy.html">Datenschutz</a></li>
+                        <li><a href="mailto:odoointegrations.team@gmail.com">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Rechtliches</h4>
+                    <p class="small-text">Nicht mit Odoo S.A. oder Google LLC verbunden.</p>
+                    <p class="small-text">Odoo ist eine Marke von Odoo S.A.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2025 IntegrationNode. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Figures & Lightbox -->
+    <style>
+    .article-figure {
+        margin: 20px 0; padding: 0;
+    }
+    .article-figure img {
+        max-width: 100%; border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        cursor: pointer;
+    }
+    .article-figure figcaption {
+        margin-top: 8px; font-size: 0.85em; color: #666;
+        text-align: center; font-style: italic;
+    }
+    .lightbox-overlay {
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0,0,0,0.85); z-index: 9999;
+        display: flex; align-items: center; justify-content: center;
+        cursor: pointer; animation: lbFadeIn 0.2s;
+    }
+    .lightbox-overlay img {
+        max-width: 92%; max-height: 92vh;
+        border-radius: 8px; box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+        animation: lbZoomIn 0.2s;
+    }
+    @keyframes lbFadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes lbZoomIn { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    </style>
+    <script>
+    document.querySelectorAll('.lightbox-img').forEach(function(img) {
+        img.addEventListener('click', function() {
+            var overlay = document.createElement('div');
+            overlay.className = 'lightbox-overlay';
+            var fullImg = document.createElement('img');
+            fullImg.src = img.src;
+            fullImg.alt = img.alt;
+            overlay.appendChild(fullImg);
+            overlay.addEventListener('click', function() { overlay.remove(); });
+            document.addEventListener('keydown', function handler(e) {
+                if (e.key === 'Escape') { overlay.remove(); document.removeEventListener('keydown', handler); }
+            });
+            document.body.appendChild(overlay);
+        });
+    });
+    </script>
+
+    <!-- Language Switcher Script -->
+    <script>
+    (function() {
+        var LANGUAGES = [
+            { code: 'en', name: 'English', path: '' },
+            { code: 'es', name: 'Español', path: 'es/' },
+            { code: 'fr', name: 'Français', path: 'fr/' },
+            { code: 'de', name: 'Deutsch', path: 'de/' },
+            { code: 'it', name: 'Italiano', path: 'it/' },
+            { code: 'pt', name: 'Português', path: 'pt/' },
+            { code: 'nl', name: 'Nederlands', path: 'nl/' },
+            { code: 'pl', name: 'Polski', path: 'pl/' }
+        ];
+
+        var dropdown = document.getElementById('lang-dropdown');
+        if (!dropdown) return;
+
+        var toggle = dropdown.querySelector('.lang-toggle');
+        var menu = dropdown.querySelector('.lang-menu');
+        var path = window.location.pathname;
+
+        // Get page path relative to language root (e.g., "blog/article.html")
+        var pathParts = path.split('/');
+        var page = '';
+        var isSubLang = false;
+
+        for (var i = 0; i < LANGUAGES.length; i++) {
+            var langPath = LANGUAGES[i].path;
+            if (langPath && path.includes('/' + langPath)) {
+                isSubLang = true;
+                // Get everything after the language folder
+                var langIndex = path.indexOf('/' + langPath);
+                page = path.substring(langIndex + langPath.length + 1);
+                break;
+            }
+        }
+
+        if (!isSubLang) {
+            // English (root) - get path after docs folder
+            var docsIndex = path.indexOf('odoo-integration-gmail-docs/');
+            if (docsIndex !== -1) {
+                page = path.substring(docsIndex + 'odoo-integration-gmail-docs/'.length);
+            } else {
+                page = pathParts.slice(-2).join('/');
+            }
+        }
+
+        if (!page || page === '') page = 'index.html';
+
+        var currentLang = LANGUAGES[0];
+        for (var i = 1; i < LANGUAGES.length; i++) {
+            if (path.includes('/' + LANGUAGES[i].path)) {
+                currentLang = LANGUAGES[i];
+                break;
+            }
+        }
+
+        LANGUAGES.forEach(function(lang) {
+            if (lang.code === currentLang.code) return;
+            var link = document.createElement('a');
+            // For nested pages, we need to go up two levels from /blog/article.html
+            if (currentLang.path) {
+                // From /es/blog/article.html to other langs
+                link.href = '../../' + lang.path + page;
+            } else {
+                // From /blog/article.html to other langs
+                link.href = '../' + lang.path + page;
+            }
+            link.textContent = lang.name;
+            link.setAttribute('role', 'menuitem');
+            link.setAttribute('data-lang', lang.code);
+            menu.appendChild(link);
+        });
+
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            dropdown.classList.toggle('open');
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                toggle.setAttribute('aria-expanded', 'false');
+                dropdown.classList.remove('open');
+            }
+        });
+    })();
+    </script>
+</body>
+</html>

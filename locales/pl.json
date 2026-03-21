@@ -81,6 +81,15 @@
       "ogDescription": "Skonfiguruj OAuth do wysyłania e-maili z Odoo z Twojej domeny. Poznaj strategię hybrydową dla osobistych i zespołowych skrzynek.",
       "twitterTitle": "Odoo Gmail: Konfiguracja własnej domeny",
       "twitterDescription": "Jak wysyłać e-maile z Odoo z Twojej domeny bez tworzenia chaosu w skrzynce."
+    },
+    "blogApiKeySetup": {
+      "title": "Jak Utworzyć Klucz API w Odoo (Wszystkie Wersje) | Integracja Odoo dla Gmail",
+      "description": "Przewodnik krok po kroku tworzenia kluczy API w Odoo od wersji 14 do 19. Poznaj różnice między wersjami i dowiedz się jak skonfigurować klucz trwały dla integracji zewnętrznych.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/pl/blog/odoo-api-key-setup.html",
+      "ogTitle": "Jak Utworzyć Klucz API w Odoo (Wszystkie Wersje)",
+      "ogDescription": "Przewodnik krok po kroku tworzenia kluczy API w Odoo od wersji 14 do 19, ze zrzutami ekranu dla każdej wersji.",
+      "twitterTitle": "Jak Utworzyć Klucz API w Odoo (Wszystkie Wersje)",
+      "twitterDescription": "Przewodnik krok po kroku tworzenia kluczy API w Odoo od wersji 14 do 19, ze zrzutami ekranu dla każdej wersji."
     }
   },
   "userGuide": {
@@ -135,7 +144,9 @@
       "updateDesc": "Aby zmienić URL Odoo lub klucz API:",
       "updateStep1": "Kliknij przycisk menu (trzy pionowe kropki ⋮) w panelu bocznym",
       "updateStep2": "Wybierz Wyloguj",
-      "updateStep3": "Wprowadź nowe dane uwierzytelniające"
+      "updateStep3": "Wprowadź nowe dane uwierzytelniające",
+      "versionNote": "Tworzenie kluczy API różni się w zależności od wersji Odoo.",
+      "versionNoteLink": "Zobacz szczegółowy przewodnik dla swojej wersji →"
     },
     "features": {
       "title": "Przegląd funkcji",
@@ -1110,6 +1121,11 @@
       "date": "Styczeń 2025",
       "excerpt": "Jeśli jesteś użytkownikiem Odoo, prawdopodobnie zadawałeś sobie pytanie: \"Jak mogę wysyłać e-maile z Odoo, żeby klient widział, że to ode mnie (imie@mojafirma.com), a nie od jakiegoś generycznego bota?\""
     },
+    "article2": {
+      "title": "Jak Utworzyć Klucz API w Odoo (Wszystkie Wersje)",
+      "date": "Marzec 2026",
+      "excerpt": "Przewodnik krok po kroku tworzenia kluczy API w Odoo od wersji 14 do 19. Poznaj różnice między wersjami, w tym kluczową opcję \"Persistent Key\" w Odoo 18+."
+    },
     "cta": {
       "title": "Wypróbuj Integrację Odoo dla Gmail",
       "subtitle": "Połącz swój Gmail z Odoo w kilka sekund",
@@ -1170,6 +1186,118 @@
       "title": "Gotowy to wypróbować?",
       "subtitle": "Połącz swój Gmail z Odoo w kilka sekund naszym rozszerzeniem Chrome.",
       "button": "Wypróbuj rozszerzenie za darmo"
+    }
+  },
+  "blogApiKeySetup": {
+    "title": "Jak Utworzyć Klucz API w Odoo (Wszystkie Wersje)",
+    "date": "21 marca 2026",
+    "intro": "Klucze API pozwalają zewnętrznym narzędziom — takim jak nasze rozszerzenie do Gmail — bezpiecznie łączyć się z Twoją instancją Odoo bez użycia hasła. Proces tworzenia różni się nieznacznie w zależności od wersji Odoo. Ten przewodnik obejmuje każdą wersję od Odoo 14 do 19 z instrukcjami krok po kroku.",
+    "section1": {
+      "title": "Zanim Zaczniesz",
+      "p1": "Przed utworzeniem klucza API upewnij się, że spełniasz te wymagania:",
+      "req1": "Musisz być zalogowany do swojej instancji Odoo",
+      "req2": "Potrzebujesz konta użytkownika wewnętrznego (nie użytkownika portalu)",
+      "req3": "Powinieneś wiedzieć, której wersji Odoo używasz",
+      "imgAlt": "Menu profilu Odoo pokazujące opcję My Profile",
+      "tip": "Aby sprawdzić wersję Odoo, sprawdź dół strony Ustawienia lub zapytaj administratora systemu."
+    },
+    "section2": {
+      "title": "Odoo 14-15",
+      "p1": "W Odoo 14 i 15 klucze API znajdują się w sekcji \"Developer API Keys\" w preferencjach użytkownika.",
+      "path": "Przejdź do: Ikona profilu (prawy górny róg) → My Profile → zakładka Account Security",
+      "step1": "Kliknij \"New API Key\"",
+      "step2": "Wprowadź nazwę klucza (np. \"Gmail Extension\")",
+      "step3": "Kliknij przycisk potwierdzenia",
+      "step4": "Natychmiast skopiuj wygenerowany klucz — nie będzie można go później odzyskać",
+      "warning": "Tylko Odoo 15: Jeśli nie widzisz sekcji \"Developer API Keys\", musisz najpierw aktywować Developer Mode. Przejdź do Settings → Developer Tools → Activate the developer mode, a następnie wróć do profilu.",
+      "note": "W tych wersjach klucze API są trwałe — nigdy nie wygasają.",
+      "imgAltSecurity": "Zakładka Account Security pokazująca sekcję Developer API Keys w Odoo 15",
+      "imgAltDevMode": "Jak aktywować Developer Mode w ustawieniach Odoo",
+      "imgAltWizard": "Kreator tworzenia klucza API proszący o nazwę klucza",
+      "imgAltResult": "Wygenerowany klucz API gotowy do skopiowania"
+    },
+    "section3": {
+      "title": "Odoo 16-17",
+      "p1": "Począwszy od Odoo 16, sekcja kluczy API została przemianowana i nie wymaga już Developer Mode.",
+      "path": "Przejdź do: Ikona profilu (prawy górny róg) → My Profile → zakładka Account Security",
+      "step1": "Kliknij \"New API Key\"",
+      "step2": "Wprowadź nazwę klucza (np. \"Gmail Extension\")",
+      "step3": "Kliknij przycisk potwierdzenia",
+      "step4": "Natychmiast skopiuj wygenerowany klucz — nie będzie można go później odzyskać",
+      "note": "Klucze API w Odoo 16-17 są trwałe — nigdy nie wygasają.",
+      "imgAltV16Security": "Zakładka Account Security pokazująca sekcję API Keys w Odoo 16",
+      "imgAltV16Wizard": "Kreator tworzenia klucza API w Odoo 16",
+      "imgAltV16Result": "Wygenerowany klucz API w Odoo 16",
+      "imgAltV17Security": "Zakładka Account Security pokazująca sekcję API Keys w Odoo 17",
+      "imgAltV17Wizard": "Kreator tworzenia klucza API w Odoo 17",
+      "imgAltV17Result": "Wygenerowany klucz API w Odoo 17"
+    },
+    "section4": {
+      "title": "Odoo 18",
+      "p1": "Odoo 18 wprowadza wygasanie kluczy. Podczas tworzenia klucza API musisz wybrać, jak długo będzie on ważny.",
+      "path": "Przejdź do: Ikona profilu (prawy górny róg) → My Profile → zakładka Account Security",
+      "step1": "Kliknij \"New API Key\"",
+      "step2": "Wprowadź nazwę klucza (np. \"Gmail Extension\")",
+      "step3": "W selektorze czasu trwania wybierz \"Persistent Key\"",
+      "step4": "Kliknij \"Generate key\"",
+      "step5": "Natychmiast skopiuj wygenerowany klucz — nie będzie można go później odzyskać",
+      "warning": "Jeśli nie wybierzesz \"Persistent Key\", Twój klucz API wygaśnie po wybranym czasie, a rozszerzenie przestanie działać. Będziesz musiał utworzyć nowy klucz i ponownie skonfigurować rozszerzenie.",
+      "imgAltSecurity": "Zakładka Account Security pokazująca klucze API z kolumną daty wygaśnięcia w Odoo 18",
+      "imgAltWizard": "Kreator tworzenia klucza API z selektorem czasu trwania w Odoo 18",
+      "imgAltResult": "Wygenerowany klucz API w Odoo 18"
+    },
+    "section5": {
+      "title": "Odoo 19+",
+      "p1": "Odoo 19 przeprojektowało interfejs preferencji użytkownika. Ścieżka i nazwy przycisków uległy zmianie, ale proces jest podobny do Odoo 18.",
+      "path": "Przejdź do: Ikona profilu (prawy górny róg) → My Preferences → zakładka Security",
+      "step1": "Kliknij \"Add API Key\"",
+      "step2": "Wprowadź nazwę klucza (np. \"Gmail Extension\")",
+      "step3": "W selektorze czasu trwania wybierz \"Persistent Key\"",
+      "step4": "Kliknij \"Generate key\"",
+      "step5": "Natychmiast skopiuj wygenerowany klucz — nie będzie można go później odzyskać",
+      "warning": "Tak samo jak w Odoo 18: zawsze wybieraj \"Persistent Key\", aby uniknąć wygaśnięcia.",
+      "note": "W Odoo 19 istniejące klucze API wyświetlane są jako karty (widok kanban) zamiast listy.",
+      "imgAltSecurity": "Zakładka Security pokazująca klucze API w widoku kanban w Odoo 19",
+      "imgAltWizard": "Kreator tworzenia klucza API z selektorem czasu trwania w Odoo 19",
+      "imgAltResult": "Wygenerowany klucz API w Odoo 19"
+    },
+    "section6": {
+      "title": "Szybka Referencja",
+      "thVersion": "Wersja",
+      "thPath": "Ścieżka",
+      "thButton": "Przycisk",
+      "thDevMode": "Dev Mode",
+      "thExpiration": "Wygaśnięcie",
+      "v14path": "My Profile → Account Security",
+      "v15path": "My Profile → Account Security",
+      "v1617path": "My Profile → Account Security",
+      "v18path": "My Profile → Account Security",
+      "v19path": "My Preferences → Security",
+      "v14button": "New API Key",
+      "v15button": "New API Key",
+      "v1617button": "New API Key",
+      "v18button": "New API Key",
+      "v19button": "Add API Key",
+      "no": "Nie",
+      "yes": "Tak",
+      "permanent": "Trwały",
+      "selectPersistent": "Należy wybrać \"Persistent\""
+    },
+    "section7": {
+      "title": "Rozwiązywanie Problemów",
+      "issue1Title": "Błąd \"Invalid API Key\"",
+      "issue1Desc": "Sprawdź, czy skopiowałeś cały klucz bez dodatkowych spacji. Jeśli używasz Odoo 18+, upewnij się, że klucz nie wygasł — utwórz nowy z wybranym \"Persistent Key\".",
+      "issue2Title": "\"API Key expired\"",
+      "issue2Desc": "Dzieje się tak w Odoo 18+, gdy klucz został utworzony bez wybrania \"Persistent Key\". Utwórz nowy klucz i wybierz \"Persistent Key\" jako czas trwania.",
+      "issue3Title": "Nie mogę znaleźć przycisku klucza API",
+      "issue3Desc": "W Odoo 15 musisz najpierw aktywować Developer Mode (Settings → Developer Tools → Activate). W Odoo 19+ sekcja została przeniesiona do My Preferences → Security (nie Account Security).",
+      "issue4Title": "Błąd \"Connection timeout\"",
+      "issue4Desc": "Sprawdź, czy adres URL Odoo jest poprawny i dostępny. Upewnij się, że zawierasz https:// i usuwasz końcowy ukośnik."
+    },
+    "cta": {
+      "title": "Gotowy do połączenia?",
+      "subtitle": "Teraz, gdy masz swój klucz API, zainstaluj rozszerzenie i połącz swoją instancję Odoo z Gmail w kilka sekund.",
+      "button": "Pobierz rozszerzenie"
     }
   }
 }

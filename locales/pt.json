@@ -81,6 +81,15 @@
       "ogDescription": "Configure OAuth para envio de emails do Odoo com seu domínio. Aprenda a estratégia híbrida para caixas pessoais vs equipes.",
       "twitterTitle": "Odoo Gmail: Configuração de Domínio Pessoal",
       "twitterDescription": "Como enviar emails do Odoo com seu domínio sem criar caos na caixa de entrada."
+    },
+    "blogApiKeySetup": {
+      "title": "Como Criar uma Chave de API no Odoo (Todas as Versões) | Integração Odoo para Gmail",
+      "description": "Guia passo a passo para criar chaves de API no Odoo 14 a 19. Conheça as diferenças entre versões e como configurar uma chave persistente para integrações externas.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/pt/blog/odoo-api-key-setup.html",
+      "ogTitle": "Como Criar uma Chave de API no Odoo (Todas as Versões)",
+      "ogDescription": "Guia passo a passo para criar chaves de API no Odoo 14 a 19, com capturas de tela para cada versão.",
+      "twitterTitle": "Como Criar uma Chave de API no Odoo (Todas as Versões)",
+      "twitterDescription": "Guia passo a passo para criar chaves de API no Odoo 14 a 19, com capturas de tela para cada versão."
     }
   },
   "userGuide": {
@@ -135,7 +144,9 @@
       "updateDesc": "Para alterar sua URL do Odoo ou chave API:",
       "updateStep1": "Clique no botão de menu (três pontos verticais ⋮) na barra lateral",
       "updateStep2": "Selecione Sair",
-      "updateStep3": "Insira suas novas credenciais"
+      "updateStep3": "Insira suas novas credenciais",
+      "versionNote": "A criação de chaves API varia entre as versões do Odoo.",
+      "versionNoteLink": "Veja o guia detalhado para a sua versão →"
     },
     "features": {
       "title": "Visão Geral dos Recursos",
@@ -1110,6 +1121,11 @@
       "date": "Janeiro 2025",
       "excerpt": "Se você é usuário do Odoo, provavelmente já se perguntou: \"Como posso enviar emails do Odoo e o cliente ver que sou eu (nome@minhaempresa.com) e não um bot genérico?\""
     },
+    "article2": {
+      "title": "Como Criar uma Chave de API no Odoo (Todas as Versões)",
+      "date": "Março 2026",
+      "excerpt": "Guia passo a passo para criar chaves de API no Odoo 14 a 19. Conheça as diferenças entre versões, incluindo a opção crítica \"Persistent Key\" no Odoo 18+."
+    },
     "cta": {
       "title": "Experimente Integração Odoo para Gmail",
       "subtitle": "Conecte seu Gmail ao Odoo em segundos",
@@ -1170,6 +1186,118 @@
       "title": "Pronto para experimentar?",
       "subtitle": "Conecte seu Gmail ao Odoo em segundos com nossa extensão Chrome.",
       "button": "Experimente a extensão grátis"
+    }
+  },
+  "blogApiKeySetup": {
+    "title": "Como Criar uma Chave de API no Odoo (Todas as Versões)",
+    "date": "21 de Março de 2026",
+    "intro": "Chaves de API permitem que ferramentas externas — como nossa extensão para Gmail — se conectem de forma segura à sua instância Odoo sem usar sua senha. O processo de criação varia ligeiramente dependendo da sua versão do Odoo. Este guia abrange todas as versões do Odoo 14 ao 19 com instruções passo a passo.",
+    "section1": {
+      "title": "Antes de Começar",
+      "p1": "Antes de criar uma chave de API, certifique-se de que cumpre estes requisitos:",
+      "req1": "Você deve estar logado na sua instância Odoo",
+      "req2": "Você precisa de uma conta de usuário interno (não um usuário portal)",
+      "req3": "Você deve saber qual versão do Odoo está utilizando",
+      "imgAlt": "Menu de perfil do Odoo mostrando a opção My Profile",
+      "tip": "Para verificar sua versão do Odoo, veja a parte inferior da página de Configurações ou pergunte ao administrador do sistema."
+    },
+    "section2": {
+      "title": "Odoo 14-15",
+      "p1": "No Odoo 14 e 15, as chaves de API encontram-se na seção \"Developer API Keys\" nas preferências do usuário.",
+      "path": "Navegue até: Ícone do perfil (canto superior direito) → My Profile → aba Account Security",
+      "step1": "Clique em \"New API Key\"",
+      "step2": "Insira um nome para sua chave (ex: \"Gmail Extension\")",
+      "step3": "Clique no botão de confirmação",
+      "step4": "Copie a chave gerada imediatamente — ela não poderá ser recuperada depois",
+      "warning": "Apenas Odoo 15: Se você não vir a seção \"Developer API Keys\", precisa ativar o Developer Mode primeiro. Vá em Settings → Developer Tools → Activate the developer mode, depois volte ao seu perfil.",
+      "note": "Nestas versões, as chaves de API são permanentes — nunca expiram.",
+      "imgAltSecurity": "Aba Account Security mostrando a seção Developer API Keys no Odoo 15",
+      "imgAltDevMode": "Como ativar o Developer Mode nas Configurações do Odoo",
+      "imgAltWizard": "Assistente de criação de chave de API solicitando o nome da chave",
+      "imgAltResult": "Chave de API gerada pronta para copiar"
+    },
+    "section3": {
+      "title": "Odoo 16-17",
+      "p1": "A partir do Odoo 16, a seção de chaves de API foi renomeada e não requer mais o Developer Mode.",
+      "path": "Navegue até: Ícone do perfil (canto superior direito) → My Profile → aba Account Security",
+      "step1": "Clique em \"New API Key\"",
+      "step2": "Insira um nome para sua chave (ex: \"Gmail Extension\")",
+      "step3": "Clique no botão de confirmação",
+      "step4": "Copie a chave gerada imediatamente — ela não poderá ser recuperada depois",
+      "note": "As chaves de API no Odoo 16-17 são permanentes — nunca expiram.",
+      "imgAltV16Security": "Aba Account Security mostrando a seção API Keys no Odoo 16",
+      "imgAltV16Wizard": "Assistente de criação de chave de API no Odoo 16",
+      "imgAltV16Result": "Chave de API gerada no Odoo 16",
+      "imgAltV17Security": "Aba Account Security mostrando a seção API Keys no Odoo 17",
+      "imgAltV17Wizard": "Assistente de criação de chave de API no Odoo 17",
+      "imgAltV17Result": "Chave de API gerada no Odoo 17"
+    },
+    "section4": {
+      "title": "Odoo 18",
+      "p1": "O Odoo 18 introduz a expiração de chaves. Ao criar uma chave de API, você deve escolher por quanto tempo ela será válida.",
+      "path": "Navegue até: Ícone do perfil (canto superior direito) → My Profile → aba Account Security",
+      "step1": "Clique em \"New API Key\"",
+      "step2": "Insira um nome para sua chave (ex: \"Gmail Extension\")",
+      "step3": "No seletor de duração, escolha \"Persistent Key\"",
+      "step4": "Clique em \"Generate key\"",
+      "step5": "Copie a chave gerada imediatamente — ela não poderá ser recuperada depois",
+      "warning": "Se você não selecionar \"Persistent Key\", sua chave de API expirará após a duração escolhida, e a extensão deixará de funcionar. Seria necessário criar uma nova chave e reconfigurar a extensão.",
+      "imgAltSecurity": "Aba Account Security mostrando chaves de API com coluna de data de expiração no Odoo 18",
+      "imgAltWizard": "Assistente de criação de chave de API com seletor de duração no Odoo 18",
+      "imgAltResult": "Chave de API gerada no Odoo 18"
+    },
+    "section5": {
+      "title": "Odoo 19+",
+      "p1": "O Odoo 19 redesenhou a interface de preferências do usuário. O caminho e os nomes dos botões mudaram, mas o processo é semelhante ao Odoo 18.",
+      "path": "Navegue até: Ícone do perfil (canto superior direito) → My Preferences → aba Security",
+      "step1": "Clique em \"Add API Key\"",
+      "step2": "Insira um nome para sua chave (ex: \"Gmail Extension\")",
+      "step3": "No seletor de duração, escolha \"Persistent Key\"",
+      "step4": "Clique em \"Generate key\"",
+      "step5": "Copie a chave gerada imediatamente — ela não poderá ser recuperada depois",
+      "warning": "Igual ao Odoo 18: sempre selecione \"Persistent Key\" para evitar a expiração.",
+      "note": "No Odoo 19, as chaves de API existentes são exibidas como cartões (visualização kanban) em vez de uma lista.",
+      "imgAltSecurity": "Aba Security mostrando chaves de API em visualização kanban no Odoo 19",
+      "imgAltWizard": "Assistente de criação de chave de API com seletor de duração no Odoo 19",
+      "imgAltResult": "Chave de API gerada no Odoo 19"
+    },
+    "section6": {
+      "title": "Referência Rápida",
+      "thVersion": "Versão",
+      "thPath": "Caminho",
+      "thButton": "Botão",
+      "thDevMode": "Dev Mode",
+      "thExpiration": "Expiração",
+      "v14path": "My Profile → Account Security",
+      "v15path": "My Profile → Account Security",
+      "v1617path": "My Profile → Account Security",
+      "v18path": "My Profile → Account Security",
+      "v19path": "My Preferences → Security",
+      "v14button": "New API Key",
+      "v15button": "New API Key",
+      "v1617button": "New API Key",
+      "v18button": "New API Key",
+      "v19button": "Add API Key",
+      "no": "Não",
+      "yes": "Sim",
+      "permanent": "Permanente",
+      "selectPersistent": "Deve selecionar \"Persistent\""
+    },
+    "section7": {
+      "title": "Resolução de Problemas",
+      "issue1Title": "Erro \"Invalid API Key\"",
+      "issue1Desc": "Verifique se copiou a chave inteira sem espaços extras. Se estiver usando Odoo 18+, certifique-se de que a chave não expirou — crie uma nova com \"Persistent Key\" selecionado.",
+      "issue2Title": "\"API Key expired\"",
+      "issue2Desc": "Isto acontece no Odoo 18+ quando a chave foi criada sem selecionar \"Persistent Key\". Crie uma nova chave e selecione \"Persistent Key\" como duração.",
+      "issue3Title": "Não consigo encontrar o botão de chave de API",
+      "issue3Desc": "No Odoo 15, você precisa ativar o Developer Mode primeiro (Settings → Developer Tools → Activate). No Odoo 19+, a seção foi movida para My Preferences → Security (não Account Security).",
+      "issue4Title": "Erro \"Connection timeout\"",
+      "issue4Desc": "Verifique se a URL do Odoo está correta e acessível. Certifique-se de incluir https:// e remover qualquer barra final."
+    },
+    "cta": {
+      "title": "Pronto para conectar?",
+      "subtitle": "Agora que você tem sua chave de API, instale a extensão e conecte sua instância Odoo ao Gmail em segundos.",
+      "button": "Obter a Extensão"
     }
   }
 }

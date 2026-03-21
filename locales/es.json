@@ -81,6 +81,15 @@
       "ogDescription": "Configura OAuth para enviar emails desde Odoo con tu dominio. Aprende la estrategia híbrida para bandejas personales vs equipos.",
       "twitterTitle": "Odoo Gmail: Configuración de Dominio Personal",
       "twitterDescription": "Cómo enviar emails desde Odoo con tu dominio sin crear caos en tu bandeja."
+    },
+    "blogApiKeySetup": {
+      "title": "Cómo crear una API Key en Odoo (Todas las versiones) | Integración de Odoo para Gmail",
+      "description": "Guía paso a paso para crear API keys en Odoo 14 a 19. Conoce las diferencias entre versiones y cómo configurar una clave persistente para integraciones externas.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog/odoo-api-key-setup.html",
+      "ogTitle": "Cómo crear una API Key en Odoo (Todas las versiones)",
+      "ogDescription": "Guía paso a paso para crear API keys en Odoo 14 a 19, con capturas de pantalla para cada versión.",
+      "twitterTitle": "Cómo crear una API Key en Odoo (Todas las versiones)",
+      "twitterDescription": "Guía paso a paso para crear API keys en Odoo 14 a 19, con capturas de pantalla para cada versión."
     }
   },
   "nav": {
@@ -324,7 +333,9 @@
       "updateDesc": "Para cambiar tu URL de Odoo o API key:",
       "updateStep1": "Haz clic en el botón de menú (tres puntos verticales ⋮) en la barra lateral",
       "updateStep2": "Selecciona Cerrar sesión",
-      "updateStep3": "Introduce tus nuevas credenciales"
+      "updateStep3": "Introduce tus nuevas credenciales",
+      "versionNote": "La creación de claves API varía entre versiones de Odoo.",
+      "versionNoteLink": "Consulta la guía detallada para tu versión →"
     },
     "features": {
       "title": "Resumen de Funciones",
@@ -1110,6 +1121,11 @@
       "date": "Enero 2025",
       "excerpt": "Si eres usuario de Odoo, probablemente te has hecho esta pregunta: \"¿Cómo puedo enviar correos desde Odoo y que el cliente vea que soy yo (nombre@miempresa.com) y no un bot genérico?\""
     },
+    "article2": {
+      "title": "Cómo crear una API Key en Odoo (Todas las versiones)",
+      "date": "Marzo 2026",
+      "excerpt": "Guía paso a paso para crear API keys en Odoo 14 a 19. Conoce las diferencias entre versiones, incluyendo la opción crítica \"Persistent Key\" en Odoo 18+."
+    },
     "cta": {
       "title": "Prueba Integración de Odoo para Gmail",
       "subtitle": "Conecta tu Gmail a Odoo en segundos",
@@ -1170,6 +1186,118 @@
       "title": "¿Listo para probarlo?",
       "subtitle": "Conecta tu Gmail a Odoo en segundos con nuestra extensión de Chrome.",
       "button": "Prueba la extensión gratis"
+    }
+  },
+  "blogApiKeySetup": {
+    "title": "Cómo crear una API Key en Odoo (Todas las versiones)",
+    "date": "21 de Marzo, 2026",
+    "intro": "Las API keys permiten que herramientas externas — como nuestra extensión de Gmail — se conecten de forma segura a tu instancia de Odoo sin usar tu contraseña. El proceso para crear una varía ligeramente según la versión de Odoo. Esta guía cubre todas las versiones desde Odoo 14 hasta 19 con instrucciones paso a paso.",
+    "section1": {
+      "title": "Antes de empezar",
+      "p1": "Antes de crear una API key, asegúrate de cumplir estos requisitos:",
+      "req1": "Debes haber iniciado sesión en tu instancia de Odoo",
+      "req2": "Necesitas una cuenta de usuario interno (no un usuario de portal)",
+      "req3": "Debes saber qué versión de Odoo estás utilizando",
+      "imgAlt": "Menú de perfil de Odoo mostrando la opción My Profile",
+      "tip": "Para verificar tu versión de Odoo, revisa la parte inferior de la página de Ajustes o consulta con tu administrador del sistema."
+    },
+    "section2": {
+      "title": "Odoo 14-15",
+      "p1": "En Odoo 14 y 15, las API keys se encuentran en la sección \"Developer API Keys\" de las preferencias de usuario.",
+      "path": "Navega a: Icono de perfil (arriba a la derecha) → My Profile → pestaña Account Security",
+      "step1": "Haz clic en \"New API Key\"",
+      "step2": "Ingresa un nombre para tu clave (ej: \"Gmail Extension\")",
+      "step3": "Haz clic en el botón de confirmación",
+      "step4": "Copia la clave generada inmediatamente — no se puede recuperar después",
+      "warning": "Solo Odoo 15: Si no ves la sección \"Developer API Keys\", necesitas activar Developer Mode primero. Ve a Settings → Developer Tools → Activar el modo desarrollador, luego vuelve a tu perfil.",
+      "note": "En estas versiones, las API keys son permanentes — nunca expiran.",
+      "imgAltSecurity": "Pestaña Account Security mostrando la sección Developer API Keys en Odoo 15",
+      "imgAltDevMode": "Cómo activar Developer Mode en los ajustes de Odoo",
+      "imgAltWizard": "Asistente de creación de API Key solicitando el nombre de la clave",
+      "imgAltResult": "API key generada lista para copiar"
+    },
+    "section3": {
+      "title": "Odoo 16-17",
+      "p1": "A partir de Odoo 16, la sección de API Keys fue renombrada y ya no requiere Developer Mode.",
+      "path": "Navega a: Icono de perfil (arriba a la derecha) → My Profile → pestaña Account Security",
+      "step1": "Haz clic en \"New API Key\"",
+      "step2": "Ingresa un nombre para tu clave (ej: \"Gmail Extension\")",
+      "step3": "Haz clic en el botón de confirmación",
+      "step4": "Copia la clave generada inmediatamente — no se puede recuperar después",
+      "note": "Las API keys en Odoo 16-17 son permanentes — nunca expiran.",
+      "imgAltV16Security": "Pestaña Account Security mostrando la sección API Keys en Odoo 16",
+      "imgAltV16Wizard": "Asistente de creación de API Key en Odoo 16",
+      "imgAltV16Result": "API key generada en Odoo 16",
+      "imgAltV17Security": "Pestaña Account Security mostrando la sección API Keys en Odoo 17",
+      "imgAltV17Wizard": "Asistente de creación de API Key en Odoo 17",
+      "imgAltV17Result": "API key generada en Odoo 17"
+    },
+    "section4": {
+      "title": "Odoo 18",
+      "p1": "Odoo 18 introduce la expiración de claves. Al crear una API key, debes elegir cuánto tiempo será válida.",
+      "path": "Navega a: Icono de perfil (arriba a la derecha) → My Profile → pestaña Account Security",
+      "step1": "Haz clic en \"New API Key\"",
+      "step2": "Ingresa un nombre para tu clave (ej: \"Gmail Extension\")",
+      "step3": "En el selector de duración, elige \"Persistent Key\"",
+      "step4": "Haz clic en \"Generate key\"",
+      "step5": "Copia la clave generada inmediatamente — no se puede recuperar después",
+      "warning": "Si no seleccionas \"Persistent Key\", tu API key expirará después de la duración elegida, y la extensión dejará de funcionar. Necesitarías crear una nueva clave y reconfigurar la extensión.",
+      "imgAltSecurity": "Pestaña Account Security mostrando API Keys con columna de fecha de expiración en Odoo 18",
+      "imgAltWizard": "Asistente de creación de API Key con selector de duración en Odoo 18",
+      "imgAltResult": "API key generada en Odoo 18"
+    },
+    "section5": {
+      "title": "Odoo 19+",
+      "p1": "Odoo 19 rediseñó la interfaz de preferencias de usuario. La ruta y los nombres de los botones cambiaron, pero el proceso es similar a Odoo 18.",
+      "path": "Navega a: Icono de perfil (arriba a la derecha) → My Preferences → pestaña Security",
+      "step1": "Haz clic en \"Add API Key\"",
+      "step2": "Ingresa un nombre para tu clave (ej: \"Gmail Extension\")",
+      "step3": "En el selector de duración, elige \"Persistent Key\"",
+      "step4": "Haz clic en \"Generate key\"",
+      "step5": "Copia la clave generada inmediatamente — no se puede recuperar después",
+      "warning": "Igual que en Odoo 18: selecciona siempre \"Persistent Key\" para evitar la expiración.",
+      "note": "En Odoo 19, las API keys existentes se muestran como tarjetas (vista kanban) en lugar de una lista.",
+      "imgAltSecurity": "Pestaña Security mostrando API Keys en vista kanban en Odoo 19",
+      "imgAltWizard": "Asistente de creación de API Key con selector de duración en Odoo 19",
+      "imgAltResult": "API key generada en Odoo 19"
+    },
+    "section6": {
+      "title": "Referencia rápida",
+      "thVersion": "Versión",
+      "thPath": "Ruta",
+      "thButton": "Botón",
+      "thDevMode": "Dev Mode",
+      "thExpiration": "Expiración",
+      "v14path": "My Profile → Account Security",
+      "v15path": "My Profile → Account Security",
+      "v1617path": "My Profile → Account Security",
+      "v18path": "My Profile → Account Security",
+      "v19path": "My Preferences → Security",
+      "v14button": "New API Key",
+      "v15button": "New API Key",
+      "v1617button": "New API Key",
+      "v18button": "New API Key",
+      "v19button": "Add API Key",
+      "no": "No",
+      "yes": "Sí",
+      "permanent": "Permanente",
+      "selectPersistent": "Debe seleccionar \"Persistent\""
+    },
+    "section7": {
+      "title": "Solución de problemas",
+      "issue1Title": "Error \"Invalid API Key\"",
+      "issue1Desc": "Verifica que hayas copiado la clave completa sin espacios adicionales. Si usas Odoo 18+, asegúrate de que la clave no haya expirado — crea una nueva con \"Persistent Key\" seleccionado.",
+      "issue2Title": "\"API Key expired\"",
+      "issue2Desc": "Esto ocurre en Odoo 18+ cuando la clave fue creada sin seleccionar \"Persistent Key\". Crea una nueva clave y selecciona \"Persistent Key\" como duración.",
+      "issue3Title": "No encuentro el botón de API Key",
+      "issue3Desc": "En Odoo 15, necesitas activar Developer Mode primero (Settings → Developer Tools → Activar). En Odoo 19+, la sección se movió a My Preferences → Security (no Account Security).",
+      "issue4Title": "Error \"Connection timeout\"",
+      "issue4Desc": "Verifica que la URL de tu Odoo sea correcta y accesible. Asegúrate de incluir https:// y eliminar cualquier barra final."
+    },
+    "cta": {
+      "title": "¿Listo para conectar?",
+      "subtitle": "Ahora que tienes tu API key, instala la extensión y conecta tu instancia de Odoo a Gmail en segundos.",
+      "button": "Obtener la Extensión"
     }
   }
 }

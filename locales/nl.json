@@ -81,6 +81,15 @@
       "ogDescription": "Configureer OAuth voor Odoo e-mailverzending met uw domein. Leer de hybride strategie voor persoonlijke versus team-inboxen.",
       "twitterTitle": "Odoo Gmail: Persoonlijke Domeinconfiguratie",
       "twitterDescription": "Hoe u e-mails verzendt vanuit Odoo met uw domein zonder inbox-chaos te creëren."
+    },
+    "blogApiKeySetup": {
+      "title": "Een API-sleutel Aanmaken in Odoo (Alle Versies) | Odoo Integratie voor Gmail",
+      "description": "Stapsgewijze handleiding voor het aanmaken van API-sleutels in Odoo 14 tot en met 19. Leer de verschillen tussen versies en hoe u een persistente sleutel instelt voor externe integraties.",
+      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/nl/blog/odoo-api-key-setup.html",
+      "ogTitle": "Een API-sleutel Aanmaken in Odoo (Alle Versies)",
+      "ogDescription": "Stapsgewijze handleiding voor het aanmaken van API-sleutels in Odoo 14 tot en met 19, met screenshots voor elke versie.",
+      "twitterTitle": "Een API-sleutel Aanmaken in Odoo (Alle Versies)",
+      "twitterDescription": "Stapsgewijze handleiding voor het aanmaken van API-sleutels in Odoo 14 tot en met 19, met screenshots voor elke versie."
     }
   },
   "userGuide": {
@@ -135,7 +144,9 @@
       "updateDesc": "Om uw Odoo URL of API-sleutel te wijzigen:",
       "updateStep1": "Klik op de menuknop (drie verticale puntjes ⋮) in de zijbalk",
       "updateStep2": "Selecteer Uitloggen",
-      "updateStep3": "Voer uw nieuwe inloggegevens in"
+      "updateStep3": "Voer uw nieuwe inloggegevens in",
+      "versionNote": "Het aanmaken van API-sleutels verschilt per Odoo-versie.",
+      "versionNoteLink": "Bekijk de gedetailleerde handleiding voor uw versie →"
     },
     "features": {
       "title": "Functieoverzicht",
@@ -1110,6 +1121,11 @@
       "date": "Januari 2025",
       "excerpt": "Als u een Odoo-gebruiker bent, heeft u zich waarschijnlijk afgevraagd: \"Hoe kan ik e-mails versturen vanuit Odoo zodat de klant ziet dat het van mij komt (naam@mijnbedrijf.nl) en niet van een generieke bot?\""
     },
+    "article2": {
+      "title": "Een API-sleutel Aanmaken in Odoo (Alle Versies)",
+      "date": "Maart 2026",
+      "excerpt": "Stapsgewijze handleiding voor het aanmaken van API-sleutels in Odoo 14 tot en met 19. Leer de verschillen tussen versies, inclusief de essentiële optie \"Persistent Key\" in Odoo 18+."
+    },
     "cta": {
       "title": "Probeer Odoo Integratie voor Gmail",
       "subtitle": "Verbind uw Gmail met Odoo in seconden",
@@ -1170,6 +1186,118 @@
       "title": "Klaar om het te proberen?",
       "subtitle": "Verbind uw Gmail met Odoo in seconden met onze Chrome-extensie.",
       "button": "Extensie Gratis Proberen"
+    }
+  },
+  "blogApiKeySetup": {
+    "title": "Een API-sleutel Aanmaken in Odoo (Alle Versies)",
+    "date": "21 maart 2026",
+    "intro": "API-sleutels stellen externe tools — zoals onze Gmail-extensie — in staat om veilig verbinding te maken met uw Odoo-instantie zonder uw wachtwoord te gebruiken. Het aanmaakproces verschilt enigszins afhankelijk van uw Odoo-versie. Deze handleiding behandelt elke versie van Odoo 14 tot en met 19 met stapsgewijze instructies.",
+    "section1": {
+      "title": "Voordat u Begint",
+      "p1": "Voordat u een API-sleutel aanmaakt, controleer of u aan deze vereisten voldoet:",
+      "req1": "U moet ingelogd zijn op uw Odoo-instantie",
+      "req2": "U heeft een intern gebruikersaccount nodig (geen portalgebruiker)",
+      "req3": "U moet weten welke Odoo-versie u gebruikt",
+      "imgAlt": "Odoo-profielmenu met de optie My Profile",
+      "tip": "Om uw Odoo-versie te controleren, kijk onderaan de pagina Instellingen of vraag het aan uw systeembeheerder."
+    },
+    "section2": {
+      "title": "Odoo 14-15",
+      "p1": "In Odoo 14 en 15 vindt u API-sleutels onder de sectie \"Developer API Keys\" in uw gebruikersvoorkeuren.",
+      "path": "Navigeer naar: Profielicoon (rechtsboven) → My Profile → tabblad Account Security",
+      "step1": "Klik op \"New API Key\"",
+      "step2": "Voer een naam in voor uw sleutel (bijv. \"Gmail Extension\")",
+      "step3": "Klik op de bevestigingsknop",
+      "step4": "Kopieer de gegenereerde sleutel onmiddellijk — deze kan later niet meer worden opgehaald",
+      "warning": "Alleen Odoo 15: Als u de sectie \"Developer API Keys\" niet ziet, moet u eerst Developer Mode activeren. Ga naar Settings → Developer Tools → Activate the developer mode en keer dan terug naar uw profiel.",
+      "note": "In deze versies zijn API-sleutels permanent — ze verlopen nooit.",
+      "imgAltSecurity": "Tabblad Account Security met de sectie Developer API Keys in Odoo 15",
+      "imgAltDevMode": "Hoe Developer Mode te activeren in Odoo Instellingen",
+      "imgAltWizard": "Wizard voor het aanmaken van een API-sleutel die om de sleutelnaam vraagt",
+      "imgAltResult": "Gegenereerde API-sleutel klaar om te kopiëren"
+    },
+    "section3": {
+      "title": "Odoo 16-17",
+      "p1": "Vanaf Odoo 16 is de sectie API Keys hernoemd en is Developer Mode niet meer vereist.",
+      "path": "Navigeer naar: Profielicoon (rechtsboven) → My Profile → tabblad Account Security",
+      "step1": "Klik op \"New API Key\"",
+      "step2": "Voer een naam in voor uw sleutel (bijv. \"Gmail Extension\")",
+      "step3": "Klik op de bevestigingsknop",
+      "step4": "Kopieer de gegenereerde sleutel onmiddellijk — deze kan later niet meer worden opgehaald",
+      "note": "API-sleutels in Odoo 16-17 zijn permanent — ze verlopen nooit.",
+      "imgAltV16Security": "Tabblad Account Security met de sectie API Keys in Odoo 16",
+      "imgAltV16Wizard": "Wizard voor het aanmaken van een API-sleutel in Odoo 16",
+      "imgAltV16Result": "Gegenereerde API-sleutel in Odoo 16",
+      "imgAltV17Security": "Tabblad Account Security met de sectie API Keys in Odoo 17",
+      "imgAltV17Wizard": "Wizard voor het aanmaken van een API-sleutel in Odoo 17",
+      "imgAltV17Result": "Gegenereerde API-sleutel in Odoo 17"
+    },
+    "section4": {
+      "title": "Odoo 18",
+      "p1": "Odoo 18 introduceert sleutelverloopdatum. Bij het aanmaken van een API-sleutel moet u kiezen hoe lang deze geldig is.",
+      "path": "Navigeer naar: Profielicoon (rechtsboven) → My Profile → tabblad Account Security",
+      "step1": "Klik op \"New API Key\"",
+      "step2": "Voer een naam in voor uw sleutel (bijv. \"Gmail Extension\")",
+      "step3": "Kies in de duurkiezer \"Persistent Key\"",
+      "step4": "Klik op \"Generate key\"",
+      "step5": "Kopieer de gegenereerde sleutel onmiddellijk — deze kan later niet meer worden opgehaald",
+      "warning": "Als u niet \"Persistent Key\" selecteert, verloopt uw API-sleutel na de gekozen duur en stopt de extensie met werken. U zou dan een nieuwe sleutel moeten aanmaken en de extensie opnieuw moeten configureren.",
+      "imgAltSecurity": "Tabblad Account Security met API-sleutels met verloopdatumkolom in Odoo 18",
+      "imgAltWizard": "Wizard voor het aanmaken van een API-sleutel met duurkiezer in Odoo 18",
+      "imgAltResult": "Gegenereerde API-sleutel in Odoo 18"
+    },
+    "section5": {
+      "title": "Odoo 19+",
+      "p1": "Odoo 19 heeft de interface voor gebruikersvoorkeuren opnieuw ontworpen. Het pad en de knopnamen zijn gewijzigd, maar het proces is vergelijkbaar met Odoo 18.",
+      "path": "Navigeer naar: Profielicoon (rechtsboven) → My Preferences → tabblad Security",
+      "step1": "Klik op \"Add API Key\"",
+      "step2": "Voer een naam in voor uw sleutel (bijv. \"Gmail Extension\")",
+      "step3": "Kies in de duurkiezer \"Persistent Key\"",
+      "step4": "Klik op \"Generate key\"",
+      "step5": "Kopieer de gegenereerde sleutel onmiddellijk — deze kan later niet meer worden opgehaald",
+      "warning": "Hetzelfde als Odoo 18: selecteer altijd \"Persistent Key\" om verloop te voorkomen.",
+      "note": "In Odoo 19 worden bestaande API-sleutels weergegeven als kaarten (kanbanweergave) in plaats van een lijst.",
+      "imgAltSecurity": "Tabblad Security met API-sleutels in kanbanweergave in Odoo 19",
+      "imgAltWizard": "Wizard voor het aanmaken van een API-sleutel met duurkiezer in Odoo 19",
+      "imgAltResult": "Gegenereerde API-sleutel in Odoo 19"
+    },
+    "section6": {
+      "title": "Snelle Referentie",
+      "thVersion": "Versie",
+      "thPath": "Pad",
+      "thButton": "Knop",
+      "thDevMode": "Dev Mode",
+      "thExpiration": "Verloop",
+      "v14path": "My Profile → Account Security",
+      "v15path": "My Profile → Account Security",
+      "v1617path": "My Profile → Account Security",
+      "v18path": "My Profile → Account Security",
+      "v19path": "My Preferences → Security",
+      "v14button": "New API Key",
+      "v15button": "New API Key",
+      "v1617button": "New API Key",
+      "v18button": "New API Key",
+      "v19button": "Add API Key",
+      "no": "Nee",
+      "yes": "Ja",
+      "permanent": "Permanent",
+      "selectPersistent": "Moet \"Persistent\" selecteren"
+    },
+    "section7": {
+      "title": "Probleemoplossing",
+      "issue1Title": "Fout \"Invalid API Key\"",
+      "issue1Desc": "Controleer of u de volledige sleutel heeft gekopieerd zonder extra spaties. Als u Odoo 18+ gebruikt, zorg ervoor dat de sleutel niet is verlopen — maak een nieuwe aan met \"Persistent Key\" geselecteerd.",
+      "issue2Title": "\"API Key expired\"",
+      "issue2Desc": "Dit gebeurt in Odoo 18+ wanneer de sleutel is aangemaakt zonder \"Persistent Key\" te selecteren. Maak een nieuwe sleutel aan en selecteer \"Persistent Key\" als duur.",
+      "issue3Title": "Kan de API Key-knop niet vinden",
+      "issue3Desc": "In Odoo 15 moet u eerst Developer Mode activeren (Settings → Developer Tools → Activate). In Odoo 19+ is de sectie verplaatst naar My Preferences → Security (niet Account Security).",
+      "issue4Title": "Fout \"Connection timeout\"",
+      "issue4Desc": "Controleer of uw Odoo-URL correct en bereikbaar is. Zorg ervoor dat u https:// toevoegt en eventuele trailing slash verwijdert."
+    },
+    "cta": {
+      "title": "Klaar om te verbinden?",
+      "subtitle": "Nu u uw API-sleutel heeft, installeer de extensie en verbind uw Odoo-instantie met Gmail in seconden.",
+      "button": "Extensie Downloaden"
     }
   }
 }
