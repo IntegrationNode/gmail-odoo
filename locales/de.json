@@ -929,6 +929,9 @@
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
     },
+    "v0404": {
+      "errorMessages": "Verbesserte Fehlermeldungen"
+    },
     "v0403": {
       "setupGuide": "Hilfe-Link im Konfigurationsformular mit einer detaillierten Anleitung zum Erstellen von API-Schlüsseln in allen Odoo-Versionen (14-19)"
     }

@@ -929,6 +929,9 @@
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
     },
+    "v0404": {
+      "errorMessages": "Messages d'erreur améliorés"
+    },
     "v0403": {
       "setupGuide": "Lien d'aide dans le formulaire de configuration avec un guide détaillé pour créer des clés API dans toutes les versions d'Odoo (14-19)"
     }

@@ -929,6 +929,9 @@
       "install": "Instalar Extensión",
       "viewPricing": "Ver Precios"
     },
+    "v0404": {
+      "errorMessages": "Mensajes de error mejorados"
+    },
     "v0403": {
       "setupGuide": "Enlace de ayuda en el formulario de configuración con una guía detallada para crear API keys en todas las versiones de Odoo (14-19)"
     }
