@@ -137,6 +137,21 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-api-key-setup.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.github.io/odoo-integration-gmail-docs/it/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pt/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.github.io/odoo-integration-gmail-docs/nl/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pl/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-api-key-setup.html" />
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- Spanish pages -->
   <url>
@@ -273,6 +288,21 @@
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog/odoo-api-key-setup.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.github.io/odoo-integration-gmail-docs/it/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pt/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.github.io/odoo-integration-gmail-docs/nl/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pl/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-api-key-setup.html" />
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- French pages -->
@@ -411,6 +441,21 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog/odoo-api-key-setup.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.github.io/odoo-integration-gmail-docs/it/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pt/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.github.io/odoo-integration-gmail-docs/nl/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pl/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-api-key-setup.html" />
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- German pages -->
   <url>
@@ -547,6 +592,21 @@
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog/odoo-api-key-setup.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.github.io/odoo-integration-gmail-docs/it/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pt/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.github.io/odoo-integration-gmail-docs/nl/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pl/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-api-key-setup.html" />
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- Italian pages -->
@@ -685,6 +745,21 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://integrationnode.github.io/odoo-integration-gmail-docs/it/blog/odoo-api-key-setup.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.github.io/odoo-integration-gmail-docs/it/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pt/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.github.io/odoo-integration-gmail-docs/nl/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pl/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-api-key-setup.html" />
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- Portuguese pages -->
   <url>
@@ -821,6 +896,21 @@
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.github.io/odoo-integration-gmail-docs/pt/blog/odoo-api-key-setup.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.github.io/odoo-integration-gmail-docs/it/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pt/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.github.io/odoo-integration-gmail-docs/nl/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pl/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-api-key-setup.html" />
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- Dutch pages -->
@@ -959,6 +1049,21 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://integrationnode.github.io/odoo-integration-gmail-docs/nl/blog/odoo-api-key-setup.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.github.io/odoo-integration-gmail-docs/it/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pt/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.github.io/odoo-integration-gmail-docs/nl/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pl/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-api-key-setup.html" />
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 <!-- Polish pages -->
   <url>
     <loc>https://integrationnode.github.io/odoo-integration-gmail-docs/pl/</loc>
@@ -1094,5 +1199,20 @@
     <lastmod>2026-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.github.io/odoo-integration-gmail-docs/pl/blog/odoo-api-key-setup.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.github.io/odoo-integration-gmail-docs/es/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.github.io/odoo-integration-gmail-docs/de/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.github.io/odoo-integration-gmail-docs/it/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pt/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.github.io/odoo-integration-gmail-docs/nl/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.github.io/odoo-integration-gmail-docs/pl/blog/odoo-api-key-setup.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-api-key-setup.html" />
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
