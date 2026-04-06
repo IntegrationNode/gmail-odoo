@@ -4,7 +4,7 @@
         "@type": "Article",
         "headline": "Intégration Odoo Gmail : Utiliser votre domaine personnel sans chaos dans votre boîte de réception",
         "description": "Apprenez à configurer OAuth pour envoyer des emails depuis Odoo avec votre domaine, et pourquoi vous ne devriez pas synchroniser tout votre Gmail avec Odoo.",
-        "image": "https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png",
+        "image": "https://integrationnode.com/gmail-odoo/assets/og-image.png",
         "author": {
             "@type": "Organization",
             "name": "OdooIntegrations Team"
@@ -14,14 +14,14 @@
             "name": "OdooIntegrations",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://integrationnode.github.io/odoo-integration-gmail-docs/favicon.png"
+                "url": "https://integrationnode.com/gmail-odoo/favicon.png"
             }
         },
         "datePublished": "2025-01-18T00:00:00+00:00",
         "dateModified": "2025-01-18T00:00:00+00:00",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/blog/odoo-gmail-domain-configuration.html"
+            "@id": "https://integrationnode.com/gmail-odoo/fr/blog/odoo-gmail-domain-configuration.html"
         }
     }
 ]

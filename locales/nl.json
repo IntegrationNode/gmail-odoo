@@ -4,7 +4,7 @@
     "index": {
       "title": "Odoo Integratie voor Gmail",
       "description": "Odoo Integratie voor Gmail - Bekijk contacten, maak kansen, taken en tickets direct in uw Gmail-inbox. Chrome-extensie voor naadloze CRM-integratie.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/nl/",
+      "canonical": "https://integrationnode.com/gmail-odoo/nl/",
       "ogTitle": "Odoo Integratie voor Gmail",
       "ogDescription": "Transformeer uw Gmail in een krachtige CRM-interface met naadloze Odoo-integratie. Bekijk contacten, maak kansen, taken en tickets.",
       "twitterTitle": "Odoo Integratie voor Gmail",
@@ -13,7 +13,7 @@
     "pricing": {
       "title": "Prijzen - Odoo Integratie voor Gmail",
       "description": "Odoo Integratie voor Gmail prijzen - Gratis en PLUS abonnementen. Begin gratis, upgrade wanneer u geavanceerd zoeken, financiële inzichten en meer nodig heeft.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/nl/pricing.html",
+      "canonical": "https://integrationnode.com/gmail-odoo/nl/pricing.html",
       "ogTitle": "Prijzen - Odoo Integratie voor Gmail",
       "ogDescription": "Gratis en PLUS abonnementen beschikbaar. Begin gratis, upgrade wanneer u geavanceerde functies nodig heeft.",
       "twitterTitle": "Prijzen - Odoo Integratie voor Gmail",
@@ -22,7 +22,7 @@
     "userGuide": {
       "title": "Gebruikershandleiding - Odoo Integratie voor Gmail",
       "description": "Volledige gebruikershandleiding voor Odoo Integratie voor Gmail - Leer hoe u alle functies installeert, configureert en gebruikt, inclusief e-mail loggen, CRM-kansen, taken en tickets.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/nl/user-guide.html",
+      "canonical": "https://integrationnode.com/gmail-odoo/nl/user-guide.html",
       "ogTitle": "Gebruikershandleiding - Odoo Integratie voor Gmail",
       "ogDescription": "Volledige handleiding om Odoo Integratie voor Gmail te installeren, configureren en gebruiken. Leer over e-mail loggen, CRM, taken en meer.",
       "twitterTitle": "Gebruikershandleiding - Odoo Integratie voor Gmail",
@@ -31,7 +31,7 @@
     "changelog": {
       "title": "Wijzigingslogboek - Odoo Integratie voor Gmail",
       "description": "Releasegeschiedenis en updates voor Odoo Integratie voor Gmail extensie. Volg nieuwe functies, verbeteringen en bugfixes.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/nl/changelog.html",
+      "canonical": "https://integrationnode.com/gmail-odoo/nl/changelog.html",
       "ogTitle": "Wijzigingslogboek - Odoo Integratie voor Gmail",
       "ogDescription": "Releasegeschiedenis en updates. Volg nieuwe functies, verbeteringen en bugfixes.",
       "twitterTitle": "Wijzigingslogboek - Odoo Integratie voor Gmail",
@@ -40,7 +40,7 @@
     "privacy": {
       "title": "Privacybeleid - Odoo Integratie voor Gmail",
       "description": "Privacybeleid voor Odoo Integratie voor Gmail. Leer hoe wij met uw gegevens omgaan, welke machtigingen wij vragen en wat uw privacyrechten zijn.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/nl/privacy.html",
+      "canonical": "https://integrationnode.com/gmail-odoo/nl/privacy.html",
       "ogTitle": "Privacybeleid - Odoo Integratie voor Gmail",
       "ogDescription": "Leer hoe wij met uw gegevens omgaan, welke machtigingen wij vragen en wat uw privacyrechten zijn.",
       "twitterTitle": "Privacybeleid - Odoo Integratie voor Gmail",
@@ -49,7 +49,7 @@
     "comparison": {
       "title": "Odoo Gmail Plugin Alternatief | 10-20x Snellere Chrome-extensie",
       "description": "Op zoek naar een Odoo Gmail Plugin alternatief? Onze Chrome-extensie is 10-20x sneller, stabieler en werkt op elke Odoo-instantie. Overstappen in 2 minuten.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/nl/comparison.html",
+      "canonical": "https://integrationnode.com/gmail-odoo/nl/comparison.html",
       "ogTitle": "Odoo Gmail Plugin Alternatief | 10-20x Sneller",
       "ogDescription": "Vergelijk onze Gmail-extensie met de officiële Odoo-plugin. 10-20x snellere laadtijden, stabiele verbinding, werkt op zelf-gehoste Odoo zonder codewijzigingen.",
       "twitterTitle": "Odoo Gmail Plugin Alternatief | 10-20x Sneller",
@@ -58,7 +58,7 @@
     "alternative": {
       "title": "Beste Odoo Gmail Plugin Alternatief | Snelle Chrome-extensie",
       "description": "Op zoek naar een alternatief voor de Odoo Gmail Plugin? Onze Chrome-extensie is 10-20x sneller, stabieler en werkt op elke Odoo-instantie zonder codewijzigingen.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/nl/odoo-gmail-plugin-alternative.html",
+      "canonical": "https://integrationnode.com/gmail-odoo/nl/odoo-gmail-plugin-alternative.html",
       "ogTitle": "Beste Odoo Gmail Plugin Alternatief",
       "ogDescription": "Moe van trage laadtijden en verbroken verbindingen? Onze extensie laadt in 100-300ms en werkt op elke Odoo-instantie.",
       "twitterTitle": "Beste Odoo Gmail Plugin Alternatief",
@@ -67,7 +67,7 @@
     "blog": {
       "title": "Blog - Odoo Integratie voor Gmail",
       "description": "Tips en tutorials voor het integreren van Odoo met Gmail. Leer best practices voor e-mailconfiguratie, CRM-integratie en productiviteitsworkflows.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/nl/blog.html",
+      "canonical": "https://integrationnode.com/gmail-odoo/nl/blog.html",
       "ogTitle": "Blog - Odoo & Gmail Integratietips",
       "ogDescription": "Leer best practices voor het integreren van Odoo met Gmail. Tips, tutorials en productiviteitsstrategieën.",
       "twitterTitle": "Blog - Odoo & Gmail Integratie",
@@ -76,7 +76,7 @@
     "blogOdooGmailDomain": {
       "title": "Odoo Gmail Integratie: Uw Persoonlijke Domein Gebruiken Zonder Inbox-chaos",
       "description": "Leer hoe u OAuth configureert voor het verzenden van e-mails vanuit Odoo met uw domein, en waarom u niet uw hele Gmail met Odoo moet synchroniseren.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/nl/blog/odoo-gmail-domain-configuration.html",
+      "canonical": "https://integrationnode.com/gmail-odoo/nl/blog/odoo-gmail-domain-configuration.html",
       "ogTitle": "Odoo Gmail Integratie: Handleiding voor Persoonlijk Domein",
       "ogDescription": "Configureer OAuth voor Odoo e-mailverzending met uw domein. Leer de hybride strategie voor persoonlijke versus team-inboxen.",
       "twitterTitle": "Odoo Gmail: Persoonlijke Domeinconfiguratie",
@@ -85,7 +85,7 @@
     "blogApiKeySetup": {
       "title": "Een API-sleutel Aanmaken in Odoo (Alle Versies) | Odoo Integratie voor Gmail",
       "description": "Stapsgewijze handleiding voor het aanmaken van API-sleutels in Odoo 14 tot en met 19. Leer de verschillen tussen versies en hoe u een persistente sleutel instelt voor externe integraties.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/nl/blog/odoo-api-key-setup.html",
+      "canonical": "https://integrationnode.com/gmail-odoo/nl/blog/odoo-api-key-setup.html",
       "ogTitle": "Een API-sleutel Aanmaken in Odoo (Alle Versies)",
       "ogDescription": "Stapsgewijze handleiding voor het aanmaken van API-sleutels in Odoo 14 tot en met 19, met screenshots voor elke versie.",
       "twitterTitle": "Een API-sleutel Aanmaken in Odoo (Alle Versies)",

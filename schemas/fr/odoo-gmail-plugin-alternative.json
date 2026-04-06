@@ -3,16 +3,16 @@
     "@graph": [
         {
             "@type": "Article",
-            "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/odoo-gmail-plugin-alternative.html#article",
+            "@id": "https://integrationnode.com/gmail-odoo/fr/odoo-gmail-plugin-alternative.html#article",
             "headline": "Meilleure Alternative au Plugin Gmail Odoo - Extension Chrome 10-20x Plus Rapide",
             "description": "Vous cherchez une alternative au plugin Gmail Odoo ? Notre extension Chrome charge en 100-300ms contre 2-6 secondes, fonctionne sur Odoo auto-hébergé et ne se déconnecte jamais.",
             "datePublished": "2025-11-22T00:00:00+00:00",
             "dateModified": "2026-02-22T00:00:00+00:00",
-            "author": { "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#organization" },
-            "publisher": { "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#organization" },
+            "author": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
+            "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
             "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/odoo-gmail-plugin-alternative.html"
+                "@id": "https://integrationnode.com/gmail-odoo/fr/odoo-gmail-plugin-alternative.html"
             },
             "keywords": ["plugin gmail odoo", "intégration gmail odoo", "alternative plugin odoo gmail", "extension chrome odoo", "odoo crm gmail"],
             "articleSection": "Comparaison de produits",
@@ -38,13 +38,13 @@
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Accueil",
-                    "item": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/"
+                    "item": "https://integrationnode.com/gmail-odoo/fr/"
                 },
                 {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Alternative au Plugin Odoo Gmail",
-                    "item": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/odoo-gmail-plugin-alternative.html"
+                    "item": "https://integrationnode.com/gmail-odoo/fr/odoo-gmail-plugin-alternative.html"
                 }
             ]
         }

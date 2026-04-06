@@ -3,7 +3,7 @@
     "@graph": [
         {
             "@type": "SoftwareApplication",
-            "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#software",
+            "@id": "https://integrationnode.com/gmail-odoo/#software",
             "name": "Intégration Gmail et Odoo",
             "description": "Extension Chrome qui connecte Gmail et Odoo CRM. Consultez les contacts, opportunités, tâches et tickets. Enregistrez les emails avec pièces jointes. 10-20x plus rapide que le plugin officiel Odoo Gmail.",
             "applicationCategory": "BusinessApplication",
@@ -11,11 +11,11 @@
             "operatingSystem": "Chrome Browser",
             "datePublished": "2025-11-22T00:00:00+00:00",
             "dateModified": "2026-02-22T00:00:00+00:00",
-            "url": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/",
+            "url": "https://integrationnode.com/gmail-odoo/fr/",
             "downloadUrl": "https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm",
             "installUrl": "https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm",
-            "image": "https://integrationnode.github.io/odoo-integration-gmail-docs/assets/og-image.png",
-            "screenshot": "https://integrationnode.github.io/odoo-integration-gmail-docs/assets/hero-screenshot.png",
+            "image": "https://integrationnode.com/gmail-odoo/assets/og-image.png",
+            "screenshot": "https://integrationnode.com/gmail-odoo/assets/hero-screenshot.png",
             "featureList": [
                 "Consulter les contacts Odoo dans Gmail",
                 "Opportunités CRM avec chiffre d'affaires et étape",
@@ -43,29 +43,29 @@
                     "description": "50 enregistrements, recherche en temps réel, pièces jointes, support prioritaire"
                 }
             ],
-            "author": { "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#organization" },
-            "publisher": { "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#organization" }
+            "author": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
+            "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" }
         },
         {
             "@type": "Organization",
-            "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#organization",
+            "@id": "https://integrationnode.com/gmail-odoo/#organization",
             "name": "IntegrationNode",
-            "url": "https://integrationnode.github.io/odoo-integration-gmail-docs/",
+            "url": "https://integrationnode.com/gmail-odoo/",
             "email": "odoointegrations.team@gmail.com",
             "description": "Développeur d'outils de productivité pour les utilisateurs Odoo ERP"
         },
         {
             "@type": "WebSite",
-            "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#website",
-            "url": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/",
+            "@id": "https://integrationnode.com/gmail-odoo/#website",
+            "url": "https://integrationnode.com/gmail-odoo/fr/",
             "name": "Intégration Gmail et Odoo",
             "description": "Site officiel de l'extension Chrome Gmail et Odoo",
-            "publisher": { "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/#organization" },
+            "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
             "inLanguage": "fr"
         },
         {
             "@type": "FAQPage",
-            "@id": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/#faq",
+            "@id": "https://integrationnode.com/gmail-odoo/fr/#faq",
             "mainEntity": [
                 {
                     "@type": "Question",
@@ -116,7 +116,7 @@
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Accueil",
-                    "item": "https://integrationnode.github.io/odoo-integration-gmail-docs/fr/"
+                    "item": "https://integrationnode.com/gmail-odoo/fr/"
                 }
             ]
         }

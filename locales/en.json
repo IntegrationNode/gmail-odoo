@@ -4,7 +4,7 @@
     "index": {
       "title": "Odoo Integration for Gmail",
       "description": "Odoo Integration for Gmail - View contacts, create opportunities, tasks, and tickets directly in your Gmail inbox. Chrome extension for seamless CRM integration.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/",
+      "canonical": "https://integrationnode.com/gmail-odoo/",
       "ogTitle": "Odoo Integration for Gmail",
       "ogDescription": "Transform your Gmail into a powerful CRM interface with seamless Odoo integration. View contacts, create opportunities, tasks, and tickets.",
       "twitterTitle": "Odoo Integration for Gmail",
@@ -13,7 +13,7 @@
     "pricing": {
       "title": "Pricing - Odoo Integration for Gmail",
       "description": "Odoo Integration for Gmail pricing - Free and PLUS plans. Start free, upgrade when you need advanced search, financial insights, and more.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/pricing.html",
+      "canonical": "https://integrationnode.com/gmail-odoo/pricing.html",
       "ogTitle": "Pricing - Odoo Integration for Gmail",
       "ogDescription": "Free and PLUS plans available. Start free, upgrade when you need advanced features.",
       "twitterTitle": "Pricing - Odoo Integration for Gmail",
@@ -22,7 +22,7 @@
     "userGuide": {
       "title": "User Guide - Odoo Integration for Gmail",
       "description": "Complete user guide for Odoo Integration for Gmail - Learn how to install, configure, and use all features including email logging, CRM opportunities, tasks, and tickets.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/user-guide.html",
+      "canonical": "https://integrationnode.com/gmail-odoo/user-guide.html",
       "ogTitle": "User Guide - Odoo Integration for Gmail",
       "ogDescription": "Complete guide to install, configure, and use Odoo Integration for Gmail. Learn about email logging, CRM, tasks, and more.",
       "twitterTitle": "User Guide - Odoo Integration for Gmail",
@@ -31,7 +31,7 @@
     "changelog": {
       "title": "Changelog - Odoo Integration for Gmail",
       "description": "Release history and updates for Odoo Integration for Gmail extension. Track new features, improvements, and bug fixes.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/changelog.html",
+      "canonical": "https://integrationnode.com/gmail-odoo/changelog.html",
       "ogTitle": "Changelog - Odoo Integration for Gmail",
       "ogDescription": "Release history and updates. Track new features, improvements, and bug fixes.",
       "twitterTitle": "Changelog - Odoo Integration for Gmail",
@@ -40,7 +40,7 @@
     "privacy": {
       "title": "Privacy Policy - Odoo Integration for Gmail",
       "description": "Privacy Policy for Odoo Integration for Gmail. Learn how we handle your data, what permissions we request, and your privacy rights.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/privacy.html",
+      "canonical": "https://integrationnode.com/gmail-odoo/privacy.html",
       "ogTitle": "Privacy Policy - Odoo Integration for Gmail",
       "ogDescription": "Learn how we handle your data, what permissions we request, and your privacy rights.",
       "twitterTitle": "Privacy Policy - Odoo Integration for Gmail",
@@ -49,7 +49,7 @@
     "comparison": {
       "title": "Odoo Gmail Plugin Alternative | 10-20x Faster Chrome Extension",
       "description": "Looking for an Odoo Gmail Plugin alternative? Our Chrome extension is 10-20x faster, more stable, and works on any Odoo instance. Switch in 2 minutes.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/comparison.html",
+      "canonical": "https://integrationnode.com/gmail-odoo/comparison.html",
       "ogTitle": "Odoo Gmail Plugin Alternative | 10-20x Faster",
       "ogDescription": "Compare our Gmail extension with Odoo's official plugin. 10-20x faster load times, stable connection, works on self-hosted Odoo without code changes.",
       "twitterTitle": "Odoo Gmail Plugin Alternative | 10-20x Faster",
@@ -58,7 +58,7 @@
     "alternative": {
       "title": "Best Odoo Gmail Plugin Alternative | Fast Chrome Extension",
       "description": "Looking for an alternative to the Odoo Gmail Plugin? Our Chrome extension is 10-20x faster, more stable, and works on any Odoo instance without code changes.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/odoo-gmail-plugin-alternative.html",
+      "canonical": "https://integrationnode.com/gmail-odoo/odoo-gmail-plugin-alternative.html",
       "ogTitle": "Best Odoo Gmail Plugin Alternative",
       "ogDescription": "Tired of slow load times and disconnections? Our extension loads in 100-300ms and works on any Odoo instance.",
       "twitterTitle": "Best Odoo Gmail Plugin Alternative",
@@ -67,7 +67,7 @@
     "blog": {
       "title": "Blog - Odoo Integration for Gmail",
       "description": "Tips and tutorials for integrating Odoo with Gmail. Learn best practices for email configuration, CRM integration, and productivity workflows.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/blog.html",
+      "canonical": "https://integrationnode.com/gmail-odoo/blog.html",
       "ogTitle": "Blog - Odoo & Gmail Integration Tips",
       "ogDescription": "Learn best practices for integrating Odoo with Gmail. Tips, tutorials, and productivity strategies.",
       "twitterTitle": "Blog - Odoo & Gmail Integration",
@@ -76,7 +76,7 @@
     "blogOdooGmailDomain": {
       "title": "Odoo Gmail Integration: Using Your Personal Domain Without Inbox Chaos",
       "description": "Learn how to configure OAuth for sending emails from Odoo with your domain, and why you shouldn't sync your entire Gmail with Odoo.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-gmail-domain-configuration.html",
+      "canonical": "https://integrationnode.com/gmail-odoo/blog/odoo-gmail-domain-configuration.html",
       "ogTitle": "Odoo Gmail Integration: Personal Domain Setup Guide",
       "ogDescription": "Configure OAuth for Odoo email sending with your domain. Learn the hybrid strategy for personal vs team inboxes.",
       "twitterTitle": "Odoo Gmail: Personal Domain Configuration",
@@ -85,7 +85,7 @@
     "blogApiKeySetup": {
       "title": "How to Create an API Key in Odoo (All Versions) | Odoo Integration for Gmail",
       "description": "Step-by-step guide to creating API keys in Odoo 14 through 19. Learn the differences between versions and how to set up a persistent key for external integrations.",
-      "canonical": "https://integrationnode.github.io/odoo-integration-gmail-docs/blog/odoo-api-key-setup.html",
+      "canonical": "https://integrationnode.com/gmail-odoo/blog/odoo-api-key-setup.html",
       "ogTitle": "How to Create an API Key in Odoo (All Versions)",
       "ogDescription": "Step-by-step guide to creating API keys in Odoo 14 through 19, with screenshots for every version.",
       "twitterTitle": "How to Create an API Key in Odoo (All Versions)",
