@@ -943,6 +943,10 @@
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
     },
+    "v0409": {
+      "errorDetails": "Fehlerdetails",
+      "errorDetailsDesc": "Fehlermeldungen enthalten jetzt eine Option \u201EDetails anzeigen\u201C, die die technische Serverantwort anzeigt. So können Probleme einfacher gemeldet werden, ohne die Browser-Entwicklertools öffnen zu müssen."
+    },
     "v0408": {
       "contactNameFix": "Behoben: 'Unerwarteter Fehler' beim Speichern von Kontakten aus E-Mails mit leerem Absendernamen"
     },

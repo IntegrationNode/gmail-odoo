@@ -943,6 +943,10 @@
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
     },
+    "v0409": {
+      "errorDetails": "Foutdetails",
+      "errorDetailsDesc": "Foutmeldingen bevatten nu een optie 'Details tonen' die het technische serverantwoord toont, waardoor het eenvoudiger wordt om problemen te melden zonder de browserontwikkeltools te openen."
+    },
     "v0408": {
       "contactNameFix": "Opgelost: 'Onverwachte fout' bij het opslaan van contacten uit e-mails met een lege afzendernaam"
     },

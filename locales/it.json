@@ -943,6 +943,10 @@
       "install": "Installa Estensione",
       "viewPricing": "Vedi Prezzi"
     },
+    "v0409": {
+      "errorDetails": "Dettagli errore",
+      "errorDetailsDesc": "I messaggi di errore ora includono un'opzione \"Mostra dettagli\" che rivela la risposta tecnica del server, rendendo più semplice segnalare problemi senza aprire gli strumenti di sviluppo del browser."
+    },
     "v0408": {
       "contactNameFix": "Risolto l'errore \"Errore imprevisto\" durante il salvataggio di contatti da email con nome del mittente vuoto"
     },

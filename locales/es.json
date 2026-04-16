@@ -943,6 +943,10 @@
       "install": "Instalar Extensión",
       "viewPricing": "Ver Precios"
     },
+    "v0409": {
+      "errorDetails": "Detalles del error",
+      "errorDetailsDesc": "Los mensajes de error ahora incluyen una opción 'Mostrar detalles' que revela la respuesta técnica del servidor, facilitando el reporte de incidencias sin necesidad de abrir las herramientas de desarrollo del navegador."
+    },
     "v0408": {
       "contactNameFix": "Solucionado el 'Error inesperado' al guardar contactos desde correos con nombre de remitente en blanco"
     },

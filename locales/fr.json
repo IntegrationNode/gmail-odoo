@@ -943,6 +943,10 @@
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
     },
+    "v0409": {
+      "errorDetails": "Détails de l'erreur",
+      "errorDetailsDesc": "Les messages d'erreur incluent désormais une option « Afficher les détails » qui révèle la réponse technique du serveur, facilitant le signalement de problèmes sans ouvrir les outils de développement du navigateur."
+    },
     "v0408": {
       "contactNameFix": "Correction de l'erreur « Erreur inattendue » lors de l'enregistrement de contacts depuis des e-mails avec un nom d'expéditeur vide"
     },

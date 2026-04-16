@@ -943,6 +943,10 @@
       "install": "Install Extension",
       "viewPricing": "View Pricing"
     },
+    "v0409": {
+      "errorDetails": "Error Details",
+      "errorDetailsDesc": "Error messages now include a 'Show details' option that reveals the technical server response, making it easier to report issues without opening browser developer tools."
+    },
     "v0408": {
       "contactNameFix": "Fixed 'Unexpected error' when saving contacts from emails with a blank sender name"
     },
