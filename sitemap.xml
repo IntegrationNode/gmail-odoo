@@ -13,7 +13,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -28,7 +28,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/pricing.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/pricing.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/pricing.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -43,7 +43,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/user-guide.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/user-guide.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/user-guide.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -58,7 +58,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/changelog.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -73,7 +73,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/privacy.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/privacy.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/privacy.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -88,7 +88,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/comparison.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/comparison.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/comparison.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -103,7 +103,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/odoo-gmail-plugin-alternative.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/odoo-gmail-plugin-alternative.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/odoo-gmail-plugin-alternative.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -118,7 +118,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -133,7 +133,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/odoo-gmail-domain-configuration.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/odoo-gmail-domain-configuration.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/odoo-gmail-domain-configuration.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -148,12 +148,11 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/odoo-api-key-setup.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/odoo-api-key-setup.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/odoo-api-key-setup.html" />
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Spanish pages -->
+  <!-- ES pages -->
   <url>
     <loc>https://integrationnode.com/gmail-odoo/es/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/gmail-odoo/" />
@@ -165,9 +164,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/es/pricing.html</loc>
@@ -180,9 +179,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/pricing.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/pricing.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/pricing.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/es/user-guide.html</loc>
@@ -195,9 +194,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/user-guide.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/user-guide.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/user-guide.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/es/changelog.html</loc>
@@ -210,9 +209,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/changelog.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/es/privacy.html</loc>
@@ -225,9 +224,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/privacy.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/privacy.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/privacy.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/es/comparison.html</loc>
@@ -240,9 +239,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/comparison.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/comparison.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/comparison.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/es/odoo-gmail-plugin-alternative.html</loc>
@@ -255,9 +254,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/odoo-gmail-plugin-alternative.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/odoo-gmail-plugin-alternative.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/odoo-gmail-plugin-alternative.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/es/blog.html</loc>
@@ -270,9 +269,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/es/blog/odoo-gmail-domain-configuration.html</loc>
@@ -285,9 +284,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/odoo-gmail-domain-configuration.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/odoo-gmail-domain-configuration.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/odoo-gmail-domain-configuration.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/es/blog/odoo-api-key-setup.html</loc>
@@ -300,12 +299,11 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/odoo-api-key-setup.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/odoo-api-key-setup.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/odoo-api-key-setup.html" />
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- French pages -->
+  <!-- FR pages -->
   <url>
     <loc>https://integrationnode.com/gmail-odoo/fr/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/gmail-odoo/" />
@@ -317,9 +315,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/fr/pricing.html</loc>
@@ -332,9 +330,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/pricing.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/pricing.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/pricing.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/fr/user-guide.html</loc>
@@ -347,9 +345,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/user-guide.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/user-guide.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/user-guide.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/fr/changelog.html</loc>
@@ -362,9 +360,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/changelog.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/fr/privacy.html</loc>
@@ -377,9 +375,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/privacy.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/privacy.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/privacy.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/fr/comparison.html</loc>
@@ -392,9 +390,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/comparison.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/comparison.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/comparison.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/fr/odoo-gmail-plugin-alternative.html</loc>
@@ -407,9 +405,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/odoo-gmail-plugin-alternative.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/odoo-gmail-plugin-alternative.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/odoo-gmail-plugin-alternative.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/fr/blog.html</loc>
@@ -422,9 +420,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/fr/blog/odoo-gmail-domain-configuration.html</loc>
@@ -437,9 +435,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/odoo-gmail-domain-configuration.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/odoo-gmail-domain-configuration.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/odoo-gmail-domain-configuration.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/fr/blog/odoo-api-key-setup.html</loc>
@@ -452,12 +450,11 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/odoo-api-key-setup.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/odoo-api-key-setup.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/odoo-api-key-setup.html" />
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- German pages -->
+  <!-- DE pages -->
   <url>
     <loc>https://integrationnode.com/gmail-odoo/de/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/gmail-odoo/" />
@@ -469,9 +466,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/de/pricing.html</loc>
@@ -484,9 +481,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/pricing.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/pricing.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/pricing.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/de/user-guide.html</loc>
@@ -499,9 +496,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/user-guide.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/user-guide.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/user-guide.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/de/changelog.html</loc>
@@ -514,9 +511,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/changelog.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/de/privacy.html</loc>
@@ -529,9 +526,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/privacy.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/privacy.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/privacy.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/de/comparison.html</loc>
@@ -544,9 +541,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/comparison.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/comparison.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/comparison.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/de/odoo-gmail-plugin-alternative.html</loc>
@@ -559,9 +556,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/odoo-gmail-plugin-alternative.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/odoo-gmail-plugin-alternative.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/odoo-gmail-plugin-alternative.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/de/blog.html</loc>
@@ -574,9 +571,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/de/blog/odoo-gmail-domain-configuration.html</loc>
@@ -589,9 +586,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/odoo-gmail-domain-configuration.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/odoo-gmail-domain-configuration.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/odoo-gmail-domain-configuration.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/de/blog/odoo-api-key-setup.html</loc>
@@ -604,12 +601,11 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/odoo-api-key-setup.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/odoo-api-key-setup.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/odoo-api-key-setup.html" />
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Italian pages -->
+  <!-- IT pages -->
   <url>
     <loc>https://integrationnode.com/gmail-odoo/it/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/gmail-odoo/" />
@@ -621,9 +617,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/it/pricing.html</loc>
@@ -636,9 +632,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/pricing.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/pricing.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/pricing.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/it/user-guide.html</loc>
@@ -651,9 +647,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/user-guide.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/user-guide.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/user-guide.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/it/changelog.html</loc>
@@ -666,9 +662,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/changelog.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/it/privacy.html</loc>
@@ -681,9 +677,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/privacy.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/privacy.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/privacy.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/it/comparison.html</loc>
@@ -696,9 +692,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/comparison.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/comparison.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/comparison.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/it/odoo-gmail-plugin-alternative.html</loc>
@@ -711,9 +707,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/odoo-gmail-plugin-alternative.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/odoo-gmail-plugin-alternative.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/odoo-gmail-plugin-alternative.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/it/blog.html</loc>
@@ -726,9 +722,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/it/blog/odoo-gmail-domain-configuration.html</loc>
@@ -741,9 +737,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/odoo-gmail-domain-configuration.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/odoo-gmail-domain-configuration.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/odoo-gmail-domain-configuration.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/it/blog/odoo-api-key-setup.html</loc>
@@ -756,12 +752,11 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/odoo-api-key-setup.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/odoo-api-key-setup.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/odoo-api-key-setup.html" />
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Portuguese pages -->
+  <!-- PT pages -->
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pt/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/gmail-odoo/" />
@@ -773,9 +768,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pt/pricing.html</loc>
@@ -788,9 +783,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/pricing.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/pricing.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/pricing.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pt/user-guide.html</loc>
@@ -803,9 +798,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/user-guide.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/user-guide.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/user-guide.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pt/changelog.html</loc>
@@ -818,9 +813,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/changelog.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pt/privacy.html</loc>
@@ -833,9 +828,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/privacy.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/privacy.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/privacy.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pt/comparison.html</loc>
@@ -848,9 +843,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/comparison.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/comparison.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/comparison.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pt/odoo-gmail-plugin-alternative.html</loc>
@@ -863,9 +858,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/odoo-gmail-plugin-alternative.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/odoo-gmail-plugin-alternative.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/odoo-gmail-plugin-alternative.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pt/blog.html</loc>
@@ -878,9 +873,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pt/blog/odoo-gmail-domain-configuration.html</loc>
@@ -893,9 +888,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/odoo-gmail-domain-configuration.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/odoo-gmail-domain-configuration.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/odoo-gmail-domain-configuration.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pt/blog/odoo-api-key-setup.html</loc>
@@ -908,12 +903,11 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/odoo-api-key-setup.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/odoo-api-key-setup.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/odoo-api-key-setup.html" />
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Dutch pages -->
+  <!-- NL pages -->
   <url>
     <loc>https://integrationnode.com/gmail-odoo/nl/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/gmail-odoo/" />
@@ -925,9 +919,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/nl/pricing.html</loc>
@@ -940,9 +934,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/pricing.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/pricing.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/pricing.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/nl/user-guide.html</loc>
@@ -955,9 +949,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/user-guide.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/user-guide.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/user-guide.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/nl/changelog.html</loc>
@@ -970,9 +964,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/changelog.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/nl/privacy.html</loc>
@@ -985,9 +979,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/privacy.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/privacy.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/privacy.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/nl/comparison.html</loc>
@@ -1000,9 +994,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/comparison.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/comparison.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/comparison.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/nl/odoo-gmail-plugin-alternative.html</loc>
@@ -1015,9 +1009,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/odoo-gmail-plugin-alternative.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/odoo-gmail-plugin-alternative.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/odoo-gmail-plugin-alternative.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/nl/blog.html</loc>
@@ -1030,9 +1024,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/nl/blog/odoo-gmail-domain-configuration.html</loc>
@@ -1045,9 +1039,9 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/odoo-gmail-domain-configuration.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/odoo-gmail-domain-configuration.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/odoo-gmail-domain-configuration.html" />
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/nl/blog/odoo-api-key-setup.html</loc>
@@ -1060,11 +1054,11 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/odoo-api-key-setup.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/odoo-api-key-setup.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/odoo-api-key-setup.html" />
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-<!-- Polish pages -->
+  <!-- PL pages -->
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pl/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/gmail-odoo/" />
@@ -1073,12 +1067,12 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/gmail-odoo/de/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/gmail-odoo/it/" />
     <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/gmail-odoo/pt/" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/pl/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/" />
-    <lastmod>2026-02-02</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pl/pricing.html</loc>
@@ -1088,12 +1082,12 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/gmail-odoo/de/pricing.html" />
     <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/gmail-odoo/it/pricing.html" />
     <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/gmail-odoo/pt/pricing.html" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/pl/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/pricing.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/pricing.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/pricing.html" />
-    <lastmod>2026-02-02</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pl/user-guide.html</loc>
@@ -1103,12 +1097,12 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/gmail-odoo/de/user-guide.html" />
     <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/gmail-odoo/it/user-guide.html" />
     <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/gmail-odoo/pt/user-guide.html" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/pl/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/user-guide.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/user-guide.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/user-guide.html" />
-    <lastmod>2026-02-02</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pl/changelog.html</loc>
@@ -1118,12 +1112,12 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/gmail-odoo/de/changelog.html" />
     <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/gmail-odoo/it/changelog.html" />
     <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/gmail-odoo/pt/changelog.html" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/pl/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/changelog.html" />
-    <lastmod>2026-02-02</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pl/privacy.html</loc>
@@ -1133,12 +1127,12 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/gmail-odoo/de/privacy.html" />
     <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/gmail-odoo/it/privacy.html" />
     <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/gmail-odoo/pt/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/pl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/privacy.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/privacy.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/privacy.html" />
-    <lastmod>2026-02-02</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pl/comparison.html</loc>
@@ -1148,12 +1142,12 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/gmail-odoo/de/comparison.html" />
     <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/gmail-odoo/it/comparison.html" />
     <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/gmail-odoo/pt/comparison.html" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/pl/comparison.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/comparison.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/comparison.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/comparison.html" />
-    <lastmod>2026-02-02</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pl/odoo-gmail-plugin-alternative.html</loc>
@@ -1163,12 +1157,12 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/gmail-odoo/de/odoo-gmail-plugin-alternative.html" />
     <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/gmail-odoo/it/odoo-gmail-plugin-alternative.html" />
     <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/gmail-odoo/pt/odoo-gmail-plugin-alternative.html" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/pl/odoo-gmail-plugin-alternative.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/odoo-gmail-plugin-alternative.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/odoo-gmail-plugin-alternative.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/odoo-gmail-plugin-alternative.html" />
-    <lastmod>2026-02-02</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pl/blog.html</loc>
@@ -1178,12 +1172,12 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/gmail-odoo/de/blog.html" />
     <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/gmail-odoo/it/blog.html" />
     <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/gmail-odoo/pt/blog.html" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/pl/blog.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog.html" />
-    <lastmod>2026-02-02</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pl/blog/odoo-gmail-domain-configuration.html</loc>
@@ -1193,12 +1187,12 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/gmail-odoo/de/blog/odoo-gmail-domain-configuration.html" />
     <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/gmail-odoo/it/blog/odoo-gmail-domain-configuration.html" />
     <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/gmail-odoo/pt/blog/odoo-gmail-domain-configuration.html" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/pl/blog/odoo-gmail-domain-configuration.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/odoo-gmail-domain-configuration.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/odoo-gmail-domain-configuration.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/odoo-gmail-domain-configuration.html" />
-    <lastmod>2026-02-02</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pl/blog/odoo-api-key-setup.html</loc>
@@ -1211,7 +1205,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/odoo-api-key-setup.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/odoo-api-key-setup.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/odoo-api-key-setup.html" />
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
