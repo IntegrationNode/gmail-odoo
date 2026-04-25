@@ -216,6 +216,7 @@
                         <li><a href="#features"><span class="material-symbols-outlined">star</span> <span>Features Overview</span></a></li>
                         <li><a href="#subscription"><span class="material-symbols-outlined">credit_card</span> <span>Subscription</span></a></li>
                         <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span>Email Logging</span></a></li>
+                        <li><a href="#autolog"><span class="material-symbols-outlined">sync</span> <span>Auto-logging</span></a></li>
                         <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Opportunities</span></a></li>
                         <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Tasks & Tickets</span></a></li>
                         <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Notifications</span></a></li>
@@ -294,6 +295,7 @@
                         <li><strong>Email Participants</strong>: <span>View Odoo contact information for all email participants</span></li>
                         <li><strong>Recent Activities</strong>: <span>See recent messages from Odoo's conversations for each contact</span></li>
                         <li><strong>Notification Organization</strong>: <span>Identify and organize Odoo notification emails with module badges, mention detection, and quick-access filtering</span></li>
+                        <li><strong>Auto-logging</strong>: <span>Link a Gmail thread to one or more Odoo records and have every new email logged automatically into their chatter (currently in private beta)</span></li>
                     </ul>
                 </section>
 
@@ -371,6 +373,80 @@
                     <div class="info-box">
                         <strong>Important:</strong> <span>Even without the visual indicator, you cannot accidentally create duplicates. Odoo's server validates every logging request and rejects duplicates.</span>
                     </div>
+                </section>
+
+                <!-- Auto-logging Section -->
+                <section id="autolog" class="guide-section">
+                    <h2><span class="material-symbols-outlined">sync</span> <span>Auto-logging</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>Auto-logging links a Gmail thread to one or more Odoo records so that every new email in that thread is logged into the record's chatter automatically — no need to click the envelope icon for each reply.</p>
+
+                    <div class="info-box">
+                        <strong>Private Beta:</strong> <span>Auto-logging is currently in private beta. It will be available to all PLUS subscribers soon. To request early access, contact support.</span>
+                    </div>
+
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>PLUS plan (and beta access during private beta)</li>
+                        <li>Gmail API connection (granted from Settings > Auto-logging > Connect)</li>
+                        <li>Auto-logging toggle enabled in Settings > Auto-logging</li>
+                    </ul>
+
+                    <h3>How to Activate Auto-logging on a Thread</h3>
+                    <ol class="steps-list">
+                        <li>Open the email thread in Gmail and view the contact in the sidebar</li>
+                        <li>Find the record you want to track (opportunity, task, ticket, or contact)</li>
+                        <li>Click the sync icon next to the record. The icon turns green when active and a confirmation toast appears</li>
+                        <li>From now on, every new email in this thread is logged automatically into the chatter of that record</li>
+                    </ol>
+                    <div class="info-box warning">
+                        <strong>Only future emails:</strong> <span>Auto-logging is purely forward-looking. Emails that already existed in the thread before activation are NOT logged retroactively. To log older emails, use the manual envelope button as usual.</span>
+                    </div>
+
+                    <h3>What Gets Logged</h3>
+                    <p>Each new email is added as an internal note in the record's chatter, with:</p>
+                    <ul>
+                        <li>A Gmail-style header (From, To, Date, Subject)</li>
+                        <li>The email body without quoted history</li>
+                        <li>The original date of the email (not the time it was processed)</li>
+                        <li>Linked partners — recipients are matched in Odoo by email and attached to the message</li>
+                        <li>An "Auto-logged from Gmail" footer linking back to the extension</li>
+                    </ul>
+                    <div class="info-box">
+                        <strong>Logged as Internal Note:</strong> <span>Auto-logged emails are saved as internal notes (mt_note), not public messages. Only internal Odoo users can see them — portal users (customers) won't.</span>
+                    </div>
+
+                    <h3>Linking a Thread to Several Records</h3>
+                    <p>You can activate auto-logging for the same thread on multiple records (for example, an opportunity and a task related to the same conversation):</p>
+                    <ul>
+                        <li>1 thread → 1 record: standard case.</li>
+                        <li>1 thread → several records: every new email is logged on each linked record sequentially.</li>
+                        <li>The same record cannot be linked twice from the same thread — duplicates are rejected.</li>
+                    </ul>
+
+                    <h3>Managing Active Auto-logs</h3>
+                    <h4>From the sidebar (per thread)</h4>
+                    <p>When the open thread has any active mappings, an "Auto-logging (N)" section appears at the top of the sidebar:</p>
+                    <ul>
+                        <li>Click the section to expand it and see every record linked to the current thread</li>
+                        <li>Click on a record's name to open it in Odoo</li>
+                        <li>Click the ✕ button to deactivate auto-logging for that specific record</li>
+                    </ul>
+                    <h4>From Settings (across all threads)</h4>
+                    <p>Open Settings > Auto-logging to manage every active mapping:</p>
+                    <ul>
+                        <li>Enable or disable auto-logging globally with a single toggle</li>
+                        <li>Connect or reconnect the Gmail API</li>
+                        <li>See the list of active mappings, the count, and the time of the last successful check</li>
+                        <li>Deactivate all mappings at once with the "Deactivate all" button</li>
+                    </ul>
+
+                    <h3>Limits & Edge Cases</h3>
+                    <ul>
+                        <li><strong>Not retroactive</strong>: <span>Only emails that arrive after activation are logged. Existing emails must be logged manually.</span></li>
+                        <li><strong>Auto-cleanup after 90 days</strong>: <span>A mapping with no new email activity for 90 days is removed automatically. Activate it again to resume tracking.</span></li>
+                        <li><strong>Record deleted in Odoo</strong>: <span>If the linked record is deleted in Odoo, the mapping is removed automatically the next time the extension tries to log into it.</span></li>
+                        <li><strong>Gmail disconnected</strong>: <span>If the Gmail API connection expires or is revoked, auto-logging stops for all threads until you reconnect from Settings > Auto-logging.</span></li>
+                    </ul>
                 </section>
 
                 <!-- Opportunities Section -->

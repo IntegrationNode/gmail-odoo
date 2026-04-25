@@ -103,6 +103,7 @@
       "configuration": "Konfiguration",
       "features": "Funktionsübersicht",
       "emailLogging": "E-Mail-Protokollierung",
+      "autolog": "Auto-logging",
       "opportunities": "Chancen",
       "tasksTickets": "Aufgaben & Tickets",
       "notifications": "Benachrichtigungen",
@@ -191,7 +192,9 @@
         "recentActivities": "Letzte Aktivitäten",
         "recentActivitiesDesc": "Aktuelle Nachrichten aus Odoo-Konversationen für jeden Kontakt anzeigen",
         "notifications": "Benachrichtigungsorganisation",
-        "notificationsDesc": "Identifizieren und organisieren Sie Odoo-Benachrichtigungs-E-Mails mit Modul-Badges, Erwähnungserkennung und Schnellzugriffsfilterung"
+        "notificationsDesc": "Identifizieren und organisieren Sie Odoo-Benachrichtigungs-E-Mails mit Modul-Badges, Erwähnungserkennung und Schnellzugriffsfilterung",
+        "autolog": "Auto-logging",
+        "autologDesc": "Link a Gmail thread to one or more Odoo records and have every new email logged automatically into their chatter (currently in private beta)"
       }
     },
     "emailLogging": {
@@ -219,6 +222,58 @@
       "serverSideDesc": "Odoo verhindert Duplikate, auch wenn der visuelle Indikator abgelaufen ist",
       "importantTitle": "Wichtig:",
       "importantDesc": "Auch ohne den visuellen Indikator können Sie nicht versehentlich Duplikate erstellen. Odoos Server validiert jede Protokollierungsanfrage und lehnt Duplikate ab."
+    },
+    "autolog": {
+      "title": "Auto-logging",
+      "intro": "Auto-logging links a Gmail thread to one or more Odoo records so that every new email in that thread is logged into the record's chatter automatically — no need to click the envelope icon for each reply.",
+      "betaTitle": "Private Beta:",
+      "betaDesc": "Auto-logging is currently in private beta. It will be available to all PLUS subscribers soon. To request early access, contact support.",
+      "requirementsTitle": "Requirements",
+      "requirement1": "PLUS plan (and beta access during private beta)",
+      "requirement2": "Gmail API connection (granted from Settings > Auto-logging > Connect)",
+      "requirement3": "Auto-logging toggle enabled in Settings > Auto-logging",
+      "activateTitle": "How to Activate Auto-logging on a Thread",
+      "activateStep1": "Open the email thread in Gmail and view the contact in the sidebar",
+      "activateStep2": "Find the record you want to track (opportunity, task, ticket, or contact)",
+      "activateStep3": "Click the sync icon next to the record. The icon turns green when active and a confirmation toast appears",
+      "activateStep4": "From now on, every new email in this thread is logged automatically into the chatter of that record",
+      "forwardOnlyTitle": "Only future emails:",
+      "forwardOnlyDesc": "Auto-logging is purely forward-looking. Emails that already existed in the thread before activation are NOT logged retroactively. To log older emails, use the manual envelope button as usual.",
+      "whatGetsLoggedTitle": "What Gets Logged",
+      "whatGetsLoggedDesc": "Each new email is added as an internal note in the record's chatter, with:",
+      "logged1": "A Gmail-style header (From, To, Date, Subject)",
+      "logged2": "The email body without quoted history",
+      "logged3": "The original date of the email (not the time it was processed)",
+      "logged4": "Linked partners — recipients are matched in Odoo by email and attached to the message",
+      "logged5": "An \"Auto-logged from Gmail\" footer linking back to the extension",
+      "internalNoteTitle": "Logged as Internal Note:",
+      "internalNoteDesc": "Auto-logged emails are saved as internal notes (mt_note), not public messages. Only internal Odoo users can see them — portal users (customers) won't.",
+      "multipleTitle": "Linking a Thread to Several Records",
+      "multipleDesc": "You can activate auto-logging for the same thread on multiple records (for example, an opportunity and a task related to the same conversation):",
+      "multiple1": "1 thread → 1 record: standard case.",
+      "multiple2": "1 thread → several records: every new email is logged on each linked record sequentially.",
+      "multiple3": "The same record cannot be linked twice from the same thread — duplicates are rejected.",
+      "managingTitle": "Managing Active Auto-logs",
+      "fromSidebarTitle": "From the sidebar (per thread)",
+      "fromSidebarDesc": "When the open thread has any active mappings, an \"Auto-logging (N)\" section appears at the top of the sidebar:",
+      "fromSidebar1": "Click the section to expand it and see every record linked to the current thread",
+      "fromSidebar2": "Click on a record's name to open it in Odoo",
+      "fromSidebar3": "Click the ✕ button to deactivate auto-logging for that specific record",
+      "fromSettingsTitle": "From Settings (across all threads)",
+      "fromSettingsDesc": "Open Settings > Auto-logging to manage every active mapping:",
+      "fromSettings1": "Enable or disable auto-logging globally with a single toggle",
+      "fromSettings2": "Connect or reconnect the Gmail API",
+      "fromSettings3": "See the list of active mappings, the count, and the time of the last successful check",
+      "fromSettings4": "Deactivate all mappings at once with the \"Deactivate all\" button",
+      "limitsTitle": "Limits & Edge Cases",
+      "limit1Label": "Not retroactive",
+      "limit1Desc": "Only emails that arrive after activation are logged. Existing emails must be logged manually.",
+      "limit2Label": "Auto-cleanup after 90 days",
+      "limit2Desc": "A mapping with no new email activity for 90 days is removed automatically. Activate it again to resume tracking.",
+      "limit3Label": "Record deleted in Odoo",
+      "limit3Desc": "If the linked record is deleted in Odoo, the mapping is removed automatically the next time the extension tries to log into it.",
+      "limit4Label": "Gmail disconnected",
+      "limit4Desc": "If the Gmail API connection expires or is revoked, auto-logging stops for all threads until you reconnect from Settings > Auto-logging."
     },
     "opportunities": {
       "title": "Chancen verwalten",
@@ -945,7 +1000,7 @@
     },
     "v0409": {
       "errorDetails": "Fehlerdetails",
-      "errorDetailsDesc": "Fehlermeldungen enthalten jetzt eine Option \u201EDetails anzeigen\u201C, die die technische Serverantwort anzeigt. So können Probleme einfacher gemeldet werden, ohne die Browser-Entwicklertools öffnen zu müssen."
+      "errorDetailsDesc": "Fehlermeldungen enthalten jetzt eine Option „Details anzeigen“, die die technische Serverantwort anzeigt. So können Probleme einfacher gemeldet werden, ohne die Browser-Entwicklertools öffnen zu müssen."
     },
     "v0408": {
       "contactNameFix": "Behoben: 'Unerwarteter Fehler' beim Speichern von Kontakten aus E-Mails mit leerem Absendernamen"

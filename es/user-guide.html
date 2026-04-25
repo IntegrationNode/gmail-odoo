@@ -216,6 +216,7 @@
                         <li><a href="#features"><span class="material-symbols-outlined">star</span> <span>Resumen de Funciones</span></a></li>
                         <li><a href="#subscription"><span class="material-symbols-outlined">credit_card</span> <span>Suscripción</span></a></li>
                         <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span>Registro de Emails</span></a></li>
+                        <li><a href="#autolog"><span class="material-symbols-outlined">sync</span> <span>Registro Automático</span></a></li>
                         <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Oportunidades</span></a></li>
                         <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Tareas y Tickets</span></a></li>
                         <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Notificaciones</span></a></li>
@@ -294,6 +295,7 @@
                         <li><strong>Participantes del Email</strong>: <span>Ver información de contacto en Odoo de todos los participantes del email</span></li>
                         <li><strong>Actividades Recientes</strong>: <span>Ver mensajes recientes de las conversaciones de Odoo para cada contacto</span></li>
                         <li><strong>Organización de Notificaciones</strong>: <span>Identifica y organiza los emails de notificación de Odoo con badges de módulo, detección de menciones y filtrado rápido</span></li>
+                        <li><strong>Registro Automático</strong>: <span>Vincula un hilo de Gmail con uno o más registros de Odoo y haz que cada email nuevo se registre automáticamente en su chatter (actualmente en beta privada)</span></li>
                     </ul>
                 </section>
 
@@ -371,6 +373,80 @@
                     <div class="info-box">
                         <strong>Importante:</strong> <span>Incluso sin el indicador visual, no puedes crear duplicados accidentalmente. El servidor de Odoo valida cada solicitud de registro y rechaza duplicados.</span>
                     </div>
+                </section>
+
+                <!-- Auto-logging Section -->
+                <section id="autolog" class="guide-section">
+                    <h2><span class="material-symbols-outlined">sync</span> <span>Registro Automático</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>El registro automático vincula un hilo de Gmail con uno o más registros de Odoo para que cada email nuevo del hilo se registre automáticamente en el chatter del registro, sin tener que pulsar el icono del sobre en cada respuesta.</p>
+
+                    <div class="info-box">
+                        <strong>Beta privada:</strong> <span>El registro automático está actualmente en beta privada. Pronto estará disponible para todos los suscriptores PLUS. Para solicitar acceso anticipado, contacta con soporte.</span>
+                    </div>
+
+                    <h3>Requisitos</h3>
+                    <ul>
+                        <li>Plan PLUS (y acceso a la beta durante la fase privada)</li>
+                        <li>Conexión a la API de Gmail (se concede desde Configuración > Registro Automático > Conectar)</li>
+                        <li>Toggle de Registro Automático activado en Configuración > Registro Automático</li>
+                    </ul>
+
+                    <h3>Cómo Activar el Registro Automático en un Hilo</h3>
+                    <ol class="steps-list">
+                        <li>Abre el hilo de email en Gmail y consulta el contacto en la barra lateral</li>
+                        <li>Localiza el registro que quieres seguir (oportunidad, tarea, ticket o contacto)</li>
+                        <li>Haz clic en el icono de sincronización junto al registro. El icono se vuelve verde al activarse y aparece un toast de confirmación</li>
+                        <li>A partir de ese momento, cada email nuevo del hilo se registra automáticamente en el chatter de ese registro</li>
+                    </ol>
+                    <div class="info-box warning">
+                        <strong>Solo emails futuros:</strong> <span>El registro automático funciona únicamente hacia adelante. Los emails que ya existían en el hilo antes de la activación NO se registran de forma retroactiva. Para registrar emails anteriores, usa el botón del sobre como siempre.</span>
+                    </div>
+
+                    <h3>Qué se Registra</h3>
+                    <p>Cada email nuevo se añade como nota interna en el chatter del registro, incluyendo:</p>
+                    <ul>
+                        <li>Una cabecera estilo Gmail (De, Para, Fecha, Asunto)</li>
+                        <li>El cuerpo del email sin el historial citado</li>
+                        <li>La fecha original del email (no la del momento en que se procesa)</li>
+                        <li>Partners vinculados — los destinatarios se buscan en Odoo por email y se asocian al mensaje</li>
+                        <li>Un pie de página "Auto-logged from Gmail" con enlace de vuelta a la extensión</li>
+                    </ul>
+                    <div class="info-box">
+                        <strong>Registrado como Nota Interna:</strong> <span>Los emails registrados automáticamente se guardan como notas internas (mt_note), no como mensajes públicos. Solo los usuarios internos de Odoo pueden verlos — los usuarios del portal (clientes) no.</span>
+                    </div>
+
+                    <h3>Vincular un Hilo a Varios Registros</h3>
+                    <p>Puedes activar el registro automático para el mismo hilo en varios registros (por ejemplo, una oportunidad y una tarea relacionadas con la misma conversación):</p>
+                    <ul>
+                        <li>1 hilo → 1 registro: caso estándar.</li>
+                        <li>1 hilo → varios registros: cada email nuevo se registra en cada registro vinculado, secuencialmente.</li>
+                        <li>El mismo registro no se puede vincular dos veces desde el mismo hilo — los duplicados se rechazan.</li>
+                    </ul>
+
+                    <h3>Gestionar los Registros Automáticos Activos</h3>
+                    <h4>Desde la barra lateral (por hilo)</h4>
+                    <p>Cuando el hilo abierto tiene mappings activos, aparece una sección "Registro Automático (N)" en la parte superior de la barra lateral:</p>
+                    <ul>
+                        <li>Haz clic en la sección para desplegarla y ver todos los registros vinculados al hilo actual</li>
+                        <li>Haz clic en el nombre de un registro para abrirlo en Odoo</li>
+                        <li>Haz clic en el botón ✕ para desactivar el registro automático en ese registro concreto</li>
+                    </ul>
+                    <h4>Desde Configuración (todos los hilos)</h4>
+                    <p>Abre Configuración > Registro Automático para gestionar todos los mappings activos:</p>
+                    <ul>
+                        <li>Activa o desactiva el registro automático globalmente con un único toggle</li>
+                        <li>Conecta o reconecta la API de Gmail</li>
+                        <li>Consulta la lista de mappings activos, el contador y la hora de la última comprobación correcta</li>
+                        <li>Desactiva todos los mappings de golpe con el botón "Desactivar todos"</li>
+                    </ul>
+
+                    <h3>Límites y Casos Particulares</h3>
+                    <ul>
+                        <li><strong>No retroactivo</strong>: <span>Solo se registran los emails que llegan después de la activación. Los emails existentes deben registrarse manualmente.</span></li>
+                        <li><strong>Limpieza automática a los 90 días</strong>: <span>Un mapping sin actividad de emails nuevos durante 90 días se elimina automáticamente. Vuelve a activarlo para reanudar el seguimiento.</span></li>
+                        <li><strong>Registro eliminado en Odoo</strong>: <span>Si el registro vinculado se elimina en Odoo, el mapping se elimina automáticamente la próxima vez que la extensión intente registrar en él.</span></li>
+                        <li><strong>Gmail desconectado</strong>: <span>Si la conexión con la API de Gmail expira o se revoca, el registro automático se detiene para todos los hilos hasta que reconectes desde Configuración > Registro Automático.</span></li>
+                    </ul>
                 </section>
 
                 <!-- Opportunities Section -->
