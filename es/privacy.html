@@ -170,6 +170,7 @@
                     <li>ID de usuario anónimo (UUID aleatorio, no vinculado a tu identidad)</li>
                     <li>Eventos de uso de funciones (ej: "email registrado", "registro creado")</li>
                     <li>Reportes de errores para depuración (sin datos personales ni contenido de emails)</li>
+                    <li>Un flag booleano que indica si tu usuario de Odoo tiene acceso a más de una compañía (usado para saber si las funciones multi-compañía son relevantes). NO se envía la lista de compañías ni sus nombres.</li>
                 </ul>
                 <p><strong>Política de Privacidad de PostHog:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
                 <p><strong>Desactivar:</strong> <span>Puedes desactivar las analíticas en cualquier momento en Configuración > Cuenta > Privacidad.</span></p>
@@ -216,8 +217,8 @@
                     <li><strong>storage:</strong> <span>Requerido para guardar tu configuración de Odoo y almacenar respuestas de API localmente</span></li>
                     <li><strong>host_permissions (mail.google.com):</strong> <span>Requerido para acceder a la interfaz de Gmail y mostrar la barra lateral</span></li>
                     <li><strong>host_permissions (*.odoo.com):</strong> <span>Requerido para comunicarse con instancias cloud de Odoo Online (ej: tuempresa.odoo.com)</span></li>
-                    <li><strong>host_permissions (polar.sh):</strong> <span>Requerido para gestión de suscripciones y procesamiento de pagos</span></li>
-                    <li><strong>host_permissions (paritydeals.com):</strong> <span>Requerido para ofrecer descuentos por Paridad de Poder Adquisitivo (PPP) según el país del usuario</span></li>
+                    <li><strong>host_permissions (api.polar.sh):</strong> <span>Requerido para gestión de suscripciones y procesamiento de pagos</span></li>
+                    <li><strong>host_permissions (api.paritydeals.com):</strong> <span>Requerido para ofrecer descuentos por Paridad de Poder Adquisitivo (PPP) según el país del usuario</span></li>
                 </ul>
 
                 <h3>Permisos Opcionales (Solicitados Cuando Se Necesitan)</h3>

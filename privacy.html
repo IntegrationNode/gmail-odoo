@@ -170,6 +170,7 @@
                     <li>Anonymous user ID (random UUID, not linked to your identity)</li>
                     <li>Feature usage events (e.g., "email logged", "record created")</li>
                     <li>Error reports for debugging (no personal data or email content)</li>
+                    <li>A boolean flag indicating whether your Odoo user has access to more than one company (used to know whether multi-company features are relevant). The list of companies and their names are NOT sent.</li>
                 </ul>
                 <p><strong>PostHog Privacy Policy:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
                 <p><strong>Opt-out:</strong> <span>You can disable analytics at any time in Settings > Account > Privacy.</span></p>
@@ -216,8 +217,8 @@
                     <li><strong>storage:</strong> <span>Required to save your Odoo configuration and cache API responses locally</span></li>
                     <li><strong>host_permissions (mail.google.com):</strong> <span>Required to access Gmail's interface and display the sidebar</span></li>
                     <li><strong>host_permissions (*.odoo.com):</strong> <span>Required to communicate with Odoo Online cloud instances (e.g., yourcompany.odoo.com)</span></li>
-                    <li><strong>host_permissions (polar.sh):</strong> <span>Required for subscription management and payment processing</span></li>
-                    <li><strong>host_permissions (paritydeals.com):</strong> <span>Required to offer Purchasing Power Parity (PPP) discounts based on the user's country</span></li>
+                    <li><strong>host_permissions (api.polar.sh):</strong> <span>Required for subscription management and payment processing</span></li>
+                    <li><strong>host_permissions (api.paritydeals.com):</strong> <span>Required to offer Purchasing Power Parity (PPP) discounts based on the user's country</span></li>
                 </ul>
 
                 <h3>Optional Permissions (Requested When Needed)</h3>

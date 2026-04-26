@@ -170,6 +170,7 @@
                     <li>ID utente anonimo (UUID casuale, non collegato alla tua identità)</li>
                     <li>Eventi di utilizzo delle funzionalità (es: "email registrata", "record creato")</li>
                     <li>Report di errori per il debug (nessun dato personale o contenuto email)</li>
+                    <li>A boolean flag indicating whether your Odoo user has access to more than one company (used to know whether multi-company features are relevant). The list of companies and their names are NOT sent.</li>
                 </ul>
                 <p><strong>Informativa sulla Privacy di PostHog:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
                 <p><strong>Disattivare:</strong> <span>Puoi disattivare le analisi in qualsiasi momento in Impostazioni > Account > Privacy.</span></p>
@@ -216,8 +217,8 @@
                     <li><strong>storage:</strong> <span>Necessario per salvare la configurazione Odoo e memorizzare le risposte API localmente</span></li>
                     <li><strong>host_permissions (mail.google.com):</strong> <span>Necessario per accedere all'interfaccia di Gmail e visualizzare la barra laterale</span></li>
                     <li><strong>host_permissions (*.odoo.com):</strong> <span>Necessario per comunicare con le istanze cloud Odoo Online (es. tuaazienda.odoo.com)</span></li>
-                    <li><strong>host_permissions (polar.sh):</strong> <span>Necessario per la gestione degli abbonamenti e l'elaborazione dei pagamenti</span></li>
-                    <li><strong>host_permissions (paritydeals.com):</strong> <span>Necessario per offrire sconti basati sulla Parità del Potere d'Acquisto (PPA) in base al paese dell'utente</span></li>
+                    <li><strong>host_permissions (api.polar.sh):</strong> <span>Necessario per la gestione degli abbonamenti e l'elaborazione dei pagamenti</span></li>
+                    <li><strong>host_permissions (api.paritydeals.com):</strong> <span>Necessario per offrire sconti basati sulla Parità del Potere d'Acquisto (PPA) in base al paese dell'utente</span></li>
                 </ul>
 
                 <h3>Permessi Opzionali (Richiesti Quando Necessario)</h3>

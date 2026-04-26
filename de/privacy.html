@@ -170,6 +170,7 @@
                     <li>Anonyme Benutzer-ID (zufällige UUID, nicht mit Ihrer Identität verknüpft)</li>
                     <li>Funktionsnutzungsereignisse (z.B. "E-Mail protokolliert", "Datensatz erstellt")</li>
                     <li>Fehlerberichte zur Fehlerbehebung (keine persönlichen Daten oder E-Mail-Inhalte)</li>
+                    <li>A boolean flag indicating whether your Odoo user has access to more than one company (used to know whether multi-company features are relevant). The list of companies and their names are NOT sent.</li>
                 </ul>
                 <p><strong>PostHog Datenschutzrichtlinie:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
                 <p><strong>Deaktivieren:</strong> <span>Sie können die Analytik jederzeit in Einstellungen > Konto > Datenschutz deaktivieren.</span></p>
@@ -216,8 +217,8 @@
                     <li><strong>storage:</strong> <span>Erforderlich, um Ihre Odoo-Konfiguration zu speichern und API-Antworten lokal zwischenzuspeichern</span></li>
                     <li><strong>host_permissions (mail.google.com):</strong> <span>Erforderlich, um auf die Gmail-Oberfläche zuzugreifen und die Seitenleiste anzuzeigen</span></li>
                     <li><strong>host_permissions (*.odoo.com):</strong> <span>Erforderlich, um mit Odoo Online Cloud-Instanzen zu kommunizieren (z.B. ihrefirma.odoo.com)</span></li>
-                    <li><strong>host_permissions (polar.sh):</strong> <span>Erforderlich für die Abonnementverwaltung und Zahlungsabwicklung</span></li>
-                    <li><strong>host_permissions (paritydeals.com):</strong> <span>Erforderlich, um Kaufkraftparitäts-Rabatte (KKP) basierend auf dem Land des Benutzers anzubieten</span></li>
+                    <li><strong>host_permissions (api.polar.sh):</strong> <span>Erforderlich für die Abonnementverwaltung und Zahlungsabwicklung</span></li>
+                    <li><strong>host_permissions (api.paritydeals.com):</strong> <span>Erforderlich, um Kaufkraftparitäts-Rabatte (KKP) basierend auf dem Land des Benutzers anzubieten</span></li>
                 </ul>
 
                 <h3>Optionale Berechtigungen (bei Bedarf angefordert)</h3>

@@ -170,6 +170,7 @@
                     <li>Anonimowy identyfikator użytkownika (losowy UUID, niepowiązany z Twoją tożsamością)</li>
                     <li>Zdarzenia użycia funkcji (np. "e-mail zalogowany", "rekord utworzony")</li>
                     <li>Raporty o błędach do debugowania (bez danych osobowych ani treści e-maili)</li>
+                    <li>A boolean flag indicating whether your Odoo user has access to more than one company (used to know whether multi-company features are relevant). The list of companies and their names are NOT sent.</li>
                 </ul>
                 <p><strong>Polityka prywatności PostHog:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
                 <p><strong>Rezygnacja:</strong> <span>Możesz wyłączyć analitykę w każdej chwili w Ustawienia > Konto > Prywatność.</span></p>
@@ -216,8 +217,8 @@
                     <li><strong>storage:</strong> <span>Wymagane do zapisywania konfiguracji Odoo i buforowania odpowiedzi API lokalnie</span></li>
                     <li><strong>host_permissions (mail.google.com):</strong> <span>Wymagane do uzyskania dostępu do interfejsu Gmail i wyświetlania panelu bocznego</span></li>
                     <li><strong>host_permissions (*.odoo.com):</strong> <span>Wymagane do komunikacji z instancjami chmurowymi Odoo Online (np. twojafirma.odoo.com)</span></li>
-                    <li><strong>host_permissions (polar.sh):</strong> <span>Wymagane do zarządzania subskrypcjami i przetwarzania płatności</span></li>
-                    <li><strong>host_permissions (paritydeals.com):</strong> <span>Wymagane do oferowania zniżek parytetu siły nabywczej (PSN) na podstawie kraju użytkownika</span></li>
+                    <li><strong>host_permissions (api.polar.sh):</strong> <span>Wymagane do zarządzania subskrypcjami i przetwarzania płatności</span></li>
+                    <li><strong>host_permissions (api.paritydeals.com):</strong> <span>Wymagane do oferowania zniżek parytetu siły nabywczej (PSN) na podstawie kraju użytkownika</span></li>
                 </ul>
 
                 <h3>Opcjonalne uprawnienia (żądane w razie potrzeby)</h3>

@@ -170,6 +170,7 @@
                     <li>ID utilisateur anonyme (UUID aléatoire, non lié à votre identité)</li>
                     <li>Événements d'utilisation des fonctionnalités (ex: "email enregistré", "enregistrement créé")</li>
                     <li>Rapports d'erreurs pour le débogage (aucune donnée personnelle ni contenu d'email)</li>
+                    <li>A boolean flag indicating whether your Odoo user has access to more than one company (used to know whether multi-company features are relevant). The list of companies and their names are NOT sent.</li>
                 </ul>
                 <p><strong>Politique de Confidentialité de PostHog:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
                 <p><strong>Désactiver:</strong> <span>Vous pouvez désactiver les analytiques à tout moment dans Paramètres > Compte > Confidentialité.</span></p>
@@ -216,8 +217,8 @@
                     <li><strong>storage:</strong> <span>Nécessaire pour sauvegarder votre configuration Odoo et mettre en cache les réponses API localement</span></li>
                     <li><strong>host_permissions (mail.google.com):</strong> <span>Nécessaire pour accéder à l'interface Gmail et afficher la barre latérale</span></li>
                     <li><strong>host_permissions (*.odoo.com):</strong> <span>Nécessaire pour communiquer avec les instances cloud Odoo Online (ex: votreentreprise.odoo.com)</span></li>
-                    <li><strong>host_permissions (polar.sh):</strong> <span>Nécessaire pour la gestion des abonnements et le traitement des paiements</span></li>
-                    <li><strong>host_permissions (paritydeals.com):</strong> <span>Nécessaire pour offrir des réductions de Parité de Pouvoir d'Achat (PPA) selon le pays de l'utilisateur</span></li>
+                    <li><strong>host_permissions (api.polar.sh):</strong> <span>Nécessaire pour la gestion des abonnements et le traitement des paiements</span></li>
+                    <li><strong>host_permissions (api.paritydeals.com):</strong> <span>Nécessaire pour offrir des réductions de Parité de Pouvoir d'Achat (PPA) selon le pays de l'utilisateur</span></li>
                 </ul>
 
                 <h3>Autorisations optionnelles (Demandées si nécessaire)</h3>

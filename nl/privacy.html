@@ -170,6 +170,7 @@
                     <li>Anonieme gebruikers-ID (willekeurige UUID, niet gekoppeld aan uw identiteit)</li>
                     <li>Functiegebruiksgebeurtenissen (bijv. "e-mail gelogd", "record aangemaakt")</li>
                     <li>Foutrapporten voor debugging (geen persoonlijke gegevens of e-mailinhoud)</li>
+                    <li>A boolean flag indicating whether your Odoo user has access to more than one company (used to know whether multi-company features are relevant). The list of companies and their names are NOT sent.</li>
                 </ul>
                 <p><strong>PostHog Privacybeleid:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
                 <p><strong>Uitschakelen:</strong> <span>U kunt analytics op elk moment uitschakelen in Instellingen > Account > Privacy.</span></p>
@@ -216,8 +217,8 @@
                     <li><strong>storage:</strong> <span>Vereist om uw Odoo-configuratie op te slaan en API-antwoorden lokaal te cachen</span></li>
                     <li><strong>host_permissions (mail.google.com):</strong> <span>Vereist om toegang te krijgen tot de Gmail-interface en de zijbalk weer te geven</span></li>
                     <li><strong>host_permissions (*.odoo.com):</strong> <span>Vereist om te communiceren met Odoo Online cloud-instanties (bijv. uwbedrijf.odoo.com)</span></li>
-                    <li><strong>host_permissions (polar.sh):</strong> <span>Vereist voor abonnementsbeheer en betalingsverwerking</span></li>
-                    <li><strong>host_permissions (paritydeals.com):</strong> <span>Vereist om koopkrachtpariteit (KKP) kortingen aan te bieden op basis van het land van de gebruiker</span></li>
+                    <li><strong>host_permissions (api.polar.sh):</strong> <span>Vereist voor abonnementsbeheer en betalingsverwerking</span></li>
+                    <li><strong>host_permissions (api.paritydeals.com):</strong> <span>Vereist om koopkrachtpariteit (KKP) kortingen aan te bieden op basis van het land van de gebruiker</span></li>
                 </ul>
 
                 <h3>Optionele Machtigingen (Aangevraagd Wanneer Nodig)</h3>

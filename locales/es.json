@@ -777,6 +777,7 @@
       "posthog1": "ID de usuario anónimo (UUID aleatorio, no vinculado a tu identidad)",
       "posthog2": "Eventos de uso de funciones (ej: \"email registrado\", \"registro creado\")",
       "posthog3": "Reportes de errores para depuración (sin datos personales ni contenido de emails)",
+      "posthog4": "Un flag booleano que indica si tu usuario de Odoo tiene acceso a más de una compañía (usado para saber si las funciones multi-compañía son relevantes). NO se envía la lista de compañías ni sus nombres.",
       "posthogPolicy": "Política de Privacidad de PostHog:",
       "optOut": "Desactivar:",
       "optOutDesc": "Puedes desactivar las analíticas en cualquier momento en Configuración > Cuenta > Privacidad."

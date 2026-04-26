@@ -170,6 +170,7 @@
                     <li>ID de usuário anônimo (UUID aleatório, não vinculado à sua identidade)</li>
                     <li>Eventos de uso de funcionalidades (ex: "e-mail registrado", "registro criado")</li>
                     <li>Relatórios de erros para depuração (sem dados pessoais ou conteúdo de e-mail)</li>
+                    <li>A boolean flag indicating whether your Odoo user has access to more than one company (used to know whether multi-company features are relevant). The list of companies and their names are NOT sent.</li>
                 </ul>
                 <p><strong>Política de Privacidade do PostHog:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
                 <p><strong>Desativar:</strong> <span>Você pode desativar as análises a qualquer momento em Configurações > Conta > Privacidade.</span></p>
@@ -216,8 +217,8 @@
                     <li><strong>storage:</strong> <span>Necessário para salvar sua configuração Odoo e armazenar respostas de API localmente</span></li>
                     <li><strong>host_permissions (mail.google.com):</strong> <span>Necessário para acessar a interface do Gmail e exibir a barra lateral</span></li>
                     <li><strong>host_permissions (*.odoo.com):</strong> <span>Necessário para comunicar com instâncias cloud Odoo Online (ex: suaempresa.odoo.com)</span></li>
-                    <li><strong>host_permissions (polar.sh):</strong> <span>Necessário para gerenciamento de assinaturas e processamento de pagamentos</span></li>
-                    <li><strong>host_permissions (paritydeals.com):</strong> <span>Necessário para oferecer descontos de Paridade do Poder de Compra (PPC) com base no país do utilizador</span></li>
+                    <li><strong>host_permissions (api.polar.sh):</strong> <span>Necessário para gerenciamento de assinaturas e processamento de pagamentos</span></li>
+                    <li><strong>host_permissions (api.paritydeals.com):</strong> <span>Necessário para oferecer descontos de Paridade do Poder de Compra (PPC) com base no país do utilizador</span></li>
                 </ul>
 
                 <h3>Permissões Opcionais (Solicitadas Quando Necessário)</h3>
