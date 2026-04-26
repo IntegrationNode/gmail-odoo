@@ -79,7 +79,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1>Política de Privacidad</h1>
-            <p class="last-updated"><span>Última actualización</span>: March 4, 2026</p>
+            <p class="last-updated"><span>Última actualización</span>: April 26, 2026</p>
 
             <section class="policy-section">
                 <h2>Resumen</h2>
@@ -107,6 +107,15 @@
                     <li>Información de empresa y contactos relacionados</li>
                 </ul>
 
+                <h3>Datos Accedidos para Registro Automático (Opcional)</h3>
+                <p>El registro automático es una función opcional. La Extensión solo accede a estos datos después de que concedas acceso a Gmail en Configuración > Registro Automático y vincules explícitamente un hilo a un registro de Odoo. Una vez vinculado un hilo, la Extensión usa la API de Gmail de Google para:</p>
+                <ul>
+                    <li>Comprobar periódicamente si hay mensajes nuevos en los hilos que has vinculado (polling en background mientras al menos un mapping esté activo)</li>
+                    <li>Leer el asunto, remitente, destinatarios, fecha y cuerpo de esos mensajes nuevos</li>
+                    <li>Publicarlos como notas internas en los registros de Odoo que vinculaste</li>
+                </ul>
+                <p><strong>Alcance:</strong> <span>La Extensión solo solicita el scope OAuth gmail.readonly. No puede enviar, modificar, archivar ni eliminar emails. El registro automático se detiene cuando desconectas Gmail en Configuración, desactivas el mapping o eliminas la Extensión. Los tokens también pueden revocarse desde los permisos de tu Cuenta de Google en cualquier momento.</span></p>
+
                 <h3>Datos de Configuración</h3>
                 <p>La Extensión almacena la configuración de tu instancia de Odoo localmente:</p>
                 <ul>
@@ -114,6 +123,9 @@
                     <li>Nombre de la base de datos</li>
                     <li>Credenciales de autenticación</li>
                     <li>Preferencias de usuario (configuración de secciones visibles)</li>
+                    <li>Tokens OAuth de Gmail (solo cuando el registro automático está activado) — necesarios para acceder a la API de Gmail en tu nombre; revocables desde Configuración > Registro Automático o desde tu Cuenta de Google</li>
+                    <li>Mappings de registro automático (vínculos hilo-registro e IDs de mensajes ya registrados) — almacenados localmente mientras dure cada mapping</li>
+                    <li>Compañía activa seleccionada y lista de compañías a las que tienes acceso (instancias multi-compañía) — cacheadas localmente para recordar en qué compañía estás operando</li>
                 </ul>
             </section>
 
@@ -126,6 +138,7 @@
                     <li><strong>Registrar Emails:</strong> <span>Cuando haces clic en botones "Registrar Email", el contenido del email se guarda en el chatter de tu instancia de Odoo</span></li>
                     <li><strong>Buscar y Filtrar:</strong> <span>Buscar en oportunidades, tareas y tickets asociados a contactos</span></li>
                     <li><strong>Caché:</strong> <span>Almacenar temporalmente respuestas de API de Odoo localmente para mejorar el rendimiento</span></li>
+                    <li><strong>Registro Automático:</strong> <span>Cuando activas el registro automático en un registro, la Extensión consulta tu cuenta de Gmail en background para detectar emails nuevos en el hilo vinculado y los publica como notas internas en tu instancia de Odoo</span></li>
                 </ul>
             </section>
 
@@ -184,11 +197,12 @@
                 <p><span>El uso y transferencia de información recibida de las APIs de Google por Integración de Odoo para Gmail cumple con</span> <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API Services User Data Policy</a>, <span>incluyendo los requisitos de Uso Limitado.</span></p>
                 <p><strong>Cumplimiento de Uso Limitado:</strong></p>
                 <ul>
-                    <li>La Extensión solo accede a datos de Gmail cuando abres explícitamente un email</li>
+                    <li>La Extensión solo accede a datos de Gmail cuando (a) abres explícitamente un email, o (b) has activado explícitamente el registro automático y vinculado un hilo a un registro de Odoo (opt-in por hilo)</li>
                     <li>Los datos de email se usan exclusivamente para el propósito declarado: integración con tu CRM de Odoo</li>
                     <li>Ningún dato de Gmail se usa para mostrar anuncios</li>
                     <li>Los datos de Gmail no se transfieren a terceros (excepto tu propia instancia de Odoo)</li>
                     <li>Los datos de Gmail no se usan para determinar solvencia crediticia ni propósitos de préstamos</li>
+                    <li>La Extensión solo solicita el scope OAuth gmail.readonly. No puede enviar, modificar, archivar ni eliminar emails en tu nombre</li>
                 </ul>
             </section>
 
@@ -210,6 +224,8 @@
                 <p>La Extensión solicita permisos opcionales para instancias de Odoo personalizadas:</p>
                 <ul>
                     <li><strong>optional_host_permissions (https://*/*):</strong> <span>Usado SOLO si te conectas a una instancia de Odoo auto-alojada en un dominio personalizado (ej: odoo.tuempresa.com o erp.ejemplo.com). Este permiso solo se solicita cuando configuras explícitamente una URL de Odoo personalizada.</span></li>
+                    <li><strong>identity:</strong> <span>Usado SOLO cuando aceptas activar el registro automático. Permite a la Extensión completar el flujo de inicio de sesión de Google que concede acceso a la API de Gmail (scope gmail.readonly). Se solicita en el momento en que pulsas "Conectar" en Configuración > Registro Automático.</span></li>
+                    <li><strong>alarms:</strong> <span>Usado SOLO cuando el registro automático está activo. Permite a la Extensión despertarse periódicamente en background para comprobar si hay emails nuevos en los hilos que has vinculado. Se solicita junto con el permiso identity.</span></li>
                 </ul>
                 <p><strong>Nota:</strong> <span>La Extensión solo soporta conexiones HTTPS por seguridad. Las conexiones HTTP no están permitidas.</span></p>
 

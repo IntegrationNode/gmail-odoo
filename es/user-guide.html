@@ -220,6 +220,7 @@
                         <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Oportunidades</span></a></li>
                         <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Tareas y Tickets</span></a></li>
                         <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Notificaciones</span></a></li>
+                        <li><a href="#multi-company"><span class="material-symbols-outlined">business</span> <span>Multi-compañía</span></a></li>
                         <li><a href="#troubleshooting"><span class="material-symbols-outlined">help</span> <span>Solución de Problemas</span></a></li>
                         <li><a href="#faq"><span class="material-symbols-outlined">quiz</span> <span>Preguntas Frecuentes</span></a></li>
                     </ul>
@@ -296,6 +297,7 @@
                         <li><strong>Actividades Recientes</strong>: <span>Ver mensajes recientes de las conversaciones de Odoo para cada contacto</span></li>
                         <li><strong>Organización de Notificaciones</strong>: <span>Identifica y organiza los emails de notificación de Odoo con badges de módulo, detección de menciones y filtrado rápido</span></li>
                         <li><strong>Registro Automático</strong>: <span>Vincula un hilo de Gmail con uno o más registros de Odoo y haz que cada email nuevo se registre automáticamente en su chatter (actualmente en beta privada)</span></li>
+                        <li><strong>Soporte multi-compañía</strong>: <span>Cambia entre las compañías a las que tienes acceso en Odoo, con búsqueda cross-company de contactos cuando un email coincide con un partner que vive en otra compañía</span></li>
                     </ul>
                 </section>
 
@@ -555,6 +557,69 @@
                         <li>Badges de módulo — mostrar/ocultar los badges con código de color</li>
                         <li>Badges de mención — mostrar/ocultar los badges de detección de menciones</li>
                         <li>Acceso directo en barra lateral — mostrar/ocultar el enlace Odoo Notifications en la barra lateral de Gmail</li>
+                    </ul>
+                </section>
+
+                <!-- Multi-Company Section -->
+                <section id="multi-company" class="guide-section">
+                    <h2><span class="material-symbols-outlined">business</span> <span>Soporte multi-compañía</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>Si tu usuario de Odoo tiene acceso a varias compañías, la extensión te permite elegir cuál está activa. La compañía activa decide qué registros muestra la barra lateral y en qué compañía se crea cada nuevo lead, tarea, ticket o contacto.</p>
+
+                    <h3>Requisitos</h3>
+                    <ul>
+                        <li>Plan PLUS</li>
+                        <li>Un usuario de Odoo con acceso a dos o más compañías (en Odoo: Ajustes > Usuarios > Compañías permitidas)</li>
+                    </ul>
+
+                    <h3>El Selector de Compañía</h3>
+                    <p>Cuando tienes acceso a más de una compañía, aparece un icono de edificio en la cabecera de la barra lateral, junto al botón de ajustes (⚙):</p>
+                    <ul>
+                        <li>Pasa el ratón sobre el icono para ver el nombre de la compañía activa ("Operating in {compañía}")</li>
+                        <li>Haz clic en el icono para abrir un desplegable con todas las compañías a las que tienes acceso</li>
+                        <li>Selecciona una compañía con los radios. El desplegable se cierra y la barra lateral se refresca con datos de la nueva compañía</li>
+                        <li>Si solo tienes acceso a una compañía, el icono no se muestra</li>
+                    </ul>
+                    <div class="info-box">
+                        <strong>Persistencia:</strong> <span>Tu selección se guarda por instancia de Odoo, así que al volver a abrir Gmail recuperas la compañía en la que estabas trabajando. Cerrar sesión limpia la selección guardada.</span>
+                    </div>
+
+                    <h3>Qué afecta la Compañía Activa</h3>
+                    <p>Una vez eliges una compañía, todas las operaciones de la barra lateral se restringen a ella:</p>
+                    <ul>
+                        <li><strong>Registros que ves</strong>: <span>Las oportunidades, tareas, tickets y contactos listados en la barra lateral se filtran a los visibles en la compañía activa</span></li>
+                        <li><strong>Registros que creas</strong>: <span>Los nuevos leads, tareas, tickets y contactos creados desde la barra lateral se asignan a la compañía activa</span></li>
+                        <li><strong>Emails registrados automáticamente</strong>: <span>Los emails que procesa el registro automático se publican en la compañía a la que pertenece el registro vinculado (mira la nota de Registro Automático más abajo)</span></li>
+                    </ul>
+
+                    <h3>Búsqueda Cross-Company de Contactos</h3>
+                    <p>Si abres un email de alguien que no está en la compañía activa pero sí en otra de tu instancia de Odoo, la barra lateral te lo indica y te ofrece acciones en lugar de dejarte un estado vacío.</p>
+                    <h4>El contacto existe en otra compañía</h4>
+                    <p>La barra lateral muestra el contacto encontrado, en qué compañía vive, y dos acciones:</p>
+                    <ul>
+                        <li><strong>Hacer visible para todas las compañías</strong>: <span>Elimina la restricción de compañía del contacto para que los usuarios de todas las compañías a las que tienes acceso puedan verlo. Pide confirmación antes de guardar</span></li>
+                        <li><strong>Crear nuevo en esta compañía</strong>: <span>Crea un contacto independiente en la compañía activa, dejando el original sin tocar</span></li>
+                    </ul>
+                    <h4>Solo existe la compañía padre en otra compañía</h4>
+                    <p>El contacto no existe, pero una compañía relacionada (encontrada por dominio de email) existe en otra de tus compañías. Dos acciones:</p>
+                    <ul>
+                        <li><strong>Compartir compañía entre todas las compañías</strong>: <span>Hace visible la compañía padre para todas las compañías a las que tienes acceso, y luego te permite crear el contacto bajo ella</span></li>
+                        <li><strong>Crear compañía aquí</strong>: <span>Crea un registro de compañía independiente en la compañía activa y el contacto bajo ella</span></li>
+                    </ul>
+                    <div class="info-box warning">
+                        <strong>Importante:</strong> <span>Compartir un contacto o compañía entre todas tus compañías cambia su visibilidad para todos los usuarios con acceso a esas compañías. La extensión pide confirmación antes de guardar.</span>
+                    </div>
+
+                    <h3>Registro Automático y Multi-compañía</h3>
+                    <p>Al activar el registro automático en un registro, la extensión recuerda a qué compañía pertenece ese registro. Los emails nuevos del hilo siempre se registran en la compañía correcta, incluso si después cambias de compañía activa en la barra lateral.</p>
+
+                    <h3>Comportamiento en el Plan GRATIS</h3>
+                    <p>Si tienes acceso a varias compañías en el plan GRATIS, la extensión usa tu compañía por defecto en Odoo para todas las operaciones. El icono del selector no aparece y no se ofrece búsqueda cross-company. Actualizar a PLUS desbloquea ambas funciones.</p>
+
+                    <h3>Limitaciones Conocidas</h3>
+                    <ul>
+                        <li><strong>No sincroniza con el selector de Odoo del navegador</strong>: <span>La extensión usa tu API key, mientras que el selector de compañía de Odoo usa cookies. Son independientes — cambiar de compañía en tu pestaña de Odoo no cambia la compañía activa en Gmail, y viceversa.</span></li>
+                        <li><strong>Compañía por defecto cambiada en Odoo</strong>: <span>Si tu administrador cambia tu compañía por defecto en Odoo, la extensión sigue usando el valor cacheado anterior hasta que cierres sesión y vuelvas a entrar.</span></li>
+                        <li><strong>Una compañía a la vez</strong>: <span>El selector es single-select: la barra lateral muestra registros de una compañía a la vez. Para ver registros de otra compañía, cambia a ella.</span></li>
                     </ul>
                 </section>
 

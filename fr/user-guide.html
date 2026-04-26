@@ -220,6 +220,7 @@
                         <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Opportunités</span></a></li>
                         <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Tâches et tickets</span></a></li>
                         <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Notifications</span></a></li>
+                        <li><a href="#multi-company"><span class="material-symbols-outlined">business</span> <span>Multi-Company</span></a></li>
                         <li><a href="#troubleshooting"><span class="material-symbols-outlined">help</span> <span>Dépannage</span></a></li>
                         <li><a href="#faq"><span class="material-symbols-outlined">quiz</span> <span>FAQ</span></a></li>
                     </ul>
@@ -296,6 +297,7 @@
                         <li><strong>Activités Récentes</strong>: <span>Voir les messages récents des conversations Odoo pour chaque contact</span></li>
                         <li><strong>Organisation des Notifications</strong>: <span>Identifiez et organisez les emails de notification Odoo avec des badges de module, la détection de mentions et le filtrage rapide</span></li>
                         <li><strong>Auto-logging</strong>: <span>Link a Gmail thread to one or more Odoo records and have every new email logged automatically into their chatter (currently in private beta)</span></li>
+                        <li><strong>Multi-Company Support</strong>: <span>Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company</span></li>
                     </ul>
                 </section>
 
@@ -555,6 +557,69 @@
                         <li>Badges de module — afficher/masquer les badges colorés par module</li>
                         <li>Badges de mention — afficher/masquer les badges de détection de mentions</li>
                         <li>Raccourci barre latérale — afficher/masquer le lien Odoo Notifications dans la barre latérale Gmail</li>
+                    </ul>
+                </section>
+
+                <!-- Multi-Company Section -->
+                <section id="multi-company" class="guide-section">
+                    <h2><span class="material-symbols-outlined">business</span> <span>Multi-Company Support</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>If your Odoo user has access to several companies, the extension lets you choose which one is active. The active company decides which records the sidebar shows you and which company every new lead, task, ticket or contact is created in.</p>
+
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>PLUS plan</li>
+                        <li>An Odoo user with access to two or more companies (in Odoo: Settings > Users > Allowed Companies)</li>
+                    </ul>
+
+                    <h3>The Company Selector</h3>
+                    <p>When you have access to more than one company, a building icon appears in the sidebar header, next to the settings (⚙) button:</p>
+                    <ul>
+                        <li>Hover the icon to see the active company name ("Operating in {company}")</li>
+                        <li>Click the icon to open a dropdown listing every company you have access to</li>
+                        <li>Pick a company with the radio buttons. The dropdown closes and the sidebar refreshes with data from the new company</li>
+                        <li>If you have access to only one company, the icon is not shown</li>
+                    </ul>
+                    <div class="info-box">
+                        <strong>Persistence:</strong> <span>Your selection is saved per Odoo instance, so opening Gmail again resumes the company you were last working in. Logging out clears the saved selection.</span>
+                    </div>
+
+                    <h3>What the Active Company Affects</h3>
+                    <p>Once you pick a company, every operation in the sidebar is scoped to it:</p>
+                    <ul>
+                        <li><strong>Records you see</strong>: <span>Opportunities, tasks, tickets and partners listed in the sidebar are filtered to those visible in the active company</span></li>
+                        <li><strong>Records you create</strong>: <span>New leads, tasks, tickets and contacts created from the sidebar are assigned to the active company</span></li>
+                        <li><strong>Auto-logged emails</strong>: <span>Emails processed by auto-logging are posted in the company that owns the linked record (see the Auto-logging note below)</span></li>
+                    </ul>
+
+                    <h3>Cross-Company Contact Lookup</h3>
+                    <p>If you open an email from someone who isn't in the active company but exists somewhere else in your Odoo instance, the sidebar tells you and offers actions instead of leaving you with an empty state.</p>
+                    <h4>The contact exists in another company</h4>
+                    <p>The sidebar shows the contact found, the company it lives in, and two actions:</p>
+                    <ul>
+                        <li><strong>Make visible to all companies</strong>: <span>Removes the contact's company restriction so users in every company you have access to can see it. Asks for confirmation before saving</span></li>
+                        <li><strong>Create new in this company</strong>: <span>Creates a separate contact record in the active company, leaving the original untouched</span></li>
+                    </ul>
+                    <h4>Only the parent company exists in another company</h4>
+                    <p>The contact is missing, but a related company (matched by email domain) exists in another of your companies. Two actions:</p>
+                    <ul>
+                        <li><strong>Share company across all companies</strong>: <span>Makes the parent company visible to every company you have access to, then lets you create the contact under it</span></li>
+                        <li><strong>Create company here</strong>: <span>Creates an independent company record in the active company and the contact under it</span></li>
+                    </ul>
+                    <div class="info-box warning">
+                        <strong>Important:</strong> <span>Sharing a contact or company across all your companies changes its visibility for every user with access to those companies. The extension asks for confirmation before saving.</span>
+                    </div>
+
+                    <h3>Auto-logging Across Companies</h3>
+                    <p>When you activate auto-logging on a record, the extension remembers the company that record belongs to. New emails on that thread are always logged in the right company, even if you've switched the active company in the sidebar afterwards.</p>
+
+                    <h3>Behavior on the FREE Plan</h3>
+                    <p>If you have access to several companies on the FREE plan, the extension uses your default company in Odoo for every operation. The selector icon does not appear, and cross-company lookups are not offered. Upgrading to PLUS unlocks both.</p>
+
+                    <h3>Known Limits</h3>
+                    <ul>
+                        <li><strong>Not synced with the Odoo browser switcher</strong>: <span>The extension uses your API key, while the Odoo company switcher uses cookies. The two are independent — switching companies in your Odoo tab does not change the active company in Gmail and vice versa.</span></li>
+                        <li><strong>Default company changed in Odoo</strong>: <span>If your administrator changes your default company in Odoo, the extension keeps using the previously cached value until you log out and log back in.</span></li>
+                        <li><strong>One company at a time</strong>: <span>The selector is single-select: the sidebar shows records from one company at a time. To see records from another company, switch to it.</span></li>
                     </ul>
                 </section>
 

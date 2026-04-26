@@ -79,7 +79,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1>Polityka prywatności</h1>
-            <p class="last-updated"><span>Ostatnia aktualizacja</span>: March 4, 2026</p>
+            <p class="last-updated"><span>Ostatnia aktualizacja</span>: April 26, 2026</p>
 
             <section class="policy-section">
                 <h2>Przegląd</h2>
@@ -107,6 +107,15 @@
                     <li>Informacje o firmach i powiązanych kontaktach</li>
                 </ul>
 
+                <h3>Data Accessed for Auto-Logging (Optional)</h3>
+                <p>Auto-logging is an opt-in feature. The Extension only accesses this data after you grant Gmail access in Settings > Auto-logging and explicitly link a thread to an Odoo record. Once a thread is linked, the Extension uses Google's Gmail API to:</p>
+                <ul>
+                    <li>Periodically check for new messages on the threads you have linked (background polling while at least one mapping is active)</li>
+                    <li>Read the subject, sender, recipients, date and body of those new messages</li>
+                    <li>Post them as internal notes in the Odoo records you linked</li>
+                </ul>
+                <p><strong>Scope:</strong> <span>The Extension only requests the gmail.readonly OAuth scope. It cannot send, modify, archive or delete emails. Auto-logging stops when you disconnect Gmail in Settings, deactivate the mapping, or remove the Extension. Tokens can also be revoked from your Google Account permissions at any time.</span></p>
+
                 <h3>Dane konfiguracyjne</h3>
                 <p>Rozszerzenie przechowuje konfigurację Twojej instancji Odoo lokalnie:</p>
                 <ul>
@@ -114,6 +123,9 @@
                     <li>Nazwa bazy danych</li>
                     <li>Dane uwierzytelniające</li>
                     <li>Preferencje użytkownika (ustawienia widocznych sekcji)</li>
+                    <li>Gmail OAuth tokens (only when auto-logging is enabled) — required to access the Gmail API on your behalf; revocable from Settings > Auto-logging or your Google Account</li>
+                    <li>Auto-logging mappings (thread-to-record links and IDs of messages already logged) — stored locally for the duration of each mapping</li>
+                    <li>Active company selection and the list of companies you have access to (multi-company instances) — cached locally to remember which company you are operating in</li>
                 </ul>
             </section>
 
@@ -126,6 +138,7 @@
                     <li><strong>Logowanie e-maili:</strong> <span>Gdy klikniesz przyciski "Zaloguj e-mail", treść e-maila jest zapisywana w chatterze Twojej instancji Odoo</span></li>
                     <li><strong>Wyszukiwanie i filtrowanie:</strong> <span>Wyszukiwanie w szansach, zadaniach i zgłoszeniach powiązanych z kontaktami</span></li>
                     <li><strong>Buforowanie:</strong> <span>Tymczasowe buforowanie odpowiedzi API Odoo lokalnie w celu poprawy wydajności</span></li>
+                    <li><strong>Auto-Logging:</strong> <span>When you enable auto-logging on a record, the Extension queries your Gmail account in the background to detect new emails on the linked thread and posts them as internal notes in your Odoo instance</span></li>
                 </ul>
             </section>
 
@@ -184,11 +197,12 @@
                 <p><span>Wykorzystanie i przekazywanie przez Integrację Odoo dla Gmail informacji otrzymanych z interfejsów API Google jest zgodne z</span> <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API Services User Data Policy</a>, <span>w tym wymogami Ograniczonego Użytkowania.</span></p>
                 <p><strong>Zgodność z Ograniczonym Użytkowaniem:</strong></p>
                 <ul>
-                    <li>Rozszerzenie uzyskuje dostęp do danych Gmail tylko gdy jawnie otworzysz e-mail</li>
+                    <li>The Extension only accesses Gmail data when (a) you explicitly open an email, or (b) you have explicitly enabled auto-logging and linked a thread to an Odoo record (a per-thread opt-in)</li>
                     <li>Dane e-mail są wykorzystywane wyłącznie do ujawnionego celu: integracji z Twoim Odoo CRM</li>
                     <li>Żadne dane Gmail nie są wykorzystywane do wyświetlania reklam</li>
                     <li>Dane Gmail nie są przekazywane stronom trzecim (z wyjątkiem Twojej własnej instancji Odoo)</li>
                     <li>Dane Gmail nie są wykorzystywane do określania zdolności kredytowej ani celów pożyczkowych</li>
+                    <li>The Extension only requests the gmail.readonly OAuth scope. It cannot send, modify, archive or delete emails on your behalf</li>
                 </ul>
             </section>
 
@@ -210,6 +224,8 @@
                 <p>Rozszerzenie żąda opcjonalnych uprawnień dla niestandardowych instancji Odoo:</p>
                 <ul>
                     <li><strong>optional_host_permissions (https://*/*):</strong> <span>Używane TYLKO jeśli łączysz się z samodzielnie hostowaną instancją Odoo na niestandardowej domenie (np. odoo.twojafirma.com lub erp.przyklad.com). To uprawnienie jest żądane tylko gdy jawnie skonfigurujesz niestandardowy URL Odoo.</span></li>
+                    <li><strong>identity:</strong> <span>Used ONLY when you opt into auto-logging. Lets the Extension complete the Google sign-in flow that grants Gmail API access (gmail.readonly scope). Requested at the moment you click "Connect" in Settings > Auto-logging.</span></li>
+                    <li><strong>alarms:</strong> <span>Used ONLY when auto-logging is active. Lets the Extension wake up periodically in the background to check for new emails on the threads you have linked. Requested together with the identity permission.</span></li>
                 </ul>
                 <p><strong>Uwaga:</strong> <span>Rozszerzenie obsługuje tylko połączenia HTTPS ze względów bezpieczeństwa. Połączenia HTTP nie są dozwolone.</span></p>
 
