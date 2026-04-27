@@ -403,7 +403,9 @@
       "limit2Label": "Default company changed in Odoo",
       "limit2Desc": "If your administrator changes your default company in Odoo, the extension keeps using the previously cached value until you log out and log back in.",
       "limit3Label": "One company at a time",
-      "limit3Desc": "The selector is single-select: the sidebar shows records from one company at a time. To see records from another company, switch to it."
+      "limit3Desc": "The selector is single-select: the sidebar shows records from one company at a time. To see records from another company, switch to it.",
+      "limit4Label": "Access error after creating a record",
+      "limit4Desc": "When you create an opportunity, task, ticket or contact from the sidebar (or click \"View in Odoo\" on one), the extension opens the record in a new browser tab. Odoo loads it under whichever company is currently active in your Odoo browser session (the cookie session — see above). If that company differs from the one where the record was created, Odoo may show an access error. On the FREE plan, the extension always creates records in your default Odoo company — to see them, switch your Odoo browser tab to that same default. On the PLUS plan, keep the same company selected in both the sidebar selector and your Odoo browser tab. Odoo 18 and later automatically switch your active company when you open a record that belongs to another of your allowed companies, so this issue is mostly visible on Odoo 17 and earlier."
     },
     "troubleshooting": {
       "title": "Solução de Problemas",
@@ -1066,6 +1068,21 @@
       "subtitle": "Comece com nosso plano Grátis ou atualize para PLUS para recursos avançados.",
       "install": "Instalar Extensão",
       "viewPricing": "Ver Preços"
+    },
+    "v0500": {
+      "autoLogging": "Auto-logging (beta privada)",
+      "autoLoggingDesc": "Pare de clicar em \"log\" a cada resposta:",
+      "autoLoggingThread": "Vincule uma conversa uma vez e as próximas mensagens são registradas automaticamente em seu lead, tarefa, ticket ou contato",
+      "autoLoggingMultiple": "Um mesmo e-mail pode deixar rastro em vários registros ao mesmo tempo (um lead E um ticket, por exemplo)",
+      "autoLoggingDistinguish": "Distinga rapidamente quais e-mails você registrou e quais entraram automaticamente",
+      "autoLoggingVisibility": "Saiba a qualquer momento quantas conversas estão sendo seguidas",
+      "autoLoggingHealth": "Se algo der errado, você vê em Settings antes que vire um problema",
+      "multiCompany": "Suporte multi-empresa",
+      "multiCompanyDesc": "Trabalhe em todas as suas empresas Odoo sem sair do Gmail:",
+      "multiCompanySwitch": "Alterne entre suas empresas Odoo direto do header da sidebar",
+      "multiCompanyCorrect": "Crie leads, tarefas e tickets sem errar a empresa — sempre vão para a ativa",
+      "multiCompanyDuplicates": "Evite contatos duplicados: se aquele cliente já existe em outra das suas empresas, a extensão avisa antes de criar",
+      "multiCompanyOptions": "Decida o que fazer quando a empresa de um cliente está em outra Odoo: compartilhar, replicá-la aqui, ou criar um contato independente"
     },
     "v0409": {
       "errorDetails": "Detalhes do erro",
