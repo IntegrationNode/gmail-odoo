@@ -1069,6 +1069,9 @@
       "install": "Instalar Extensión",
       "viewPricing": "Ver Precios"
     },
+    "v0501": {
+      "dedupCrossFlow": "Detección de duplicados más fiable entre registro manual y automático"
+    },
     "v0500": {
       "autoLogging": "Auto-logging (beta privada)",
       "autoLoggingDesc": "Olvídate de hacer clic en \"log\" en cada respuesta:",
