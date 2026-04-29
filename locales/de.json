@@ -651,6 +651,11 @@
       "feature9": "E-Mail-Teilnehmer-Informationen aus Odoo",
       "feature10": "Letzte Aktivitäten aus Odoo-Konversationen",
       "feature11": "Organisation von Benachrichtigungs-E-Mails mit Modul-Badges",
+      "feature12": "Automatisches Loggen von Gmail-Threads in Odoo-Datensätze",
+      "feature13": "Multi-Mandanten-Unterstützung",
+      "feature14": "Finanzielle Einblicke zu Ihren Kontakten",
+      "feature15": "Anpassbare Zitiertiefe beim Loggen von E-Mails",
+      "seeFullComparison": "Vollständigen Vergleich ansehen →",
       "cta": "14 Tage Kostenlos Testen"
     },
     "team": {
@@ -685,7 +690,11 @@
       "groupByStage": "Datensätze nach Phase/Status gruppieren",
       "emailParticipants": "E-Mail-Teilnehmer-Infos",
       "recentActivities": "Letzte Aktivitäten",
-      "notificationOrganization": "Organisation von Benachrichtigungs-E-Mails"
+      "notificationOrganization": "Organisation von Benachrichtigungs-E-Mails",
+      "automation": "Automatisierung & Skalierung",
+      "autoLogging": "Automatisches Loggen von Gmail-Threads in Odoo",
+      "multiCompany": "Multi-Mandanten-Unterstützung",
+      "customQuoteLevels": "Anpassbare Zitiertiefe beim Loggen"
     },
     "cta": {
       "title": "Bereit, Ihren Gmail-Odoo-Workflow zu verbessern?",

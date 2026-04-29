@@ -651,6 +651,11 @@
       "feature9": "Informações dos participantes do email a partir do Odoo",
       "feature10": "Atividades recentes das conversas do Odoo",
       "feature11": "Organização de emails de notificação com badges por módulo",
+      "feature12": "Registro automático de threads do Gmail em registros do Odoo",
+      "feature13": "Suporte multi-empresa",
+      "feature14": "Insights financeiros dos seus contatos",
+      "feature15": "Profundidade de citação personalizável ao registrar emails",
+      "seeFullComparison": "Ver comparação completa →",
       "cta": "Teste Grátis por 14 Dias"
     },
     "team": {
@@ -685,7 +690,11 @@
       "groupByStage": "Agrupar registros por etapa/estado",
       "emailParticipants": "Info dos participantes do email",
       "recentActivities": "Atividades recentes",
-      "notificationOrganization": "Organização de emails de notificação"
+      "notificationOrganization": "Organização de emails de notificação",
+      "automation": "Automação e Escala",
+      "autoLogging": "Registro automático de threads do Gmail no Odoo",
+      "multiCompany": "Suporte multi-empresa",
+      "customQuoteLevels": "Profundidade de citação personalizável"
     },
     "cta": {
       "title": "Pronto para turbinar seu workflow Gmail-Odoo?",

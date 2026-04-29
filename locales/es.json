@@ -252,6 +252,11 @@
       "feature9": "Información de participantes del email desde Odoo",
       "feature10": "Actividades recientes de las conversaciones de Odoo",
       "feature11": "Organización de emails de notificación con badges por módulo",
+      "feature12": "Auto-registro de hilos de Gmail en registros de Odoo",
+      "feature13": "Soporte multi-empresa",
+      "feature14": "Información financiera de tus contactos",
+      "feature15": "Profundidad de citas configurable al registrar emails",
+      "seeFullComparison": "Ver comparación completa →",
       "cta": "Prueba Gratis 14 Días"
     },
     "team": {
@@ -286,7 +291,11 @@
       "groupByStage": "Agrupar registros por etapa/estado",
       "emailParticipants": "Info de participantes del email",
       "recentActivities": "Actividades recientes",
-      "notificationOrganization": "Organización de emails de notificación"
+      "notificationOrganization": "Organización de emails de notificación",
+      "automation": "Automatización y Escalado",
+      "autoLogging": "Auto-registro de hilos de Gmail en Odoo",
+      "multiCompany": "Soporte multi-empresa",
+      "customQuoteLevels": "Profundidad de citas configurable al registrar"
     },
     "cta": {
       "title": "¿Listo para potenciar tu flujo Gmail-Odoo?",

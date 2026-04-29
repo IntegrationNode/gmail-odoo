@@ -651,6 +651,11 @@
       "feature9": "E-maildeelnemersinformatie vanuit Odoo",
       "feature10": "Recente activiteiten uit Odoo-gesprekken",
       "feature11": "Organisatie van notificatie-e-mails met modulebadges",
+      "feature12": "Automatisch loggen van Gmail-threads naar Odoo-records",
+      "feature13": "Multi-company ondersteuning",
+      "feature14": "Financiële inzichten over uw contacten",
+      "feature15": "Aanpasbare quote-diepte bij het loggen van e-mails",
+      "seeFullComparison": "Volledige vergelijking bekijken →",
       "cta": "14 Dagen Gratis Proberen"
     },
     "team": {
@@ -685,7 +690,11 @@
       "groupByStage": "Records groeperen op fase/status",
       "emailParticipants": "E-maildeelnemersinfo",
       "recentActivities": "Recente activiteiten",
-      "notificationOrganization": "Organisatie van notificatie-e-mails"
+      "notificationOrganization": "Organisatie van notificatie-e-mails",
+      "automation": "Automatisering & Schalen",
+      "autoLogging": "Automatisch loggen van Gmail-threads naar Odoo",
+      "multiCompany": "Multi-company ondersteuning",
+      "customQuoteLevels": "Aanpasbare quote-diepte bij loggen"
     },
     "cta": {
       "title": "Klaar om uw Gmail-Odoo workflow te versnellen?",

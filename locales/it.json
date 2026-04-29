@@ -651,6 +651,11 @@
       "feature9": "Informazioni dei partecipanti email da Odoo",
       "feature10": "Attività recenti dalle conversazioni di Odoo",
       "feature11": "Organizzazione delle email di notifica con badge per modulo",
+      "feature12": "Registrazione automatica dei thread Gmail nei record Odoo",
+      "feature13": "Supporto multi-azienda",
+      "feature14": "Approfondimenti finanziari sui tuoi contatti",
+      "feature15": "Profondità di citazione personalizzabile durante la registrazione",
+      "seeFullComparison": "Vedi confronto completo →",
       "cta": "Prova Gratis per 14 Giorni"
     },
     "team": {
@@ -685,7 +690,11 @@
       "groupByStage": "Raggruppare i record per fase/stato",
       "emailParticipants": "Info partecipanti email",
       "recentActivities": "Attività recenti",
-      "notificationOrganization": "Organizzazione delle email di notifica"
+      "notificationOrganization": "Organizzazione delle email di notifica",
+      "automation": "Automazione e Scalabilità",
+      "autoLogging": "Registrazione automatica thread Gmail in Odoo",
+      "multiCompany": "Supporto multi-azienda",
+      "customQuoteLevels": "Profondità di citazione personalizzabile"
     },
     "cta": {
       "title": "Pronto a potenziare il tuo workflow Gmail-Odoo?",

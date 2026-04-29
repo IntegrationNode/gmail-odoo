@@ -651,6 +651,11 @@
       "feature9": "Informacje o uczestnikach e-maila z Odoo",
       "feature10": "Ostatnie aktywności z konwersacji Odoo",
       "feature11": "Organizacja e-maili z powiadomieniami ze znacznikami modułów",
+      "feature12": "Automatyczne logowanie wątków Gmail do rekordów Odoo",
+      "feature13": "Obsługa wielu firm",
+      "feature14": "Informacje finansowe o Twoich kontaktach",
+      "feature15": "Konfigurowalna głębokość cytatów przy logowaniu e-maili",
+      "seeFullComparison": "Zobacz pełne porównanie →",
       "cta": "Wypróbuj Za Darmo przez 14 Dni"
     },
     "team": {
@@ -685,7 +690,11 @@
       "groupByStage": "Grupowanie rekordów według etapu/statusu",
       "emailParticipants": "Info o uczestnikach e-maila",
       "recentActivities": "Ostatnie aktywności",
-      "notificationOrganization": "Organizacja e-maili z powiadomieniami"
+      "notificationOrganization": "Organizacja e-maili z powiadomieniami",
+      "automation": "Automatyzacja i skalowanie",
+      "autoLogging": "Auto-logowanie wątków Gmail do Odoo",
+      "multiCompany": "Obsługa wielu firm",
+      "customQuoteLevels": "Konfigurowalna głębokość cytatów przy logowaniu"
     },
     "cta": {
       "title": "Gotowy na turbodoładowanie przepływu pracy Gmail-Odoo?",
