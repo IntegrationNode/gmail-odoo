@@ -522,21 +522,21 @@
       "title": "Directe Contactinfo",
       "description": "Bekijk Odoo contactgegevens direct in de zijbalk van Gmail wanneer u een e-mail opent. 22x sneller dan Google Apps Script."
     },
-    "crm": {
-      "title": "CRM Kansen",
-      "description": "Bekijk bestaande kansen en maak nieuwe aan zonder uw inbox te verlaten. Inclusief zoeken en filteren."
-    },
-    "tasks": {
-      "title": "Takenbeheer",
-      "description": "Bekijk en maak projecttaken gekoppeld aan contacten. Houd alles op één plek bij."
-    },
-    "helpdesk": {
-      "title": "Helpdesk Tickets",
-      "description": "Toegang tot supporttickets en maak nieuwe direct vanuit e-mailgesprekken."
+    "records": {
+      "title": "CRM, taken & tickets in één oogopslag",
+      "description": "Zie kansen, projecttaken en helpdesktickets gekoppeld aan het contact — allemaal in één zijbalk. Maak nieuwe aan met één klik."
     },
     "emailLogging": {
-      "title": "E-mail Loggen",
-      "description": "Log e-mails naar Odoo records met één klik. Formatteert automatisch en behoudt gespreksgeschiedenis."
+      "title": "E-mail loggen met één klik",
+      "description": "Log e-mails naar Odoo-records met één klik. Bijlagen en threadgeschiedenis blijven behouden."
+    },
+    "autoLogging": {
+      "title": "Automatisch loggen",
+      "description": "Koppel een Gmail-thread één keer en de extensie houdt deze op de achtergrond gesynchroniseerd met het Odoo-record. Geen handmatig loggen meer."
+    },
+    "multiCompany": {
+      "title": "Multi-company ondersteuning",
+      "description": "Werkt in alle Odoo-bedrijven waar u toegang toe heeft. Het actieve bedrijf wordt automatisch per record gedetecteerd."
     },
     "fast": {
       "title": "Bliksemsnel",

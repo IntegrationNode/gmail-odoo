@@ -522,21 +522,21 @@
       "title": "Instant Contact Info",
       "description": "View Odoo contact details directly in Gmail's sidebar when you open an email. 22x faster than Google Apps Script."
     },
-    "crm": {
-      "title": "CRM Opportunities",
-      "description": "See existing opportunities and create new ones without leaving your inbox. Includes search and filtering."
-    },
-    "tasks": {
-      "title": "Task Management",
-      "description": "View and create project tasks associated with contacts. Keep track of everything in one place."
-    },
-    "helpdesk": {
-      "title": "Helpdesk Tickets",
-      "description": "Access support tickets and create new ones directly from email conversations."
+    "records": {
+      "title": "CRM, tasks & tickets at a glance",
+      "description": "See opportunities, project tasks and helpdesk tickets associated with the contact — all in one sidebar. Create new ones in a click."
     },
     "emailLogging": {
-      "title": "Email Logging",
-      "description": "Log emails to Odoo records with one click. Automatically formats and preserves thread history."
+      "title": "One-click email logging",
+      "description": "Log emails to Odoo records with one click. Attachments and thread history preserved."
+    },
+    "autoLogging": {
+      "title": "Auto-logging",
+      "description": "Link a Gmail thread once and the extension keeps it synced with the Odoo record in the background. No manual logging again."
+    },
+    "multiCompany": {
+      "title": "Multi-company support",
+      "description": "Works across all the Odoo companies you have access to. The active company is auto-detected per record."
     },
     "fast": {
       "title": "Lightning Fast",

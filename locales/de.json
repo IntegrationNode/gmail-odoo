@@ -522,21 +522,21 @@
       "title": "Sofortige Kontaktinfo",
       "description": "Odoo-Kontaktdetails direkt in der Gmail-Seitenleiste anzeigen. 22x schneller als Google Apps Script."
     },
-    "crm": {
-      "title": "CRM-Chancen",
-      "description": "Bestehende Chancen anzeigen und neue erstellen, ohne Ihren Posteingang zu verlassen. Inklusive Suche und Filterung."
-    },
-    "tasks": {
-      "title": "Aufgabenverwaltung",
-      "description": "Projektaufgaben anzeigen und erstellen, die mit Kontakten verknüpft sind. Alles an einem Ort."
-    },
-    "helpdesk": {
-      "title": "Helpdesk-Tickets",
-      "description": "Support-Tickets anzeigen und direkt aus E-Mail-Konversationen neue erstellen."
+    "records": {
+      "title": "CRM, Aufgaben & Tickets auf einen Blick",
+      "description": "Sehen Sie Chancen, Projektaufgaben und Helpdesk-Tickets, die mit dem Kontakt verknüpft sind — alles in einer Seitenleiste. Erstellen Sie neue mit einem Klick."
     },
     "emailLogging": {
-      "title": "E-Mail-Protokollierung",
-      "description": "E-Mails mit einem Klick in Odoo-Datensätzen protokollieren. Automatische Formatierung und Verlaufserhaltung."
+      "title": "E-Mail-Protokollierung mit einem Klick",
+      "description": "Protokollieren Sie E-Mails in Odoo-Datensätzen mit einem Klick. Anhänge und Thread-Verlauf bleiben erhalten."
+    },
+    "autoLogging": {
+      "title": "Automatische Protokollierung",
+      "description": "Verknüpfen Sie einen Gmail-Thread einmal und die Erweiterung hält ihn im Hintergrund mit dem Odoo-Datensatz synchron. Nie wieder manuelles Protokollieren."
+    },
+    "multiCompany": {
+      "title": "Multi-Mandanten-Unterstützung",
+      "description": "Funktioniert über alle Odoo-Mandanten hinweg, auf die Sie Zugriff haben. Der aktive Mandant wird pro Datensatz automatisch erkannt."
     },
     "fast": {
       "title": "Blitzschnell",

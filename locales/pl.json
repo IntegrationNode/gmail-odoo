@@ -522,21 +522,21 @@
       "title": "Natychmiastowe informacje o kontaktach",
       "description": "Przeglądaj szczegóły kontaktów Odoo bezpośrednio w panelu bocznym Gmail po otwarciu e-maila. 22x szybciej niż Google Apps Script."
     },
-    "crm": {
-      "title": "Szanse sprzedaży CRM",
-      "description": "Zobacz istniejące szanse i twórz nowe bez opuszczania skrzynki. Zawiera wyszukiwanie i filtrowanie."
-    },
-    "tasks": {
-      "title": "Zarządzanie zadaniami",
-      "description": "Przeglądaj i twórz zadania projektowe powiązane z kontaktami. Trzymaj wszystko w jednym miejscu."
-    },
-    "helpdesk": {
-      "title": "Zgłoszenia Helpdesk",
-      "description": "Uzyskaj dostęp do zgłoszeń wsparcia i twórz nowe bezpośrednio z rozmów e-mailowych."
+    "records": {
+      "title": "CRM, zadania i zgłoszenia w jednym miejscu",
+      "description": "Zobacz szanse, zadania projektowe i zgłoszenia helpdesk powiązane z kontaktem — wszystko w jednym panelu bocznym. Twórz nowe jednym kliknięciem."
     },
     "emailLogging": {
-      "title": "Logowanie e-maili",
-      "description": "Loguj e-maile do rekordów Odoo jednym kliknięciem. Automatycznie formatuje i zachowuje historię wątku."
+      "title": "Logowanie e-maili jednym kliknięciem",
+      "description": "Loguj e-maile do rekordów Odoo jednym kliknięciem. Załączniki i historia wątku zachowane."
+    },
+    "autoLogging": {
+      "title": "Automatyczne logowanie",
+      "description": "Połącz wątek Gmail raz, a rozszerzenie utrzymuje go zsynchronizowanego z rekordem Odoo w tle. Koniec z ręcznym logowaniem."
+    },
+    "multiCompany": {
+      "title": "Obsługa wielu firm",
+      "description": "Działa we wszystkich firmach Odoo, do których masz dostęp. Aktywna firma jest automatycznie wykrywana dla każdego rekordu."
     },
     "fast": {
       "title": "Błyskawicznie szybkie",

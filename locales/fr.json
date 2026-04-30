@@ -522,21 +522,21 @@
       "title": "Infos contact instantanées",
       "description": "Consultez les détails des contacts Odoo directement dans la barre latérale de Gmail. 22x plus rapide que Google Apps Script."
     },
-    "crm": {
-      "title": "Opportunités CRM",
-      "description": "Consultez les opportunités existantes et créez-en de nouvelles sans quitter votre boîte mail. Inclut recherche et filtrage."
-    },
-    "tasks": {
-      "title": "Gestion des tâches",
-      "description": "Consultez et créez des tâches projet associées aux contacts. Gardez tout au même endroit."
-    },
-    "helpdesk": {
-      "title": "Tickets Helpdesk",
-      "description": "Accédez aux tickets de support et créez-en de nouveaux directement depuis les conversations email."
+    "records": {
+      "title": "CRM, tâches et tickets d'un coup d'œil",
+      "description": "Voyez opportunités, tâches de projet et tickets d'assistance associés au contact — tous dans la même barre latérale. Créez-en de nouveaux en un clic."
     },
     "emailLogging": {
-      "title": "Enregistrement d'emails",
-      "description": "Enregistrez les emails dans les fiches Odoo en un clic. Formate automatiquement et préserve l'historique."
+      "title": "Enregistrement d'emails en un clic",
+      "description": "Enregistrez les emails dans les fiches Odoo en un clic. Pièces jointes et historique de conversation préservés."
+    },
+    "autoLogging": {
+      "title": "Auto-enregistrement",
+      "description": "Liez un fil Gmail une fois et l'extension le maintient synchronisé avec la fiche Odoo en arrière-plan. Plus jamais d'enregistrement manuel."
+    },
+    "multiCompany": {
+      "title": "Support multi-entreprises",
+      "description": "Fonctionne dans toutes les entreprises Odoo auxquelles vous avez accès. L'entreprise active est détectée automatiquement par fiche."
     },
     "fast": {
       "title": "Ultra rapide",
