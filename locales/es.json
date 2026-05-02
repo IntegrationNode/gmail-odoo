@@ -1078,6 +1078,9 @@
       "install": "Instalar Extensión",
       "viewPricing": "Ver Precios"
     },
+    "v0502": {
+      "financialOdoo16": "Corregido un error que impedía que la sección Financiera cargara los datos del cliente en Odoo 16."
+    },
     "v0501": {
       "dedupCrossFlow": "Detección de duplicados más fiable entre registro manual y automático"
     },

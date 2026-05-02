@@ -1078,6 +1078,9 @@
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
     },
+    "v0502": {
+      "financialOdoo16": "Fehler behoben, der das Laden der Kundendaten im Bereich Finanzen unter Odoo 16 verhinderte."
+    },
     "v0501": {
       "dedupCrossFlow": "Zuverlässigere Duplikaterkennung zwischen manuellem und automatischem Logging"
     },
