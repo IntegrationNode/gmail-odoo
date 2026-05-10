@@ -1078,6 +1078,20 @@
       "install": "Zainstaluj rozszerzenie",
       "viewPricing": "Zobacz cennik"
     },
+    "v0510": {
+      "quickContactActions": "Szybkie akcje na kontaktach",
+      "quickContactActionsDesc": "Skopiuj e-mail lub telefon albo napisz nową wiadomość — jednym kliknięciem z dowolnego kontaktu w Powiązanych kontaktach.",
+      "activityTimestamps": "Znaczniki czasu i bezpośrednie linki w aktywnościach",
+      "activityTimestampsDesc": "Najedź na datę w Ostatnich aktywnościach, aby zobaczyć dokładny czas, i kliknij, aby otworzyć powiązany rekord. W Odoo 18 i nowszych kliknięcie przenosi bezpośrednio do tej konkretnej wiadomości w rekordzie.",
+      "clearerSetupErrors": "Bardziej zrozumiałe błędy konfiguracji",
+      "clearerSetupErrorsDesc": "Gdy adres URL Odoo jest nieprawidłowy lub znajduje się za proxy zwracającym stronę HTML z błędem, panel boczny pokazuje teraz jasną wskazówkę zamiast surowej odpowiedzi HTML."
+    },
+    "v0502": {
+      "financialOdoo16": "Naprawiono błąd, który uniemożliwiał ładowanie danych klienta w sekcji Finansowej w Odoo 16."
+    },
+    "v0501": {
+      "dedupCrossFlow": "Bardziej niezawodne wykrywanie duplikatów między ręcznym a automatycznym logowaniem"
+    },
     "v0500": {
       "autoLogging": "Auto-logging (prywatna beta)",
       "autoLoggingDesc": "Przestań ręcznie logować każdą odpowiedź:",

@@ -1078,6 +1078,20 @@
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
     },
+    "v0510": {
+      "quickContactActions": "Snelle contactacties",
+      "quickContactActionsDesc": "Kopieer e-mail of telefoon, of schrijf een nieuw bericht, met één klik vanuit elk contact in Gerelateerde contacten.",
+      "activityTimestamps": "Tijdstempels en directe links in activiteiten",
+      "activityTimestampsDesc": "Beweeg over een datum in Recente activiteiten om de exacte tijd te zien, en klik om het gerelateerde record te openen. In Odoo 18 en hoger springt de klik direct naar dat specifieke bericht in het record.",
+      "clearerSetupErrors": "Duidelijkere foutmeldingen bij installatie",
+      "clearerSetupErrorsDesc": "Als de Odoo-URL ongeldig is of achter een proxy zit die een HTML-foutpagina retourneert, toont de zijbalk nu een bruikbare hint in plaats van de ruwe HTML-respons."
+    },
+    "v0502": {
+      "financialOdoo16": "Een fout opgelost die voorkwam dat de Financiële sectie klantgegevens laadde op Odoo 16."
+    },
+    "v0501": {
+      "dedupCrossFlow": "Betrouwbaardere duplicaatdetectie tussen handmatig loggen en automatisch loggen"
+    },
     "v0500": {
       "autoLogging": "Auto-logging (private bèta)",
       "autoLoggingDesc": "Stop met handmatig elk antwoord loggen:",

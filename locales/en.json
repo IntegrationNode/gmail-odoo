@@ -1078,6 +1078,14 @@
       "install": "Install Extension",
       "viewPricing": "View Pricing"
     },
+    "v0510": {
+      "quickContactActions": "Quick contact actions",
+      "quickContactActionsDesc": "Copy email or phone numbers, or compose a new email, with one click from any contact in Related Contacts.",
+      "activityTimestamps": "Activity timestamps and direct links",
+      "activityTimestampsDesc": "Hover over a date in Recent Activities to see the exact time, and click to open the related record. On Odoo 18 and later, the click jumps straight to that specific message inside the record.",
+      "clearerSetupErrors": "Clearer setup errors",
+      "clearerSetupErrorsDesc": "When the Odoo URL is invalid or sits behind a proxy that returns an HTML error page, the sidebar now shows an actionable hint instead of the raw HTML response."
+    },
     "v0502": {
       "financialOdoo16": "Fixed an error that prevented the Financial section from loading customer data on Odoo 16."
     },

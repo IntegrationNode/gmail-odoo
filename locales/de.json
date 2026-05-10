@@ -1078,6 +1078,14 @@
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
     },
+    "v0510": {
+      "quickContactActions": "Schnellaktionen für Kontakte",
+      "quickContactActionsDesc": "Kopieren Sie E-Mail oder Telefon oder verfassen Sie eine neue Nachricht – mit einem Klick aus jedem Kontakt unter Verknüpfte Kontakte.",
+      "activityTimestamps": "Zeitstempel und Direktlinks in Aktivitäten",
+      "activityTimestampsDesc": "Bewegen Sie den Mauszeiger über ein Datum in Letzte Aktivitäten, um die genaue Uhrzeit zu sehen, und klicken Sie, um den zugehörigen Datensatz zu öffnen. Unter Odoo 18 und neuer springt der Klick direkt zu dieser konkreten Nachricht im Datensatz.",
+      "clearerSetupErrors": "Klarere Fehlermeldungen bei der Einrichtung",
+      "clearerSetupErrorsDesc": "Wenn die Odoo-URL ungültig ist oder hinter einem Proxy liegt, der eine HTML-Fehlerseite zurückgibt, zeigt die Seitenleiste jetzt einen umsetzbaren Hinweis statt der rohen HTML-Antwort an."
+    },
     "v0502": {
       "financialOdoo16": "Fehler behoben, der das Laden der Kundendaten im Bereich Finanzen unter Odoo 16 verhinderte."
     },

@@ -1078,6 +1078,14 @@
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
     },
+    "v0510": {
+      "quickContactActions": "Actions rapides sur les contacts",
+      "quickContactActionsDesc": "Copiez l'e-mail ou le téléphone, ou rédigez un nouveau message, en un clic depuis n'importe quel contact dans Contacts associés.",
+      "activityTimestamps": "Horodatages et liens directs dans les activités",
+      "activityTimestampsDesc": "Survolez une date dans Activités récentes pour voir l'heure exacte, et cliquez pour ouvrir la fiche associée. Sur Odoo 18 et versions ultérieures, le clic mène directement à ce message précis dans la fiche.",
+      "clearerSetupErrors": "Messages d'erreur de configuration plus clairs",
+      "clearerSetupErrorsDesc": "Lorsque l'URL Odoo n'est pas valide ou se trouve derrière un proxy qui renvoie une page HTML d'erreur, le panneau latéral affiche désormais une indication actionnable au lieu de la réponse HTML brute."
+    },
     "v0502": {
       "financialOdoo16": "Correction d'une erreur qui empêchait la section Financier de charger les données du client sur Odoo 16."
     },
