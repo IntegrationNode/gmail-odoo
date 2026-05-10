@@ -217,6 +217,8 @@
                         <li><a href="#subscription"><span class="material-symbols-outlined">credit_card</span> <span>Subscription</span></a></li>
                         <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span>Email Logging</span></a></li>
                         <li><a href="#autolog"><span class="material-symbols-outlined">sync</span> <span>Auto-logging</span></a></li>
+                        <li><a href="#related-contacts"><span class="material-symbols-outlined">groups</span> <span>Related contacts</span></a></li>
+                        <li><a href="#recent-activities"><span class="material-symbols-outlined">history</span> <span>Recent activities</span></a></li>
                         <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Opportunities</span></a></li>
                         <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Tasks & Tickets</span></a></li>
                         <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Notifications</span></a></li>
@@ -449,6 +451,39 @@
                         <li><strong>Record deleted in Odoo</strong>: <span>If the linked record is deleted in Odoo, the mapping is removed automatically the next time the extension tries to log into it.</span></li>
                         <li><strong>Gmail disconnected</strong>: <span>If the Gmail API connection expires or is revoked, auto-logging stops for all threads until you reconnect from Settings > Auto-logging.</span></li>
                     </ul>
+                </section>
+
+                <!-- Related Contacts Section -->
+                <section id="related-contacts" class="guide-section">
+                    <h2><span class="material-symbols-outlined">groups</span> <span>Working with related contacts</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>The Related Contacts section in the sidebar lists colleagues from the same company as the email's sender. From there you can take quick actions on each contact without leaving Gmail.</p>
+
+                    <h3>Open a contact in Odoo</h3>
+                    <p>Click anywhere on the contact card — the avatar, the name, or the job title — to open that contact's record in Odoo in a new tab.</p>
+
+                    <h3>Send a new email to a contact</h3>
+                    <p>Click the email icon next to a contact's address. If you don't have any draft open, Gmail opens a new compose window with that address pre-filled in the To field.</p>
+
+                    <h3>Add a contact to an email you're already writing</h3>
+                    <p>If a Gmail compose window is already open when you click the email icon, the contact is added as a recipient of that draft instead of opening a new one. The extension chooses where: if the To field is empty, the contact goes there; if it already has someone, the contact is added to CC and the compose minimises so you can keep clicking other contacts to build the recipient list.</p>
+
+                    <h3>Copy a contact's email or phone</h3>
+                    <p>Click the email or phone text — not the icon next to it — to copy it to your clipboard. A small toast confirms the copy.</p>
+
+                    <h3>Call a contact</h3>
+                    <p>Click the phone icon to start a call. The action is handed off to whichever app your system has registered for phone numbers — your mobile dialer, FaceTime, Skype, Microsoft Teams, etc. If no app is configured, the click does nothing.</p>
+                </section>
+
+                <!-- Recent Activities Section -->
+                <section id="recent-activities" class="guide-section">
+                    <h2><span class="material-symbols-outlined">history</span> <span>Navigating recent activities</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>The Recent Activities section shows the latest messages and conversations from the contact's record in Odoo, so you can see what has been said without leaving Gmail.</p>
+
+                    <h3>See exactly when an activity happened</h3>
+                    <p>Each entry shows a relative date like "5 days ago". Hover the date to see the exact day and time, formatted in your browser's locale.</p>
+
+                    <h3>Jump to a specific message in Odoo</h3>
+                    <p>Click any entry in Recent Activities to open the related Odoo record in a new tab. On Odoo 18 and later, the click goes one step further: Odoo scrolls to that exact message and highlights it for you. On Odoo 16 and 17 the record opens normally — the click still saves you the navigation, you just have to scroll to find the message yourself.</p>
                 </section>
 
                 <!-- Opportunities Section -->

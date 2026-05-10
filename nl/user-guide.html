@@ -217,6 +217,8 @@
                         <li><a href="#subscription"><span class="material-symbols-outlined">credit_card</span> <span>Abonnement</span></a></li>
                         <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span>E-mail Loggen</span></a></li>
                         <li><a href="#autolog"><span class="material-symbols-outlined">sync</span> <span>Auto-logging</span></a></li>
+                        <li><a href="#related-contacts"><span class="material-symbols-outlined">groups</span> <span>Gerelateerde contacten</span></a></li>
+                        <li><a href="#recent-activities"><span class="material-symbols-outlined">history</span> <span>Recente activiteiten</span></a></li>
                         <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Kansen</span></a></li>
                         <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Taken & Tickets</span></a></li>
                         <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Notificaties</span></a></li>
@@ -449,6 +451,39 @@
                         <li><strong>Record deleted in Odoo</strong>: <span>If the linked record is deleted in Odoo, the mapping is removed automatically the next time the extension tries to log into it.</span></li>
                         <li><strong>Gmail disconnected</strong>: <span>If the Gmail API connection expires or is revoked, auto-logging stops for all threads until you reconnect from Settings > Auto-logging.</span></li>
                     </ul>
+                </section>
+
+                <!-- Related Contacts Section -->
+                <section id="related-contacts" class="guide-section">
+                    <h2><span class="material-symbols-outlined">groups</span> <span>Werken met gerelateerde contacten</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>De sectie Gerelateerde contacten in de zijbalk toont collega's van hetzelfde bedrijf als de afzender van de e-mail. Van daaruit kunt u snelle acties uitvoeren op elk contact zonder Gmail te verlaten.</p>
+
+                    <h3>Een contact in Odoo openen</h3>
+                    <p>Klik ergens op de contactkaart — de avatar, de naam of de functie — om het record van dat contact te openen in Odoo in een nieuw tabblad.</p>
+
+                    <h3>Een nieuwe e-mail naar een contact sturen</h3>
+                    <p>Klik op het e-mailpictogram naast het adres van het contact. Als er geen concept open is, opent Gmail een nieuw opstellen-venster met dat adres voorgevuld in het Aan-veld.</p>
+
+                    <h3>Een contact toevoegen aan een e-mail die u al aan het schrijven bent</h3>
+                    <p>Als er al een Gmail-opstellen-venster open is wanneer u op het e-mailpictogram klikt, wordt het contact als ontvanger aan dat concept toegevoegd in plaats van een nieuw te openen. De extensie kiest waar: als het Aan-veld leeg is, gaat het contact daarheen; als er al iemand staat, wordt het contact toegevoegd aan CC en wordt het opstellen-venster geminimaliseerd zodat u door kunt gaan met klikken op andere contacten om de ontvangerslijst op te bouwen.</p>
+
+                    <h3>E-mail of telefoonnummer van een contact kopiëren</h3>
+                    <p>Klik op de e-mail- of telefoontekst — niet op het pictogram ernaast — om het naar uw klembord te kopiëren. Een kleine melding bevestigt de kopie.</p>
+
+                    <h3>Een contact bellen</h3>
+                    <p>Klik op het telefoonpictogram om een gesprek te starten. De actie wordt overgedragen aan de app die uw systeem heeft gekoppeld aan telefoonnummers — de kiezer van uw mobiel, FaceTime, Skype, Microsoft Teams, enz. Als geen app is geconfigureerd, gebeurt er niets bij de klik.</p>
+                </section>
+
+                <!-- Recent Activities Section -->
+                <section id="recent-activities" class="guide-section">
+                    <h2><span class="material-symbols-outlined">history</span> <span>Navigeren door recente activiteiten</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>De sectie Recente activiteiten toont de laatste berichten en gesprekken uit het record van het contact in Odoo, zodat u kunt zien wat er is besproken zonder Gmail te verlaten.</p>
+
+                    <h3>Zien wanneer een activiteit precies plaatsvond</h3>
+                    <p>Elke vermelding toont een relatieve datum zoals "5 dagen geleden". Beweeg over de datum om de exacte dag en tijd te zien, geformatteerd volgens de taal van uw browser.</p>
+
+                    <h3>Direct naar een specifiek bericht in Odoo gaan</h3>
+                    <p>Klik op een vermelding in Recente activiteiten om het gerelateerde Odoo-record te openen in een nieuw tabblad. In Odoo 18 en hoger gaat de klik nog een stap verder: Odoo scrolt naar dat specifieke bericht en markeert het. In Odoo 16 en 17 wordt het record normaal geopend — de klik bespaart u nog steeds de navigatie, alleen moet u zelf scrollen om het bericht te vinden.</p>
                 </section>
 
                 <!-- Opportunities Section -->

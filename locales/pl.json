@@ -104,6 +104,8 @@
       "features": "Przegląd funkcji",
       "emailLogging": "Logowanie e-maili",
       "autolog": "Auto-logging",
+      "relatedContacts": "Powiązane kontakty",
+      "recentActivities": "Ostatnie aktywności",
       "opportunities": "Szanse sprzedaży",
       "tasksTickets": "Zadania i zgłoszenia",
       "notifications": "Powiadomienia",
@@ -277,6 +279,28 @@
       "limit3Desc": "If the linked record is deleted in Odoo, the mapping is removed automatically the next time the extension tries to log into it.",
       "limit4Label": "Gmail disconnected",
       "limit4Desc": "If the Gmail API connection expires or is revoked, auto-logging stops for all threads until you reconnect from Settings > Auto-logging."
+    },
+    "relatedContacts": {
+      "title": "Praca z powiązanymi kontaktami",
+      "intro": "Sekcja Powiązane kontakty w panelu bocznym zawiera listę współpracowników z tej samej firmy co nadawca wiadomości. Z tego miejsca możesz wykonywać szybkie akcje na każdym kontakcie, nie opuszczając Gmail.",
+      "openInOdooTitle": "Otwarcie kontaktu w Odoo",
+      "openInOdooDesc": "Kliknij w dowolnym miejscu karty kontaktu — awatar, imię i nazwisko lub stanowisko — aby otworzyć rekord tego kontaktu w Odoo w nowej karcie.",
+      "composeTitle": "Wysłanie nowej wiadomości do kontaktu",
+      "composeDesc": "Kliknij ikonę wiadomości obok adresu kontaktu. Jeśli nie masz otwartego żadnego szkicu, Gmail otworzy nowe okno tworzenia wiadomości z tym adresem wstępnie wypełnionym w polu Do.",
+      "addRecipientTitle": "Dodanie kontaktu do wiadomości, którą już piszesz",
+      "addRecipientDesc": "Jeśli w momencie kliknięcia ikony wiadomości masz już otwarte okno tworzenia w Gmail, kontakt zostanie dodany jako odbiorca tego szkicu, zamiast otwierać nowy. Rozszerzenie decyduje gdzie: jeśli pole Do jest puste, kontakt trafia tam; jeśli już ktoś tam jest, kontakt jest dodawany do DW i okno tworzenia zostaje zminimalizowane, abyś mógł dalej klikać kolejne kontakty i budować listę odbiorców.",
+      "copyTitle": "Skopiowanie adresu e-mail lub numeru telefonu",
+      "copyDesc": "Kliknij tekst adresu e-mail lub numeru telefonu — nie ikonę obok — aby skopiować go do schowka. Mały komunikat potwierdzi skopiowanie.",
+      "callTitle": "Zadzwonienie do kontaktu",
+      "callDesc": "Kliknij ikonę telefonu, aby rozpocząć połączenie. Akcja jest przekazywana do aplikacji, którą Twój system zarejestrował dla numerów telefonów — dialera w telefonie, FaceTime, Skype, Microsoft Teams itp. Jeśli żadna aplikacja nie jest skonfigurowana, kliknięcie nie spowoduje żadnej akcji."
+    },
+    "recentActivities": {
+      "title": "Nawigacja po ostatnich aktywnościach",
+      "intro": "Sekcja Ostatnie aktywności wyświetla najnowsze wiadomości i rozmowy z rekordu kontaktu w Odoo, dzięki czemu widzisz, co zostało powiedziane, nie opuszczając Gmail.",
+      "timestampTitle": "Sprawdzenie, kiedy dokładnie miała miejsce aktywność",
+      "timestampDesc": "Każdy wpis pokazuje datę względną, np. „5 dni temu\". Najedź na datę, aby zobaczyć dokładny dzień i godzinę, sformatowane zgodnie z językiem Twojej przeglądarki.",
+      "jumpTitle": "Przejście do konkretnej wiadomości w Odoo",
+      "jumpDesc": "Kliknij wpis w Ostatnich aktywnościach, aby otworzyć powiązany rekord Odoo w nowej karcie. W Odoo 18 i nowszych kliknięcie idzie o krok dalej: Odoo przewija do tej konkretnej wiadomości i ją wyróżnia. W Odoo 16 i 17 rekord otwiera się normalnie — kliknięcie nadal oszczędza Ci nawigacji, ale musisz sam przewinąć, aby znaleźć wiadomość."
     },
     "opportunities": {
       "title": "Zarządzanie szansami sprzedaży",

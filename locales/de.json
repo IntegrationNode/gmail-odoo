@@ -104,6 +104,8 @@
       "features": "Funktionsübersicht",
       "emailLogging": "E-Mail-Protokollierung",
       "autolog": "Auto-logging",
+      "relatedContacts": "Verknüpfte Kontakte",
+      "recentActivities": "Letzte Aktivitäten",
       "opportunities": "Chancen",
       "tasksTickets": "Aufgaben & Tickets",
       "notifications": "Benachrichtigungen",
@@ -277,6 +279,28 @@
       "limit3Desc": "If the linked record is deleted in Odoo, the mapping is removed automatically the next time the extension tries to log into it.",
       "limit4Label": "Gmail disconnected",
       "limit4Desc": "If the Gmail API connection expires or is revoked, auto-logging stops for all threads until you reconnect from Settings > Auto-logging."
+    },
+    "relatedContacts": {
+      "title": "Mit verknüpften Kontakten arbeiten",
+      "intro": "Der Bereich Verknüpfte Kontakte in der Seitenleiste listet Kollegen aus demselben Unternehmen wie der Absender der E-Mail auf. Von dort aus können Sie Schnellaktionen für jeden Kontakt ausführen, ohne Gmail zu verlassen.",
+      "openInOdooTitle": "Einen Kontakt in Odoo öffnen",
+      "openInOdooDesc": "Klicken Sie auf eine beliebige Stelle der Kontaktkarte — den Avatar, den Namen oder die Berufsbezeichnung — um den Datensatz dieses Kontakts in Odoo in einem neuen Tab zu öffnen.",
+      "composeTitle": "Eine neue E-Mail an einen Kontakt senden",
+      "composeDesc": "Klicken Sie auf das E-Mail-Symbol neben der Adresse des Kontakts. Wenn kein Entwurf geöffnet ist, öffnet Gmail ein neues Verfassen-Fenster mit dieser Adresse, die im Feld An vorausgefüllt ist.",
+      "addRecipientTitle": "Einen Kontakt zu einer E-Mail hinzufügen, die Sie gerade schreiben",
+      "addRecipientDesc": "Wenn beim Klick auf das E-Mail-Symbol bereits ein Verfassen-Fenster in Gmail geöffnet ist, wird der Kontakt als Empfänger zu diesem Entwurf hinzugefügt, anstatt ein neues zu öffnen. Die Erweiterung entscheidet, wohin: Ist das Feld An leer, kommt der Kontakt dorthin; sind dort bereits Empfänger, wird der Kontakt in CC eingefügt und das Verfassen-Fenster wird minimiert, damit Sie weiterhin auf andere Kontakte klicken und die Empfängerliste aufbauen können.",
+      "copyTitle": "E-Mail oder Telefonnummer eines Kontakts kopieren",
+      "copyDesc": "Klicken Sie auf den Text der E-Mail oder Telefonnummer — nicht auf das Symbol daneben — um ihn in die Zwischenablage zu kopieren. Eine kleine Benachrichtigung bestätigt das Kopieren.",
+      "callTitle": "Einen Kontakt anrufen",
+      "callDesc": "Klicken Sie auf das Telefon-Symbol, um einen Anruf zu starten. Die Aktion wird an die App weitergeleitet, die Ihr System für Telefonnummern registriert hat — den Wähler Ihres Mobilgeräts, FaceTime, Skype, Microsoft Teams usw. Wenn keine App konfiguriert ist, passiert beim Klick nichts."
+    },
+    "recentActivities": {
+      "title": "Durch die letzten Aktivitäten navigieren",
+      "intro": "Der Bereich Letzte Aktivitäten zeigt die neuesten Nachrichten und Konversationen aus dem Datensatz des Kontakts in Odoo, damit Sie sehen können, was besprochen wurde, ohne Gmail zu verlassen.",
+      "timestampTitle": "Sehen, wann genau eine Aktivität stattfand",
+      "timestampDesc": "Jeder Eintrag zeigt ein relatives Datum wie „vor 5 Tagen\". Bewegen Sie den Mauszeiger über das Datum, um den genauen Tag und die genaue Uhrzeit zu sehen, formatiert in der Sprache Ihres Browsers.",
+      "jumpTitle": "Direkt zu einer bestimmten Nachricht in Odoo springen",
+      "jumpDesc": "Klicken Sie auf einen Eintrag in Letzte Aktivitäten, um den zugehörigen Odoo-Datensatz in einem neuen Tab zu öffnen. Unter Odoo 18 und neuer geht der Klick einen Schritt weiter: Odoo scrollt zu genau dieser Nachricht und hebt sie hervor. Unter Odoo 16 und 17 wird der Datensatz normal geöffnet — der Klick erspart Ihnen die Navigation, Sie müssen jedoch selbst scrollen, um die Nachricht zu finden."
     },
     "opportunities": {
       "title": "Chancen verwalten",

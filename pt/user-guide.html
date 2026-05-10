@@ -217,6 +217,8 @@
                         <li><a href="#subscription"><span class="material-symbols-outlined">credit_card</span> <span>Assinatura</span></a></li>
                         <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span>Registro de E-mail</span></a></li>
                         <li><a href="#autolog"><span class="material-symbols-outlined">sync</span> <span>Auto-logging</span></a></li>
+                        <li><a href="#related-contacts"><span class="material-symbols-outlined">groups</span> <span>Contactos relacionados</span></a></li>
+                        <li><a href="#recent-activities"><span class="material-symbols-outlined">history</span> <span>Atividades recentes</span></a></li>
                         <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Oportunidades</span></a></li>
                         <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Tarefas e Tickets</span></a></li>
                         <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Notificações</span></a></li>
@@ -449,6 +451,39 @@
                         <li><strong>Record deleted in Odoo</strong>: <span>If the linked record is deleted in Odoo, the mapping is removed automatically the next time the extension tries to log into it.</span></li>
                         <li><strong>Gmail disconnected</strong>: <span>If the Gmail API connection expires or is revoked, auto-logging stops for all threads until you reconnect from Settings > Auto-logging.</span></li>
                     </ul>
+                </section>
+
+                <!-- Related Contacts Section -->
+                <section id="related-contacts" class="guide-section">
+                    <h2><span class="material-symbols-outlined">groups</span> <span>Trabalhar com contactos relacionados</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>A secção Contactos relacionados na barra lateral lista os colegas da mesma empresa que o remetente do e-mail. A partir daí pode executar ações rápidas em cada contacto sem sair do Gmail.</p>
+
+                    <h3>Abrir um contacto no Odoo</h3>
+                    <p>Clique em qualquer parte do cartão do contacto — o avatar, o nome ou a função — para abrir o registo desse contacto no Odoo num novo separador.</p>
+
+                    <h3>Enviar um novo e-mail a um contacto</h3>
+                    <p>Clique no ícone de e-mail junto ao endereço do contacto. Se não tiver nenhum rascunho aberto, o Gmail abre uma nova janela de composição com esse endereço já preenchido no campo Para.</p>
+
+                    <h3>Adicionar um contacto a um e-mail que já está a escrever</h3>
+                    <p>Se já tiver uma janela de composição do Gmail aberta quando clicar no ícone de e-mail, o contacto é adicionado como destinatário desse rascunho em vez de abrir um novo. A extensão decide onde: se o campo Para estiver vazio, o contacto vai para lá; se já tiver alguém, o contacto é adicionado em CC e a janela de composição é minimizada para que possa continuar a clicar noutros contactos e construir a lista de destinatários.</p>
+
+                    <h3>Copiar o e-mail ou telefone de um contacto</h3>
+                    <p>Clique no texto do e-mail ou do telefone — não no ícone ao lado — para o copiar para a área de transferência. Uma pequena notificação confirma a cópia.</p>
+
+                    <h3>Ligar para um contacto</h3>
+                    <p>Clique no ícone de telefone para iniciar uma chamada. A ação é entregue à aplicação que o seu sistema tenha associada aos números de telefone — o marcador do seu telemóvel, FaceTime, Skype, Microsoft Teams, etc. Se não tiver nenhuma aplicação configurada, o clique não faz nada.</p>
+                </section>
+
+                <!-- Recent Activities Section -->
+                <section id="recent-activities" class="guide-section">
+                    <h2><span class="material-symbols-outlined">history</span> <span>Navegar pelas atividades recentes</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>A secção Atividades recentes mostra as mensagens e conversas mais recentes do registo do contacto no Odoo, para que veja o que foi dito sem sair do Gmail.</p>
+
+                    <h3>Ver exatamente quando ocorreu uma atividade</h3>
+                    <p>Cada entrada mostra uma data relativa como "há 5 dias". Passe o cursor sobre a data para ver o dia e a hora exatos, formatados na língua do seu navegador.</p>
+
+                    <h3>Saltar para uma mensagem específica no Odoo</h3>
+                    <p>Clique numa entrada das Atividades recentes para abrir o registo Odoo relacionado num novo separador. No Odoo 18 e versões posteriores, o clique vai um passo mais longe: o Odoo desloca-se para essa mensagem específica e destaca-a. No Odoo 16 e 17 o registo abre-se normalmente — o clique poupa-lhe a navegação, mas terá de deslocar-se você mesmo para encontrar a mensagem.</p>
                 </section>
 
                 <!-- Opportunities Section -->

@@ -316,6 +316,8 @@
       "features": "Resumen de Funciones",
       "emailLogging": "Registro de Emails",
       "autolog": "Registro Automático",
+      "relatedContacts": "Contactos relacionados",
+      "recentActivities": "Actividad reciente",
       "opportunities": "Oportunidades",
       "tasksTickets": "Tareas y Tickets",
       "notifications": "Notificaciones",
@@ -489,6 +491,28 @@
       "limit3Desc": "Si el registro vinculado se elimina en Odoo, el mapping se elimina automáticamente la próxima vez que la extensión intente registrar en él.",
       "limit4Label": "Gmail desconectado",
       "limit4Desc": "Si la conexión con la API de Gmail expira o se revoca, el registro automático se detiene para todos los hilos hasta que reconectes desde Configuración > Registro Automático."
+    },
+    "relatedContacts": {
+      "title": "Trabajar con contactos relacionados",
+      "intro": "La sección Contactos relacionados de la barra lateral lista colegas de la misma empresa que el remitente del correo. Desde ahí puedes ejecutar acciones rápidas sobre cada contacto sin salir de Gmail.",
+      "openInOdooTitle": "Abrir un contacto en Odoo",
+      "openInOdooDesc": "Haz clic en cualquier parte de la tarjeta del contacto — el avatar, el nombre o el cargo — para abrir su ficha en Odoo en una pestaña nueva.",
+      "composeTitle": "Enviar un correo nuevo a un contacto",
+      "composeDesc": "Haz clic en el icono del email junto a la dirección del contacto. Si no tienes ningún borrador abierto, Gmail abre una nueva ventana de redacción con esa dirección rellenada en el campo Para.",
+      "addRecipientTitle": "Añadir un contacto a un correo que ya estás escribiendo",
+      "addRecipientDesc": "Si ya tienes una ventana de redacción de Gmail abierta cuando haces clic en el icono del email, el contacto se añade como destinatario de ese borrador en lugar de abrir uno nuevo. La extensión decide dónde: si el campo Para está vacío, el contacto va ahí; si ya tiene a alguien, el contacto se añade a CC y la ventana de redacción se minimiza para que puedas seguir haciendo clic en otros contactos y construir la lista de destinatarios.",
+      "copyTitle": "Copiar el email o el teléfono de un contacto",
+      "copyDesc": "Haz clic en el texto del email o del teléfono — no en el icono que tiene al lado — para copiarlo al portapapeles. Una pequeña notificación confirma la copia.",
+      "callTitle": "Llamar a un contacto",
+      "callDesc": "Haz clic en el icono del teléfono para iniciar una llamada. La acción se delega en la app que tu sistema tenga asociada a los números de teléfono — el marcador del móvil, FaceTime, Skype, Microsoft Teams, etc. Si no tienes ninguna app configurada, el clic no hace nada."
+    },
+    "recentActivities": {
+      "title": "Navegar por la actividad reciente",
+      "intro": "La sección Actividad reciente muestra los últimos mensajes y conversaciones de la ficha del contacto en Odoo, para que veas lo que se ha hablado sin salir de Gmail.",
+      "timestampTitle": "Ver exactamente cuándo ocurrió una actividad",
+      "timestampDesc": "Cada entrada muestra una fecha relativa como \"hace 5 días\". Pasa el ratón sobre la fecha para ver el día y la hora exactos, formateados según el idioma de tu navegador.",
+      "jumpTitle": "Saltar a un mensaje concreto en Odoo",
+      "jumpDesc": "Haz clic en cualquier entrada de Actividad reciente para abrir la ficha relacionada de Odoo en una pestaña nueva. En Odoo 18 y posteriores, el clic va un paso más allá: Odoo hace scroll hasta ese mensaje exacto y lo resalta. En Odoo 16 y 17 la ficha se abre normalmente — el clic sigue ahorrándote la navegación, solo tendrás que hacer scroll tú para encontrar el mensaje."
     },
     "opportunities": {
       "title": "Gestionar Oportunidades",
