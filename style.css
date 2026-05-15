@@ -646,6 +646,111 @@ a:hover {
     }
 }
 
+/* Testimonials */
+.testimonials {
+    padding: var(--spacing-xl) 0;
+    background: var(--color-bg);
+}
+
+.testimonials h2 {
+    text-align: center;
+}
+
+.testimonials .section-subtitle {
+    text-align: center;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-md);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 360px));
+    gap: var(--spacing-md);
+    justify-content: center;
+    margin-top: var(--spacing-md);
+}
+
+.testimonial-card {
+    background: var(--color-bg-light);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.testimonial-rating {
+    display: flex;
+    gap: 2px;
+    color: #F59E0B;
+}
+
+.testimonial-rating .material-symbols-outlined {
+    font-size: 1.25rem;
+    font-variation-settings: 'FILL' 1;
+}
+
+.testimonial-quote {
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.testimonial-quote p {
+    margin: 0;
+}
+
+.testimonial-quote p::before {
+    content: '\201C';
+}
+
+.testimonial-quote p::after {
+    content: '\201D';
+}
+
+.testimonial-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    margin-top: 0.25rem;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.testimonial-source {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.875rem;
+    color: var(--color-text-lighter);
+}
+
+.testimonial-source .material-symbols-outlined {
+    font-size: 1rem;
+    color: var(--color-primary);
+}
+
+.testimonial-dot {
+    color: var(--color-text-lighter);
+}
+
+@media (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Pricing Section */
 .pricing {
     padding: var(--spacing-xl) 0;

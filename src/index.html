@@ -102,7 +102,36 @@
                     }
                 ],
                 "author": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
-                "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" }
+                "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "5",
+                    "bestRating": "5",
+                    "worstRating": "1",
+                    "ratingCount": "1",
+                    "reviewCount": "1"
+                },
+                "review": [
+                    {
+                        "@type": "Review",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                        },
+                        "author": {
+                            "@type": "Person",
+                            "name": "Perry Caplan"
+                        },
+                        "datePublished": "2026-04-24",
+                        "reviewBody": "Solves so much in our email-heavy workflow.",
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Chrome Web Store"
+                        }
+                    }
+                ]
             },
             {
                 "@type": "Organization",
@@ -528,6 +557,37 @@
                     <span class="social-proof-number" id="cws-country-count">&mdash;</span>
                     <span class="social-proof-label" data-t="socialProof.countriesLabel"></span>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 data-t="testimonials.title"></h2>
+            <p class="section-subtitle" data-t="testimonials.subtitle"></p>
+            <div class="testimonials-grid">
+                <figure class="testimonial-card">
+                    <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                    <blockquote class="testimonial-quote">
+                        <p data-t="testimonials.items.perryCaplan.quote"></p>
+                    </blockquote>
+                    <figcaption class="testimonial-meta">
+                        <span class="testimonial-author" data-t="testimonials.items.perryCaplan.author"></span>
+                        <span class="testimonial-source">
+                            <span class="material-symbols-outlined">verified</span>
+                            <span data-t="testimonials.items.perryCaplan.source"></span>
+                            <span class="testimonial-dot">·</span>
+                            <time data-t="testimonials.items.perryCaplan.date"></time>
+                        </span>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </section>

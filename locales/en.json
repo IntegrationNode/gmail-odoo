@@ -1316,6 +1316,18 @@
     "usersLabel": "users",
     "countriesLabel": "countries"
   },
+  "testimonials": {
+    "title": "What users are saying",
+    "subtitle": "Real feedback from teams using Odoo Integration for Gmail every day.",
+    "items": {
+      "perryCaplan": {
+        "quote": "Solves so much in our email-heavy workflow.",
+        "author": "Perry Caplan",
+        "source": "Chrome Web Store review",
+        "date": "Apr 24, 2026"
+      }
+    }
+  },
   "footer": {
     "title": "Odoo Integration for Gmail",
     "builtBy": "Built by",

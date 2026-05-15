@@ -44,7 +44,36 @@
                 }
             ],
             "author": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
-            "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" }
+            "publisher": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "bestRating": "5",
+                "worstRating": "1",
+                "ratingCount": "1",
+                "reviewCount": "1"
+            },
+            "review": [
+                {
+                    "@type": "Review",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                    },
+                    "author": {
+                        "@type": "Person",
+                        "name": "Perry Caplan"
+                    },
+                    "datePublished": "2026-04-24",
+                    "reviewBody": "Résout tellement de choses dans notre flux de travail très axé sur les emails.",
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Chrome Web Store"
+                    }
+                }
+            ]
         },
         {
             "@type": "Organization",
