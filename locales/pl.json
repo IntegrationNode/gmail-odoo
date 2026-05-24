@@ -1102,6 +1102,14 @@
       "install": "Zainstaluj rozszerzenie",
       "viewPricing": "Zobacz cennik"
     },
+    "v0520": {
+      "overdueBlock": "Przeterminowane faktury na pierwszy rzut oka",
+      "overdueBlockDesc": "Financial Insights wyróżnia teraz kwotę przeterminowaną i liczbę faktur dla każdego kontaktu. W Enterprise z włączonym Monitowaniem płatności pokazuje również datę następnego przypomnienia i poziom monitowania.",
+      "financialLabels": "Bardziej przejrzyste etykiety finansowe",
+      "financialLabelsDesc": "Zmieniono nazwę \"Kredyt\" na \"Należności\" i \"Debet\" na \"Zobowiązania\", aby dopasować je do standardowej terminologii księgowej.",
+      "multiTenantSetup": "Konfiguracja na hostach Odoo multi-tenant",
+      "multiTenantSetupDesc": "Konfiguracja działa teraz na hostach Odoo multi-tenant poprzez przekazywanie identyfikatora bazy danych w żądaniu uwierzytelnienia."
+    },
     "v0510": {
       "quickContactActions": "Szybkie akcje na kontaktach",
       "quickContactActionsDesc": "Skopiuj e-mail lub telefon albo napisz nową wiadomość — jednym kliknięciem z dowolnego kontaktu w Powiązanych kontaktach.",

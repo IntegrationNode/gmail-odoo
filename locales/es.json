@@ -1102,6 +1102,14 @@
       "install": "Instalar Extensión",
       "viewPricing": "Ver Precios"
     },
+    "v0520": {
+      "overdueBlock": "Facturas vencidas a la vista",
+      "overdueBlockDesc": "Información Financiera ahora destaca el monto vencido y la cantidad de facturas de cada contacto. En Enterprise con Seguimiento de Pagos activado, también muestra la fecha del próximo recordatorio y el nivel de seguimiento.",
+      "financialLabels": "Etiquetas financieras más claras",
+      "financialLabelsDesc": "Se renombró \"Crédito\" a \"Pendiente de cobro\" y \"Débito\" a \"Pendiente de pago\" para alinearlas con la terminología contable estándar.",
+      "multiTenantSetup": "Configuración en hosts Odoo multi-tenant",
+      "multiTenantSetupDesc": "La configuración ahora funciona en hosts Odoo multi-tenant al propagar el identificador de la base de datos en la solicitud de autenticación."
+    },
     "v0510": {
       "quickContactActions": "Acciones rápidas en contactos",
       "quickContactActionsDesc": "Copia el email o el teléfono, o redacta un correo nuevo, con un clic desde cualquier contacto en Contactos relacionados.",

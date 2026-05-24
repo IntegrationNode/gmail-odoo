@@ -1102,6 +1102,14 @@
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
     },
+    "v0520": {
+      "overdueBlock": "Achterstallige facturen in één oogopslag",
+      "overdueBlockDesc": "Financial Insights toont nu het achterstallige bedrag en het aantal facturen voor elke contactpersoon. Op Enterprise met Betalingsherinneringen ingeschakeld worden ook de datum van de volgende herinnering en het aanmaningsniveau weergegeven.",
+      "financialLabels": "Duidelijkere financiële labels",
+      "financialLabelsDesc": "\"Krediet\" is hernoemd naar \"Openstaande vorderingen\" en \"Debet\" naar \"Openstaande schulden\" om aan te sluiten bij de standaard boekhoudterminologie.",
+      "multiTenantSetup": "Setup op multi-tenant Odoo-hosts",
+      "multiTenantSetupDesc": "Configuratie werkt nu op multi-tenant Odoo-hosts door de database-identificator door te geven in het authenticatieverzoek."
+    },
     "v0510": {
       "quickContactActions": "Snelle contactacties",
       "quickContactActionsDesc": "Kopieer e-mail of telefoon, of schrijf een nieuw bericht, met één klik vanuit elk contact in Gerelateerde contacten.",

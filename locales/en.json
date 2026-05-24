@@ -1102,6 +1102,14 @@
       "install": "Install Extension",
       "viewPricing": "View Pricing"
     },
+    "v0520": {
+      "overdueBlock": "Overdue invoices at a glance",
+      "overdueBlockDesc": "Financial Insights now highlights the overdue amount and invoice count for each contact. On Enterprise with Account Follow-up enabled, it also shows the next reminder date and follow-up level.",
+      "financialLabels": "Clearer financial labels",
+      "financialLabelsDesc": "Renamed \"Credit\" to \"Outstanding receivables\" and \"Debit\" to \"Outstanding payables\" to match standard accounting terminology.",
+      "multiTenantSetup": "Setup on multi-tenant Odoo hosts",
+      "multiTenantSetupDesc": "Configuration now works on multi-tenant Odoo hosts by propagating the database identifier in the authentication request."
+    },
     "v0510": {
       "quickContactActions": "Quick contact actions",
       "quickContactActionsDesc": "Copy email or phone numbers, or compose a new email, with one click from any contact in Related Contacts.",

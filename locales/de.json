@@ -1102,6 +1102,14 @@
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
     },
+    "v0520": {
+      "overdueBlock": "Überfällige Rechnungen auf einen Blick",
+      "overdueBlockDesc": "Financial Insights hebt jetzt den überfälligen Betrag und die Anzahl der Rechnungen für jeden Kontakt hervor. Auf Enterprise mit aktiviertem Mahnwesen werden außerdem das nächste Erinnerungsdatum und die Mahnstufe angezeigt.",
+      "financialLabels": "Klarere Finanzbezeichnungen",
+      "financialLabelsDesc": "„Guthaben\" wurde in „Ausstehende Forderungen\" und „Schulden\" in „Ausstehende Verbindlichkeiten\" umbenannt, um der gängigen Buchhaltungsterminologie zu entsprechen.",
+      "multiTenantSetup": "Einrichtung auf Multi-Tenant-Odoo-Hosts",
+      "multiTenantSetupDesc": "Die Einrichtung funktioniert jetzt auf Multi-Tenant-Odoo-Hosts, indem die Datenbankkennung in der Authentifizierungsanfrage weitergegeben wird."
+    },
     "v0510": {
       "quickContactActions": "Schnellaktionen für Kontakte",
       "quickContactActionsDesc": "Kopieren Sie E-Mail oder Telefon oder verfassen Sie eine neue Nachricht – mit einem Klick aus jedem Kontakt unter Verknüpfte Kontakte.",

@@ -1102,6 +1102,14 @@
       "install": "Instalar Extensão",
       "viewPricing": "Ver Preços"
     },
+    "v0520": {
+      "overdueBlock": "Faturas vencidas num relance",
+      "overdueBlockDesc": "As Informações Financeiras agora destacam o valor vencido e o número de faturas de cada contacto. No Enterprise com Acompanhamento de Pagamentos ativado, também mostra a data do próximo lembrete e o nível de acompanhamento.",
+      "financialLabels": "Etiquetas financeiras mais claras",
+      "financialLabelsDesc": "\"Crédito\" foi renomeado para \"A receber\" e \"Débito\" para \"A pagar\" para alinhar com a terminologia contabilística padrão.",
+      "multiTenantSetup": "Configuração em hosts Odoo multi-tenant",
+      "multiTenantSetupDesc": "A configuração agora funciona em hosts Odoo multi-tenant ao propagar o identificador da base de dados no pedido de autenticação."
+    },
     "v0510": {
       "quickContactActions": "Ações rápidas em contactos",
       "quickContactActionsDesc": "Copie o e-mail ou o telefone, ou componha uma nova mensagem, com um clique a partir de qualquer contacto em Contactos relacionados.",

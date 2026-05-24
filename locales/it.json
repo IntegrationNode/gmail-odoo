@@ -1102,6 +1102,14 @@
       "install": "Installa Estensione",
       "viewPricing": "Vedi Prezzi"
     },
+    "v0520": {
+      "overdueBlock": "Fatture scadute a colpo d'occhio",
+      "overdueBlockDesc": "Financial Insights ora evidenzia l'importo scaduto e il numero di fatture per ogni contatto. Su Enterprise con il Sollecito pagamenti attivo, mostra anche la data del prossimo promemoria e il livello di sollecito.",
+      "financialLabels": "Etichette finanziarie più chiare",
+      "financialLabelsDesc": "\"Credito\" è stato rinominato in \"Da incassare\" e \"Debito\" in \"Da pagare\" per allinearsi alla terminologia contabile standard.",
+      "multiTenantSetup": "Configurazione su host Odoo multi-tenant",
+      "multiTenantSetupDesc": "La configurazione ora funziona sugli host Odoo multi-tenant propagando l'identificatore del database nella richiesta di autenticazione."
+    },
     "v0510": {
       "quickContactActions": "Azioni rapide sui contatti",
       "quickContactActionsDesc": "Copia l'email o il telefono, o componi un nuovo messaggio, con un clic da qualsiasi contatto in Contatti correlati.",

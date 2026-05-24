@@ -1102,6 +1102,14 @@
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
     },
+    "v0520": {
+      "overdueBlock": "Factures en retard en un coup d'œil",
+      "overdueBlockDesc": "Les Insights Financiers mettent désormais en évidence le montant en retard et le nombre de factures de chaque contact. Sur Enterprise avec le Suivi des paiements activé, ils affichent également la date du prochain rappel et le niveau de relance.",
+      "financialLabels": "Libellés financiers plus clairs",
+      "financialLabelsDesc": "\"Crédit\" devient \"Encours clients\" et \"Débit\" devient \"Encours fournisseurs\" pour s'aligner sur la terminologie comptable standard.",
+      "multiTenantSetup": "Configuration sur hôtes Odoo multi-tenant",
+      "multiTenantSetupDesc": "La configuration fonctionne désormais sur les hôtes Odoo multi-tenant en propageant l'identifiant de la base de données dans la requête d'authentification."
+    },
     "v0510": {
       "quickContactActions": "Actions rapides sur les contacts",
       "quickContactActionsDesc": "Copiez l'e-mail ou le téléphone, ou rédigez un nouveau message, en un clic depuis n'importe quel contact dans Contacts associés.",
