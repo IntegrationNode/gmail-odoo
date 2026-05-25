@@ -1102,6 +1102,10 @@
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
     },
+    "v0521": {
+      "odoo16Financial": "Section financière sur Odoo 16",
+      "odoo16FinancialDesc": "Correction d'un problème introduit dans la v0.5.2.0 qui empêchait le chargement de la section d'informations financières sur les instances Odoo 16."
+    },
     "v0520": {
       "overdueBlock": "Factures en retard en un coup d'œil",
       "overdueBlockDesc": "Les Insights Financiers mettent désormais en évidence le montant en retard et le nombre de factures de chaque contact. Sur Enterprise avec le Suivi des paiements activé, ils affichent également la date du prochain rappel et le niveau de relance.",

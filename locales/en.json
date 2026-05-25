@@ -1102,6 +1102,10 @@
       "install": "Install Extension",
       "viewPricing": "View Pricing"
     },
+    "v0521": {
+      "odoo16Financial": "Financial section on Odoo 16",
+      "odoo16FinancialDesc": "Fixed an issue introduced in v0.5.2.0 that prevented the financial insights section from loading on Odoo 16 instances."
+    },
     "v0520": {
       "overdueBlock": "Overdue invoices at a glance",
       "overdueBlockDesc": "Financial Insights now highlights the overdue amount and invoice count for each contact. On Enterprise with Account Follow-up enabled, it also shows the next reminder date and follow-up level.",

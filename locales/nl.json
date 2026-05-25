@@ -1102,6 +1102,10 @@
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
     },
+    "v0521": {
+      "odoo16Financial": "Financiële sectie op Odoo 16",
+      "odoo16FinancialDesc": "Probleem opgelost dat in v0.5.2.0 was geïntroduceerd en het laden van de financiële informatiesectie op Odoo 16-instanties verhinderde."
+    },
     "v0520": {
       "overdueBlock": "Achterstallige facturen in één oogopslag",
       "overdueBlockDesc": "Financial Insights toont nu het achterstallige bedrag en het aantal facturen voor elke contactpersoon. Op Enterprise met Betalingsherinneringen ingeschakeld worden ook de datum van de volgende herinnering en het aanmaningsniveau weergegeven.",

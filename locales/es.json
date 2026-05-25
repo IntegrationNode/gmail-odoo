@@ -1102,6 +1102,10 @@
       "install": "Instalar Extensión",
       "viewPricing": "Ver Precios"
     },
+    "v0521": {
+      "odoo16Financial": "Sección financiera en Odoo 16",
+      "odoo16FinancialDesc": "Se corrigió un problema introducido en la v0.5.2.0 que impedía cargar la sección de información financiera en instancias de Odoo 16."
+    },
     "v0520": {
       "overdueBlock": "Facturas vencidas a la vista",
       "overdueBlockDesc": "Información Financiera ahora destaca el monto vencido y la cantidad de facturas de cada contacto. En Enterprise con Seguimiento de Pagos activado, también muestra la fecha del próximo recordatorio y el nivel de seguimiento.",

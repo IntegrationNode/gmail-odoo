@@ -1102,6 +1102,10 @@
       "install": "Instalar Extensão",
       "viewPricing": "Ver Preços"
     },
+    "v0521": {
+      "odoo16Financial": "Secção financeira no Odoo 16",
+      "odoo16FinancialDesc": "Foi corrigido um problema introduzido na v0.5.2.0 que impedia o carregamento da secção de informações financeiras nas instâncias do Odoo 16."
+    },
     "v0520": {
       "overdueBlock": "Faturas vencidas num relance",
       "overdueBlockDesc": "As Informações Financeiras agora destacam o valor vencido e o número de faturas de cada contacto. No Enterprise com Acompanhamento de Pagamentos ativado, também mostra a data do próximo lembrete e o nível de acompanhamento.",

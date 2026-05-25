@@ -1102,6 +1102,10 @@
       "install": "Zainstaluj rozszerzenie",
       "viewPricing": "Zobacz cennik"
     },
+    "v0521": {
+      "odoo16Financial": "Sekcja finansowa w Odoo 16",
+      "odoo16FinancialDesc": "Naprawiono błąd wprowadzony w wersji 0.5.2.0, który uniemożliwiał załadowanie sekcji informacji finansowych w instancjach Odoo 16."
+    },
     "v0520": {
       "overdueBlock": "Przeterminowane faktury na pierwszy rzut oka",
       "overdueBlockDesc": "Financial Insights wyróżnia teraz kwotę przeterminowaną i liczbę faktur dla każdego kontaktu. W Enterprise z włączonym Monitowaniem płatności pokazuje również datę następnego przypomnienia i poziom monitowania.",
