@@ -1102,6 +1102,14 @@
       "install": "Instalar Extensão",
       "viewPricing": "Ver Preços"
     },
+    "v0600": {
+      "cookieAuth": "Conecte-se sem chave de API",
+      "cookieAuthDesc": "Configure a extensão usando a sua sessão ativa do Odoo: já não precisa de gerar e colar uma chave de API. A chave de API continua opcional e só é necessária para ativar o registo automático em segundo plano.",
+      "apiKeyInSettings": "Adicione a sua chave de API quando quiser",
+      "apiKeyInSettingsDesc": "Agora pode adicionar ou atualizar a chave de API após a configuração, no grupo Conexão nas Definições, para ativar o registo automático em segundo plano.",
+      "smartContact": "Contacto predefinido mais inteligente",
+      "smartContactDesc": "Em conversas com um colega e um contacto externo, o painel agora escolhe o externo e mostra quem vai guardar no Odoo antes de criar o contacto."
+    },
     "v0521": {
       "odoo16Financial": "Secção financeira no Odoo 16",
       "odoo16FinancialDesc": "Foi corrigido um problema introduzido na v0.5.2.0 que impedia o carregamento da secção de informações financeiras nas instâncias do Odoo 16."

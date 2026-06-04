@@ -1102,6 +1102,14 @@
       "install": "Install Extension",
       "viewPricing": "View Pricing"
     },
+    "v0600": {
+      "cookieAuth": "Connect without an API key",
+      "cookieAuthDesc": "Set up the extension using your active Odoo session — there's no need to generate and paste an API key anymore. An API key stays optional and is only required to enable background auto-logging.",
+      "apiKeyInSettings": "Add your API key anytime",
+      "apiKeyInSettingsDesc": "You can now add or update the API key after setup, from the Connection group in Settings, to enable background auto-logging.",
+      "smartContact": "Smarter default contact",
+      "smartContactDesc": "On threads with both a colleague and an external contact, the sidebar now picks the external one and shows who you're about to save in Odoo before you create the contact."
+    },
     "v0521": {
       "odoo16Financial": "Financial section on Odoo 16",
       "odoo16FinancialDesc": "Fixed an issue introduced in v0.5.2.0 that prevented the financial insights section from loading on Odoo 16 instances."

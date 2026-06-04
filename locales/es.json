@@ -1102,6 +1102,14 @@
       "install": "Instalar Extensión",
       "viewPricing": "Ver Precios"
     },
+    "v0600": {
+      "cookieAuth": "Conéctate sin API key",
+      "cookieAuthDesc": "Configura la extensión usando tu sesión activa de Odoo: ya no necesitas generar ni pegar una API key. La API key sigue siendo opcional y solo se requiere para habilitar el registro automático en segundo plano.",
+      "apiKeyInSettings": "Añade tu API key cuando quieras",
+      "apiKeyInSettingsDesc": "Ahora puedes añadir o actualizar la API key después de la configuración, desde el grupo Conexión en Ajustes, para habilitar el registro automático en segundo plano.",
+      "smartContact": "Contacto por defecto más inteligente",
+      "smartContactDesc": "En hilos con un colega y un contacto externo, el panel ahora elige al externo y muestra a quién vas a guardar en Odoo antes de crear el contacto."
+    },
     "v0521": {
       "odoo16Financial": "Sección financiera en Odoo 16",
       "odoo16FinancialDesc": "Se corrigió un problema introducido en la v0.5.2.0 que impedía cargar la sección de información financiera en instancias de Odoo 16."

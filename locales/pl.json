@@ -1102,6 +1102,14 @@
       "install": "Zainstaluj rozszerzenie",
       "viewPricing": "Zobacz cennik"
     },
+    "v0600": {
+      "cookieAuth": "Połącz bez klucza API",
+      "cookieAuthDesc": "Skonfiguruj rozszerzenie za pomocą aktywnej sesji Odoo — nie musisz już generować ani wklejać klucza API. Klucz API pozostaje opcjonalny i jest wymagany tylko do automatycznego rejestrowania w tle.",
+      "apiKeyInSettings": "Dodaj klucz API w dowolnej chwili",
+      "apiKeyInSettingsDesc": "Możesz teraz dodać lub zaktualizować klucz API po konfiguracji, w grupie Połączenie w Ustawieniach, aby włączyć automatyczne rejestrowanie w tle.",
+      "smartContact": "Inteligentniejszy kontakt domyślny",
+      "smartContactDesc": "W wątkach zawierających zarówno współpracownika, jak i kontakt zewnętrzny panel wybiera teraz kontakt zewnętrzny i pokazuje, kogo zamierzasz zapisać w Odoo przed utworzeniem kontaktu."
+    },
     "v0521": {
       "odoo16Financial": "Sekcja finansowa w Odoo 16",
       "odoo16FinancialDesc": "Naprawiono błąd wprowadzony w wersji 0.5.2.0, który uniemożliwiał załadowanie sekcji informacji finansowych w instancjach Odoo 16."

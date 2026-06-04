@@ -1102,6 +1102,14 @@
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
     },
+    "v0600": {
+      "cookieAuth": "Connectez-vous sans clé API",
+      "cookieAuthDesc": "Configurez l'extension avec votre session Odoo active : plus besoin de générer ni de coller une clé API. La clé API reste facultative et n'est requise que pour activer l'enregistrement automatique en arrière-plan.",
+      "apiKeyInSettings": "Ajoutez votre clé API à tout moment",
+      "apiKeyInSettingsDesc": "Vous pouvez désormais ajouter ou mettre à jour la clé API après la configuration, depuis le groupe Connexion dans les Paramètres, pour activer l'enregistrement automatique en arrière-plan.",
+      "smartContact": "Contact par défaut plus intelligent",
+      "smartContactDesc": "Dans les fils avec un collègue et un contact externe, le panneau choisit désormais le contact externe et indique qui vous allez enregistrer dans Odoo avant la création."
+    },
     "v0521": {
       "odoo16Financial": "Section financière sur Odoo 16",
       "odoo16FinancialDesc": "Correction d'un problème introduit dans la v0.5.2.0 qui empêchait le chargement de la section d'informations financières sur les instances Odoo 16."

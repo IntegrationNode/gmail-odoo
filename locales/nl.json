@@ -1102,6 +1102,14 @@
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
     },
+    "v0600": {
+      "cookieAuth": "Verbinden zonder API-sleutel",
+      "cookieAuthDesc": "Stel de extensie in met je actieve Odoo-sessie: je hoeft geen API-sleutel meer te genereren en te plakken. Een API-sleutel blijft optioneel en is alleen nodig om automatisch loggen op de achtergrond in te schakelen.",
+      "apiKeyInSettings": "Voeg je API-sleutel altijd toe",
+      "apiKeyInSettingsDesc": "Je kunt de API-sleutel nu na de installatie toevoegen of bijwerken, via de groep Verbinding in Instellingen, om automatisch loggen op de achtergrond in te schakelen.",
+      "smartContact": "Slimmer standaardcontact",
+      "smartContactDesc": "In threads met zowel een collega als een externe contactpersoon kiest het paneel nu de externe persoon en toont vóór het aanmaken wie je in Odoo gaat opslaan."
+    },
     "v0521": {
       "odoo16Financial": "Financiële sectie op Odoo 16",
       "odoo16FinancialDesc": "Probleem opgelost dat in v0.5.2.0 was geïntroduceerd en het laden van de financiële informatiesectie op Odoo 16-instanties verhinderde."
