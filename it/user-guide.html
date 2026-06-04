@@ -141,14 +141,14 @@
                     {
                         "@type": "HowToStep",
                         "position": 3,
-                        "name": "Generate API Key",
-                        "text": "In Odoo, go to Preferences > Account Security > API Keys. Create a new persistent API key and copy it."
+                        "name": "Sign in to Odoo",
+                        "text": "Open your Odoo instance in the same browser and sign in. The extension connects using your active Odoo session."
                     },
                     {
                         "@type": "HowToStep",
                         "position": 4,
                         "name": "Connect",
-                        "text": "Paste the API key in the extension and click Connect. You're ready to use Odoo from Gmail!"
+                        "text": "Click Connect and the extension verifies your active session — no API key required. You're ready to use Odoo from Gmail!"
                     }
                 ]
             },
@@ -255,21 +255,22 @@
                     <h3>Configurazione Iniziale</h3>
                     <ol class="steps-list">
                         <li><strong>Apri Gmail</strong><br><span>Vai a mail.google.com e apri qualsiasi email per vedere la barra laterale.</span></li>
-                        <li><strong>Inserisci URL Odoo</strong><br><span>Inserisci l'URL della tua istanza Odoo (es. https://tuaazienda.odoo.com). Usa HTTPS e non includere una barra finale.</span></li>
-                        <li><strong>Inserisci Chiave API</strong><br><span>Accedi a Odoo, vai in Preferenze, clicca la scheda Sicurezza Account, sotto Chiavi API clicca Nuova Chiave API, dagli un nome, seleziona Chiave Persistente e copia la chiave.</span></li>
-                        <li><strong>Connetti</strong><br><span>Clicca Connetti e l'estensione verificherà le tue credenziali.</span></li>
+                        <li><strong>Accedi a Odoo</strong><br><span>Assicurati di aver effettuato l'accesso alla tua istanza Odoo nello stesso browser — l'estensione si connette usando la tua sessione attiva.</span></li>
+                        <li><strong>Inserisci il tuo URL Odoo</strong><br><span>Inserisci l'URL della tua istanza Odoo (es. https://tuaazienda.odoo.com). Usa HTTPS e non includere una barra finale.</span></li>
+                        <li><strong>Connetti</strong><br><span>Clicca Connetti e l'estensione verificherà la tua sessione attiva. Una chiave API è facoltativa — necessaria solo per la registrazione automatica in background, o come riserva se la tua sessione scade.</span></li>
                     </ol>
                     <div class="warning-box" style="background: #e8f4f8; border-color: #0288d1;">
                         <span class="material-symbols-outlined" style="color: #0288d1;">info</span>
-                        <span><span>La creazione delle chiavi API varia tra le versioni di Odoo.</span> <a href="blog/odoo-api-key-setup.html">Consulta la guida dettagliata per la tua versione →</a></span>
+                        <span><span>Aggiungere una chiave API è facoltativo. Se ne aggiungi una, i passaggi per crearla variano tra le versioni di Odoo.</span> <a href="blog/odoo-api-key-setup.html">Consulta la guida dettagliata per la tua versione →</a></span>
                     </div>
                     <h3>Aggiornamento Configurazione</h3>
-                    <p>Per cambiare il tuo URL Odoo o la chiave API:</p>
+                    <p>Per cambiare il tuo URL Odoo, esci e riconnettiti:</p>
                     <ol>
                         <li>Clicca il pulsante menu (tre punti verticali ⋮) nella barra laterale</li>
                         <li>Seleziona Esci</li>
-                        <li>Inserisci le tue nuove credenziali</li>
+                        <li>Inserisci i tuoi nuovi dati</li>
                     </ol>
+                    <p>Per aggiungere o aggiornare la chiave API in seguito, apri Impostazioni → Account → Connessione — senza bisogno di uscire.</p>
                 </section>
 
                 <!-- Features Overview Section -->

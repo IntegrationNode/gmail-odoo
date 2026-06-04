@@ -138,19 +138,20 @@
       "firstTimeSetup": "Pierwsza konfiguracja",
       "step1Title": "Otwórz Gmail",
       "step1Desc": "Przejdź do mail.google.com i otwórz dowolny e-mail, aby zobaczyć panel boczny.",
-      "step2Title": "Wprowadź URL Odoo",
-      "step2Desc": "Wprowadź adres URL Twojej instancji Odoo (np. https://twojafirma.odoo.com). Użyj HTTPS i nie dodawaj końcowego ukośnika.",
-      "step3Title": "Wprowadź klucz API",
-      "step3Desc": "Zaloguj się do Odoo, przejdź do Preferencji, kliknij zakładkę Bezpieczeństwo konta, w sekcji Klucze API kliknij Nowy klucz API, nadaj mu nazwę, wybierz Klucz trwały i skopiuj klucz.",
+      "step2Title": "Zaloguj się do Odoo",
+      "step2Desc": "Upewnij się, że jesteś zalogowany do swojej instancji Odoo w tej samej przeglądarce — rozszerzenie łączy się przy użyciu Twojej aktywnej sesji.",
+      "step3Title": "Wprowadź swój URL Odoo",
+      "step3Desc": "Wprowadź adres URL Twojej instancji Odoo (np. https://twojafirma.odoo.com). Użyj HTTPS i nie dodawaj końcowego ukośnika.",
       "step4Title": "Połącz",
-      "step4Desc": "Kliknij Połącz, a rozszerzenie zweryfikuje Twoje dane uwierzytelniające.",
+      "step4Desc": "Kliknij Połącz, a rozszerzenie zweryfikuje Twoją aktywną sesję. Klucz API jest opcjonalny — potrzebny tylko do automatycznego rejestrowania w tle lub jako rozwiązanie awaryjne, gdy sesja wygaśnie.",
       "updateTitle": "Aktualizacja konfiguracji",
-      "updateDesc": "Aby zmienić URL Odoo lub klucz API:",
+      "updateDesc": "Aby zmienić URL Odoo, wyloguj się i połącz ponownie:",
       "updateStep1": "Kliknij przycisk menu (trzy pionowe kropki ⋮) w panelu bocznym",
       "updateStep2": "Wybierz Wyloguj",
-      "updateStep3": "Wprowadź nowe dane uwierzytelniające",
-      "versionNote": "Tworzenie kluczy API różni się w zależności od wersji Odoo.",
-      "versionNoteLink": "Zobacz szczegółowy przewodnik dla swojej wersji →"
+      "updateStep3": "Wprowadź nowe dane",
+      "versionNote": "Dodanie klucza API jest opcjonalne. Jeśli go dodasz, kroki tworzenia różnią się w zależności od wersji Odoo.",
+      "versionNoteLink": "Zobacz szczegółowy przewodnik dla swojej wersji →",
+      "updateApiKeyNote": "Aby później dodać lub zaktualizować klucz API, otwórz Ustawienia → Konto → Połączenie — bez konieczności wylogowywania."
     },
     "features": {
       "title": "Przegląd funkcji",
@@ -1108,7 +1109,9 @@
       "apiKeyInSettings": "Dodaj klucz API w dowolnej chwili",
       "apiKeyInSettingsDesc": "Możesz teraz dodać lub zaktualizować klucz API po konfiguracji, w grupie Połączenie w Ustawieniach, aby włączyć automatyczne rejestrowanie w tle.",
       "smartContact": "Inteligentniejszy kontakt domyślny",
-      "smartContactDesc": "W wątkach zawierających zarówno współpracownika, jak i kontakt zewnętrzny panel wybiera teraz kontakt zewnętrzny i pokazuje, kogo zamierzasz zapisać w Odoo przed utworzeniem kontaktu."
+      "smartContactDesc": "W wątkach zawierających zarówno współpracownika, jak i kontakt zewnętrzny panel wybiera teraz kontakt zewnętrzny i pokazuje, kogo zamierzasz zapisać w Odoo przed utworzeniem kontaktu.",
+      "hideSections": "Ukryj więcej sekcji panelu",
+      "hideSectionsDesc": "Sekcje Firma i Powiązane kontakty można teraz wyłączyć na karcie Personalizacja w Ustawieniach, tak jak pozostałe sekcje."
     },
     "v0521": {
       "odoo16Financial": "Sekcja finansowa w Odoo 16",

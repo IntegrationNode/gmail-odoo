@@ -141,14 +141,14 @@
                     {
                         "@type": "HowToStep",
                         "position": 3,
-                        "name": "Generate API Key",
-                        "text": "In Odoo, go to Preferences > Account Security > API Keys. Create a new persistent API key and copy it."
+                        "name": "Sign in to Odoo",
+                        "text": "Open your Odoo instance in the same browser and sign in. The extension connects using your active Odoo session."
                     },
                     {
                         "@type": "HowToStep",
                         "position": 4,
                         "name": "Connect",
-                        "text": "Paste the API key in the extension and click Connect. You're ready to use Odoo from Gmail!"
+                        "text": "Click Connect and the extension verifies your active session — no API key required. You're ready to use Odoo from Gmail!"
                     }
                 ]
             },
@@ -255,21 +255,22 @@
                     <h3>Première configuration</h3>
                     <ol class="steps-list">
                         <li><strong>Ouvrir Gmail</strong><br><span>Accédez à mail.google.com et ouvrez n'importe quel email pour voir la barre latérale.</span></li>
-                        <li><strong>Entrer l'URL Odoo</strong><br><span>Entrez l'URL de votre instance Odoo (ex: https://votreentreprise.odoo.com). Utilisez HTTPS et n'incluez pas de barre oblique finale.</span></li>
-                        <li><strong>Entrer la clé API</strong><br><span>Connectez-vous à Odoo, allez dans Préférences, cliquez sur l'onglet Sécurité du compte, sous Clés API cliquez sur Nouvelle clé API, donnez-lui un nom, sélectionnez Clé persistante et copiez la clé.</span></li>
-                        <li><strong>Connecter</strong><br><span>Cliquez sur Connecter et l'extension vérifiera vos identifiants.</span></li>
+                        <li><strong>Connectez-vous à Odoo</strong><br><span>Assurez-vous d'être connecté à votre instance Odoo dans le même navigateur — l'extension se connecte via votre session active.</span></li>
+                        <li><strong>Entrer votre URL Odoo</strong><br><span>Entrez l'URL de votre instance Odoo (ex: https://votreentreprise.odoo.com). Utilisez HTTPS et n'incluez pas de barre oblique finale.</span></li>
+                        <li><strong>Connecter</strong><br><span>Cliquez sur Connecter et l'extension vérifiera votre session active. Une clé API est facultative — nécessaire uniquement pour l'enregistrement automatique en arrière-plan, ou comme solution de secours si votre session expire.</span></li>
                     </ol>
                     <div class="warning-box" style="background: #e8f4f8; border-color: #0288d1;">
                         <span class="material-symbols-outlined" style="color: #0288d1;">info</span>
-                        <span><span>La création de clés API varie selon les versions d'Odoo.</span> <a href="blog/odoo-api-key-setup.html">Consultez le guide détaillé pour votre version →</a></span>
+                        <span><span>Ajouter une clé API est facultatif. Si vous en ajoutez une, les étapes de création varient selon les versions d'Odoo.</span> <a href="blog/odoo-api-key-setup.html">Consultez le guide détaillé pour votre version →</a></span>
                     </div>
                     <h3>Mise à jour de la configuration</h3>
-                    <p>Pour modifier votre URL Odoo ou clé API :</p>
+                    <p>Pour modifier votre URL Odoo, déconnectez-vous et reconnectez-vous :</p>
                     <ol>
                         <li>Cliquez sur le bouton menu (trois points verticaux ⋮) dans la barre latérale</li>
                         <li>Sélectionnez Se déconnecter</li>
-                        <li>Entrez vos nouveaux identifiants</li>
+                        <li>Entrez vos nouvelles informations</li>
                     </ol>
+                    <p>Pour ajouter ou mettre à jour votre clé API plus tard, ouvrez Paramètres → Compte → Connexion — sans avoir à vous déconnecter.</p>
                 </section>
 
                 <!-- Features Overview Section -->

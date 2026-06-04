@@ -141,14 +141,14 @@
                     {
                         "@type": "HowToStep",
                         "position": 3,
-                        "name": "Generate API Key",
-                        "text": "In Odoo, go to Preferences > Account Security > API Keys. Create a new persistent API key and copy it."
+                        "name": "Sign in to Odoo",
+                        "text": "Open your Odoo instance in the same browser and sign in. The extension connects using your active Odoo session."
                     },
                     {
                         "@type": "HowToStep",
                         "position": 4,
                         "name": "Connect",
-                        "text": "Paste the API key in the extension and click Connect. You're ready to use Odoo from Gmail!"
+                        "text": "Click Connect and the extension verifies your active session — no API key required. You're ready to use Odoo from Gmail!"
                     }
                 ]
             },
@@ -255,21 +255,22 @@
                     <h3>First-Time Setup</h3>
                     <ol class="steps-list">
                         <li><strong>Open Gmail</strong><br><span>Navigate to mail.google.com and open any email to view the sidebar.</span></li>
-                        <li><strong>Enter Odoo URL</strong><br><span>Enter your Odoo instance URL (e.g., https://yourcompany.odoo.com). Use HTTPS and don't include a trailing slash.</span></li>
-                        <li><strong>Enter API Key</strong><br><span>Log in to Odoo, go to Preferences, click Account Security tab, under API Keys click New API Key, give it a name, select Persistent Key, and copy the key.</span></li>
-                        <li><strong>Connect</strong><br><span>Click Connect and the extension will verify your credentials.</span></li>
+                        <li><strong>Sign in to Odoo</strong><br><span>Make sure you're logged in to your Odoo instance in the same browser — the extension connects using your active session.</span></li>
+                        <li><strong>Enter your Odoo URL</strong><br><span>Enter your Odoo instance URL (e.g., https://yourcompany.odoo.com). Use HTTPS and don't include a trailing slash.</span></li>
+                        <li><strong>Connect</strong><br><span>Click Connect and the extension verifies your active session. An API key is optional — only needed for background auto-logging, or as a fallback if your session expires.</span></li>
                     </ol>
                     <div class="warning-box" style="background: #e8f4f8; border-color: #0288d1;">
                         <span class="material-symbols-outlined" style="color: #0288d1;">info</span>
-                        <span><span>API key creation varies between Odoo versions.</span> <a href="blog/odoo-api-key-setup.html">See the detailed guide for your version →</a></span>
+                        <span><span>Adding an API key is optional. If you add one, the steps to create it vary between Odoo versions.</span> <a href="blog/odoo-api-key-setup.html">See the detailed guide for your version →</a></span>
                     </div>
                     <h3>Updating Configuration</h3>
-                    <p>To change your Odoo URL or API key:</p>
+                    <p>To change your Odoo URL, log out and reconnect:</p>
                     <ol>
                         <li>Click the menu button (three vertical dots ⋮) in the sidebar</li>
                         <li>Select Log out</li>
-                        <li>Enter your new credentials</li>
+                        <li>Enter your new details</li>
                     </ol>
+                    <p>To add or update your API key later, open Settings → Account → Connection — no need to log out.</p>
                 </section>
 
                 <!-- Features Overview Section -->

@@ -141,14 +141,14 @@
                     {
                         "@type": "HowToStep",
                         "position": 3,
-                        "name": "Generate API Key",
-                        "text": "In Odoo, go to Preferences > Account Security > API Keys. Create a new persistent API key and copy it."
+                        "name": "Sign in to Odoo",
+                        "text": "Open your Odoo instance in the same browser and sign in. The extension connects using your active Odoo session."
                     },
                     {
                         "@type": "HowToStep",
                         "position": 4,
                         "name": "Connect",
-                        "text": "Paste the API key in the extension and click Connect. You're ready to use Odoo from Gmail!"
+                        "text": "Click Connect and the extension verifies your active session — no API key required. You're ready to use Odoo from Gmail!"
                     }
                 ]
             },
@@ -255,21 +255,22 @@
                     <h3>Configuração Inicial</h3>
                     <ol class="steps-list">
                         <li><strong>Abra o Gmail</strong><br><span>Navegue até mail.google.com e abra qualquer e-mail para ver a barra lateral.</span></li>
-                        <li><strong>Insira a URL do Odoo</strong><br><span>Insira a URL da sua instância Odoo (ex: https://suaempresa.odoo.com). Use HTTPS e não inclua barra no final.</span></li>
-                        <li><strong>Insira a Chave API</strong><br><span>Faça login no Odoo, vá em Preferências, clique na aba Segurança da Conta, em Chaves API clique em Nova Chave API, dê um nome, selecione Chave Persistente e copie a chave.</span></li>
-                        <li><strong>Conectar</strong><br><span>Clique em Conectar e a extensão verificará suas credenciais.</span></li>
+                        <li><strong>Inicie sessão no Odoo</strong><br><span>Certifique-se de ter sessão iniciada na sua instância Odoo no mesmo navegador — a extensão liga-se através da sua sessão ativa.</span></li>
+                        <li><strong>Insira a sua URL do Odoo</strong><br><span>Insira a URL da sua instância Odoo (ex: https://suaempresa.odoo.com). Use HTTPS e não inclua barra no final.</span></li>
+                        <li><strong>Conectar</strong><br><span>Clique em Conectar e a extensão verificará a sua sessão ativa. A chave de API é opcional — só é necessária para o registo automático em segundo plano, ou como alternativa se a sua sessão expirar.</span></li>
                     </ol>
                     <div class="warning-box" style="background: #e8f4f8; border-color: #0288d1;">
                         <span class="material-symbols-outlined" style="color: #0288d1;">info</span>
-                        <span><span>A criação de chaves API varia entre as versões do Odoo.</span> <a href="blog/odoo-api-key-setup.html">Veja o guia detalhado para a sua versão →</a></span>
+                        <span><span>Adicionar uma chave de API é opcional. Se adicionar uma, os passos para criá-la variam entre as versões do Odoo.</span> <a href="blog/odoo-api-key-setup.html">Veja o guia detalhado para a sua versão →</a></span>
                     </div>
                     <h3>Atualizando Configuração</h3>
-                    <p>Para alterar sua URL do Odoo ou chave API:</p>
+                    <p>Para alterar a sua URL do Odoo, termine sessão e volte a ligar:</p>
                     <ol>
                         <li>Clique no botão de menu (três pontos verticais ⋮) na barra lateral</li>
                         <li>Selecione Sair</li>
-                        <li>Insira suas novas credenciais</li>
+                        <li>Insira os seus novos dados</li>
                     </ol>
+                    <p>Para adicionar ou atualizar a sua chave de API mais tarde, abra Definições → Conta → Conexão — sem precisar de terminar sessão.</p>
                 </section>
 
                 <!-- Features Overview Section -->

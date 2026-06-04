@@ -138,19 +138,20 @@
       "firstTimeSetup": "Configuração Inicial",
       "step1Title": "Abra o Gmail",
       "step1Desc": "Navegue até mail.google.com e abra qualquer e-mail para ver a barra lateral.",
-      "step2Title": "Insira a URL do Odoo",
-      "step2Desc": "Insira a URL da sua instância Odoo (ex: https://suaempresa.odoo.com). Use HTTPS e não inclua barra no final.",
-      "step3Title": "Insira a Chave API",
-      "step3Desc": "Faça login no Odoo, vá em Preferências, clique na aba Segurança da Conta, em Chaves API clique em Nova Chave API, dê um nome, selecione Chave Persistente e copie a chave.",
+      "step2Title": "Inicie sessão no Odoo",
+      "step2Desc": "Certifique-se de ter sessão iniciada na sua instância Odoo no mesmo navegador — a extensão liga-se através da sua sessão ativa.",
+      "step3Title": "Insira a sua URL do Odoo",
+      "step3Desc": "Insira a URL da sua instância Odoo (ex: https://suaempresa.odoo.com). Use HTTPS e não inclua barra no final.",
       "step4Title": "Conectar",
-      "step4Desc": "Clique em Conectar e a extensão verificará suas credenciais.",
+      "step4Desc": "Clique em Conectar e a extensão verificará a sua sessão ativa. A chave de API é opcional — só é necessária para o registo automático em segundo plano, ou como alternativa se a sua sessão expirar.",
       "updateTitle": "Atualizando Configuração",
-      "updateDesc": "Para alterar sua URL do Odoo ou chave API:",
+      "updateDesc": "Para alterar a sua URL do Odoo, termine sessão e volte a ligar:",
       "updateStep1": "Clique no botão de menu (três pontos verticais ⋮) na barra lateral",
       "updateStep2": "Selecione Sair",
-      "updateStep3": "Insira suas novas credenciais",
-      "versionNote": "A criação de chaves API varia entre as versões do Odoo.",
-      "versionNoteLink": "Veja o guia detalhado para a sua versão →"
+      "updateStep3": "Insira os seus novos dados",
+      "versionNote": "Adicionar uma chave de API é opcional. Se adicionar uma, os passos para criá-la variam entre as versões do Odoo.",
+      "versionNoteLink": "Veja o guia detalhado para a sua versão →",
+      "updateApiKeyNote": "Para adicionar ou atualizar a sua chave de API mais tarde, abra Definições → Conta → Conexão — sem precisar de terminar sessão."
     },
     "features": {
       "title": "Visão Geral dos Recursos",
@@ -1108,7 +1109,9 @@
       "apiKeyInSettings": "Adicione a sua chave de API quando quiser",
       "apiKeyInSettingsDesc": "Agora pode adicionar ou atualizar a chave de API após a configuração, no grupo Conexão nas Definições, para ativar o registo automático em segundo plano.",
       "smartContact": "Contacto predefinido mais inteligente",
-      "smartContactDesc": "Em conversas com um colega e um contacto externo, o painel agora escolhe o externo e mostra quem vai guardar no Odoo antes de criar o contacto."
+      "smartContactDesc": "Em conversas com um colega e um contacto externo, o painel agora escolhe o externo e mostra quem vai guardar no Odoo antes de criar o contacto.",
+      "hideSections": "Oculte mais secções do painel",
+      "hideSectionsDesc": "As secções Empresa e Contatos relacionados já podem ser desativadas no separador Personalização nas Definições, como as restantes."
     },
     "v0521": {
       "odoo16Financial": "Secção financeira no Odoo 16",

@@ -138,19 +138,20 @@
       "firstTimeSetup": "First-Time Setup",
       "step1Title": "Open Gmail",
       "step1Desc": "Navigate to mail.google.com and open any email to view the sidebar.",
-      "step2Title": "Enter Odoo URL",
-      "step2Desc": "Enter your Odoo instance URL (e.g., https://yourcompany.odoo.com). Use HTTPS and don't include a trailing slash.",
-      "step3Title": "Enter API Key",
-      "step3Desc": "Log in to Odoo, go to Preferences, click Account Security tab, under API Keys click New API Key, give it a name, select Persistent Key, and copy the key.",
+      "step2Title": "Sign in to Odoo",
+      "step2Desc": "Make sure you're logged in to your Odoo instance in the same browser — the extension connects using your active session.",
+      "step3Title": "Enter your Odoo URL",
+      "step3Desc": "Enter your Odoo instance URL (e.g., https://yourcompany.odoo.com). Use HTTPS and don't include a trailing slash.",
       "step4Title": "Connect",
-      "step4Desc": "Click Connect and the extension will verify your credentials.",
+      "step4Desc": "Click Connect and the extension verifies your active session. An API key is optional — only needed for background auto-logging, or as a fallback if your session expires.",
       "updateTitle": "Updating Configuration",
-      "updateDesc": "To change your Odoo URL or API key:",
+      "updateDesc": "To change your Odoo URL, log out and reconnect:",
       "updateStep1": "Click the menu button (three vertical dots ⋮) in the sidebar",
       "updateStep2": "Select Log out",
-      "updateStep3": "Enter your new credentials",
-      "versionNote": "API key creation varies between Odoo versions.",
-      "versionNoteLink": "See the detailed guide for your version →"
+      "updateStep3": "Enter your new details",
+      "versionNote": "Adding an API key is optional. If you add one, the steps to create it vary between Odoo versions.",
+      "versionNoteLink": "See the detailed guide for your version →",
+      "updateApiKeyNote": "To add or update your API key later, open Settings → Account → Connection — no need to log out."
     },
     "features": {
       "title": "Features Overview",
@@ -1108,7 +1109,9 @@
       "apiKeyInSettings": "Add your API key anytime",
       "apiKeyInSettingsDesc": "You can now add or update the API key after setup, from the Connection group in Settings, to enable background auto-logging.",
       "smartContact": "Smarter default contact",
-      "smartContactDesc": "On threads with both a colleague and an external contact, the sidebar now picks the external one and shows who you're about to save in Odoo before you create the contact."
+      "smartContactDesc": "On threads with both a colleague and an external contact, the sidebar now picks the external one and shows who you're about to save in Odoo before you create the contact.",
+      "hideSections": "Hide more sidebar sections",
+      "hideSectionsDesc": "Company and Related contacts can now be turned off from the Personalization tab in Settings, just like the other sections."
     },
     "v0521": {
       "odoo16Financial": "Financial section on Odoo 16",

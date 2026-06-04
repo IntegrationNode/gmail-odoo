@@ -138,19 +138,20 @@
       "firstTimeSetup": "Ersteinrichtung",
       "step1Title": "Gmail öffnen",
       "step1Desc": "Navigieren Sie zu mail.google.com und öffnen Sie eine beliebige E-Mail, um die Seitenleiste zu sehen.",
-      "step2Title": "Odoo-URL eingeben",
-      "step2Desc": "Geben Sie Ihre Odoo-Instanz-URL ein (z.B. https://ihrefirma.odoo.com). Verwenden Sie HTTPS und keinen abschließenden Schrägstrich.",
-      "step3Title": "API-Schlüssel eingeben",
-      "step3Desc": "Melden Sie sich bei Odoo an, gehen Sie zu Einstellungen, klicken Sie auf Kontosicherheit, unter API-Schlüssel klicken Sie auf Neuer API-Schlüssel, geben Sie einen Namen ein, wählen Sie Persistenter Schlüssel und kopieren Sie den Schlüssel.",
+      "step2Title": "Bei Odoo anmelden",
+      "step2Desc": "Stellen Sie sicher, dass Sie in Ihrer Odoo-Instanz im selben Browser angemeldet sind — die Erweiterung verbindet sich über Ihre aktive Sitzung.",
+      "step3Title": "Odoo-URL eingeben",
+      "step3Desc": "Geben Sie Ihre Odoo-Instanz-URL ein (z.B. https://ihrefirma.odoo.com). Verwenden Sie HTTPS und keinen abschließenden Schrägstrich.",
       "step4Title": "Verbinden",
-      "step4Desc": "Klicken Sie auf Verbinden und die Erweiterung überprüft Ihre Anmeldedaten.",
+      "step4Desc": "Klicken Sie auf Verbinden und die Erweiterung überprüft Ihre aktive Sitzung. Ein API-Schlüssel ist optional — nur für die automatische Protokollierung im Hintergrund erforderlich oder als Ausweichlösung, falls Ihre Sitzung abläuft.",
       "updateTitle": "Konfiguration aktualisieren",
-      "updateDesc": "Um Ihre Odoo-URL oder API-Schlüssel zu ändern:",
+      "updateDesc": "Um Ihre Odoo-URL zu ändern, melden Sie sich ab und verbinden Sie sich erneut:",
       "updateStep1": "Klicken Sie auf die Menütaste (drei vertikale Punkte ⋮) in der Seitenleiste",
       "updateStep2": "Wählen Sie Abmelden",
-      "updateStep3": "Geben Sie Ihre neuen Anmeldedaten ein",
-      "versionNote": "Die Erstellung von API-Schlüsseln variiert je nach Odoo-Version.",
-      "versionNoteLink": "Siehe die detaillierte Anleitung für Ihre Version →"
+      "updateStep3": "Geben Sie Ihre neuen Daten ein",
+      "versionNote": "Das Hinzufügen eines API-Schlüssels ist optional. Wenn Sie einen hinzufügen, variieren die Erstellungsschritte je nach Odoo-Version.",
+      "versionNoteLink": "Siehe die detaillierte Anleitung für Ihre Version →",
+      "updateApiKeyNote": "Um Ihren API-Schlüssel später hinzuzufügen oder zu aktualisieren, öffnen Sie Einstellungen → Konto → Verbindung — ohne sich abzumelden."
     },
     "features": {
       "title": "Funktionsübersicht",
@@ -1108,7 +1109,9 @@
       "apiKeyInSettings": "API-Schlüssel jederzeit hinzufügen",
       "apiKeyInSettingsDesc": "Sie können den API-Schlüssel jetzt nach der Einrichtung über die Gruppe Verbindung in den Einstellungen hinzufügen oder aktualisieren, um die automatische Protokollierung im Hintergrund zu aktivieren.",
       "smartContact": "Intelligenterer Standardkontakt",
-      "smartContactDesc": "Bei Threads mit einem Kollegen und einem externen Kontakt wählt die Seitenleiste jetzt den externen Kontakt und zeigt vor dem Erstellen, wen Sie in Odoo speichern."
+      "smartContactDesc": "Bei Threads mit einem Kollegen und einem externen Kontakt wählt die Seitenleiste jetzt den externen Kontakt und zeigt vor dem Erstellen, wen Sie in Odoo speichern.",
+      "hideSections": "Mehr Seitenleisten-Bereiche ausblenden",
+      "hideSectionsDesc": "Unternehmen und Verwandte Kontakte lassen sich jetzt über den Tab Personalisierung in den Einstellungen deaktivieren – genau wie die anderen Bereiche."
     },
     "v0521": {
       "odoo16Financial": "Finanzbereich in Odoo 16",

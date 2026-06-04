@@ -141,14 +141,14 @@
                     {
                         "@type": "HowToStep",
                         "position": 3,
-                        "name": "Generate API Key",
-                        "text": "In Odoo, go to Preferences > Account Security > API Keys. Create a new persistent API key and copy it."
+                        "name": "Sign in to Odoo",
+                        "text": "Open your Odoo instance in the same browser and sign in. The extension connects using your active Odoo session."
                     },
                     {
                         "@type": "HowToStep",
                         "position": 4,
                         "name": "Connect",
-                        "text": "Paste the API key in the extension and click Connect. You're ready to use Odoo from Gmail!"
+                        "text": "Click Connect and the extension verifies your active session — no API key required. You're ready to use Odoo from Gmail!"
                     }
                 ]
             },
@@ -255,21 +255,22 @@
                     <h3>Ersteinrichtung</h3>
                     <ol class="steps-list">
                         <li><strong>Gmail öffnen</strong><br><span>Navigieren Sie zu mail.google.com und öffnen Sie eine beliebige E-Mail, um die Seitenleiste zu sehen.</span></li>
+                        <li><strong>Bei Odoo anmelden</strong><br><span>Stellen Sie sicher, dass Sie in Ihrer Odoo-Instanz im selben Browser angemeldet sind — die Erweiterung verbindet sich über Ihre aktive Sitzung.</span></li>
                         <li><strong>Odoo-URL eingeben</strong><br><span>Geben Sie Ihre Odoo-Instanz-URL ein (z.B. https://ihrefirma.odoo.com). Verwenden Sie HTTPS und keinen abschließenden Schrägstrich.</span></li>
-                        <li><strong>API-Schlüssel eingeben</strong><br><span>Melden Sie sich bei Odoo an, gehen Sie zu Einstellungen, klicken Sie auf Kontosicherheit, unter API-Schlüssel klicken Sie auf Neuer API-Schlüssel, geben Sie einen Namen ein, wählen Sie Persistenter Schlüssel und kopieren Sie den Schlüssel.</span></li>
-                        <li><strong>Verbinden</strong><br><span>Klicken Sie auf Verbinden und die Erweiterung überprüft Ihre Anmeldedaten.</span></li>
+                        <li><strong>Verbinden</strong><br><span>Klicken Sie auf Verbinden und die Erweiterung überprüft Ihre aktive Sitzung. Ein API-Schlüssel ist optional — nur für die automatische Protokollierung im Hintergrund erforderlich oder als Ausweichlösung, falls Ihre Sitzung abläuft.</span></li>
                     </ol>
                     <div class="warning-box" style="background: #e8f4f8; border-color: #0288d1;">
                         <span class="material-symbols-outlined" style="color: #0288d1;">info</span>
-                        <span><span>Die Erstellung von API-Schlüsseln variiert je nach Odoo-Version.</span> <a href="blog/odoo-api-key-setup.html">Siehe die detaillierte Anleitung für Ihre Version →</a></span>
+                        <span><span>Das Hinzufügen eines API-Schlüssels ist optional. Wenn Sie einen hinzufügen, variieren die Erstellungsschritte je nach Odoo-Version.</span> <a href="blog/odoo-api-key-setup.html">Siehe die detaillierte Anleitung für Ihre Version →</a></span>
                     </div>
                     <h3>Konfiguration aktualisieren</h3>
-                    <p>Um Ihre Odoo-URL oder API-Schlüssel zu ändern:</p>
+                    <p>Um Ihre Odoo-URL zu ändern, melden Sie sich ab und verbinden Sie sich erneut:</p>
                     <ol>
                         <li>Klicken Sie auf die Menütaste (drei vertikale Punkte ⋮) in der Seitenleiste</li>
                         <li>Wählen Sie Abmelden</li>
-                        <li>Geben Sie Ihre neuen Anmeldedaten ein</li>
+                        <li>Geben Sie Ihre neuen Daten ein</li>
                     </ol>
+                    <p>Um Ihren API-Schlüssel später hinzuzufügen oder zu aktualisieren, öffnen Sie Einstellungen → Konto → Verbindung — ohne sich abzumelden.</p>
                 </section>
 
                 <!-- Features Overview Section -->

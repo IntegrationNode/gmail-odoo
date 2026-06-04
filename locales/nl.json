@@ -138,19 +138,20 @@
       "firstTimeSetup": "Eerste Configuratie",
       "step1Title": "Open Gmail",
       "step1Desc": "Navigeer naar mail.google.com en open een e-mail om de zijbalk te bekijken.",
-      "step2Title": "Voer Odoo URL in",
-      "step2Desc": "Voer de URL van uw Odoo-instantie in (bijv. https://uwbedrijf.odoo.com). Gebruik HTTPS en voeg geen afsluitende schuine streep toe.",
-      "step3Title": "Voer API-sleutel in",
-      "step3Desc": "Log in bij Odoo, ga naar Voorkeuren, klik op het tabblad Accountbeveiliging, klik onder API-sleutels op Nieuwe API-sleutel, geef deze een naam, selecteer Permanente Sleutel en kopieer de sleutel.",
+      "step2Title": "Log in bij Odoo",
+      "step2Desc": "Zorg dat u in dezelfde browser bent ingelogd bij uw Odoo-instantie — de extensie maakt verbinding via uw actieve sessie.",
+      "step3Title": "Voer uw Odoo URL in",
+      "step3Desc": "Voer de URL van uw Odoo-instantie in (bijv. https://uwbedrijf.odoo.com). Gebruik HTTPS en voeg geen afsluitende schuine streep toe.",
       "step4Title": "Verbinden",
-      "step4Desc": "Klik op Verbinden en de extensie verifieert uw inloggegevens.",
+      "step4Desc": "Klik op Verbinden en de extensie verifieert uw actieve sessie. Een API-sleutel is optioneel — alleen nodig voor automatisch loggen op de achtergrond, of als terugval als uw sessie verloopt.",
       "updateTitle": "Configuratie Bijwerken",
-      "updateDesc": "Om uw Odoo URL of API-sleutel te wijzigen:",
+      "updateDesc": "Om uw Odoo URL te wijzigen, log uit en maak opnieuw verbinding:",
       "updateStep1": "Klik op de menuknop (drie verticale puntjes ⋮) in de zijbalk",
       "updateStep2": "Selecteer Uitloggen",
-      "updateStep3": "Voer uw nieuwe inloggegevens in",
-      "versionNote": "Het aanmaken van API-sleutels verschilt per Odoo-versie.",
-      "versionNoteLink": "Bekijk de gedetailleerde handleiding voor uw versie →"
+      "updateStep3": "Voer uw nieuwe gegevens in",
+      "versionNote": "Een API-sleutel toevoegen is optioneel. Als u er een toevoegt, verschillen de aanmaakstappen per Odoo-versie.",
+      "versionNoteLink": "Bekijk de gedetailleerde handleiding voor uw versie →",
+      "updateApiKeyNote": "Om uw API-sleutel later toe te voegen of bij te werken, opent u Instellingen → Account → Verbinding — zonder uit te loggen."
     },
     "features": {
       "title": "Functieoverzicht",
@@ -1108,7 +1109,9 @@
       "apiKeyInSettings": "Voeg je API-sleutel altijd toe",
       "apiKeyInSettingsDesc": "Je kunt de API-sleutel nu na de installatie toevoegen of bijwerken, via de groep Verbinding in Instellingen, om automatisch loggen op de achtergrond in te schakelen.",
       "smartContact": "Slimmer standaardcontact",
-      "smartContactDesc": "In threads met zowel een collega als een externe contactpersoon kiest het paneel nu de externe persoon en toont vóór het aanmaken wie je in Odoo gaat opslaan."
+      "smartContactDesc": "In threads met zowel een collega als een externe contactpersoon kiest het paneel nu de externe persoon en toont vóór het aanmaken wie je in Odoo gaat opslaan.",
+      "hideSections": "Verberg meer zijbalksecties",
+      "hideSectionsDesc": "Bedrijf en Gerelateerde contacten kunnen nu worden uitgeschakeld via het tabblad Personalisatie in Instellingen, net als de andere secties."
     },
     "v0521": {
       "odoo16Financial": "Financiële sectie op Odoo 16",

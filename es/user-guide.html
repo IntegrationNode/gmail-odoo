@@ -141,14 +141,14 @@
                     {
                         "@type": "HowToStep",
                         "position": 3,
-                        "name": "Generate API Key",
-                        "text": "In Odoo, go to Preferences > Account Security > API Keys. Create a new persistent API key and copy it."
+                        "name": "Sign in to Odoo",
+                        "text": "Open your Odoo instance in the same browser and sign in. The extension connects using your active Odoo session."
                     },
                     {
                         "@type": "HowToStep",
                         "position": 4,
                         "name": "Connect",
-                        "text": "Paste the API key in the extension and click Connect. You're ready to use Odoo from Gmail!"
+                        "text": "Click Connect and the extension verifies your active session — no API key required. You're ready to use Odoo from Gmail!"
                     }
                 ]
             },
@@ -255,21 +255,22 @@
                     <h3>Configuración Inicial</h3>
                     <ol class="steps-list">
                         <li><strong>Abrir Gmail</strong><br><span>Navega a mail.google.com y abre cualquier email para ver la barra lateral.</span></li>
-                        <li><strong>Introducir URL de Odoo</strong><br><span>Introduce la URL de tu instancia de Odoo (ej: https://tuempresa.odoo.com). Usa HTTPS y no incluyas barra final.</span></li>
-                        <li><strong>Introducir API Key</strong><br><span>Inicia sesión en Odoo, ve a Preferencias, haz clic en la pestaña Seguridad de la Cuenta, en API Keys haz clic en Nueva API Key, dale un nombre, selecciona Clave Persistente y copia la clave.</span></li>
-                        <li><strong>Conectar</strong><br><span>Haz clic en Conectar y la extensión verificará tus credenciales.</span></li>
+                        <li><strong>Inicia sesión en Odoo</strong><br><span>Asegúrate de tener la sesión iniciada en tu instancia de Odoo en el mismo navegador — la extensión se conecta usando tu sesión activa.</span></li>
+                        <li><strong>Introduce tu URL de Odoo</strong><br><span>Introduce la URL de tu instancia de Odoo (ej: https://tuempresa.odoo.com). Usa HTTPS y no incluyas barra final.</span></li>
+                        <li><strong>Conectar</strong><br><span>Haz clic en Conectar y la extensión verificará tu sesión activa. La API key es opcional — solo se necesita para el registro automático en segundo plano, o como respaldo si tu sesión expira.</span></li>
                     </ol>
                     <div class="warning-box" style="background: #e8f4f8; border-color: #0288d1;">
                         <span class="material-symbols-outlined" style="color: #0288d1;">info</span>
-                        <span><span>La creación de claves API varía entre versiones de Odoo.</span> <a href="blog/odoo-api-key-setup.html">Consulta la guía detallada para tu versión →</a></span>
+                        <span><span>Añadir una API key es opcional. Si añades una, los pasos para crearla varían entre versiones de Odoo.</span> <a href="blog/odoo-api-key-setup.html">Consulta la guía detallada para tu versión →</a></span>
                     </div>
                     <h3>Actualizar Configuración</h3>
-                    <p>Para cambiar tu URL de Odoo o API key:</p>
+                    <p>Para cambiar tu URL de Odoo, cierra sesión y vuelve a conectar:</p>
                     <ol>
                         <li>Haz clic en el botón de menú (tres puntos verticales ⋮) en la barra lateral</li>
                         <li>Selecciona Cerrar sesión</li>
-                        <li>Introduce tus nuevas credenciales</li>
+                        <li>Introduce tus nuevos datos</li>
                     </ol>
+                    <p>Para añadir o actualizar tu API key más adelante, abre Ajustes → Cuenta → Conexión — sin necesidad de cerrar sesión.</p>
                 </section>
 
                 <!-- Features Overview Section -->
