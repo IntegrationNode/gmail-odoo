@@ -238,6 +238,15 @@ a:hover {
     margin-right: auto;
 }
 
+.hero-badge {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--color-primary-hover);
+    max-width: 640px;
+    margin: 0 auto var(--spacing-md);
+}
+
 .cta-buttons {
     display: flex;
     gap: var(--spacing-sm);
@@ -574,6 +583,15 @@ a:hover {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 2.0s;
+}
+
+.how-it-works-note {
+    text-align: center;
+    color: var(--color-text-light);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    max-width: 640px;
+    margin: var(--spacing-md) auto 0;
 }
 
 @media (max-width: 768px) {

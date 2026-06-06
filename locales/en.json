@@ -528,6 +528,7 @@
   "hero": {
     "title": "Odoo Integration for Gmail",
     "subtitle": "Transform your Gmail into a powerful CRM interface with seamless Odoo integration",
+    "badge": "Connect in 30 seconds — just your Odoo URL. No API key, no code.",
     "getExtension": "Get Extension",
     "learnMore": "Learn More"
   },
@@ -545,7 +546,7 @@
     "title": "Key Features",
     "instant": {
       "title": "Instant Contact Info",
-      "description": "View Odoo contact details directly in Gmail's sidebar when you open an email. 22x faster than Google Apps Script."
+      "description": "View Odoo contact details directly in Gmail's sidebar when you open an email. 22x faster than Google Apps Script. No developer setup — where the official plugin needs code and an Apps Script deployment for self-hosted Odoo, here it's just your URL."
     },
     "records": {
       "title": "CRM, tasks & tickets at a glance",
@@ -1319,20 +1320,21 @@
   },
   "howItWorks": {
     "title": "How It Works",
-    "subtitle": "Set up in under 2 minutes — no code, no Odoo modules required",
+    "subtitle": "Set up in under 2 minutes — no code, no API key, no Odoo modules required",
     "step1": {
       "title": "Install",
       "description": "Add the extension from the Chrome Web Store with one click"
     },
     "step2": {
       "title": "Connect",
-      "description": "Enter your Odoo URL and API key — that's it"
+      "description": "Enter your Odoo URL. You're already signed in to Odoo, so you're done."
     },
     "step3": {
       "title": "Work",
       "description": "Open any email in Gmail and see your Odoo data instantly"
     },
-    "cta": "Install Now — It's Free"
+    "cta": "Install Now — It's Free",
+    "sessionNote": "Uses your existing Odoo session. If it ever expires, the extension just asks you to sign back into Odoo — nothing else to manage."
   },
   "socialProof": {
     "headline": "Trusted by businesses of all sizes to integrate Gmail with Odoo",

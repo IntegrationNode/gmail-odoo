@@ -528,6 +528,7 @@
   "hero": {
     "title": "Odoo Integratie voor Gmail",
     "subtitle": "Transformeer uw Gmail in een krachtige CRM-interface met naadloze Odoo-integratie",
+    "badge": "Verbind in 30 seconden — alleen je Odoo-URL. Geen API-sleutel, geen code.",
     "getExtension": "Extensie Downloaden",
     "learnMore": "Meer Informatie"
   },
@@ -545,7 +546,7 @@
     "title": "Belangrijkste Functies",
     "instant": {
       "title": "Directe Contactinfo",
-      "description": "Bekijk Odoo contactgegevens direct in de zijbalk van Gmail wanneer u een e-mail opent. 22x sneller dan Google Apps Script."
+      "description": "Bekijk Odoo contactgegevens direct in de zijbalk van Gmail wanneer u een e-mail opent. 22x sneller dan Google Apps Script. Geen ontwikkelaarsconfiguratie — waar de officiële plugin code en een Apps Script-implementatie nodig heeft voor zelf-gehost Odoo, is het hier alleen je URL."
     },
     "records": {
       "title": "CRM, taken & tickets in één oogopslag",
@@ -1319,20 +1320,21 @@
   },
   "howItWorks": {
     "title": "Hoe Het Werkt",
-    "subtitle": "Instellen in minder dan 2 minuten — zonder code, zonder Odoo-modules",
+    "subtitle": "Instellen in minder dan 2 minuten — zonder code, zonder API-sleutel, zonder Odoo-modules",
     "step1": {
       "title": "Installeer",
       "description": "Voeg de extensie toe vanuit de Chrome Web Store met één klik"
     },
     "step2": {
       "title": "Verbind",
-      "description": "Voer je Odoo-URL en API-sleutel in — dat is alles"
+      "description": "Voer je Odoo-URL in. Je bent al ingelogd bij Odoo, dus je bent klaar."
     },
     "step3": {
       "title": "Werk",
       "description": "Open een willekeurige e-mail in Gmail en bekijk je Odoo-gegevens direct"
     },
-    "cta": "Nu Installeren — Gratis"
+    "cta": "Nu Installeren — Gratis",
+    "sessionNote": "Gebruikt je bestaande Odoo-sessie. Als die verloopt, vraagt de extensie je gewoon om opnieuw in te loggen bij Odoo — verder niets te beheren."
   },
   "socialProof": {
     "headline": "Bedrijven van elke omvang vertrouwen op ons om Gmail met Odoo te integreren",

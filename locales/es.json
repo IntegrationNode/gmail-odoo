@@ -104,6 +104,7 @@
   "hero": {
     "title": "Integración de Odoo para Gmail",
     "subtitle": "Transforma tu Gmail en una potente interfaz CRM con integración perfecta con Odoo",
+    "badge": "Conéctate en 30 segundos — solo la URL de tu Odoo. Sin clave API, sin código.",
     "getExtension": "Obtener Extensión",
     "learnMore": "Saber Más"
   },
@@ -121,7 +122,7 @@
     "title": "Funciones Principales",
     "instant": {
       "title": "Información de Contacto Instantánea",
-      "description": "Ve los detalles de contacto de Odoo directamente en la barra lateral de Gmail al abrir un email. 22x más rápido que Google Apps Script."
+      "description": "Ve los detalles de contacto de Odoo directamente en la barra lateral de Gmail al abrir un email. 22x más rápido que Google Apps Script. Sin configuración para desarrolladores: donde el plugin oficial necesita código y un despliegue de Apps Script para Odoo autoalojado, aquí solo es tu URL."
     },
     "records": {
       "title": "CRM, tareas y tickets de un vistazo",
@@ -1319,20 +1320,21 @@
   },
   "howItWorks": {
     "title": "Cómo Funciona",
-    "subtitle": "Configúralo en menos de 2 minutos — sin código, sin módulos de Odoo",
+    "subtitle": "Configúralo en menos de 2 minutos — sin código, sin clave API, sin módulos de Odoo",
     "step1": {
       "title": "Instala",
       "description": "Añade la extensión desde Chrome Web Store con un click"
     },
     "step2": {
       "title": "Conecta",
-      "description": "Introduce la URL de tu Odoo y tu clave API — eso es todo"
+      "description": "Introduce la URL de tu Odoo. Ya tienes la sesión iniciada en Odoo, así que ya está."
     },
     "step3": {
       "title": "Trabaja",
       "description": "Abre cualquier email en Gmail y ve tus datos de Odoo al instante"
     },
-    "cta": "Instalar Ahora — Es Gratis"
+    "cta": "Instalar Ahora — Es Gratis",
+    "sessionNote": "Usa tu sesión de Odoo existente. Si alguna vez caduca, la extensión solo te pide que vuelvas a iniciar sesión en Odoo — nada más que gestionar."
   },
   "socialProof": {
     "headline": "Empresas de todos los tamaños confían en nosotros para integrar Gmail con Odoo",
