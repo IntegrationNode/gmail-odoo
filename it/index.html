@@ -49,6 +49,10 @@
 
     <title>Integrazione Odoo per Gmail</title>
     <link rel="icon" type="image/png" href="../favicon.png">
+    <!-- Preload LCP hero image (mobile LCP element) -->
+    <link rel="preload" as="image" href="../assets/hero-screenshot.webp" fetchpriority="high">
+    <!-- Preload icon font (8 KB subset) so icons render at final size on first paint → no CLS -->
+    <link rel="preload" as="font" type="font/woff2" href="../fonts/material-symbols-outlined.woff2" crossorigin>
     <link rel="stylesheet" href="../fonts/outlined.css">
     <link rel="stylesheet" href="../style.css">
     <!-- Hide prices until regional pricing JS processes them -->
@@ -256,7 +260,7 @@
                         <span class="browser-dot" style="background:#28C840"></span>
                         <span class="browser-address">mail.google.com</span>
                     </div>
-                    <img src="../assets/hero-screenshot.png" alt="Odoo Integration for Gmail — sidebar showing contact info, CRM opportunities, and tasks inside Gmail" loading="eager" width="960" height="540">
+                    <img src="../assets/hero-screenshot.webp" alt="Odoo Integration for Gmail — sidebar showing contact info, CRM opportunities, and tasks inside Gmail" loading="eager" fetchpriority="high" width="1418" height="952">
                 </div>
             </div>
         </div>
@@ -368,8 +372,10 @@
                         <!-- Demo 1: Initial Setup -->
                         <div class="demo-card">
                             <div class="demo-media">
-                                <img class="demo-still" src="../assets/demos/setup-initial-thumb.jpg" alt="Initial setup demo" loading="eager">
-                                <img class="demo-gif" data-gif="assets/demos/setup-initial.gif" alt="Initial setup animation" loading="lazy">
+                                <img class="demo-still" src="../assets/demos/setup-initial-thumb.webp" alt="Initial setup demo" loading="eager">
+                                <video class="demo-gif" muted loop playsinline preload="none" aria-label="Initial setup animation">
+                                    <source src="../assets/demos/setup-initial.mp4" type="video/mp4">
+                                </video>
                             </div>
                             <div class="demo-info">
                                 <h3><span class="material-symbols-outlined">settings</span> <span>Configurazione Rapida</span></h3>
@@ -381,8 +387,10 @@
                         <!-- Demo 2: Recent Activities -->
                         <div class="demo-card">
                             <div class="demo-media">
-                                <img class="demo-still" src="../assets/demos/recent-activities-thumb.jpg" alt="Recent activities demo" loading="lazy">
-                                <img class="demo-gif" data-gif="assets/demos/recent-activities.gif" alt="Recent activities animation" loading="lazy">
+                                <img class="demo-still" src="../assets/demos/recent-activities-thumb.webp" alt="Recent activities demo" loading="lazy">
+                                <video class="demo-gif" muted loop playsinline preload="none" aria-label="Recent activities animation">
+                                    <source src="../assets/demos/recent-activities.mp4" type="video/mp4">
+                                </video>
                             </div>
                             <div class="demo-info">
                                 <h3><span class="material-symbols-outlined">history</span> <span>Attività Recenti</span></h3>
@@ -394,8 +402,10 @@
                         <!-- Demo 3: Real-time Search -->
                         <div class="demo-card">
                             <div class="demo-media">
-                                <img class="demo-still" src="../assets/demos/search-and-log-thumb.jpg" alt="Real-time search demo" loading="lazy">
-                                <img class="demo-gif" data-gif="assets/demos/search-and-log.gif" alt="Real-time search animation" loading="lazy">
+                                <img class="demo-still" src="../assets/demos/search-and-log-thumb.webp" alt="Real-time search demo" loading="lazy">
+                                <video class="demo-gif" muted loop playsinline preload="none" aria-label="Real-time search animation">
+                                    <source src="../assets/demos/search-and-log.mp4" type="video/mp4">
+                                </video>
                             </div>
                             <div class="demo-info">
                                 <h3><span class="material-symbols-outlined">search</span> <span>Ricerca in Tempo Reale</span></h3>
@@ -407,8 +417,10 @@
                         <!-- Demo 4: Contact & Company Tabs -->
                         <div class="demo-card">
                             <div class="demo-media">
-                                <img class="demo-still" src="../assets/demos/contact-company-tabs-thumb.jpg" alt="Contact and company tabs demo" loading="lazy">
-                                <img class="demo-gif" data-gif="assets/demos/contact-company-tabs.gif" alt="Contact and company tabs animation" loading="lazy">
+                                <img class="demo-still" src="../assets/demos/contact-company-tabs-thumb.webp" alt="Contact and company tabs demo" loading="lazy">
+                                <video class="demo-gif" muted loop playsinline preload="none" aria-label="Contact and company tabs animation">
+                                    <source src="../assets/demos/contact-company-tabs.mp4" type="video/mp4">
+                                </video>
                             </div>
                             <div class="demo-info">
                                 <h3><span class="material-symbols-outlined">tab</span> <span>Schede Contatto e Azienda</span></h3>
@@ -420,8 +432,10 @@
                         <!-- Demo 5: Switch Between Contacts -->
                         <div class="demo-card">
                             <div class="demo-media">
-                                <img class="demo-still" src="../assets/demos/switch-between-contacts-in-email-thumb.jpg" alt="Switch between contacts demo" loading="lazy">
-                                <img class="demo-gif" data-gif="assets/demos/switch-between-contacts-in-email.gif" alt="Switch between contacts animation" loading="lazy">
+                                <img class="demo-still" src="../assets/demos/switch-between-contacts-in-email-thumb.webp" alt="Switch between contacts demo" loading="lazy">
+                                <video class="demo-gif" muted loop playsinline preload="none" aria-label="Switch between contacts animation">
+                                    <source src="../assets/demos/switch-between-contacts-in-email.mp4" type="video/mp4">
+                                </video>
                             </div>
                             <div class="demo-info">
                                 <h3><span class="material-symbols-outlined">swap_horiz</span> <span>Passa tra i Contatti</span></h3>
@@ -433,8 +447,10 @@
                         <!-- Demo 6: Create Contact -->
                         <div class="demo-card">
                             <div class="demo-media">
-                                <img class="demo-still" src="../assets/demos/create-contact-thumb.jpg" alt="Create contact demo" loading="lazy">
-                                <img class="demo-gif" data-gif="assets/demos/create-contact.gif" alt="Create contact animation" loading="lazy">
+                                <img class="demo-still" src="../assets/demos/create-contact-thumb.webp" alt="Create contact demo" loading="lazy">
+                                <video class="demo-gif" muted loop playsinline preload="none" aria-label="Create contact animation">
+                                    <source src="../assets/demos/create-contact.mp4" type="video/mp4">
+                                </video>
                             </div>
                             <div class="demo-info">
                                 <h3><span class="material-symbols-outlined">person_add</span> <span>Crea Contatto</span></h3>
@@ -628,24 +644,9 @@
     <div id="demo-lightbox" class="demo-lightbox" aria-hidden="true" role="dialog" aria-modal="true">
         <div class="demo-lightbox-backdrop"></div>
         <div class="demo-lightbox-content">
-            <img class="demo-lightbox-image" src="../" alt="Demo preview">
+            <video class="demo-lightbox-image" controls loop muted playsinline></video>
         </div>
     </div>
-
-    <!-- Fix asset paths for multi-language site (must run before carousel.js) -->
-    <script>
-    (function() {
-      var path = window.location.pathname;
-      var isSubLang = /\/(es|fr|de|it|pt|nl|pl)\//.test(path);
-      var prefix = isSubLang ? '../' : '';
-      document.querySelectorAll('[data-gif]').forEach(function(el) {
-        var gif = el.getAttribute('data-gif');
-        if (gif && !gif.startsWith('/') && !gif.startsWith('http') && !gif.startsWith('../')) {
-          el.setAttribute('data-gif', prefix + gif);
-        }
-      });
-    })();
-    </script>
 
     <!-- Demo Carousel Script -->
     <script src="../carousel.js"></script>

@@ -1,10 +1,10 @@
 /**
- * Interactive Demo Carousel with Lazy Loading GIFs
+ * Interactive Demo Carousel with Lazy-Loaded Videos
  *
  * Features:
  * - Navigate through demo cards with prev/next buttons
  * - Show 3 cards on desktop, 1 on mobile
- * - Lazy load GIFs on hover
+ * - Lazy-load demo videos (preload="none") on hover; autoplay visible ones on mobile
  * - Smooth transitions
  * - Keyboard navigation support
  */
@@ -27,8 +27,7 @@
         cardsPerView: window.innerWidth > CONFIG.breakpoint ? CONFIG.cardsPerViewDesktop : CONFIG.cardsPerViewMobile,
         totalCards: 0,
         totalPages: 0,
-        sectionVisible: false,
-        loadedGifs: new Set()
+        sectionVisible: false
     };
 
     // DOM Elements
@@ -119,93 +118,76 @@
     }
 
     /**
-     * Setup hover GIF loading
+     * Read the demo video's source URL (already path-resolved by static-i18n)
+     */
+    function getVideoUrl(video) {
+        return video?.querySelector('source')?.getAttribute('src') || '';
+    }
+
+    /**
+     * Play a demo video from the start (preload="none" → play() triggers the download)
+     */
+    function playVideo(video) {
+        try { video.currentTime = 0; } catch (e) { /* not loaded yet */ }
+        const p = video.play();
+        if (p && p.catch) p.catch(() => { /* autoplay/user-gesture rejection: ignore */ });
+    }
+
+    /**
+     * Setup hover video loading
      */
     function setupHoverGifLoading() {
         cards.forEach(card => {
             const media = card.querySelector('.demo-media');
-            const gifImg = card.querySelector('.demo-gif');
+            const video = card.querySelector('.demo-gif');
             const stillImg = card.querySelector('.demo-still');
-            const gifUrl = gifImg?.getAttribute('data-gif');
 
-            if (!gifUrl) return;
+            if (!video) return;
 
-            // Show GIF on hover
+            // Reveal the video only once it actually starts playing,
+            // so preload="none" never shows a black frame over the thumbnail.
+            video.addEventListener('playing', function() {
+                video.style.opacity = '1';
+                if (stillImg) stillImg.style.opacity = '0';
+            });
+
+            // Play on hover
             media.addEventListener('mouseenter', function() {
                 if (state.sectionVisible) {
-                    // Force reload GIF to restart from frame 1
-                    const wasLoaded = state.loadedGifs.has(gifUrl);
-                    if (wasLoaded) {
-                        // Reset src to force browser to reload and restart animation
-                        gifImg.src = '';
-                        // Brief delay before setting src again
-                        setTimeout(() => {
-                            gifImg.src = gifUrl;
-                            // Fade in the GIF
-                            gifImg.style.opacity = '1';
-                            stillImg.style.opacity = '0';
-                        }, 10);
-                    } else {
-                        // First time loading
-                        loadGif(gifImg, gifUrl);
-                        // Fade in the GIF
-                        gifImg.style.opacity = '1';
-                        stillImg.style.opacity = '0';
-                    }
+                    playVideo(video);
                 }
             });
 
             // Reset to thumbnail on mouseleave
             media.addEventListener('mouseleave', function() {
-                // Fade back to thumbnail
-                gifImg.style.opacity = '0';
-                stillImg.style.opacity = '1';
+                video.pause();
+                video.style.opacity = '0';
+                if (stillImg) stillImg.style.opacity = '1';
             });
 
             // Open lightbox on click
             media.addEventListener('click', function(e) {
                 e.preventDefault();
-                const gifUrl = gifImg?.getAttribute('data-gif');
-                if (gifUrl && state.sectionVisible) {
-                    openLightbox(gifUrl);
+                const url = getVideoUrl(video);
+                if (url && state.sectionVisible) {
+                    openLightbox(url);
                 }
             });
         });
     }
 
     /**
-     * Load a specific GIF
+     * Open lightbox with the demo video
      */
-    function loadGif(gifImg, gifUrl) {
-        if (state.loadedGifs.has(gifUrl)) {
-            return;
-        }
-
-        console.log('[Carousel] Loading GIF:', gifUrl);
-
-        gifImg.src = gifUrl;
-        state.loadedGifs.add(gifUrl);
-
-        gifImg.addEventListener('load', function() {
-            console.log('[Carousel] GIF loaded:', gifUrl);
-        }, { once: true });
-
-        gifImg.addEventListener('error', function() {
-            console.error('[Carousel] Failed to load GIF:', gifUrl);
-        }, { once: true });
-    }
-
-    /**
-     * Open lightbox with GIF
-     */
-    function openLightbox(gifUrl) {
+    function openLightbox(videoUrl) {
         const lightbox = document.getElementById('demo-lightbox');
-        const lightboxImage = lightbox?.querySelector('.demo-lightbox-image');
+        const lightboxVideo = lightbox?.querySelector('.demo-lightbox-image');
 
-        if (!lightbox || !lightboxImage) return;
+        if (!lightbox || !lightboxVideo) return;
 
-        // Set image source
-        lightboxImage.src = gifUrl;
+        // Set source and play
+        lightboxVideo.src = videoUrl;
+        playVideo(lightboxVideo);
 
         // Show lightbox
         lightbox.classList.add('active');
@@ -214,7 +196,7 @@
         // Prevent body scroll
         document.body.style.overflow = 'hidden';
 
-        console.log('[Carousel] Lightbox opened:', gifUrl);
+        console.log('[Carousel] Lightbox opened:', videoUrl);
     }
 
     /**
@@ -232,11 +214,13 @@
         // Restore body scroll
         document.body.style.overflow = '';
 
-        // Clear image after animation
+        // Stop and clear the video after the close animation
         setTimeout(() => {
-            const lightboxImage = lightbox.querySelector('.demo-lightbox-image');
-            if (lightboxImage) {
-                lightboxImage.src = '';
+            const lightboxVideo = lightbox.querySelector('.demo-lightbox-image');
+            if (lightboxVideo) {
+                lightboxVideo.pause();
+                lightboxVideo.removeAttribute('src');
+                lightboxVideo.load();
             }
         }, 200); // Match transition time
 
@@ -299,23 +283,14 @@
     }
 
     /**
-     * Autoplay visible GIFs (mobile)
+     * Autoplay visible videos (mobile — no hover available)
      */
     function autoplayVisibleGifs() {
-        const visibleCards = getVisibleCards();
-
-        visibleCards.forEach(card => {
-            const gifImg = card.querySelector('.demo-gif');
-            const gifUrl = gifImg?.getAttribute('data-gif');
-
-            if (gifUrl) {
-                loadGif(gifImg, gifUrl);
-                // Show GIF immediately
-                gifImg.style.opacity = '1';
-                const stillImg = card.querySelector('.demo-still');
-                if (stillImg) {
-                    stillImg.style.opacity = '0';
-                }
+        getVisibleCards().forEach(card => {
+            const video = card.querySelector('.demo-gif');
+            if (video) {
+                // The 'playing' listener reveals the video over the thumbnail
+                playVideo(video);
             }
         });
     }

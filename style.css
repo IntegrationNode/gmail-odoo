@@ -304,6 +304,7 @@ a:hover {
     display: block;
     width: 100%;
     height: auto;
+    aspect-ratio: 1418 / 952; /* reserve space before load → avoids CLS */
 }
 
 @media (max-width: 768px) {
@@ -1676,20 +1677,15 @@ a:hover {
     transition: opacity 0.4s ease;
 }
 
-/* GIF hidden by default (no src yet) */
+/* Video hidden by default (preload="none", not playing yet) */
 .demo-gif {
     opacity: 0;
     transition: opacity 0.4s ease;
 }
 
-/* On hover: hide still, show GIF */
-.demo-media:hover .demo-still {
-    opacity: 0;
-}
-
-.demo-media:hover .demo-gif {
-    opacity: 1;
-}
+/* The still↔video crossfade is driven by carousel.js on the video's
+   `playing` event, so the thumbnail stays visible until playback starts
+   (no black frame with preload="none"). */
 
 /* Demo Info Section */
 .demo-info {

@@ -2,7 +2,10 @@
   font-family: "Material Symbols Outlined";
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
+  /* block (not swap): for an icon ligature font, swap flashes the icon NAME as
+     text and then reflows to the glyph → CLS. The subset is ~8 KB so the
+     invisible block period is negligible. */
+  font-display: block;
   src: url("./material-symbols-outlined.woff2") format("woff2");
 }
 .material-symbols-outlined {
