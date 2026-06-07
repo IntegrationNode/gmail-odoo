@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YPS5MV3D6"></script>
+    <!-- Google tag (gtag.js) — deferred until the page is idle so it never competes
+         with the critical render path. dataLayer queues the calls below; gtag.js
+         sends them once it loads. (Independent of Ahrefs Analytics.) -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-0YPS5MV3D6');
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-0YPS5MV3D6';
+          document.head.appendChild(s);
+        }, 1200);
+      });
     </script>
     <!-- Ahrefs Analytics -->
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="nVghWS1eMCEwMEz5xTbG+Q" async></script>
