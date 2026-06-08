@@ -1262,7 +1262,7 @@
       },
       "step2": {
         "title": "Entrer les Identifiants",
-        "description": "Même URL Odoo et clé API"
+        "description": "Juste l'URL de votre Odoo — vous êtes déjà connecté à Odoo. Aucune clé API nécessaire. (Clé API optionnelle uniquement pour la journalisation automatique en arrière-plan.)"
       },
       "step3": {
         "title": "Commencer à Travailler",
@@ -1352,7 +1352,7 @@
       },
       "step2": {
         "title": "Entrez vos Identifiants",
-        "description": "Même URL Odoo, base de données et clé API"
+        "description": "Juste l'URL de votre Odoo — vous êtes déjà connecté à Odoo. Aucune clé API nécessaire. (Clé API optionnelle uniquement pour la journalisation automatique en arrière-plan.)"
       },
       "step3": {
         "title": "Commencez à Utiliser",

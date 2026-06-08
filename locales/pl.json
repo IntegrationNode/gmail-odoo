@@ -1210,7 +1210,7 @@
       },
       "step2": {
         "title": "Wprowadź dane uwierzytelniające",
-        "description": "Ten sam URL Odoo i klucz API"
+        "description": "Tylko URL Twojego Odoo — masz już zalogowaną sesję w Odoo. Klucz API nie jest potrzebny. (Opcjonalny klucz API tylko do automatycznego rejestrowania w tle.)"
       },
       "step3": {
         "title": "Zacznij pracować",
@@ -1300,7 +1300,7 @@
       },
       "step2": {
         "title": "Wprowadź dane uwierzytelniające",
-        "description": "Ten sam URL Odoo, baza danych i klucz API"
+        "description": "Tylko URL Twojego Odoo — masz już zalogowaną sesję w Odoo. Klucz API nie jest potrzebny. (Opcjonalny klucz API tylko do automatycznego rejestrowania w tle.)"
       },
       "step3": {
         "title": "Zacznij używać",

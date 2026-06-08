@@ -1210,7 +1210,7 @@
       },
       "step2": {
         "title": "Insira as Credenciais",
-        "description": "Mesma URL Odoo e chave API"
+        "description": "Apenas a URL do seu Odoo — você já está conectado ao Odoo. Nenhuma chave API necessária. (Chave API opcional apenas para o registro automático em segundo plano.)"
       },
       "step3": {
         "title": "Comece a Trabalhar",
@@ -1300,7 +1300,7 @@
       },
       "step2": {
         "title": "Insira Suas Credenciais",
-        "description": "Mesma URL Odoo, banco de dados e chave API"
+        "description": "Apenas a URL do seu Odoo — você já está conectado ao Odoo. Nenhuma chave API necessária. (Chave API opcional apenas para o registro automático em segundo plano.)"
       },
       "step3": {
         "title": "Comece a Usar",

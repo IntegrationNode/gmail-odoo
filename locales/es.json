@@ -1210,7 +1210,7 @@
       },
       "step2": {
         "title": "Ingresar Credenciales",
-        "description": "Misma URL de Odoo y clave API"
+        "description": "Solo la URL de tu Odoo — ya tienes la sesión iniciada en Odoo. No necesitas clave API. (Clave API opcional solo para el registro automático en segundo plano.)"
       },
       "step3": {
         "title": "Empezar a Trabajar",
@@ -1300,7 +1300,7 @@
       },
       "step2": {
         "title": "Ingresa tus Credenciales",
-        "description": "Misma URL de Odoo, base de datos y clave API"
+        "description": "Solo la URL de tu Odoo — ya tienes la sesión iniciada en Odoo. No necesitas clave API. (Clave API opcional solo para el registro automático en segundo plano.)"
       },
       "step3": {
         "title": "Empieza a Usar",

@@ -1262,7 +1262,7 @@
       },
       "step2": {
         "title": "Zugangsdaten Eingeben",
-        "description": "Gleiche Odoo-URL und API-Schlüssel"
+        "description": "Nur Ihre Odoo-URL — Sie sind bereits bei Odoo angemeldet. Kein API-Schlüssel nötig. (Optionaler API-Schlüssel nur für die automatische Protokollierung im Hintergrund.)"
       },
       "step3": {
         "title": "Loslegen",
@@ -1352,7 +1352,7 @@
       },
       "step2": {
         "title": "Zugangsdaten Eingeben",
-        "description": "Gleiche Odoo-URL, Datenbank und API-Schlüssel"
+        "description": "Nur Ihre Odoo-URL — Sie sind bereits bei Odoo angemeldet. Kein API-Schlüssel nötig. (Optionaler API-Schlüssel nur für die automatische Protokollierung im Hintergrund.)"
       },
       "step3": {
         "title": "Sofort Loslegen",

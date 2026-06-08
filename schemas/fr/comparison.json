@@ -50,7 +50,7 @@
                     "name": "Comment passer du plugin officiel Odoo Gmail à cette extension ?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "La migration prend moins de 2 minutes : 1) Installez l'extension depuis le Chrome Web Store, 2) Entrez votre URL Odoo et votre clé API (mêmes identifiants), 3) Commencez à l'utiliser. Aucune migration de données nécessaire."
+                        "text": "La migration prend moins de 2 minutes : 1) Installez l'extension depuis le Chrome Web Store, 2) Entrez l'URL de votre Odoo — vous êtes déjà connecté à Odoo, aucune clé API n'est nécessaire, 3) Commencez à l'utiliser. Aucune migration de données nécessaire."
                     }
                 },
                 {

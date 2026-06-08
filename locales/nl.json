@@ -1210,7 +1210,7 @@
       },
       "step2": {
         "title": "Inloggegevens Invoeren",
-        "description": "Dezelfde Odoo URL en API-sleutel"
+        "description": "Alleen je Odoo-URL — je bent al ingelogd bij Odoo. Geen API-sleutel nodig. (Optionele API-sleutel alleen voor automatisch loggen op de achtergrond.)"
       },
       "step3": {
         "title": "Begin met Werken",
@@ -1300,7 +1300,7 @@
       },
       "step2": {
         "title": "Voer Uw Inloggegevens In",
-        "description": "Dezelfde Odoo URL, database en API-sleutel"
+        "description": "Alleen je Odoo-URL — je bent al ingelogd bij Odoo. Geen API-sleutel nodig. (Optionele API-sleutel alleen voor automatisch loggen op de achtergrond.)"
       },
       "step3": {
         "title": "Begin met Gebruiken",

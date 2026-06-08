@@ -105,7 +105,7 @@
                         "name": "How do I switch from the official Odoo Gmail Plugin to this extension?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Switching takes less than 2 minutes: 1) Install the extension from Chrome Web Store, 2) Enter your Odoo URL and API key (same credentials), 3) Start using it. No data migration needed - your Odoo data stays exactly where it is."
+                            "text": "Switching takes less than 2 minutes: 1) Install the extension from Chrome Web Store, 2) Enter your Odoo URL — you're already signed in to Odoo, so no API key is needed, 3) Start using it. No data migration needed - your Odoo data stays exactly where it is."
                         }
                     },
                     {
@@ -235,6 +235,26 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <!-- Setup Section -->
+                        <tr class="section-header">
+                            <td colspan="3"><strong>comparison.table.setup</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Verbinding</td>
+                            <td><span class="check-green">✓</span> <span>comparison.table.connectionOurs</span></td>
+                            <td><span>comparison.table.connectionPlugin</span></td>
+                        </tr>
+                        <tr>
+                            <td>comparison.table.apiKeyRow</td>
+                            <td><span>comparison.table.apiKeyOurs</span></td>
+                            <td><span>comparison.table.apiKeyPlugin</span></td>
+                        </tr>
+                        <tr>
+                            <td>comparison.table.store</td>
+                            <td>comparison.table.storeOurs</td>
+                            <td>comparison.table.storePlugin</td>
+                        </tr>
+
                         <!-- Performance Section -->
                         <tr class="section-header">
                             <td colspan="3"><strong>Prestaties</strong></td>
@@ -320,6 +340,32 @@
         </div>
     </section>
 
+    <!-- Self-hosted / On-Premise Section -->
+    <section class="comparison-table-section" style="background: var(--color-bg);">
+        <div class="container">
+            <h2>comparison.onPremise.title</h2>
+            <p class="section-subtitle">comparison.onPremise.intro</p>
+
+            <div class="info-box" style="max-width: 760px; margin: 0 auto 1.5rem;">
+                <strong>comparison.onPremise.officialTitle</strong>
+                <ol style="margin: 0.75rem 0 0; padding-left: 1.25rem;">
+                    <li>comparison.onPremise.step1</li>
+                    <li>comparison.onPremise.step2</li>
+                    <li>comparison.onPremise.step3</li>
+                    <li>comparison.onPremise.step4</li>
+                    <li>comparison.onPremise.step5</li>
+                </ol>
+            </div>
+
+            <div class="info-box" style="max-width: 760px; margin: 0 auto;">
+                <strong>comparison.onPremise.oursTitle</strong>
+                <p>comparison.onPremise.oursBody</p>
+            </div>
+
+            <p class="small-text" style="max-width: 760px; margin: 1rem auto 0; text-align: center;">comparison.onPremise.footnote</p>
+        </div>
+    </section>
+
     <!-- Migration Section -->
     <section class="pricing-plans" style="background: var(--color-bg);">
         <div class="container">
@@ -335,7 +381,7 @@
                 <div class="migration-step">
                     <div class="step-number">2</div>
                     <h3>Voer Uw Inloggegevens In</h3>
-                    <p>Dezelfde Odoo URL, database en API-sleutel</p>
+                    <p>Alleen je Odoo-URL — je bent al ingelogd bij Odoo. Geen API-sleutel nodig. (Optionele API-sleutel alleen voor automatisch loggen op de achtergrond.)</p>
                 </div>
                 <div class="migration-step">
                     <div class="step-number">3</div>

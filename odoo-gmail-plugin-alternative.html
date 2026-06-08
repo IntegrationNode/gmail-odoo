@@ -134,7 +134,7 @@
     <section class="pricing-hero">
         <div class="container">
             <h1>Looking for an Odoo Gmail Plugin Alternative?</h1>
-            <p class="subtitle">Our Chrome extension is 10-20x faster, more stable, and works on any Odoo instance</p>
+            <p class="subtitle">Our Chrome extension is 10-20x faster, needs no API key, and works on self-hosted Odoo with zero code changes</p>
             <div class="cta-buttons" style="margin-top: 2rem;">
                 <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=alternative&amp;utm_medium=content&amp;utm_campaign=odoo_plugin_alternative&amp;utm_content=hero" target="_blank" class="btn btn-primary btn-lg">Try It Free</a>
             </div>
@@ -180,6 +180,32 @@
         </div>
     </section>
 
+    <!-- Self-hosted / On-Premise Section -->
+    <section class="pricing-plans">
+        <div class="container">
+            <h2>Does the Odoo Gmail Plugin work on self-hosted / on-premise Odoo?</h2>
+            <p class="section-subtitle">Short answer: only if you edit its source code and deploy it yourself. This is the real difference.</p>
+
+            <div class="info-box" style="max-width: 760px; margin: 0 auto 1.5rem;">
+                <strong>To run the OFFICIAL plugin on self-hosted Odoo (custom domain), Odoo's own docs require you to:</strong>
+                <ol style="margin: 0.75rem 0 0; padding-left: 1.25rem;">
+                    <li>Download the mail-client-extensions repo from GitHub</li>
+                    <li>Edit login.ts to remove the odoo.com domain check</li>
+                    <li>Edit appsscript.json to whitelist your server domain</li>
+                    <li>Deploy it as your own Google Apps Script project</li>
+                    <li>Publish from manifest and install the add-on</li>
+                </ol>
+            </div>
+
+            <div class="info-box" style="max-width: 760px; margin: 0 auto;">
+                <strong>With our extension:</strong>
+                <p>Enter your Odoo URL. Done. No code, no deployment. Works on Community and Enterprise, any domain, Odoo 14–19.</p>
+            </div>
+
+            <p class="small-text" style="max-width: 760px; margin: 1rem auto 0; text-align: center;">These are the steps from Odoo's own documentation (mail_plugins/gmail) — we're describing their process, not inventing it.</p>
+        </div>
+    </section>
+
     <!-- Quick Migration Section -->
     <section class="pricing-plans" style="background: var(--color-bg);">
         <div class="container">
@@ -195,7 +221,7 @@
                 <div class="migration-step">
                     <div class="step-number">2</div>
                     <h3>Enter Credentials</h3>
-                    <p>Same Odoo URL and API key</p>
+                    <p>Just your Odoo URL — you're already signed in to Odoo. No API key needed. (Optional API key only for background auto-logging.)</p>
                 </div>
                 <div class="migration-step">
                     <div class="step-number">3</div>
