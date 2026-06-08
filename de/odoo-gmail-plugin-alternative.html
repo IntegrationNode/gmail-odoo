@@ -134,7 +134,7 @@
     <section class="pricing-hero">
         <div class="container">
             <h1>Suchen Sie eine Alternative zum Odoo Gmail Plugin?</h1>
-            <p class="subtitle">Unsere Chrome-Erweiterung ist 10-20x schneller, stabiler und funktioniert auf jeder Odoo-Instanz</p>
+            <p class="subtitle">Unsere Chrome-Erweiterung ist 10-20x schneller, benötigt keinen API-Schlüssel und funktioniert bei selbst gehostetem Odoo ohne Code-Änderungen</p>
             <div class="cta-buttons" style="margin-top: 2rem;">
                 <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=alternative&amp;utm_medium=content&amp;utm_campaign=odoo_plugin_alternative&amp;utm_content=hero" target="_blank" class="btn btn-primary btn-lg">Kostenlos Testen</a>
             </div>
@@ -183,26 +183,26 @@
     <!-- Self-hosted / On-Premise Section -->
     <section class="pricing-plans">
         <div class="container">
-            <h2>alternative.onPremise.title</h2>
-            <p class="section-subtitle">alternative.onPremise.intro</p>
+            <h2>Funktioniert das Odoo Gmail-Plugin bei selbst gehostetem / On-Premise-Odoo?</h2>
+            <p class="section-subtitle">Kurze Antwort: nur, wenn Sie den Quellcode bearbeiten und ihn selbst bereitstellen. Das ist der wahre Unterschied.</p>
 
             <div class="info-box" style="max-width: 760px; margin: 0 auto 1.5rem;">
-                <strong>alternative.onPremise.officialTitle</strong>
+                <strong>Um das OFFIZIELLE Plugin bei selbst gehostetem Odoo (eigene Domain) zu nutzen, verlangt die Odoo-Dokumentation selbst:</strong>
                 <ol style="margin: 0.75rem 0 0; padding-left: 1.25rem;">
-                    <li>alternative.onPremise.step1</li>
-                    <li>alternative.onPremise.step2</li>
-                    <li>alternative.onPremise.step3</li>
-                    <li>alternative.onPremise.step4</li>
-                    <li>alternative.onPremise.step5</li>
+                    <li>Das Repository mail-client-extensions von GitHub herunterladen</li>
+                    <li>login.ts bearbeiten, um die odoo.com-Domainprüfung zu entfernen</li>
+                    <li>appsscript.json bearbeiten, um Ihre Server-Domain freizugeben</li>
+                    <li>Es als eigenes Google Apps Script-Projekt bereitstellen</li>
+                    <li>Aus dem Manifest veröffentlichen und das Add-on installieren</li>
                 </ol>
             </div>
 
             <div class="info-box" style="max-width: 760px; margin: 0 auto;">
-                <strong>alternative.onPremise.oursTitle</strong>
-                <p>alternative.onPremise.oursBody</p>
+                <strong>Mit unserer Erweiterung:</strong>
+                <p>Geben Sie Ihre Odoo-URL ein. Fertig. Kein Code, keine Bereitstellung. Funktioniert mit Community und Enterprise, jeder Domain, Odoo 14–19.</p>
             </div>
 
-            <p class="small-text" style="max-width: 760px; margin: 1rem auto 0; text-align: center;">alternative.onPremise.footnote</p>
+            <p class="small-text" style="max-width: 760px; margin: 1rem auto 0; text-align: center;">Dies sind die Schritte aus Odoos eigener Dokumentation (mail_plugins/gmail) — wir beschreiben ihren Prozess, wir erfinden ihn nicht.</p>
         </div>
     </section>
 

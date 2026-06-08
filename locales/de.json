@@ -47,13 +47,13 @@
       "twitterDescription": "Erfahren Sie, wie wir mit Ihren Daten umgehen und Ihre Datenschutzrechte."
     },
     "comparison": {
-      "title": "Odoo Gmail Plugin Alternative | 10-20x Schnellere Chrome-Erweiterung",
-      "description": "Suchen Sie eine Alternative zum Odoo Gmail Plugin? Unsere Chrome-Erweiterung ist 10-20x schneller, stabiler und funktioniert auf jeder Odoo-Instanz. Wechseln Sie in 2 Minuten.",
+      "title": "Odoo Gmail-Plugin für selbst gehostetes Odoo — ohne Code, ohne API-Schlüssel",
+      "description": "Die Alternative zum Odoo Gmail-Plugin für selbst gehostetes und On-Premise-Odoo: 10-20x schneller, ohne API-Schlüssel und ohne Code-Änderungen. Verbinden Sie sich nur mit Ihrer Odoo-URL.",
       "canonical": "https://integrationnode.com/gmail-odoo/de/comparison.html",
-      "ogTitle": "Odoo Gmail Plugin Alternative | 10-20x Schneller",
-      "ogDescription": "Vergleichen Sie unsere Erweiterung mit dem offiziellen Odoo Plugin. 10-20x schnellere Ladezeiten, stabile Verbindung, funktioniert auf Self-Hosted Odoo ohne Code-Änderungen.",
-      "twitterTitle": "Odoo Gmail Plugin Alternative | 10-20x Schneller",
-      "twitterDescription": "Suchen Sie eine schnellere Odoo Gmail Integration? Unsere Erweiterung lädt in 100-300ms vs 2-6 Sekunden. Wechseln Sie in 2 Minuten."
+      "ogTitle": "Odoo Gmail-Plugin für selbst gehostetes Odoo — ohne Code, ohne API-Schlüssel",
+      "ogDescription": "Vergleichen Sie unsere Gmail-Erweiterung mit dem offiziellen Odoo-Plugin. 10-20x schneller, ohne API-Schlüssel und funktioniert bei selbst gehostetem Odoo ohne Code-Änderungen.",
+      "twitterTitle": "Odoo Gmail-Plugin für selbst gehostetes Odoo — ohne Code, ohne API-Schlüssel",
+      "twitterDescription": "Schnellere Gmail-Odoo-Integration für selbst gehostetes Odoo: 100-300ms statt 2-6s, ohne API-Schlüssel, ohne Code. Verbinden Sie sich nur mit Ihrer Odoo-URL."
     },
     "alternative": {
       "title": "Beste Odoo Gmail Plugin Alternative | Schnelle Chrome-Erweiterung",
@@ -1230,7 +1230,7 @@
   "alternative": {
     "hero": {
       "title": "Suchen Sie eine Alternative zum Odoo Gmail Plugin?",
-      "subtitle": "Unsere Chrome-Erweiterung ist 10-20x schneller, stabiler und funktioniert auf jeder Odoo-Instanz",
+      "subtitle": "Unsere Chrome-Erweiterung ist 10-20x schneller, benötigt keinen API-Schlüssel und funktioniert bei selbst gehostetem Odoo ohne Code-Änderungen",
       "cta": "Kostenlos Testen"
     },
     "whySwitch": {
@@ -1278,26 +1278,39 @@
       "subtitle": "Schließen Sie sich Nutzern an, die gewechselt haben und nie zurückblickten",
       "tryFree": "Kostenlos Testen",
       "seeComparison": "Vollständigen Vergleich Ansehen"
+    },
+    "onPremise": {
+      "title": "Funktioniert das Odoo Gmail-Plugin bei selbst gehostetem / On-Premise-Odoo?",
+      "intro": "Kurze Antwort: nur, wenn Sie den Quellcode bearbeiten und ihn selbst bereitstellen. Das ist der wahre Unterschied.",
+      "officialTitle": "Um das OFFIZIELLE Plugin bei selbst gehostetem Odoo (eigene Domain) zu nutzen, verlangt die Odoo-Dokumentation selbst:",
+      "step1": "Das Repository mail-client-extensions von GitHub herunterladen",
+      "step2": "login.ts bearbeiten, um die odoo.com-Domainprüfung zu entfernen",
+      "step3": "appsscript.json bearbeiten, um Ihre Server-Domain freizugeben",
+      "step4": "Es als eigenes Google Apps Script-Projekt bereitstellen",
+      "step5": "Aus dem Manifest veröffentlichen und das Add-on installieren",
+      "oursTitle": "Mit unserer Erweiterung:",
+      "oursBody": "Geben Sie Ihre Odoo-URL ein. Fertig. Kein Code, keine Bereitstellung. Funktioniert mit Community und Enterprise, jeder Domain, Odoo 14–19.",
+      "footnote": "Dies sind die Schritte aus Odoos eigener Dokumentation (mail_plugins/gmail) — wir beschreiben ihren Prozess, wir erfinden ihn nicht."
     }
   },
   "comparison": {
     "hero": {
       "title": "Extension vs Odoo Gmail Plugin",
-      "subtitle": "Sehen Sie, wie unsere Chrome-Erweiterung im Vergleich zum offiziellen Odoo Gmail Plugin abschneidet"
+      "subtitle": "10-20x schneller, ohne API-Schlüssel und ohne Code bei selbst gehostetem Odoo — sehen Sie, wie wir im Vergleich zum offiziellen Gmail-Plugin abschneiden."
     },
     "cards": {
       "extension": {
         "name": "Unsere Extension",
-        "badge": "Empfohlen",
+        "badge": "100-300ms",
         "description": "Chrome-Erweiterung mit nativen APIs für maximale Leistung und Stabilität.",
         "highlights": "Hauptvorteile",
         "feature1": "10-20x schneller (100-300ms)",
         "feature2": "Stabile Verbindung, keine Unterbrechungen",
         "feature3": "Echtzeit-Suche über alle Datensätze",
-        "feature4": "Funktioniert auf jeder Odoo-Instanz ohne Code-Änderungen",
+        "feature4": "Funktioniert bei selbst gehostetem Odoo ohne Code-Änderungen",
         "feature5": "Abschnitte ausblenden zur Reduzierung der Datenlast",
         "feature6": "Verbesserte E-Mail-Protokollierung mit Anhängen",
-        "feature7": "Datensätze nach Phase gruppieren und letzte Aktivitäten anzeigen",
+        "feature7": "Einrichtung nur mit Ihrer Odoo-URL — ohne API-Schlüssel, ohne Code",
         "cta": "Kostenlos Testen"
       },
       "plugin": {
@@ -1340,8 +1353,17 @@
       "compatibility": "Kompatibilität",
       "selfHosted": "Odoo Self-hosted",
       "noCodeChanges": "(keine Code-Änderungen)",
-      "requiresRepoMod": "Erfordert Repository-Änderung",
-      "odooVersions": "Odoo-Versionen"
+      "requiresRepoMod": "Code bearbeiten + Apps Script bereitstellen",
+      "odooVersions": "Odoo-Versionen",
+      "setup": "Einrichtung",
+      "connectionOurs": "Nur Odoo-URL",
+      "connectionPlugin": "Marketplace-Installation / manuelle Bereitstellung",
+      "apiKeyRow": "API-Schlüssel erforderlich",
+      "apiKeyOurs": "Nein (optional)",
+      "apiKeyPlugin": "Abhängig von der Einrichtung",
+      "store": "Store",
+      "storeOurs": "Chrome Web Store",
+      "storePlugin": "Google Workspace Marketplace"
     },
     "migration": {
       "title": "Wechseln Sie vom Odoo Gmail Plugin?",
@@ -1368,6 +1390,19 @@
       "subtitle": "Testen Sie unsere Extension kostenlos und überzeugen Sie sich selbst von der Leistungsverbesserung.",
       "tryFree": "Kostenlos Testen",
       "seePricing": "Preise Ansehen"
+    },
+    "onPremise": {
+      "title": "Funktioniert das Odoo Gmail-Plugin bei selbst gehostetem / On-Premise-Odoo?",
+      "intro": "Kurze Antwort: nur, wenn Sie den Quellcode bearbeiten und ihn selbst bereitstellen. Das ist der wahre Unterschied.",
+      "officialTitle": "Um das OFFIZIELLE Plugin bei selbst gehostetem Odoo (eigene Domain) zu nutzen, verlangt die Odoo-Dokumentation selbst:",
+      "step1": "Das Repository mail-client-extensions von GitHub herunterladen",
+      "step2": "login.ts bearbeiten, um die odoo.com-Domainprüfung zu entfernen",
+      "step3": "appsscript.json bearbeiten, um Ihre Server-Domain freizugeben",
+      "step4": "Es als eigenes Google Apps Script-Projekt bereitstellen",
+      "step5": "Aus dem Manifest veröffentlichen und das Add-on installieren",
+      "oursTitle": "Mit unserer Erweiterung:",
+      "oursBody": "Geben Sie Ihre Odoo-URL ein. Fertig. Kein Code, keine Bereitstellung. Funktioniert mit Community und Enterprise, jeder Domain, Odoo 14–19.",
+      "footnote": "Dies sind die Schritte aus Odoos eigener Dokumentation (mail_plugins/gmail) — wir beschreiben ihren Prozess, wir erfinden ihn nicht."
     }
   },
   "blog": {
