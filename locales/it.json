@@ -1104,6 +1104,12 @@
       "install": "Installa Estensione",
       "viewPricing": "Vedi Prezzi"
     },
+    "v0602": {
+      "odoo17Tasks": "Attività su Odoo 17",
+      "odoo17TasksDesc": "Risolto l'errore che impediva il caricamento della sezione Attività su Odoo 17.",
+      "versionDisplay": "Attività e dati di contatto coerenti",
+      "versionDisplayDesc": "Le attività chiuse restano nascoste e i campi di contatto si caricano correttamente, indipendentemente dal piano o dalla versione di Odoo."
+    },
     "v0600": {
       "cookieAuth": "Connettiti senza chiave API",
       "cookieAuthDesc": "Configura l'estensione usando la tua sessione Odoo attiva: non serve più generare e incollare una chiave API. La chiave API resta facoltativa ed è necessaria solo per abilitare la registrazione automatica in background.",

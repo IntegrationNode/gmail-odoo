@@ -1104,6 +1104,12 @@
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
     },
+    "v0602": {
+      "odoo17Tasks": "Tâches sur Odoo 17",
+      "odoo17TasksDesc": "Correction de l'erreur de chargement de la section Tâches sur Odoo 17.",
+      "versionDisplay": "Tâches et coordonnées cohérentes",
+      "versionDisplayDesc": "Les tâches terminées restent masquées et les champs de contact se chargent correctement, quels que soient votre offre et votre version d'Odoo."
+    },
     "v0600": {
       "cookieAuth": "Connectez-vous sans clé API",
       "cookieAuthDesc": "Configurez l'extension avec votre session Odoo active : plus besoin de générer ni de coller une clé API. La clé API reste facultative et n'est requise que pour activer l'enregistrement automatique en arrière-plan.",

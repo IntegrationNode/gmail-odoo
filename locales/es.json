@@ -1104,6 +1104,12 @@
       "install": "Instalar Extensión",
       "viewPricing": "Ver Precios"
     },
+    "v0602": {
+      "odoo17Tasks": "Tareas en Odoo 17",
+      "odoo17TasksDesc": "Se corrigió el error que impedía cargar la sección Tareas en Odoo 17.",
+      "versionDisplay": "Tareas y datos de contacto coherentes",
+      "versionDisplayDesc": "Las tareas cerradas permanecen ocultas y los campos de contacto se cargan correctamente, sin importar tu plan o versión de Odoo."
+    },
     "v0600": {
       "cookieAuth": "Conéctate sin API key",
       "cookieAuthDesc": "Configura la extensión usando tu sesión activa de Odoo: ya no necesitas generar ni pegar una API key. La API key sigue siendo opcional y solo se requiere para habilitar el registro automático en segundo plano.",

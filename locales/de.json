@@ -1104,6 +1104,12 @@
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
     },
+    "v0602": {
+      "odoo17Tasks": "Aufgaben in Odoo 17",
+      "odoo17TasksDesc": "Fehler behoben, durch den der Bereich Aufgaben in Odoo 17 nicht geladen wurde.",
+      "versionDisplay": "Einheitliche Aufgaben und Kontaktdaten",
+      "versionDisplayDesc": "Abgeschlossene Aufgaben bleiben ausgeblendet und Kontaktfelder werden korrekt geladen – unabhängig von Ihrem Tarif oder Ihrer Odoo-Version."
+    },
     "v0600": {
       "cookieAuth": "Ohne API-Schlüssel verbinden",
       "cookieAuthDesc": "Richten Sie die Erweiterung über Ihre aktive Odoo-Sitzung ein – das Generieren und Einfügen eines API-Schlüssels entfällt. Ein API-Schlüssel bleibt optional und wird nur für die automatische Protokollierung im Hintergrund benötigt.",

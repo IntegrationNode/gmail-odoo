@@ -1104,6 +1104,12 @@
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
     },
+    "v0602": {
+      "odoo17Tasks": "Taken op Odoo 17",
+      "odoo17TasksDesc": "Fout opgelost waardoor de sectie Taken niet laadde op Odoo 17.",
+      "versionDisplay": "Consistente taken en contactgegevens",
+      "versionDisplayDesc": "Afgesloten taken blijven verborgen en contactvelden laden correct, ongeacht je abonnement of Odoo-versie."
+    },
     "v0600": {
       "cookieAuth": "Verbinden zonder API-sleutel",
       "cookieAuthDesc": "Stel de extensie in met je actieve Odoo-sessie: je hoeft geen API-sleutel meer te genereren en te plakken. Een API-sleutel blijft optioneel en is alleen nodig om automatisch loggen op de achtergrond in te schakelen.",

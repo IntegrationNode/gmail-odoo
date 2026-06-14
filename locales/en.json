@@ -1104,6 +1104,12 @@
       "install": "Install Extension",
       "viewPricing": "View Pricing"
     },
+    "v0602": {
+      "odoo17Tasks": "Tasks on Odoo 17",
+      "odoo17TasksDesc": "Fixed the Tasks section failing to load on Odoo 17.",
+      "versionDisplay": "Consistent tasks and contact details",
+      "versionDisplayDesc": "Closed tasks now stay hidden and contact fields load correctly, regardless of your plan or Odoo version."
+    },
     "v0600": {
       "cookieAuth": "Connect without an API key",
       "cookieAuthDesc": "Set up the extension using your active Odoo session — there's no need to generate and paste an API key anymore. An API key stays optional and is only required to enable background auto-logging.",
