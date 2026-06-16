@@ -1,0 +1,74 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Gerir contactos no Odoo: o guia prático",
+        "description": "Crie, organize e limpe os seus contactos no Odoo: empresas vs indivíduos, combinar duplicados, etiquetas e boas práticas. Funciona do Odoo 14 ao 19.",
+        "image": "https://integrationnode.com/gmail-odoo/assets/og-image.png",
+        "author": {
+            "@type": "Organization",
+            "name": "OdooIntegrations Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "OdooIntegrations",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://integrationnode.com/gmail-odoo/favicon.png"
+            }
+        },
+        "datePublished": "2026-06-16T00:00:00+00:00",
+        "dateModified": "2026-06-16T00:00:00+00:00",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://integrationnode.com/gmail-odoo/pt/blog/manage-odoo-contacts.html"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://integrationnode.com/gmail-odoo/pt/blog/manage-odoo-contacts.html#faq",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Empresa ou indivíduo: o que devo escolher no Odoo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "O Odoo 19 já não tem um seletor explícito Indivíduo/Empresa na ficha (existia como botão de opção nas versões 14–18). Na prática, modele uma organização como um contacto de nível superior e uma pessoa ligando-a à sua empresa: crie primeiro a empresa e depois adicione as pessoas como contactos filhos a partir do separador Contactos da empresa, para que cada pessoa fique associada à sua organização."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Como combino contactos duplicados no Odoo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Abra a aplicação Contactos na vista de lista, marque os contactos a combinar e depois abra o menu Ações e escolha Combinar. Escolha o contacto de destino a manter, reveja a lista e clique em Combinar contactos. Todos os documentos associados são reatribuídos ao contacto mantido. Os passos são os mesmos da v14 à v19."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Como guardo um email no registo de um contacto?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "O Odoo mantém os emails no chatter do registo, desde que aí sejam registados. Dentro do Odoo, o chatter permite-lhe enviar ou registar uma mensagem. Para capturar emails que vivem no Gmail, instale a Odoo Integration for Gmail: a extensão mostra o registo Odoo ao lado da sua caixa de entrada e regista o email no contacto com um clique, sem sair do Gmail."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Qual é a diferença entre um contacto e uma pista/oportunidade?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Um contacto (res.partner) é um registo estável de uma pessoa ou empresa com quem trabalha. Uma pista ou oportunidade (no CRM) é um potencial negócio a avançar pelo seu pipeline, normalmente ligado a um contacto. Um contacto pode gerar várias oportunidades: o contacto são os dados duradouros, a oportunidade o processo de vendas transitório."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Como importo contactos sem criar duplicados?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Descarregue o modelo de importação do Odoo, mapeie corretamente a coluna do email e use a coluna ID externo na reimportação para atualizar os registos existentes em vez de os duplicar. O Odoo não tem uma única caixa anti-duplicados: depois de uma importação grande, execute a ferramenta Combinar a partir da lista de contactos para limpar o que tenha escapado."
+                }
+            }
+        ]
+    }
+]

@@ -58,7 +58,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/changelog.html" />
-    <lastmod>2026-06-07</lastmod>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -152,6 +152,21 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/gmail-odoo/es/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/gmail-odoo/fr/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/gmail-odoo/de/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/gmail-odoo/it/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/gmail-odoo/pt/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html" />
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- ES pages -->
   <url>
     <loc>https://integrationnode.com/gmail-odoo/es/</loc>
@@ -209,7 +224,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/changelog.html" />
-    <lastmod>2026-06-07</lastmod>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -303,6 +318,21 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://integrationnode.com/gmail-odoo/es/blog/manage-odoo-contacts.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/gmail-odoo/es/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/gmail-odoo/fr/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/gmail-odoo/de/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/gmail-odoo/it/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/gmail-odoo/pt/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html" />
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- FR pages -->
   <url>
     <loc>https://integrationnode.com/gmail-odoo/fr/</loc>
@@ -360,7 +390,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/changelog.html" />
-    <lastmod>2026-06-07</lastmod>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -454,6 +484,21 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://integrationnode.com/gmail-odoo/fr/blog/manage-odoo-contacts.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/gmail-odoo/es/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/gmail-odoo/fr/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/gmail-odoo/de/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/gmail-odoo/it/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/gmail-odoo/pt/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html" />
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- DE pages -->
   <url>
     <loc>https://integrationnode.com/gmail-odoo/de/</loc>
@@ -511,7 +556,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/changelog.html" />
-    <lastmod>2026-06-07</lastmod>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -605,6 +650,21 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://integrationnode.com/gmail-odoo/de/blog/manage-odoo-contacts.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/gmail-odoo/es/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/gmail-odoo/fr/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/gmail-odoo/de/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/gmail-odoo/it/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/gmail-odoo/pt/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html" />
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- IT pages -->
   <url>
     <loc>https://integrationnode.com/gmail-odoo/it/</loc>
@@ -662,7 +722,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/changelog.html" />
-    <lastmod>2026-06-07</lastmod>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -756,6 +816,21 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://integrationnode.com/gmail-odoo/it/blog/manage-odoo-contacts.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/gmail-odoo/es/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/gmail-odoo/fr/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/gmail-odoo/de/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/gmail-odoo/it/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/gmail-odoo/pt/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html" />
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- PT pages -->
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pt/</loc>
@@ -813,7 +888,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/changelog.html" />
-    <lastmod>2026-06-07</lastmod>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -907,6 +982,21 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://integrationnode.com/gmail-odoo/pt/blog/manage-odoo-contacts.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/gmail-odoo/es/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/gmail-odoo/fr/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/gmail-odoo/de/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/gmail-odoo/it/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/gmail-odoo/pt/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html" />
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- NL pages -->
   <url>
     <loc>https://integrationnode.com/gmail-odoo/nl/</loc>
@@ -964,7 +1054,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/changelog.html" />
-    <lastmod>2026-06-07</lastmod>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1058,6 +1148,21 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://integrationnode.com/gmail-odoo/nl/blog/manage-odoo-contacts.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/gmail-odoo/es/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/gmail-odoo/fr/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/gmail-odoo/de/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/gmail-odoo/it/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/gmail-odoo/pt/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html" />
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- PL pages -->
   <url>
     <loc>https://integrationnode.com/gmail-odoo/pl/</loc>
@@ -1115,7 +1220,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/changelog.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/changelog.html" />
-    <lastmod>2026-06-07</lastmod>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1206,6 +1311,21 @@
     <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/odoo-api-key-setup.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/odoo-api-key-setup.html" />
     <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/gmail-odoo/pl/blog/manage-odoo-contacts.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/gmail-odoo/es/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/gmail-odoo/fr/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/gmail-odoo/de/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/gmail-odoo/it/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/gmail-odoo/pt/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/manage-odoo-contacts.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html" />
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

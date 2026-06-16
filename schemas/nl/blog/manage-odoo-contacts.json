@@ -1,0 +1,74 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Contacten beheren in Odoo: de praktische gids",
+        "description": "Maak, organiseer en schoon uw contacten op in Odoo: bedrijven vs individuen, dubbele records samenvoegen, labels en best practices. Voor Odoo 14 t/m 19.",
+        "image": "https://integrationnode.com/gmail-odoo/assets/og-image.png",
+        "author": {
+            "@type": "Organization",
+            "name": "OdooIntegrations Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "OdooIntegrations",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://integrationnode.com/gmail-odoo/favicon.png"
+            }
+        },
+        "datePublished": "2026-06-16T00:00:00+00:00",
+        "dateModified": "2026-06-16T00:00:00+00:00",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://integrationnode.com/gmail-odoo/nl/blog/manage-odoo-contacts.html"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://integrationnode.com/gmail-odoo/nl/blog/manage-odoo-contacts.html#faq",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Bedrijf of individu: wat moet ik kiezen in Odoo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Odoo 19 heeft geen expliciete schakelaar Individu/Bedrijf meer op het record (in versies 14–18 bestond die als keuzerondje). In de praktijk modelleert u een organisatie als een contact op het hoogste niveau en een persoon door deze aan zijn bedrijf te koppelen: maak eerst het bedrijf aan en voeg daarna personen toe als onderliggende contacten via het tabblad Contacten van het bedrijf, zodat elke persoon gekoppeld is aan zijn organisatie."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Hoe voeg ik dubbele contacten samen in Odoo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Open de Contacten-app in lijstweergave, vink de samen te voegen contacten aan en open vervolgens het Acties-menu en kies Samenvoegen. Kies het te behouden doelcontact, controleer de lijst en klik op Contacten samenvoegen. Alle gekoppelde documenten worden opnieuw toegewezen aan het behouden contact. De stappen zijn hetzelfde van v14 t/m v19."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Hoe sla ik een e-mail op bij het record van een contact?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Odoo bewaart e-mails in de chatter van het record, zolang ze daar zijn vastgelegd. Binnen Odoo laat de chatter u een bericht versturen of vastleggen. Om e-mails vast te leggen die in Gmail leven, installeert u Odoo Integration for Gmail: de extensie toont het Odoo-record naast uw inbox en legt de e-mail in één klik vast bij het contact, zonder Gmail te verlaten."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wat is het verschil tussen een contact en een lead/kans?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Een contact (res.partner) is een stabiel record voor een persoon of bedrijf waarmee u werkt. Een lead of kans (in CRM) is een potentiële deal die door uw pijplijn beweegt, meestal gekoppeld aan een contact. Eén contact kan meerdere kansen genereren: het contact zijn de duurzame gegevens, de kans is het tijdelijke verkoopproces."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Hoe importeer ik contacten zonder dubbele records aan te maken?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Download het importsjabloon van Odoo, wijs de e-mailkolom correct toe en gebruik de kolom externe ID bij een herimport om bestaande records bij te werken in plaats van ze te dupliceren. Odoo heeft geen enkel anti-dubbel-vinkje: voer na een grote import de tool Samenvoegen uit vanuit de contactenlijst om op te ruimen wat erdoorheen is geglipt."
+                }
+            }
+        ]
+    }
+]

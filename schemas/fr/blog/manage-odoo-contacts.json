@@ -1,0 +1,74 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Gérer les contacts dans Odoo : le guide pratique",
+        "description": "Créer, organiser et nettoyer vos contacts dans Odoo : entreprises vs particuliers, fusionner les doublons, étiquettes et bonnes pratiques.",
+        "image": "https://integrationnode.com/gmail-odoo/assets/og-image.png",
+        "author": {
+            "@type": "Organization",
+            "name": "OdooIntegrations Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "OdooIntegrations",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://integrationnode.com/gmail-odoo/favicon.png"
+            }
+        },
+        "datePublished": "2026-06-16T00:00:00+00:00",
+        "dateModified": "2026-06-16T00:00:00+00:00",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://integrationnode.com/gmail-odoo/fr/blog/manage-odoo-contacts.html"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://integrationnode.com/gmail-odoo/fr/blog/manage-odoo-contacts.html#faq",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Entreprise ou particulier : que choisir dans Odoo ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Odoo 19 n'a plus de sélecteur explicite Particulier/Entreprise sur la fiche (il existait sous forme de bouton radio dans les versions 14 à 18). En pratique, modélisez une organisation comme un contact de premier niveau et une personne en la reliant à son entreprise : créez d'abord l'entreprise, puis ajoutez les personnes comme contacts liés depuis l'onglet Contacts de l'entreprise, pour que chacune soit rattachée à son organisation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Comment fusionner des contacts en double dans Odoo ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ouvrez l'application Contacts en vue liste, cochez les contacts à fusionner, puis ouvrez le menu Actions et choisissez Fusionner. Sélectionnez le contact de destination à conserver, vérifiez la liste et cliquez sur Fusionner les contacts. Tous les documents liés sont rattachés au contact conservé. La marche à suivre est identique de la v14 à la v19."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Comment enregistrer un e-mail sur la fiche d'un contact ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Odoo conserve les e-mails dans le chatter de la fiche, à condition qu'ils y soient enregistrés. Depuis Odoo, le chatter permet d'envoyer ou de consigner un message. Pour capturer les e-mails qui vivent dans Gmail, installez Odoo Integration for Gmail : l'extension affiche la fiche Odoo à côté de votre boîte et enregistre l'e-mail sur le contact en un clic, sans quitter Gmail."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Quelle différence entre un contact et un lead / une piste ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Un contact (res.partner) est une fiche stable pour une personne ou une entreprise avec qui vous travaillez. Une piste ou opportunité (dans le CRM) est une affaire potentielle qui avance dans votre pipeline, généralement reliée à un contact. Un même contact peut générer plusieurs opportunités : le contact est la donnée durable, l'opportunité le processus commercial temporaire."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Comment importer des contacts sans créer de doublons ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Téléchargez le modèle d'import d'Odoo, mappez correctement la colonne e-mail et utilisez la colonne ID externe lors d'un ré-import pour mettre à jour les fiches existantes au lieu de les dupliquer. Odoo n'a pas de case « anti-doublon » unique : après un gros import, passez l'outil Fusionner depuis la liste des contacts pour nettoyer ce qui aurait échappé."
+                }
+            }
+        ]
+    }
+]

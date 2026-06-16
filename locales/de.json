@@ -90,6 +90,15 @@
       "ogDescription": "Schritt-für-Schritt-Anleitung zum Erstellen von API Keys in Odoo 14 bis 19, mit Screenshots für jede Version.",
       "twitterTitle": "So erstellen Sie einen API Key in Odoo (Alle Versionen)",
       "twitterDescription": "Schritt-für-Schritt-Anleitung zum Erstellen von API Keys in Odoo 14 bis 19, mit Screenshots für jede Version."
+    },
+    "blogManageContacts": {
+      "title": "Kontakte in Odoo verwalten: Der Praxis-Leitfaden",
+      "description": "Kontakte in Odoo anlegen, ordnen und bereinigen: Unternehmen vs. Einzelpersonen, Dubletten zusammenführen, Stichwörter und Tipps. Für Odoo 14 bis 19.",
+      "ogTitle": "Kontakte in Odoo verwalten: Der Praxis-Leitfaden",
+      "ogDescription": "Unternehmen vs. Einzelpersonen, Dubletten zusammenführen, Stichwörter und Best Practices für saubere, nützliche Odoo-Kontakte.",
+      "twitterTitle": "Kontakte in Odoo verwalten: Der Praxis-Leitfaden",
+      "twitterDescription": "Der komplette Leitfaden zum Strukturieren, Bereinigen und Nutzen Ihrer Odoo-Kontakte (v14 bis 19).",
+      "canonical": "https://integrationnode.com/gmail-odoo/de/blog/manage-odoo-contacts.html"
     }
   },
   "userGuide": {
@@ -1429,6 +1438,11 @@
       "title": "Testen Sie Odoo Integration für Gmail",
       "subtitle": "Verbinden Sie Ihr Gmail mit Odoo in Sekunden",
       "button": "Erweiterung holen"
+    },
+    "article3": {
+      "title": "Kontakte in Odoo verwalten: Der Praxis-Leitfaden",
+      "date": "Juni 2026",
+      "excerpt": "Unternehmen vs. Einzelpersonen, Dubletten zusammenführen, Stichwörter, Chatter und Best Practices – der komplette Leitfaden für saubere, nützliche Odoo-Kontakte."
     }
   },
   "blogArticle": {
@@ -1597,6 +1611,92 @@
       "title": "Bereit zur Verbindung?",
       "subtitle": "Jetzt, da Sie Ihren API Key haben, installieren Sie die Erweiterung und verbinden Sie Ihre Odoo-Instanz in Sekunden mit Gmail.",
       "button": "Erweiterung holen"
+    }
+  },
+  "blogManageContacts": {
+    "title": "Kontakte in Odoo verwalten: Der Praxis-Leitfaden",
+    "date": "16. Juni 2026",
+    "intro": "Doppelte Datensätze, Personen ohne zugeordnetes Unternehmen, Rechnungsadressen, die nicht auffindbar sind: Die Verwaltung Ihrer Odoo-Kontakte („odoo contacts“) gerät oft in den Hintergrund – bis sie Ihren Vertrieb ausbremst und Ihr CRM verfälscht. Eine saubere Kontaktdatenbank spart dagegen dem gesamten Unternehmen Zeit.",
+    "introP2": "In diesem Leitfaden geht es nicht darum, „was ein Kontakt ist“. Er zeigt Schritt für Schritt, wie Sie Ihre Kontakte in Odoo strukturieren, bereinigen und nutzen. Die Screenshots stammen aus Odoo 19, doch die Kontakte-App ist stabil: Alles funktioniert von Version 14 bis 19, mit einigen Hinweisen dort, wo die Oberfläche abweicht.",
+    "introImgAlt": "Die Kontaktliste in der Odoo-Kontakte-App",
+    "s1": {
+      "title": "Unternehmen vs. Einzelperson: Ihre Kontakte strukturieren",
+      "p1": "Zunächst ein für Odoo 19 spezifischer Punkt: Die Kontaktkarte zeigt keinen expliziten Schalter „Einzelperson / Unternehmen“ mehr. Das ist eine Änderung gegenüber den Versionen 14–18, wo Sie den Typ mit einem Optionsfeld oben im Datensatz festlegten. In Odoo 19 wird ein in der Kontakte-App erstellter Kontakt standardmäßig als Unternehmen behandelt – Sie sehen ein kleines Gebäudesymbol neben dem Namen.",
+      "p2": "Es ist also die Hierarchie – kein Schalter –, die Unternehmen von Personen trennt. Der zuverlässige Weg, eine Person hinzuzufügen, geht über ihre Organisation: Öffnen Sie das Unternehmen, gehen Sie zum Reiter Kontakte und nutzen Sie Verknüpfte Kontakte hinzufügen. Jede Person ist dann ihrem Unternehmen zugeordnet, und Sie finden alle über den Datensatz des Unternehmens. Sie können eine bestehende Person auch über das Feld Unternehmen in ihrem Datensatz mit ihrem Arbeitgeber verknüpfen.",
+      "imgAltCompany": "Ein Unternehmensdatensatz in Odoo, mit seinen verknüpften Kontakten und Stichwörtern",
+      "p3": "Ein Unternehmen kann mehrere Adressen haben. Wenn Sie einen untergeordneten Kontakt hinzufügen, bietet Odoo vier Adresstypen an – wählen Sie den richtigen, denn er wird automatisch auf Angeboten, Rechnungen und Lieferaufträgen verwendet:",
+      "addrContact": "Kontaktadresse: eine Person der Organisation (Vertrieb, Support, Geschäftsführung).",
+      "addrInvoice": "Rechnungsadresse: wohin Rechnungen gesendet werden.",
+      "addrDelivery": "Lieferadresse: wohin Waren versendet werden.",
+      "addrOther": "Andere: jede zusätzliche Adresse (ein Zweitlager usw.).",
+      "imgAltAddr": "Odoo-Dialog zum Anlegen eines verknüpften Kontakts, mit den Typen Kontaktadresse, Rechnungsadresse, Lieferadresse und Andere"
+    },
+    "s2": {
+      "title": "Dubletten verwalten: so führen Sie sie zusammen",
+      "p1": "Dubletten sind das schmerzhafteste Problem – und das am schlechtesten erklärte. Zwei Datensätze für denselben Kunden, und Ihre Historie spaltet sich in zwei: die Hälfte der E-Mails hier, die Hälfte der Aufträge dort.",
+      "origins": "Woher kommen sie?",
+      "origin1": "Leads und Verkaufschancen, die mehrfach umgewandelt wurden.",
+      "origin2": "Formulare auf der Website und Warenkörbe.",
+      "origin3": "Wiederholte Importe von Tabellen.",
+      "origin4": "Eingehende E-Mails, die automatisch einen Kontakt anlegen.",
+      "howTo": "Die gute Nachricht: Odoo bringt ein Zusammenführen-Werkzeug mit. So geht's:",
+      "step1": "Öffnen Sie die Kontakte-App in der Listenansicht.",
+      "step2": "Haken Sie die Kontakte an, die Sie zusammenführen möchten (mindestens zwei).",
+      "step3": "Öffnen Sie das Aktionen-Menü und wählen Sie Zusammenführen.",
+      "step4": "Wählen Sie den Zielkontakt (den, der erhalten bleibt), prüfen Sie die Liste und klicken Sie dann auf Kontakte zusammenführen.",
+      "imgAltMerge": "Odoos Assistent zum Zusammenführen von Kontakten, mit der Auswahl des Zielkontakts",
+      "versionNote": "Von Version 14 bis 18 liegt das Werkzeug an derselben Stelle: Datensätze in der Listenansicht auswählen, dann das Aktion(en)-Menü. Der Bildschirm wurde in v17-19 modernisiert, das Prinzip ist jedoch identisch. Alle verknüpften Dokumente (Aufträge, Rechnungen, E-Mails, Verkaufschancen) werden automatisch dem erhaltenen Kontakt neu zugeordnet."
+    },
+    "s3": {
+      "title": "In großem Maßstab organisieren: Stichwörter und Kategorien",
+      "p1": "Die Unternehmens-/Personen-Hierarchie beschreibt die Struktur; Stichwörter (Tags) beschreiben alles andere. Ein einzelner Kontakt kann mehrere Stichwörter tragen – „VIP“, „Wiederverkäufer“, „Newsletter“ – ohne die Hierarchie anzutasten.",
+      "p2": "Die Liste der Stichwörter verwalten Sie unter Kontakte ▸ Konfiguration ▸ Kontakt-Stichwörter, mit einer Farbe, um sie auf einen Blick zu erkennen.",
+      "imgAltTags": "Die Liste der Kontakt-Stichwörter in Odoo, mit Name, Kategorie und Farbe",
+      "p3": "Der Sinn liegt im Filtern und Segmentieren: Nutzen Sie in der Listenansicht Filter und Gruppieren nach, um ein Stichwort zu isolieren, und speichern Sie den Filter dann als Favorit. Mit zwei Klicks erhalten Sie die Liste aller Ihrer Wiederverkäufer oder aller Kunden einer Region – sofort wiederverwendbar für eine E-Mail-Kampagne oder einen Export."
+    },
+    "s4": {
+      "title": "Einen Kontakt verfolgen: Chatter, Aktivitäten und Historie",
+      "p1": "Jeder Datensatz hat einen Chatter: den Verlauf unten (oder rechts) im Datensatz. Dort hinterlegen Sie eine interne Notiz, planen eine Aktivität (zurückrufen, nachfassen) und verfolgen die gesamte Historie – einschließlich der ausgetauschten E-Mails. Es ist die lebendige „Akte“ des Kontakts: alles, was passiert ist, an einem Ort.",
+      "imgAltChatter": "Der Chatter eines Odoo-Kontaktdatensatzes: Nachrichten, Notizen und Aktivitäten",
+      "mentionText": "Der Haken: Diese E-Mails liegen in Gmail und landen nie im Datensatz des Kontakts, es sei denn, Sie tragen sie von Hand ein. Sie können auch",
+      "mentionLink": "die E-Mail mit einem Klick im Odoo-Kontaktdatensatz speichern, ohne Gmail zu verlassen, mit unserer Erweiterung."
+    },
+    "s5": {
+      "title": "Der Kontakt: das Rückgrat von Odoo",
+      "p1": "Ein Kontakt steht nie für sich allein: Er ist der Dreh- und Angelpunkt, der CRM, Verkauf und Rechnungsstellung verbindet. Eine Verkaufschance, ein Angebot, eine Rechnung, ein Ticket – alle verweisen auf denselben Kontaktdatensatz.",
+      "p2": "Daraus folgt die einfache Regel: ein vollständiger, sauberer Kontakt = ein sauberes CRM. Jede Minute, die Sie in die Strukturierung Ihrer Kontakte investieren, zahlt sich bei jedem Angebot und jedem Nachfassen aus, weil die gesamte Kette auf diesen Daten beruht."
+    },
+    "s6": {
+      "title": "Best Practices zur Datenhygiene",
+      "p1": "Ein paar Gewohnheiten halten Ihre Datenbank auf Dauer gesund:",
+      "tip1": "Tragen Sie die E-Mail und das Land ein: Das sind die Schlüsselfelder für Deduplizierung und Segmentierung.",
+      "tip2": "Ordnen Sie jede Person ihrem Unternehmen zu (übergeordnet/untergeordnet-Beziehung).",
+      "tip3": "Verwenden Sie den richtigen Adresstyp (Rechnungs-, Lieferadresse), statt alles auf einen Datensatz zu häufen.",
+      "tip4": "Ordnen Sie beim Import die E-Mail-Spalte sorgfältig zu und nutzen Sie die externe ID, um bestehende Datensätze zu aktualisieren, statt neue anzulegen.",
+      "tip5": "Lassen Sie regelmäßig das Zusammenführen-Werkzeug laufen, um durchgerutschte Dubletten zu beseitigen.",
+      "imgAltImport": "Odoo-Importbildschirm für Kontakte, mit der herunterladbaren Dateivorlage"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "q1": "Unternehmen oder Einzelperson: was sollte ich in Odoo wählen?",
+      "a1": "Odoo 19 hat keinen expliziten Schalter Einzelperson/Unternehmen mehr im Datensatz (in den Versionen 14–18 gab es ihn als Optionsfeld). In der Praxis modellieren Sie eine Organisation als übergeordneten Kontakt und eine Person, indem Sie sie mit ihrem Unternehmen verknüpfen: Legen Sie zuerst das Unternehmen an und fügen Sie dann Personen als untergeordnete Kontakte über den Reiter Kontakte des Unternehmens hinzu, damit jede Person ihrer Organisation zugeordnet ist.",
+      "q2": "Wie führe ich doppelte Kontakte in Odoo zusammen?",
+      "a2": "Öffnen Sie die Kontakte-App in der Listenansicht, haken Sie die zusammenzuführenden Kontakte an, öffnen Sie dann das Aktionen-Menü und wählen Sie Zusammenführen. Wählen Sie den zu erhaltenden Zielkontakt, prüfen Sie die Liste und klicken Sie auf Kontakte zusammenführen. Alle verknüpften Dokumente werden dem erhaltenen Kontakt neu zugeordnet. Die Schritte sind von v14 bis v19 dieselben.",
+      "q3": "Wie speichere ich eine E-Mail im Datensatz eines Kontakts?",
+      "a3": "Odoo bewahrt E-Mails im Chatter des Datensatzes auf, sofern sie dort protokolliert werden. Innerhalb von Odoo können Sie über den Chatter eine Nachricht senden oder protokollieren. Um E-Mails zu erfassen, die in Gmail liegen, installieren Sie Odoo Integration for Gmail: Die Erweiterung zeigt den Odoo-Datensatz neben Ihrem Postfach an und speichert die E-Mail mit einem Klick beim Kontakt, ohne Gmail zu verlassen.",
+      "q4": "Was ist der Unterschied zwischen einem Kontakt und einem Lead/einer Verkaufschance?",
+      "a4": "Ein Kontakt (res.partner) ist ein stabiler Datensatz für eine Person oder ein Unternehmen, mit dem Sie zusammenarbeiten. Ein Lead oder eine Verkaufschance (im CRM) ist ein potenzielles Geschäft, das sich durch Ihre Pipeline bewegt und meist mit einem Kontakt verknüpft ist. Ein Kontakt kann mehrere Verkaufschancen erzeugen: Der Kontakt ist das beständige Datum, die Verkaufschance der vorübergehende Verkaufsprozess.",
+      "q5": "Wie importiere ich Kontakte, ohne Dubletten zu erzeugen?",
+      "a5": "Laden Sie die Importvorlage von Odoo herunter, ordnen Sie die E-Mail-Spalte korrekt zu und nutzen Sie beim erneuten Import die Spalte externe ID, um bestehende Datensätze zu aktualisieren, statt sie zu duplizieren. Odoo hat kein einzelnes Anti-Dubletten-Kontrollkästchen: Lassen Sie nach einem großen Import das Zusammenführen-Werkzeug aus der Kontaktliste laufen, um zu bereinigen, was durchgerutscht ist."
+    },
+    "cta": {
+      "title": "Sie verwalten Ihre Odoo-Kontakte, leben aber in Gmail?",
+      "subtitle": "Sehen Sie den Kontaktdatensatz und speichern Sie Ihre E-Mails mit einem Klick in Odoo – ohne den Tab zu wechseln.",
+      "button": "Erweiterung installieren",
+      "url": "https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&utm_medium=content&utm_campaign=odoo_contacts_de&utm_content=footer_cta"
+    },
+    "mention": {
+      "url": "https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&utm_medium=content&utm_campaign=odoo_contacts_de&utm_content=inline_mention"
     }
   }
 }

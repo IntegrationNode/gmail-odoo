@@ -90,6 +90,15 @@
       "ogDescription": "Guia passo a passo para criar chaves de API no Odoo 14 a 19, com capturas de tela para cada versão.",
       "twitterTitle": "Como Criar uma Chave de API no Odoo (Todas as Versões)",
       "twitterDescription": "Guia passo a passo para criar chaves de API no Odoo 14 a 19, com capturas de tela para cada versão."
+    },
+    "blogManageContacts": {
+      "title": "Gerir contactos no Odoo: o guia prático",
+      "description": "Crie, organize e limpe os seus contactos no Odoo: empresas vs indivíduos, combinar duplicados, etiquetas e boas práticas. Funciona do Odoo 14 ao 19.",
+      "ogTitle": "Gerir contactos no Odoo: o guia prático",
+      "ogDescription": "Empresas vs indivíduos, combinar duplicados, etiquetas e boas práticas para contactos Odoo limpos e úteis.",
+      "twitterTitle": "Gerir contactos no Odoo: o guia prático",
+      "twitterDescription": "O guia completo para estruturar, limpar e usar os seus contactos Odoo (v14 a 19).",
+      "canonical": "https://integrationnode.com/gmail-odoo/pt/blog/manage-odoo-contacts.html"
     }
   },
   "userGuide": {
@@ -1429,6 +1438,11 @@
       "title": "Experimente Integração Odoo para Gmail",
       "subtitle": "Conecte seu Gmail ao Odoo em segundos",
       "button": "Obter Extensão"
+    },
+    "article3": {
+      "title": "Gerir contactos no Odoo: o guia prático",
+      "date": "junho de 2026",
+      "excerpt": "Empresas vs indivíduos, combinar duplicados, etiquetas, chatter e boas práticas — o guia completo para contactos Odoo limpos e úteis."
     }
   },
   "blogArticle": {
@@ -1597,6 +1611,92 @@
       "title": "Pronto para conectar?",
       "subtitle": "Agora que você tem sua chave de API, instale a extensão e conecte sua instância Odoo ao Gmail em segundos.",
       "button": "Obter a Extensão"
+    }
+  },
+  "blogManageContacts": {
+    "title": "Gerir contactos no Odoo: o guia prático",
+    "date": "16 de junho de 2026",
+    "intro": "Registos duplicados, pessoas sem nenhuma empresa associada, endereços de faturação que não consegue encontrar: gerir os seus contactos Odoo (“odoo contacts”) costuma ficar para segundo plano — até ao dia em que abranda as suas vendas e distorce o seu CRM. Uma base de contactos limpa, pelo contrário, poupa tempo a toda a empresa.",
+    "introP2": "Este guia não trata de “o que é um contacto”. Mostra, passo a passo, como estruturar, limpar e usar os seus contactos no Odoo. As capturas de ecrã foram tiradas no Odoo 19, mas a aplicação Contactos é estável: tudo funciona da versão 14 à 19, com algumas notas onde a interface difere.",
+    "introImgAlt": "A lista de contactos na aplicação Contactos do Odoo",
+    "s1": {
+      "title": "Empresa vs indivíduo: estruturar os seus contactos",
+      "p1": "Primeiro, um ponto específico do Odoo 19: a ficha de contacto já não apresenta um seletor explícito «Indivíduo / Empresa». É uma mudança em relação às versões 14–18, onde definia o tipo com um botão de opção no topo do registo. No Odoo 19, um contacto criado a partir da aplicação Contactos é tratado como uma empresa por predefinição — verá um pequeno ícone de edifício junto ao nome.",
+      "p2": "Assim, é a hierarquia — e não um interruptor — que separa as empresas das pessoas. A forma fiável de adicionar uma pessoa parte da sua organização: abra a empresa, vá ao separador Contactos e utilize Adicionar contactos associados. Cada pessoa fica então associada à sua empresa e pode encontrá-las a todas a partir do registo da empresa. Também pode ligar uma pessoa existente ao seu empregador através do campo Empresa na ficha dela.",
+      "imgAltCompany": "Um registo de empresa no Odoo, com os seus contactos associados e etiquetas",
+      "p3": "Uma empresa pode ter vários endereços. Quando adiciona um contacto filho, o Odoo oferece quatro tipos de endereço — escolha o correto, porque é o que será usado automaticamente nos orçamentos, faturas e ordens de entrega:",
+      "addrContact": "Endereço de contacto: uma pessoa da organização (comercial, suporte, gestor).",
+      "addrInvoice": "Endereço de faturação: para onde são enviadas as faturas.",
+      "addrDelivery": "Endereço de entrega: para onde são enviadas as mercadorias.",
+      "addrOther": "Outro: qualquer endereço adicional (um armazém secundário, etc.).",
+      "imgAltAddr": "Caixa de diálogo do Odoo para criar um contacto associado, com os tipos Contacto, Faturação, Entrega e Outro"
+    },
+    "s2": {
+      "title": "Gerir duplicados: como combiná-los",
+      "p1": "Os duplicados são o problema mais penoso — e o menos explicado. Dois registos para o mesmo cliente e o seu histórico parte-se em dois: metade dos emails aqui, metade das encomendas ali.",
+      "origins": "De onde vêm?",
+      "origin1": "Pistas e oportunidades convertidas mais do que uma vez.",
+      "origin2": "Formulários do site e carrinhos de compras.",
+      "origin3": "Importações repetidas de folhas de cálculo.",
+      "origin4": "Emails recebidos que criam um contacto automaticamente.",
+      "howTo": "A boa notícia: o Odoo inclui uma ferramenta de combinação. Eis como:",
+      "step1": "Abra a aplicação Contactos na vista de lista.",
+      "step2": "Marque os contactos que pretende combinar (pelo menos dois).",
+      "step3": "Abra o menu Ações e escolha Combinar.",
+      "step4": "Escolha o contacto de destino (o que será mantido), reveja a lista e depois clique em Combinar contactos.",
+      "imgAltMerge": "O assistente de combinação de contactos do Odoo, com a seleção do contacto de destino",
+      "versionNote": "Da versão 14 à 18 a ferramenta encontra-se no mesmo sítio: selecione os registos na vista de lista e depois o menu Ação(ões). O ecrã foi modernizado nas versões 17-19, mas o princípio é idêntico. Todos os documentos associados (encomendas, faturas, emails, oportunidades) são automaticamente reatribuídos ao contacto mantido."
+    },
+    "s3": {
+      "title": "Organizar à escala: etiquetas e categorias",
+      "p1": "A hierarquia empresa/pessoa descreve a estrutura; as etiquetas descrevem tudo o resto. Um único contacto pode ter várias etiquetas — “VIP”, “Revendedor”, “Newsletter” — sem mexer na hierarquia.",
+      "p2": "Gere a lista de etiquetas em Contactos ▸ Configuração ▸ Etiquetas de contacto, com uma cor para as identificar num relance.",
+      "imgAltTags": "A lista de etiquetas de contacto no Odoo, com nome, categoria e cor",
+      "p3": "O objetivo é filtrar e segmentar: na vista de lista, use Filtros e Agrupar por para isolar uma etiqueta e depois guarde o filtro como favorito. Em dois cliques obtém a lista de todos os seus revendedores, ou de todos os clientes de uma região — pronta a reutilizar para uma campanha de email ou uma exportação."
+    },
+    "s4": {
+      "title": "Acompanhar um contacto: chatter, atividades e histórico",
+      "p1": "Cada registo tem um chatter: o fluxo na parte inferior (ou à direita) do registo. Aí regista uma nota interna, agenda uma atividade (ligar de volta, dar seguimento) e acompanha todo o histórico — incluindo os emails trocados. É o “dossiê” vivo do contacto: tudo o que aconteceu, num só lugar.",
+      "imgAltChatter": "O chatter num registo de contacto do Odoo: mensagens, notas e atividades",
+      "mentionText": "O senão: esses emails vivem no Gmail e nunca chegam ao registo do contacto a menos que os registe à mão. Também pode",
+      "mentionLink": "guardar o email no registo do contacto Odoo com um clique, sem sair do Gmail, com a nossa extensão."
+    },
+    "s5": {
+      "title": "O contacto: a espinha dorsal do Odoo",
+      "p1": "Um contacto nunca está isolado: é o eixo que liga CRM, Vendas e Faturação. Uma oportunidade, um orçamento, uma fatura, um ticket — todos apontam para o mesmo registo de contacto.",
+      "p2": "Daí a regra simples: um contacto completo e limpo = um CRM limpo. Cada minuto gasto a estruturar os seus contactos compensa em cada orçamento e em cada seguimento, porque toda a cadeia depende destes dados."
+    },
+    "s6": {
+      "title": "Boas práticas de higiene",
+      "p1": "Alguns hábitos mantêm a sua base de dados saudável ao longo do tempo:",
+      "tip1": "Preencha o email e o país: são os campos-chave para a deduplicação e a segmentação.",
+      "tip2": "Associe cada pessoa à sua empresa (relação pai/filho).",
+      "tip3": "Use o tipo de endereço correto (faturação, entrega) em vez de amontoar tudo num só registo.",
+      "tip4": "Na importação, mapeie a coluna do email com cuidado e use o ID externo para atualizar registos existentes em vez de criar novos.",
+      "tip5": "Execute a ferramenta de combinação regularmente para eliminar os duplicados que escaparam.",
+      "imgAltImport": "Ecrã de importação de contactos do Odoo, com o modelo de ficheiro para descarregar"
+    },
+    "faq": {
+      "title": "Perguntas frequentes",
+      "q1": "Empresa ou indivíduo: o que devo escolher no Odoo?",
+      "a1": "O Odoo 19 já não tem um seletor explícito Indivíduo/Empresa na ficha (existia como botão de opção nas versões 14–18). Na prática, modele uma organização como um contacto de nível superior e uma pessoa ligando-a à sua empresa: crie primeiro a empresa e depois adicione as pessoas como contactos filhos a partir do separador Contactos da empresa, para que cada pessoa fique associada à sua organização.",
+      "q2": "Como combino contactos duplicados no Odoo?",
+      "a2": "Abra a aplicação Contactos na vista de lista, marque os contactos a combinar e depois abra o menu Ações e escolha Combinar. Escolha o contacto de destino a manter, reveja a lista e clique em Combinar contactos. Todos os documentos associados são reatribuídos ao contacto mantido. Os passos são os mesmos da v14 à v19.",
+      "q3": "Como guardo um email no registo de um contacto?",
+      "a3": "O Odoo mantém os emails no chatter do registo, desde que aí sejam registados. Dentro do Odoo, o chatter permite-lhe enviar ou registar uma mensagem. Para capturar emails que vivem no Gmail, instale a Odoo Integration for Gmail: a extensão mostra o registo Odoo ao lado da sua caixa de entrada e regista o email no contacto com um clique, sem sair do Gmail.",
+      "q4": "Qual é a diferença entre um contacto e uma pista/oportunidade?",
+      "a4": "Um contacto (res.partner) é um registo estável de uma pessoa ou empresa com quem trabalha. Uma pista ou oportunidade (no CRM) é um potencial negócio a avançar pelo seu pipeline, normalmente ligado a um contacto. Um contacto pode gerar várias oportunidades: o contacto são os dados duradouros, a oportunidade o processo de vendas transitório.",
+      "q5": "Como importo contactos sem criar duplicados?",
+      "a5": "Descarregue o modelo de importação do Odoo, mapeie corretamente a coluna do email e use a coluna ID externo na reimportação para atualizar os registos existentes em vez de os duplicar. O Odoo não tem uma única caixa anti-duplicados: depois de uma importação grande, execute a ferramenta Combinar a partir da lista de contactos para limpar o que tenha escapado."
+    },
+    "cta": {
+      "title": "Gere os seus contactos Odoo mas vive no Gmail?",
+      "subtitle": "Veja o registo do contacto e guarde os seus emails no Odoo com um clique — sem mudar de separador.",
+      "button": "Instalar a extensão",
+      "url": "https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&utm_medium=content&utm_campaign=odoo_contacts_pt&utm_content=footer_cta"
+    },
+    "mention": {
+      "url": "https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&utm_medium=content&utm_campaign=odoo_contacts_pt&utm_content=inline_mention"
     }
   }
 }

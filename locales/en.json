@@ -90,6 +90,15 @@
       "ogDescription": "Step-by-step guide to creating API keys in Odoo 14 through 19, with screenshots for every version.",
       "twitterTitle": "How to Create an API Key in Odoo (All Versions)",
       "twitterDescription": "Step-by-step guide to creating API keys in Odoo 14 through 19, with screenshots for every version."
+    },
+    "blogManageContacts": {
+      "title": "Managing Contacts in Odoo: The Practical Guide",
+      "description": "Create, organize and clean up your contacts in Odoo: companies vs individuals, merging duplicates, tags and best practices. Works in Odoo 14 to 19.",
+      "ogTitle": "Managing Contacts in Odoo: The Practical Guide",
+      "ogDescription": "Companies vs individuals, merging duplicates, tags and best practices for clean, useful Odoo contacts.",
+      "twitterTitle": "Managing Contacts in Odoo: The Practical Guide",
+      "twitterDescription": "The complete guide to structuring, cleaning and using your Odoo contacts (v14 to 19).",
+      "canonical": "https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html"
     }
   },
   "userGuide": {
@@ -1310,7 +1319,6 @@
       "requiresRepoMod": "Edit code + deploy Apps Script",
       "odooVersions": "Odoo Versions",
       "setup": "Setup",
-      "connection": "Connection",
       "connectionOurs": "Odoo URL only",
       "connectionPlugin": "Marketplace install / manual deploy",
       "apiKeyRow": "API key required",
@@ -1430,6 +1438,11 @@
       "title": "Try Odoo Integration for Gmail",
       "subtitle": "Connect your Gmail to Odoo in seconds",
       "button": "Get Extension"
+    },
+    "article3": {
+      "title": "Managing Contacts in Odoo: The Practical Guide",
+      "date": "June 2026",
+      "excerpt": "Companies vs individuals, merging duplicates, tags, chatter and best practices—the complete guide to clean, useful Odoo contacts."
     }
   },
   "blogArticle": {
@@ -1598,6 +1611,92 @@
       "title": "Ready to connect?",
       "subtitle": "Now that you have your API key, install the extension and connect your Odoo instance to Gmail in seconds.",
       "button": "Get the Extension"
+    }
+  },
+  "blogManageContacts": {
+    "title": "Managing Contacts in Odoo: The Practical Guide",
+    "date": "June 16, 2026",
+    "intro": "Duplicate records, people with no company attached, billing addresses you can't find: managing your Odoo contacts (“odoo contacts”) is often an afterthought—until it slows down your sales and skews your CRM. A clean contact database, on the other hand, saves time across the whole company.",
+    "introP2": "This guide isn't about “what a contact is.” It shows, step by step, how to structure, clean and use your contacts in Odoo. Screenshots are taken on Odoo 19, but the Contacts app is stable: everything works from version 14 through 19, with a few notes where the interface differs.",
+    "introImgAlt": "The contact list in the Odoo Contacts app",
+    "s1": {
+      "title": "Company vs individual: structuring your contacts",
+      "p1": "First, a fact specific to Odoo 19: the contact form no longer shows an explicit “Individual / Company” switch. That's a change from versions 14–18, where you set the type with a radio button at the top of the record. In Odoo 19, a contact created from the Contacts app is treated as a company by default—you'll see a small building icon next to the name.",
+      "p2": "So the hierarchy—not a toggle—is what separates companies from people. The reliable way to add a person is from their organization: open the company, go to the Contacts tab and use Add Related Contacts. Each person is then attached to their company, and you can find everyone from the company's record. You can also link an existing person to their employer through the Company field on their record.",
+      "imgAltCompany": "A company record in Odoo, with its linked contacts and tags",
+      "p3": "One company can have several addresses. When you add a child contact, Odoo offers four address types—pick the right one, because it's the one used automatically on quotations, invoices and delivery orders:",
+      "addrContact": "Contact: a person at the organization (sales rep, support, manager).",
+      "addrInvoice": "Invoice Address: where invoices are sent.",
+      "addrDelivery": "Delivery Address: where goods are shipped.",
+      "addrOther": "Other: any additional address (a secondary warehouse, etc.).",
+      "imgAltAddr": "Odoo dialog to create a related contact, with the Contact, Invoice, Delivery and Other types"
+    },
+    "s2": {
+      "title": "Managing duplicates: how to merge them",
+      "p1": "Duplicates are the most painful problem—and the least explained. Two records for the same customer, and your history splits in two: half the emails here, half the orders there.",
+      "origins": "Where do they come from?",
+      "origin1": "Leads and opportunities converted more than once.",
+      "origin2": "Website forms and shopping carts.",
+      "origin3": "Repeated imports of spreadsheets.",
+      "origin4": "Incoming emails that create a contact automatically.",
+      "howTo": "The good news: Odoo ships with a merge tool. Here's how:",
+      "step1": "Open the Contacts app in list view.",
+      "step2": "Tick the contacts you want to merge (at least two).",
+      "step3": "Open the Actions menu and choose Merge.",
+      "step4": "Pick the destination contact (the one that will be kept), review the list, then click Merge Contacts.",
+      "imgAltMerge": "Odoo's contact merge wizard, with the destination contact selection",
+      "versionNote": "From version 14 to 18 the tool lives in the same place: select records in list view, then the Action(s) menu. The screen was modernized in v17-19, but the principle is identical. All linked documents (orders, invoices, emails, opportunities) are automatically reassigned to the kept contact."
+    },
+    "s3": {
+      "title": "Organizing at scale: tags and categories",
+      "p1": "The company/person hierarchy describes structure; tags describe everything else. A single contact can carry several tags—“VIP”, “Reseller”, “Newsletter”—without touching the hierarchy.",
+      "p2": "You manage the tag list under Contacts ▸ Configuration ▸ Contact Tags, with a color to spot them at a glance.",
+      "imgAltTags": "The contact tags list in Odoo, with name, category and color",
+      "p3": "The point is filtering and segmenting: in list view, use Filters and Group By to isolate a tag, then save the filter as a favorite. In two clicks you get the list of all your resellers, or all customers in one region—ready to reuse for an email campaign or an export."
+    },
+    "s4": {
+      "title": "Following up a contact: chatter, activities and history",
+      "p1": "Every record has a chatter: the thread at the bottom (or right) of the record. There you log an internal note, schedule an activity (call back, follow up) and track the full history—including the emails exchanged. It's the living “file” of the contact: everything that happened, in one place.",
+      "imgAltChatter": "The chatter on an Odoo contact record: messages, notes and activities",
+      "mentionText": "The catch: those emails live in Gmail and never reach the contact's record unless you log them by hand. You can also",
+      "mentionLink": "save the email to the Odoo contact's record in one click, without leaving Gmail, with our extension."
+    },
+    "s5": {
+      "title": "The contact: the backbone of Odoo",
+      "p1": "A contact is never isolated: it's the pivot that links CRM, Sales and Invoicing. An opportunity, a quotation, an invoice, a ticket—they all point back to the same contact record.",
+      "p2": "Hence the simple rule: a complete, clean contact = a clean CRM. Every minute spent structuring your contacts pays off on every quote and every follow-up, because the whole chain relies on this data."
+    },
+    "s6": {
+      "title": "Hygiene best practices",
+      "p1": "A few habits keep your database healthy over time:",
+      "tip1": "Fill in the email and the country: these are the key fields for deduplication and segmentation.",
+      "tip2": "Attach each person to their company (parent/child relationship).",
+      "tip3": "Use the right address type (invoice, delivery) instead of piling everything onto one record.",
+      "tip4": "On import, map the email column carefully and use the External ID to update existing records instead of creating new ones.",
+      "tip5": "Run the merge tool regularly to clear out duplicates that slipped through.",
+      "imgAltImport": "Odoo contact import screen, with the file template to download"
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "q1": "Company or individual: which should I choose in Odoo?",
+      "a1": "Odoo 19 no longer has an explicit Individual/Company switch on the form (it existed as a radio button in versions 14–18). In practice, model an organization as a top-level contact and a person by linking them to their company: create the company first, then add people as child contacts from the company's Contacts tab, so each person is attached to their organization.",
+      "q2": "How do I merge duplicate contacts in Odoo?",
+      "a2": "Open the Contacts app in list view, tick the contacts to merge, then open the Actions menu and choose Merge. Pick the destination contact to keep, review the list and click Merge Contacts. All linked documents are reassigned to the kept contact. The steps are the same from v14 to v19.",
+      "q3": "How do I save an email to a contact's record?",
+      "a3": "Odoo keeps emails in the record's chatter, as long as they're logged there. Inside Odoo, the chatter lets you send or log a message. To capture emails that live in Gmail, install Odoo Integration for Gmail: the extension shows the Odoo record next to your inbox and logs the email to the contact in one click, without leaving Gmail.",
+      "q4": "What is the difference between a contact and a lead/opportunity?",
+      "a4": "A contact (res.partner) is a stable record for a person or company you work with. A lead or opportunity (in CRM) is a potential deal moving through your pipeline, usually linked to a contact. One contact can generate several opportunities: the contact is the durable data, the opportunity the transient sales process.",
+      "q5": "How do I import contacts without creating duplicates?",
+      "a5": "Download Odoo's import template, map the email column correctly, and use the External ID column on re-import to update existing records instead of duplicating them. Odoo has no single anti-duplicate checkbox: after a large import, run the Merge tool from the contacts list to clean up whatever slipped through."
+    },
+    "cta": {
+      "title": "You manage your Odoo contacts but live in Gmail?",
+      "subtitle": "See the contact's record and save your emails to Odoo in one click—without switching tabs.",
+      "button": "Install the extension",
+      "url": "https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&utm_medium=content&utm_campaign=odoo_contacts_en&utm_content=footer_cta"
+    },
+    "mention": {
+      "url": "https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&utm_medium=content&utm_campaign=odoo_contacts_en&utm_content=inline_mention"
     }
   }
 }

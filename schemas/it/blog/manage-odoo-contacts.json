@@ -1,0 +1,74 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Gestire i contatti in Odoo: la guida pratica",
+        "description": "Crea, organizza e ripulisci i tuoi contatti in Odoo: aziende vs individui, unione dei duplicati, etichette e buone pratiche. Funziona da Odoo 14 a 19.",
+        "image": "https://integrationnode.com/gmail-odoo/assets/og-image.png",
+        "author": {
+            "@type": "Organization",
+            "name": "OdooIntegrations Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "OdooIntegrations",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://integrationnode.com/gmail-odoo/favicon.png"
+            }
+        },
+        "datePublished": "2026-06-16T00:00:00+00:00",
+        "dateModified": "2026-06-16T00:00:00+00:00",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://integrationnode.com/gmail-odoo/it/blog/manage-odoo-contacts.html"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://integrationnode.com/gmail-odoo/it/blog/manage-odoo-contacts.html#faq",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Azienda o individuo: quale scegliere in Odoo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Odoo 19 non ha più un selettore esplicito Individuo/Azienda sulla scheda (esisteva come pulsante di opzione nelle versioni 14–18). In pratica, modella un'organizzazione come un contatto di primo livello e una persona collegandola alla sua azienda: crea prima l'azienda, poi aggiungi le persone come contatti figli dalla scheda Contatti dell'azienda, così ogni persona è collegata alla sua organizzazione."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Come si uniscono i contatti duplicati in Odoo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Apri l'app Contatti in vista elenco, seleziona i contatti da unire, poi apri il menu Azioni e scegli Unisci. Scegli il contatto di destinazione da conservare, controlla l'elenco e clicca su Unisci contatti. Tutti i documenti collegati vengono riassegnati al contatto conservato. I passaggi sono gli stessi dalla v14 alla v19."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Come si salva un'email sulla scheda di un contatto?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Odoo conserva le email nel chatter della scheda, a patto che vi siano registrate. All'interno di Odoo, il chatter ti permette di inviare o registrare un messaggio. Per catturare le email che vivono in Gmail, installa Odoo Integration for Gmail: l'estensione mostra la scheda Odoo accanto alla tua casella di posta e registra l'email sul contatto con un clic, senza uscire da Gmail."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Qual è la differenza tra un contatto e un lead/opportunità?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Un contatto (res.partner) è una scheda stabile per una persona o un'azienda con cui lavori. Un lead o un'opportunità (nel CRM) è un affare potenziale che avanza nella tua pipeline, di solito collegato a un contatto. Un contatto può generare più opportunità: il contatto è il dato duraturo, l'opportunità il processo commerciale temporaneo."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Come si importano i contatti senza creare duplicati?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Scarica il modello di importazione di Odoo, mappa correttamente la colonna email e usa la colonna ID esterno alla reimportazione per aggiornare le schede esistenti invece di duplicarle. Odoo non ha un'unica casella anti-duplicato: dopo una grande importazione, esegui lo strumento Unisci dall'elenco dei contatti per ripulire ciò che è sfuggito."
+                }
+            }
+        ]
+    }
+]

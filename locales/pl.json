@@ -90,6 +90,15 @@
       "ogDescription": "Przewodnik krok po kroku tworzenia kluczy API w Odoo od wersji 14 do 19, ze zrzutami ekranu dla każdej wersji.",
       "twitterTitle": "Jak Utworzyć Klucz API w Odoo (Wszystkie Wersje)",
       "twitterDescription": "Przewodnik krok po kroku tworzenia kluczy API w Odoo od wersji 14 do 19, ze zrzutami ekranu dla każdej wersji."
+    },
+    "blogManageContacts": {
+      "title": "Zarządzanie kontaktami w Odoo: praktyczny przewodnik",
+      "description": "Twórz, porządkuj i czyść kontakty w Odoo: firmy a osoby fizyczne, scalanie duplikatów, tagi i dobre praktyki. Działa w Odoo 14 do 19.",
+      "ogTitle": "Zarządzanie kontaktami w Odoo: praktyczny przewodnik",
+      "ogDescription": "Firmy a osoby fizyczne, scalanie duplikatów, tagi i dobre praktyki dla czystych, użytecznych kontaktów Odoo.",
+      "twitterTitle": "Zarządzanie kontaktami w Odoo: praktyczny przewodnik",
+      "twitterDescription": "Kompletny przewodnik po porządkowaniu, czyszczeniu i wykorzystywaniu kontaktów Odoo (v14 do 19).",
+      "canonical": "https://integrationnode.com/gmail-odoo/pl/blog/manage-odoo-contacts.html"
     }
   },
   "userGuide": {
@@ -1429,6 +1438,11 @@
       "title": "Wypróbuj Integrację Odoo dla Gmail",
       "subtitle": "Połącz swój Gmail z Odoo w kilka sekund",
       "button": "Pobierz rozszerzenie"
+    },
+    "article3": {
+      "title": "Zarządzanie kontaktami w Odoo: praktyczny przewodnik",
+      "date": "Czerwiec 2026",
+      "excerpt": "Firmy a osoby fizyczne, scalanie duplikatów, tagi, chatter i dobre praktyki — kompletny przewodnik po czystych, użytecznych kontaktach Odoo."
     }
   },
   "blogArticle": {
@@ -1597,6 +1611,92 @@
       "title": "Gotowy do połączenia?",
       "subtitle": "Teraz, gdy masz swój klucz API, zainstaluj rozszerzenie i połącz swoją instancję Odoo z Gmail w kilka sekund.",
       "button": "Pobierz rozszerzenie"
+    }
+  },
+  "blogManageContacts": {
+    "title": "Zarządzanie kontaktami w Odoo: praktyczny przewodnik",
+    "date": "16 czerwca 2026",
+    "intro": "Zdublowane rekordy, osoby bez przypisanej firmy, adresy rozliczeniowe, których nie sposób znaleźć: zarządzanie kontaktami w Odoo („odoo contacts”) bywa odkładane na później — aż zaczyna spowalniać sprzedaż i zaburzać Twój CRM. Czysta baza kontaktów odwrotnie: oszczędza czas całej firmie.",
+    "introP2": "Ten przewodnik nie tłumaczy „czym jest kontakt”. Pokazuje krok po kroku, jak uporządkować, oczyścić i wykorzystywać kontakty w Odoo. Zrzuty ekranu pochodzą z Odoo 19, ale aplikacja Kontakty jest stabilna: wszystko działa od wersji 14 do 19, z kilkoma uwagami tam, gdzie interfejs się różni.",
+    "introImgAlt": "Lista kontaktów w aplikacji Kontakty w Odoo",
+    "s1": {
+      "title": "Firma a osoba fizyczna: jak uporządkować kontakty",
+      "p1": "Najpierw kwestia specyficzna dla Odoo 19: rekord kontaktu nie pokazuje już jawnego przełącznika „Osoba fizyczna / Firma”. To zmiana w porównaniu z wersjami 14–18, w których typ ustawiało się przyciskiem opcji na górze rekordu. W Odoo 19 kontakt utworzony w aplikacji Kontakty jest domyślnie traktowany jako firma — obok nazwy zobaczysz małą ikonę budynku.",
+      "p2": "To więc hierarchia — a nie przełącznik — oddziela firmy od osób. Niezawodny sposób dodania osoby zaczyna się od jej organizacji: otwórz firmę, przejdź do zakładki Kontakty i użyj Dodaj powiązane kontakty. Każda osoba jest wtedy powiązana ze swoją firmą, a wszystkie znajdziesz z poziomu rekordu firmy. Istniejącą osobę możesz też powiązać z jej pracodawcą poprzez pole Firma w jej rekordzie.",
+      "imgAltCompany": "Rekord firmy w Odoo, z powiązanymi kontaktami i tagami",
+      "p3": "Jedna firma może mieć kilka adresów. Gdy dodajesz kontakt podrzędny, Odoo oferuje cztery typy adresu — wybierz właściwy, bo to on jest używany automatycznie na ofertach, fakturach i zleceniach dostawy:",
+      "addrContact": "Adres kontaktu: osoba w organizacji (handlowiec, wsparcie, menedżer).",
+      "addrInvoice": "Adres rozliczeniowy: dokąd wysyłane są faktury.",
+      "addrDelivery": "Adres dostawy: dokąd wysyłany jest towar.",
+      "addrOther": "Inny: dowolny dodatkowy adres (drugi magazyn itp.).",
+      "imgAltAddr": "Okno dialogowe Odoo do tworzenia powiązanego kontaktu, z typami Adres kontaktu, Adres rozliczeniowy, Adres dostawy i Inny"
+    },
+    "s2": {
+      "title": "Zarządzanie duplikatami: jak je scalić",
+      "p1": "Duplikaty to najbardziej dotkliwy problem — i najmniej wyjaśniony. Dwa rekordy tego samego klienta i Twoja historia dzieli się na pół: połowa e-maili tutaj, połowa zamówień tam.",
+      "origins": "Skąd się biorą?",
+      "origin1": "Sygnały i szanse konwertowane więcej niż raz.",
+      "origin2": "Formularze na stronie i koszyki zakupowe.",
+      "origin3": "Powtarzane importy arkuszy kalkulacyjnych.",
+      "origin4": "Przychodzące e-maile, które automatycznie tworzą kontakt.",
+      "howTo": "Dobra wiadomość: Odoo ma wbudowane narzędzie do scalania. Oto jak:",
+      "step1": "Otwórz aplikację Kontakty w widoku listy.",
+      "step2": "Zaznacz kontakty, które chcesz scalić (co najmniej dwa).",
+      "step3": "Otwórz menu Akcje i wybierz Scal.",
+      "step4": "Wybierz kontakt docelowy (ten, który zostanie zachowany), sprawdź listę, a następnie kliknij Scal kontakty.",
+      "imgAltMerge": "Kreator scalania kontaktów w Odoo, z wyborem kontaktu docelowego",
+      "versionNote": "Od wersji 14 do 18 narzędzie znajduje się w tym samym miejscu: zaznacz rekordy w widoku listy, a potem menu Akcje. Ekran zmodernizowano w v17-19, ale zasada jest identyczna. Wszystkie powiązane dokumenty (zamówienia, faktury, e-maile, szanse) są automatycznie przepisywane na zachowany kontakt."
+    },
+    "s3": {
+      "title": "Porządkowanie na dużą skalę: tagi i kategorie",
+      "p1": "Hierarchia firma/osoba opisuje strukturę; tagi opisują całą resztę. Jeden kontakt może mieć kilka tagów — „VIP”, „Reseller”, „Newsletter” — bez naruszania hierarchii.",
+      "p2": "Listę tagów zarządzasz w Kontakty ▸ Konfiguracja ▸ Tagi kontaktów, z kolorem, by rozpoznać je na pierwszy rzut oka.",
+      "imgAltTags": "Lista tagów kontaktów w Odoo, z nazwą, kategorią i kolorem",
+      "p3": "Sedno tkwi w filtrowaniu i segmentacji: w widoku listy użyj Filtrów i Grupuj według, aby wyodrębnić tag, a potem zapisz filtr jako ulubiony. W dwa kliknięcia masz listę wszystkich swoich resellerów albo wszystkich klientów z jednego regionu — gotową do ponownego użycia w kampanii e-mailowej lub eksporcie."
+    },
+    "s4": {
+      "title": "Śledzenie kontaktu: chatter, czynności i historia",
+      "p1": "Każdy rekord ma chatter: wątek na dole (lub po prawej) rekordu. Tam zapisujesz notatkę wewnętrzną, planujesz czynność (oddzwonić, ponowić kontakt) i śledzisz pełną historię — w tym wymienione e-maile. To żywa „teczka” kontaktu: wszystko, co się wydarzyło, w jednym miejscu.",
+      "imgAltChatter": "Chatter na rekordzie kontaktu Odoo: wiadomości, notatki i czynności",
+      "mentionText": "Haczyk: te e-maile żyją w Gmailu i nigdy nie trafiają na rekord kontaktu, chyba że zapiszesz je ręcznie. Możesz też",
+      "mentionLink": "zapisać e-mail na rekordzie kontaktu Odoo jednym kliknięciem, bez opuszczania Gmaila, dzięki naszemu rozszerzeniu."
+    },
+    "s5": {
+      "title": "Kontakt: kręgosłup Odoo",
+      "p1": "Kontakt nigdy nie jest odosobniony: to oś, która łączy CRM, Sprzedaż i Fakturowanie. Szansa, oferta, faktura, zgłoszenie — wszystkie odwołują się do tego samego rekordu kontaktu.",
+      "p2": "Stąd prosta zasada: kompletny, czysty kontakt = czysty CRM. Każda minuta poświęcona na uporządkowanie kontaktów zwraca się przy każdej ofercie i każdym ponownym kontakcie, bo cały łańcuch opiera się na tych danych."
+    },
+    "s6": {
+      "title": "Dobre praktyki higieny danych",
+      "p1": "Kilka nawyków pozwala utrzymać bazę w zdrowiu na dłuższą metę:",
+      "tip1": "Uzupełniaj e-mail i kraj: to kluczowe pola dla deduplikacji i segmentacji.",
+      "tip2": "Przypisuj każdą osobę do jej firmy (relacja nadrzędny/podrzędny).",
+      "tip3": "Używaj właściwego typu adresu (rozliczeniowy, dostawy) zamiast upychać wszystko na jednym rekordzie.",
+      "tip4": "Przy imporcie starannie mapuj kolumnę e-mail i używaj identyfikatora zewnętrznego (External ID), aby aktualizować istniejące rekordy zamiast tworzyć nowe.",
+      "tip5": "Regularnie uruchamiaj narzędzie do scalania, aby usuwać duplikaty, które się prześlizgnęły.",
+      "imgAltImport": "Ekran importu kontaktów w Odoo, z szablonem pliku do pobrania"
+    },
+    "faq": {
+      "title": "Najczęściej zadawane pytania",
+      "q1": "Firma czy osoba fizyczna: co wybrać w Odoo?",
+      "a1": "Odoo 19 nie ma już jawnego przełącznika Osoba fizyczna/Firma na rekordzie (w wersjach 14–18 istniał jako przycisk opcji). W praktyce modeluj organizację jako kontakt najwyższego poziomu, a osobę powiązując ją z jej firmą: najpierw utwórz firmę, a potem dodaj osoby jako kontakty podrzędne z poziomu zakładki Kontakty firmy, aby każda osoba była powiązana ze swoją organizacją.",
+      "q2": "Jak scalić zdublowane kontakty w Odoo?",
+      "a2": "Otwórz aplikację Kontakty w widoku listy, zaznacz kontakty do scalenia, a następnie otwórz menu Akcje i wybierz Scal. Wybierz kontakt docelowy do zachowania, sprawdź listę i kliknij Scal kontakty. Wszystkie powiązane dokumenty są przepisywane na zachowany kontakt. Kroki są takie same od v14 do v19.",
+      "q3": "Jak zapisać e-mail na rekordzie kontaktu?",
+      "a3": "Odoo przechowuje e-maile w chatterze rekordu, o ile zostaną tam zapisane. Wewnątrz Odoo chatter pozwala wysłać lub zalogować wiadomość. Aby przechwycić e-maile, które żyją w Gmailu, zainstaluj Odoo Integration for Gmail: rozszerzenie pokazuje rekord Odoo obok skrzynki odbiorczej i zapisuje e-mail na kontakcie jednym kliknięciem, bez opuszczania Gmaila.",
+      "q4": "Jaka jest różnica między kontaktem a sygnałem/szansą?",
+      "a4": "Kontakt (res.partner) to stabilny rekord osoby lub firmy, z którą współpracujesz. Sygnał lub szansa (w CRM) to potencjalna transakcja przesuwająca się przez Twój lejek sprzedaży, zazwyczaj powiązana z kontaktem. Jeden kontakt może wygenerować kilka szans: kontakt to trwałe dane, a szansa to przejściowy proces sprzedaży.",
+      "q5": "Jak importować kontakty bez tworzenia duplikatów?",
+      "a5": "Pobierz szablon importu Odoo, poprawnie zmapuj kolumnę e-mail i użyj kolumny identyfikator zewnętrzny (External ID) przy ponownym imporcie, aby aktualizować istniejące rekordy zamiast je dublować. Odoo nie ma jednego pola wyboru anty-duplikat: po dużym imporcie uruchom narzędzie Scal z listy kontaktów, aby oczyścić to, co się prześlizgnęło."
+    },
+    "cta": {
+      "title": "Zarządzasz kontaktami Odoo, ale żyjesz w Gmailu?",
+      "subtitle": "Zobacz rekord kontaktu i zapisuj e-maile do Odoo jednym kliknięciem — bez przełączania kart.",
+      "button": "Zainstaluj rozszerzenie",
+      "url": "https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&utm_medium=content&utm_campaign=odoo_contacts_pl&utm_content=footer_cta"
+    },
+    "mention": {
+      "url": "https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&utm_medium=content&utm_campaign=odoo_contacts_pl&utm_content=inline_mention"
     }
   }
 }

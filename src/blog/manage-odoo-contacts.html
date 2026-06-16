@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html data-attr-t="lang" lang-t="meta.lang">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YPS5MV3D6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0YPS5MV3D6');
+    </script>
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="nVghWS1eMCEwMEz5xTbG+Q" async></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" data-attr-t content-t="meta.blogManageContacts.description">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" data-attr-t="href" href-t="meta.blogManageContacts.canonical">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="es" href="https://integrationnode.com/gmail-odoo/es/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="fr" href="https://integrationnode.com/gmail-odoo/fr/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="de" href="https://integrationnode.com/gmail-odoo/de/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="it" href="https://integrationnode.com/gmail-odoo/it/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="pt" href="https://integrationnode.com/gmail-odoo/pt/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" data-attr-t="content" content-t="meta.blogManageContacts.canonical">
+    <meta property="og:title" data-attr-t content-t="meta.blogManageContacts.ogTitle">
+    <meta property="og:description" data-attr-t content-t="meta.blogManageContacts.ogDescription">
+    <meta property="og:image" content="https://integrationnode.com/gmail-odoo/assets/og-image.png">
+    <meta property="og:site_name" content="Odoo Integration for Gmail">
+    <meta property="article:published_time" content="2026-06-16">
+    <meta property="article:author" content="OdooIntegrations Team">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" data-attr-t content-t="meta.blogManageContacts.twitterTitle">
+    <meta name="twitter:description" data-attr-t content-t="meta.blogManageContacts.twitterDescription">
+    <meta name="twitter:image" content="https://integrationnode.com/gmail-odoo/assets/og-image.png">
+
+    <title data-t="meta.blogManageContacts.title"></title>
+    <link rel="icon" type="image/png" href="https://integrationnode.com/gmail-odoo/favicon.png">
+    <link rel="stylesheet" href="https://integrationnode.com/gmail-odoo/fonts/outlined.css">
+    <link rel="stylesheet" href="https://integrationnode.com/gmail-odoo/style.css">
+
+    <!-- Schema.org Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Managing Contacts in Odoo: The Practical Guide (v14–19)",
+        "description": "Create, organize and clean up your contacts in Odoo: companies vs individuals, merging duplicates, tags and best practices. Works in Odoo 14 through 19.",
+        "image": "https://integrationnode.com/gmail-odoo/assets/og-image.png",
+        "author": {
+            "@type": "Organization",
+            "name": "OdooIntegrations Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "OdooIntegrations",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://integrationnode.com/gmail-odoo/favicon.png"
+            }
+        },
+        "datePublished": "2026-06-16T00:00:00+00:00",
+        "dateModified": "2026-06-16T00:00:00+00:00",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html"
+        }
+    }
+    </script>
+
+    <!-- Schema.org FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html#faq",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Company or individual: which should I choose in Odoo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Odoo 19 no longer has an explicit Individual/Company switch on the form (it existed as a radio button in versions 14–18). In practice, model an organization as a top-level contact and a person by linking them to their company: create the company first, then add people as child contacts from the company's Contacts tab, so each person is attached to their organization."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I merge duplicate contacts in Odoo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Open the Contacts app in list view, tick the contacts you want to merge, then open the Actions menu and choose Merge. Pick the destination contact that will be kept, review the list, and click Merge Contacts. All linked documents (orders, invoices, emails, opportunities) are reassigned to the destination contact. The route is the same in Odoo 14 through 19."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I save an email to a contact's record?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Odoo stores emails in the contact's chatter, but only if they are logged there. Inside Odoo you can use the chatter to send or log a message. To capture emails that live in Gmail, install Odoo Integration for Gmail: it shows the Odoo contact next to your inbox and logs the email to the contact's record in one click, without leaving Gmail."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the difference between a contact and a lead/opportunity?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A contact (res.partner) is a stable record for a person or company you do business with. A lead or opportunity (in CRM) is a potential deal that moves through your sales pipeline and is usually linked to a contact. One contact can have several opportunities over time; the contact is the durable record, the opportunity is the transient sales process."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I import contacts without creating duplicates?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Download Odoo's import template, map the email field correctly, and use the External ID column when re-importing so existing records are updated instead of duplicated. Odoo has no single deduplication checkbox, so after a large import run the Merge tool from the Contacts list to clean up any duplicates that slipped through."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="pricing-header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../" class="logo" data-t="nav.logo"></a>
+                <div class="nav-links">
+                    <a href="../#features" data-t="nav.features"></a>
+                    <a href="../pricing.html" data-t="nav.pricing"></a>
+                    <a href="../user-guide.html" data-t="nav.userGuide"></a>
+                    <a href="../blog.html" class="active" data-t="nav.blog"></a>
+                    <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&amp;utm_medium=content&amp;utm_campaign=manage-odoo-contacts&amp;utm_content=navbar" target="_blank" class="btn btn-sm btn-primary" data-t="nav.getExtension"></a>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">language</span>
+                            <span class="lang-current" data-t="nav.currentLang"></span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="lang-menu" role="menu"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Article Hero -->
+    <section class="article-hero">
+        <div class="container">
+            <a href="../blog.html" class="article-back">
+                <span class="material-symbols-outlined">arrow_back</span>
+                <span data-t="blogArticle.backToBlog"></span>
+            </a>
+            <h1 data-t="blogManageContacts.title"></h1>
+            <div class="article-meta">
+                <span class="article-date" data-t="blogManageContacts.date"></span>
+                <span class="article-author">OdooIntegrations Team</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="article-section">
+        <div class="container">
+            <div class="article-content">
+                <!-- Intro -->
+                <p class="article-intro" data-t="blogManageContacts.intro"></p>
+                <p data-t="blogManageContacts.introP2"></p>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/18-contacts-liste.png" alt="" data-attr-t="alt" alt-t="blogManageContacts.introImgAlt" class="lightbox-img">
+                    <figcaption data-t="blogManageContacts.introImgAlt"></figcaption>
+                </figure>
+
+                <!-- Section 1: Company vs individual -->
+                <h2>
+                    <span class="section-number">1</span>
+                    <span data-t="blogManageContacts.s1.title"></span>
+                </h2>
+                <p data-t="blogManageContacts.s1.p1"></p>
+                <p data-t="blogManageContacts.s1.p2"></p>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/19-entreprise-particulier.png" alt="" data-attr-t="alt" alt-t="blogManageContacts.s1.imgAltCompany" class="lightbox-img">
+                    <figcaption data-t="blogManageContacts.s1.imgAltCompany"></figcaption>
+                </figure>
+                <p data-t="blogManageContacts.s1.p3"></p>
+                <ul>
+                    <li data-t="blogManageContacts.s1.addrContact"></li>
+                    <li data-t="blogManageContacts.s1.addrInvoice"></li>
+                    <li data-t="blogManageContacts.s1.addrDelivery"></li>
+                    <li data-t="blogManageContacts.s1.addrOther"></li>
+                </ul>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/20-contacts-enfants-adresses.png" alt="" data-attr-t="alt" alt-t="blogManageContacts.s1.imgAltAddr" class="lightbox-img">
+                    <figcaption data-t="blogManageContacts.s1.imgAltAddr"></figcaption>
+                </figure>
+
+                <!-- Section 2: Duplicates -->
+                <h2>
+                    <span class="section-number">2</span>
+                    <span data-t="blogManageContacts.s2.title"></span>
+                </h2>
+                <p data-t="blogManageContacts.s2.p1"></p>
+                <p data-t="blogManageContacts.s2.origins"></p>
+                <ul>
+                    <li data-t="blogManageContacts.s2.origin1"></li>
+                    <li data-t="blogManageContacts.s2.origin2"></li>
+                    <li data-t="blogManageContacts.s2.origin3"></li>
+                    <li data-t="blogManageContacts.s2.origin4"></li>
+                </ul>
+                <p data-t="blogManageContacts.s2.howTo"></p>
+                <ol>
+                    <li data-t="blogManageContacts.s2.step1"></li>
+                    <li data-t="blogManageContacts.s2.step2"></li>
+                    <li data-t="blogManageContacts.s2.step3"></li>
+                    <li data-t="blogManageContacts.s2.step4"></li>
+                </ol>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/21-fusion-doublons.png" alt="" data-attr-t="alt" alt-t="blogManageContacts.s2.imgAltMerge" class="lightbox-img">
+                    <figcaption data-t="blogManageContacts.s2.imgAltMerge"></figcaption>
+                </figure>
+                <p class="tip-box" data-t="blogManageContacts.s2.versionNote"></p>
+
+                <!-- Section 3: Tags -->
+                <h2>
+                    <span class="section-number">3</span>
+                    <span data-t="blogManageContacts.s3.title"></span>
+                </h2>
+                <p data-t="blogManageContacts.s3.p1"></p>
+                <p data-t="blogManageContacts.s3.p2"></p>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/22-etiquettes.png" alt="" data-attr-t="alt" alt-t="blogManageContacts.s3.imgAltTags" class="lightbox-img">
+                    <figcaption data-t="blogManageContacts.s3.imgAltTags"></figcaption>
+                </figure>
+                <p data-t="blogManageContacts.s3.p3"></p>
+
+                <!-- Section 4: Chatter / follow-up -->
+                <h2>
+                    <span class="section-number">4</span>
+                    <span data-t="blogManageContacts.s4.title"></span>
+                </h2>
+                <p data-t="blogManageContacts.s4.p1"></p>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/23-chatter.png" alt="" data-attr-t="alt" alt-t="blogManageContacts.s4.imgAltChatter" class="lightbox-img">
+                    <figcaption data-t="blogManageContacts.s4.imgAltChatter"></figcaption>
+                </figure>
+                <p>
+                    <span data-t="blogManageContacts.s4.mentionText"></span>
+                    <a data-attr-t="href" href-t="blogManageContacts.mention.url" target="_blank" data-t="blogManageContacts.s4.mentionLink"></a>
+                </p>
+
+                <!-- Section 5: Backbone of Odoo -->
+                <h2>
+                    <span class="section-number">5</span>
+                    <span data-t="blogManageContacts.s5.title"></span>
+                </h2>
+                <p data-t="blogManageContacts.s5.p1"></p>
+                <p data-t="blogManageContacts.s5.p2"></p>
+
+                <!-- Section 6: Hygiene best practices -->
+                <h2>
+                    <span class="section-number">6</span>
+                    <span data-t="blogManageContacts.s6.title"></span>
+                </h2>
+                <p data-t="blogManageContacts.s6.p1"></p>
+                <ul>
+                    <li data-t="blogManageContacts.s6.tip1"></li>
+                    <li data-t="blogManageContacts.s6.tip2"></li>
+                    <li data-t="blogManageContacts.s6.tip3"></li>
+                    <li data-t="blogManageContacts.s6.tip4"></li>
+                    <li data-t="blogManageContacts.s6.tip5"></li>
+                </ul>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/24-import.png" alt="" data-attr-t="alt" alt-t="blogManageContacts.s6.imgAltImport" class="lightbox-img">
+                    <figcaption data-t="blogManageContacts.s6.imgAltImport"></figcaption>
+                </figure>
+
+                <!-- FAQ -->
+                <h2>
+                    <span class="section-number">7</span>
+                    <span data-t="blogManageContacts.faq.title"></span>
+                </h2>
+                <h3 data-t="blogManageContacts.faq.q1"></h3>
+                <p data-t="blogManageContacts.faq.a1"></p>
+                <h3 data-t="blogManageContacts.faq.q2"></h3>
+                <p data-t="blogManageContacts.faq.a2"></p>
+                <h3 data-t="blogManageContacts.faq.q3"></h3>
+                <p data-t="blogManageContacts.faq.a3"></p>
+                <h3 data-t="blogManageContacts.faq.q4"></h3>
+                <p data-t="blogManageContacts.faq.a4"></p>
+                <h3 data-t="blogManageContacts.faq.q5"></h3>
+                <p data-t="blogManageContacts.faq.a5"></p>
+
+                <!-- CTA -->
+                <div class="article-cta">
+                    <h3 data-t="blogManageContacts.cta.title"></h3>
+                    <p data-t="blogManageContacts.cta.subtitle"></p>
+                    <a data-attr-t="href" href-t="blogManageContacts.cta.url" target="_blank" class="btn btn-primary btn-lg" data-t="blogManageContacts.cta.button"></a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-t="footer.title"></h4>
+                    <p><span data-t="footer.builtBy"></span> <strong>OdooIntegrations Team</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-t="footer.resources"></h4>
+                    <ul>
+                        <li><a href="../" data-t="footer.home"></a></li>
+                        <li><a href="../pricing.html" data-t="footer.pricing"></a></li>
+                        <li><a href="../user-guide.html" data-t="footer.userGuide"></a></li>
+                        <li><a href="../changelog.html" data-t="footer.changelog"></a></li>
+                        <li><a href="../comparison.html" data-t="footer.comparison"></a></li>
+                        <li><a href="../blog.html" data-t="footer.blog"></a></li>
+                        <li><a href="../privacy.html" data-t="footer.privacy"></a></li>
+                        <li><a href="mailto:odoointegrations.team@gmail.com" data-t="footer.support"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-t="footer.legal"></h4>
+                    <p class="small-text" data-t="footer.notAffiliated"></p>
+                    <p class="small-text" data-t="footer.odooTrademark"></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-t="footer.copyright"></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Figures & Lightbox -->
+    <style>
+    .article-figure {
+        margin: 20px 0; padding: 0;
+    }
+    .article-figure img {
+        max-width: 100%; border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        cursor: pointer;
+    }
+    .article-figure figcaption {
+        margin-top: 8px; font-size: 0.85em; color: #666;
+        text-align: center; font-style: italic;
+    }
+    .lightbox-overlay {
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0,0,0,0.85); z-index: 9999;
+        display: flex; align-items: center; justify-content: center;
+        cursor: pointer; animation: lbFadeIn 0.2s;
+    }
+    .lightbox-overlay img {
+        max-width: 92%; max-height: 92vh;
+        border-radius: 8px; box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+        animation: lbZoomIn 0.2s;
+    }
+    @keyframes lbFadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes lbZoomIn { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    </style>
+    <script>
+    document.querySelectorAll('.lightbox-img').forEach(function(img) {
+        img.addEventListener('click', function() {
+            var overlay = document.createElement('div');
+            overlay.className = 'lightbox-overlay';
+            var fullImg = document.createElement('img');
+            fullImg.src = img.src;
+            fullImg.alt = img.alt;
+            overlay.appendChild(fullImg);
+            overlay.addEventListener('click', function() { overlay.remove(); });
+            document.addEventListener('keydown', function handler(e) {
+                if (e.key === 'Escape') { overlay.remove(); document.removeEventListener('keydown', handler); }
+            });
+            document.body.appendChild(overlay);
+        });
+    });
+    </script>
+
+    <!-- Language Switcher Script -->
+    <script>
+    (function() {
+        var LANGUAGES = [
+            { code: 'en', name: 'English', path: '' },
+            { code: 'es', name: 'Español', path: 'es/' },
+            { code: 'fr', name: 'Français', path: 'fr/' },
+            { code: 'de', name: 'Deutsch', path: 'de/' },
+            { code: 'it', name: 'Italiano', path: 'it/' },
+            { code: 'pt', name: 'Português', path: 'pt/' },
+            { code: 'nl', name: 'Nederlands', path: 'nl/' },
+            { code: 'pl', name: 'Polski', path: 'pl/' }
+        ];
+
+        var dropdown = document.getElementById('lang-dropdown');
+        if (!dropdown) return;
+
+        var toggle = dropdown.querySelector('.lang-toggle');
+        var menu = dropdown.querySelector('.lang-menu');
+        var path = window.location.pathname;
+
+        // Get page path relative to language root (e.g., "blog/article.html")
+        var pathParts = path.split('/');
+        var page = '';
+        var isSubLang = false;
+
+        for (var i = 0; i < LANGUAGES.length; i++) {
+            var langPath = LANGUAGES[i].path;
+            if (langPath && path.includes('/' + langPath)) {
+                isSubLang = true;
+                // Get everything after the language folder
+                var langIndex = path.indexOf('/' + langPath);
+                page = path.substring(langIndex + langPath.length + 1);
+                break;
+            }
+        }
+
+        if (!isSubLang) {
+            // English (root) - get path after docs folder
+            var docsIndex = path.indexOf('odoo-integration-gmail-docs/');
+            if (docsIndex !== -1) {
+                page = path.substring(docsIndex + 'odoo-integration-gmail-docs/'.length);
+            } else {
+                page = pathParts.slice(-2).join('/');
+            }
+        }
+
+        if (!page || page === '') page = 'index.html';
+
+        var currentLang = LANGUAGES[0];
+        for (var i = 1; i < LANGUAGES.length; i++) {
+            if (path.includes('/' + LANGUAGES[i].path)) {
+                currentLang = LANGUAGES[i];
+                break;
+            }
+        }
+
+        LANGUAGES.forEach(function(lang) {
+            if (lang.code === currentLang.code) return;
+            var link = document.createElement('a');
+            // For nested pages, we need to go up two levels from /blog/article.html
+            if (currentLang.path) {
+                // From /es/blog/article.html to other langs
+                link.href = '../../' + lang.path + page;
+            } else {
+                // From /blog/article.html to other langs
+                link.href = '../' + lang.path + page;
+            }
+            link.textContent = lang.name;
+            link.setAttribute('role', 'menuitem');
+            link.setAttribute('data-lang', lang.code);
+            menu.appendChild(link);
+        });
+
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            dropdown.classList.toggle('open');
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                toggle.setAttribute('aria-expanded', 'false');
+                dropdown.classList.remove('open');
+            }
+        });
+    })();
+    </script>
+</body>
+</html>

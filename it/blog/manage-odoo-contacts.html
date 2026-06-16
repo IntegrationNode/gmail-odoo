@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YPS5MV3D6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0YPS5MV3D6');
+    </script>
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="nVghWS1eMCEwMEz5xTbG+Q" async></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crea, organizza e ripulisci i tuoi contatti in Odoo: aziende vs individui, unione dei duplicati, etichette e buone pratiche. Funziona da Odoo 14 a 19.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://integrationnode.com/gmail-odoo/it/blog/manage-odoo-contacts.html">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="es" href="https://integrationnode.com/gmail-odoo/es/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="fr" href="https://integrationnode.com/gmail-odoo/fr/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="de" href="https://integrationnode.com/gmail-odoo/de/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="it" href="https://integrationnode.com/gmail-odoo/it/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="pt" href="https://integrationnode.com/gmail-odoo/pt/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://integrationnode.com/gmail-odoo/it/blog/manage-odoo-contacts.html">
+    <meta property="og:title" content="Gestire i contatti in Odoo: la guida pratica">
+    <meta property="og:description" content="Aziende vs individui, unione dei duplicati, etichette e buone pratiche per contatti Odoo puliti e utili.">
+    <meta property="og:image" content="https://integrationnode.com/gmail-odoo/assets/og-image.png">
+    <meta property="og:site_name" content="Odoo Integration for Gmail">
+    <meta property="article:published_time" content="2026-06-16">
+    <meta property="article:author" content="OdooIntegrations Team">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gestire i contatti in Odoo: la guida pratica">
+    <meta name="twitter:description" content="La guida completa per strutturare, ripulire e sfruttare i tuoi contatti Odoo (v14-19).">
+    <meta name="twitter:image" content="https://integrationnode.com/gmail-odoo/assets/og-image.png">
+
+    <title>Gestire i contatti in Odoo: la guida pratica</title>
+    <link rel="icon" type="image/png" href="https://integrationnode.com/gmail-odoo/favicon.png">
+    <link rel="stylesheet" href="https://integrationnode.com/gmail-odoo/fonts/outlined.css">
+    <link rel="stylesheet" href="https://integrationnode.com/gmail-odoo/style.css">
+
+    <!-- Schema.org Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Gestire i contatti in Odoo: la guida pratica",
+        "description": "Crea, organizza e ripulisci i tuoi contatti in Odoo: aziende vs individui, unione dei duplicati, etichette e buone pratiche. Funziona da Odoo 14 a 19.",
+        "image": "https://integrationnode.com/gmail-odoo/assets/og-image.png",
+        "author": {
+            "@type": "Organization",
+            "name": "OdooIntegrations Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "OdooIntegrations",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://integrationnode.com/gmail-odoo/favicon.png"
+            }
+        },
+        "datePublished": "2026-06-16T00:00:00+00:00",
+        "dateModified": "2026-06-16T00:00:00+00:00",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://integrationnode.com/gmail-odoo/it/blog/manage-odoo-contacts.html"
+        }
+    }
+    </script>
+
+    <!-- Schema.org FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://integrationnode.com/gmail-odoo/it/blog/manage-odoo-contacts.html#faq",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Azienda o individuo: quale scegliere in Odoo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Odoo 19 non ha più un selettore esplicito Individuo/Azienda sulla scheda (esisteva come pulsante di opzione nelle versioni 14–18). In pratica, modella un'organizzazione come un contatto di primo livello e una persona collegandola alla sua azienda: crea prima l'azienda, poi aggiungi le persone come contatti figli dalla scheda Contatti dell'azienda, così ogni persona è collegata alla sua organizzazione."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Come si uniscono i contatti duplicati in Odoo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Apri l'app Contatti in vista elenco, seleziona i contatti da unire, poi apri il menu Azioni e scegli Unisci. Scegli il contatto di destinazione da conservare, controlla l'elenco e clicca su Unisci contatti. Tutti i documenti collegati vengono riassegnati al contatto conservato. I passaggi sono gli stessi dalla v14 alla v19."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Come si salva un'email sulla scheda di un contatto?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Odoo conserva le email nel chatter della scheda, a patto che vi siano registrate. All'interno di Odoo, il chatter ti permette di inviare o registrare un messaggio. Per catturare le email che vivono in Gmail, installa Odoo Integration for Gmail: l'estensione mostra la scheda Odoo accanto alla tua casella di posta e registra l'email sul contatto con un clic, senza uscire da Gmail."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Qual è la differenza tra un contatto e un lead/opportunità?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Un contatto (res.partner) è una scheda stabile per una persona o un'azienda con cui lavori. Un lead o un'opportunità (nel CRM) è un affare potenziale che avanza nella tua pipeline, di solito collegato a un contatto. Un contatto può generare più opportunità: il contatto è il dato duraturo, l'opportunità il processo commerciale temporaneo."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Come si importano i contatti senza creare duplicati?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Scarica il modello di importazione di Odoo, mappa correttamente la colonna email e usa la colonna ID esterno alla reimportazione per aggiornare le schede esistenti invece di duplicarle. Odoo non ha un'unica casella anti-duplicato: dopo una grande importazione, esegui lo strumento Unisci dall'elenco dei contatti per ripulire ciò che è sfuggito."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="pricing-header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../" class="logo">Integrazione Odoo per Gmail</a>
+                <div class="nav-links">
+                    <a href="../#features">Funzionalità</a>
+                    <a href="../pricing.html">Prezzi</a>
+                    <a href="../user-guide.html">Guida Utente</a>
+                    <a href="../blog.html" class="active">Blog</a>
+                    <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&amp;utm_medium=content&amp;utm_campaign=manage-odoo-contacts&amp;utm_content=navbar" target="_blank" class="btn btn-sm btn-primary">Ottieni Estensione</a>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">language</span>
+                            <span class="lang-current">IT</span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="lang-menu" role="menu"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Article Hero -->
+    <section class="article-hero">
+        <div class="container">
+            <a href="../blog.html" class="article-back">
+                <span class="material-symbols-outlined">arrow_back</span>
+                <span>Torna al Blog</span>
+            </a>
+            <h1>Gestire i contatti in Odoo: la guida pratica</h1>
+            <div class="article-meta">
+                <span class="article-date">16 giugno 2026</span>
+                <span class="article-author">OdooIntegrations Team</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="article-section">
+        <div class="container">
+            <div class="article-content">
+                <!-- Intro -->
+                <p class="article-intro">Schede duplicate, persone senza alcuna azienda associata, indirizzi di fatturazione introvabili: la gestione dei contatti in Odoo (“odoo contacts”) finisce spesso in secondo piano… finché non rallenta le tue vendite e falsa il tuo CRM. Un archivio di contatti pulito, al contrario, fa risparmiare tempo a tutta l'azienda.</p>
+                <p>Questa guida non spiega “cos'è un contatto”: mostra, passo dopo passo, come strutturare, ripulire e sfruttare i tuoi contatti in Odoo. Gli screenshot sono presi su Odoo 19, ma l'app Contatti è stabile: tutto funziona dalla versione 14 alla 19, con qualche nota dove l'interfaccia cambia.</p>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/18-contacts-liste.png" alt="L'elenco dei contatti nell'app Contatti di Odoo" class="lightbox-img">
+                    <figcaption>L'elenco dei contatti nell'app Contatti di Odoo</figcaption>
+                </figure>
+
+                <!-- Section 1: Company vs individual -->
+                <h2>
+                    <span class="section-number">1</span>
+                    <span>Azienda vs individuo: strutturare i contatti</span>
+                </h2>
+                <p>Innanzitutto, un punto specifico di Odoo 19: la scheda contatto non mostra più un selettore esplicito «Individuo / Azienda». È un cambiamento rispetto alle versioni 14–18, dove impostavi il tipo con un pulsante di opzione in cima alla scheda. In Odoo 19, un contatto creato dall'app Contatti è trattato come un'azienda per impostazione predefinita: vedrai una piccola icona dell'edificio accanto al nome.</p>
+                <p>È quindi la gerarchia — non un interruttore — a separare le aziende dalle persone. Il modo affidabile per aggiungere una persona parte dalla sua organizzazione: apri l'azienda, vai alla scheda Contatti e usa Aggiungi contatti collegati. Ogni persona è così collegata alla sua azienda e puoi ritrovarle tutte dalla scheda dell'azienda. Puoi anche collegare una persona esistente al suo datore di lavoro tramite il campo Azienda della sua scheda.</p>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/19-entreprise-particulier.png" alt="La scheda di un'azienda in Odoo, con i suoi contatti collegati e le etichette" class="lightbox-img">
+                    <figcaption>La scheda di un'azienda in Odoo, con i suoi contatti collegati e le etichette</figcaption>
+                </figure>
+                <p>Una stessa azienda può avere più indirizzi. Quando aggiungi un contatto figlio, Odoo propone quattro tipi di indirizzo: scegli quello giusto, perché è quello usato automaticamente su preventivi, fatture e ordini di consegna:</p>
+                <ul>
+                    <li>Indirizzo contatto: una persona dell'organizzazione (commerciale, supporto, responsabile).</li>
+                    <li>Indirizzo di fatturazione: dove vengono inviate le fatture.</li>
+                    <li>Indirizzo di spedizione: dove vengono spedite le merci.</li>
+                    <li>Altro: qualsiasi indirizzo aggiuntivo (un magazzino secondario, ecc.).</li>
+                </ul>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/20-contacts-enfants-adresses.png" alt="Finestra di dialogo di Odoo per creare un contatto collegato, con i tipi Indirizzo contatto, fatturazione, spedizione e Altro" class="lightbox-img">
+                    <figcaption>Finestra di dialogo di Odoo per creare un contatto collegato, con i tipi Indirizzo contatto, fatturazione, spedizione e Altro</figcaption>
+                </figure>
+
+                <!-- Section 2: Duplicates -->
+                <h2>
+                    <span class="section-number">2</span>
+                    <span>Gestire i duplicati: come unirli</span>
+                </h2>
+                <p>I duplicati sono il problema più doloroso — e il meno spiegato. Due schede per lo stesso cliente, e la tua cronologia si divide in due: metà delle email qui, metà degli ordini là.</p>
+                <p>Da dove arrivano?</p>
+                <ul>
+                    <li>Lead e opportunità convertiti più di una volta.</li>
+                    <li>Moduli del sito web e carrelli della spesa.</li>
+                    <li>Importazioni ripetute di fogli di calcolo.</li>
+                    <li>Email in arrivo che creano un contatto automaticamente.</li>
+                </ul>
+                <p>La buona notizia: Odoo include uno strumento di unione. Ecco come fare:</p>
+                <ol>
+                    <li>Apri l'app Contatti in vista elenco.</li>
+                    <li>Seleziona i contatti da unire (almeno due).</li>
+                    <li>Apri il menu Azioni e scegli Unisci.</li>
+                    <li>Scegli il contatto di destinazione (quello che verrà conservato), controlla l'elenco, poi clicca su Unisci contatti.</li>
+                </ol>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/21-fusion-doublons.png" alt="Procedura guidata di unione dei contatti di Odoo, con la selezione del contatto di destinazione" class="lightbox-img">
+                    <figcaption>Procedura guidata di unione dei contatti di Odoo, con la selezione del contatto di destinazione</figcaption>
+                </figure>
+                <p class="tip-box">Dalla versione 14 alla 18 lo strumento si trova nello stesso punto: seleziona le schede in vista elenco, poi il menu Azioni. La schermata è stata modernizzata nella v17-19, ma il principio è identico. Tutti i documenti collegati (ordini, fatture, email, opportunità) vengono automaticamente riassegnati al contatto conservato.</p>
+
+                <!-- Section 3: Tags -->
+                <h2>
+                    <span class="section-number">3</span>
+                    <span>Organizzare su larga scala: etichette e categorie</span>
+                </h2>
+                <p>La gerarchia azienda/persona descrive la struttura; le etichette descrivono tutto il resto. Un singolo contatto può avere più etichette — “VIP”, “Rivenditore”, “Newsletter” — senza toccare la gerarchia.</p>
+                <p>Gestisci l'elenco delle etichette in Contatti ▸ Configurazione ▸ Etichette contatto, con un colore per individuarle a colpo d'occhio.</p>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/22-etiquettes.png" alt="L'elenco delle etichette contatto in Odoo, con nome, categoria e colore" class="lightbox-img">
+                    <figcaption>L'elenco delle etichette contatto in Odoo, con nome, categoria e colore</figcaption>
+                </figure>
+                <p>Il punto è filtrare e segmentare: in vista elenco, usa Filtri e Raggruppa per per isolare un'etichetta, poi salva il filtro come preferito. In due clic ottieni l'elenco di tutti i tuoi rivenditori, o di tutti i clienti di una regione — pronto da riutilizzare per una campagna email o un'esportazione.</p>
+
+                <!-- Section 4: Chatter / follow-up -->
+                <h2>
+                    <span class="section-number">4</span>
+                    <span>Seguire un contatto: chatter, attività e cronologia</span>
+                </h2>
+                <p>Ogni scheda ha un chatter: il flusso in basso (o a destra) della scheda. Lì registri una nota interna, pianifichi un'attività (richiamare, dare seguito) e tieni traccia dell'intera cronologia — incluse le email scambiate. È il “fascicolo” vivente del contatto: tutto ciò che è successo, in un unico posto.</p>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/23-chatter.png" alt="Il chatter su una scheda contatto di Odoo: messaggi, note e attività" class="lightbox-img">
+                    <figcaption>Il chatter su una scheda contatto di Odoo: messaggi, note e attività</figcaption>
+                </figure>
+                <p>
+                    <span>Il problema: quelle email vivono in Gmail e non arrivano mai sulla scheda del contatto, a meno che tu non le registri a mano. Puoi anche</span>
+                    <a target="_blank" href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&utm_medium=content&utm_campaign=odoo_contacts_it&utm_content=inline_mention">salvare l'email sulla scheda del contatto Odoo con un clic, senza uscire da Gmail, con la nostra estensione.</a>
+                </p>
+
+                <!-- Section 5: Backbone of Odoo -->
+                <h2>
+                    <span class="section-number">5</span>
+                    <span>Il contatto: la spina dorsale di Odoo</span>
+                </h2>
+                <p>Un contatto non è mai isolato: è il perno che collega CRM, Vendite e Fatturazione. Un'opportunità, un preventivo, una fattura, un ticket — tutto rimanda alla stessa scheda contatto.</p>
+                <p>Da qui la regola semplice: un contatto completo e pulito = un CRM pulito. Ogni minuto speso a strutturare i tuoi contatti si ripaga su ogni preventivo e ogni follow-up, perché l'intera catena si basa su questo dato.</p>
+
+                <!-- Section 6: Hygiene best practices -->
+                <h2>
+                    <span class="section-number">6</span>
+                    <span>Buone pratiche di igiene</span>
+                </h2>
+                <p>Poche abitudini mantengono il tuo archivio sano nel tempo:</p>
+                <ul>
+                    <li>Compila l'email e il paese: sono i campi chiave per la deduplicazione e la segmentazione.</li>
+                    <li>Collega ogni persona alla sua azienda (relazione padre/figlio).</li>
+                    <li>Usa il tipo di indirizzo giusto (fatturazione, spedizione) invece di accumulare tutto su una sola scheda.</li>
+                    <li>All'importazione, mappa con attenzione la colonna email e usa l'ID esterno per aggiornare le schede esistenti invece di crearne di nuove.</li>
+                    <li>Esegui regolarmente lo strumento di unione per eliminare i duplicati sfuggiti.</li>
+                </ul>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/24-import.png" alt="Schermata di importazione dei contatti di Odoo, con il modello di file da scaricare" class="lightbox-img">
+                    <figcaption>Schermata di importazione dei contatti di Odoo, con il modello di file da scaricare</figcaption>
+                </figure>
+
+                <!-- FAQ -->
+                <h2>
+                    <span class="section-number">7</span>
+                    <span>Domande frequenti</span>
+                </h2>
+                <h3>Azienda o individuo: quale scegliere in Odoo?</h3>
+                <p>Odoo 19 non ha più un selettore esplicito Individuo/Azienda sulla scheda (esisteva come pulsante di opzione nelle versioni 14–18). In pratica, modella un'organizzazione come un contatto di primo livello e una persona collegandola alla sua azienda: crea prima l'azienda, poi aggiungi le persone come contatti figli dalla scheda Contatti dell'azienda, così ogni persona è collegata alla sua organizzazione.</p>
+                <h3>Come si uniscono i contatti duplicati in Odoo?</h3>
+                <p>Apri l'app Contatti in vista elenco, seleziona i contatti da unire, poi apri il menu Azioni e scegli Unisci. Scegli il contatto di destinazione da conservare, controlla l'elenco e clicca su Unisci contatti. Tutti i documenti collegati vengono riassegnati al contatto conservato. I passaggi sono gli stessi dalla v14 alla v19.</p>
+                <h3>Come si salva un'email sulla scheda di un contatto?</h3>
+                <p>Odoo conserva le email nel chatter della scheda, a patto che vi siano registrate. All'interno di Odoo, il chatter ti permette di inviare o registrare un messaggio. Per catturare le email che vivono in Gmail, installa Odoo Integration for Gmail: l'estensione mostra la scheda Odoo accanto alla tua casella di posta e registra l'email sul contatto con un clic, senza uscire da Gmail.</p>
+                <h3>Qual è la differenza tra un contatto e un lead/opportunità?</h3>
+                <p>Un contatto (res.partner) è una scheda stabile per una persona o un'azienda con cui lavori. Un lead o un'opportunità (nel CRM) è un affare potenziale che avanza nella tua pipeline, di solito collegato a un contatto. Un contatto può generare più opportunità: il contatto è il dato duraturo, l'opportunità il processo commerciale temporaneo.</p>
+                <h3>Come si importano i contatti senza creare duplicati?</h3>
+                <p>Scarica il modello di importazione di Odoo, mappa correttamente la colonna email e usa la colonna ID esterno alla reimportazione per aggiornare le schede esistenti invece di duplicarle. Odoo non ha un'unica casella anti-duplicato: dopo una grande importazione, esegui lo strumento Unisci dall'elenco dei contatti per ripulire ciò che è sfuggito.</p>
+
+                <!-- CTA -->
+                <div class="article-cta">
+                    <h3>Gestisci i tuoi contatti Odoo ma vivi in Gmail?</h3>
+                    <p>Vedi la scheda del contatto e salva le tue email in Odoo con un clic — senza cambiare scheda.</p>
+                    <a target="_blank" class="btn btn-primary btn-lg" href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&utm_medium=content&utm_campaign=odoo_contacts_it&utm_content=footer_cta">Installa l'estensione</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Integrazione Odoo per Gmail</h4>
+                    <p><span>Creato da</span> <strong>OdooIntegrations Team</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Risorse</h4>
+                    <ul>
+                        <li><a href="../">Home</a></li>
+                        <li><a href="../pricing.html">Prezzi</a></li>
+                        <li><a href="../user-guide.html">Guida Utente</a></li>
+                        <li><a href="../changelog.html">Changelog</a></li>
+                        <li><a href="../comparison.html">Confronto</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../privacy.html">Informativa sulla Privacy</a></li>
+                        <li><a href="mailto:odoointegrations.team@gmail.com">Supporto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legale</h4>
+                    <p class="small-text">Non affiliato con Odoo S.A. o Google LLC.</p>
+                    <p class="small-text">Odoo è un marchio di Odoo S.A.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2025 IntegrationNode. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Figures & Lightbox -->
+    <style>
+    .article-figure {
+        margin: 20px 0; padding: 0;
+    }
+    .article-figure img {
+        max-width: 100%; border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        cursor: pointer;
+    }
+    .article-figure figcaption {
+        margin-top: 8px; font-size: 0.85em; color: #666;
+        text-align: center; font-style: italic;
+    }
+    .lightbox-overlay {
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0,0,0,0.85); z-index: 9999;
+        display: flex; align-items: center; justify-content: center;
+        cursor: pointer; animation: lbFadeIn 0.2s;
+    }
+    .lightbox-overlay img {
+        max-width: 92%; max-height: 92vh;
+        border-radius: 8px; box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+        animation: lbZoomIn 0.2s;
+    }
+    @keyframes lbFadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes lbZoomIn { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    </style>
+    <script>
+    document.querySelectorAll('.lightbox-img').forEach(function(img) {
+        img.addEventListener('click', function() {
+            var overlay = document.createElement('div');
+            overlay.className = 'lightbox-overlay';
+            var fullImg = document.createElement('img');
+            fullImg.src = img.src;
+            fullImg.alt = img.alt;
+            overlay.appendChild(fullImg);
+            overlay.addEventListener('click', function() { overlay.remove(); });
+            document.addEventListener('keydown', function handler(e) {
+                if (e.key === 'Escape') { overlay.remove(); document.removeEventListener('keydown', handler); }
+            });
+            document.body.appendChild(overlay);
+        });
+    });
+    </script>
+
+    <!-- Language Switcher Script -->
+    <script>
+    (function() {
+        var LANGUAGES = [
+            { code: 'en', name: 'English', path: '' },
+            { code: 'es', name: 'Español', path: 'es/' },
+            { code: 'fr', name: 'Français', path: 'fr/' },
+            { code: 'de', name: 'Deutsch', path: 'de/' },
+            { code: 'it', name: 'Italiano', path: 'it/' },
+            { code: 'pt', name: 'Português', path: 'pt/' },
+            { code: 'nl', name: 'Nederlands', path: 'nl/' },
+            { code: 'pl', name: 'Polski', path: 'pl/' }
+        ];
+
+        var dropdown = document.getElementById('lang-dropdown');
+        if (!dropdown) return;
+
+        var toggle = dropdown.querySelector('.lang-toggle');
+        var menu = dropdown.querySelector('.lang-menu');
+        var path = window.location.pathname;
+
+        // Get page path relative to language root (e.g., "blog/article.html")
+        var pathParts = path.split('/');
+        var page = '';
+        var isSubLang = false;
+
+        for (var i = 0; i < LANGUAGES.length; i++) {
+            var langPath = LANGUAGES[i].path;
+            if (langPath && path.includes('/' + langPath)) {
+                isSubLang = true;
+                // Get everything after the language folder
+                var langIndex = path.indexOf('/' + langPath);
+                page = path.substring(langIndex + langPath.length + 1);
+                break;
+            }
+        }
+
+        if (!isSubLang) {
+            // English (root) - get path after docs folder
+            var docsIndex = path.indexOf('odoo-integration-gmail-docs/');
+            if (docsIndex !== -1) {
+                page = path.substring(docsIndex + 'odoo-integration-gmail-docs/'.length);
+            } else {
+                page = pathParts.slice(-2).join('/');
+            }
+        }
+
+        if (!page || page === '') page = 'index.html';
+
+        var currentLang = LANGUAGES[0];
+        for (var i = 1; i < LANGUAGES.length; i++) {
+            if (path.includes('/' + LANGUAGES[i].path)) {
+                currentLang = LANGUAGES[i];
+                break;
+            }
+        }
+
+        LANGUAGES.forEach(function(lang) {
+            if (lang.code === currentLang.code) return;
+            var link = document.createElement('a');
+            // For nested pages, we need to go up two levels from /blog/article.html
+            if (currentLang.path) {
+                // From /es/blog/article.html to other langs
+                link.href = '../../' + lang.path + page;
+            } else {
+                // From /blog/article.html to other langs
+                link.href = '../' + lang.path + page;
+            }
+            link.textContent = lang.name;
+            link.setAttribute('role', 'menuitem');
+            link.setAttribute('data-lang', lang.code);
+            menu.appendChild(link);
+        });
+
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            dropdown.classList.toggle('open');
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                toggle.setAttribute('aria-expanded', 'false');
+                dropdown.classList.remove('open');
+            }
+        });
+    })();
+    </script>
+</body>
+</html>

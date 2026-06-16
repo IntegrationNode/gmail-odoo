@@ -1,0 +1,74 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Gestionar contactos en Odoo: la guía práctica",
+        "description": "Crea, organiza y depura tus contactos en Odoo: empresas vs. individuos, fusionar duplicados, etiquetas y buenas prácticas. Funciona de Odoo 14 a 19.",
+        "image": "https://integrationnode.com/gmail-odoo/assets/og-image.png",
+        "author": {
+            "@type": "Organization",
+            "name": "OdooIntegrations Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "OdooIntegrations",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://integrationnode.com/gmail-odoo/favicon.png"
+            }
+        },
+        "datePublished": "2026-06-16T00:00:00+00:00",
+        "dateModified": "2026-06-16T00:00:00+00:00",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://integrationnode.com/gmail-odoo/es/blog/manage-odoo-contacts.html"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://integrationnode.com/gmail-odoo/es/blog/manage-odoo-contacts.html#faq",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Empresa o individuo: ¿qué debo elegir en Odoo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Odoo 19 ya no tiene un selector explícito Individuo/Empresa en la ficha (existía como botón de opción en las versiones 14–18). En la práctica, modela una organización como un contacto de primer nivel y una persona vinculándola a su empresa: crea primero la empresa y luego añade a las personas como contactos hijos desde la pestaña Contactos de la empresa, para que cada persona quede asociada a su organización."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cómo fusiono contactos duplicados en Odoo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Abre la app Contactos en vista de lista, marca los contactos que quieres fusionar, luego abre el menú Acciones y elige Fusionar. Elige el contacto de destino que se conservará, revisa la lista y haz clic en Fusionar contactos. Todos los documentos vinculados se reasignan al contacto conservado. Los pasos son los mismos de la v14 a la v19."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cómo guardo un correo en la ficha de un contacto?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Odoo conserva los correos en el chatter de la ficha, siempre que estén registrados ahí. Dentro de Odoo, el chatter te permite enviar o registrar un mensaje. Para capturar los correos que viven en Gmail, instala Odoo Integration for Gmail: la extensión muestra la ficha de Odoo junto a tu bandeja de entrada y registra el correo en el contacto en un clic, sin salir de Gmail."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuál es la diferencia entre un contacto y una iniciativa/oportunidad?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Un contacto (res.partner) es una ficha estable para una persona o empresa con la que trabajas. Una iniciativa u oportunidad (en CRM) es un negocio potencial que avanza por tu pipeline, normalmente vinculado a un contacto. Un mismo contacto puede generar varias oportunidades: el contacto es el dato duradero, la oportunidad el proceso comercial pasajero."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cómo importo contactos sin crear duplicados?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Descarga la plantilla de importación de Odoo, mapea correctamente la columna del correo y usa la columna del ID externo al reimportar para actualizar las fichas existentes en vez de duplicarlas. Odoo no tiene una única casilla antiduplicados: tras una importación grande, ejecuta la herramienta Fusionar desde la lista de contactos para limpiar lo que se haya colado."
+                }
+            }
+        ]
+    }
+]

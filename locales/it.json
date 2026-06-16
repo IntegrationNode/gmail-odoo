@@ -90,6 +90,15 @@
       "ogDescription": "Guida passo passo per creare API keys in Odoo dalla versione 14 alla 19, con screenshot per ogni versione.",
       "twitterTitle": "Come creare un API Key in Odoo (Tutte le versioni)",
       "twitterDescription": "Guida passo passo per creare API keys in Odoo dalla versione 14 alla 19, con screenshot per ogni versione."
+    },
+    "blogManageContacts": {
+      "title": "Gestire i contatti in Odoo: la guida pratica",
+      "description": "Crea, organizza e ripulisci i tuoi contatti in Odoo: aziende vs individui, unione dei duplicati, etichette e buone pratiche. Funziona da Odoo 14 a 19.",
+      "ogTitle": "Gestire i contatti in Odoo: la guida pratica",
+      "ogDescription": "Aziende vs individui, unione dei duplicati, etichette e buone pratiche per contatti Odoo puliti e utili.",
+      "twitterTitle": "Gestire i contatti in Odoo: la guida pratica",
+      "twitterDescription": "La guida completa per strutturare, ripulire e sfruttare i tuoi contatti Odoo (v14-19).",
+      "canonical": "https://integrationnode.com/gmail-odoo/it/blog/manage-odoo-contacts.html"
     }
   },
   "userGuide": {
@@ -1429,6 +1438,11 @@
       "title": "Prova Integrazione Odoo per Gmail",
       "subtitle": "Collega il tuo Gmail a Odoo in pochi secondi",
       "button": "Ottieni l'Estensione"
+    },
+    "article3": {
+      "title": "Gestire i contatti in Odoo: la guida pratica",
+      "date": "Giugno 2026",
+      "excerpt": "Aziende vs individui, unione dei duplicati, etichette, chatter e buone pratiche — la guida completa per contatti Odoo puliti e utili."
     }
   },
   "blogArticle": {
@@ -1597,6 +1611,92 @@
       "title": "Pronto a connetterti?",
       "subtitle": "Ora che hai il tuo API key, installa l'estensione e collega la tua istanza Odoo a Gmail in pochi secondi.",
       "button": "Ottieni l'Estensione"
+    }
+  },
+  "blogManageContacts": {
+    "title": "Gestire i contatti in Odoo: la guida pratica",
+    "date": "16 giugno 2026",
+    "intro": "Schede duplicate, persone senza alcuna azienda associata, indirizzi di fatturazione introvabili: la gestione dei contatti in Odoo (“odoo contacts”) finisce spesso in secondo piano… finché non rallenta le tue vendite e falsa il tuo CRM. Un archivio di contatti pulito, al contrario, fa risparmiare tempo a tutta l'azienda.",
+    "introP2": "Questa guida non spiega “cos'è un contatto”: mostra, passo dopo passo, come strutturare, ripulire e sfruttare i tuoi contatti in Odoo. Gli screenshot sono presi su Odoo 19, ma l'app Contatti è stabile: tutto funziona dalla versione 14 alla 19, con qualche nota dove l'interfaccia cambia.",
+    "introImgAlt": "L'elenco dei contatti nell'app Contatti di Odoo",
+    "s1": {
+      "title": "Azienda vs individuo: strutturare i contatti",
+      "p1": "Innanzitutto, un punto specifico di Odoo 19: la scheda contatto non mostra più un selettore esplicito «Individuo / Azienda». È un cambiamento rispetto alle versioni 14–18, dove impostavi il tipo con un pulsante di opzione in cima alla scheda. In Odoo 19, un contatto creato dall'app Contatti è trattato come un'azienda per impostazione predefinita: vedrai una piccola icona dell'edificio accanto al nome.",
+      "p2": "È quindi la gerarchia — non un interruttore — a separare le aziende dalle persone. Il modo affidabile per aggiungere una persona parte dalla sua organizzazione: apri l'azienda, vai alla scheda Contatti e usa Aggiungi contatti collegati. Ogni persona è così collegata alla sua azienda e puoi ritrovarle tutte dalla scheda dell'azienda. Puoi anche collegare una persona esistente al suo datore di lavoro tramite il campo Azienda della sua scheda.",
+      "imgAltCompany": "La scheda di un'azienda in Odoo, con i suoi contatti collegati e le etichette",
+      "p3": "Una stessa azienda può avere più indirizzi. Quando aggiungi un contatto figlio, Odoo propone quattro tipi di indirizzo: scegli quello giusto, perché è quello usato automaticamente su preventivi, fatture e ordini di consegna:",
+      "addrContact": "Indirizzo contatto: una persona dell'organizzazione (commerciale, supporto, responsabile).",
+      "addrInvoice": "Indirizzo di fatturazione: dove vengono inviate le fatture.",
+      "addrDelivery": "Indirizzo di spedizione: dove vengono spedite le merci.",
+      "addrOther": "Altro: qualsiasi indirizzo aggiuntivo (un magazzino secondario, ecc.).",
+      "imgAltAddr": "Finestra di dialogo di Odoo per creare un contatto collegato, con i tipi Indirizzo contatto, fatturazione, spedizione e Altro"
+    },
+    "s2": {
+      "title": "Gestire i duplicati: come unirli",
+      "p1": "I duplicati sono il problema più doloroso — e il meno spiegato. Due schede per lo stesso cliente, e la tua cronologia si divide in due: metà delle email qui, metà degli ordini là.",
+      "origins": "Da dove arrivano?",
+      "origin1": "Lead e opportunità convertiti più di una volta.",
+      "origin2": "Moduli del sito web e carrelli della spesa.",
+      "origin3": "Importazioni ripetute di fogli di calcolo.",
+      "origin4": "Email in arrivo che creano un contatto automaticamente.",
+      "howTo": "La buona notizia: Odoo include uno strumento di unione. Ecco come fare:",
+      "step1": "Apri l'app Contatti in vista elenco.",
+      "step2": "Seleziona i contatti da unire (almeno due).",
+      "step3": "Apri il menu Azioni e scegli Unisci.",
+      "step4": "Scegli il contatto di destinazione (quello che verrà conservato), controlla l'elenco, poi clicca su Unisci contatti.",
+      "imgAltMerge": "Procedura guidata di unione dei contatti di Odoo, con la selezione del contatto di destinazione",
+      "versionNote": "Dalla versione 14 alla 18 lo strumento si trova nello stesso punto: seleziona le schede in vista elenco, poi il menu Azioni. La schermata è stata modernizzata nella v17-19, ma il principio è identico. Tutti i documenti collegati (ordini, fatture, email, opportunità) vengono automaticamente riassegnati al contatto conservato."
+    },
+    "s3": {
+      "title": "Organizzare su larga scala: etichette e categorie",
+      "p1": "La gerarchia azienda/persona descrive la struttura; le etichette descrivono tutto il resto. Un singolo contatto può avere più etichette — “VIP”, “Rivenditore”, “Newsletter” — senza toccare la gerarchia.",
+      "p2": "Gestisci l'elenco delle etichette in Contatti ▸ Configurazione ▸ Etichette contatto, con un colore per individuarle a colpo d'occhio.",
+      "imgAltTags": "L'elenco delle etichette contatto in Odoo, con nome, categoria e colore",
+      "p3": "Il punto è filtrare e segmentare: in vista elenco, usa Filtri e Raggruppa per per isolare un'etichetta, poi salva il filtro come preferito. In due clic ottieni l'elenco di tutti i tuoi rivenditori, o di tutti i clienti di una regione — pronto da riutilizzare per una campagna email o un'esportazione."
+    },
+    "s4": {
+      "title": "Seguire un contatto: chatter, attività e cronologia",
+      "p1": "Ogni scheda ha un chatter: il flusso in basso (o a destra) della scheda. Lì registri una nota interna, pianifichi un'attività (richiamare, dare seguito) e tieni traccia dell'intera cronologia — incluse le email scambiate. È il “fascicolo” vivente del contatto: tutto ciò che è successo, in un unico posto.",
+      "imgAltChatter": "Il chatter su una scheda contatto di Odoo: messaggi, note e attività",
+      "mentionText": "Il problema: quelle email vivono in Gmail e non arrivano mai sulla scheda del contatto, a meno che tu non le registri a mano. Puoi anche",
+      "mentionLink": "salvare l'email sulla scheda del contatto Odoo con un clic, senza uscire da Gmail, con la nostra estensione."
+    },
+    "s5": {
+      "title": "Il contatto: la spina dorsale di Odoo",
+      "p1": "Un contatto non è mai isolato: è il perno che collega CRM, Vendite e Fatturazione. Un'opportunità, un preventivo, una fattura, un ticket — tutto rimanda alla stessa scheda contatto.",
+      "p2": "Da qui la regola semplice: un contatto completo e pulito = un CRM pulito. Ogni minuto speso a strutturare i tuoi contatti si ripaga su ogni preventivo e ogni follow-up, perché l'intera catena si basa su questo dato."
+    },
+    "s6": {
+      "title": "Buone pratiche di igiene",
+      "p1": "Poche abitudini mantengono il tuo archivio sano nel tempo:",
+      "tip1": "Compila l'email e il paese: sono i campi chiave per la deduplicazione e la segmentazione.",
+      "tip2": "Collega ogni persona alla sua azienda (relazione padre/figlio).",
+      "tip3": "Usa il tipo di indirizzo giusto (fatturazione, spedizione) invece di accumulare tutto su una sola scheda.",
+      "tip4": "All'importazione, mappa con attenzione la colonna email e usa l'ID esterno per aggiornare le schede esistenti invece di crearne di nuove.",
+      "tip5": "Esegui regolarmente lo strumento di unione per eliminare i duplicati sfuggiti.",
+      "imgAltImport": "Schermata di importazione dei contatti di Odoo, con il modello di file da scaricare"
+    },
+    "faq": {
+      "title": "Domande frequenti",
+      "q1": "Azienda o individuo: quale scegliere in Odoo?",
+      "a1": "Odoo 19 non ha più un selettore esplicito Individuo/Azienda sulla scheda (esisteva come pulsante di opzione nelle versioni 14–18). In pratica, modella un'organizzazione come un contatto di primo livello e una persona collegandola alla sua azienda: crea prima l'azienda, poi aggiungi le persone come contatti figli dalla scheda Contatti dell'azienda, così ogni persona è collegata alla sua organizzazione.",
+      "q2": "Come si uniscono i contatti duplicati in Odoo?",
+      "a2": "Apri l'app Contatti in vista elenco, seleziona i contatti da unire, poi apri il menu Azioni e scegli Unisci. Scegli il contatto di destinazione da conservare, controlla l'elenco e clicca su Unisci contatti. Tutti i documenti collegati vengono riassegnati al contatto conservato. I passaggi sono gli stessi dalla v14 alla v19.",
+      "q3": "Come si salva un'email sulla scheda di un contatto?",
+      "a3": "Odoo conserva le email nel chatter della scheda, a patto che vi siano registrate. All'interno di Odoo, il chatter ti permette di inviare o registrare un messaggio. Per catturare le email che vivono in Gmail, installa Odoo Integration for Gmail: l'estensione mostra la scheda Odoo accanto alla tua casella di posta e registra l'email sul contatto con un clic, senza uscire da Gmail.",
+      "q4": "Qual è la differenza tra un contatto e un lead/opportunità?",
+      "a4": "Un contatto (res.partner) è una scheda stabile per una persona o un'azienda con cui lavori. Un lead o un'opportunità (nel CRM) è un affare potenziale che avanza nella tua pipeline, di solito collegato a un contatto. Un contatto può generare più opportunità: il contatto è il dato duraturo, l'opportunità il processo commerciale temporaneo.",
+      "q5": "Come si importano i contatti senza creare duplicati?",
+      "a5": "Scarica il modello di importazione di Odoo, mappa correttamente la colonna email e usa la colonna ID esterno alla reimportazione per aggiornare le schede esistenti invece di duplicarle. Odoo non ha un'unica casella anti-duplicato: dopo una grande importazione, esegui lo strumento Unisci dall'elenco dei contatti per ripulire ciò che è sfuggito."
+    },
+    "cta": {
+      "title": "Gestisci i tuoi contatti Odoo ma vivi in Gmail?",
+      "subtitle": "Vedi la scheda del contatto e salva le tue email in Odoo con un clic — senza cambiare scheda.",
+      "button": "Installa l'estensione",
+      "url": "https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&utm_medium=content&utm_campaign=odoo_contacts_it&utm_content=footer_cta"
+    },
+    "mention": {
+      "url": "https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&utm_medium=content&utm_campaign=odoo_contacts_it&utm_content=inline_mention"
     }
   }
 }

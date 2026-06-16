@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YPS5MV3D6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0YPS5MV3D6');
+    </script>
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="nVghWS1eMCEwMEz5xTbG+Q" async></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Twórz, porządkuj i czyść kontakty w Odoo: firmy a osoby fizyczne, scalanie duplikatów, tagi i dobre praktyki. Działa w Odoo 14 do 19.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://integrationnode.com/gmail-odoo/pl/blog/manage-odoo-contacts.html">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="es" href="https://integrationnode.com/gmail-odoo/es/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="fr" href="https://integrationnode.com/gmail-odoo/fr/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="de" href="https://integrationnode.com/gmail-odoo/de/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="it" href="https://integrationnode.com/gmail-odoo/it/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="pt" href="https://integrationnode.com/gmail-odoo/pt/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://integrationnode.com/gmail-odoo/pl/blog/manage-odoo-contacts.html">
+    <meta property="og:title" content="Zarządzanie kontaktami w Odoo: praktyczny przewodnik">
+    <meta property="og:description" content="Firmy a osoby fizyczne, scalanie duplikatów, tagi i dobre praktyki dla czystych, użytecznych kontaktów Odoo.">
+    <meta property="og:image" content="https://integrationnode.com/gmail-odoo/assets/og-image.png">
+    <meta property="og:site_name" content="Odoo Integration for Gmail">
+    <meta property="article:published_time" content="2026-06-16">
+    <meta property="article:author" content="OdooIntegrations Team">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Zarządzanie kontaktami w Odoo: praktyczny przewodnik">
+    <meta name="twitter:description" content="Kompletny przewodnik po porządkowaniu, czyszczeniu i wykorzystywaniu kontaktów Odoo (v14 do 19).">
+    <meta name="twitter:image" content="https://integrationnode.com/gmail-odoo/assets/og-image.png">
+
+    <title>Zarządzanie kontaktami w Odoo: praktyczny przewodnik</title>
+    <link rel="icon" type="image/png" href="https://integrationnode.com/gmail-odoo/favicon.png">
+    <link rel="stylesheet" href="https://integrationnode.com/gmail-odoo/fonts/outlined.css">
+    <link rel="stylesheet" href="https://integrationnode.com/gmail-odoo/style.css">
+
+    <!-- Schema.org Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Zarządzanie kontaktami w Odoo: praktyczny przewodnik",
+        "description": "Twórz, porządkuj i czyść kontakty w Odoo: firmy a osoby fizyczne, scalanie duplikatów, tagi i dobre praktyki. Działa w Odoo 14 do 19.",
+        "image": "https://integrationnode.com/gmail-odoo/assets/og-image.png",
+        "author": {
+            "@type": "Organization",
+            "name": "OdooIntegrations Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "OdooIntegrations",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://integrationnode.com/gmail-odoo/favicon.png"
+            }
+        },
+        "datePublished": "2026-06-16T00:00:00+00:00",
+        "dateModified": "2026-06-16T00:00:00+00:00",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://integrationnode.com/gmail-odoo/pl/blog/manage-odoo-contacts.html"
+        }
+    }
+    </script>
+
+    <!-- Schema.org FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://integrationnode.com/gmail-odoo/pl/blog/manage-odoo-contacts.html#faq",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Firma czy osoba fizyczna: co wybrać w Odoo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Odoo 19 nie ma już jawnego przełącznika Osoba fizyczna/Firma na rekordzie (w wersjach 14–18 istniał jako przycisk opcji). W praktyce modeluj organizację jako kontakt najwyższego poziomu, a osobę powiązując ją z jej firmą: najpierw utwórz firmę, a potem dodaj osoby jako kontakty podrzędne z poziomu zakładki Kontakty firmy, aby każda osoba była powiązana ze swoją organizacją."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Jak scalić zdublowane kontakty w Odoo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Otwórz aplikację Kontakty w widoku listy, zaznacz kontakty do scalenia, a następnie otwórz menu Akcje i wybierz Scal. Wybierz kontakt docelowy do zachowania, sprawdź listę i kliknij Scal kontakty. Wszystkie powiązane dokumenty są przepisywane na zachowany kontakt. Kroki są takie same od v14 do v19."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Jak zapisać e-mail na rekordzie kontaktu?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Odoo przechowuje e-maile w chatterze rekordu, o ile zostaną tam zapisane. Wewnątrz Odoo chatter pozwala wysłać lub zalogować wiadomość. Aby przechwycić e-maile, które żyją w Gmailu, zainstaluj Odoo Integration for Gmail: rozszerzenie pokazuje rekord Odoo obok skrzynki odbiorczej i zapisuje e-mail na kontakcie jednym kliknięciem, bez opuszczania Gmaila."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Jaka jest różnica między kontaktem a sygnałem/szansą?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kontakt (res.partner) to stabilny rekord osoby lub firmy, z którą współpracujesz. Sygnał lub szansa (w CRM) to potencjalna transakcja przesuwająca się przez Twój lejek sprzedaży, zazwyczaj powiązana z kontaktem. Jeden kontakt może wygenerować kilka szans: kontakt to trwałe dane, a szansa to przejściowy proces sprzedaży."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Jak importować kontakty bez tworzenia duplikatów?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pobierz szablon importu Odoo, poprawnie zmapuj kolumnę e-mail i użyj kolumny identyfikator zewnętrzny (External ID) przy ponownym imporcie, aby aktualizować istniejące rekordy zamiast je dublować. Odoo nie ma jednego pola wyboru anty-duplikat: po dużym imporcie uruchom narzędzie Scal z listy kontaktów, aby oczyścić to, co się prześlizgnęło."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="pricing-header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../" class="logo">Integracja Odoo dla Gmail</a>
+                <div class="nav-links">
+                    <a href="../#features">Funkcje</a>
+                    <a href="../pricing.html">Cennik</a>
+                    <a href="../user-guide.html">Przewodnik</a>
+                    <a href="../blog.html" class="active">Blog</a>
+                    <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&amp;utm_medium=content&amp;utm_campaign=manage-odoo-contacts&amp;utm_content=navbar" target="_blank" class="btn btn-sm btn-primary">Pobierz rozszerzenie</a>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">language</span>
+                            <span class="lang-current">PL</span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="lang-menu" role="menu"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Article Hero -->
+    <section class="article-hero">
+        <div class="container">
+            <a href="../blog.html" class="article-back">
+                <span class="material-symbols-outlined">arrow_back</span>
+                <span>Powrót do bloga</span>
+            </a>
+            <h1>Zarządzanie kontaktami w Odoo: praktyczny przewodnik</h1>
+            <div class="article-meta">
+                <span class="article-date">16 czerwca 2026</span>
+                <span class="article-author">OdooIntegrations Team</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="article-section">
+        <div class="container">
+            <div class="article-content">
+                <!-- Intro -->
+                <p class="article-intro">Zdublowane rekordy, osoby bez przypisanej firmy, adresy rozliczeniowe, których nie sposób znaleźć: zarządzanie kontaktami w Odoo („odoo contacts”) bywa odkładane na później — aż zaczyna spowalniać sprzedaż i zaburzać Twój CRM. Czysta baza kontaktów odwrotnie: oszczędza czas całej firmie.</p>
+                <p>Ten przewodnik nie tłumaczy „czym jest kontakt”. Pokazuje krok po kroku, jak uporządkować, oczyścić i wykorzystywać kontakty w Odoo. Zrzuty ekranu pochodzą z Odoo 19, ale aplikacja Kontakty jest stabilna: wszystko działa od wersji 14 do 19, z kilkoma uwagami tam, gdzie interfejs się różni.</p>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/18-contacts-liste.png" alt="Lista kontaktów w aplikacji Kontakty w Odoo" class="lightbox-img">
+                    <figcaption>Lista kontaktów w aplikacji Kontakty w Odoo</figcaption>
+                </figure>
+
+                <!-- Section 1: Company vs individual -->
+                <h2>
+                    <span class="section-number">1</span>
+                    <span>Firma a osoba fizyczna: jak uporządkować kontakty</span>
+                </h2>
+                <p>Najpierw kwestia specyficzna dla Odoo 19: rekord kontaktu nie pokazuje już jawnego przełącznika „Osoba fizyczna / Firma”. To zmiana w porównaniu z wersjami 14–18, w których typ ustawiało się przyciskiem opcji na górze rekordu. W Odoo 19 kontakt utworzony w aplikacji Kontakty jest domyślnie traktowany jako firma — obok nazwy zobaczysz małą ikonę budynku.</p>
+                <p>To więc hierarchia — a nie przełącznik — oddziela firmy od osób. Niezawodny sposób dodania osoby zaczyna się od jej organizacji: otwórz firmę, przejdź do zakładki Kontakty i użyj Dodaj powiązane kontakty. Każda osoba jest wtedy powiązana ze swoją firmą, a wszystkie znajdziesz z poziomu rekordu firmy. Istniejącą osobę możesz też powiązać z jej pracodawcą poprzez pole Firma w jej rekordzie.</p>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/19-entreprise-particulier.png" alt="Rekord firmy w Odoo, z powiązanymi kontaktami i tagami" class="lightbox-img">
+                    <figcaption>Rekord firmy w Odoo, z powiązanymi kontaktami i tagami</figcaption>
+                </figure>
+                <p>Jedna firma może mieć kilka adresów. Gdy dodajesz kontakt podrzędny, Odoo oferuje cztery typy adresu — wybierz właściwy, bo to on jest używany automatycznie na ofertach, fakturach i zleceniach dostawy:</p>
+                <ul>
+                    <li>Adres kontaktu: osoba w organizacji (handlowiec, wsparcie, menedżer).</li>
+                    <li>Adres rozliczeniowy: dokąd wysyłane są faktury.</li>
+                    <li>Adres dostawy: dokąd wysyłany jest towar.</li>
+                    <li>Inny: dowolny dodatkowy adres (drugi magazyn itp.).</li>
+                </ul>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/20-contacts-enfants-adresses.png" alt="Okno dialogowe Odoo do tworzenia powiązanego kontaktu, z typami Adres kontaktu, Adres rozliczeniowy, Adres dostawy i Inny" class="lightbox-img">
+                    <figcaption>Okno dialogowe Odoo do tworzenia powiązanego kontaktu, z typami Adres kontaktu, Adres rozliczeniowy, Adres dostawy i Inny</figcaption>
+                </figure>
+
+                <!-- Section 2: Duplicates -->
+                <h2>
+                    <span class="section-number">2</span>
+                    <span>Zarządzanie duplikatami: jak je scalić</span>
+                </h2>
+                <p>Duplikaty to najbardziej dotkliwy problem — i najmniej wyjaśniony. Dwa rekordy tego samego klienta i Twoja historia dzieli się na pół: połowa e-maili tutaj, połowa zamówień tam.</p>
+                <p>Skąd się biorą?</p>
+                <ul>
+                    <li>Sygnały i szanse konwertowane więcej niż raz.</li>
+                    <li>Formularze na stronie i koszyki zakupowe.</li>
+                    <li>Powtarzane importy arkuszy kalkulacyjnych.</li>
+                    <li>Przychodzące e-maile, które automatycznie tworzą kontakt.</li>
+                </ul>
+                <p>Dobra wiadomość: Odoo ma wbudowane narzędzie do scalania. Oto jak:</p>
+                <ol>
+                    <li>Otwórz aplikację Kontakty w widoku listy.</li>
+                    <li>Zaznacz kontakty, które chcesz scalić (co najmniej dwa).</li>
+                    <li>Otwórz menu Akcje i wybierz Scal.</li>
+                    <li>Wybierz kontakt docelowy (ten, który zostanie zachowany), sprawdź listę, a następnie kliknij Scal kontakty.</li>
+                </ol>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/21-fusion-doublons.png" alt="Kreator scalania kontaktów w Odoo, z wyborem kontaktu docelowego" class="lightbox-img">
+                    <figcaption>Kreator scalania kontaktów w Odoo, z wyborem kontaktu docelowego</figcaption>
+                </figure>
+                <p class="tip-box">Od wersji 14 do 18 narzędzie znajduje się w tym samym miejscu: zaznacz rekordy w widoku listy, a potem menu Akcje. Ekran zmodernizowano w v17-19, ale zasada jest identyczna. Wszystkie powiązane dokumenty (zamówienia, faktury, e-maile, szanse) są automatycznie przepisywane na zachowany kontakt.</p>
+
+                <!-- Section 3: Tags -->
+                <h2>
+                    <span class="section-number">3</span>
+                    <span>Porządkowanie na dużą skalę: tagi i kategorie</span>
+                </h2>
+                <p>Hierarchia firma/osoba opisuje strukturę; tagi opisują całą resztę. Jeden kontakt może mieć kilka tagów — „VIP”, „Reseller”, „Newsletter” — bez naruszania hierarchii.</p>
+                <p>Listę tagów zarządzasz w Kontakty ▸ Konfiguracja ▸ Tagi kontaktów, z kolorem, by rozpoznać je na pierwszy rzut oka.</p>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/22-etiquettes.png" alt="Lista tagów kontaktów w Odoo, z nazwą, kategorią i kolorem" class="lightbox-img">
+                    <figcaption>Lista tagów kontaktów w Odoo, z nazwą, kategorią i kolorem</figcaption>
+                </figure>
+                <p>Sedno tkwi w filtrowaniu i segmentacji: w widoku listy użyj Filtrów i Grupuj według, aby wyodrębnić tag, a potem zapisz filtr jako ulubiony. W dwa kliknięcia masz listę wszystkich swoich resellerów albo wszystkich klientów z jednego regionu — gotową do ponownego użycia w kampanii e-mailowej lub eksporcie.</p>
+
+                <!-- Section 4: Chatter / follow-up -->
+                <h2>
+                    <span class="section-number">4</span>
+                    <span>Śledzenie kontaktu: chatter, czynności i historia</span>
+                </h2>
+                <p>Każdy rekord ma chatter: wątek na dole (lub po prawej) rekordu. Tam zapisujesz notatkę wewnętrzną, planujesz czynność (oddzwonić, ponowić kontakt) i śledzisz pełną historię — w tym wymienione e-maile. To żywa „teczka” kontaktu: wszystko, co się wydarzyło, w jednym miejscu.</p>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/23-chatter.png" alt="Chatter na rekordzie kontaktu Odoo: wiadomości, notatki i czynności" class="lightbox-img">
+                    <figcaption>Chatter na rekordzie kontaktu Odoo: wiadomości, notatki i czynności</figcaption>
+                </figure>
+                <p>
+                    <span>Haczyk: te e-maile żyją w Gmailu i nigdy nie trafiają na rekord kontaktu, chyba że zapiszesz je ręcznie. Możesz też</span>
+                    <a target="_blank" href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&utm_medium=content&utm_campaign=odoo_contacts_pl&utm_content=inline_mention">zapisać e-mail na rekordzie kontaktu Odoo jednym kliknięciem, bez opuszczania Gmaila, dzięki naszemu rozszerzeniu.</a>
+                </p>
+
+                <!-- Section 5: Backbone of Odoo -->
+                <h2>
+                    <span class="section-number">5</span>
+                    <span>Kontakt: kręgosłup Odoo</span>
+                </h2>
+                <p>Kontakt nigdy nie jest odosobniony: to oś, która łączy CRM, Sprzedaż i Fakturowanie. Szansa, oferta, faktura, zgłoszenie — wszystkie odwołują się do tego samego rekordu kontaktu.</p>
+                <p>Stąd prosta zasada: kompletny, czysty kontakt = czysty CRM. Każda minuta poświęcona na uporządkowanie kontaktów zwraca się przy każdej ofercie i każdym ponownym kontakcie, bo cały łańcuch opiera się na tych danych.</p>
+
+                <!-- Section 6: Hygiene best practices -->
+                <h2>
+                    <span class="section-number">6</span>
+                    <span>Dobre praktyki higieny danych</span>
+                </h2>
+                <p>Kilka nawyków pozwala utrzymać bazę w zdrowiu na dłuższą metę:</p>
+                <ul>
+                    <li>Uzupełniaj e-mail i kraj: to kluczowe pola dla deduplikacji i segmentacji.</li>
+                    <li>Przypisuj każdą osobę do jej firmy (relacja nadrzędny/podrzędny).</li>
+                    <li>Używaj właściwego typu adresu (rozliczeniowy, dostawy) zamiast upychać wszystko na jednym rekordzie.</li>
+                    <li>Przy imporcie starannie mapuj kolumnę e-mail i używaj identyfikatora zewnętrznego (External ID), aby aktualizować istniejące rekordy zamiast tworzyć nowe.</li>
+                    <li>Regularnie uruchamiaj narzędzie do scalania, aby usuwać duplikaty, które się prześlizgnęły.</li>
+                </ul>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/24-import.png" alt="Ekran importu kontaktów w Odoo, z szablonem pliku do pobrania" class="lightbox-img">
+                    <figcaption>Ekran importu kontaktów w Odoo, z szablonem pliku do pobrania</figcaption>
+                </figure>
+
+                <!-- FAQ -->
+                <h2>
+                    <span class="section-number">7</span>
+                    <span>Najczęściej zadawane pytania</span>
+                </h2>
+                <h3>Firma czy osoba fizyczna: co wybrać w Odoo?</h3>
+                <p>Odoo 19 nie ma już jawnego przełącznika Osoba fizyczna/Firma na rekordzie (w wersjach 14–18 istniał jako przycisk opcji). W praktyce modeluj organizację jako kontakt najwyższego poziomu, a osobę powiązując ją z jej firmą: najpierw utwórz firmę, a potem dodaj osoby jako kontakty podrzędne z poziomu zakładki Kontakty firmy, aby każda osoba była powiązana ze swoją organizacją.</p>
+                <h3>Jak scalić zdublowane kontakty w Odoo?</h3>
+                <p>Otwórz aplikację Kontakty w widoku listy, zaznacz kontakty do scalenia, a następnie otwórz menu Akcje i wybierz Scal. Wybierz kontakt docelowy do zachowania, sprawdź listę i kliknij Scal kontakty. Wszystkie powiązane dokumenty są przepisywane na zachowany kontakt. Kroki są takie same od v14 do v19.</p>
+                <h3>Jak zapisać e-mail na rekordzie kontaktu?</h3>
+                <p>Odoo przechowuje e-maile w chatterze rekordu, o ile zostaną tam zapisane. Wewnątrz Odoo chatter pozwala wysłać lub zalogować wiadomość. Aby przechwycić e-maile, które żyją w Gmailu, zainstaluj Odoo Integration for Gmail: rozszerzenie pokazuje rekord Odoo obok skrzynki odbiorczej i zapisuje e-mail na kontakcie jednym kliknięciem, bez opuszczania Gmaila.</p>
+                <h3>Jaka jest różnica między kontaktem a sygnałem/szansą?</h3>
+                <p>Kontakt (res.partner) to stabilny rekord osoby lub firmy, z którą współpracujesz. Sygnał lub szansa (w CRM) to potencjalna transakcja przesuwająca się przez Twój lejek sprzedaży, zazwyczaj powiązana z kontaktem. Jeden kontakt może wygenerować kilka szans: kontakt to trwałe dane, a szansa to przejściowy proces sprzedaży.</p>
+                <h3>Jak importować kontakty bez tworzenia duplikatów?</h3>
+                <p>Pobierz szablon importu Odoo, poprawnie zmapuj kolumnę e-mail i użyj kolumny identyfikator zewnętrzny (External ID) przy ponownym imporcie, aby aktualizować istniejące rekordy zamiast je dublować. Odoo nie ma jednego pola wyboru anty-duplikat: po dużym imporcie uruchom narzędzie Scal z listy kontaktów, aby oczyścić to, co się prześlizgnęło.</p>
+
+                <!-- CTA -->
+                <div class="article-cta">
+                    <h3>Zarządzasz kontaktami Odoo, ale żyjesz w Gmailu?</h3>
+                    <p>Zobacz rekord kontaktu i zapisuj e-maile do Odoo jednym kliknięciem — bez przełączania kart.</p>
+                    <a target="_blank" class="btn btn-primary btn-lg" href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&utm_medium=content&utm_campaign=odoo_contacts_pl&utm_content=footer_cta">Zainstaluj rozszerzenie</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Integracja Odoo dla Gmail</h4>
+                    <p><span>Stworzone przez</span> <strong>OdooIntegrations Team</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Zasoby</h4>
+                    <ul>
+                        <li><a href="../">Strona główna</a></li>
+                        <li><a href="../pricing.html">Cennik</a></li>
+                        <li><a href="../user-guide.html">Przewodnik użytkownika</a></li>
+                        <li><a href="../changelog.html">Historia zmian</a></li>
+                        <li><a href="../comparison.html">Porównanie</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../privacy.html">Polityka prywatności</a></li>
+                        <li><a href="mailto:odoointegrations.team@gmail.com">Wsparcie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informacje prawne</h4>
+                    <p class="small-text">Niezwiązane z Odoo S.A. ani Google LLC.</p>
+                    <p class="small-text">Odoo jest znakiem towarowym Odoo S.A.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2025 IntegrationNode. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Figures & Lightbox -->
+    <style>
+    .article-figure {
+        margin: 20px 0; padding: 0;
+    }
+    .article-figure img {
+        max-width: 100%; border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        cursor: pointer;
+    }
+    .article-figure figcaption {
+        margin-top: 8px; font-size: 0.85em; color: #666;
+        text-align: center; font-style: italic;
+    }
+    .lightbox-overlay {
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0,0,0,0.85); z-index: 9999;
+        display: flex; align-items: center; justify-content: center;
+        cursor: pointer; animation: lbFadeIn 0.2s;
+    }
+    .lightbox-overlay img {
+        max-width: 92%; max-height: 92vh;
+        border-radius: 8px; box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+        animation: lbZoomIn 0.2s;
+    }
+    @keyframes lbFadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes lbZoomIn { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    </style>
+    <script>
+    document.querySelectorAll('.lightbox-img').forEach(function(img) {
+        img.addEventListener('click', function() {
+            var overlay = document.createElement('div');
+            overlay.className = 'lightbox-overlay';
+            var fullImg = document.createElement('img');
+            fullImg.src = img.src;
+            fullImg.alt = img.alt;
+            overlay.appendChild(fullImg);
+            overlay.addEventListener('click', function() { overlay.remove(); });
+            document.addEventListener('keydown', function handler(e) {
+                if (e.key === 'Escape') { overlay.remove(); document.removeEventListener('keydown', handler); }
+            });
+            document.body.appendChild(overlay);
+        });
+    });
+    </script>
+
+    <!-- Language Switcher Script -->
+    <script>
+    (function() {
+        var LANGUAGES = [
+            { code: 'en', name: 'English', path: '' },
+            { code: 'es', name: 'Español', path: 'es/' },
+            { code: 'fr', name: 'Français', path: 'fr/' },
+            { code: 'de', name: 'Deutsch', path: 'de/' },
+            { code: 'it', name: 'Italiano', path: 'it/' },
+            { code: 'pt', name: 'Português', path: 'pt/' },
+            { code: 'nl', name: 'Nederlands', path: 'nl/' },
+            { code: 'pl', name: 'Polski', path: 'pl/' }
+        ];
+
+        var dropdown = document.getElementById('lang-dropdown');
+        if (!dropdown) return;
+
+        var toggle = dropdown.querySelector('.lang-toggle');
+        var menu = dropdown.querySelector('.lang-menu');
+        var path = window.location.pathname;
+
+        // Get page path relative to language root (e.g., "blog/article.html")
+        var pathParts = path.split('/');
+        var page = '';
+        var isSubLang = false;
+
+        for (var i = 0; i < LANGUAGES.length; i++) {
+            var langPath = LANGUAGES[i].path;
+            if (langPath && path.includes('/' + langPath)) {
+                isSubLang = true;
+                // Get everything after the language folder
+                var langIndex = path.indexOf('/' + langPath);
+                page = path.substring(langIndex + langPath.length + 1);
+                break;
+            }
+        }
+
+        if (!isSubLang) {
+            // English (root) - get path after docs folder
+            var docsIndex = path.indexOf('odoo-integration-gmail-docs/');
+            if (docsIndex !== -1) {
+                page = path.substring(docsIndex + 'odoo-integration-gmail-docs/'.length);
+            } else {
+                page = pathParts.slice(-2).join('/');
+            }
+        }
+
+        if (!page || page === '') page = 'index.html';
+
+        var currentLang = LANGUAGES[0];
+        for (var i = 1; i < LANGUAGES.length; i++) {
+            if (path.includes('/' + LANGUAGES[i].path)) {
+                currentLang = LANGUAGES[i];
+                break;
+            }
+        }
+
+        LANGUAGES.forEach(function(lang) {
+            if (lang.code === currentLang.code) return;
+            var link = document.createElement('a');
+            // For nested pages, we need to go up two levels from /blog/article.html
+            if (currentLang.path) {
+                // From /es/blog/article.html to other langs
+                link.href = '../../' + lang.path + page;
+            } else {
+                // From /blog/article.html to other langs
+                link.href = '../' + lang.path + page;
+            }
+            link.textContent = lang.name;
+            link.setAttribute('role', 'menuitem');
+            link.setAttribute('data-lang', lang.code);
+            menu.appendChild(link);
+        });
+
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            dropdown.classList.toggle('open');
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                toggle.setAttribute('aria-expanded', 'false');
+                dropdown.classList.remove('open');
+            }
+        });
+    })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Kontakte in Odoo verwalten: Der Praxis-Leitfaden",
+        "description": "Kontakte in Odoo anlegen, ordnen und bereinigen: Unternehmen vs. Einzelpersonen, Dubletten zusammenführen, Stichwörter und Tipps. Für Odoo 14 bis 19.",
+        "image": "https://integrationnode.com/gmail-odoo/assets/og-image.png",
+        "author": {
+            "@type": "Organization",
+            "name": "OdooIntegrations Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "OdooIntegrations",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://integrationnode.com/gmail-odoo/favicon.png"
+            }
+        },
+        "datePublished": "2026-06-16T00:00:00+00:00",
+        "dateModified": "2026-06-16T00:00:00+00:00",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://integrationnode.com/gmail-odoo/de/blog/manage-odoo-contacts.html"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://integrationnode.com/gmail-odoo/de/blog/manage-odoo-contacts.html#faq",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Unternehmen oder Einzelperson: was sollte ich in Odoo wählen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Odoo 19 hat keinen expliziten Schalter Einzelperson/Unternehmen mehr im Datensatz (in den Versionen 14–18 gab es ihn als Optionsfeld). In der Praxis modellieren Sie eine Organisation als übergeordneten Kontakt und eine Person, indem Sie sie mit ihrem Unternehmen verknüpfen: Legen Sie zuerst das Unternehmen an und fügen Sie dann Personen als untergeordnete Kontakte über den Reiter Kontakte des Unternehmens hinzu, damit jede Person ihrer Organisation zugeordnet ist."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie führe ich doppelte Kontakte in Odoo zusammen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Öffnen Sie die Kontakte-App in der Listenansicht, haken Sie die zusammenzuführenden Kontakte an, öffnen Sie dann das Aktionen-Menü und wählen Sie Zusammenführen. Wählen Sie den zu erhaltenden Zielkontakt, prüfen Sie die Liste und klicken Sie auf Kontakte zusammenführen. Alle verknüpften Dokumente werden dem erhaltenen Kontakt neu zugeordnet. Die Schritte sind von v14 bis v19 dieselben."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie speichere ich eine E-Mail im Datensatz eines Kontakts?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Odoo bewahrt E-Mails im Chatter des Datensatzes auf, sofern sie dort protokolliert werden. Innerhalb von Odoo können Sie über den Chatter eine Nachricht senden oder protokollieren. Um E-Mails zu erfassen, die in Gmail liegen, installieren Sie Odoo Integration for Gmail: Die Erweiterung zeigt den Odoo-Datensatz neben Ihrem Postfach an und speichert die E-Mail mit einem Klick beim Kontakt, ohne Gmail zu verlassen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen einem Kontakt und einem Lead/einer Verkaufschance?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ein Kontakt (res.partner) ist ein stabiler Datensatz für eine Person oder ein Unternehmen, mit dem Sie zusammenarbeiten. Ein Lead oder eine Verkaufschance (im CRM) ist ein potenzielles Geschäft, das sich durch Ihre Pipeline bewegt und meist mit einem Kontakt verknüpft ist. Ein Kontakt kann mehrere Verkaufschancen erzeugen: Der Kontakt ist das beständige Datum, die Verkaufschance der vorübergehende Verkaufsprozess."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie importiere ich Kontakte, ohne Dubletten zu erzeugen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Laden Sie die Importvorlage von Odoo herunter, ordnen Sie die E-Mail-Spalte korrekt zu und nutzen Sie beim erneuten Import die Spalte externe ID, um bestehende Datensätze zu aktualisieren, statt sie zu duplizieren. Odoo hat kein einzelnes Anti-Dubletten-Kontrollkästchen: Lassen Sie nach einem großen Import das Zusammenführen-Werkzeug aus der Kontaktliste laufen, um zu bereinigen, was durchgerutscht ist."
+                }
+            }
+        ]
+    }
+]

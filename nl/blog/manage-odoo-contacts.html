@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YPS5MV3D6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0YPS5MV3D6');
+    </script>
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="nVghWS1eMCEwMEz5xTbG+Q" async></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maak, organiseer en schoon uw contacten op in Odoo: bedrijven vs individuen, dubbele records samenvoegen, labels en best practices. Voor Odoo 14 t/m 19.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://integrationnode.com/gmail-odoo/nl/blog/manage-odoo-contacts.html">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="es" href="https://integrationnode.com/gmail-odoo/es/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="fr" href="https://integrationnode.com/gmail-odoo/fr/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="de" href="https://integrationnode.com/gmail-odoo/de/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="it" href="https://integrationnode.com/gmail-odoo/it/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="pt" href="https://integrationnode.com/gmail-odoo/pt/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="nl" href="https://integrationnode.com/gmail-odoo/nl/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="pl" href="https://integrationnode.com/gmail-odoo/pl/blog/manage-odoo-contacts.html">
+    <link rel="alternate" hreflang="x-default" href="https://integrationnode.com/gmail-odoo/blog/manage-odoo-contacts.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://integrationnode.com/gmail-odoo/nl/blog/manage-odoo-contacts.html">
+    <meta property="og:title" content="Contacten beheren in Odoo: de praktische gids">
+    <meta property="og:description" content="Bedrijven vs individuen, dubbele records samenvoegen, labels en best practices voor schone, bruikbare Odoo-contacten.">
+    <meta property="og:image" content="https://integrationnode.com/gmail-odoo/assets/og-image.png">
+    <meta property="og:site_name" content="Odoo Integration for Gmail">
+    <meta property="article:published_time" content="2026-06-16">
+    <meta property="article:author" content="OdooIntegrations Team">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contacten beheren in Odoo: de praktische gids">
+    <meta name="twitter:description" content="De complete gids om uw Odoo-contacten te structureren, op te schonen en te benutten (v14 t/m 19).">
+    <meta name="twitter:image" content="https://integrationnode.com/gmail-odoo/assets/og-image.png">
+
+    <title>Contacten beheren in Odoo: de praktische gids</title>
+    <link rel="icon" type="image/png" href="https://integrationnode.com/gmail-odoo/favicon.png">
+    <link rel="stylesheet" href="https://integrationnode.com/gmail-odoo/fonts/outlined.css">
+    <link rel="stylesheet" href="https://integrationnode.com/gmail-odoo/style.css">
+
+    <!-- Schema.org Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Contacten beheren in Odoo: de praktische gids",
+        "description": "Maak, organiseer en schoon uw contacten op in Odoo: bedrijven vs individuen, dubbele records samenvoegen, labels en best practices. Voor Odoo 14 t/m 19.",
+        "image": "https://integrationnode.com/gmail-odoo/assets/og-image.png",
+        "author": {
+            "@type": "Organization",
+            "name": "OdooIntegrations Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "OdooIntegrations",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://integrationnode.com/gmail-odoo/favicon.png"
+            }
+        },
+        "datePublished": "2026-06-16T00:00:00+00:00",
+        "dateModified": "2026-06-16T00:00:00+00:00",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://integrationnode.com/gmail-odoo/nl/blog/manage-odoo-contacts.html"
+        }
+    }
+    </script>
+
+    <!-- Schema.org FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://integrationnode.com/gmail-odoo/nl/blog/manage-odoo-contacts.html#faq",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Bedrijf of individu: wat moet ik kiezen in Odoo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Odoo 19 heeft geen expliciete schakelaar Individu/Bedrijf meer op het record (in versies 14–18 bestond die als keuzerondje). In de praktijk modelleert u een organisatie als een contact op het hoogste niveau en een persoon door deze aan zijn bedrijf te koppelen: maak eerst het bedrijf aan en voeg daarna personen toe als onderliggende contacten via het tabblad Contacten van het bedrijf, zodat elke persoon gekoppeld is aan zijn organisatie."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Hoe voeg ik dubbele contacten samen in Odoo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Open de Contacten-app in lijstweergave, vink de samen te voegen contacten aan en open vervolgens het Acties-menu en kies Samenvoegen. Kies het te behouden doelcontact, controleer de lijst en klik op Contacten samenvoegen. Alle gekoppelde documenten worden opnieuw toegewezen aan het behouden contact. De stappen zijn hetzelfde van v14 t/m v19."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Hoe sla ik een e-mail op bij het record van een contact?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Odoo bewaart e-mails in de chatter van het record, zolang ze daar zijn vastgelegd. Binnen Odoo laat de chatter u een bericht versturen of vastleggen. Om e-mails vast te leggen die in Gmail leven, installeert u Odoo Integration for Gmail: de extensie toont het Odoo-record naast uw inbox en legt de e-mail in één klik vast bij het contact, zonder Gmail te verlaten."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wat is het verschil tussen een contact en een lead/kans?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Een contact (res.partner) is een stabiel record voor een persoon of bedrijf waarmee u werkt. Een lead of kans (in CRM) is een potentiële deal die door uw pijplijn beweegt, meestal gekoppeld aan een contact. Eén contact kan meerdere kansen genereren: het contact zijn de duurzame gegevens, de kans is het tijdelijke verkoopproces."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Hoe importeer ik contacten zonder dubbele records aan te maken?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Download het importsjabloon van Odoo, wijs de e-mailkolom correct toe en gebruik de kolom externe ID bij een herimport om bestaande records bij te werken in plaats van ze te dupliceren. Odoo heeft geen enkel anti-dubbel-vinkje: voer na een grote import de tool Samenvoegen uit vanuit de contactenlijst om op te ruimen wat erdoorheen is geglipt."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="pricing-header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../" class="logo">Odoo Integratie voor Gmail</a>
+                <div class="nav-links">
+                    <a href="../#features">Functies</a>
+                    <a href="../pricing.html">Prijzen</a>
+                    <a href="../user-guide.html">Handleiding</a>
+                    <a href="../blog.html" class="active">Blog</a>
+                    <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&amp;utm_medium=content&amp;utm_campaign=manage-odoo-contacts&amp;utm_content=navbar" target="_blank" class="btn btn-sm btn-primary">Extensie Downloaden</a>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">language</span>
+                            <span class="lang-current">NL</span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="lang-menu" role="menu"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Article Hero -->
+    <section class="article-hero">
+        <div class="container">
+            <a href="../blog.html" class="article-back">
+                <span class="material-symbols-outlined">arrow_back</span>
+                <span>Terug naar Blog</span>
+            </a>
+            <h1>Contacten beheren in Odoo: de praktische gids</h1>
+            <div class="article-meta">
+                <span class="article-date">16 juni 2026</span>
+                <span class="article-author">OdooIntegrations Team</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="article-section">
+        <div class="container">
+            <div class="article-content">
+                <!-- Intro -->
+                <p class="article-intro">Dubbele records, personen zonder bedrijf, factuuradressen die u niet kunt vinden: het beheer van uw Odoo-contacten (“odoo contacts”) komt vaak op de tweede plaats — totdat het uw verkoop vertraagt en uw CRM vertekent. Een schoon contactenbestand bespaart daarentegen het hele bedrijf tijd.</p>
+                <p>Deze gids gaat niet over “wat een contact is”. Hij laat stap voor stap zien hoe u uw contacten in Odoo structureert, opschoont en benut. De schermafbeeldingen zijn gemaakt in Odoo 19, maar de Contacten-app is stabiel: alles werkt van versie 14 tot en met 19, met een paar opmerkingen waar de interface afwijkt.</p>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/18-contacts-liste.png" alt="De contactenlijst in de Odoo Contacten-app" class="lightbox-img">
+                    <figcaption>De contactenlijst in de Odoo Contacten-app</figcaption>
+                </figure>
+
+                <!-- Section 1: Company vs individual -->
+                <h2>
+                    <span class="section-number">1</span>
+                    <span>Bedrijf vs individu: uw contacten structureren</span>
+                </h2>
+                <p>Eerst een punt dat specifiek is voor Odoo 19: het contactrecord toont geen expliciete schakelaar „Individu / Bedrijf” meer. Dat is een verandering ten opzichte van versies 14–18, waar u het type instelde met een keuzerondje bovenaan het record. In Odoo 19 wordt een contact dat in de Contacten-app wordt aangemaakt standaard als een bedrijf behandeld — u ziet een klein gebouwpictogram naast de naam.</p>
+                <p>Het is dus de hiërarchie — en geen schakelaar — die bedrijven van personen scheidt. De betrouwbare manier om een persoon toe te voegen vertrekt vanuit zijn organisatie: open het bedrijf, ga naar het tabblad Contacten en gebruik Verwante contacten toevoegen. Elke persoon is dan gekoppeld aan zijn bedrijf, en u vindt iedereen terug vanuit het record van het bedrijf. U kunt een bestaande persoon ook aan zijn werkgever koppelen via het veld Bedrijf op zijn record.</p>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/19-entreprise-particulier.png" alt="Een bedrijfsrecord in Odoo, met de gekoppelde contacten en labels" class="lightbox-img">
+                    <figcaption>Een bedrijfsrecord in Odoo, met de gekoppelde contacten en labels</figcaption>
+                </figure>
+                <p>Eén bedrijf kan meerdere adressen hebben. Wanneer u een onderliggend contact toevoegt, biedt Odoo vier adrestypes aan — kies het juiste, want dat is het adres dat automatisch wordt gebruikt op offertes, facturen en leveringsorders:</p>
+                <ul>
+                    <li>Contactadres: een persoon binnen de organisatie (verkoper, support, manager).</li>
+                    <li>Factuuradres: waar de facturen naartoe worden gestuurd.</li>
+                    <li>Afleveradres: waar de goederen worden geleverd.</li>
+                    <li>Ander: elk aanvullend adres (een tweede magazijn, enz.).</li>
+                </ul>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/20-contacts-enfants-adresses.png" alt="Odoo-dialoogvenster om een gekoppeld contact aan te maken, met de types Contactadres, Factuuradres, Afleveradres en Ander" class="lightbox-img">
+                    <figcaption>Odoo-dialoogvenster om een gekoppeld contact aan te maken, met de types Contactadres, Factuuradres, Afleveradres en Ander</figcaption>
+                </figure>
+
+                <!-- Section 2: Duplicates -->
+                <h2>
+                    <span class="section-number">2</span>
+                    <span>Dubbele records beheren: zo voegt u ze samen</span>
+                </h2>
+                <p>Dubbele records zijn het pijnlijkste probleem — en het minst goed uitgelegde. Twee records voor dezelfde klant, en uw historie splitst in tweeën: de helft van de e-mails hier, de helft van de orders daar.</p>
+                <p>Waar komen ze vandaan?</p>
+                <ul>
+                    <li>Leads en kansen die meerdere keren zijn omgezet.</li>
+                    <li>Formulieren op de website en winkelwagentjes.</li>
+                    <li>Herhaalde imports van spreadsheets.</li>
+                    <li>Binnenkomende e-mails die automatisch een contact aanmaken.</li>
+                </ul>
+                <p>Het goede nieuws: Odoo wordt geleverd met een tool om samen te voegen. Zo gaat het:</p>
+                <ol>
+                    <li>Open de Contacten-app in lijstweergave.</li>
+                    <li>Vink de contacten aan die u wilt samenvoegen (minstens twee).</li>
+                    <li>Open het Acties-menu en kies Samenvoegen.</li>
+                    <li>Kies het doelcontact (degene die behouden blijft), controleer de lijst en klik vervolgens op Contacten samenvoegen.</li>
+                </ol>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/21-fusion-doublons.png" alt="De wizard voor het samenvoegen van contacten in Odoo, met de selectie van het doelcontact" class="lightbox-img">
+                    <figcaption>De wizard voor het samenvoegen van contacten in Odoo, met de selectie van het doelcontact</figcaption>
+                </figure>
+                <p class="tip-box">Van versie 14 tot 18 zit de tool op dezelfde plek: selecteer records in lijstweergave en open dan het Actie(s)-menu. Het scherm is in v17-19 gemoderniseerd, maar het principe is identiek. Alle gekoppelde documenten (orders, facturen, e-mails, kansen) worden automatisch opnieuw toegewezen aan het behouden contact.</p>
+
+                <!-- Section 3: Tags -->
+                <h2>
+                    <span class="section-number">3</span>
+                    <span>Organiseren op schaal: labels en categorieën</span>
+                </h2>
+                <p>De bedrijf/persoon-hiërarchie beschrijft de structuur; labels beschrijven al de rest. Eén enkel contact kan meerdere labels dragen — “VIP”, “Reseller”, “Nieuwsbrief” — zonder de hiërarchie aan te raken.</p>
+                <p>U beheert de labellijst via Contacten ▸ Configuratie ▸ Contactlabels, met een kleur om ze in één oogopslag te herkennen.</p>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/22-etiquettes.png" alt="De lijst met contactlabels in Odoo, met naam, categorie en kleur" class="lightbox-img">
+                    <figcaption>De lijst met contactlabels in Odoo, met naam, categorie en kleur</figcaption>
+                </figure>
+                <p>Het doel is filteren en segmenteren: gebruik in lijstweergave Filters en Groeperen op om een label te isoleren en sla het filter daarna op als favoriet. In twee klikken krijgt u de lijst met al uw resellers, of alle klanten in één regio — klaar om opnieuw te gebruiken voor een e-mailcampagne of een export.</p>
+
+                <!-- Section 4: Chatter / follow-up -->
+                <h2>
+                    <span class="section-number">4</span>
+                    <span>Een contact opvolgen: chatter, activiteiten en historie</span>
+                </h2>
+                <p>Elk record heeft een chatter: de thread onderaan (of rechts) van het record. Daar legt u een interne notitie vast, plant u een activiteit (terugbellen, opvolgen) en volgt u de volledige historie — inclusief de uitgewisselde e-mails. Het is het levende “dossier” van het contact: alles wat er is gebeurd, op één plek.</p>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/23-chatter.png" alt="De chatter op een Odoo-contactrecord: berichten, notities en activiteiten" class="lightbox-img">
+                    <figcaption>De chatter op een Odoo-contactrecord: berichten, notities en activiteiten</figcaption>
+                </figure>
+                <p>
+                    <span>Het addertje onder het gras: die e-mails leven in Gmail en bereiken het record van het contact nooit, tenzij u ze handmatig vastlegt. U kunt ook</span>
+                    <a target="_blank" href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&utm_medium=content&utm_campaign=odoo_contacts_nl&utm_content=inline_mention">de e-mail in één klik opslaan op het record van het Odoo-contact, zonder Gmail te verlaten, met onze extensie.</a>
+                </p>
+
+                <!-- Section 5: Backbone of Odoo -->
+                <h2>
+                    <span class="section-number">5</span>
+                    <span>Het contact: de ruggengraat van Odoo</span>
+                </h2>
+                <p>Een contact staat nooit op zichzelf: het is het scharnierpunt dat CRM, Verkoop en Facturatie verbindt. Een kans, een offerte, een factuur, een ticket — ze verwijzen allemaal terug naar hetzelfde contactrecord.</p>
+                <p>Vandaar de eenvoudige regel: een volledig, schoon contact = een schone CRM. Elke minuut die u besteedt aan het structureren van uw contacten betaalt zich terug bij elke offerte en elke opvolging, want de hele keten steunt op deze gegevens.</p>
+
+                <!-- Section 6: Hygiene best practices -->
+                <h2>
+                    <span class="section-number">6</span>
+                    <span>Best practices voor hygiëne</span>
+                </h2>
+                <p>Een paar gewoontes houden uw database op termijn gezond:</p>
+                <ul>
+                    <li>Vul de e-mail en het land in: dat zijn de sleutelvelden voor deduplicatie en segmentatie.</li>
+                    <li>Koppel elke persoon aan zijn bedrijf (bovenliggende/onderliggende relatie).</li>
+                    <li>Gebruik het juiste adrestype (factuur, levering) in plaats van alles op één record te stapelen.</li>
+                    <li>Wijs bij het importeren de e-mailkolom zorgvuldig toe en gebruik de externe ID om bestaande records bij te werken in plaats van nieuwe aan te maken.</li>
+                    <li>Voer regelmatig de tool om samen te voegen uit om dubbele records die erdoorheen zijn geglipt op te ruimen.</li>
+                </ul>
+                <figure class="article-figure">
+                    <img src="https://integrationnode.com/gmail-odoo/assets/blog/24-import.png" alt="Het scherm voor het importeren van Odoo-contacten, met het te downloaden bestandssjabloon" class="lightbox-img">
+                    <figcaption>Het scherm voor het importeren van Odoo-contacten, met het te downloaden bestandssjabloon</figcaption>
+                </figure>
+
+                <!-- FAQ -->
+                <h2>
+                    <span class="section-number">7</span>
+                    <span>Veelgestelde vragen</span>
+                </h2>
+                <h3>Bedrijf of individu: wat moet ik kiezen in Odoo?</h3>
+                <p>Odoo 19 heeft geen expliciete schakelaar Individu/Bedrijf meer op het record (in versies 14–18 bestond die als keuzerondje). In de praktijk modelleert u een organisatie als een contact op het hoogste niveau en een persoon door deze aan zijn bedrijf te koppelen: maak eerst het bedrijf aan en voeg daarna personen toe als onderliggende contacten via het tabblad Contacten van het bedrijf, zodat elke persoon gekoppeld is aan zijn organisatie.</p>
+                <h3>Hoe voeg ik dubbele contacten samen in Odoo?</h3>
+                <p>Open de Contacten-app in lijstweergave, vink de samen te voegen contacten aan en open vervolgens het Acties-menu en kies Samenvoegen. Kies het te behouden doelcontact, controleer de lijst en klik op Contacten samenvoegen. Alle gekoppelde documenten worden opnieuw toegewezen aan het behouden contact. De stappen zijn hetzelfde van v14 t/m v19.</p>
+                <h3>Hoe sla ik een e-mail op bij het record van een contact?</h3>
+                <p>Odoo bewaart e-mails in de chatter van het record, zolang ze daar zijn vastgelegd. Binnen Odoo laat de chatter u een bericht versturen of vastleggen. Om e-mails vast te leggen die in Gmail leven, installeert u Odoo Integration for Gmail: de extensie toont het Odoo-record naast uw inbox en legt de e-mail in één klik vast bij het contact, zonder Gmail te verlaten.</p>
+                <h3>Wat is het verschil tussen een contact en een lead/kans?</h3>
+                <p>Een contact (res.partner) is een stabiel record voor een persoon of bedrijf waarmee u werkt. Een lead of kans (in CRM) is een potentiële deal die door uw pijplijn beweegt, meestal gekoppeld aan een contact. Eén contact kan meerdere kansen genereren: het contact zijn de duurzame gegevens, de kans is het tijdelijke verkoopproces.</p>
+                <h3>Hoe importeer ik contacten zonder dubbele records aan te maken?</h3>
+                <p>Download het importsjabloon van Odoo, wijs de e-mailkolom correct toe en gebruik de kolom externe ID bij een herimport om bestaande records bij te werken in plaats van ze te dupliceren. Odoo heeft geen enkel anti-dubbel-vinkje: voer na een grote import de tool Samenvoegen uit vanuit de contactenlijst om op te ruimen wat erdoorheen is geglipt.</p>
+
+                <!-- CTA -->
+                <div class="article-cta">
+                    <h3>Beheert u uw Odoo-contacten maar leeft u in Gmail?</h3>
+                    <p>Bekijk het record van het contact en sla uw e-mails in één klik op in Odoo — zonder van tabblad te wisselen.</p>
+                    <a target="_blank" class="btn btn-primary btn-lg" href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&utm_medium=content&utm_campaign=odoo_contacts_nl&utm_content=footer_cta">Installeer de extensie</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Odoo Integratie voor Gmail</h4>
+                    <p><span>Gebouwd door</span> <strong>OdooIntegrations Team</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Bronnen</h4>
+                    <ul>
+                        <li><a href="../">Home</a></li>
+                        <li><a href="../pricing.html">Prijzen</a></li>
+                        <li><a href="../user-guide.html">Handleiding</a></li>
+                        <li><a href="../changelog.html">Wijzigingslogboek</a></li>
+                        <li><a href="../comparison.html">Vergelijking</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../privacy.html">Privacybeleid</a></li>
+                        <li><a href="mailto:odoointegrations.team@gmail.com">Ondersteuning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Juridisch</h4>
+                    <p class="small-text">Niet gelieerd aan Odoo S.A. of Google LLC.</p>
+                    <p class="small-text">Odoo is een handelsmerk van Odoo S.A.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2025 IntegrationNode. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Figures & Lightbox -->
+    <style>
+    .article-figure {
+        margin: 20px 0; padding: 0;
+    }
+    .article-figure img {
+        max-width: 100%; border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        cursor: pointer;
+    }
+    .article-figure figcaption {
+        margin-top: 8px; font-size: 0.85em; color: #666;
+        text-align: center; font-style: italic;
+    }
+    .lightbox-overlay {
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0,0,0,0.85); z-index: 9999;
+        display: flex; align-items: center; justify-content: center;
+        cursor: pointer; animation: lbFadeIn 0.2s;
+    }
+    .lightbox-overlay img {
+        max-width: 92%; max-height: 92vh;
+        border-radius: 8px; box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+        animation: lbZoomIn 0.2s;
+    }
+    @keyframes lbFadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes lbZoomIn { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    </style>
+    <script>
+    document.querySelectorAll('.lightbox-img').forEach(function(img) {
+        img.addEventListener('click', function() {
+            var overlay = document.createElement('div');
+            overlay.className = 'lightbox-overlay';
+            var fullImg = document.createElement('img');
+            fullImg.src = img.src;
+            fullImg.alt = img.alt;
+            overlay.appendChild(fullImg);
+            overlay.addEventListener('click', function() { overlay.remove(); });
+            document.addEventListener('keydown', function handler(e) {
+                if (e.key === 'Escape') { overlay.remove(); document.removeEventListener('keydown', handler); }
+            });
+            document.body.appendChild(overlay);
+        });
+    });
+    </script>
+
+    <!-- Language Switcher Script -->
+    <script>
+    (function() {
+        var LANGUAGES = [
+            { code: 'en', name: 'English', path: '' },
+            { code: 'es', name: 'Español', path: 'es/' },
+            { code: 'fr', name: 'Français', path: 'fr/' },
+            { code: 'de', name: 'Deutsch', path: 'de/' },
+            { code: 'it', name: 'Italiano', path: 'it/' },
+            { code: 'pt', name: 'Português', path: 'pt/' },
+            { code: 'nl', name: 'Nederlands', path: 'nl/' },
+            { code: 'pl', name: 'Polski', path: 'pl/' }
+        ];
+
+        var dropdown = document.getElementById('lang-dropdown');
+        if (!dropdown) return;
+
+        var toggle = dropdown.querySelector('.lang-toggle');
+        var menu = dropdown.querySelector('.lang-menu');
+        var path = window.location.pathname;
+
+        // Get page path relative to language root (e.g., "blog/article.html")
+        var pathParts = path.split('/');
+        var page = '';
+        var isSubLang = false;
+
+        for (var i = 0; i < LANGUAGES.length; i++) {
+            var langPath = LANGUAGES[i].path;
+            if (langPath && path.includes('/' + langPath)) {
+                isSubLang = true;
+                // Get everything after the language folder
+                var langIndex = path.indexOf('/' + langPath);
+                page = path.substring(langIndex + langPath.length + 1);
+                break;
+            }
+        }
+
+        if (!isSubLang) {
+            // English (root) - get path after docs folder
+            var docsIndex = path.indexOf('odoo-integration-gmail-docs/');
+            if (docsIndex !== -1) {
+                page = path.substring(docsIndex + 'odoo-integration-gmail-docs/'.length);
+            } else {
+                page = pathParts.slice(-2).join('/');
+            }
+        }
+
+        if (!page || page === '') page = 'index.html';
+
+        var currentLang = LANGUAGES[0];
+        for (var i = 1; i < LANGUAGES.length; i++) {
+            if (path.includes('/' + LANGUAGES[i].path)) {
+                currentLang = LANGUAGES[i];
+                break;
+            }
+        }
+
+        LANGUAGES.forEach(function(lang) {
+            if (lang.code === currentLang.code) return;
+            var link = document.createElement('a');
+            // For nested pages, we need to go up two levels from /blog/article.html
+            if (currentLang.path) {
+                // From /es/blog/article.html to other langs
+                link.href = '../../' + lang.path + page;
+            } else {
+                // From /blog/article.html to other langs
+                link.href = '../' + lang.path + page;
+            }
+            link.textContent = lang.name;
+            link.setAttribute('role', 'menuitem');
+            link.setAttribute('data-lang', lang.code);
+            menu.appendChild(link);
+        });
+
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            dropdown.classList.toggle('open');
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                toggle.setAttribute('aria-expanded', 'false');
+                dropdown.classList.remove('open');
+            }
+        });
+    })();
+    </script>
+</body>
+</html>

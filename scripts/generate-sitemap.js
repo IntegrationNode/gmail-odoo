@@ -30,6 +30,7 @@ const PAGES = [
     { src: 'blog.html',                             urlPath: 'blog.html',                                 priority: '0.7', changefreq: 'weekly' },
     { src: 'blog/odoo-gmail-domain-configuration.html', urlPath: 'blog/odoo-gmail-domain-configuration.html', priority: '0.8', changefreq: 'monthly' },
     { src: 'blog/odoo-api-key-setup.html',          urlPath: 'blog/odoo-api-key-setup.html',              priority: '0.8', changefreq: 'monthly' },
+    { src: 'blog/manage-odoo-contacts.html',        urlPath: 'blog/manage-odoo-contacts.html',            priority: '0.8', changefreq: 'monthly' },
 ];
 
 const TODAY = new Date().toISOString().split('T')[0];

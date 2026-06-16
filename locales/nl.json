@@ -90,6 +90,15 @@
       "ogDescription": "Stapsgewijze handleiding voor het aanmaken van API-sleutels in Odoo 14 tot en met 19, met screenshots voor elke versie.",
       "twitterTitle": "Een API-sleutel Aanmaken in Odoo (Alle Versies)",
       "twitterDescription": "Stapsgewijze handleiding voor het aanmaken van API-sleutels in Odoo 14 tot en met 19, met screenshots voor elke versie."
+    },
+    "blogManageContacts": {
+      "title": "Contacten beheren in Odoo: de praktische gids",
+      "description": "Maak, organiseer en schoon uw contacten op in Odoo: bedrijven vs individuen, dubbele records samenvoegen, labels en best practices. Voor Odoo 14 t/m 19.",
+      "ogTitle": "Contacten beheren in Odoo: de praktische gids",
+      "ogDescription": "Bedrijven vs individuen, dubbele records samenvoegen, labels en best practices voor schone, bruikbare Odoo-contacten.",
+      "twitterTitle": "Contacten beheren in Odoo: de praktische gids",
+      "twitterDescription": "De complete gids om uw Odoo-contacten te structureren, op te schonen en te benutten (v14 t/m 19).",
+      "canonical": "https://integrationnode.com/gmail-odoo/nl/blog/manage-odoo-contacts.html"
     }
   },
   "userGuide": {
@@ -1429,6 +1438,11 @@
       "title": "Probeer Odoo Integratie voor Gmail",
       "subtitle": "Verbind uw Gmail met Odoo in seconden",
       "button": "Extensie Downloaden"
+    },
+    "article3": {
+      "title": "Contacten beheren in Odoo: de praktische gids",
+      "date": "Juni 2026",
+      "excerpt": "Bedrijven vs individuen, dubbele records samenvoegen, labels, chatter en best practices — de complete gids voor schone, bruikbare Odoo-contacten."
     }
   },
   "blogArticle": {
@@ -1597,6 +1611,92 @@
       "title": "Klaar om te verbinden?",
       "subtitle": "Nu u uw API-sleutel heeft, installeer de extensie en verbind uw Odoo-instantie met Gmail in seconden.",
       "button": "Extensie Downloaden"
+    }
+  },
+  "blogManageContacts": {
+    "title": "Contacten beheren in Odoo: de praktische gids",
+    "date": "16 juni 2026",
+    "intro": "Dubbele records, personen zonder bedrijf, factuuradressen die u niet kunt vinden: het beheer van uw Odoo-contacten (“odoo contacts”) komt vaak op de tweede plaats — totdat het uw verkoop vertraagt en uw CRM vertekent. Een schoon contactenbestand bespaart daarentegen het hele bedrijf tijd.",
+    "introP2": "Deze gids gaat niet over “wat een contact is”. Hij laat stap voor stap zien hoe u uw contacten in Odoo structureert, opschoont en benut. De schermafbeeldingen zijn gemaakt in Odoo 19, maar de Contacten-app is stabiel: alles werkt van versie 14 tot en met 19, met een paar opmerkingen waar de interface afwijkt.",
+    "introImgAlt": "De contactenlijst in de Odoo Contacten-app",
+    "s1": {
+      "title": "Bedrijf vs individu: uw contacten structureren",
+      "p1": "Eerst een punt dat specifiek is voor Odoo 19: het contactrecord toont geen expliciete schakelaar „Individu / Bedrijf” meer. Dat is een verandering ten opzichte van versies 14–18, waar u het type instelde met een keuzerondje bovenaan het record. In Odoo 19 wordt een contact dat in de Contacten-app wordt aangemaakt standaard als een bedrijf behandeld — u ziet een klein gebouwpictogram naast de naam.",
+      "p2": "Het is dus de hiërarchie — en geen schakelaar — die bedrijven van personen scheidt. De betrouwbare manier om een persoon toe te voegen vertrekt vanuit zijn organisatie: open het bedrijf, ga naar het tabblad Contacten en gebruik Verwante contacten toevoegen. Elke persoon is dan gekoppeld aan zijn bedrijf, en u vindt iedereen terug vanuit het record van het bedrijf. U kunt een bestaande persoon ook aan zijn werkgever koppelen via het veld Bedrijf op zijn record.",
+      "imgAltCompany": "Een bedrijfsrecord in Odoo, met de gekoppelde contacten en labels",
+      "p3": "Eén bedrijf kan meerdere adressen hebben. Wanneer u een onderliggend contact toevoegt, biedt Odoo vier adrestypes aan — kies het juiste, want dat is het adres dat automatisch wordt gebruikt op offertes, facturen en leveringsorders:",
+      "addrContact": "Contactadres: een persoon binnen de organisatie (verkoper, support, manager).",
+      "addrInvoice": "Factuuradres: waar de facturen naartoe worden gestuurd.",
+      "addrDelivery": "Afleveradres: waar de goederen worden geleverd.",
+      "addrOther": "Ander: elk aanvullend adres (een tweede magazijn, enz.).",
+      "imgAltAddr": "Odoo-dialoogvenster om een gekoppeld contact aan te maken, met de types Contactadres, Factuuradres, Afleveradres en Ander"
+    },
+    "s2": {
+      "title": "Dubbele records beheren: zo voegt u ze samen",
+      "p1": "Dubbele records zijn het pijnlijkste probleem — en het minst goed uitgelegde. Twee records voor dezelfde klant, en uw historie splitst in tweeën: de helft van de e-mails hier, de helft van de orders daar.",
+      "origins": "Waar komen ze vandaan?",
+      "origin1": "Leads en kansen die meerdere keren zijn omgezet.",
+      "origin2": "Formulieren op de website en winkelwagentjes.",
+      "origin3": "Herhaalde imports van spreadsheets.",
+      "origin4": "Binnenkomende e-mails die automatisch een contact aanmaken.",
+      "howTo": "Het goede nieuws: Odoo wordt geleverd met een tool om samen te voegen. Zo gaat het:",
+      "step1": "Open de Contacten-app in lijstweergave.",
+      "step2": "Vink de contacten aan die u wilt samenvoegen (minstens twee).",
+      "step3": "Open het Acties-menu en kies Samenvoegen.",
+      "step4": "Kies het doelcontact (degene die behouden blijft), controleer de lijst en klik vervolgens op Contacten samenvoegen.",
+      "imgAltMerge": "De wizard voor het samenvoegen van contacten in Odoo, met de selectie van het doelcontact",
+      "versionNote": "Van versie 14 tot 18 zit de tool op dezelfde plek: selecteer records in lijstweergave en open dan het Actie(s)-menu. Het scherm is in v17-19 gemoderniseerd, maar het principe is identiek. Alle gekoppelde documenten (orders, facturen, e-mails, kansen) worden automatisch opnieuw toegewezen aan het behouden contact."
+    },
+    "s3": {
+      "title": "Organiseren op schaal: labels en categorieën",
+      "p1": "De bedrijf/persoon-hiërarchie beschrijft de structuur; labels beschrijven al de rest. Eén enkel contact kan meerdere labels dragen — “VIP”, “Reseller”, “Nieuwsbrief” — zonder de hiërarchie aan te raken.",
+      "p2": "U beheert de labellijst via Contacten ▸ Configuratie ▸ Contactlabels, met een kleur om ze in één oogopslag te herkennen.",
+      "imgAltTags": "De lijst met contactlabels in Odoo, met naam, categorie en kleur",
+      "p3": "Het doel is filteren en segmenteren: gebruik in lijstweergave Filters en Groeperen op om een label te isoleren en sla het filter daarna op als favoriet. In twee klikken krijgt u de lijst met al uw resellers, of alle klanten in één regio — klaar om opnieuw te gebruiken voor een e-mailcampagne of een export."
+    },
+    "s4": {
+      "title": "Een contact opvolgen: chatter, activiteiten en historie",
+      "p1": "Elk record heeft een chatter: de thread onderaan (of rechts) van het record. Daar legt u een interne notitie vast, plant u een activiteit (terugbellen, opvolgen) en volgt u de volledige historie — inclusief de uitgewisselde e-mails. Het is het levende “dossier” van het contact: alles wat er is gebeurd, op één plek.",
+      "imgAltChatter": "De chatter op een Odoo-contactrecord: berichten, notities en activiteiten",
+      "mentionText": "Het addertje onder het gras: die e-mails leven in Gmail en bereiken het record van het contact nooit, tenzij u ze handmatig vastlegt. U kunt ook",
+      "mentionLink": "de e-mail in één klik opslaan op het record van het Odoo-contact, zonder Gmail te verlaten, met onze extensie."
+    },
+    "s5": {
+      "title": "Het contact: de ruggengraat van Odoo",
+      "p1": "Een contact staat nooit op zichzelf: het is het scharnierpunt dat CRM, Verkoop en Facturatie verbindt. Een kans, een offerte, een factuur, een ticket — ze verwijzen allemaal terug naar hetzelfde contactrecord.",
+      "p2": "Vandaar de eenvoudige regel: een volledig, schoon contact = een schone CRM. Elke minuut die u besteedt aan het structureren van uw contacten betaalt zich terug bij elke offerte en elke opvolging, want de hele keten steunt op deze gegevens."
+    },
+    "s6": {
+      "title": "Best practices voor hygiëne",
+      "p1": "Een paar gewoontes houden uw database op termijn gezond:",
+      "tip1": "Vul de e-mail en het land in: dat zijn de sleutelvelden voor deduplicatie en segmentatie.",
+      "tip2": "Koppel elke persoon aan zijn bedrijf (bovenliggende/onderliggende relatie).",
+      "tip3": "Gebruik het juiste adrestype (factuur, levering) in plaats van alles op één record te stapelen.",
+      "tip4": "Wijs bij het importeren de e-mailkolom zorgvuldig toe en gebruik de externe ID om bestaande records bij te werken in plaats van nieuwe aan te maken.",
+      "tip5": "Voer regelmatig de tool om samen te voegen uit om dubbele records die erdoorheen zijn geglipt op te ruimen.",
+      "imgAltImport": "Het scherm voor het importeren van Odoo-contacten, met het te downloaden bestandssjabloon"
+    },
+    "faq": {
+      "title": "Veelgestelde vragen",
+      "q1": "Bedrijf of individu: wat moet ik kiezen in Odoo?",
+      "a1": "Odoo 19 heeft geen expliciete schakelaar Individu/Bedrijf meer op het record (in versies 14–18 bestond die als keuzerondje). In de praktijk modelleert u een organisatie als een contact op het hoogste niveau en een persoon door deze aan zijn bedrijf te koppelen: maak eerst het bedrijf aan en voeg daarna personen toe als onderliggende contacten via het tabblad Contacten van het bedrijf, zodat elke persoon gekoppeld is aan zijn organisatie.",
+      "q2": "Hoe voeg ik dubbele contacten samen in Odoo?",
+      "a2": "Open de Contacten-app in lijstweergave, vink de samen te voegen contacten aan en open vervolgens het Acties-menu en kies Samenvoegen. Kies het te behouden doelcontact, controleer de lijst en klik op Contacten samenvoegen. Alle gekoppelde documenten worden opnieuw toegewezen aan het behouden contact. De stappen zijn hetzelfde van v14 t/m v19.",
+      "q3": "Hoe sla ik een e-mail op bij het record van een contact?",
+      "a3": "Odoo bewaart e-mails in de chatter van het record, zolang ze daar zijn vastgelegd. Binnen Odoo laat de chatter u een bericht versturen of vastleggen. Om e-mails vast te leggen die in Gmail leven, installeert u Odoo Integration for Gmail: de extensie toont het Odoo-record naast uw inbox en legt de e-mail in één klik vast bij het contact, zonder Gmail te verlaten.",
+      "q4": "Wat is het verschil tussen een contact en een lead/kans?",
+      "a4": "Een contact (res.partner) is een stabiel record voor een persoon of bedrijf waarmee u werkt. Een lead of kans (in CRM) is een potentiële deal die door uw pijplijn beweegt, meestal gekoppeld aan een contact. Eén contact kan meerdere kansen genereren: het contact zijn de duurzame gegevens, de kans is het tijdelijke verkoopproces.",
+      "q5": "Hoe importeer ik contacten zonder dubbele records aan te maken?",
+      "a5": "Download het importsjabloon van Odoo, wijs de e-mailkolom correct toe en gebruik de kolom externe ID bij een herimport om bestaande records bij te werken in plaats van ze te dupliceren. Odoo heeft geen enkel anti-dubbel-vinkje: voer na een grote import de tool Samenvoegen uit vanuit de contactenlijst om op te ruimen wat erdoorheen is geglipt."
+    },
+    "cta": {
+      "title": "Beheert u uw Odoo-contacten maar leeft u in Gmail?",
+      "subtitle": "Bekijk het record van het contact en sla uw e-mails in één klik op in Odoo — zonder van tabblad te wisselen.",
+      "button": "Installeer de extensie",
+      "url": "https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&utm_medium=content&utm_campaign=odoo_contacts_nl&utm_content=footer_cta"
+    },
+    "mention": {
+      "url": "https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&utm_medium=content&utm_campaign=odoo_contacts_nl&utm_content=inline_mention"
     }
   }
 }

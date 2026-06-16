@@ -1,0 +1,74 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Zarządzanie kontaktami w Odoo: praktyczny przewodnik",
+        "description": "Twórz, porządkuj i czyść kontakty w Odoo: firmy a osoby fizyczne, scalanie duplikatów, tagi i dobre praktyki. Działa w Odoo 14 do 19.",
+        "image": "https://integrationnode.com/gmail-odoo/assets/og-image.png",
+        "author": {
+            "@type": "Organization",
+            "name": "OdooIntegrations Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "OdooIntegrations",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://integrationnode.com/gmail-odoo/favicon.png"
+            }
+        },
+        "datePublished": "2026-06-16T00:00:00+00:00",
+        "dateModified": "2026-06-16T00:00:00+00:00",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://integrationnode.com/gmail-odoo/pl/blog/manage-odoo-contacts.html"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://integrationnode.com/gmail-odoo/pl/blog/manage-odoo-contacts.html#faq",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Firma czy osoba fizyczna: co wybrać w Odoo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Odoo 19 nie ma już jawnego przełącznika Osoba fizyczna/Firma na rekordzie (w wersjach 14–18 istniał jako przycisk opcji). W praktyce modeluj organizację jako kontakt najwyższego poziomu, a osobę powiązując ją z jej firmą: najpierw utwórz firmę, a potem dodaj osoby jako kontakty podrzędne z poziomu zakładki Kontakty firmy, aby każda osoba była powiązana ze swoją organizacją."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Jak scalić zdublowane kontakty w Odoo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Otwórz aplikację Kontakty w widoku listy, zaznacz kontakty do scalenia, a następnie otwórz menu Akcje i wybierz Scal. Wybierz kontakt docelowy do zachowania, sprawdź listę i kliknij Scal kontakty. Wszystkie powiązane dokumenty są przepisywane na zachowany kontakt. Kroki są takie same od v14 do v19."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Jak zapisać e-mail na rekordzie kontaktu?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Odoo przechowuje e-maile w chatterze rekordu, o ile zostaną tam zapisane. Wewnątrz Odoo chatter pozwala wysłać lub zalogować wiadomość. Aby przechwycić e-maile, które żyją w Gmailu, zainstaluj Odoo Integration for Gmail: rozszerzenie pokazuje rekord Odoo obok skrzynki odbiorczej i zapisuje e-mail na kontakcie jednym kliknięciem, bez opuszczania Gmaila."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Jaka jest różnica między kontaktem a sygnałem/szansą?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kontakt (res.partner) to stabilny rekord osoby lub firmy, z którą współpracujesz. Sygnał lub szansa (w CRM) to potencjalna transakcja przesuwająca się przez Twój lejek sprzedaży, zazwyczaj powiązana z kontaktem. Jeden kontakt może wygenerować kilka szans: kontakt to trwałe dane, a szansa to przejściowy proces sprzedaży."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Jak importować kontakty bez tworzenia duplikatów?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pobierz szablon importu Odoo, poprawnie zmapuj kolumnę e-mail i użyj kolumny identyfikator zewnętrzny (External ID) przy ponownym imporcie, aby aktualizować istniejące rekordy zamiast je dublować. Odoo nie ma jednego pola wyboru anty-duplikat: po dużym imporcie uruchom narzędzie Scal z listy kontaktów, aby oczyścić to, co się prześlizgnęło."
+                }
+            }
+        ]
+    }
+]
