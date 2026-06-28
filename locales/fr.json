@@ -532,6 +532,10 @@
     "userGuide": "Guide",
     "blog": "Blog",
     "getExtension": "Installer",
+    "brandHome": "IntegrationNode",
+    "productsLabel": "Produits",
+    "productGmail": "Intégration Gmail",
+    "productShopify": "Intégration Shopify",
     "currentLang": "FR"
   },
   "hero": {
@@ -1240,6 +1244,7 @@
     "legal": "Mentions légales",
     "notAffiliated": "Non affilié à Odoo S.A. ou Google LLC.",
     "odooTrademark": "Odoo est une marque déposée d'Odoo S.A.",
+    "moreIntegrations": "Plus d'intégrations",
     "copyright": "2025 IntegrationNode. Tous droits réservés."
   },
   "alternative": {
