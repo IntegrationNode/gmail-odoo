@@ -50,8 +50,8 @@
                 "ratingValue": "5",
                 "bestRating": "5",
                 "worstRating": "1",
-                "ratingCount": "1",
-                "reviewCount": "1"
+                "ratingCount": "2",
+                "reviewCount": "2"
             },
             "review": [
                 {
@@ -68,6 +68,25 @@
                     },
                     "datePublished": "2026-04-24",
                     "reviewBody": "Résout tellement de choses dans notre flux de travail très axé sur les emails.",
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Chrome Web Store"
+                    }
+                },
+                {
+                    "@type": "Review",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                    },
+                    "author": {
+                        "@type": "Person",
+                        "name": "Julian Rodriguez"
+                    },
+                    "datePublished": "2026-06-30",
+                    "reviewBody": "Depuis que j'ai découvert l'intégration Odoo - Gmail, je travaille de façon beaucoup plus confortable et agile, sans doublons, car je peux enregistrer les emails qui n'arrivent pas directement dans Odoo sans perdre de temps. Je suis très content de l'extension.",
                     "publisher": {
                         "@type": "Organization",
                         "name": "Chrome Web Store"
