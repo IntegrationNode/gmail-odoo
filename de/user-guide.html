@@ -240,6 +240,17 @@
                 </nav>
 
                 <div class="guide-main">
+                <!-- Quick Start Callout -->
+                <div class="info-box">
+                    <strong>Schnellstart (2 Minuten, kein API-Schlüssel)</strong>
+                    <ol>
+                        <li>Installieren Sie die Erweiterung und öffnen Sie Gmail.</li>
+                        <li>Melden Sie sich in Ihrem Odoo im selben Chrome-Browser an — die Erweiterung nutzt Ihre aktive Sitzung.</li>
+                        <li>Geben Sie Ihre Odoo-URL ein (z. B. https://ihrefirma.odoo.com — HTTPS, ohne Schrägstrich am Ende) und klicken Sie auf Verbinden.</li>
+                    </ol>
+                    <span>Öffnen Sie eine beliebige E-Mail und Ihr Odoo-Kontakt erscheint in der Seitenleiste. Das war's — kein API-Schlüssel, kein Code.</span>
+                </div>
+
                 <!-- Installation Section -->
                 <section id="installation" class="guide-section">
                     <h2><span class="material-symbols-outlined">download</span> <span>Installation</span></h2>
@@ -664,7 +675,7 @@
 
                     <h3>Known Limits</h3>
                     <ul>
-                        <li><strong>Not synced with the Odoo browser switcher</strong>: <span>The extension uses your API key, while the Odoo company switcher uses cookies. The two are independent — switching companies in your Odoo tab does not change the active company in Gmail and vice versa.</span></li>
+                        <li><strong>Not synced with the Odoo browser switcher</strong>: <span>The extension keeps its own active company and sends it with every request, while the Odoo company switcher uses your browser session. The two are independent — switching companies in your Odoo tab does not change the active company in Gmail and vice versa.</span></li>
                         <li><strong>Default company changed in Odoo</strong>: <span>If your administrator changes your default company in Odoo, the extension keeps using the previously cached value until you log out and log back in.</span></li>
                         <li><strong>One company at a time</strong>: <span>The selector is single-select: the sidebar shows records from one company at a time. To see records from another company, switch to it.</span></li>
                         <li><strong>Access error after creating a record</strong>: <span>When you create an opportunity, task, ticket or contact from the sidebar (or click "View in Odoo" on one), the extension opens the record in a new browser tab. Odoo loads it under whichever company is currently active in your Odoo browser session (the cookie session — see above). If that company differs from the one where the record was created, Odoo may show an access error. On the FREE plan, the extension always creates records in your default Odoo company — to see them, switch your Odoo browser tab to that same default. On the PLUS plan, keep the same company selected in both the sidebar selector and your Odoo browser tab. Odoo 18 and later automatically switch your active company when you open a record that belongs to another of your allowed companies, so this issue is mostly visible on Odoo 17 and earlier.</span></li>
@@ -685,12 +696,19 @@
                         <li><strong>E-Mail nicht in Odoo</strong>: <span>Klicken Sie auf "Kontakt erstellen", um ihn hinzuzufügen</span></li>
                         <li><strong>E-Mail-Schreibweisen-Unterschied</strong>: <span>Aktualisieren Sie die E-Mail in Odoo oder erstellen Sie einen neuen Kontakt</span></li>
                     </ul>
-                    <h3>"Authentifizierung fehlgeschlagen"-Fehler</h3>
+                    <h3>Die Seitenleiste ist leer oder nach dem Verbinden lädt nichts</h3>
+                    <p>Das liegt fast immer an der Anmeldesitzung, nicht an einem API-Schlüssel. Prüfen Sie der Reihe nach:</p>
                     <ol>
-                        <li>Überprüfen Sie, ob Ihr API-Schlüssel in Odoo → Einstellungen → Kontosicherheit korrekt ist</li>
-                        <li>Generieren Sie den API-Schlüssel bei Bedarf neu</li>
-                        <li>Überprüfen Sie, ob Ihre Odoo-URL korrekt ist (einschließlich HTTPS)</li>
+                        <li><strong>Sind Sie im selben Browser bei Odoo angemeldet?</strong><br><span>Öffnen Sie Ihre Odoo-URL in einem anderen Tab — wenn Sie zur Anmeldung aufgefordert werden, melden Sie sich an und laden Sie dann Gmail neu. Die Erweiterung nutzt diese Sitzung.</span></li>
+                        <li><strong>Ist die URL exakt?</strong><br><span>Verwenden Sie https://, die tatsächliche URL Ihrer Instanz und keinen Schrägstrich am Ende. Selbst gehostet: Verwenden Sie Ihre eigene Domain.</span></li>
+                        <li><strong>Öffnen Sie eine echte E-Mail, nicht die Posteingangsliste</strong><br><span>Die Kontaktkarte lädt nur in einer geöffneten E-Mail. Laden Sie danach Gmail neu (Cmd/Strg+Umschalt+R).</span></li>
                     </ol>
+                    <p><span>Kommen Sie nicht weiter? Antworten Sie auf Ihre Willkommens-E-Mail oder senden Sie uns einen Screenshot — wir antworten schnell:</span> <a href="mailto:odoointegrations.team@gmail.com">odoointegrations.team@gmail.com</a></p>
+                    <h3>„Sitzung abgelaufen“ oder Sie werden zur erneuten Verbindung aufgefordert</h3>
+                    <p>Ihre Odoo-Sitzung ist abgelaufen. Öffnen Sie einfach Odoo, melden Sie sich erneut an, und die Erweiterung verbindet sich wieder — mehr ist nicht zu tun.</p>
+                    <div class="info-box">
+                        <span>Ein optionaler API-Schlüssel kann als Ausweichlösung hinzugefügt werden, damit Hintergrundfunktionen weiterlaufen, wenn die Sitzung abläuft: Einstellungen → Konto → Verbindung.</span>
+                    </div>
                     <h3>Berechtigungs-Popup erscheint nicht (Self-Hosted Odoo)</h3>
                     <p>Bei der Verbindung mit einer selbst gehosteten Odoo-Instanz (benutzerdefinierte URL) benötigt Chrome zusätzliche Berechtigungen. Wenn das Berechtigungs-Popup nicht erscheint:</p>
                     <ol>
@@ -716,8 +734,12 @@
                         <p>Derzeit unterstützt die Erweiterung nur Google Chrome. Unterstützung für andere Browser könnte in Zukunft hinzugefügt werden.</p>
                     </div>
                     <div class="faq-item">
+                        <h4>F: Brauche ich einen API-Schlüssel?</h4>
+                        <p>Nein. Nur Ihre Odoo-URL und eine aktive Odoo-Sitzung im selben Browser. Ein API-Schlüssel ist optional — nur für die automatische Protokollierung im Hintergrund (PLUS) oder als Ausweichlösung, falls Ihre Sitzung abläuft.</p>
+                    </div>
+                    <div class="faq-item">
                         <h4>F: Sind meine Daten sicher?</h4>
-                        <p>Ja. Die Erweiterung greift nur auf E-Mails zu, die Sie aktiv anzeigen, und kommuniziert sicher mit Ihrer Odoo-Instanz über HTTPS. Ihr API-Schlüssel wird im sicheren Chrome-Speicher gespeichert.</p>
+                        <p>Ja. Die Erweiterung greift nur auf E-Mails zu, die Sie aktiv anzeigen, und kommuniziert über HTTPS sicher mit Ihrer Odoo-Instanz — mit Ihrer eigenen Odoo-Sitzung. Wenn Sie einen optionalen API-Schlüssel hinzufügen, wird er im sicheren Chrome-Speicher gespeichert.</p>
                     </div>
                     <h3>Abonnement</h3>
                     <div class="faq-item">
@@ -735,7 +757,7 @@
                     </div>
                     <div class="faq-item">
                         <h4>F: Wird mein API-Schlüssel sicher gespeichert?</h4>
-                        <p>Ja, Ihr API-Schlüssel wird im sicheren Chrome-Speicher (chrome.storage.sync) gespeichert, den Chrome mit den Anmeldedaten Ihres Betriebssystem-Benutzerkontos verschlüsselt.</p>
+                        <p>Ein API-Schlüssel ist optional — die meisten Nutzer verbinden sich mit ihrer Odoo-Sitzung und erstellen nie einen. Wenn Sie einen hinzufügen, wird er im sicheren Chrome-Speicher (chrome.storage.sync) gespeichert, den Chrome mit den Anmeldedaten Ihres Betriebssystem-Benutzerkontos verschlüsselt.</p>
                     </div>
                 </section>
 

@@ -240,6 +240,17 @@
                 </nav>
 
                 <div class="guide-main">
+                <!-- Quick Start Callout -->
+                <div class="info-box">
+                    <strong>Démarrage rapide (2 minutes, sans clé API)</strong>
+                    <ol>
+                        <li>Installez l'extension et ouvrez Gmail.</li>
+                        <li>Connectez-vous à votre Odoo dans le même navigateur Chrome — l'extension utilise votre session active.</li>
+                        <li>Saisissez votre URL Odoo (ex. https://votreentreprise.odoo.com — HTTPS, sans barre oblique finale) et cliquez sur Connecter.</li>
+                    </ol>
+                    <span>Ouvrez n'importe quel email et votre contact Odoo apparaît dans la barre latérale. C'est tout — pas de clé API, pas de code.</span>
+                </div>
+
                 <!-- Installation Section -->
                 <section id="installation" class="guide-section">
                     <h2><span class="material-symbols-outlined">download</span> <span>Installation</span></h2>
@@ -664,7 +675,7 @@
 
                     <h3>Known Limits</h3>
                     <ul>
-                        <li><strong>Not synced with the Odoo browser switcher</strong>: <span>The extension uses your API key, while the Odoo company switcher uses cookies. The two are independent — switching companies in your Odoo tab does not change the active company in Gmail and vice versa.</span></li>
+                        <li><strong>Not synced with the Odoo browser switcher</strong>: <span>The extension keeps its own active company and sends it with every request, while the Odoo company switcher uses your browser session. The two are independent — switching companies in your Odoo tab does not change the active company in Gmail and vice versa.</span></li>
                         <li><strong>Default company changed in Odoo</strong>: <span>If your administrator changes your default company in Odoo, the extension keeps using the previously cached value until you log out and log back in.</span></li>
                         <li><strong>One company at a time</strong>: <span>The selector is single-select: the sidebar shows records from one company at a time. To see records from another company, switch to it.</span></li>
                         <li><strong>Access error after creating a record</strong>: <span>When you create an opportunity, task, ticket or contact from the sidebar (or click "View in Odoo" on one), the extension opens the record in a new browser tab. Odoo loads it under whichever company is currently active in your Odoo browser session (the cookie session — see above). If that company differs from the one where the record was created, Odoo may show an access error. On the FREE plan, the extension always creates records in your default Odoo company — to see them, switch your Odoo browser tab to that same default. On the PLUS plan, keep the same company selected in both the sidebar selector and your Odoo browser tab. Odoo 18 and later automatically switch your active company when you open a record that belongs to another of your allowed companies, so this issue is mostly visible on Odoo 17 and earlier.</span></li>
@@ -685,12 +696,19 @@
                         <li><strong>Email non présent dans Odoo</strong>: <span>Cliquez sur "Créer un contact" pour l'ajouter</span></li>
                         <li><strong>Différence d'orthographe de l'email</strong>: <span>Mettez à jour l'email dans Odoo ou créez un nouveau contact</span></li>
                     </ul>
-                    <h3>Erreur "Échec de l'authentification"</h3>
+                    <h3>La barre latérale est vide ou rien ne se charge après la connexion</h3>
+                    <p>C'est presque toujours la session de connexion, pas une clé API. Vérifiez, dans l'ordre :</p>
                     <ol>
-                        <li>Vérifiez que votre clé API est correcte dans Odoo → Préférences → Sécurité du compte</li>
-                        <li>Régénérez la clé API si nécessaire</li>
-                        <li>Vérifiez que votre URL Odoo est correcte (incluant HTTPS)</li>
+                        <li><strong>Êtes-vous connecté à Odoo dans le même navigateur ?</strong><br><span>Ouvrez votre URL Odoo dans un autre onglet — si une connexion vous est demandée, connectez-vous, puis rechargez Gmail. L'extension utilise cette session.</span></li>
+                        <li><strong>L'URL est-elle exacte ?</strong><br><span>Utilisez https://, l'URL réelle de votre instance, et sans barre oblique finale. Auto-hébergé : utilisez votre domaine personnalisé.</span></li>
+                        <li><strong>Ouvrez un véritable email, pas la liste de la boîte de réception</strong><br><span>La fiche contact ne se charge que dans un email ouvert. Rechargez ensuite Gmail (Cmd/Ctrl+Shift+R).</span></li>
                     </ol>
+                    <p><span>Toujours bloqué ? Répondez à votre email de bienvenue ou envoyez-nous une capture d'écran — nous répondons vite :</span> <a href="mailto:odoointegrations.team@gmail.com">odoointegrations.team@gmail.com</a></p>
+                    <h3>« Session expirée » ou reconnexion demandée</h3>
+                    <p>Votre session Odoo a expiré. Ouvrez simplement Odoo, reconnectez-vous, et l'extension se reconnecte — rien d'autre à gérer.</p>
+                    <div class="info-box">
+                        <span>Une clé API facultative peut être ajoutée en secours pour que les fonctionnalités en arrière-plan continuent de fonctionner quand la session expire : Paramètres → Compte → Connexion.</span>
+                    </div>
                     <h3>Le popup de permissions n'apparaît pas (Odoo auto-hébergé)</h3>
                     <p>Lors de la connexion à une instance Odoo auto-hébergée (URL personnalisée), Chrome nécessite des permissions supplémentaires. Si le popup de permissions n'apparaît pas :</p>
                     <ol>
@@ -716,8 +734,12 @@
                         <p>Actuellement, l'extension ne supporte que Google Chrome. Le support d'autres navigateurs pourrait être ajouté à l'avenir.</p>
                     </div>
                     <div class="faq-item">
+                        <h4>Q : Ai-je besoin d'une clé API ?</h4>
+                        <p>Non. Seulement votre URL Odoo et une session Odoo active dans le même navigateur. Une clé API est facultative — uniquement pour l'enregistrement automatique en arrière-plan (PLUS) ou comme solution de secours si votre session expire.</p>
+                    </div>
+                    <div class="faq-item">
                         <h4>Q : Mes données sont-elles sécurisées ?</h4>
-                        <p>Oui. L'extension n'accède qu'aux emails que vous consultez activement et communique de manière sécurisée avec votre instance Odoo via HTTPS. Votre clé API est stockée dans le stockage sécurisé de Chrome.</p>
+                        <p>Oui. L'extension n'accède qu'aux emails que vous consultez activement et communique de manière sécurisée avec votre instance Odoo via HTTPS, en utilisant votre propre session Odoo. Si vous ajoutez une clé API facultative, elle est stockée dans le stockage sécurisé de Chrome.</p>
                     </div>
                     <h3>Abonnement</h3>
                     <div class="faq-item">
@@ -735,7 +757,7 @@
                     </div>
                     <div class="faq-item">
                         <h4>Q : Ma clé API est-elle stockée de manière sécurisée ?</h4>
-                        <p>Oui, votre clé API est stockée dans le stockage sécurisé de Chrome (chrome.storage.sync), que Chrome chiffre avec les identifiants de votre compte utilisateur OS.</p>
+                        <p>Une clé API est facultative — la plupart des utilisateurs se connectent avec leur session Odoo et n'en créent jamais. Si vous en ajoutez une, elle est stockée dans le stockage sécurisé de Chrome (chrome.storage.sync), que Chrome chiffre avec les identifiants de votre compte utilisateur OS.</p>
                     </div>
                 </section>
 

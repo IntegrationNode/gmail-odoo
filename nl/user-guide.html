@@ -240,6 +240,17 @@
                 </nav>
 
                 <div class="guide-main">
+                <!-- Quick Start Callout -->
+                <div class="info-box">
+                    <strong>Snelstart (2 minuten, geen API-sleutel)</strong>
+                    <ol>
+                        <li>Installeer de extensie en open Gmail.</li>
+                        <li>Log in op uw Odoo in dezelfde Chrome-browser — de extensie gebruikt uw actieve sessie.</li>
+                        <li>Voer uw Odoo-URL in (bijv. https://uwbedrijf.odoo.com — HTTPS, zonder slash aan het einde) en klik op Verbinden.</li>
+                    </ol>
+                    <span>Open een willekeurige e-mail en uw Odoo-contact verschijnt in de zijbalk. Dat is alles — geen API-sleutel, geen code.</span>
+                </div>
+
                 <!-- Installation Section -->
                 <section id="installation" class="guide-section">
                     <h2><span class="material-symbols-outlined">download</span> <span>Installatie</span></h2>
@@ -664,7 +675,7 @@
 
                     <h3>Known Limits</h3>
                     <ul>
-                        <li><strong>Not synced with the Odoo browser switcher</strong>: <span>The extension uses your API key, while the Odoo company switcher uses cookies. The two are independent — switching companies in your Odoo tab does not change the active company in Gmail and vice versa.</span></li>
+                        <li><strong>Not synced with the Odoo browser switcher</strong>: <span>The extension keeps its own active company and sends it with every request, while the Odoo company switcher uses your browser session. The two are independent — switching companies in your Odoo tab does not change the active company in Gmail and vice versa.</span></li>
                         <li><strong>Default company changed in Odoo</strong>: <span>If your administrator changes your default company in Odoo, the extension keeps using the previously cached value until you log out and log back in.</span></li>
                         <li><strong>One company at a time</strong>: <span>The selector is single-select: the sidebar shows records from one company at a time. To see records from another company, switch to it.</span></li>
                         <li><strong>Access error after creating a record</strong>: <span>When you create an opportunity, task, ticket or contact from the sidebar (or click "View in Odoo" on one), the extension opens the record in a new browser tab. Odoo loads it under whichever company is currently active in your Odoo browser session (the cookie session — see above). If that company differs from the one where the record was created, Odoo may show an access error. On the FREE plan, the extension always creates records in your default Odoo company — to see them, switch your Odoo browser tab to that same default. On the PLUS plan, keep the same company selected in both the sidebar selector and your Odoo browser tab. Odoo 18 and later automatically switch your active company when you open a record that belongs to another of your allowed companies, so this issue is mostly visible on Odoo 17 and earlier.</span></li>
@@ -685,12 +696,19 @@
                         <li><strong>E-mail niet in Odoo</strong>: <span>Klik op "Contact Aanmaken" om deze toe te voegen</span></li>
                         <li><strong>E-mail spelling komt niet overeen</strong>: <span>Werk de e-mail bij in Odoo of maak een nieuw contact aan</span></li>
                     </ul>
-                    <h3>"Authenticatie Mislukt" Fout</h3>
+                    <h3>De zijbalk is leeg of er laadt niets na het verbinden</h3>
+                    <p>Dit ligt bijna altijd aan de inlogsessie, niet aan een API-sleutel. Controleer, in volgorde:</p>
                     <ol>
-                        <li>Controleer of uw API-sleutel correct is in Odoo → Voorkeuren → Accountbeveiliging</li>
-                        <li>Genereer de API-sleutel opnieuw indien nodig</li>
-                        <li>Controleer of uw Odoo URL correct is (inclusief HTTPS)</li>
+                        <li><strong>Bent u in dezelfde browser ingelogd bij Odoo?</strong><br><span>Open uw Odoo-URL in een ander tabblad — als u wordt gevraagd in te loggen, log dan in en herlaad daarna Gmail. De extensie gebruikt die sessie.</span></li>
+                        <li><strong>Is de URL exact?</strong><br><span>Gebruik https://, de echte URL van uw instantie en geen slash aan het einde. Self-hosted: gebruik uw eigen domein.</span></li>
+                        <li><strong>Open een echte e-mail, niet de inboxlijst</strong><br><span>De contactkaart laadt alleen binnen een geopende e-mail. Herlaad daarna Gmail (Cmd/Ctrl+Shift+R).</span></li>
                     </ol>
+                    <p><span>Komt u er niet uit? Beantwoord uw welkomstmail of stuur ons een schermafbeelding — we reageren snel:</span> <a href="mailto:odoointegrations.team@gmail.com">odoointegrations.team@gmail.com</a></p>
+                    <h3>“Sessie verlopen” of u wordt gevraagd opnieuw te verbinden</h3>
+                    <p>Uw Odoo-sessie is verlopen. Open gewoon Odoo, log opnieuw in en de extensie verbindt opnieuw — verder niets te beheren.</p>
+                    <div class="info-box">
+                        <span>Een optionele API-sleutel kan als terugval worden toegevoegd, zodat achtergrondfuncties blijven werken als de sessie verloopt: Instellingen → Account → Verbinding.</span>
+                    </div>
                     <h3>Machtigingspopup verschijnt niet (Self-Hosted Odoo)</h3>
                     <p>Bij het verbinden met een zelf-gehoste Odoo-instantie (aangepaste URL) heeft Chrome extra machtigingen nodig. Als de machtigingspopup niet verschijnt:</p>
                     <ol>
@@ -716,8 +734,12 @@
                         <p>Momenteel ondersteunt de extensie alleen Google Chrome. Ondersteuning voor andere browsers kan in de toekomst worden toegevoegd.</p>
                     </div>
                     <div class="faq-item">
+                        <h4>V: Heb ik een API-sleutel nodig?</h4>
+                        <p>Nee. Alleen uw Odoo-URL en een actieve Odoo-sessie in dezelfde browser. Een API-sleutel is optioneel — alleen voor automatisch loggen op de achtergrond (PLUS) of als terugval als uw sessie verloopt.</p>
+                    </div>
+                    <div class="faq-item">
                         <h4>V: Zijn mijn gegevens veilig?</h4>
-                        <p>Ja. De extensie heeft alleen toegang tot e-mails die u actief bekijkt en communiceert veilig met uw Odoo-instantie via HTTPS. Uw API-sleutel wordt opgeslagen in Chrome's beveiligde opslag.</p>
+                        <p>Ja. De extensie heeft alleen toegang tot e-mails die u actief bekijkt en communiceert veilig via HTTPS met uw Odoo-instantie, met uw eigen Odoo-sessie. Als u een optionele API-sleutel toevoegt, wordt deze opgeslagen in Chrome's beveiligde opslag.</p>
                     </div>
                     <h3>Abonnement</h3>
                     <div class="faq-item">
@@ -735,7 +757,7 @@
                     </div>
                     <div class="faq-item">
                         <h4>V: Wordt mijn API-sleutel veilig opgeslagen?</h4>
-                        <p>Ja, uw API-sleutel wordt opgeslagen in Chrome's beveiligde opslag (chrome.storage.sync), die Chrome versleutelt met de inloggegevens van uw OS-gebruikersaccount.</p>
+                        <p>Een API-sleutel is optioneel — de meeste gebruikers verbinden met hun Odoo-sessie en maken er nooit een aan. Als u er een toevoegt, wordt deze opgeslagen in Chrome's beveiligde opslag (chrome.storage.sync), die Chrome versleutelt met de inloggegevens van uw OS-gebruikersaccount.</p>
                     </div>
                 </section>
 
