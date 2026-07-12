@@ -1117,6 +1117,12 @@
       "install": "Instalar Extensão",
       "viewPricing": "Ver Preços"
     },
+    "v0700": {
+      "notifCategories": "Navegue pelas notificações por módulo",
+      "notifCategoriesDesc": "O menu Odoo Notifications agora agrupa suas notificações em categorias — Oportunidades, Tarefas, Tickets, Faturas e mais — cada uma com sua contagem de não lidas.",
+      "sidebarAutoOpen": "Decida quando o painel abre",
+      "sidebarAutoOpenDesc": "Uma nova preferência nas Configurações permite impedir que o painel abra automaticamente a cada e-mail — abra-o manualmente apenas quando precisar."
+    },
     "v0602": {
       "odoo17Tasks": "Tarefas no Odoo 17",
       "odoo17TasksDesc": "Corrigido o erro que impedia o carregamento da secção Tarefas no Odoo 17.",

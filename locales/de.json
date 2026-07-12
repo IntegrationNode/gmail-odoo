@@ -1117,6 +1117,12 @@
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
     },
+    "v0700": {
+      "notifCategories": "Benachrichtigungen nach Modul durchsuchen",
+      "notifCategoriesDesc": "Das Menü Odoo Notifications gruppiert Ihre Benachrichtigungen jetzt in Kategorien – Verkaufschancen, Aufgaben, Tickets, Rechnungen und mehr – jeweils mit eigener Anzahl ungelesener Benachrichtigungen.",
+      "sidebarAutoOpen": "Entscheiden Sie, wann sich die Seitenleiste öffnet",
+      "sidebarAutoOpenDesc": "Eine neue Einstellung verhindert auf Wunsch, dass sich die Seitenleiste bei jeder E-Mail automatisch öffnet – öffnen Sie sie manuell, nur wenn Sie sie brauchen."
+    },
     "v0602": {
       "odoo17Tasks": "Aufgaben in Odoo 17",
       "odoo17TasksDesc": "Fehler behoben, durch den der Bereich Aufgaben in Odoo 17 nicht geladen wurde.",

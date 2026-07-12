@@ -1117,6 +1117,12 @@
       "install": "Installa Estensione",
       "viewPricing": "Vedi Prezzi"
     },
+    "v0700": {
+      "notifCategories": "Esplora le notifiche per modulo",
+      "notifCategoriesDesc": "Il menu Odoo Notifications ora raggruppa le notifiche in categorie — Opportunità, Attività, Ticket, Fatture e altro — ciascuna con il conteggio delle non lette.",
+      "sidebarAutoOpen": "Decidi quando si apre il pannello",
+      "sidebarAutoOpenDesc": "Una nuova preferenza nelle Impostazioni ti permette di impedire che il pannello si apra automaticamente a ogni email — aprilo manualmente solo quando ti serve."
+    },
     "v0602": {
       "odoo17Tasks": "Attività su Odoo 17",
       "odoo17TasksDesc": "Risolto l'errore che impediva il caricamento della sezione Attività su Odoo 17.",

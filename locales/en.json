@@ -1117,6 +1117,12 @@
       "install": "Install Extension",
       "viewPricing": "View Pricing"
     },
+    "v0700": {
+      "notifCategories": "Browse notifications by module",
+      "notifCategoriesDesc": "The Odoo Notifications menu now groups your notifications into categories — Opportunities, Tasks, Tickets, Invoices and more — each with its own unread count.",
+      "sidebarAutoOpen": "Decide when the sidebar opens",
+      "sidebarAutoOpenDesc": "A new preference in Settings lets you stop the sidebar from opening automatically on every email — open it manually only when you need it."
+    },
     "v0602": {
       "odoo17Tasks": "Tasks on Odoo 17",
       "odoo17TasksDesc": "Fixed the Tasks section failing to load on Odoo 17.",

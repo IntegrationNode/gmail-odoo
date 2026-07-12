@@ -1117,6 +1117,12 @@
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
     },
+    "v0700": {
+      "notifCategories": "Blader door meldingen per module",
+      "notifCategoriesDesc": "Het menu Odoo Notifications groepeert je meldingen nu in categorieën — Verkoopkansen, Taken, Tickets, Facturen en meer — elk met een eigen teller voor ongelezen meldingen.",
+      "sidebarAutoOpen": "Bepaal wanneer de zijbalk opent",
+      "sidebarAutoOpenDesc": "Met een nieuwe voorkeur in Instellingen voorkom je dat de zijbalk bij elke e-mail automatisch opent — open hem handmatig wanneer je hem nodig hebt."
+    },
     "v0602": {
       "odoo17Tasks": "Taken op Odoo 17",
       "odoo17TasksDesc": "Fout opgelost waardoor de sectie Taken niet laadde op Odoo 17.",

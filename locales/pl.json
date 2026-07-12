@@ -1117,6 +1117,12 @@
       "install": "Zainstaluj rozszerzenie",
       "viewPricing": "Zobacz cennik"
     },
+    "v0700": {
+      "notifCategories": "Przeglądaj powiadomienia według modułu",
+      "notifCategoriesDesc": "Menu Odoo Notifications grupuje teraz powiadomienia w kategorie — Szanse, Zadania, Zgłoszenia, Faktury i inne — każda z własnym licznikiem nieprzeczytanych.",
+      "sidebarAutoOpen": "Zdecyduj, kiedy otwiera się panel",
+      "sidebarAutoOpenDesc": "Nowa preferencja w Ustawieniach pozwala wyłączyć automatyczne otwieranie panelu przy każdej wiadomości — otwieraj go ręcznie tylko wtedy, gdy jest potrzebny."
+    },
     "v0602": {
       "odoo17Tasks": "Zadania w Odoo 17",
       "odoo17TasksDesc": "Naprawiono błąd uniemożliwiający wczytanie sekcji Zadania w Odoo 17.",
