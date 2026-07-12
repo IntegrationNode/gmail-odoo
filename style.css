@@ -741,7 +741,8 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 0.125rem;
-    margin-top: 0.25rem;
+    margin-top: auto;
+    padding-top: 0.25rem;
 }
 
 .testimonial-author {
