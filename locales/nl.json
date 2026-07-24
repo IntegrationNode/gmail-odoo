@@ -1134,6 +1134,10 @@
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
     },
+    "v0710": {
+      "createFeedback": "Aanmaakacties tonen nu voortgang",
+      "createFeedbackDesc": "Bij het aanmaken van een verkoopkans, taak of ticket wordt nu een verwerkingsstatus getoond, en snelle herhaalde klikken maken geen dubbele records meer aan in Odoo."
+    },
     "v0700": {
       "notifCategories": "Blader door meldingen per module",
       "notifCategoriesDesc": "Het menu Odoo Notifications groepeert je meldingen nu in categorieën — Verkoopkansen, Taken, Tickets, Facturen en meer — elk met een eigen teller voor ongelezen meldingen.",

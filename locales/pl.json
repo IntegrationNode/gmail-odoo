@@ -1134,6 +1134,10 @@
       "install": "Zainstaluj rozszerzenie",
       "viewPricing": "Zobacz cennik"
     },
+    "v0710": {
+      "createFeedback": "Akcje tworzenia pokazują teraz postęp",
+      "createFeedbackDesc": "Tworzenie szansy, zadania lub zgłoszenia pokazuje teraz stan przetwarzania, a szybkie powtarzane kliknięcia nie tworzą już zduplikowanych rekordów w Odoo."
+    },
     "v0700": {
       "notifCategories": "Przeglądaj powiadomienia według modułu",
       "notifCategoriesDesc": "Menu Odoo Notifications grupuje teraz powiadomienia w kategorie — Szanse, Zadania, Zgłoszenia, Faktury i inne — każda z własnym licznikiem nieprzeczytanych.",

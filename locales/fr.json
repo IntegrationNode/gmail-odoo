@@ -1134,6 +1134,10 @@
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
     },
+    "v0710": {
+      "createFeedback": "Les actions de création affichent désormais leur progression",
+      "createFeedbackDesc": "La création d'une opportunité, d'une tâche ou d'un ticket affiche maintenant un état de traitement, et les clics répétés rapides ne créent plus d'enregistrements en double dans Odoo."
+    },
     "v0700": {
       "notifCategories": "Parcourez vos notifications par module",
       "notifCategoriesDesc": "Le menu Odoo Notifications regroupe désormais vos notifications en catégories — Opportunités, Tâches, Tickets, Factures et plus — chacune avec son nombre de non lues.",

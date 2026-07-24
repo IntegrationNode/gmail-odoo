@@ -1134,6 +1134,10 @@
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
     },
+    "v0710": {
+      "createFeedback": "Erstellungsaktionen zeigen jetzt den Fortschritt",
+      "createFeedbackDesc": "Beim Erstellen einer Verkaufschance, Aufgabe oder eines Tickets wird jetzt ein Verarbeitungsstatus angezeigt, und schnelle wiederholte Klicks erzeugen keine doppelten Datensätze mehr in Odoo."
+    },
     "v0700": {
       "notifCategories": "Benachrichtigungen nach Modul durchsuchen",
       "notifCategoriesDesc": "Das Menü Odoo Notifications gruppiert Ihre Benachrichtigungen jetzt in Kategorien – Verkaufschancen, Aufgaben, Tickets, Rechnungen und mehr – jeweils mit eigener Anzahl ungelesener Benachrichtigungen.",

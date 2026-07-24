@@ -1134,6 +1134,10 @@
       "install": "Install Extension",
       "viewPricing": "View Pricing"
     },
+    "v0710": {
+      "createFeedback": "Create actions now show progress",
+      "createFeedbackDesc": "Creating an opportunity, task or ticket now shows a processing state, and rapid repeated clicks no longer create duplicate records in Odoo."
+    },
     "v0700": {
       "notifCategories": "Browse notifications by module",
       "notifCategoriesDesc": "The Odoo Notifications menu now groups your notifications into categories — Opportunities, Tasks, Tickets, Invoices and more — each with its own unread count.",
