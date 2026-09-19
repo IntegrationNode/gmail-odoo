@@ -118,6 +118,10 @@
     "title": "Integración de Odoo para Gmail",
     "subtitle": "Transforma tu Gmail en una potente interfaz CRM con integración perfecta con Odoo",
     "badge": "Conéctate en 30 segundos — solo la URL de tu Odoo. Sin clave API, sin código.",
+    "featured": {
+      "label": "Destacado en Chrome Web Store",
+      "tooltip": "Sigue las prácticas recomendadas para las extensiones de Chrome."
+    },
     "getExtension": "Obtener Extensión",
     "learnMore": "Saber Más"
   },

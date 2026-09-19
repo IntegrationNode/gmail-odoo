@@ -256,6 +256,47 @@ a:hover {
     flex-wrap: wrap;
 }
 
+/* Chrome Web Store "Featured" badge.
+   Factual statement about our own listing, drawn in the site's own visual
+   language — NOT a copy of Google's badge (only the "Available in the Chrome
+   Web Store" badge is a pre-approved brand asset). Always links to the listing. */
+.cws-featured {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: var(--spacing-sm);
+    padding: 0.4375rem 0.9375rem;
+    background: var(--color-bg-light);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-3xl);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--color-text-light);
+    text-decoration: none;
+    box-shadow: var(--shadow-xs);
+    transition: border-color var(--transition-base), box-shadow var(--transition-base), color var(--transition-base);
+}
+
+.cws-featured:hover,
+.cws-featured:focus-visible {
+    border-color: var(--color-primary);
+    color: var(--color-text);
+    box-shadow: var(--shadow-sm);
+}
+
+.cws-featured .material-symbols-outlined {
+    font-size: 1.125rem;
+    color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+    .cws-featured {
+        font-size: 0.8125rem;
+        padding: 0.375rem 0.8125rem;
+    }
+}
+
 /* Hero Image */
 .hero-image {
     margin-top: var(--spacing-lg);
