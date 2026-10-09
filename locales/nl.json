@@ -1248,6 +1248,16 @@
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
     },
+    "v0850": {
+      "settingsSave": "Gewijzigde instellingen blijven bewaard als je op Opslaan klikt",
+      "settingsSaveDesc": "Schakelaars zoals de zijbalk automatisch openen of auto-logging, gewijzigd voordat je in Personalisatie op Opslaan klikte, sprongen terug naar hun vorige waarde. Nu blijven ze zoals je ze hebt ingesteld.",
+      "sections": "Een korte verbindingsstoring verbergt je secties niet meer",
+      "sectionsDesc": "Een korte storing van het netwerk of van Odoo verborg je kansen, taken en tickets alsof je geen toegang had. Nu komen ze terug bij de volgende e-mail.",
+      "connectionErrors": "Verbindingsfouten zeggen wat er gebeurd is",
+      "connectionErrorsDesc": "Netwerk-, proxy- en firewallfouten verschenen als een interne Odoo-fout of een onverwacht antwoord. Nu zeggen ze wat er gebeurd is en wat je kunt controleren.",
+      "apiKey": "Je API key blijft bewaard bij fouten die er niets mee te maken hebben",
+      "apiKeyDesc": "De opgeslagen API key kon worden verwijderd als een proxy of een andere fout ertussen kwam. Nu wordt hij alleen verwijderd als Odoo hem echt weigert."
+    },
     "v0830": {
       "contactsMenu": "Actiemenu bij gerelateerde contacten",
       "contactsMenuDesc": "Elk gerelateerd contact heeft nu een eigen menu: openen in Odoo, mailen, bellen of het e-mailadres of telefoonnummer kopiëren. Met een concept open kies je ook of het contact naar het Aan-veld of naar CC gaat. Beschikbaar in het PLUS-abonnement.",

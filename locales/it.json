@@ -1248,6 +1248,16 @@
       "install": "Installa Estensione",
       "viewPricing": "Vedi Prezzi"
     },
+    "v0850": {
+      "settingsSave": "Le impostazioni modificate restano salvate quando fai clic su Salva",
+      "settingsSaveDesc": "Interruttori come l'apertura automatica della barra laterale o l'auto-logging, cambiati prima di fare clic su Salva in Personalizzazione, tornavano al valore precedente. Ora restano come li hai impostati.",
+      "sections": "Un breve problema di connessione non nasconde più le tue sezioni",
+      "sectionsDesc": "Una breve interruzione della rete o di Odoo nascondeva opportunità, attività e ticket come se non avessi i permessi. Ora ricompaiono con l'email successiva.",
+      "connectionErrors": "Gli errori di connessione dicono cosa è successo",
+      "connectionErrorsDesc": "Gli errori di rete, proxy o firewall comparivano come errore interno di Odoo o come risposta inattesa. Ora dicono cosa è successo e cosa controllare.",
+      "apiKey": "La tua chiave API resta salvata in caso di errori estranei",
+      "apiKeyDesc": "La chiave API salvata poteva essere eliminata quando si metteva in mezzo un proxy o un altro errore. Ora viene eliminata solo se Odoo la rifiuta davvero."
+    },
     "v0830": {
       "contactsMenu": "Menu di azioni sui contatti correlati",
       "contactsMenuDesc": "Ogni contatto correlato ha ora il proprio menu: aprirlo in Odoo, scrivergli, chiamarlo o copiare la sua email o il suo telefono. Con una bozza aperta puoi anche scegliere se il contatto va nel campo A o in copia. Disponibile nel piano PLUS.",

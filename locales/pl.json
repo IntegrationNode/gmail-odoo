@@ -1248,6 +1248,16 @@
       "install": "Zainstaluj rozszerzenie",
       "viewPricing": "Zobacz cennik"
     },
+    "v0850": {
+      "settingsSave": "Zmienione ustawienia zostają po kliknięciu Zapisz",
+      "settingsSaveDesc": "Przełączniki, takie jak automatyczne otwieranie panelu czy auto-logging, zmienione przed kliknięciem Zapisz w Personalizacji, wracały do poprzedniej wartości. Teraz zostają tak, jak je ustawisz.",
+      "sections": "Chwilowy problem z połączeniem nie ukrywa już Twoich sekcji",
+      "sectionsDesc": "Krótka przerwa w działaniu sieci lub Odoo ukrywała szanse sprzedaży, zadania i zgłoszenia, jak przy braku uprawnień. Teraz wracają przy następnej wiadomości.",
+      "connectionErrors": "Błędy połączenia mówią, co się stało",
+      "connectionErrorsDesc": "Błędy sieci, proxy lub zapory pojawiały się jako wewnętrzny błąd Odoo albo nieoczekiwana odpowiedź. Teraz mówią, co się stało i co sprawdzić.",
+      "apiKey": "Twój klucz API zostaje przy niezwiązanych błędach",
+      "apiKeyDesc": "Zapisany klucz API mógł zostać usunięty, gdy przeszkodził serwer proxy albo inny niezwiązany błąd. Teraz jest usuwany tylko wtedy, gdy Odoo naprawdę go odrzuci."
+    },
     "v0830": {
       "contactsMenu": "Menu akcji przy powiązanych kontaktach",
       "contactsMenuDesc": "Każdy powiązany kontakt ma teraz własne menu: otwórz go w Odoo, napisz do niego, zadzwoń lub skopiuj jego adres e-mail albo telefon. Przy otwartej wersji roboczej możesz też wybrać, czy kontakt trafi do pola Do, czy do DW. Dostępne w planie PLUS.",

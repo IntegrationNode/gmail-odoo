@@ -1248,6 +1248,16 @@
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
     },
+    "v0850": {
+      "settingsSave": "Geänderte Einstellungen bleiben beim Speichern erhalten",
+      "settingsSaveDesc": "Schalter wie „Seitenleiste automatisch öffnen“ oder Auto-logging, die vor dem Klick auf Speichern unter Personalisierung geändert wurden, sprangen auf ihren vorherigen Wert zurück. Jetzt bleiben sie so, wie Sie sie eingestellt haben.",
+      "sections": "Eine kurze Verbindungsstörung blendet Ihre Bereiche nicht mehr aus",
+      "sectionsDesc": "Eine kurze Netzwerk- oder Odoo-Störung blendete Ihre Chancen, Aufgaben und Tickets aus, als hätten Sie keine Berechtigung. Jetzt erscheinen sie bei der nächsten E-Mail wieder.",
+      "connectionErrors": "Verbindungsfehler sagen, was passiert ist",
+      "connectionErrorsDesc": "Netzwerk-, Proxy- und Firewall-Fehler erschienen als interner Odoo-Fehler oder als unerwartete Antwort. Jetzt sagen sie, was passiert ist und was Sie prüfen sollten.",
+      "apiKey": "Ihr API-Schlüssel bleibt bei fremden Fehlern erhalten",
+      "apiKeyDesc": "Der gespeicherte API-Schlüssel konnte gelöscht werden, wenn ein Proxy oder ein anderer Fehler dazwischenkam. Jetzt wird er nur gelöscht, wenn Odoo ihn tatsächlich ablehnt."
+    },
     "v0830": {
       "contactsMenu": "Aktionsmenü bei verwandten Kontakten",
       "contactsMenuDesc": "Jeder verwandte Kontakt hat jetzt sein eigenes Menü: in Odoo öffnen, ihm schreiben, ihn anrufen oder seine E-Mail-Adresse oder Telefonnummer kopieren. Bei einem offenen Entwurf wählen Sie außerdem, ob der Kontakt ins An-Feld oder in Kopie kommt. Im PLUS-Tarif verfügbar.",

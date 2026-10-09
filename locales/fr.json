@@ -1248,6 +1248,16 @@
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
     },
+    "v0850": {
+      "settingsSave": "Les paramètres modifiés sont conservés quand vous cliquez sur Enregistrer",
+      "settingsSaveDesc": "Des interrupteurs comme l'ouverture automatique du panneau latéral ou l'auto-logging, modifiés avant de cliquer sur Enregistrer dans Personnalisation, reprenaient leur valeur précédente. Ils restent désormais tels que vous les avez réglés.",
+      "sections": "Un bref souci de connexion ne masque plus vos sections",
+      "sectionsDesc": "Une courte coupure du réseau ou d'Odoo masquait vos opportunités, tâches et tickets comme si vous n'aviez pas l'autorisation. Ils réapparaissent désormais dès l'e-mail suivant.",
+      "connectionErrors": "Les erreurs de connexion disent ce qui s'est passé",
+      "connectionErrorsDesc": "Les erreurs de réseau, de proxy ou de pare-feu s'affichaient comme une erreur interne d'Odoo ou une réponse inattendue. Elles indiquent désormais ce qui s'est passé et quoi vérifier.",
+      "apiKey": "Votre clé API est conservée en cas d'erreur sans rapport",
+      "apiKeyDesc": "La clé API enregistrée pouvait être supprimée quand un proxy ou une autre erreur s'interposait. Elle n'est désormais supprimée que si Odoo la rejette réellement."
+    },
     "v0830": {
       "contactsMenu": "Menu d'actions sur les contacts associés",
       "contactsMenuDesc": "Chaque contact associé dispose désormais de son propre menu : l'ouvrir dans Odoo, lui écrire, l'appeler ou copier son e-mail ou son téléphone. Avec un brouillon ouvert, vous pouvez aussi choisir si le contact va dans le champ À ou en copie. Disponible avec le plan PLUS.",

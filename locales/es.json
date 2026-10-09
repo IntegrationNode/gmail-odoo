@@ -1248,6 +1248,16 @@
       "install": "Instalar Extensión",
       "viewPricing": "Ver Precios"
     },
+    "v0850": {
+      "settingsSave": "Los cambios de configuración se mantienen al hacer clic en Guardar",
+      "settingsSaveDesc": "Interruptores como abrir el panel automáticamente o el auto-logging, cambiados antes de hacer clic en Guardar en Personalización, volvían a su valor anterior. Ahora se quedan como los dejas.",
+      "sections": "Un fallo pasajero de conexión ya no oculta tus secciones",
+      "sectionsDesc": "Un corte breve de la red o de Odoo ocultaba tus oportunidades, tareas y tickets como si no tuvieras permiso. Ahora vuelven en el siguiente correo.",
+      "connectionErrors": "Los errores de conexión dicen qué pasó",
+      "connectionErrorsDesc": "Los errores de red, de proxy o de firewall aparecían como un error interno de Odoo o una respuesta inesperada. Ahora dicen qué pasó y qué revisar.",
+      "apiKey": "Tu clave API se conserva ante errores ajenos",
+      "apiKeyDesc": "La clave API guardada podía borrarse cuando se interponía un proxy u otro error sin relación. Ahora solo se borra si Odoo la rechaza de verdad."
+    },
     "v0830": {
       "contactsMenu": "Menú de acciones en los contactos relacionados",
       "contactsMenuDesc": "Cada contacto relacionado tiene ahora su propio menú: abrirlo en Odoo, escribirle, llamarle o copiar su correo o teléfono. Con una redacción abierta también puedes elegir si el contacto va al campo Para o a Copia. Disponible en el plan PLUS.",

@@ -1248,6 +1248,16 @@
       "install": "Install Extension",
       "viewPricing": "View Pricing"
     },
+    "v0850": {
+      "settingsSave": "Settings changes stick when you click Save",
+      "settingsSaveDesc": "Switches like opening the sidebar automatically or auto-logging, changed before clicking Save in Personalization, went back to their previous value. They now stay as you set them.",
+      "sections": "A connection hiccup no longer hides your sections",
+      "sectionsDesc": "A brief network or Odoo hiccup hid your opportunities, tasks and tickets as if you lacked permission. They now come back on the next email.",
+      "connectionErrors": "Connection errors say what happened",
+      "connectionErrorsDesc": "Network, proxy and firewall errors showed up as an internal Odoo error or an unexpected response. They now say what happened and what to check.",
+      "apiKey": "Your API key is kept on unrelated errors",
+      "apiKeyDesc": "The saved API key could be removed when a proxy or an unrelated error got in the way. Now it's only removed when Odoo actually rejects it."
+    },
     "v0830": {
       "contactsMenu": "Actions menu on related contacts",
       "contactsMenuDesc": "Each related contact now has its own menu: open it in Odoo, write to it, call it or copy its email or phone. With a draft open you can also choose whether the contact goes to the To field or to CC. Available on the PLUS plan.",
