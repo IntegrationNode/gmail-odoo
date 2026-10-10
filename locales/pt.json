@@ -1248,6 +1248,10 @@
       "install": "Instalar Extensão",
       "viewPricing": "Ver Preços"
     },
+    "v0860": {
+      "openTabs": "Funciona nas abas do Gmail que você já tinha abertas",
+      "openTabsDesc": "Se você instalar a extensão com o Gmail aberto, a barra lateral agora aparece na hora. Antes, ela só aparecia depois de recarregar a página."
+    },
     "v0850": {
       "settingsSave": "As configurações alteradas ficam salvas ao clicar em Salvar",
       "settingsSaveDesc": "Interruptores como abrir a barra lateral automaticamente ou o auto-logging, alterados antes de clicar em Salvar em Personalização, voltavam ao valor anterior. Agora ficam como você deixou.",

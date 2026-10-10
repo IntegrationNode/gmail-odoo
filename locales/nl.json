@@ -1248,6 +1248,10 @@
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
     },
+    "v0860": {
+      "openTabs": "Werkt in Gmail-tabbladen die al open stonden",
+      "openTabsDesc": "Als je de extensie installeert terwijl Gmail open is, verschijnt de zijbalk nu meteen. Voorheen kwam hij pas tevoorschijn nadat je de pagina had herladen."
+    },
     "v0850": {
       "settingsSave": "Gewijzigde instellingen blijven bewaard als je op Opslaan klikt",
       "settingsSaveDesc": "Schakelaars zoals de zijbalk automatisch openen of auto-logging, gewijzigd voordat je in Personalisatie op Opslaan klikte, sprongen terug naar hun vorige waarde. Nu blijven ze zoals je ze hebt ingesteld.",

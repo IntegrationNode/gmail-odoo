@@ -1248,6 +1248,10 @@
       "install": "Install Extension",
       "viewPricing": "View Pricing"
     },
+    "v0860": {
+      "openTabs": "Works in the Gmail tabs you already had open",
+      "openTabsDesc": "When you install the extension with Gmail open, the sidebar now appears right away. Before, it only showed up after reloading the page."
+    },
     "v0850": {
       "settingsSave": "Settings changes stick when you click Save",
       "settingsSaveDesc": "Switches like opening the sidebar automatically or auto-logging, changed before clicking Save in Personalization, went back to their previous value. They now stay as you set them.",

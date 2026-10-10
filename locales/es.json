@@ -1248,6 +1248,10 @@
       "install": "Instalar Extensión",
       "viewPricing": "Ver Precios"
     },
+    "v0860": {
+      "openTabs": "Funciona en las pestañas de Gmail que ya tenías abiertas",
+      "openTabsDesc": "Si instalas la extensión con Gmail abierto, el panel aparece al momento. Antes solo salía después de recargar la página."
+    },
     "v0850": {
       "settingsSave": "Los cambios de configuración se mantienen al hacer clic en Guardar",
       "settingsSaveDesc": "Interruptores como abrir el panel automáticamente o el auto-logging, cambiados antes de hacer clic en Guardar en Personalización, volvían a su valor anterior. Ahora se quedan como los dejas.",

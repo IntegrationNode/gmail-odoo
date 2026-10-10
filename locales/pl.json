@@ -1248,6 +1248,10 @@
       "install": "Zainstaluj rozszerzenie",
       "viewPricing": "Zobacz cennik"
     },
+    "v0860": {
+      "openTabs": "Działa w kartach Gmaila, które były już otwarte",
+      "openTabsDesc": "Jeśli zainstalujesz rozszerzenie przy otwartym Gmailu, panel pojawi się od razu. Wcześniej pokazywał się dopiero po odświeżeniu strony."
+    },
     "v0850": {
       "settingsSave": "Zmienione ustawienia zostają po kliknięciu Zapisz",
       "settingsSaveDesc": "Przełączniki, takie jak automatyczne otwieranie panelu czy auto-logging, zmienione przed kliknięciem Zapisz w Personalizacji, wracały do poprzedniej wartości. Teraz zostają tak, jak je ustawisz.",

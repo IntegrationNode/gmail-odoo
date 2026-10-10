@@ -1248,6 +1248,10 @@
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
     },
+    "v0860": {
+      "openTabs": "Fonctionne dans les onglets Gmail déjà ouverts",
+      "openTabsDesc": "Si vous installez l'extension avec Gmail ouvert, le panneau latéral apparaît tout de suite. Avant, il ne s'affichait qu'après avoir rechargé la page."
+    },
     "v0850": {
       "settingsSave": "Les paramètres modifiés sont conservés quand vous cliquez sur Enregistrer",
       "settingsSaveDesc": "Des interrupteurs comme l'ouverture automatique du panneau latéral ou l'auto-logging, modifiés avant de cliquer sur Enregistrer dans Personnalisation, reprenaient leur valeur précédente. Ils restent désormais tels que vous les avez réglés.",

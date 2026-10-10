@@ -1248,6 +1248,10 @@
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
     },
+    "v0860": {
+      "openTabs": "Funktioniert in bereits geöffneten Gmail-Tabs",
+      "openTabsDesc": "Wenn Sie die Erweiterung bei geöffnetem Gmail installieren, erscheint die Seitenleiste jetzt sofort. Bisher war sie erst nach dem Neuladen der Seite zu sehen."
+    },
     "v0850": {
       "settingsSave": "Geänderte Einstellungen bleiben beim Speichern erhalten",
       "settingsSaveDesc": "Schalter wie „Seitenleiste automatisch öffnen“ oder Auto-logging, die vor dem Klick auf Speichern unter Personalisierung geändert wurden, sprangen auf ihren vorherigen Wert zurück. Jetzt bleiben sie so, wie Sie sie eingestellt haben.",
