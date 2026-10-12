@@ -1248,6 +1248,10 @@
       "install": "Instalar Extensión",
       "viewPricing": "Ver Precios"
     },
+    "v0870": {
+      "updateNotice": "Las pestañas de Gmail abiertas te avisan de recargar tras una actualización",
+      "updateNoticeDesc": "Cuando la extensión se actualizaba con Gmail abierto, el panel dejaba de funcionar sin ninguna explicación hasta recargar la página. Ahora muestra un aviso con un botón para recargar Gmail."
+    },
     "v0860": {
       "openTabs": "Funciona en las pestañas de Gmail que ya tenías abiertas",
       "openTabsDesc": "Si instalas la extensión con Gmail abierto, el panel aparece al momento. Antes solo salía después de recargar la página."

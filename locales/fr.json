@@ -1248,6 +1248,10 @@
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
     },
+    "v0870": {
+      "updateNotice": "Les onglets Gmail ouverts vous invitent à recharger après une mise à jour",
+      "updateNoticeDesc": "Quand l'extension se mettait à jour avec Gmail ouvert, le panneau latéral cessait de fonctionner sans explication jusqu'au rechargement de la page. Il affiche désormais un message avec un bouton pour recharger Gmail."
+    },
     "v0860": {
       "openTabs": "Fonctionne dans les onglets Gmail déjà ouverts",
       "openTabsDesc": "Si vous installez l'extension avec Gmail ouvert, le panneau latéral apparaît tout de suite. Avant, il ne s'affichait qu'après avoir rechargé la page."

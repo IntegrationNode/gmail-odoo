@@ -1248,6 +1248,10 @@
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
     },
+    "v0870": {
+      "updateNotice": "Open Gmail-tabbladen vragen je te herladen na een update",
+      "updateNoticeDesc": "Als de extensie werd bijgewerkt terwijl Gmail open was, werkte de zijbalk zonder uitleg niet meer totdat je de pagina herlaadde. Nu verschijnt er een melding met een knop om Gmail te herladen."
+    },
     "v0860": {
       "openTabs": "Werkt in Gmail-tabbladen die al open stonden",
       "openTabsDesc": "Als je de extensie installeert terwijl Gmail open is, verschijnt de zijbalk nu meteen. Voorheen kwam hij pas tevoorschijn nadat je de pagina had herladen."

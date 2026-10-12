@@ -1248,6 +1248,10 @@
       "install": "Install Extension",
       "viewPricing": "View Pricing"
     },
+    "v0870": {
+      "updateNotice": "Open Gmail tabs tell you to reload after an update",
+      "updateNoticeDesc": "When the extension updated while Gmail was open, the sidebar stopped working with no explanation until you reloaded the page. It now shows a notice with a button to reload Gmail."
+    },
     "v0860": {
       "openTabs": "Works in the Gmail tabs you already had open",
       "openTabsDesc": "When you install the extension with Gmail open, the sidebar now appears right away. Before, it only showed up after reloading the page."
