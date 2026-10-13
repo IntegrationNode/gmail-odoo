@@ -59,8 +59,8 @@
     <main class="uninstall-page">
         <div class="container">
             <div class="uninstall-card">
-                <h1>Sorry to see you go</h1>
-                <p class="intro">A few quick questions help us make Odoo Integration for Gmail better. It takes less than a minute.</p>
+                <h1 data-i18n="heading">Sorry to see you go</h1>
+                <p class="intro" data-i18n="intro">A few quick questions help us make Odoo Integration for Gmail better. It takes less than a minute.</p>
 
                 <noscript>
                     <p>JavaScript is off — <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRhLcliEjGmyu1XCWht0AqP-7ykj7nONW_CVpNm6DV-SRK9Q/viewform">you can answer the survey here</a>.</p>
@@ -68,34 +68,34 @@
 
                 <form id="survey" novalidate hidden>
                     <fieldset id="reasons" aria-describedby="reasons-error">
-                        <legend>Why did you uninstall? <span class="required" aria-hidden="true">*</span><span class="sr-only"> (required)</span></legend>
+                        <legend><span data-i18n="why">Why did you uninstall?</span> <span class="required" aria-hidden="true">*</span> <span class="sr-only" data-i18n="required">(required)</span></legend>
                         <div id="reason-options"></div>
                         <label class="option">
                             <input type="checkbox" name="reason" value="__other_option__" id="reason-other">
-                            <span>Other:</span>
+                            <span data-i18n="other">Other:</span>
                         </label>
-                        <input type="text" class="other-text" id="reason-other-text" aria-label="Other reason" aria-describedby="reason-other-error" maxlength="500">
+                        <input type="text" class="other-text" id="reason-other-text" aria-label="Other reason" data-i18n-aria="otherAria" aria-describedby="reason-other-error" maxlength="500">
                         <p class="error" id="reason-other-error" hidden></p>
                         <p class="error" id="reasons-error" hidden></p>
                     </fieldset>
 
                     <div class="field">
-                        <label for="improve">What could we improve? <span class="required" aria-hidden="true">*</span></label>
+                        <label for="improve"><span data-i18n="improve">What could we improve?</span> <span class="required" aria-hidden="true">*</span></label>
                         <textarea id="improve" name="improve" required aria-describedby="improve-error" maxlength="2000"></textarea>
                         <p class="error" id="improve-error" hidden></p>
                     </div>
 
                     <div class="field" id="odoo-version-field" hidden>
-                        <label for="odoo-version">What is your Odoo version?</label>
-                        <input type="text" id="odoo-version" name="odoo-version" maxlength="40" placeholder="e.g. 17.0 Enterprise">
+                        <label for="odoo-version" data-i18n="odooVersion">What is your Odoo version?</label>
+                        <input type="text" id="odoo-version" name="odoo-version" maxlength="40" placeholder="e.g. 17.0 Enterprise" data-i18n-placeholder="odooPlaceholder">
                     </div>
 
                     <fieldset id="usage-field" hidden>
-                        <legend>How long did you use the extension?</legend>
+                        <legend data-i18n="usage">How long did you use the extension?</legend>
                         <div id="usage-options"></div>
                     </fieldset>
 
-                    <button type="submit" class="btn btn-primary" id="send">Send</button>
+                    <button type="submit" class="btn btn-primary" id="send" data-i18n="send">Send</button>
                     <p class="status" id="status" role="status" aria-live="polite"></p>
                 </form>
             </div>
@@ -200,6 +200,147 @@
 
         var EDITION = { e: 'enterprise', c: 'community' };
 
+        // ---------- Idioma (FR-011) ----------
+        // Se traduce lo que se ve. Lo que se envía al Form son siempre los textos en inglés
+        // de REASONS y USAGE: un carácter distinto rompe el envío sin aviso.
+        var I18N = {
+            en: {
+                title: 'Odoo Integration for Gmail — Uninstall',
+                heading: 'Sorry to see you go',
+                intro: 'A few quick questions help us make Odoo Integration for Gmail better. It takes less than a minute.',
+                why: 'Why did you uninstall?', required: '(required)',
+                reasons: { bugs: "It doesn't work properly / has bugs", expensive: "It's too expensive", missing_features: 'Missing features I need', setup: 'Too difficult to set up or configure', slow: 'It slows down Gmail', trying: 'I was just trying it out', privacy: 'Privacy or security concerns' },
+                other: 'Other:', otherAria: 'Other reason',
+                improve: 'What could we improve?',
+                odooVersion: 'What is your Odoo version?', odooPlaceholder: 'e.g. 17.0 Enterprise',
+                usage: 'How long did you use the extension?',
+                usageOptions: ['Less than a day', 'Less than a week', '1–4 weeks', '1–3 months', 'More than 3 months'],
+                send: 'Send', sending: 'Sending…',
+                errReason: 'Please choose at least one reason.', errOther: 'Please tell us the other reason.', errImprove: 'Please tell us what we could improve.',
+                thanks: 'Thanks — your answers were sent.', netError: "Couldn't send. Check your connection and try again."
+            },
+            es: {
+                title: 'Odoo Integration for Gmail — Desinstalación',
+                heading: 'Lamentamos que te vayas',
+                intro: 'Unas preguntas rápidas nos ayudan a mejorar Odoo Integration for Gmail. Te llevará menos de un minuto.',
+                why: '¿Por qué desinstalaste la extensión?', required: '(obligatoria)',
+                reasons: { bugs: 'No funciona bien / tiene errores', expensive: 'Es demasiado cara', missing_features: 'Le faltan funciones que necesito', setup: 'Es muy difícil de instalar o configurar', slow: 'Hace que Gmail vaya lento', trying: 'Solo la estaba probando', privacy: 'Me preocupa la privacidad o la seguridad' },
+                other: 'Otro:', otherAria: 'Otro motivo',
+                improve: '¿Qué podríamos mejorar?',
+                odooVersion: '¿Qué versión de Odoo usas?', odooPlaceholder: 'p. ej., 17.0 Enterprise',
+                usage: '¿Cuánto tiempo usaste la extensión?',
+                usageOptions: ['Menos de un día', 'Menos de una semana', '1–4 semanas', '1–3 meses', 'Más de 3 meses'],
+                send: 'Enviar', sending: 'Enviando…',
+                errReason: 'Elige al menos un motivo.', errOther: 'Cuéntanos cuál es el otro motivo.', errImprove: 'Cuéntanos qué podríamos mejorar.',
+                thanks: 'Gracias, ya recibimos tus respuestas.', netError: 'No se pudo enviar. Revisa tu conexión y vuelve a intentarlo.'
+            },
+            fr: {
+                title: 'Odoo Integration for Gmail — Désinstallation',
+                heading: 'Désolés de vous voir partir',
+                intro: "Quelques questions rapides nous aident à améliorer Odoo Integration for Gmail. Cela prend moins d'une minute.",
+                why: "Pourquoi avez-vous désinstallé l'extension ?", required: '(obligatoire)',
+                reasons: { bugs: 'Elle ne fonctionne pas correctement / a des bugs', expensive: 'Elle est trop chère', missing_features: "Il manque des fonctionnalités dont j'ai besoin", setup: 'Trop difficile à installer ou à configurer', slow: 'Elle ralentit Gmail', trying: "Je voulais juste l'essayer", privacy: 'Inquiétudes concernant la confidentialité ou la sécurité' },
+                other: 'Autre :', otherAria: 'Autre raison',
+                improve: 'Que pourrions-nous améliorer ?',
+                odooVersion: "Quelle version d'Odoo utilisez-vous ?", odooPlaceholder: 'ex. 17.0 Enterprise',
+                usage: "Combien de temps avez-vous utilisé l'extension ?",
+                usageOptions: ["Moins d'un jour", "Moins d'une semaine", '1 à 4 semaines', '1 à 3 mois', 'Plus de 3 mois'],
+                send: 'Envoyer', sending: 'Envoi…',
+                errReason: 'Veuillez choisir au moins une raison.', errOther: "Veuillez préciser l'autre raison.", errImprove: 'Dites-nous ce que nous pourrions améliorer.',
+                thanks: 'Merci, vos réponses ont bien été envoyées.', netError: 'Envoi impossible. Vérifiez votre connexion et réessayez.'
+            },
+            de: {
+                title: 'Odoo Integration for Gmail — Deinstallation',
+                heading: 'Schade, dass Sie gehen',
+                intro: 'Ein paar kurze Fragen helfen uns, Odoo Integration for Gmail zu verbessern. Es dauert weniger als eine Minute.',
+                why: 'Warum haben Sie die Erweiterung deinstalliert?', required: '(Pflichtfeld)',
+                reasons: { bugs: 'Sie funktioniert nicht richtig / hat Fehler', expensive: 'Sie ist zu teuer', missing_features: 'Mir fehlen Funktionen, die ich brauche', setup: 'Zu schwierig einzurichten oder zu konfigurieren', slow: 'Sie verlangsamt Gmail', trying: 'Ich wollte sie nur ausprobieren', privacy: 'Bedenken zu Datenschutz oder Sicherheit' },
+                other: 'Sonstiges:', otherAria: 'Anderer Grund',
+                improve: 'Was könnten wir verbessern?',
+                odooVersion: 'Welche Odoo-Version verwenden Sie?', odooPlaceholder: 'z. B. 17.0 Enterprise',
+                usage: 'Wie lange haben Sie die Erweiterung genutzt?',
+                usageOptions: ['Weniger als einen Tag', 'Weniger als eine Woche', '1–4 Wochen', '1–3 Monate', 'Mehr als 3 Monate'],
+                send: 'Senden', sending: 'Wird gesendet…',
+                errReason: 'Bitte wählen Sie mindestens einen Grund.', errOther: 'Bitte nennen Sie den anderen Grund.', errImprove: 'Bitte sagen Sie uns, was wir verbessern könnten.',
+                thanks: 'Danke – Ihre Antworten wurden gesendet.', netError: 'Senden fehlgeschlagen. Prüfen Sie Ihre Verbindung und versuchen Sie es erneut.'
+            },
+            it: {
+                title: 'Odoo Integration for Gmail — Disinstallazione',
+                heading: 'Ci dispiace vederti andare via',
+                intro: 'Qualche domanda veloce ci aiuta a migliorare Odoo Integration for Gmail. Ci vuole meno di un minuto.',
+                why: "Perché hai disinstallato l'estensione?", required: '(obbligatoria)',
+                reasons: { bugs: 'Non funziona bene / ha dei bug', expensive: 'È troppo cara', missing_features: 'Mancano funzioni di cui ho bisogno', setup: 'Troppo difficile da installare o configurare', slow: 'Rallenta Gmail', trying: 'La stavo solo provando', privacy: 'Dubbi su privacy o sicurezza' },
+                other: 'Altro:', otherAria: 'Altro motivo',
+                improve: 'Cosa potremmo migliorare?',
+                odooVersion: 'Quale versione di Odoo usi?', odooPlaceholder: 'es. 17.0 Enterprise',
+                usage: "Per quanto tempo hai usato l'estensione?",
+                usageOptions: ['Meno di un giorno', 'Meno di una settimana', '1–4 settimane', '1–3 mesi', 'Più di 3 mesi'],
+                send: 'Invia', sending: 'Invio in corso…',
+                errReason: 'Scegli almeno un motivo.', errOther: "Indica l'altro motivo.", errImprove: 'Dicci cosa potremmo migliorare.',
+                thanks: 'Grazie, le tue risposte sono state inviate.', netError: 'Invio non riuscito. Controlla la connessione e riprova.'
+            },
+            nl: {
+                title: 'Odoo Integration for Gmail — Verwijderen',
+                heading: 'Jammer dat je vertrekt',
+                intro: 'Een paar korte vragen helpen ons Odoo Integration for Gmail te verbeteren. Het duurt minder dan een minuut.',
+                why: 'Waarom heb je de extensie verwijderd?', required: '(verplicht)',
+                reasons: { bugs: 'Werkt niet goed / bevat fouten', expensive: 'Is te duur', missing_features: 'Mist functies die ik nodig heb', setup: 'Te moeilijk om in te stellen of te configureren', slow: 'Maakt Gmail traag', trying: 'Ik was het alleen aan het uitproberen', privacy: 'Zorgen over privacy of beveiliging' },
+                other: 'Anders:', otherAria: 'Andere reden',
+                improve: 'Wat kunnen we verbeteren?',
+                odooVersion: 'Welke versie van Odoo gebruik je?', odooPlaceholder: 'bijv. 17.0 Enterprise',
+                usage: 'Hoe lang heb je de extensie gebruikt?',
+                usageOptions: ['Minder dan een dag', 'Minder dan een week', '1–4 weken', '1–3 maanden', 'Meer dan 3 maanden'],
+                send: 'Versturen', sending: 'Bezig met versturen…',
+                errReason: 'Kies ten minste één reden.', errOther: 'Vertel ons wat de andere reden is.', errImprove: 'Vertel ons wat we kunnen verbeteren.',
+                thanks: 'Bedankt, je antwoorden zijn verstuurd.', netError: 'Versturen mislukt. Controleer je verbinding en probeer het opnieuw.'
+            },
+            pt_BR: {
+                title: 'Odoo Integration for Gmail — Desinstalação',
+                heading: 'Que pena que você vai embora',
+                intro: 'Algumas perguntas rápidas nos ajudam a melhorar o Odoo Integration for Gmail. Leva menos de um minuto.',
+                why: 'Por que você desinstalou a extensão?', required: '(obrigatória)',
+                reasons: { bugs: 'Não funciona direito / tem bugs', expensive: 'É cara demais', missing_features: 'Faltam recursos de que preciso', setup: 'É muito difícil de instalar ou configurar', slow: 'Deixa o Gmail lento', trying: 'Eu só estava testando', privacy: 'Preocupações com privacidade ou segurança' },
+                other: 'Outro:', otherAria: 'Outro motivo',
+                improve: 'O que poderíamos melhorar?',
+                odooVersion: 'Qual versão do Odoo você usa?', odooPlaceholder: 'ex.: 17.0 Enterprise',
+                usage: 'Por quanto tempo você usou a extensão?',
+                usageOptions: ['Menos de um dia', 'Menos de uma semana', '1–4 semanas', '1–3 meses', 'Mais de 3 meses'],
+                send: 'Enviar', sending: 'Enviando…',
+                errReason: 'Escolha pelo menos um motivo.', errOther: 'Conte qual é o outro motivo.', errImprove: 'Conte o que poderíamos melhorar.',
+                thanks: 'Obrigado, suas respostas foram enviadas.', netError: 'Não foi possível enviar. Verifique sua conexão e tente novamente.'
+            }
+        };
+
+        /** El de la extensión (`l`); si no llega, el del navegador si es uno de los 7; si no, inglés. */
+        function pickLanguage() {
+            if (ctx.l && I18N[ctx.l]) return ctx.l;
+            var langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || 'en'];
+            for (var i = 0; i < langs.length; i++) {
+                var code = String(langs[i]).toLowerCase();
+                if (code.indexOf('pt') === 0) return 'pt_BR';
+                var base = code.split('-')[0];
+                if (I18N[base]) return base;
+            }
+            return 'en';
+        }
+
+        var LANG = pickLanguage();
+        var TEXT = I18N[LANG];
+
+        function applyTexts() {
+            document.documentElement.lang = LANG === 'pt_BR' ? 'pt-BR' : LANG;
+            document.title = TEXT.title;
+            Array.prototype.forEach.call(document.querySelectorAll('[data-i18n]'), function (el) {
+                el.textContent = TEXT[el.getAttribute('data-i18n')];
+            });
+            Array.prototype.forEach.call(document.querySelectorAll('[data-i18n-aria]'), function (el) {
+                el.setAttribute('aria-label', TEXT[el.getAttribute('data-i18n-aria')]);
+            });
+            Array.prototype.forEach.call(document.querySelectorAll('[data-i18n-placeholder]'), function (el) {
+                el.setAttribute('placeholder', TEXT[el.getAttribute('data-i18n-placeholder')]);
+            });
+        }
+
         // ---------- PostHog (contracts/posthog-events.md) ----------
         var POSTHOG_URL = 'https://eu.i.posthog.com/capture/';
         var POSTHOG_KEY = 'phc_OAwR3rWOBJk9KH5PDXxG2ZXbq0ieq4j71elbZrOw66p';
@@ -266,7 +407,7 @@
                 input.value = r.label;
                 input.id = 'reason-' + idx;
                 var span = document.createElement('span');
-                span.textContent = r.label;
+                span.textContent = TEXT.reasons[r.key];
                 label.appendChild(input);
                 label.appendChild(span);
                 reasonBox.appendChild(label);
@@ -281,7 +422,7 @@
                 input.value = text;
                 input.id = 'usage-' + idx;
                 var span = document.createElement('span');
-                span.textContent = text;
+                span.textContent = TEXT.usageOptions[idx];
                 label.appendChild(input);
                 label.appendChild(span);
                 usageBox.appendChild(label);
@@ -311,17 +452,17 @@
             var firstInvalid = null;
 
             setError(document.getElementById('reasons'), document.getElementById('reasons-error'),
-                reasons.length === 0 ? 'Please choose at least one reason.' : '');
+                reasons.length === 0 ? TEXT.errReason : '');
             if (reasons.length === 0) firstInvalid = firstInvalid || document.getElementById('reason-0');
 
             var otherMissing = otherChecked && !otherText.value.trim();
             setError(otherText, document.getElementById('reason-other-error'),
-                otherMissing ? 'Please tell us the other reason.' : '');
+                otherMissing ? TEXT.errOther : '');
             if (otherMissing) firstInvalid = firstInvalid || otherText;
 
             var improveMissing = !improve.value.trim();
             setError(improve, document.getElementById('improve-error'),
-                improveMissing ? 'Please tell us what we could improve.' : '');
+                improveMissing ? TEXT.errImprove : '');
             if (improveMissing) firstInvalid = firstInvalid || improve;
 
             if (firstInvalid) firstInvalid.focus();
@@ -382,7 +523,7 @@
             var button = document.getElementById('send');
             var status = document.getElementById('status');
             button.disabled = true;
-            button.textContent = 'Sending…';
+            button.textContent = TEXT.sending;
             status.textContent = '';
             status.classList.remove('is-error');
 
@@ -397,18 +538,19 @@
                     var thanks = document.createElement('p');
                     thanks.className = 'thanks';
                     thanks.setAttribute('role', 'status');
-                    thanks.textContent = 'Thanks — your answers were sent.';
+                    thanks.textContent = TEXT.thanks;
                     card.appendChild(thanks);
                 })
                 .catch(function () {
                     sending = false;
                     button.disabled = false;
-                    button.textContent = 'Send';
+                    button.textContent = TEXT.send;
                     status.classList.add('is-error');
-                    status.textContent = "Couldn't send. Check your connection and try again.";
+                    status.textContent = TEXT.netError;
                 });
         });
 
+        applyTexts();
         renderOptions();
         form.hidden = false;
         trackUninstall();
