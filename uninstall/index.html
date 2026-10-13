@@ -153,17 +153,17 @@
             version: 'entry.1696159737',
             plan: 'entry.1470649061'
         };
-        // Preguntas internas de la sección 2 (las crea T015). Una a null no se envía.
+        // Preguntas internas de la sección 2, a la que el formulario nunca lleva (T015, 13-oct-2026).
         var INTERNAL_ENTRY = {
-            stage: null,
-            installDate: null,
-            edition: null,
-            hosting: null,
-            locale: null,
-            analyticsId: null,
-            build: null
+            stage: 'entry.1178820917',
+            installDate: 'entry.1135346881',
+            edition: 'entry.1311209028',
+            hosting: 'entry.2071997415',
+            locale: 'entry.1629740373',
+            analyticsId: 'entry.1003726422',
+            build: 'entry.364659386'
         };
-        // '0,1': las preguntas internas están en la sección 2, a la que el formulario no lleva (plan A, T001).
+        // '0,1' declara que se pasó por la sección 2: sin eso Google descarta sus valores (verificado en T001).
         var PAGE_HISTORY = '0,1';
 
         // Textos exactos del Form: un carácter distinto rompe el envío sin aviso.
