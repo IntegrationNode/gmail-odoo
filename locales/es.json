@@ -1248,6 +1248,10 @@
       "install": "Instalar Extensión",
       "viewPricing": "Ver Precios"
     },
+    "v0871": {
+      "reliableConnection": "Conexión más fiable",
+      "reliableConnectionDesc": "Al cambiar de instancia o de usuario de Odoo, o con varias pestañas de Gmail abiertas, ya no se mezclan datos de la conexión anterior."
+    },
     "v0870": {
       "updateNotice": "Las pestañas de Gmail abiertas te avisan de recargar tras una actualización",
       "updateNoticeDesc": "Cuando la extensión se actualizaba con Gmail abierto, el panel dejaba de funcionar sin ninguna explicación hasta recargar la página. Ahora muestra un aviso con un botón para recargar Gmail."

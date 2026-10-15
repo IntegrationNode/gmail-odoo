@@ -1248,6 +1248,10 @@
       "install": "Install Extension",
       "viewPricing": "View Pricing"
     },
+    "v0871": {
+      "reliableConnection": "More reliable connection",
+      "reliableConnectionDesc": "Switching Odoo instance or user, or having several Gmail tabs open, no longer mixes data from the previous connection."
+    },
     "v0870": {
       "updateNotice": "Open Gmail tabs tell you to reload after an update",
       "updateNoticeDesc": "When the extension updated while Gmail was open, the sidebar stopped working with no explanation until you reloaded the page. It now shows a notice with a button to reload Gmail."

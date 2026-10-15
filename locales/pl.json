@@ -1248,6 +1248,10 @@
       "install": "Zainstaluj rozszerzenie",
       "viewPricing": "Zobacz cennik"
     },
+    "v0871": {
+      "reliableConnection": "Bardziej niezawodne połączenie",
+      "reliableConnectionDesc": "Zmiana instancji lub użytkownika Odoo albo kilka otwartych kart Gmaila nie powoduje już mieszania danych z poprzedniego połączenia."
+    },
     "v0870": {
       "updateNotice": "Otwarte karty Gmaila proszą o odświeżenie po aktualizacji",
       "updateNoticeDesc": "Gdy rozszerzenie aktualizowało się przy otwartym Gmailu, panel przestawał działać bez żadnego wyjaśnienia aż do odświeżenia strony. Teraz wyświetla komunikat z przyciskiem do odświeżenia Gmaila."

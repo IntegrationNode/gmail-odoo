@@ -1248,6 +1248,10 @@
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
     },
+    "v0871": {
+      "reliableConnection": "Betrouwbaardere verbinding",
+      "reliableConnectionDesc": "Bij het wisselen van Odoo-instantie of -gebruiker, of met meerdere Gmail-tabbladen open, worden geen gegevens van de vorige verbinding meer gemengd."
+    },
     "v0870": {
       "updateNotice": "Open Gmail-tabbladen vragen je te herladen na een update",
       "updateNoticeDesc": "Als de extensie werd bijgewerkt terwijl Gmail open was, werkte de zijbalk zonder uitleg niet meer totdat je de pagina herlaadde. Nu verschijnt er een melding met een knop om Gmail te herladen."

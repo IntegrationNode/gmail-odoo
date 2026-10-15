@@ -1248,6 +1248,10 @@
       "install": "Installa Estensione",
       "viewPricing": "Vedi Prezzi"
     },
+    "v0871": {
+      "reliableConnection": "Connessione più affidabile",
+      "reliableConnectionDesc": "Cambiare istanza o utente di Odoo, o avere più schede di Gmail aperte, non mescola più i dati della connessione precedente."
+    },
     "v0870": {
       "updateNotice": "Le schede di Gmail aperte ti chiedono di ricaricare dopo un aggiornamento",
       "updateNoticeDesc": "Quando l'estensione si aggiornava con Gmail aperto, la barra laterale smetteva di funzionare senza spiegazioni finché non ricaricavi la pagina. Ora mostra un avviso con un pulsante per ricaricare Gmail."

@@ -1248,6 +1248,10 @@
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
     },
+    "v0871": {
+      "reliableConnection": "Zuverlässigere Verbindung",
+      "reliableConnectionDesc": "Beim Wechsel der Odoo-Instanz oder des Benutzers oder mit mehreren geöffneten Gmail-Tabs werden keine Daten der vorherigen Verbindung mehr vermischt."
+    },
     "v0870": {
       "updateNotice": "Geöffnete Gmail-Tabs fordern nach einem Update zum Neuladen auf",
       "updateNoticeDesc": "Wenn die Erweiterung bei geöffnetem Gmail aktualisiert wurde, funktionierte die Seitenleiste ohne Erklärung nicht mehr, bis Sie die Seite neu luden. Jetzt zeigt sie einen Hinweis mit einer Schaltfläche zum Neuladen von Gmail."

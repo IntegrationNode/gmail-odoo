@@ -1248,6 +1248,10 @@
       "install": "Instalar Extensão",
       "viewPricing": "Ver Preços"
     },
+    "v0871": {
+      "reliableConnection": "Conexão mais confiável",
+      "reliableConnectionDesc": "Trocar de instância ou de usuário do Odoo, ou ter várias abas do Gmail abertas, não mistura mais dados da conexão anterior."
+    },
     "v0870": {
       "updateNotice": "As abas do Gmail abertas pedem para recarregar após uma atualização",
       "updateNoticeDesc": "Quando a extensão era atualizada com o Gmail aberto, a barra lateral parava de funcionar sem explicação até você recarregar a página. Agora ela mostra um aviso com um botão para recarregar o Gmail."

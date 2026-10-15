@@ -1248,6 +1248,10 @@
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
     },
+    "v0871": {
+      "reliableConnection": "Connexion plus fiable",
+      "reliableConnectionDesc": "Changer d'instance ou d'utilisateur Odoo, ou avoir plusieurs onglets Gmail ouverts, ne mélange plus les données de la connexion précédente."
+    },
     "v0870": {
       "updateNotice": "Les onglets Gmail ouverts vous invitent à recharger après une mise à jour",
       "updateNoticeDesc": "Quand l'extension se mettait à jour avec Gmail ouvert, le panneau latéral cessait de fonctionner sans explication jusqu'au rechargement de la page. Il affiche désormais un message avec un bouton pour recharger Gmail."
