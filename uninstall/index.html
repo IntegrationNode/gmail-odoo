@@ -23,6 +23,11 @@
         }
         .uninstall-card h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
         .uninstall-card .intro { color: var(--color-text-light); margin-bottom: 1.5rem; }
+        /* Spec 031 (US3): quien desinstala con Gmail abierto conserva el panel hasta recargar. */
+        .uninstall-card .reload-note {
+            margin: 0.75rem 0 1.25rem; padding: 0.75rem 1rem; border-radius: 8px;
+            background: var(--color-bg); border-left: 3px solid var(--color-primary);
+        }
         .uninstall-card fieldset, .uninstall-card .field { border: 0; padding: 0; margin: 0 0 1.5rem; }
         .uninstall-card legend, .uninstall-card .field > label {
             display: block; font-weight: 600; margin-bottom: 0.5rem; padding: 0;
@@ -60,6 +65,7 @@
         <div class="container">
             <div class="uninstall-card">
                 <h1 data-i18n="heading">Sorry to see you go</h1>
+                <p class="reload-note" data-i18n="reloadNote">If you have Gmail open, reload it to remove the extension's panel.</p>
                 <p class="intro" data-i18n="intro">A few quick questions help us make Odoo Integration for Gmail better. It takes less than a minute.</p>
 
                 <noscript>
@@ -208,6 +214,7 @@
                 title: 'Odoo Integration for Gmail — Uninstall',
                 heading: 'Sorry to see you go',
                 intro: 'A few quick questions help us make Odoo Integration for Gmail better. It takes less than a minute.',
+                reloadNote: "If you have Gmail open, reload it to remove the extension's panel.",
                 why: 'Why did you uninstall?', required: '(required)',
                 reasons: { bugs: "It doesn't work properly / has bugs", expensive: "It's too expensive", missing_features: 'Missing features I need', setup: 'Too difficult to set up or configure', slow: 'It slows down Gmail', trying: 'I was just trying it out', privacy: 'Privacy or security concerns' },
                 other: 'Other:', otherAria: 'Other reason',
@@ -223,6 +230,7 @@
                 title: 'Odoo Integration for Gmail — Desinstalación',
                 heading: 'Lamentamos que te vayas',
                 intro: 'Unas preguntas rápidas nos ayudan a mejorar Odoo Integration for Gmail. Te llevará menos de un minuto.',
+                reloadNote: 'Si tienes Gmail abierto, recárgalo para quitar el panel de la extensión.',
                 why: '¿Por qué desinstalaste la extensión?', required: '(obligatoria)',
                 reasons: { bugs: 'No funciona bien / tiene errores', expensive: 'Es demasiado cara', missing_features: 'Le faltan funciones que necesito', setup: 'Es muy difícil de instalar o configurar', slow: 'Hace que Gmail vaya lento', trying: 'Solo la estaba probando', privacy: 'Me preocupa la privacidad o la seguridad' },
                 other: 'Otro:', otherAria: 'Otro motivo',
@@ -238,6 +246,7 @@
                 title: 'Odoo Integration for Gmail — Désinstallation',
                 heading: 'Désolés de vous voir partir',
                 intro: "Quelques questions rapides nous aident à améliorer Odoo Integration for Gmail. Cela prend moins d'une minute.",
+                reloadNote: "Si Gmail est ouvert, rechargez-le pour faire disparaître le panneau de l'extension.",
                 why: "Pourquoi avez-vous désinstallé l'extension ?", required: '(obligatoire)',
                 reasons: { bugs: 'Elle ne fonctionne pas correctement / a des bugs', expensive: 'Elle est trop chère', missing_features: "Il manque des fonctionnalités dont j'ai besoin", setup: 'Trop difficile à installer ou à configurer', slow: 'Elle ralentit Gmail', trying: "Je voulais juste l'essayer", privacy: 'Inquiétudes concernant la confidentialité ou la sécurité' },
                 other: 'Autre :', otherAria: 'Autre raison',
@@ -253,6 +262,7 @@
                 title: 'Odoo Integration for Gmail — Deinstallation',
                 heading: 'Schade, dass Sie gehen',
                 intro: 'Ein paar kurze Fragen helfen uns, Odoo Integration for Gmail zu verbessern. Es dauert weniger als eine Minute.',
+                reloadNote: 'Wenn Gmail geöffnet ist, laden Sie es neu, damit die Seitenleiste der Erweiterung verschwindet.',
                 why: 'Warum haben Sie die Erweiterung deinstalliert?', required: '(Pflichtfeld)',
                 reasons: { bugs: 'Sie funktioniert nicht richtig / hat Fehler', expensive: 'Sie ist zu teuer', missing_features: 'Mir fehlen Funktionen, die ich brauche', setup: 'Zu schwierig einzurichten oder zu konfigurieren', slow: 'Sie verlangsamt Gmail', trying: 'Ich wollte sie nur ausprobieren', privacy: 'Bedenken zu Datenschutz oder Sicherheit' },
                 other: 'Sonstiges:', otherAria: 'Anderer Grund',
@@ -268,6 +278,7 @@
                 title: 'Odoo Integration for Gmail — Disinstallazione',
                 heading: 'Ci dispiace vederti andare via',
                 intro: 'Qualche domanda veloce ci aiuta a migliorare Odoo Integration for Gmail. Ci vuole meno di un minuto.',
+                reloadNote: "Se hai Gmail aperto, ricaricalo per far sparire il pannello dell'estensione.",
                 why: "Perché hai disinstallato l'estensione?", required: '(obbligatoria)',
                 reasons: { bugs: 'Non funziona bene / ha dei bug', expensive: 'È troppo cara', missing_features: 'Mancano funzioni di cui ho bisogno', setup: 'Troppo difficile da installare o configurare', slow: 'Rallenta Gmail', trying: 'La stavo solo provando', privacy: 'Dubbi su privacy o sicurezza' },
                 other: 'Altro:', otherAria: 'Altro motivo',
@@ -283,6 +294,7 @@
                 title: 'Odoo Integration for Gmail — Verwijderen',
                 heading: 'Jammer dat je vertrekt',
                 intro: 'Een paar korte vragen helpen ons Odoo Integration for Gmail te verbeteren. Het duurt minder dan een minuut.',
+                reloadNote: 'Heb je Gmail open? Laad het dan opnieuw om het paneel van de extensie te laten verdwijnen.',
                 why: 'Waarom heb je de extensie verwijderd?', required: '(verplicht)',
                 reasons: { bugs: 'Werkt niet goed / bevat fouten', expensive: 'Is te duur', missing_features: 'Mist functies die ik nodig heb', setup: 'Te moeilijk om in te stellen of te configureren', slow: 'Maakt Gmail traag', trying: 'Ik was het alleen aan het uitproberen', privacy: 'Zorgen over privacy of beveiliging' },
                 other: 'Anders:', otherAria: 'Andere reden',
@@ -298,6 +310,7 @@
                 title: 'Odoo Integration for Gmail — Desinstalação',
                 heading: 'Que pena que você vai embora',
                 intro: 'Algumas perguntas rápidas nos ajudam a melhorar o Odoo Integration for Gmail. Leva menos de um minuto.',
+                reloadNote: 'Se você estiver com o Gmail aberto, recarregue-o para que o painel da extensão desapareça.',
                 why: 'Por que você desinstalou a extensão?', required: '(obrigatória)',
                 reasons: { bugs: 'Não funciona direito / tem bugs', expensive: 'É cara demais', missing_features: 'Faltam recursos de que preciso', setup: 'É muito difícil de instalar ou configurar', slow: 'Deixa o Gmail lento', trying: 'Eu só estava testando', privacy: 'Preocupações com privacidade ou segurança' },
                 other: 'Outro:', otherAria: 'Outro motivo',
