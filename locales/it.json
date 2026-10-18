@@ -912,7 +912,9 @@
       "configData4": "Preferenze utente (impostazioni sezioni visibili)",
       "configData5": "Gmail OAuth tokens (only when auto-logging is enabled) — required to access the Gmail API on your behalf; revocable from Settings > Auto-logging or your Google Account",
       "configData6": "Auto-logging mappings (thread-to-record links and IDs of messages already logged) — stored locally for the duration of each mapping",
-      "configData7": "Active company selection and the list of companies you have access to (multi-company instances) — cached locally to remember which company you are operating in"
+      "configData7": "Active company selection and the list of companies you have access to (multi-company instances) — cached locally to remember which company you are operating in",
+      "openTabs": "Schede Odoo aperte",
+      "openTabsDesc": "Quando fai clic su \"Rileva Odoo automaticamente\", l'estensione legge gli indirizzi delle schede odoo.com aperte in questo browser, solo per proporti la tua istanza. Non ne legge il contenuto, e gli indirizzi non vengono né salvati né inviati."
     },
     "howWeUse": {
       "title": "Come Utilizziamo le Tue Informazioni",
@@ -995,7 +997,7 @@
       "scripting": "Necessario per iniettare l'interfaccia della barra laterale in Gmail",
       "storage": "Necessario per salvare la configurazione Odoo e memorizzare le risposte API localmente",
       "hostGmail": "Necessario per accedere all'interfaccia di Gmail e visualizzare la barra laterale",
-      "hostOdoo": "Necessario per comunicare con le istanze cloud Odoo Online (es. tuaazienda.odoo.com)",
+      "hostOdoo": "Necessario per comunicare con le istanze cloud Odoo Online (es. tuaazienda.odoo.com) e, quando fai clic su \"Rileva Odoo automaticamente\", per leggere gli indirizzi delle tue schede odoo.com aperte",
       "hostPolar": "Necessario per la gestione degli abbonamenti e l'elaborazione dei pagamenti",
       "hostParity": "Necessario per offrire sconti basati sulla Parità del Potere d'Acquisto (PPA) in base al paese dell'utente",
       "optional": "Permessi Opzionali (Richiesti Quando Necessario)",

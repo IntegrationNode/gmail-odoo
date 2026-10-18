@@ -912,7 +912,9 @@
       "configData4": "Gebruikersvoorkeuren (instellingen zichtbare secties)",
       "configData5": "Gmail OAuth tokens (only when auto-logging is enabled) — required to access the Gmail API on your behalf; revocable from Settings > Auto-logging or your Google Account",
       "configData6": "Auto-logging mappings (thread-to-record links and IDs of messages already logged) — stored locally for the duration of each mapping",
-      "configData7": "Active company selection and the list of companies you have access to (multi-company instances) — cached locally to remember which company you are operating in"
+      "configData7": "Active company selection and the list of companies you have access to (multi-company instances) — cached locally to remember which company you are operating in",
+      "openTabs": "Geopende Odoo-tabbladen",
+      "openTabsDesc": "Wanneer u op \"Odoo automatisch detecteren\" klikt, leest de extensie de adressen van de odoo.com-tabbladen die in deze browser geopend zijn, alleen om u uw instantie aan te bieden. Ze leest hun inhoud niet, en de adressen worden niet opgeslagen of verzonden."
     },
     "howWeUse": {
       "title": "Hoe Wij Uw Informatie Gebruiken",
@@ -995,7 +997,7 @@
       "scripting": "Vereist om de zijbalkinterface in Gmail te injecteren",
       "storage": "Vereist om uw Odoo-configuratie op te slaan en API-antwoorden lokaal te cachen",
       "hostGmail": "Vereist om toegang te krijgen tot de Gmail-interface en de zijbalk weer te geven",
-      "hostOdoo": "Vereist om te communiceren met Odoo Online cloud-instanties (bijv. uwbedrijf.odoo.com)",
+      "hostOdoo": "Vereist om te communiceren met Odoo Online cloud-instanties (bijv. uwbedrijf.odoo.com) en, wanneer u op \"Odoo automatisch detecteren\" klikt, om de adressen van uw geopende odoo.com-tabbladen te lezen",
       "hostPolar": "Vereist voor abonnementsbeheer en betalingsverwerking",
       "hostParity": "Vereist om koopkrachtpariteit (KKP) kortingen aan te bieden op basis van het land van de gebruiker",
       "optional": "Optionele Machtigingen (Aangevraagd Wanneer Nodig)",

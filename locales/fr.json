@@ -912,7 +912,9 @@
       "configData4": "Préférences utilisateur (paramètres des sections visibles)",
       "configData5": "Gmail OAuth tokens (only when auto-logging is enabled) — required to access the Gmail API on your behalf; revocable from Settings > Auto-logging or your Google Account",
       "configData6": "Auto-logging mappings (thread-to-record links and IDs of messages already logged) — stored locally for the duration of each mapping",
-      "configData7": "Active company selection and the list of companies you have access to (multi-company instances) — cached locally to remember which company you are operating in"
+      "configData7": "Active company selection and the list of companies you have access to (multi-company instances) — cached locally to remember which company you are operating in",
+      "openTabs": "Onglets Odoo ouverts",
+      "openTabsDesc": "Lorsque vous cliquez sur « Détecter Odoo automatiquement », l'extension lit les adresses des onglets odoo.com ouverts dans ce navigateur, uniquement pour vous proposer votre instance. Elle ne lit pas leur contenu, et les adresses ne sont ni stockées ni envoyées."
     },
     "howWeUse": {
       "title": "Comment nous utilisons vos informations",
@@ -995,7 +997,7 @@
       "scripting": "Nécessaire pour injecter l'interface de la barre latérale dans Gmail",
       "storage": "Nécessaire pour sauvegarder votre configuration Odoo et mettre en cache les réponses API localement",
       "hostGmail": "Nécessaire pour accéder à l'interface Gmail et afficher la barre latérale",
-      "hostOdoo": "Nécessaire pour communiquer avec les instances cloud Odoo Online (ex: votreentreprise.odoo.com)",
+      "hostOdoo": "Nécessaire pour communiquer avec les instances cloud Odoo Online (ex: votreentreprise.odoo.com) et, lorsque vous cliquez sur « Détecter Odoo automatiquement », pour lire les adresses de vos onglets odoo.com ouverts",
       "hostPolar": "Nécessaire pour la gestion des abonnements et le traitement des paiements",
       "hostParity": "Nécessaire pour offrir des réductions de Parité de Pouvoir d'Achat (PPA) selon le pays de l'utilisateur",
       "optional": "Autorisations optionnelles (Demandées si nécessaire)",

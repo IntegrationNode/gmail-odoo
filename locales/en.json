@@ -912,7 +912,9 @@
       "configData4": "User preferences (visible sections settings)",
       "configData5": "Gmail OAuth tokens (only when auto-logging is enabled) — required to access the Gmail API on your behalf; revocable from Settings > Auto-logging or your Google Account",
       "configData6": "Auto-logging mappings (thread-to-record links and IDs of messages already logged) — stored locally for the duration of each mapping",
-      "configData7": "Active company selection and the list of companies you have access to (multi-company instances) — cached locally to remember which company you are operating in"
+      "configData7": "Active company selection and the list of companies you have access to (multi-company instances) — cached locally to remember which company you are operating in",
+      "openTabs": "Open Odoo tabs",
+      "openTabsDesc": "When you click \"Autodetect Odoo\", the extension reads the addresses of the odoo.com tabs open in this browser, only to offer you your instance. It does not read their content, and the addresses are neither stored nor sent."
     },
     "howWeUse": {
       "title": "How We Use Your Information",
@@ -995,7 +997,7 @@
       "scripting": "Required to inject the sidebar interface into Gmail",
       "storage": "Required to save your Odoo configuration and cache API responses locally",
       "hostGmail": "Required to access Gmail's interface and display the sidebar",
-      "hostOdoo": "Required to communicate with Odoo Online cloud instances (e.g., yourcompany.odoo.com)",
+      "hostOdoo": "Required to communicate with Odoo Online cloud instances (e.g., yourcompany.odoo.com) and, when you click \"Autodetect Odoo\", to read the addresses of your open odoo.com tabs",
       "hostPolar": "Required for subscription management and payment processing",
       "hostParity": "Required to offer Purchasing Power Parity (PPP) discounts based on the user's country",
       "optional": "Optional Permissions (Requested When Needed)",

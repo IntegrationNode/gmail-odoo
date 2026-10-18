@@ -912,7 +912,9 @@
       "configData4": "Benutzereinstellungen (Einstellungen für sichtbare Abschnitte)",
       "configData5": "Gmail OAuth tokens (only when auto-logging is enabled) — required to access the Gmail API on your behalf; revocable from Settings > Auto-logging or your Google Account",
       "configData6": "Auto-logging mappings (thread-to-record links and IDs of messages already logged) — stored locally for the duration of each mapping",
-      "configData7": "Active company selection and the list of companies you have access to (multi-company instances) — cached locally to remember which company you are operating in"
+      "configData7": "Active company selection and the list of companies you have access to (multi-company instances) — cached locally to remember which company you are operating in",
+      "openTabs": "Geöffnete Odoo-Tabs",
+      "openTabsDesc": "Wenn Sie auf „Odoo automatisch erkennen“ klicken, liest die Erweiterung die Adressen der in diesem Browser geöffneten odoo.com-Tabs, nur um Ihnen Ihre Instanz anzubieten. Sie liest nicht deren Inhalt, und die Adressen werden weder gespeichert noch gesendet."
     },
     "howWeUse": {
       "title": "Wie wir Ihre Informationen verwenden",
@@ -995,7 +997,7 @@
       "scripting": "Erforderlich, um die Seitenleisten-Oberfläche in Gmail einzufügen",
       "storage": "Erforderlich, um Ihre Odoo-Konfiguration zu speichern und API-Antworten lokal zwischenzuspeichern",
       "hostGmail": "Erforderlich, um auf die Gmail-Oberfläche zuzugreifen und die Seitenleiste anzuzeigen",
-      "hostOdoo": "Erforderlich, um mit Odoo Online Cloud-Instanzen zu kommunizieren (z.B. ihrefirma.odoo.com)",
+      "hostOdoo": "Erforderlich, um mit Odoo Online Cloud-Instanzen zu kommunizieren (z.B. ihrefirma.odoo.com) und, wenn Sie auf „Odoo automatisch erkennen“ klicken, um die Adressen Ihrer geöffneten odoo.com-Tabs zu lesen",
       "hostPolar": "Erforderlich für die Abonnementverwaltung und Zahlungsabwicklung",
       "hostParity": "Erforderlich, um Kaufkraftparitäts-Rabatte (KKP) basierend auf dem Land des Benutzers anzubieten",
       "optional": "Optionale Berechtigungen (bei Bedarf angefordert)",

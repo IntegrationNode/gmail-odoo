@@ -912,7 +912,9 @@
       "configData4": "Preferências do usuário (configurações de seções visíveis)",
       "configData5": "Gmail OAuth tokens (only when auto-logging is enabled) — required to access the Gmail API on your behalf; revocable from Settings > Auto-logging or your Google Account",
       "configData6": "Auto-logging mappings (thread-to-record links and IDs of messages already logged) — stored locally for the duration of each mapping",
-      "configData7": "Active company selection and the list of companies you have access to (multi-company instances) — cached locally to remember which company you are operating in"
+      "configData7": "Active company selection and the list of companies you have access to (multi-company instances) — cached locally to remember which company you are operating in",
+      "openTabs": "Abas do Odoo abertas",
+      "openTabsDesc": "Ao clicar em \"Detectar Odoo automaticamente\", a extensão lê os endereços das abas do odoo.com abertas neste navegador, apenas para lhe oferecer a sua instância. Não lê o seu conteúdo, e os endereços não são guardados nem enviados."
     },
     "howWeUse": {
       "title": "Como Usamos Suas Informações",
@@ -995,7 +997,7 @@
       "scripting": "Necessário para injetar a interface da barra lateral no Gmail",
       "storage": "Necessário para salvar sua configuração Odoo e armazenar respostas de API localmente",
       "hostGmail": "Necessário para acessar a interface do Gmail e exibir a barra lateral",
-      "hostOdoo": "Necessário para comunicar com instâncias cloud Odoo Online (ex: suaempresa.odoo.com)",
+      "hostOdoo": "Necessário para comunicar com instâncias cloud Odoo Online (ex: suaempresa.odoo.com) e, ao clicar em \"Detectar Odoo automaticamente\", para ler os endereços das suas abas do odoo.com abertas",
       "hostPolar": "Necessário para gerenciamento de assinaturas e processamento de pagamentos",
       "hostParity": "Necessário para oferecer descontos de Paridade do Poder de Compra (PPC) com base no país do utilizador",
       "optional": "Permissões Opcionais (Solicitadas Quando Necessário)",

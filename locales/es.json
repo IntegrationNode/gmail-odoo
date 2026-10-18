@@ -912,7 +912,9 @@
       "configData4": "Preferencias de usuario (configuración de secciones visibles)",
       "configData5": "Tokens OAuth de Gmail (solo cuando el registro automático está activado) — necesarios para acceder a la API de Gmail en tu nombre; revocables desde Configuración > Registro Automático o desde tu Cuenta de Google",
       "configData6": "Mappings de registro automático (vínculos hilo-registro e IDs de mensajes ya registrados) — almacenados localmente mientras dure cada mapping",
-      "configData7": "Compañía activa seleccionada y lista de compañías a las que tienes acceso (instancias multi-compañía) — cacheadas localmente para recordar en qué compañía estás operando"
+      "configData7": "Compañía activa seleccionada y lista de compañías a las que tienes acceso (instancias multi-compañía) — cacheadas localmente para recordar en qué compañía estás operando",
+      "openTabs": "Pestañas de Odoo abiertas",
+      "openTabsDesc": "Al hacer clic en «Autodetectar Odoo», la extensión lee las direcciones de las pestañas de odoo.com abiertas en este navegador, solo para ofrecerte tu instancia. No lee su contenido, y las direcciones no se guardan ni se envían."
     },
     "howWeUse": {
       "title": "Cómo Usamos tu Información",
@@ -995,7 +997,7 @@
       "scripting": "Requerido para inyectar la interfaz de la barra lateral en Gmail",
       "storage": "Requerido para guardar tu configuración de Odoo y almacenar respuestas de API localmente",
       "hostGmail": "Requerido para acceder a la interfaz de Gmail y mostrar la barra lateral",
-      "hostOdoo": "Requerido para comunicarse con instancias cloud de Odoo Online (ej: tuempresa.odoo.com)",
+      "hostOdoo": "Requerido para comunicarse con instancias cloud de Odoo Online (ej: tuempresa.odoo.com) y, al hacer clic en «Autodetectar Odoo», para leer las direcciones de tus pestañas de odoo.com abiertas",
       "hostPolar": "Requerido para gestión de suscripciones y procesamiento de pagos",
       "hostParity": "Requerido para ofrecer descuentos por Paridad de Poder Adquisitivo (PPP) según el país del usuario",
       "optional": "Permisos Opcionales (Solicitados Cuando Se Necesitan)",

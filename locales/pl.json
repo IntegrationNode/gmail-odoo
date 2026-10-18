@@ -912,7 +912,9 @@
       "configData4": "Preferencje użytkownika (ustawienia widocznych sekcji)",
       "configData5": "Gmail OAuth tokens (only when auto-logging is enabled) — required to access the Gmail API on your behalf; revocable from Settings > Auto-logging or your Google Account",
       "configData6": "Auto-logging mappings (thread-to-record links and IDs of messages already logged) — stored locally for the duration of each mapping",
-      "configData7": "Active company selection and the list of companies you have access to (multi-company instances) — cached locally to remember which company you are operating in"
+      "configData7": "Active company selection and the list of companies you have access to (multi-company instances) — cached locally to remember which company you are operating in",
+      "openTabs": "Otwarte karty Odoo",
+      "openTabsDesc": "Gdy klikniesz „Autodetect Odoo”, rozszerzenie odczytuje adresy kart odoo.com otwartych w tej przeglądarce, wyłącznie po to, aby zaproponować Twoją instancję. Nie odczytuje ich zawartości, a adresy nie są ani zapisywane, ani wysyłane."
     },
     "howWeUse": {
       "title": "Jak wykorzystujemy Twoje informacje",
@@ -995,7 +997,7 @@
       "scripting": "Wymagane do wstrzykiwania interfejsu panelu bocznego do Gmail",
       "storage": "Wymagane do zapisywania konfiguracji Odoo i buforowania odpowiedzi API lokalnie",
       "hostGmail": "Wymagane do uzyskania dostępu do interfejsu Gmail i wyświetlania panelu bocznego",
-      "hostOdoo": "Wymagane do komunikacji z instancjami chmurowymi Odoo Online (np. twojafirma.odoo.com)",
+      "hostOdoo": "Wymagane do komunikacji z instancjami chmurowymi Odoo Online (np. twojafirma.odoo.com) oraz, po kliknięciu „Autodetect Odoo”, do odczytania adresów otwartych kart odoo.com",
       "hostPolar": "Wymagane do zarządzania subskrypcjami i przetwarzania płatności",
       "hostParity": "Wymagane do oferowania zniżek parytetu siły nabywczej (PSN) na podstawie kraju użytkownika",
       "optional": "Opcjonalne uprawnienia (żądane w razie potrzeby)",
