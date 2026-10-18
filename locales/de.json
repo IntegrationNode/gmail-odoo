@@ -1250,6 +1250,14 @@
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
     },
+    "v0880": {
+      "autodetect": "Odoo automatisch erkennen",
+      "autodetectDesc": "Die Verbindung braucht nur einen Klick: Das Verbindungsformular findet die Odoo-Online-Instanz, die Sie in einem anderen Tab geöffnet haben. Das Feld für den API-Schlüssel befindet sich jetzt unter Erweiterte Optionen.",
+      "odoo20": "Unterstützung für Odoo 20",
+      "odoo20Desc": "Kontakt-Avatare und Firmenlogos werden in Odoo 20 korrekt angezeigt, und der Bereich Tickets verschwindet nicht mehr, wenn Ihr Helpdesk keine Ticketreferenz hat.",
+      "plusLicense": "Zuverlässigere Plus-Lizenz",
+      "plusLicenseDesc": "Plus fällt nicht mehr in jeder Sitzung auf Free zurück, wenn Ihre Lizenz nicht mehr gültig ist, und ein Hinweis zeigt Ihnen, wenn die Aktivierung dieses Geräts entfernt wurde."
+    },
     "v0871": {
       "reliableConnection": "Zuverlässigere Verbindung",
       "reliableConnectionDesc": "Beim Wechsel der Odoo-Instanz oder des Benutzers oder mit mehreren geöffneten Gmail-Tabs werden keine Daten der vorherigen Verbindung mehr vermischt."

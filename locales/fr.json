@@ -1250,6 +1250,14 @@
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
     },
+    "v0880": {
+      "autodetect": "Détecter Odoo automatiquement",
+      "autodetectDesc": "La connexion se fait en un clic : le formulaire de connexion trouve l'instance Odoo Online que vous avez ouverte dans un autre onglet. Le champ de la clé API se trouve désormais dans Options avancées.",
+      "odoo20": "Prise en charge d'Odoo 20",
+      "odoo20Desc": "Les avatars des contacts et les logos des sociétés s'affichent correctement sur Odoo 20, et la section Tickets ne disparaît plus lorsque votre helpdesk n'a pas de référence de ticket.",
+      "plusLicense": "Licence Plus plus fiable",
+      "plusLicenseDesc": "Plus ne repasse plus en gratuit à chaque session lorsque votre licence n'est plus valide, et un avis vous indique quand l'activation de cet appareil a été supprimée."
+    },
     "v0871": {
       "reliableConnection": "Connexion plus fiable",
       "reliableConnectionDesc": "Changer d'instance ou d'utilisateur Odoo, ou avoir plusieurs onglets Gmail ouverts, ne mélange plus les données de la connexion précédente."

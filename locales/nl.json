@@ -1250,6 +1250,14 @@
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
     },
+    "v0880": {
+      "autodetect": "Odoo automatisch detecteren",
+      "autodetectDesc": "Verbinden kost één klik: het verbindingsformulier vindt de Odoo Online-instantie die je in een ander tabblad open hebt. Het veld voor de API-sleutel staat nu onder Geavanceerde opties.",
+      "odoo20": "Ondersteuning voor Odoo 20",
+      "odoo20Desc": "Avatars van contacten en bedrijfslogo's worden correct weergegeven in Odoo 20, en de sectie Tickets verdwijnt niet meer als je helpdesk geen ticketreferentie heeft.",
+      "plusLicense": "Betrouwbaardere Plus-licentie",
+      "plusLicenseDesc": "Plus valt niet meer bij elke sessie terug naar gratis wanneer je licentie niet meer geldig is, en een melding laat je weten wanneer de activering van dit apparaat is verwijderd."
+    },
     "v0871": {
       "reliableConnection": "Betrouwbaardere verbinding",
       "reliableConnectionDesc": "Bij het wisselen van Odoo-instantie of -gebruiker, of met meerdere Gmail-tabbladen open, worden geen gegevens van de vorige verbinding meer gemengd."

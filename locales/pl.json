@@ -1250,6 +1250,14 @@
       "install": "Zainstaluj rozszerzenie",
       "viewPricing": "Zobacz cennik"
     },
+    "v0880": {
+      "autodetect": "Automatyczne wykrywanie Odoo",
+      "autodetectDesc": "Połączenie wymaga jednego kliknięcia: formularz połączenia znajduje instancję Odoo Online otwartą w innej karcie. Pole klucza API znajduje się teraz w Opcjach zaawansowanych.",
+      "odoo20": "Obsługa Odoo 20",
+      "odoo20Desc": "Awatary kontaktów i logo firm wyświetlają się poprawnie w Odoo 20, a sekcja Zgłoszenia nie znika już, gdy helpdesk nie ma numeru referencyjnego zgłoszenia.",
+      "plusLicense": "Bardziej niezawodna licencja Plus",
+      "plusLicenseDesc": "Plus nie przechodzi już na wersję darmową przy każdej sesji, gdy licencja przestaje być ważna, a komunikat informuje, kiedy aktywacja tego urządzenia została usunięta."
+    },
     "v0871": {
       "reliableConnection": "Bardziej niezawodne połączenie",
       "reliableConnectionDesc": "Zmiana instancji lub użytkownika Odoo albo kilka otwartych kart Gmaila nie powoduje już mieszania danych z poprzedniego połączenia."
