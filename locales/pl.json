@@ -1250,6 +1250,12 @@
       "install": "Zainstaluj rozszerzenie",
       "viewPricing": "Zobacz cennik"
     },
+    "v0890": {
+      "installOpensGmail": "Gmail otwiera się po instalacji",
+      "installOpensGmailDesc": "Jeśli Gmail nie jest otwarty podczas instalacji rozszerzenia, otworzy się sam z panelem Odoo gotowym do połączenia.",
+      "contactNotFound": "Kontakty utworzone w Odoo pojawiają się od razu",
+      "contactNotFoundDesc": "Jeśli utworzysz kontakt w Odoo po tym, jak panel pokazał „Nie znaleziono kontaktu”, po ponownym otwarciu wiadomości kontakt się pojawi, a tworzenie go z panelu nie duplikuje już istniejącego kontaktu."
+    },
     "v0880": {
       "autodetect": "Automatyczne wykrywanie Odoo",
       "autodetectDesc": "Połączenie wymaga jednego kliknięcia: formularz połączenia znajduje instancję Odoo Online otwartą w innej karcie. Pole klucza API znajduje się teraz w Opcjach zaawansowanych.",

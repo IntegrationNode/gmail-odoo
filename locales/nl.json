@@ -1250,6 +1250,12 @@
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
     },
+    "v0890": {
+      "installOpensGmail": "Gmail opent na de installatie",
+      "installOpensGmailDesc": "Als Gmail niet open is wanneer je de extensie installeert, opent het vanzelf met het Odoo-paneel klaar om te verbinden.",
+      "contactNotFound": "Contacten die je in Odoo aanmaakt, verschijnen meteen",
+      "contactNotFoundDesc": "Als je een contact in Odoo aanmaakt nadat het paneel ‘Contact niet gevonden’ toonde, verschijnt het nu wanneer je de e-mail opnieuw opent, en aanmaken vanuit het paneel dupliceert geen contact meer dat al bestaat."
+    },
     "v0880": {
       "autodetect": "Odoo automatisch detecteren",
       "autodetectDesc": "Verbinden kost één klik: het verbindingsformulier vindt de Odoo Online-instantie die je in een ander tabblad open hebt. Het veld voor de API-sleutel staat nu onder Geavanceerde opties.",

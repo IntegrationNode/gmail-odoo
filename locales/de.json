@@ -1250,6 +1250,12 @@
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
     },
+    "v0890": {
+      "installOpensGmail": "Gmail öffnet sich nach der Installation",
+      "installOpensGmailDesc": "Wenn Gmail bei der Installation der Erweiterung nicht geöffnet ist, öffnet es sich automatisch – mit dem Odoo-Panel bereit zum Verbinden.",
+      "contactNotFound": "In Odoo erstellte Kontakte erscheinen sofort",
+      "contactNotFoundDesc": "Wenn Sie einen Kontakt in Odoo anlegen, nachdem das Panel „Kontakt nicht gefunden“ angezeigt hat, erscheint er jetzt beim erneuten Öffnen der E-Mail, und das Anlegen aus dem Panel dupliziert keinen bereits vorhandenen Kontakt mehr."
+    },
     "v0880": {
       "autodetect": "Odoo automatisch erkennen",
       "autodetectDesc": "Die Verbindung braucht nur einen Klick: Das Verbindungsformular findet die Odoo-Online-Instanz, die Sie in einem anderen Tab geöffnet haben. Das Feld für den API-Schlüssel befindet sich jetzt unter Erweiterte Optionen.",
