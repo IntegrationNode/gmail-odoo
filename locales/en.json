@@ -670,7 +670,7 @@
   },
   "compatibility": {
     "title": "Works with",
-    "odooVersions": "Odoo 14 – 19+",
+    "odooVersions": "Odoo 14 – 20",
     "community": "Community",
     "enterprise": "Enterprise",
     "online": "Online",
@@ -1451,7 +1451,7 @@
       "step4": "Deploy it as your own Google Apps Script project",
       "step5": "Publish from manifest and install the add-on",
       "oursTitle": "With our extension:",
-      "oursBody": "Enter your Odoo URL. Done. No code, no deployment. Works on Community and Enterprise, any domain, Odoo 14–19.",
+      "oursBody": "Enter your Odoo URL. Done. No code, no deployment. Works on Community and Enterprise, any domain, Odoo 14–20.",
       "footnote": "These are the steps from Odoo's own documentation (mail_plugins/gmail) — we're describing their process, not inventing it."
     },
     "migration": {
@@ -1582,7 +1582,7 @@
       "step4": "Deploy it as your own Google Apps Script project",
       "step5": "Publish from manifest and install the add-on",
       "oursTitle": "With our extension:",
-      "oursBody": "Enter your Odoo URL. Done. No code, no deployment. Works on Community and Enterprise, any domain, Odoo 14–19.",
+      "oursBody": "Enter your Odoo URL. Done. No code, no deployment. Works on Community and Enterprise, any domain, Odoo 14–20.",
       "footnote": "These are the steps from Odoo's own documentation (mail_plugins/gmail) — we're describing their process, not inventing it."
     },
     "migration": {

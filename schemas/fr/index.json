@@ -201,7 +201,7 @@
                     "name": "Quelles versions d'Odoo sont compatibles ?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "L'extension supporte Odoo version 14 et supérieures, y compris Odoo 15, 16, 17, 18 et 19. Elle fonctionne avec les éditions Community et Enterprise."
+                        "text": "L'extension supporte Odoo 14 et les versions supérieures. Elle fonctionne avec les éditions Community et Enterprise."
                     }
                 },
                 {
