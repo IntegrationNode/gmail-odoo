@@ -26,15 +26,7 @@
                     "name": "Quelle est la différence entre cette extension et le plugin officiel Odoo Gmail ?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Notre extension Chrome utilise les APIs natives du navigateur, ce qui la rend 10-20x plus rapide que le plugin officiel Odoo Gmail basé sur Google Apps Script. Les temps de chargement sont de 100-300ms contre 2-6 secondes."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Pourquoi cette extension est-elle plus rapide que le plugin officiel Odoo ?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Le plugin officiel utilise Google Apps Script qui a un surcoût significatif et des temps de démarrage à froid. Notre extension Chrome se connecte directement à Odoo via les APIs natives avec pooling de connexions, résultant en des temps de réponse 10-20x plus rapides."
+                        "text": "Notre extension est une extension Chrome qui fonctionne dans Gmail et se connecte à Odoo avec votre propre session Odoo : elle ne demande ni clé API ni code sur Odoo auto-hébergé. Le plugin officiel Odoo Gmail est un module complémentaire Google Workspace basé sur Google Apps Script."
                     }
                 },
                 {

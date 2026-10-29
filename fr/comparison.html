@@ -15,7 +15,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="L'alternative au plugin Gmail d'Odoo pour Odoo auto-hébergé et on-premise : 10-20x plus rapide, sans clé API et sans modification de code. Connectez-vous avec la seule URL de votre Odoo.">
+    <meta name="description" content="L'alternative au plugin Gmail d'Odoo pour Odoo auto-hébergé et on-premise : sans clé API et sans modification de code. Connectez-vous avec la seule URL de votre Odoo.">
     <meta name="robots" content="index, follow">
 
     <!-- Canonical URL -->
@@ -36,14 +36,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://integrationnode.com/gmail-odoo/fr/comparison.html">
     <meta property="og:title" content="Plugin Gmail d'Odoo pour Odoo auto-hébergé — sans code, sans clé API">
-    <meta property="og:description" content="Comparez notre extension Gmail au plugin officiel d'Odoo. 10-20x plus rapide, sans clé API et fonctionne sur Odoo auto-hébergé sans modification de code.">
+    <meta property="og:description" content="Comparez notre extension Gmail au plugin officiel d'Odoo : sans clé API, davantage de votre Odoo à côté de chaque e-mail, et elle fonctionne sur Odoo auto-hébergé sans modification de code.">
     <meta property="og:image" content="https://integrationnode.com/gmail-odoo/assets/og-image.png">
     <meta property="og:site_name" content="Odoo Integration for Gmail">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Plugin Gmail d'Odoo pour Odoo auto-hébergé — sans code, sans clé API">
-    <meta name="twitter:description" content="Intégration Gmail-Odoo plus rapide pour Odoo auto-hébergé : 100-300ms vs 2-6s, sans clé API, sans code. Connectez-vous avec la seule URL de votre Odoo.">
+    <meta name="twitter:description" content="Intégration Gmail-Odoo pour Odoo auto-hébergé : sans clé API, sans code. Connectez-vous avec la seule URL de votre Odoo.">
     <meta name="twitter:image" content="https://integrationnode.com/gmail-odoo/assets/og-image.png">
 
     <title>Plugin Gmail d'Odoo pour Odoo auto-hébergé — sans code, sans clé API</title>
@@ -90,15 +90,7 @@
                         "name": "Quelle est la différence entre cette extension et le plugin officiel Odoo Gmail ?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Notre extension Chrome utilise les APIs natives du navigateur, ce qui la rend 10-20x plus rapide que le plugin officiel Odoo Gmail basé sur Google Apps Script. Les temps de chargement sont de 100-300ms contre 2-6 secondes."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Pourquoi cette extension est-elle plus rapide que le plugin officiel Odoo ?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Le plugin officiel utilise Google Apps Script qui a un surcoût significatif et des temps de démarrage à froid. Notre extension Chrome se connecte directement à Odoo via les APIs natives avec pooling de connexions, résultant en des temps de réponse 10-20x plus rapides."
+                            "text": "Notre extension est une extension Chrome qui fonctionne dans Gmail et se connecte à Odoo avec votre propre session Odoo : elle ne demande ni clé API ni code sur Odoo auto-hébergé. Le plugin officiel Odoo Gmail est un module complémentaire Google Workspace basé sur Google Apps Script."
                         }
                     },
                     {
@@ -188,7 +180,7 @@
     <section class="pricing-hero">
         <div class="container">
             <h1>Extension vs Odoo Gmail Plugin</h1>
-            <p class="subtitle">10-20x plus rapide, sans clé API et sans code sur Odoo auto-hébergé — découvrez notre comparaison avec le plugin Gmail officiel.</p>
+            <p class="subtitle">Sans clé API et sans code sur Odoo auto-hébergé — découvrez notre comparaison avec le plugin Gmail officiel.</p>
         </div>
     </section>
 
@@ -198,16 +190,13 @@
             <div class="pricing-grid-extended">
                 <!-- Our Extension (Featured) -->
                 <div class="pricing-card-extended featured">
-                    <div class="badge-top">100-300ms</div>
                     <div class="plan-header">
                         <h3>Notre Extension</h3>
-                        <p class="plan-description">Extension Chrome construite avec des APIs natives pour une performance et une stabilité maximales.</p>
+                        <p class="plan-description">Extension Chrome qui fonctionne dans Gmail et se connecte à Odoo avec votre propre session Odoo.</p>
                     </div>
                     <div class="plan-features">
                         <h4>Avantages Clés</h4>
                         <ul>
-                            <li><span class="check">✓</span> <span>10-20x plus rapide (100-300ms)</span></li>
-                            <li><span class="check">✓</span> <span>Connexion stable, pas de déconnexions</span></li>
                             <li><span class="check">✓</span> <span>Recherche en temps réel sur tous les enregistrements</span></li>
                             <li><span class="check">✓</span> <span>Fonctionne sur Odoo auto-hébergé sans aucune modification de code</span></li>
                             <li><span class="check">✓</span> <span>Masquez les sections que vous n'utilisez pas (PLUS)</span></li>
@@ -232,8 +221,6 @@
                             <li><span class="check">✓</span> <span>Voir les contacts et infos entreprise</span></li>
                             <li><span class="check">✓</span> <span>Créer des leads et journaliser les emails</span></li>
                             <li><span class="check">✓</span> <span>Support officiel Odoo</span></li>
-                            <li><span class="cross-red">✗</span> <span>Temps de chargement plus lents (2-6 secondes)</span></li>
-                            <li><span class="cross-red">✗</span> <span>Déconnexions fréquentes</span></li>
                             <li><span class="cross-red">✗</span> <span>Nécessite des modifications de code pour self-hosted</span></li>
                             <li><span class="cross-red">✗</span> <span>Ni devis, ni commandes de vente, ni données financières</span></li>
                         </ul>
@@ -278,39 +265,10 @@
                             <td>Google Workspace Marketplace</td>
                         </tr>
 
-                        <!-- Performance Section -->
-                        <tr class="section-header">
-                            <td colspan="3"><strong>Performance</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Temps de Chargement</td>
-                            <td><strong>100-300ms</strong></td>
-                            <td>2-6s</td>
-                        </tr>
                         <tr>
                             <td>Technologie</td>
                             <td>APIs Chrome</td>
                             <td>Apps Script</td>
-                        </tr>
-                        <tr>
-                            <td>Cache</td>
-                            <td><span class="check-green">✓</span> <span>Cache local intelligent</span></td>
-                            <td><span>Limité</span></td>
-                        </tr>
-
-                        <!-- Stability Section -->
-                        <tr class="section-header">
-                            <td colspan="3"><strong>Stabilité</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Connexion</td>
-                            <td><span class="check-green">✓</span> <span>Persistante</span></td>
-                            <td><span class="cross-red">✗</span> <span>Déconnexions fréquentes</span></td>
-                        </tr>
-                        <tr>
-                            <td>Gestion de Session</td>
-                            <td><span>Robuste</span></td>
-                            <td><span>Nécessite ré-authentification</span></td>
                         </tr>
 
                         <!-- User Experience Section -->

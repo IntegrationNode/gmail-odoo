@@ -5,7 +5,7 @@
             "@type": "SoftwareApplication",
             "@id": "https://integrationnode.com/gmail-odoo/#software",
             "name": "Intégration Gmail et Odoo",
-            "description": "Extension Chrome qui connecte Gmail et Odoo CRM. Consultez les contacts, opportunités, tâches et tickets. Enregistrez les emails avec pièces jointes. 10-20x plus rapide que le plugin officiel Odoo Gmail.",
+            "description": "Extension Chrome qui connecte Gmail et Odoo CRM. Consultez les contacts, opportunités, tâches et tickets. Enregistrez les emails avec pièces jointes.",
             "applicationCategory": "BusinessApplication",
             "applicationSubCategory": "CRM Integration",
             "operatingSystem": "Chrome Browser",
@@ -186,14 +186,6 @@
                     "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "Oui, l'extension fonctionne avec Odoo.sh, Odoo Online et les instances auto-hébergées sans aucune modification de code. Entrez simplement l'URL de votre Odoo pour vous connecter — vous êtes déjà connecté à Odoo, aucune clé API n'est nécessaire."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Quelle est la vitesse de l'extension Gmail et Odoo par rapport au plugin officiel ?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "L'extension est 10-20x plus rapide que le plugin officiel Odoo Gmail. Les temps de chargement sont de 100-300ms contre 2-6 secondes avec le plugin officiel basé sur Apps Script."
                     }
                 },
                 {

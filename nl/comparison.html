@@ -15,7 +15,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Het alternatief voor de Odoo Gmail-plugin voor self-hosted en on-premise Odoo: 10-20x sneller, geen API-sleutel en geen codewijzigingen. Verbind met alleen je Odoo-URL.">
+    <meta name="description" content="Het alternatief voor de Odoo Gmail-plugin voor self-hosted en on-premise Odoo: geen API-sleutel en geen codewijzigingen. Verbind met alleen je Odoo-URL.">
     <meta name="robots" content="index, follow">
 
     <!-- Canonical URL -->
@@ -36,14 +36,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://integrationnode.com/gmail-odoo/nl/comparison.html">
     <meta property="og:title" content="Odoo Gmail-plugin voor self-hosted Odoo — geen code, geen API-sleutel">
-    <meta property="og:description" content="Vergelijk onze Gmail-extensie met de officiële plugin van Odoo. 10-20x sneller, geen API-sleutel en werkt op self-hosted Odoo zonder codewijzigingen.">
+    <meta property="og:description" content="Vergelijk onze Gmail-extensie met de officiële plugin van Odoo: geen API-sleutel, meer van je Odoo naast elke e-mail, en werkt op self-hosted Odoo zonder codewijzigingen.">
     <meta property="og:image" content="https://integrationnode.com/gmail-odoo/assets/og-image.png">
     <meta property="og:site_name" content="Odoo Integration for Gmail">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Odoo Gmail-plugin voor self-hosted Odoo — geen code, geen API-sleutel">
-    <meta name="twitter:description" content="Snellere Gmail-Odoo-integratie voor self-hosted Odoo: 100-300ms versus 2-6s, geen API-sleutel, geen code. Verbind met alleen je Odoo-URL.">
+    <meta name="twitter:description" content="Gmail-Odoo-integratie voor self-hosted Odoo: geen API-sleutel, geen code. Verbind met alleen je Odoo-URL.">
     <meta name="twitter:image" content="https://integrationnode.com/gmail-odoo/assets/og-image.png">
 
     <title>Odoo Gmail-plugin voor self-hosted Odoo — geen code, geen API-sleutel</title>
@@ -81,15 +81,7 @@
                         "name": "What's the difference between this extension and the official Odoo Gmail Plugin?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Our extension is a Chrome extension that uses native browser APIs, making it 10-20x faster than the official Odoo Gmail Plugin which is based on Google Apps Script. Load times are 100-300ms vs 2-6 seconds."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Why is this extension faster than the official Odoo plugin?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "The official plugin uses Google Apps Script which has significant overhead and cold start times. Our Chrome extension connects directly to Odoo using native APIs with connection pooling, resulting in 10-20x faster response times."
+                            "text": "Our extension is a Chrome extension that runs inside Gmail and connects to Odoo with your own Odoo session, so it needs no API key and no code on self-hosted Odoo. The official Odoo Gmail Plugin is a Google Workspace add-on built on Google Apps Script."
                         }
                     },
                     {
@@ -179,7 +171,7 @@
     <section class="pricing-hero">
         <div class="container">
             <h1>Extensie vs Odoo Gmail Plugin</h1>
-            <p class="subtitle">10-20x sneller, zonder API-sleutel en zonder code op self-hosted Odoo — zie hoe wij ons verhouden tot de officiële Gmail-plugin.</p>
+            <p class="subtitle">Zonder API-sleutel en zonder code op self-hosted Odoo — zie hoe wij ons verhouden tot de officiële Gmail-plugin.</p>
         </div>
     </section>
 
@@ -189,16 +181,13 @@
             <div class="pricing-grid-extended">
                 <!-- Our Extension (Featured) -->
                 <div class="pricing-card-extended featured">
-                    <div class="badge-top">100-300ms</div>
                     <div class="plan-header">
                         <h3>Onze Extensie</h3>
-                        <p class="plan-description">Chrome-extensie gebouwd met native API's voor maximale prestaties en stabiliteit.</p>
+                        <p class="plan-description">Chrome-extensie die in Gmail werkt en met uw eigen Odoo-sessie verbinding maakt met Odoo.</p>
                     </div>
                     <div class="plan-features">
                         <h4>Belangrijkste Voordelen</h4>
                         <ul>
-                            <li><span class="check">✓</span> <span>10-20x snellere laadtijden (100-300ms)</span></li>
-                            <li><span class="check">✓</span> <span>Stabiele verbinding, geen onderbrekingen</span></li>
                             <li><span class="check">✓</span> <span>Realtime zoeken door alle records</span></li>
                             <li><span class="check">✓</span> <span>Werkt op self-hosted Odoo zonder codewijzigingen</span></li>
                             <li><span class="check">✓</span> <span>Verberg de secties die u niet gebruikt (PLUS)</span></li>
@@ -223,8 +212,6 @@
                             <li><span class="check">✓</span> <span>Bekijk contacten en bedrijfsinfo</span></li>
                             <li><span class="check">✓</span> <span>Maak leads en log e-mails</span></li>
                             <li><span class="check">✓</span> <span>Officiële Odoo ondersteuning</span></li>
-                            <li><span class="cross-red">✗</span> <span>Tragere laadtijden (2-6 seconden)</span></li>
-                            <li><span class="cross-red">✗</span> <span>Frequente onderbrekingen</span></li>
                             <li><span class="cross-red">✗</span> <span>Vereist codewijzigingen voor zelf-gehost</span></li>
                             <li><span class="cross-red">✗</span> <span>Geen prijsopgaven, verkooporders of financiële gegevens</span></li>
                         </ul>
@@ -269,39 +256,10 @@
                             <td>Google Workspace Marketplace</td>
                         </tr>
 
-                        <!-- Performance Section -->
-                        <tr class="section-header">
-                            <td colspan="3"><strong>Prestaties</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Laadtijd</td>
-                            <td><strong>100-300ms</strong></td>
-                            <td>2-6s</td>
-                        </tr>
                         <tr>
                             <td>Technologie</td>
                             <td>Chrome API's</td>
                             <td>Apps Script</td>
-                        </tr>
-                        <tr>
-                            <td>Caching</td>
-                            <td><span class="check-green">✓</span> <span>Slimme lokale cache</span></td>
-                            <td><span>Beperkt</span></td>
-                        </tr>
-
-                        <!-- Stability Section -->
-                        <tr class="section-header">
-                            <td colspan="3"><strong>Stabiliteit</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Verbinding</td>
-                            <td><span class="check-green">✓</span> <span>Persistent</span></td>
-                            <td><span class="cross-red">✗</span> <span>Frequente onderbrekingen</span></td>
-                        </tr>
-                        <tr>
-                            <td>Sessiebeheer</td>
-                            <td><span>Robuust</span></td>
-                            <td><span>Vereist herauthenticatie</span></td>
                         </tr>
 
                         <!-- User Experience Section -->

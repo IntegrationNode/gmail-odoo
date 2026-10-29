@@ -81,15 +81,7 @@
                         "name": "What's the difference between this extension and the official Odoo Gmail Plugin?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Our extension is a Chrome extension that uses native browser APIs, making it 10-20x faster than the official Odoo Gmail Plugin which is based on Google Apps Script. Load times are 100-300ms vs 2-6 seconds."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Why is this extension faster than the official Odoo plugin?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "The official plugin uses Google Apps Script which has significant overhead and cold start times. Our Chrome extension connects directly to Odoo using native APIs with connection pooling, resulting in 10-20x faster response times."
+                            "text": "Our extension is a Chrome extension that runs inside Gmail and connects to Odoo with your own Odoo session, so it needs no API key and no code on self-hosted Odoo. The official Odoo Gmail Plugin is a Google Workspace add-on built on Google Apps Script."
                         }
                     },
                     {
@@ -189,7 +181,6 @@
             <div class="pricing-grid-extended">
                 <!-- Our Extension (Featured) -->
                 <div class="pricing-card-extended featured">
-                    <div class="badge-top" data-t="comparison.cards.extension.badge"></div>
                     <div class="plan-header">
                         <h3 data-t="comparison.cards.extension.name"></h3>
                         <p class="plan-description" data-t="comparison.cards.extension.description"></p>
@@ -197,8 +188,6 @@
                     <div class="plan-features">
                         <h4 data-t="comparison.cards.extension.highlights"></h4>
                         <ul>
-                            <li><span class="check">✓</span> <span data-t="comparison.cards.extension.feature1"></span></li>
-                            <li><span class="check">✓</span> <span data-t="comparison.cards.extension.feature2"></span></li>
                             <li><span class="check">✓</span> <span data-t="comparison.cards.extension.feature3"></span></li>
                             <li><span class="check">✓</span> <span data-t="comparison.cards.extension.feature4"></span></li>
                             <li><span class="check">✓</span> <span data-t="comparison.cards.extension.feature5"></span></li>
@@ -223,8 +212,6 @@
                             <li><span class="check">✓</span> <span data-t="comparison.cards.plugin.feature1"></span></li>
                             <li><span class="check">✓</span> <span data-t="comparison.cards.plugin.feature2"></span></li>
                             <li><span class="check">✓</span> <span data-t="comparison.cards.plugin.feature3"></span></li>
-                            <li><span class="cross-red">✗</span> <span data-t="comparison.cards.plugin.feature4"></span></li>
-                            <li><span class="cross-red">✗</span> <span data-t="comparison.cards.plugin.feature5"></span></li>
                             <li><span class="cross-red">✗</span> <span data-t="comparison.cards.plugin.feature6"></span></li>
                             <li><span class="cross-red">✗</span> <span data-t="comparison.cards.plugin.feature7"></span></li>
                         </ul>
@@ -269,39 +256,10 @@
                             <td data-t="comparison.table.storePlugin"></td>
                         </tr>
 
-                        <!-- Performance Section -->
-                        <tr class="section-header">
-                            <td colspan="3"><strong data-t="comparison.table.performance"></strong></td>
-                        </tr>
-                        <tr>
-                            <td data-t="comparison.table.loadTime"></td>
-                            <td><strong>100-300ms</strong></td>
-                            <td>2-6s</td>
-                        </tr>
                         <tr>
                             <td data-t="comparison.table.technology"></td>
                             <td data-t="comparison.table.chromeAPIs"></td>
                             <td>Apps Script</td>
-                        </tr>
-                        <tr>
-                            <td data-t="comparison.table.caching"></td>
-                            <td><span class="check-green">✓</span> <span data-t="comparison.table.smartCache"></span></td>
-                            <td><span data-t="comparison.table.limited"></span></td>
-                        </tr>
-
-                        <!-- Stability Section -->
-                        <tr class="section-header">
-                            <td colspan="3"><strong data-t="comparison.table.stability"></strong></td>
-                        </tr>
-                        <tr>
-                            <td data-t="comparison.table.connection"></td>
-                            <td><span class="check-green">✓</span> <span data-t="comparison.table.persistent"></span></td>
-                            <td><span class="cross-red">✗</span> <span data-t="comparison.table.frequentDisconnects"></span></td>
-                        </tr>
-                        <tr>
-                            <td data-t="comparison.table.sessionHandling"></td>
-                            <td><span data-t="comparison.table.robust"></span></td>
-                            <td><span data-t="comparison.table.requiresReauth"></span></td>
                         </tr>
 
                         <!-- User Experience Section -->
