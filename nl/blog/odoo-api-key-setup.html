@@ -138,7 +138,7 @@
         <div class="container">
             <div class="article-content">
                 <!-- Intro -->
-                <p class="article-intro">API-sleutels stellen externe tools — zoals onze Gmail-extensie — in staat om veilig verbinding te maken met uw Odoo-instantie zonder uw wachtwoord te gebruiken. Het aanmaakproces verschilt enigszins afhankelijk van uw Odoo-versie. Deze handleiding behandelt elke versie van Odoo 14 tot en met 19 met stapsgewijze instructies.</p>
+                <p class="article-intro">Met API-sleutels kunnen externe tools veilig verbinding maken met uw Odoo-instantie zonder uw wachtwoord te gebruiken. Onze Gmail-extensie heeft er geen nodig om verbinding te maken: ze gebruikt uw Odoo-sessie. Een sleutel is een optionele reserve voor als die sessie verloopt, en automatisch vastleggen vereist er een. Hoe u een sleutel aanmaakt, verschilt een beetje per Odoo-versie. Deze gids behandelt alle versies van Odoo 14 tot 19, stap voor stap.</p>
 
                 <!-- Section 1: Before You Begin -->
                 <h2>
@@ -240,7 +240,7 @@
 
                 <div class="warning-box">
                     <span class="material-symbols-outlined">warning</span>
-                    <span>Als u niet "Persistent Key" selecteert, verloopt uw API-sleutel na de gekozen duur en stopt de extensie met werken. U zou dan een nieuwe sleutel moeten aanmaken en de extensie opnieuw moeten configureren.</span>
+                    <span>Als u "Persistent Key" niet selecteert, verloopt uw API-sleutel na de gekozen duur. De extensie gebruikt dan uw Odoo-sessie, en automatisch vastleggen stopt tot u een nieuwe sleutel toevoegt bij Instellingen → Verbinding.</span>
                 </div>
 
                 <figure class="article-figure">
@@ -358,22 +358,22 @@
                     <span>Probleemoplossing</span>
                 </h2>
 
-                <h3>Fout "Invalid API Key"</h3>
+                <h3>"Odoo accepteert die API-sleutel niet"</h3>
                 <p>Controleer of u de volledige sleutel heeft gekopieerd zonder extra spaties. Als u Odoo 18+ gebruikt, zorg ervoor dat de sleutel niet is verlopen — maak een nieuwe aan met "Persistent Key" geselecteerd.</p>
 
-                <h3>"API Key expired"</h3>
+                <h3>"Odoo accepteert uw API-sleutel niet meer"</h3>
                 <p>Dit gebeurt in Odoo 18+ wanneer de sleutel is aangemaakt zonder "Persistent Key" te selecteren. Maak een nieuwe sleutel aan en selecteer "Persistent Key" als duur.</p>
 
                 <h3>Kan de API Key-knop niet vinden</h3>
                 <p>In Odoo 15 moet u eerst Developer Mode activeren (Settings → Developer Tools → Activate). In Odoo 19+ is de sectie verplaatst naar My Preferences → Security (niet Account Security).</p>
 
-                <h3>Fout "Connection timeout"</h3>
-                <p>Controleer of uw Odoo-URL correct en bereikbaar is. Zorg ervoor dat u https:// toevoegt en eventuele trailing slash verwijdert.</p>
+                <h3>"Odoo doet er te lang over om te antwoorden"</h3>
+                <p>Controleer of het adres van uw Odoo klopt en bereikbaar is (bijv. uwbedrijf.odoo.com). Het kan ook erg druk zijn of opnieuw opstarten: probeer het zo nog eens.</p>
 
                 <!-- CTA -->
                 <div class="article-cta">
                     <h3>Klaar om te verbinden?</h3>
-                    <p>Nu u uw API-sleutel heeft, installeer de extensie en verbind uw Odoo-instantie met Gmail in seconden.</p>
+                    <p>Installeer de extensie en verbind haar binnen enkele seconden met uw Odoo-sessie. Om uw sleutel toe te voegen, plakt u hem bij Instellingen → Verbinding → API Key (optioneel), of bij Geavanceerde opties wanneer u verbindt.</p>
                     <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&amp;utm_medium=content&amp;utm_campaign=odoo-api-key-setup&amp;utm_content=footer_cta" target="_blank" class="btn btn-primary btn-lg">Extensie Downloaden</a>
                 </div>
             </div>

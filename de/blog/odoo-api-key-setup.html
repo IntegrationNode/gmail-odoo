@@ -138,7 +138,7 @@
         <div class="container">
             <div class="article-content">
                 <!-- Intro -->
-                <p class="article-intro">API Keys ermöglichen es externen Tools — wie unserer Gmail-Erweiterung — sich sicher mit Ihrer Odoo-Instanz zu verbinden, ohne Ihr Passwort zu verwenden. Der Erstellungsprozess variiert je nach Odoo-Version leicht. Diese Anleitung deckt alle Versionen von Odoo 14 bis 19 mit Schritt-für-Schritt-Anweisungen ab.</p>
+                <p class="article-intro">API-Schlüssel ermöglichen externen Tools eine sichere Verbindung zu Ihrer Odoo-Instanz, ohne Ihr Passwort zu verwenden. Unsere Gmail-Erweiterung braucht keinen, um sich zu verbinden: Sie nutzt Ihre Odoo-Sitzung. Ein Schlüssel ist eine optionale Reserve für den Fall, dass diese Sitzung abläuft, und die automatische Protokollierung benötigt einen. Wie man einen Schlüssel erstellt, hängt leicht von Ihrer Odoo-Version ab. Diese Anleitung deckt alle Versionen von Odoo 14 bis 19 Schritt für Schritt ab.</p>
 
                 <!-- Section 1: Before You Begin -->
                 <h2>
@@ -240,7 +240,7 @@
 
                 <div class="warning-box">
                     <span class="material-symbols-outlined">warning</span>
-                    <span>Wenn Sie nicht 'Persistent Key' auswählen, läuft Ihr API Key nach der gewählten Dauer ab, und die Erweiterung funktioniert nicht mehr. Sie müssten einen neuen Schlüssel erstellen und die Erweiterung neu konfigurieren.</span>
+                    <span>Wenn Sie "Persistent Key" nicht auswählen, läuft Ihr API-Schlüssel nach der gewählten Dauer ab. Die Erweiterung nutzt dann Ihre Odoo-Sitzung, und die automatische Protokollierung stoppt, bis Sie unter Einstellungen → Verbindung einen neuen Schlüssel hinzufügen.</span>
                 </div>
 
                 <figure class="article-figure">
@@ -358,22 +358,22 @@
                     <span>Fehlerbehebung</span>
                 </h2>
 
-                <h3>Fehler 'Invalid API Key'</h3>
+                <h3>„Odoo akzeptiert diesen API-Schlüssel nicht“</h3>
                 <p>Überprüfen Sie, ob Sie den gesamten Schlüssel ohne zusätzliche Leerzeichen kopiert haben. Wenn Sie Odoo 18+ verwenden, stellen Sie sicher, dass der Schlüssel nicht abgelaufen ist — erstellen Sie einen neuen mit 'Persistent Key' ausgewählt.</p>
 
-                <h3>'API Key expired'</h3>
+                <h3>„Odoo akzeptiert Ihren API-Schlüssel nicht mehr“</h3>
                 <p>Dies passiert in Odoo 18+, wenn der Schlüssel ohne Auswahl von 'Persistent Key' erstellt wurde. Erstellen Sie einen neuen Schlüssel und wählen Sie 'Persistent Key' als Dauer.</p>
 
                 <h3>API-Key-Schaltfläche nicht gefunden</h3>
                 <p>In Odoo 15 müssen Sie zuerst Developer Mode aktivieren (Settings → Developer Tools → Aktivieren). In Odoo 19+ wurde der Abschnitt nach My Preferences → Security verschoben (nicht Account Security).</p>
 
-                <h3>Fehler 'Connection timeout'</h3>
-                <p>Überprüfen Sie, ob Ihre Odoo-URL korrekt und erreichbar ist. Stellen Sie sicher, dass https:// enthalten ist und entfernen Sie einen abschließenden Schrägstrich.</p>
+                <h3>„Odoo braucht zu lange für die Antwort“</h3>
+                <p>Prüfen Sie, ob die Adresse Ihres Odoo stimmt und erreichbar ist (z. B. ihrefirma.odoo.com). Es kann auch stark ausgelastet sein oder neu starten: Versuchen Sie es gleich noch einmal.</p>
 
                 <!-- CTA -->
                 <div class="article-cta">
                     <h3>Bereit zur Verbindung?</h3>
-                    <p>Jetzt, da Sie Ihren API Key haben, installieren Sie die Erweiterung und verbinden Sie Ihre Odoo-Instanz in Sekunden mit Gmail.</p>
+                    <p>Installieren Sie die Erweiterung und verbinden Sie sie in Sekunden mit Ihrer Odoo-Sitzung. Um Ihren Schlüssel hinzuzufügen, fügen Sie ihn unter Einstellungen → Verbindung → API-Schlüssel (optional) ein oder beim Verbinden unter Erweiterte Optionen.</p>
                     <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&amp;utm_medium=content&amp;utm_campaign=odoo-api-key-setup&amp;utm_content=footer_cta" target="_blank" class="btn btn-primary btn-lg">Erweiterung holen</a>
                 </div>
             </div>

@@ -694,11 +694,11 @@
       "description": "Log e-mails naar Odoo-records met één klik. Bijlagen en threadgeschiedenis blijven behouden."
     },
     "autoLogging": {
-      "title": "Automatisch loggen",
-      "description": "Koppel een Gmail-thread één keer en de extensie houdt deze op de achtergrond gesynchroniseerd met het Odoo-record. Geen handmatig loggen meer."
+      "title": "Automatisch vastleggen (Plus · privébèta)",
+      "description": "Koppel een Gmail-conversatie één keer en nieuwe antwoorden worden vanzelf in het Odoo-record vastgelegd, ook met Gmail dicht. Vereist een API-sleutel."
     },
     "multiCompany": {
-      "title": "Multi-company ondersteuning",
+      "title": "Multi-company ondersteuning (Plus)",
       "description": "Werkt in alle Odoo-bedrijven waar u toegang toe heeft. Het actieve bedrijf wordt automatisch per record gedetecteerd."
     },
     "fast": {
@@ -765,12 +765,12 @@
       "save": "Bespaar 20%",
       "feature1": "Alles in Gratis",
       "feature2": "Realtime zoeken door kansen, taken & tickets",
-      "feature3": "Bekijk tot 50 records per sectie (vs 5 in Gratis)",
-      "feature4": "Automatisch loggen van Gmail-threads naar Odoo-records",
+      "feature3": "Alle records van elke sectie, pagina voor pagina (vs de eerste 5 in Gratis)",
+      "feature4": "Automatisch vastleggen van Gmail-conversaties (privébèta)",
       "feature5": "Multi-company ondersteuning",
       "feature6": "Financiële inzichten over uw contacten",
       "feature7": "Berichten in Odoo: de e-mails en notities van het contact",
-      "feature8": "Organisatie van notificatie-e-mails met modulebadges",
+      "feature8": "Odoo-meldingen georganiseerd in Gmail, met module- en vermeldingslabels",
       "feature9": "Contact/Bedrijf tabbladen voor betere context",
       "seeFullComparison": "Volledige vergelijking bekijken →",
       "cta": "Upgraden naar PLUS"
@@ -786,7 +786,7 @@
     "taxNote": "Excl. belasting",
     "hero": {
       "title": "Eenvoudige, Transparante Prijzen",
-      "subtitle": "Begin gratis, upgrade wanneer u krachtige functies nodig heeft. Geen creditcard vereist."
+      "subtitle": "Begin gratis en stap over op Plus wanneer u krachtige functies nodig hebt. Zeg de Plus-proefperiode op voor het einde en er wordt niets in rekening gebracht."
     },
     "perMonth": "/maand",
     "featuresIncluded": "Inbegrepen Functies:",
@@ -810,17 +810,16 @@
       "perYear": "/jaar",
       "save": "Bespaar 20%",
       "feature1": "Realtime zoeken door kansen, taken & tickets",
-      "feature2": "Bekijk tot 50 records per sectie (vs 5 in Gratis)",
+      "feature2": "Alle records van elke sectie, pagina voor pagina (vs de eerste 5 in Gratis)",
       "feature3": "Contact/Bedrijf tabbladen voor betere context",
       "feature4": "Gerelateerde contacten per domein",
       "feature5": "Pas zichtbare secties aan",
-      "feature6": "Prestatie-inzichten & statistieken",
       "feature7": "Prioriteits e-mail ondersteuning",
       "feature8": "Records groeperen op fase/status",
       "feature9": "E-maildeelnemersinformatie vanuit Odoo",
       "feature10": "Berichten in Odoo: de e-mails en notities van het contact",
-      "feature11": "Organisatie van notificatie-e-mails met modulebadges",
-      "feature12": "Automatisch loggen van Gmail-threads naar Odoo-records",
+      "feature11": "Odoo-meldingen georganiseerd in Gmail, met module- en vermeldingslabels",
+      "feature12": "Automatisch vastleggen van Gmail-conversaties (privébèta)",
       "feature13": "Multi-company ondersteuning",
       "feature14": "Financiële inzichten over uw contacten",
       "feature15": "Aanpasbare quote-diepte bij het loggen van e-mails",
@@ -859,11 +858,12 @@
       "groupByStage": "Records groeperen op fase/status",
       "emailParticipants": "E-maildeelnemersinfo",
       "recentActivities": "Berichten in Odoo",
-      "notificationOrganization": "Organisatie van notificatie-e-mails",
+      "notificationOrganization": "Odoo-meldingen georganiseerd in Gmail",
       "automation": "Automatisering & Schalen",
-      "autoLogging": "Automatisch loggen van Gmail-threads naar Odoo",
+      "autoLogging": "Automatisch vastleggen van Gmail-conversaties (privébèta)",
       "multiCompany": "Multi-company ondersteuning",
-      "customQuoteLevels": "Aanpasbare quote-diepte bij loggen"
+      "customQuoteLevels": "Aanpasbare quote-diepte bij loggen",
+      "allRecords": "Alle"
     },
     "cta": {
       "title": "Klaar om uw Gmail-Odoo workflow te versnellen?",
@@ -899,19 +899,19 @@
       "odooData4": "Helpdesk tickets gekoppeld aan contacten",
       "odooData5": "Bedrijfsinformatie en gerelateerde contacten",
       "autoLoggingData": "Data Accessed for Auto-Logging (Optional)",
-      "autoLoggingDataDesc": "Auto-logging is an opt-in feature. The Extension only accesses this data after you grant Gmail access in Settings > Auto-logging and explicitly link a thread to an Odoo record. Once a thread is linked, the Extension uses Google's Gmail API to:",
+      "autoLoggingDataDesc": "Automatic logging is an opt-in feature. The Extension only accesses this data after you grant Gmail access in Settings > Email logging (\"Connect Gmail\") and explicitly link a thread to an Odoo record. Once a thread is linked, the Extension uses Google's Gmail API to:",
       "autoLoggingData1": "Periodically check for new messages on the threads you have linked (background polling while at least one mapping is active)",
       "autoLoggingData2": "Read the subject, sender, recipients, date and body of those new messages",
       "autoLoggingData3": "Post them as internal notes in the Odoo records you linked",
       "autoLoggingDataNoteTitle": "Scope:",
-      "autoLoggingDataNote": "The Extension only requests the gmail.readonly OAuth scope. It cannot send, modify, archive or delete emails. Auto-logging stops when you disconnect Gmail in Settings, deactivate the mapping, or remove the Extension. Tokens can also be revoked from your Google Account permissions at any time.",
+      "autoLoggingDataNote": "The Extension only requests the gmail.readonly OAuth scope. It cannot send, modify, archive or delete emails. Automatic logging stops when you turn it off for a thread or for all of them, or remove the Extension. Tokens can also be revoked from your Google Account permissions at any time.",
       "configData": "Configuratiegegevens",
       "configDataDesc": "De Extensie slaat de configuratie van uw Odoo-instantie lokaal op:",
       "configData1": "URL van Odoo-instantie",
       "configData2": "Databasenaam",
       "configData3": "Authenticatiegegevens",
       "configData4": "Gebruikersvoorkeuren (instellingen zichtbare secties)",
-      "configData5": "Gmail OAuth tokens (only when auto-logging is enabled) — required to access the Gmail API on your behalf; revocable from Settings > Auto-logging or your Google Account",
+      "configData5": "Gmail OAuth tokens (only when automatic logging is enabled) — required to access the Gmail API on your behalf; revocable from your Google Account",
       "configData6": "Auto-logging mappings (thread-to-record links and IDs of messages already logged) — stored locally for the duration of each mapping",
       "configData7": "Active company selection and the list of companies you have access to (multi-company instances) — cached locally to remember which company you are operating in",
       "openTabs": "Geopende Odoo-tabbladen",
@@ -962,7 +962,7 @@
       "posthog4": "A boolean flag indicating whether your Odoo user has access to more than one company (used to know whether multi-company features are relevant). The list of companies and their names are NOT sent.",
       "posthogPolicy": "PostHog Privacybeleid:",
       "optOut": "Uitschakelen:",
-      "optOutDesc": "U kunt gebruiksstatistieken op elk moment uitschakelen via Instellingen > Account > Privacy. Die instelling betreft gebruiksstatistieken; foutrapporten worden hieronder beschreven.",
+      "optOutDesc": "U kunt gebruiksstatistieken op elk moment uitschakelen via Instellingen > Algemeen (\"Anonieme gebruiksgegevens delen\"). Die instelling betreft gebruiksstatistieken; foutrapporten worden hieronder beschreven.",
       "errorReports": "Foutrapporten:",
       "errorReportsDesc": "Foutrapporten worden verzonden ongeacht de analyse-instelling, omdat ze de toestand van de applicatie beschrijven en niet uw activiteit. Elk rapport bevat de foutmelding, de technische stacktrace, de versie van de extensie en de willekeurige installatie-ID — nooit e-mailinhoud, inloggegevens of Odoo-gegevens. De rechtsgrond is ons gerechtvaardigd belang om storingen op te sporen en te verhelpen. U kunt hiertegen op elk moment bezwaar maken door te schrijven naar"
     },
@@ -973,7 +973,7 @@
       "yourOdoo": "Uw Odoo Instantie:",
       "yourOdooDesc": "De Extensie stuurt API-verzoeken naar de Odoo-instantie URL die u configureert om records op te halen en aan te maken",
       "polarDesc": "Alleen voor abonnementsbeheer (e-mail, abonnementsstatus, betalingsverwerking)",
-      "posthogDesc": "Anonieme gebruiksstatistieken (functiegebruik) en foutrapporten. Geen persoonsgegevens of e-mail-/Odoo-inhoud. Gebruiksstatistieken kunnen worden uitgeschakeld via Instellingen > Account > Privacy.",
+      "posthogDesc": "Anonieme gebruiksstatistieken (functiegebruik) en foutrapporten. Geen persoonsgegevens of e-mail-/Odoo-inhoud. Gebruiksstatistieken kunnen worden uitgeschakeld via Instellingen > Algemeen (\"Anonieme gebruiksgegevens delen\").",
       "doesNot": "De Extensie doet NIET:",
       "notSell": "Uw gegevens verkopen aan gegevensmakelaars",
       "notAdvertising": "Gegevens delen voor reclamedoeleinden",
@@ -1004,7 +1004,7 @@
       "optional": "Optionele Machtigingen (Aangevraagd Wanneer Nodig)",
       "optionalIntro": "De Extensie vraagt optionele machtigingen aan voor aangepaste Odoo-instanties:",
       "optionalDesc": "Alleen gebruikt als u verbinding maakt met een zelf-gehoste Odoo-instantie op een aangepast domein (bijv. odoo.uwbedrijf.com of erp.voorbeeld.com). Deze machtiging wordt alleen aangevraagd wanneer u expliciet een aangepaste Odoo URL configureert.",
-      "optionalIdentity": "Used ONLY when you opt into auto-logging. Lets the Extension complete the Google sign-in flow that grants Gmail API access (gmail.readonly scope). Requested at the moment you click \"Connect\" in Settings > Auto-logging.",
+      "optionalIdentity": "Used ONLY when you opt into automatic logging. Lets the Extension complete the Google sign-in flow that grants Gmail API access (gmail.readonly scope). Requested at the moment you click \"Connect Gmail\" in Settings > Email logging.",
       "optionalAlarms": "Used ONLY when auto-logging is active. Lets the Extension wake up periodically in the background to check for new emails on the threads you have linked. Requested together with the identity permission.",
       "note": "Opmerking:",
       "noteDesc": "De Extensie ondersteunt alleen HTTPS-verbindingen voor beveiliging. HTTP-verbindingen zijn niet toegestaan.",
@@ -1439,7 +1439,7 @@
       },
       "features": {
         "title": "Geavanceerde Functies",
-        "description": "Realtime zoeken, secties verbergen, verbeterd e-mail loggen met bijlagen."
+        "description": "E-mails vastleggen met bijlagen, en met PLUS realtime zoeken en controle over de secties."
       }
     },
     "migration": {
@@ -1451,7 +1451,7 @@
       },
       "step2": {
         "title": "Inloggegevens Invoeren",
-        "description": "Alleen je Odoo-URL — je bent al ingelogd bij Odoo. Geen API-sleutel nodig. (Optionele API-sleutel alleen voor automatisch loggen op de achtergrond.)"
+        "description": "Alleen je Odoo-URL — je bent al ingelogd bij Odoo. Geen API-sleutel nodig. (Een optionele API-sleutel houdt hem werkend als je Odoo-sessie verloopt, en automatisch vastleggen heeft er een nodig.)"
       },
       "step3": {
         "title": "Begin met Werken",
@@ -1497,12 +1497,12 @@
         "feature2": "Stabiele verbinding, geen onderbrekingen",
         "feature3": "Realtime zoeken door alle records",
         "feature4": "Werkt op self-hosted Odoo zonder codewijzigingen",
-        "feature5": "Secties verbergen om gegevenslading te verminderen",
+        "feature5": "Verberg de secties die u niet gebruikt (PLUS)",
         "feature6": "Verbeterd e-mail loggen met bijlagen",
         "feature7": "Instellen met alleen je Odoo-URL — geen API-sleutel, geen code",
         "cta": "Gratis Proberen",
         "feature8": "Prijsopgaven, verkooporders en financiële gegevens in de zijbalk",
-        "feature9": "Automatisch loggen: koppel een thread één keer, antwoorden blijven synchroon"
+        "feature9": "Automatisch vastleggen (privébèta): koppel een conversatie één keer en nieuwe antwoorden komen in Odoo"
       },
       "plugin": {
         "name": "Odoo Gmail Plugin",
@@ -1559,7 +1559,7 @@
       "odooData": "Odoo-gegevens in de zijbalk",
       "contactsRow": "Contacten en bedrijfsinformatie",
       "recordsRow": "Kansen, taken en tickets",
-      "recordsOurs": "5 in Free, tot 50 met PLUS",
+      "recordsOurs": "5 in Free, alle met PLUS (pagina voor pagina)",
       "recordsPlugin": "Alleen de eerste 5",
       "quotationsRow": "Prijsopgaven en verkooporders",
       "financialRow": "Financiële inzichten (openstaand en achterstallig)",
@@ -1569,7 +1569,7 @@
       "enrichmentRow": "Bedrijfsverrijking (IAP)",
       "enrichmentPlugin": "Vereist IAP-credits",
       "automation": "Automatisering",
-      "autoLogRow": "Antwoorden in een thread automatisch loggen",
+      "autoLogRow": "Antwoorden in een conversatie automatisch vastleggen (privébèta)",
       "notificationsRow": "Odoo-meldingen georganiseerd in Gmail",
       "recordMenuRow": "Actiemenu bij elk record"
     },
@@ -1582,7 +1582,7 @@
       },
       "step2": {
         "title": "Voer Uw Inloggegevens In",
-        "description": "Alleen je Odoo-URL — je bent al ingelogd bij Odoo. Geen API-sleutel nodig. (Optionele API-sleutel alleen voor automatisch loggen op de achtergrond.)"
+        "description": "Alleen je Odoo-URL — je bent al ingelogd bij Odoo. Geen API-sleutel nodig. (Een optionele API-sleutel houdt hem werkend als je Odoo-sessie verloopt, en automatisch vastleggen heeft er een nodig.)"
       },
       "step3": {
         "title": "Begin met Gebruiken",
@@ -1777,7 +1777,7 @@
   "blogApiKeySetup": {
     "title": "Een API-sleutel Aanmaken in Odoo (Alle Versies)",
     "date": "21 maart 2026",
-    "intro": "API-sleutels stellen externe tools — zoals onze Gmail-extensie — in staat om veilig verbinding te maken met uw Odoo-instantie zonder uw wachtwoord te gebruiken. Het aanmaakproces verschilt enigszins afhankelijk van uw Odoo-versie. Deze handleiding behandelt elke versie van Odoo 14 tot en met 19 met stapsgewijze instructies.",
+    "intro": "Met API-sleutels kunnen externe tools veilig verbinding maken met uw Odoo-instantie zonder uw wachtwoord te gebruiken. Onze Gmail-extensie heeft er geen nodig om verbinding te maken: ze gebruikt uw Odoo-sessie. Een sleutel is een optionele reserve voor als die sessie verloopt, en automatisch vastleggen vereist er een. Hoe u een sleutel aanmaakt, verschilt een beetje per Odoo-versie. Deze gids behandelt alle versies van Odoo 14 tot 19, stap voor stap.",
     "section1": {
       "title": "Voordat u Begint",
       "p1": "Voordat u een API-sleutel aanmaakt, controleer of u aan deze vereisten voldoet:",
@@ -1827,7 +1827,7 @@
       "step3": "Kies in de duurkiezer \"Persistent Key\"",
       "step4": "Klik op \"Generate key\"",
       "step5": "Kopieer de gegenereerde sleutel onmiddellijk — deze kan later niet meer worden opgehaald",
-      "warning": "Als u niet \"Persistent Key\" selecteert, verloopt uw API-sleutel na de gekozen duur en stopt de extensie met werken. U zou dan een nieuwe sleutel moeten aanmaken en de extensie opnieuw moeten configureren.",
+      "warning": "Als u \"Persistent Key\" niet selecteert, verloopt uw API-sleutel na de gekozen duur. De extensie gebruikt dan uw Odoo-sessie, en automatisch vastleggen stopt tot u een nieuwe sleutel toevoegt bij Instellingen → Verbinding.",
       "imgAltSecurity": "Tabblad Account Security met API-sleutels met verloopdatumkolom in Odoo 18",
       "imgAltWizard": "Wizard voor het aanmaken van een API-sleutel met duurkiezer in Odoo 18",
       "imgAltResult": "Gegenereerde API-sleutel in Odoo 18"
@@ -1871,18 +1871,18 @@
     },
     "section7": {
       "title": "Probleemoplossing",
-      "issue1Title": "Fout \"Invalid API Key\"",
+      "issue1Title": "\"Odoo accepteert die API-sleutel niet\"",
       "issue1Desc": "Controleer of u de volledige sleutel heeft gekopieerd zonder extra spaties. Als u Odoo 18+ gebruikt, zorg ervoor dat de sleutel niet is verlopen — maak een nieuwe aan met \"Persistent Key\" geselecteerd.",
-      "issue2Title": "\"API Key expired\"",
+      "issue2Title": "\"Odoo accepteert uw API-sleutel niet meer\"",
       "issue2Desc": "Dit gebeurt in Odoo 18+ wanneer de sleutel is aangemaakt zonder \"Persistent Key\" te selecteren. Maak een nieuwe sleutel aan en selecteer \"Persistent Key\" als duur.",
       "issue3Title": "Kan de API Key-knop niet vinden",
       "issue3Desc": "In Odoo 15 moet u eerst Developer Mode activeren (Settings → Developer Tools → Activate). In Odoo 19+ is de sectie verplaatst naar My Preferences → Security (niet Account Security).",
-      "issue4Title": "Fout \"Connection timeout\"",
-      "issue4Desc": "Controleer of uw Odoo-URL correct en bereikbaar is. Zorg ervoor dat u https:// toevoegt en eventuele trailing slash verwijdert."
+      "issue4Title": "\"Odoo doet er te lang over om te antwoorden\"",
+      "issue4Desc": "Controleer of het adres van uw Odoo klopt en bereikbaar is (bijv. uwbedrijf.odoo.com). Het kan ook erg druk zijn of opnieuw opstarten: probeer het zo nog eens."
     },
     "cta": {
       "title": "Klaar om te verbinden?",
-      "subtitle": "Nu u uw API-sleutel heeft, installeer de extensie en verbind uw Odoo-instantie met Gmail in seconden.",
+      "subtitle": "Installeer de extensie en verbind haar binnen enkele seconden met uw Odoo-sessie. Om uw sleutel toe te voegen, plakt u hem bij Instellingen → Verbinding → API Key (optioneel), of bij Geavanceerde opties wanneer u verbindt.",
       "button": "Extensie Downloaden"
     }
   },

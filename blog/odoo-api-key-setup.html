@@ -138,7 +138,7 @@
         <div class="container">
             <div class="article-content">
                 <!-- Intro -->
-                <p class="article-intro">API keys allow external tools — like our Gmail extension — to connect securely to your Odoo instance without using your password. The process to create one varies slightly depending on your Odoo version. This guide covers every version from Odoo 14 to 19 with step-by-step instructions.</p>
+                <p class="article-intro">API keys allow external tools to connect securely to your Odoo instance without using your password. Our Gmail extension doesn't need one to connect: it uses your Odoo session. A key is an optional backup for when that session expires, and automatic logging requires one. The process to create a key varies slightly depending on your Odoo version. This guide covers every version from Odoo 14 to 19 with step-by-step instructions.</p>
 
                 <!-- Section 1: Before You Begin -->
                 <h2>
@@ -240,7 +240,7 @@
 
                 <div class="warning-box">
                     <span class="material-symbols-outlined">warning</span>
-                    <span>If you don't select "Persistent Key", your API key will expire after the chosen duration, and the extension will stop working. You would need to create a new key and reconfigure the extension.</span>
+                    <span>If you don't select "Persistent Key", your API key will expire after the chosen duration. The extension then falls back to your Odoo session, and automatic logging stops until you add a new key in Settings → Connection.</span>
                 </div>
 
                 <figure class="article-figure">
@@ -358,22 +358,22 @@
                     <span>Troubleshooting</span>
                 </h2>
 
-                <h3>"Invalid API Key" error</h3>
+                <h3>"Odoo doesn't accept that API key"</h3>
                 <p>Double-check that you copied the entire key without extra spaces. If using Odoo 18+, make sure the key hasn't expired — create a new one with "Persistent Key" selected.</p>
 
-                <h3>"API Key expired"</h3>
+                <h3>"Odoo no longer accepts your API key"</h3>
                 <p>This happens in Odoo 18+ when the key was created without selecting "Persistent Key". Create a new key and select "Persistent Key" as the duration.</p>
 
                 <h3>Can't find the API Key button</h3>
                 <p>In Odoo 15, you need to activate Developer Mode first (Settings → Developer Tools → Activate). In Odoo 19+, the section moved to My Preferences → Security (not Account Security).</p>
 
-                <h3>"Connection timeout" error</h3>
-                <p>Verify that your Odoo URL is correct and accessible. Make sure to include https:// and remove any trailing slash.</p>
+                <h3>"Odoo is taking too long to respond"</h3>
+                <p>Verify that your Odoo address is correct and reachable (e.g. yourcompany.odoo.com). It may also be very busy or restarting: try again in a moment.</p>
 
                 <!-- CTA -->
                 <div class="article-cta">
                     <h3>Ready to connect?</h3>
-                    <p>Now that you have your API key, install the extension and connect your Odoo instance to Gmail in seconds.</p>
+                    <p>Install the extension and connect it with your Odoo session in seconds. To add your key, paste it in Settings → Connection → API Key (optional), or in Advanced options when you connect.</p>
                     <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&amp;utm_medium=content&amp;utm_campaign=odoo-api-key-setup&amp;utm_content=footer_cta" target="_blank" class="btn btn-primary btn-lg">Get the Extension</a>
                 </div>
             </div>

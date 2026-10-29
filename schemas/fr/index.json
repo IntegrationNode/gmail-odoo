@@ -40,7 +40,7 @@
                     "price": "19",
                     "priceCurrency": "USD",
                     "priceValidUntil": "2026-12-31",
-                    "description": "50 enregistrements, recherche en temps réel, pièces jointes, support prioritaire"
+                    "description": "Tous les enregistrements de chaque section, recherche en temps réel, multi-entreprises, aperçus financiers, support prioritaire"
                 }
             ],
             "author": { "@id": "https://integrationnode.com/gmail-odoo/#organization" },

@@ -694,11 +694,11 @@
       "description": "Log emails to Odoo records with one click. Attachments and thread history preserved."
     },
     "autoLogging": {
-      "title": "Auto-logging",
-      "description": "Link a Gmail thread once and the extension keeps it synced with the Odoo record in the background. No manual logging again."
+      "title": "Automatic logging (Plus · private beta)",
+      "description": "Link a Gmail thread once and new replies are logged to the Odoo record on their own, even with Gmail closed. Needs an API key."
     },
     "multiCompany": {
-      "title": "Multi-company support",
+      "title": "Multi-company support (Plus)",
       "description": "Works across all the Odoo companies you have access to. The active company is auto-detected per record."
     },
     "fast": {
@@ -765,12 +765,12 @@
       "save": "Save 20%",
       "feature1": "Everything in Free",
       "feature2": "Real-time search across opportunities, tasks & tickets",
-      "feature3": "View up to 50 records per section (vs 5 in Free)",
-      "feature4": "Auto-log Gmail threads to Odoo records",
+      "feature3": "Every record in each section, page by page (vs first 5 in Free)",
+      "feature4": "Automatic logging of Gmail threads (private beta)",
       "feature5": "Multi-company support",
       "feature6": "Financial insights for your contacts",
       "feature7": "Messages in Odoo: the contact's emails and notes",
-      "feature8": "Notification email organization with module badges",
+      "feature8": "Odoo notifications organized in Gmail, with module and mention labels",
       "feature9": "Contact/Company tabs for better context",
       "seeFullComparison": "See full comparison →",
       "cta": "Upgrade to PLUS"
@@ -786,7 +786,7 @@
     "taxNote": "Taxes not included",
     "hero": {
       "title": "Simple, Transparent Pricing",
-      "subtitle": "Start free, upgrade when you need powerful features. No credit card required."
+      "subtitle": "Start free, upgrade when you need powerful features. Cancel the Plus trial before it ends and you won't be charged."
     },
     "perMonth": "/month",
     "featuresIncluded": "Features Included:",
@@ -810,17 +810,16 @@
       "perYear": "/year",
       "save": "Save 20%",
       "feature1": "Real-time search across opportunities, tasks & tickets",
-      "feature2": "View up to 50 records per section (vs 5 in Free)",
+      "feature2": "Every record in each section, page by page (vs first 5 in Free)",
       "feature3": "Contact/Company tabs for better context",
       "feature4": "Related contacts by domain",
       "feature5": "Customize visible sections",
-      "feature6": "Performance insights & metrics",
       "feature7": "Priority email support",
       "feature8": "Group records by stage/status",
       "feature9": "Email participants info from Odoo",
       "feature10": "Messages in Odoo: the contact's emails and notes",
-      "feature11": "Notification email organization with module badges",
-      "feature12": "Auto-log Gmail threads to Odoo records",
+      "feature11": "Odoo notifications organized in Gmail, with module and mention labels",
+      "feature12": "Automatic logging of Gmail threads (private beta)",
       "feature13": "Multi-company support",
       "feature14": "Financial insights for your contacts",
       "feature15": "Customizable quote depth when logging emails",
@@ -860,10 +859,11 @@
       "groupByStage": "Group records by stage/status",
       "emailParticipants": "Email participants info",
       "recentActivities": "Messages in Odoo",
-      "notificationOrganization": "Notification email organization",
-      "autoLogging": "Auto-log Gmail threads to Odoo",
+      "notificationOrganization": "Odoo notifications organized in Gmail",
+      "autoLogging": "Automatic logging of Gmail threads (private beta)",
       "multiCompany": "Multi-company support",
-      "customQuoteLevels": "Customizable quote depth when logging"
+      "customQuoteLevels": "Customizable quote depth when logging",
+      "allRecords": "All"
     },
     "cta": {
       "title": "Ready to supercharge your Gmail-Odoo workflow?",
@@ -899,19 +899,19 @@
       "odooData4": "Helpdesk tickets associated with contacts",
       "odooData5": "Company information and related contacts",
       "autoLoggingData": "Data Accessed for Auto-Logging (Optional)",
-      "autoLoggingDataDesc": "Auto-logging is an opt-in feature. The Extension only accesses this data after you grant Gmail access in Settings > Auto-logging and explicitly link a thread to an Odoo record. Once a thread is linked, the Extension uses Google's Gmail API to:",
+      "autoLoggingDataDesc": "Automatic logging is an opt-in feature. The Extension only accesses this data after you grant Gmail access in Settings > Email logging (\"Connect Gmail\") and explicitly link a thread to an Odoo record. Once a thread is linked, the Extension uses Google's Gmail API to:",
       "autoLoggingData1": "Periodically check for new messages on the threads you have linked (background polling while at least one mapping is active)",
       "autoLoggingData2": "Read the subject, sender, recipients, date and body of those new messages",
       "autoLoggingData3": "Post them as internal notes in the Odoo records you linked",
       "autoLoggingDataNoteTitle": "Scope:",
-      "autoLoggingDataNote": "The Extension only requests the gmail.readonly OAuth scope. It cannot send, modify, archive or delete emails. Auto-logging stops when you disconnect Gmail in Settings, deactivate the mapping, or remove the Extension. Tokens can also be revoked from your Google Account permissions at any time.",
+      "autoLoggingDataNote": "The Extension only requests the gmail.readonly OAuth scope. It cannot send, modify, archive or delete emails. Automatic logging stops when you turn it off for a thread or for all of them, or remove the Extension. Tokens can also be revoked from your Google Account permissions at any time.",
       "configData": "Configuration Data",
       "configDataDesc": "The Extension stores your Odoo instance configuration locally:",
       "configData1": "Odoo instance URL",
       "configData2": "Database name",
       "configData3": "Authentication credentials",
       "configData4": "User preferences (visible sections settings)",
-      "configData5": "Gmail OAuth tokens (only when auto-logging is enabled) — required to access the Gmail API on your behalf; revocable from Settings > Auto-logging or your Google Account",
+      "configData5": "Gmail OAuth tokens (only when automatic logging is enabled) — required to access the Gmail API on your behalf; revocable from your Google Account",
       "configData6": "Auto-logging mappings (thread-to-record links and IDs of messages already logged) — stored locally for the duration of each mapping",
       "configData7": "Active company selection and the list of companies you have access to (multi-company instances) — cached locally to remember which company you are operating in",
       "openTabs": "Open Odoo tabs",
@@ -962,7 +962,7 @@
       "posthog4": "A boolean flag indicating whether your Odoo user has access to more than one company (used to know whether multi-company features are relevant). The list of companies and their names are NOT sent.",
       "posthogPolicy": "PostHog Privacy Policy:",
       "optOut": "Opt-out:",
-      "optOutDesc": "You can disable usage analytics at any time in Settings > Account > Privacy. That setting covers usage statistics; crash reports are described below.",
+      "optOutDesc": "You can disable usage analytics at any time in Settings > General (\"Share anonymous usage data\"). That setting covers usage statistics; crash reports are described below.",
       "errorReports": "Crash reports:",
       "errorReportsDesc": "Crash reports are sent regardless of the analytics setting, because they describe the state of the application rather than your activity. Each report contains the error message, the technical stack trace, the extension version and the random installation ID — never email content, credentials or Odoo records. The legal basis is our legitimate interest in detecting and fixing faults. You can object at any time by writing to"
     },
@@ -973,7 +973,7 @@
       "yourOdoo": "Your Odoo Instance:",
       "yourOdooDesc": "The Extension sends API requests to the Odoo instance URL you configure to retrieve and create records",
       "polarDesc": "Only for subscription management (email, subscription status, payment processing)",
-      "posthogDesc": "Anonymous usage statistics (feature usage) and crash reports. No PII or email/Odoo content. Usage statistics can be disabled in Settings > Account > Privacy.",
+      "posthogDesc": "Anonymous usage statistics (feature usage) and crash reports. No PII or email/Odoo content. Usage statistics can be disabled in Settings > General (\"Share anonymous usage data\").",
       "doesNot": "The Extension does NOT:",
       "notSell": "Sell your data to data brokers",
       "notAdvertising": "Share data for advertising purposes",
@@ -1004,7 +1004,7 @@
       "optional": "Optional Permissions (Requested When Needed)",
       "optionalIntro": "The Extension requests optional permissions for custom Odoo instances:",
       "optionalDesc": "Used ONLY if you connect to a self-hosted Odoo instance on a custom domain (e.g., odoo.yourcompany.com or erp.example.com). This permission is only requested when you explicitly configure a custom Odoo URL.",
-      "optionalIdentity": "Used ONLY when you opt into auto-logging. Lets the Extension complete the Google sign-in flow that grants Gmail API access (gmail.readonly scope). Requested at the moment you click \"Connect\" in Settings > Auto-logging.",
+      "optionalIdentity": "Used ONLY when you opt into automatic logging. Lets the Extension complete the Google sign-in flow that grants Gmail API access (gmail.readonly scope). Requested at the moment you click \"Connect Gmail\" in Settings > Email logging.",
       "optionalAlarms": "Used ONLY when auto-logging is active. Lets the Extension wake up periodically in the background to check for new emails on the threads you have linked. Requested together with the identity permission.",
       "note": "Note:",
       "noteDesc": "The Extension only supports HTTPS connections for security. HTTP connections are not allowed.",
@@ -1439,7 +1439,7 @@
       },
       "features": {
         "title": "Advanced Features",
-        "description": "Real-time search, hide sections, enhanced email logging with attachments."
+        "description": "Email logging with attachments, plus real-time search and section control with PLUS."
       }
     },
     "onPremise": {
@@ -1464,7 +1464,7 @@
       },
       "step2": {
         "title": "Enter Credentials",
-        "description": "Just your Odoo URL — you're already signed in to Odoo. No API key needed. (Optional API key only for background auto-logging.)"
+        "description": "Just your Odoo URL — you're already signed in to Odoo. No API key needed. (An optional API key keeps it working if your Odoo session expires, and automatic logging needs one.)"
       },
       "step3": {
         "title": "Start Working",
@@ -1497,12 +1497,12 @@
         "feature2": "Stable connection, no disconnects",
         "feature3": "Real-time search across all records",
         "feature4": "Works on self-hosted Odoo with zero code changes",
-        "feature5": "Hide sections to reduce data load",
+        "feature5": "Hide the sections you don't use (PLUS)",
         "feature6": "Enhanced email logging with attachments",
         "feature7": "Set up with just your Odoo URL — no API key, no code",
         "cta": "Try It Free",
         "feature8": "Quotations, sales orders and financial data in the sidebar",
-        "feature9": "Auto-logging: link a thread once and replies keep syncing"
+        "feature9": "Automatic logging (private beta): link a thread once and new replies reach Odoo"
       },
       "plugin": {
         "name": "Odoo Gmail Plugin",
@@ -1559,7 +1559,7 @@
       "odooData": "Odoo Data in the Sidebar",
       "contactsRow": "Contacts & company info",
       "recordsRow": "Opportunities, tasks & tickets",
-      "recordsOurs": "5 free, up to 50 with PLUS",
+      "recordsOurs": "5 free, all with PLUS (page by page)",
       "recordsPlugin": "First 5 only",
       "quotationsRow": "Quotations & sales orders",
       "financialRow": "Financial insights (outstanding & overdue)",
@@ -1569,8 +1569,8 @@
       "enrichmentRow": "Company enrichment (IAP)",
       "enrichmentPlugin": "Requires IAP credits",
       "automation": "Automation",
-      "autoLogRow": "Auto-log a thread's replies",
-      "notificationsRow": "Odoo notifications organised in Gmail",
+      "autoLogRow": "Automatic logging of a thread's replies (private beta)",
+      "notificationsRow": "Odoo notifications organized in Gmail",
       "recordMenuRow": "Actions menu on every record"
     },
     "onPremise": {
@@ -1595,7 +1595,7 @@
       },
       "step2": {
         "title": "Enter Your Credentials",
-        "description": "Just your Odoo URL — you're already signed in to Odoo. No API key needed. (Optional API key only for background auto-logging.)"
+        "description": "Just your Odoo URL — you're already signed in to Odoo. No API key needed. (An optional API key keeps it working if your Odoo session expires, and automatic logging needs one.)"
       },
       "step3": {
         "title": "Start Using",
@@ -1777,7 +1777,7 @@
   "blogApiKeySetup": {
     "title": "How to Create an API Key in Odoo (All Versions)",
     "date": "March 21, 2026",
-    "intro": "API keys allow external tools — like our Gmail extension — to connect securely to your Odoo instance without using your password. The process to create one varies slightly depending on your Odoo version. This guide covers every version from Odoo 14 to 19 with step-by-step instructions.",
+    "intro": "API keys allow external tools to connect securely to your Odoo instance without using your password. Our Gmail extension doesn't need one to connect: it uses your Odoo session. A key is an optional backup for when that session expires, and automatic logging requires one. The process to create a key varies slightly depending on your Odoo version. This guide covers every version from Odoo 14 to 19 with step-by-step instructions.",
     "section1": {
       "title": "Before You Begin",
       "p1": "Before creating an API key, make sure you meet these requirements:",
@@ -1827,7 +1827,7 @@
       "step3": "In the duration selector, choose \"Persistent Key\"",
       "step4": "Click \"Generate key\"",
       "step5": "Copy the generated key immediately — it cannot be retrieved later",
-      "warning": "If you don't select \"Persistent Key\", your API key will expire after the chosen duration, and the extension will stop working. You would need to create a new key and reconfigure the extension.",
+      "warning": "If you don't select \"Persistent Key\", your API key will expire after the chosen duration. The extension then falls back to your Odoo session, and automatic logging stops until you add a new key in Settings → Connection.",
       "imgAltSecurity": "Account Security tab showing API Keys with expiration date column in Odoo 18",
       "imgAltWizard": "API Key creation wizard with duration selector in Odoo 18",
       "imgAltResult": "Generated API key in Odoo 18"
@@ -1871,18 +1871,18 @@
     },
     "section7": {
       "title": "Troubleshooting",
-      "issue1Title": "\"Invalid API Key\" error",
+      "issue1Title": "\"Odoo doesn't accept that API key\"",
       "issue1Desc": "Double-check that you copied the entire key without extra spaces. If using Odoo 18+, make sure the key hasn't expired — create a new one with \"Persistent Key\" selected.",
-      "issue2Title": "\"API Key expired\"",
+      "issue2Title": "\"Odoo no longer accepts your API key\"",
       "issue2Desc": "This happens in Odoo 18+ when the key was created without selecting \"Persistent Key\". Create a new key and select \"Persistent Key\" as the duration.",
       "issue3Title": "Can't find the API Key button",
       "issue3Desc": "In Odoo 15, you need to activate Developer Mode first (Settings → Developer Tools → Activate). In Odoo 19+, the section moved to My Preferences → Security (not Account Security).",
-      "issue4Title": "\"Connection timeout\" error",
-      "issue4Desc": "Verify that your Odoo URL is correct and accessible. Make sure to include https:// and remove any trailing slash."
+      "issue4Title": "\"Odoo is taking too long to respond\"",
+      "issue4Desc": "Verify that your Odoo address is correct and reachable (e.g. yourcompany.odoo.com). It may also be very busy or restarting: try again in a moment."
     },
     "cta": {
       "title": "Ready to connect?",
-      "subtitle": "Now that you have your API key, install the extension and connect your Odoo instance to Gmail in seconds.",
+      "subtitle": "Install the extension and connect it with your Odoo session in seconds. To add your key, paste it in Settings → Connection → API Key (optional), or in Advanced options when you connect.",
       "button": "Get the Extension"
     }
   },

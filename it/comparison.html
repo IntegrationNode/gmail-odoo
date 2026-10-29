@@ -113,7 +113,7 @@
                         "name": "Does this extension have features the official plugin doesn't?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Yes. The official plugin shows contacts, the first 5 opportunities, tasks and tickets, and logs emails. Our extension also brings quotations and confirmed sales orders, financial insights with outstanding and overdue amounts, messages in Odoo, related contacts by domain, multi-company support, real-time search with up to 50 records per section, auto-logging of a thread's replies, and Odoo notifications organised inside Gmail. The one thing the official plugin has and we do not is IAP company enrichment."
+                            "text": "Yes. The official plugin shows contacts, the first 5 opportunities, tasks and tickets, and logs emails. Our extension also brings quotations and confirmed sales orders, financial insights with outstanding and overdue amounts, messages in Odoo, related contacts by domain, multi-company support, real-time search with every record page by page, automatic logging of a thread's replies (private beta), and Odoo notifications organized inside Gmail. The one thing the official plugin has and we do not is IAP company enrichment."
                         }
                     }
                 ]
@@ -201,11 +201,11 @@
                             <li><span class="check">✓</span> <span>Connessione stabile, nessuna disconnessione</span></li>
                             <li><span class="check">✓</span> <span>Ricerca in tempo reale su tutti i record</span></li>
                             <li><span class="check">✓</span> <span>Funziona su Odoo self-hosted senza modifiche al codice</span></li>
-                            <li><span class="check">✓</span> <span>Nascondi sezioni per ridurre il carico dati</span></li>
+                            <li><span class="check">✓</span> <span>Nascondi le sezioni che non usi (PLUS)</span></li>
                             <li><span class="check">✓</span> <span>Logging email migliorato con allegati</span></li>
                             <li><span class="check">✓</span> <span>Configurazione con il solo URL del tuo Odoo — senza chiave API, senza codice</span></li>
                             <li><span class="check">✓</span> <span>Preventivi, ordini di vendita e dati finanziari nella barra laterale</span></li>
-                            <li><span class="check">✓</span> <span>Registrazione automatica: collega un thread una volta e le risposte restano sincronizzate</span></li>
+                            <li><span class="check">✓</span> <span>Registrazione automatica (beta privata): collega una conversazione una volta e le nuove risposte arrivano in Odoo</span></li>
                         </ul>
                     </div>
                     <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=comparison&amp;utm_medium=content&amp;utm_campaign=vs_appsscript&amp;utm_content=card" target="_blank" class="btn btn-primary btn-block">Provalo Gratis</a>
@@ -315,12 +315,12 @@
                         </tr>
                         <tr>
                             <td>Paginazione</td>
-                            <td><span class="check-green">✓</span></td>
+                            <td><span class="check-green">✓</span> (PLUS)</td>
                             <td><span class="cross-red">✗</span></td>
                         </tr>
                         <tr>
                             <td>Nascondi Sezioni</td>
-                            <td><span class="check-green">✓</span></td>
+                            <td><span class="check-green">✓</span> (PLUS)</td>
                             <td><span class="cross-red">✗</span></td>
                         </tr>
                         <tr>
@@ -340,7 +340,7 @@
                         </tr>
                         <tr>
                             <td>Opportunità, attività e ticket</td>
-                            <td><span class="check-green">✓</span> <span>5 in Free, fino a 50 con PLUS</span></td>
+                            <td><span class="check-green">✓</span> <span>5 in Free, tutti con PLUS (pagina per pagina)</span></td>
                             <td><span>Solo i primi 5</span></td>
                         </tr>
                         <tr>
@@ -379,12 +379,12 @@
                             <td colspan="3"><strong>Automazione</strong></td>
                         </tr>
                         <tr>
-                            <td>Registrazione automatica delle risposte di un thread</td>
+                            <td>Registrazione automatica delle risposte di una conversazione (beta privata)</td>
                             <td><span class="check-green">✓</span> (PLUS)</td>
                             <td><span class="cross-red">✗</span></td>
                         </tr>
                         <tr>
-                            <td>Notifiche Odoo organizzate in Gmail</td>
+                            <td>Notifiche di Odoo organizzate in Gmail</td>
                             <td><span class="check-green">✓</span> (PLUS)</td>
                             <td><span class="cross-red">✗</span></td>
                         </tr>
@@ -460,7 +460,7 @@
                 <div class="migration-step">
                     <div class="step-number">2</div>
                     <h3>Inserisci le Tue Credenziali</h3>
-                    <p>Solo l'URL del tuo Odoo — sei già connesso a Odoo. Nessuna chiave API necessaria. (Chiave API opzionale solo per la registrazione automatica in background.)</p>
+                    <p>Solo l'URL del tuo Odoo — sei già connesso a Odoo. Nessuna chiave API necessaria. (Una chiave API opzionale la mantiene in funzione se la sessione di Odoo scade, e la registrazione automatica ne ha bisogno.)</p>
                 </div>
                 <div class="migration-step">
                     <div class="step-number">3</div>

@@ -138,7 +138,7 @@
         <div class="container">
             <div class="article-content">
                 <!-- Intro -->
-                <p class="article-intro">Chaves de API permitem que ferramentas externas — como nossa extensão para Gmail — se conectem de forma segura à sua instância Odoo sem usar sua senha. O processo de criação varia ligeiramente dependendo da sua versão do Odoo. Este guia abrange todas as versões do Odoo 14 ao 19 com instruções passo a passo.</p>
+                <p class="article-intro">As chaves de API permitem que ferramentas externas se conectem com segurança à sua instância Odoo sem usar a sua senha. A nossa extensão do Gmail não precisa de uma para se conectar: usa a sua sessão do Odoo. A chave é uma reserva opcional para quando essa sessão expira, e o registro automático exige uma. O processo para criar uma chave varia ligeiramente conforme a versão do Odoo. Este guia cobre todas as versões, do Odoo 14 ao 19, passo a passo.</p>
 
                 <!-- Section 1: Before You Begin -->
                 <h2>
@@ -240,7 +240,7 @@
 
                 <div class="warning-box">
                     <span class="material-symbols-outlined">warning</span>
-                    <span>Se você não selecionar "Persistent Key", sua chave de API expirará após a duração escolhida, e a extensão deixará de funcionar. Seria necessário criar uma nova chave e reconfigurar a extensão.</span>
+                    <span>Se não selecionar "Persistent Key", a sua chave de API expira após a duração escolhida. A extensão passa então a usar a sua sessão do Odoo, e o registro automático para até adicionar uma chave nova em Configurações → Conexão.</span>
                 </div>
 
                 <figure class="article-figure">
@@ -358,22 +358,22 @@
                     <span>Resolução de Problemas</span>
                 </h2>
 
-                <h3>Erro "Invalid API Key"</h3>
+                <h3>«O Odoo não aceita essa chave de API»</h3>
                 <p>Verifique se copiou a chave inteira sem espaços extras. Se estiver usando Odoo 18+, certifique-se de que a chave não expirou — crie uma nova com "Persistent Key" selecionado.</p>
 
-                <h3>"API Key expired"</h3>
+                <h3>«O Odoo não aceita mais a sua chave de API»</h3>
                 <p>Isto acontece no Odoo 18+ quando a chave foi criada sem selecionar "Persistent Key". Crie uma nova chave e selecione "Persistent Key" como duração.</p>
 
                 <h3>Não consigo encontrar o botão de chave de API</h3>
                 <p>No Odoo 15, você precisa ativar o Developer Mode primeiro (Settings → Developer Tools → Activate). No Odoo 19+, a seção foi movida para My Preferences → Security (não Account Security).</p>
 
-                <h3>Erro "Connection timeout"</h3>
-                <p>Verifique se a URL do Odoo está correta e acessível. Certifique-se de incluir https:// e remover qualquer barra final.</p>
+                <h3>«O Odoo está demorando demais para responder»</h3>
+                <p>Verifique se o endereço do seu Odoo está correto e acessível (ex. suaempresa.odoo.com). Também pode estar muito ocupado ou a reiniciar: tente de novo daqui a pouco.</p>
 
                 <!-- CTA -->
                 <div class="article-cta">
                     <h3>Pronto para conectar?</h3>
-                    <p>Agora que você tem sua chave de API, instale a extensão e conecte sua instância Odoo ao Gmail em segundos.</p>
+                    <p>Instale a extensão e conecte-a com a sua sessão do Odoo em segundos. Para adicionar a sua chave, cole-a em Configurações → Conexão → Chave API (opcional), ou em Opções avançadas ao conectar.</p>
                     <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&amp;utm_medium=content&amp;utm_campaign=odoo-api-key-setup&amp;utm_content=footer_cta" target="_blank" class="btn btn-primary btn-lg">Obter a Extensão</a>
                 </div>
             </div>

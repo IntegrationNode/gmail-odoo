@@ -138,7 +138,7 @@
         <div class="container">
             <div class="article-content">
                 <!-- Intro -->
-                <p class="article-intro">Klucze API pozwalają zewnętrznym narzędziom — takim jak nasze rozszerzenie do Gmail — bezpiecznie łączyć się z Twoją instancją Odoo bez użycia hasła. Proces tworzenia różni się nieznacznie w zależności od wersji Odoo. Ten przewodnik obejmuje każdą wersję od Odoo 14 do 19 z instrukcjami krok po kroku.</p>
+                <p class="article-intro">Klucze API pozwalają zewnętrznym narzędziom bezpiecznie łączyć się z Twoją instancją Odoo bez użycia hasła. Nasze rozszerzenie Gmail nie potrzebuje klucza, aby się połączyć: korzysta z Twojej sesji Odoo. Klucz to opcjonalny zapas na wypadek wygaśnięcia sesji, a automatyczne rejestrowanie go wymaga. Sposób tworzenia klucza różni się nieco w zależności od wersji Odoo. Ten przewodnik krok po kroku obejmuje wszystkie wersje od Odoo 14 do 19.</p>
 
                 <!-- Section 1: Before You Begin -->
                 <h2>
@@ -240,7 +240,7 @@
 
                 <div class="warning-box">
                     <span class="material-symbols-outlined">warning</span>
-                    <span>Jeśli nie wybierzesz "Persistent Key", Twój klucz API wygaśnie po wybranym czasie, a rozszerzenie przestanie działać. Będziesz musiał utworzyć nowy klucz i ponownie skonfigurować rozszerzenie.</span>
+                    <span>Jeśli nie wybierzesz "Persistent Key", klucz API wygaśnie po wybranym czasie. Rozszerzenie przejdzie wtedy na Twoją sesję Odoo, a automatyczne rejestrowanie zatrzyma się, dopóki nie dodasz nowego klucza w „Settings” → „Connection”.</span>
                 </div>
 
                 <figure class="article-figure">
@@ -358,22 +358,22 @@
                     <span>Rozwiązywanie Problemów</span>
                 </h2>
 
-                <h3>Błąd "Invalid API Key"</h3>
+                <h3>„Odoo doesn't accept that API key”</h3>
                 <p>Sprawdź, czy skopiowałeś cały klucz bez dodatkowych spacji. Jeśli używasz Odoo 18+, upewnij się, że klucz nie wygasł — utwórz nowy z wybranym "Persistent Key".</p>
 
-                <h3>"API Key expired"</h3>
+                <h3>„Odoo no longer accepts your API key”</h3>
                 <p>Dzieje się tak w Odoo 18+, gdy klucz został utworzony bez wybrania "Persistent Key". Utwórz nowy klucz i wybierz "Persistent Key" jako czas trwania.</p>
 
                 <h3>Nie mogę znaleźć przycisku klucza API</h3>
                 <p>W Odoo 15 musisz najpierw aktywować Developer Mode (Settings → Developer Tools → Activate). W Odoo 19+ sekcja została przeniesiona do My Preferences → Security (nie Account Security).</p>
 
-                <h3>Błąd "Connection timeout"</h3>
-                <p>Sprawdź, czy adres URL Odoo jest poprawny i dostępny. Upewnij się, że zawierasz https:// i usuwasz końcowy ukośnik.</p>
+                <h3>„Odoo is taking too long to respond”</h3>
+                <p>Sprawdź, czy adres Twojego Odoo jest poprawny i osiągalny (np. twojafirma.odoo.com). Może też być bardzo obciążony albo się restartować: spróbuj ponownie za chwilę.</p>
 
                 <!-- CTA -->
                 <div class="article-cta">
                     <h3>Gotowy do połączenia?</h3>
-                    <p>Teraz, gdy masz swój klucz API, zainstaluj rozszerzenie i połącz swoją instancję Odoo z Gmail w kilka sekund.</p>
+                    <p>Zainstaluj rozszerzenie i połącz je z sesją Odoo w kilka sekund. Aby dodać klucz, wklej go w „Settings” → „Connection” → „API Key (optional)” albo w „Advanced options” podczas łączenia.</p>
                     <a href="https://chromewebstore.google.com/detail/hfnfieecjinfkhbhpoigfnnddpfoeomm/?utm_source=blog&amp;utm_medium=content&amp;utm_campaign=odoo-api-key-setup&amp;utm_content=footer_cta" target="_blank" class="btn btn-primary btn-lg">Pobierz rozszerzenie</a>
                 </div>
             </div>

@@ -119,13 +119,13 @@
                 </ul>
 
                 <h3>Data Accessed for Auto-Logging (Optional)</h3>
-                <p>Auto-logging is an opt-in feature. The Extension only accesses this data after you grant Gmail access in Settings > Auto-logging and explicitly link a thread to an Odoo record. Once a thread is linked, the Extension uses Google's Gmail API to:</p>
+                <p>Automatic logging is an opt-in feature. The Extension only accesses this data after you grant Gmail access in Settings > Email logging ("Connect Gmail") and explicitly link a thread to an Odoo record. Once a thread is linked, the Extension uses Google's Gmail API to:</p>
                 <ul>
                     <li>Periodically check for new messages on the threads you have linked (background polling while at least one mapping is active)</li>
                     <li>Read the subject, sender, recipients, date and body of those new messages</li>
                     <li>Post them as internal notes in the Odoo records you linked</li>
                 </ul>
-                <p><strong>Scope:</strong> <span>The Extension only requests the gmail.readonly OAuth scope. It cannot send, modify, archive or delete emails. Auto-logging stops when you disconnect Gmail in Settings, deactivate the mapping, or remove the Extension. Tokens can also be revoked from your Google Account permissions at any time.</span></p>
+                <p><strong>Scope:</strong> <span>The Extension only requests the gmail.readonly OAuth scope. It cannot send, modify, archive or delete emails. Automatic logging stops when you turn it off for a thread or for all of them, or remove the Extension. Tokens can also be revoked from your Google Account permissions at any time.</span></p>
 
                 <h3>Konfigurationsdaten</h3>
                 <p>Die Erweiterung speichert Ihre Odoo-Instanzkonfiguration lokal:</p>
@@ -134,7 +134,7 @@
                     <li>Datenbankname</li>
                     <li>Authentifizierungsdaten</li>
                     <li>Benutzereinstellungen (Einstellungen für sichtbare Abschnitte)</li>
-                    <li>Gmail OAuth tokens (only when auto-logging is enabled) — required to access the Gmail API on your behalf; revocable from Settings > Auto-logging or your Google Account</li>
+                    <li>Gmail OAuth tokens (only when automatic logging is enabled) — required to access the Gmail API on your behalf; revocable from your Google Account</li>
                     <li>Auto-logging mappings (thread-to-record links and IDs of messages already logged) — stored locally for the duration of each mapping</li>
                     <li>Active company selection and the list of companies you have access to (multi-company instances) — cached locally to remember which company you are operating in</li>
                 </ul>
@@ -187,7 +187,7 @@
                     <li>A boolean flag indicating whether your Odoo user has access to more than one company (used to know whether multi-company features are relevant). The list of companies and their names are NOT sent.</li>
                 </ul>
                 <p><strong>PostHog Datenschutzrichtlinie:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
-                <p><strong>Deaktivieren:</strong> <span>Sie können die Nutzungsanalyse jederzeit unter Einstellungen > Konto > Datenschutz deaktivieren. Diese Einstellung betrifft Nutzungsstatistiken; Fehlerberichte werden unten beschrieben.</span></p>
+                <p><strong>Deaktivieren:</strong> <span>Sie können die Nutzungsanalyse jederzeit unter Einstellungen > Allgemein („Anonyme Nutzungsdaten teilen“) deaktivieren. Diese Einstellung betrifft Nutzungsstatistiken; Fehlerberichte werden unten beschrieben.</span></p>
                 <p><strong>Fehlerberichte:</strong> <span>Fehlerberichte werden unabhängig von der Analyse-Einstellung gesendet, da sie den Zustand der Anwendung und nicht Ihre Aktivität beschreiben. Jeder Bericht enthält die Fehlermeldung, den technischen Stacktrace, die Version der Erweiterung und die zufällige Installations-ID – niemals E-Mail-Inhalte, Zugangsdaten oder Odoo-Daten. Rechtsgrundlage ist unser berechtigtes Interesse daran, Fehler zu erkennen und zu beheben. Sie können jederzeit Widerspruch einlegen, indem Sie schreiben an</span> <a href="mailto:odoointegrations.team@gmail.com">odoointegrations.team@gmail.com</a>.</p>
             </section>
 
@@ -198,7 +198,7 @@
                 <ul>
                     <li><strong>Ihrer Odoo-Instanz:</strong> <span>Die Erweiterung sendet API-Anfragen an die von Ihnen konfigurierte Odoo-URL, um Datensätze abzurufen und zu erstellen</span></li>
                     <li><strong>Polar:</strong> <span>Nur für die Abonnementverwaltung (E-Mail, Abonnementstatus, Zahlungsabwicklung)</span></li>
-                    <li><strong>PostHog:</strong> <span>Anonyme Nutzungsstatistiken (Funktionsnutzung) und Fehlerberichte. Keine personenbezogenen Daten und keine E-Mail-/Odoo-Inhalte. Nutzungsstatistiken können unter Einstellungen > Konto > Datenschutz deaktiviert werden.</span></li>
+                    <li><strong>PostHog:</strong> <span>Anonyme Nutzungsstatistiken (Funktionsnutzung) und Fehlerberichte. Keine personenbezogenen Daten und keine E-Mail-/Odoo-Inhalte. Nutzungsstatistiken können unter Einstellungen > Allgemein („Anonyme Nutzungsdaten teilen“) deaktiviert werden.</span></li>
                 </ul>
                 <p>Die Erweiterung tut NICHT:</p>
                 <ul>
@@ -240,7 +240,7 @@
                 <p>Die Erweiterung fordert optionale Berechtigungen für benutzerdefinierte Odoo-Instanzen an:</p>
                 <ul>
                     <li><strong>optional_host_permissions (https://*/*):</strong> <span>Wird NUR verwendet, wenn Sie sich mit einer selbst gehosteten Odoo-Instanz auf einer benutzerdefinierten Domain verbinden (z.B. odoo.ihrefirma.com oder erp.beispiel.com). Diese Berechtigung wird nur angefordert, wenn Sie explizit eine benutzerdefinierte Odoo-URL konfigurieren.</span></li>
-                    <li><strong>identity:</strong> <span>Used ONLY when you opt into auto-logging. Lets the Extension complete the Google sign-in flow that grants Gmail API access (gmail.readonly scope). Requested at the moment you click "Connect" in Settings > Auto-logging.</span></li>
+                    <li><strong>identity:</strong> <span>Used ONLY when you opt into automatic logging. Lets the Extension complete the Google sign-in flow that grants Gmail API access (gmail.readonly scope). Requested at the moment you click "Connect Gmail" in Settings > Email logging.</span></li>
                     <li><strong>alarms:</strong> <span>Used ONLY when auto-logging is active. Lets the Extension wake up periodically in the background to check for new emails on the threads you have linked. Requested together with the identity permission.</span></li>
                 </ul>
                 <p><strong>Hinweis:</strong> <span>Die Erweiterung unterstützt nur HTTPS-Verbindungen aus Sicherheitsgründen. HTTP-Verbindungen sind nicht erlaubt.</span></p>
