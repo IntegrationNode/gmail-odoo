@@ -874,7 +874,7 @@
                     </div>
                     <div class="faq-item">
                         <h4>P: Czy moje dane są bezpieczne?</h4>
-                        <p>Tak. Rozszerzenie uzyskuje dostęp tylko do e-maili, które aktywnie przeglądasz, i komunikuje się bezpiecznie z Twoją instancją Odoo przez HTTPS, korzystając z Twojej własnej sesji Odoo. Jeśli dodasz opcjonalny klucz API, jest on przechowywany w bezpiecznym magazynie Chrome.</p>
+                        <p>Tak. Rozszerzenie komunikuje się z Twoją instancją Odoo przez HTTPS, korzystając z Twojej własnej sesji Odoo. Odczytuje e-maile, które otwierasz, oraz, tylko jeśli je włączysz, powiadomienia Odoo i wątki, które powiążesz na potrzeby automatycznego rejestrowania. Jeśli dodasz opcjonalny klucz API, jest on przechowywany w magazynie Chrome; przy włączonej synchronizacji Chrome, Chrome przechowuje go także na Twoim koncie Google.</p>
                     </div>
                     <h3>Subskrypcja</h3>
                     <div class="faq-item">
@@ -888,15 +888,15 @@
                     <h3>Prywatność</h3>
                     <div class="faq-item">
                         <h4>P: Czy rozszerzenie czyta wszystkie moje e-maile?</h4>
-                        <p>Nie, rozszerzenie uzyskuje dostęp tylko do e-maili, które aktywnie przeglądasz. Nie skanuje całej skrzynki ani nie czyta e-maili w tle.</p>
+                        <p>Nie. Rozszerzenie odczytuje e-maile, które otwierasz. Z PLUS dwie funkcje działają w tle, tylko jeśli je włączysz: powiadomienia Odoo (e-maile, które wysyła Ci Twoje Odoo) i automatyczne rejestrowanie (nowe e-maile w wątkach, które powiążesz). Nigdy nie odczytuje treści pozostałej części Twojej skrzynki.</p>
                     </div>
                     <div class="faq-item">
                         <h4>P: Czy mój klucz API jest bezpiecznie przechowywany?</h4>
-                        <p>Klucz API jest opcjonalny — większość użytkowników łączy się przez swoją sesję Odoo i nigdy go nie tworzy. Jeśli go dodasz, jest przechowywany w bezpiecznym magazynie Chrome (chrome.storage.sync), który Chrome szyfruje przy użyciu poświadczeń Twojego konta użytkownika systemu operacyjnego.</p>
+                        <p>Klucz API jest opcjonalny — większość użytkowników łączy się przez swoją sesję Odoo i nigdy go nie tworzy. Jeśli go dodasz, jest przechowywany w magazynie Chrome (chrome.storage.sync): przy włączonej synchronizacji Chrome, Chrome kopiuje go na Twoje konto Google i na Twoje inne urządzenia.</p>
                     </div>
                     <div class="faq-item">
                         <h4>P: Co rozszerzenie wysyła, gdy coś się psuje?</h4>
-                        <p>Komunikat błędu, techniczny ślad stosu, wersję rozszerzenia i losowy identyfikator instalacji — nigdy treści Twoich wiadomości, danych uwierzytelniających ani danych z Odoo. Raporty o błędach są wysyłane nawet przy wyłączonych statystykach użycia, ponieważ opisują stan aplikacji, a nie to, co z nią robisz. Dzięki temu awaria zostaje znaleziona i naprawiona bez Twojego zgłoszenia. W każdej chwili możesz wnieść sprzeciw, pisząc do nas; szczegóły w polityce prywatności.</p>
+                        <p>Komunikat błędu i jego szczegóły techniczne, wersje rozszerzenia i Odoo oraz losowy identyfikator instalacji — nigdy treści Twoich e-maili ani Twoich danych uwierzytelniających. Jeśli błąd pochodzi z Twojego Odoo, raport zawiera komunikat błędu Odoo, który może zawierać adres Twojej instancji. Te raporty o błędach są wysyłane nawet wtedy, gdy analityka użycia jest wyłączona, ponieważ opisują stan aplikacji, a nie to, co z nią robisz. Dzięki temu usterka zostaje znaleziona i naprawiona bez konieczności zgłaszania jej przez Ciebie. Jeśli masz lub miałeś PLUS, możesz w każdej chwili wnieść sprzeciw, pisząc do nas z adresu e-mail przypisanego do licencji; szczegóły znajdziesz w polityce prywatności.</p>
                     </div>
                 </section>
 

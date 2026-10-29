@@ -90,7 +90,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1 data-t="privacyPage.title"></h1>
-            <p class="last-updated"><span data-t="privacyPage.lastUpdated"></span>: October 18, 2026</p>
+            <p class="last-updated"><span data-t="privacyPage.lastUpdated"></span>: October 31, 2026</p>
 
             <section class="policy-section">
                 <h2 data-t="privacyPage.overview.title"></h2>
@@ -106,6 +106,9 @@
                     <li><strong data-t="privacyPage.infoCollect.senderRecipient"></strong> <span data-t="privacyPage.infoCollect.senderRecipientDesc"></span></li>
                     <li><strong data-t="privacyPage.infoCollect.emailSubject"></strong> <span data-t="privacyPage.infoCollect.emailSubjectDesc"></span></li>
                     <li><strong data-t="privacyPage.infoCollect.emailDate"></strong> <span data-t="privacyPage.infoCollect.emailDateDesc"></span></li>
+                    <li><strong data-t="privacyPage.infoCollect.accountEmail"></strong> <span data-t="privacyPage.infoCollect.accountEmailDesc"></span></li>
+                    <li><strong data-t="privacyPage.infoCollect.notificationHeaders"></strong> <span data-t="privacyPage.infoCollect.notificationHeadersDesc"></span></li>
+                    <li><strong data-t="privacyPage.infoCollect.attachments"></strong> <span data-t="privacyPage.infoCollect.attachmentsDesc"></span></li>
                 </ul>
 
                 <h3 data-t="privacyPage.infoCollect.odooData"></h3>
@@ -116,6 +119,7 @@
                     <li data-t="privacyPage.infoCollect.odooData3"></li>
                     <li data-t="privacyPage.infoCollect.odooData4"></li>
                     <li data-t="privacyPage.infoCollect.odooData5"></li>
+                    <li data-t="privacyPage.infoCollect.odooData6"></li>
                 </ul>
 
                 <h3 data-t="privacyPage.infoCollect.autoLoggingData"></h3>
@@ -153,6 +157,10 @@
                     <li><strong data-t="privacyPage.howWeUse.searchFilter"></strong> <span data-t="privacyPage.howWeUse.searchFilterDesc"></span></li>
                     <li><strong data-t="privacyPage.howWeUse.caching"></strong> <span data-t="privacyPage.howWeUse.cachingDesc"></span></li>
                     <li><strong data-t="privacyPage.howWeUse.autoLog"></strong> <span data-t="privacyPage.howWeUse.autoLogDesc"></span></li>
+                    <li><strong data-t="privacyPage.howWeUse.notifications"></strong> <span data-t="privacyPage.howWeUse.notificationsDesc"></span></li>
+                    <li><strong data-t="privacyPage.howWeUse.statistics"></strong> <span data-t="privacyPage.howWeUse.statisticsDesc"></span></li>
+                    <li><strong data-t="privacyPage.howWeUse.subscription"></strong> <span data-t="privacyPage.howWeUse.subscriptionDesc"></span></li>
+                    <li><strong data-t="privacyPage.howWeUse.autodetect"></strong> <span data-t="privacyPage.howWeUse.autodetectDesc"></span></li>
                 </ul>
             </section>
 
@@ -171,9 +179,13 @@
                     <li data-t="privacyPage.thirdParty.polar1"></li>
                     <li data-t="privacyPage.thirdParty.polar2"></li>
                     <li data-t="privacyPage.thirdParty.polar3"></li>
+                    <li data-t="privacyPage.thirdParty.polar4"></li>
                 </ul>
                 <p><strong data-t="privacyPage.thirdParty.polarPolicy"></strong> <a href="https://polar.sh/legal/privacy" target="_blank">https://polar.sh/legal/privacy</a></p>
                 <p><strong data-t="privacyPage.thirdParty.important"></strong> <span data-t="privacyPage.thirdParty.importantDesc"></span></p>
+
+                <h3 data-t="privacyPage.thirdParty.pricing"></h3>
+                <p data-t="privacyPage.thirdParty.parityDesc"></p>
 
                 <h3>InboxSDK (<span data-t="privacyPage.thirdParty.gmailIntegration"></span>)</h3>
                 <p data-t="privacyPage.thirdParty.inboxsdkDesc"></p>
@@ -199,7 +211,12 @@
                     <li><strong data-t="privacyPage.dataSharing.yourOdoo"></strong> <span data-t="privacyPage.dataSharing.yourOdooDesc"></span></li>
                     <li><strong>Polar:</strong> <span data-t="privacyPage.dataSharing.polarDesc"></span></li>
                     <li><strong>PostHog:</strong> <span data-t="privacyPage.dataSharing.posthogDesc"></span></li>
+                    <li><strong data-t="privacyPage.dataSharing.parity"></strong> <span data-t="privacyPage.dataSharing.parityDesc"></span></li>
+                    <li><strong data-t="privacyPage.dataSharing.gmailApi"></strong> <span data-t="privacyPage.dataSharing.gmailApiDesc"></span></li>
+                    <li><strong data-t="privacyPage.dataSharing.googleForms"></strong> <span data-t="privacyPage.dataSharing.googleFormsDesc"></span></li>
+                    <li><strong data-t="privacyPage.dataSharing.github"></strong> <span data-t="privacyPage.dataSharing.githubDesc"></span></li>
                 </ul>
+                <p data-t="privacyPage.dataSharing.transfers"></p>
                 <p data-t="privacyPage.dataSharing.doesNot"></p>
                 <ul>
                     <li data-t="privacyPage.dataSharing.notSell"></li>
@@ -250,6 +267,7 @@
                 <ul>
                     <li data-t="privacyPage.permissions.whenRequested1"></li>
                     <li data-t="privacyPage.permissions.whenRequested2"></li>
+                    <li data-t="privacyPage.permissions.whenRequested3"></li>
                 </ul>
                 <p><strong data-t="privacyPage.permissions.canDeny"></strong> <span data-t="privacyPage.permissions.canDenyDesc"></span></p>
 
@@ -272,6 +290,7 @@
                         <ul>
                             <li data-t="privacyPage.rights.deletion1"></li>
                             <li data-t="privacyPage.rights.deletion2"></li>
+                            <li data-t="privacyPage.rights.deletion3"></li>
                         </ul>
                     </li>
                     <li><strong data-t="privacyPage.rights.portability"></strong> <span data-t="privacyPage.rights.portabilityDesc"></span></li>

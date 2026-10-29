@@ -90,7 +90,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1>Polityka prywatności</h1>
-            <p class="last-updated"><span>Ostatnia aktualizacja</span>: October 18, 2026</p>
+            <p class="last-updated"><span>Ostatnia aktualizacja</span>: October 31, 2026</p>
 
             <section class="policy-section">
                 <h2>Przegląd</h2>
@@ -101,11 +101,14 @@
             <section class="policy-section">
                 <h2>Informacje, które zbieramy</h2>
                 <h3>Dane dostępne z Gmail</h3>
-                <p>Rozszerzenie uzyskuje dostęp do następujących informacji z Gmail, gdy jawnie otworzysz e-mail:</p>
+                <p>Rozszerzenie uzyskuje dostęp do następujących informacji z Gmaila. O ile nie zaznaczono inaczej, wyłącznie z e-maila, który otwierasz:</p>
                 <ul>
                     <li><strong>Adresy e-mail nadawcy i odbiorcy:</strong> <span>Używane do wyszukiwania pasujących kontaktów w Twojej instancji Odoo</span></li>
                     <li><strong>Temat i treść e-maila:</strong> <span>Używane gdy wybierzesz tworzenie szans, zadań lub zgłoszeń w Odoo</span></li>
                     <li><strong>Data i metadane e-maila:</strong> <span>Używane do logowania e-maili do rekordów Odoo</span></li>
+                    <li><strong>Twój adres Gmail:</strong> <span>Odczytywany podczas ładowania Gmaila, aby sprawdzić, czy licencja PLUS należy do tego konta, oraz aby go uzupełnić, gdy subskrybujesz</span></li>
+                    <li><strong>Powiadomienia Odoo (PLUS):</strong> <span>Tylko jeśli skonfigurujesz powiadomienia Odoo: Rozszerzenie sprawdza nadawcę e-maili na Twoich listach w Gmailu i odczytuje te, które wysyła Ci Twoje Odoo, nawet jeśli ich nie otworzysz, aby oznaczyć je etykietami według modułu</span></li>
+                    <li><strong>Załączniki:</strong> <span>Przesyłane do Twojego Odoo, gdy rejestrujesz e-mail lub tworzysz na jego podstawie rekord</span></li>
                 </ul>
 
                 <h3>Dane dostępne z Odoo</h3>
@@ -116,27 +119,28 @@
                     <li>Zadania projektowe powiązane z kontaktami</li>
                     <li>Zgłoszenia helpdesk powiązane z kontaktami</li>
                     <li>Informacje o firmach i powiązanych kontaktach</li>
+                    <li>Oferty, zamówienia sprzedaży, wartości finansowe i wiadomości, w których występuje kontakt</li>
                 </ul>
 
-                <h3>Data Accessed for Auto-Logging (Optional)</h3>
-                <p>Automatic logging is an opt-in feature. The Extension only accesses this data after you grant Gmail access in Settings > Email logging ("Connect Gmail") and explicitly link a thread to an Odoo record. Once a thread is linked, the Extension uses Google's Gmail API to:</p>
+                <h3>Dane dostępne na potrzeby automatycznego rejestrowania (opcjonalne)</h3>
+                <p>Automatyczne rejestrowanie to funkcja opcjonalna, którą trzeba samodzielnie włączyć. Rozszerzenie uzyskuje dostęp do tych danych dopiero wtedy, gdy przyznasz dostęp do Gmaila w „Settings > Email logging” („Connect Gmail”) i jawnie powiążesz wątek z rekordem Odoo. Po powiązaniu wątku Rozszerzenie używa API Gmaila firmy Google, aby:</p>
                 <ul>
-                    <li>Periodically check for new messages on the threads you have linked (background polling while at least one mapping is active)</li>
-                    <li>Read the subject, sender, recipients, date and body of those new messages</li>
-                    <li>Post them as internal notes in the Odoo records you linked</li>
+                    <li>Okresowo sprawdzać identyfikatory nowych wiadomości na Twoim koncie, aby znaleźć te z powiązanych przez Ciebie wątków (tylko dopóki powiązany jest co najmniej jeden wątek)</li>
+                    <li>Odczytywać temat, nadawcę, odbiorców, datę i treść nowych wiadomości w tych wątkach</li>
+                    <li>Publikować je jako notatki wewnętrzne w powiązanych przez Ciebie rekordach Odoo</li>
                 </ul>
-                <p><strong>Scope:</strong> <span>The Extension only requests the gmail.readonly OAuth scope. It cannot send, modify, archive or delete emails. Automatic logging stops when you turn it off for a thread or for all of them, or remove the Extension. Tokens can also be revoked from your Google Account permissions at any time.</span></p>
+                <p><strong>Scope:</strong> <span>Rozszerzenie żąda wyłącznie zakresu OAuth gmail.readonly. Nie może wysyłać, modyfikować, archiwizować ani usuwać e-maili. Automatyczne rejestrowanie zatrzymuje się, gdy wyłączysz je dla wątku lub dla wszystkich wątków albo usuniesz Rozszerzenie. Tokeny można też w każdej chwili cofnąć w uprawnieniach Twojego konta Google.</span></p>
 
                 <h3>Dane konfiguracyjne</h3>
-                <p>Rozszerzenie przechowuje konfigurację Twojej instancji Odoo lokalnie:</p>
+                <p>Rozszerzenie przechowuje Twoją konfigurację w magazynie Chrome, w Twojej przeglądarce:</p>
                 <ul>
                     <li>URL instancji Odoo</li>
                     <li>Nazwa bazy danych</li>
                     <li>Dane uwierzytelniające</li>
                     <li>Preferencje użytkownika (ustawienia widocznych sekcji)</li>
-                    <li>Gmail OAuth tokens (only when automatic logging is enabled) — required to access the Gmail API on your behalf; revocable from your Google Account</li>
-                    <li>Auto-logging mappings (thread-to-record links and IDs of messages already logged) — stored locally for the duration of each mapping</li>
-                    <li>Active company selection and the list of companies you have access to (multi-company instances) — cached locally to remember which company you are operating in</li>
+                    <li>Tokeny OAuth Gmaila (tylko jeśli połączysz Gmaila na potrzeby automatycznego rejestrowania) — wymagane do uzyskiwania dostępu do API Gmaila w Twoim imieniu; pozostają do momentu usunięcia Rozszerzenia lub cofnięcia dostępu na Twoim koncie Google</li>
+                    <li>Powiązania automatycznego rejestrowania (powiązania wątków z rekordami i identyfikatory już zarejestrowanych wiadomości) — przechowywane w Twojej przeglądarce, dopóki istnieje dane powiązanie</li>
+                    <li>Wybór aktywnej firmy i lista firm, do których masz dostęp (instancje wielofirmowe) — buforowane lokalnie, aby zapamiętać, w której firmie działasz</li>
                 </ul>
 
                 <h3>Otwarte karty Odoo</h3>
@@ -152,15 +156,19 @@
                     <li><strong>Logowanie e-maili:</strong> <span>Gdy klikniesz przyciski "Zaloguj e-mail", treść e-maila jest zapisywana w chatterze Twojej instancji Odoo</span></li>
                     <li><strong>Wyszukiwanie i filtrowanie:</strong> <span>Wyszukiwanie w szansach, zadaniach i zgłoszeniach powiązanych z kontaktami</span></li>
                     <li><strong>Buforowanie:</strong> <span>Tymczasowe buforowanie odpowiedzi API Odoo lokalnie w celu poprawy wydajności</span></li>
-                    <li><strong>Auto-Logging:</strong> <span>When you enable auto-logging on a record, the Extension queries your Gmail account in the background to detect new emails on the linked thread and posts them as internal notes in your Odoo instance</span></li>
+                    <li><strong>Automatyczne rejestrowanie:</strong> <span>Gdy włączysz automatyczne rejestrowanie dla rekordu, Rozszerzenie sprawdza w tle Twoje konto Gmail w poszukiwaniu nowych e-maili w powiązanym wątku i publikuje je jako notatki wewnętrzne w Twojej instancji Odoo</span></li>
+                    <li><strong>Powiadomienia Odoo (PLUS):</strong> <span>Oznaczanie etykietami według modułu e-maili, które wysyła Ci Twoje Odoo, i pokazywanie, gdzie Cię wspomniano</span></li>
+                    <li><strong>Statystyki użycia i raporty o błędach:</strong> <span>Zrozumienie, jak Rozszerzenie jest używane, i naprawianie usterek (zob. Analityka)</span></li>
+                    <li><strong>Subskrypcja i cena:</strong> <span>Zarządzanie Twoją subskrypcją PLUS, sprawdzanie, czy licencja należy do Twojego konta Gmail, oraz pokazywanie ceny dla Twojego kraju (zob. Usługi stron trzecich)</span></li>
+                    <li><strong>Automatyczne wykrywanie Odoo:</strong> <span>Gdy klikniesz „Autodetect Odoo”, zaproponowanie Ci Twojej instancji na podstawie otwartych kart odoo.com</span></li>
                 </ul>
             </section>
 
             <section class="policy-section">
                 <h2>Przechowywanie i bezpieczeństwo danych</h2>
-                <p><strong>Tylko lokalne przechowywanie:</strong> <span>Wszystkie dane są przechowywane lokalnie na Twoim urządzeniu przy użyciu API przechowywania Chrome. Żadne dane nie są przesyłane do serwerów stron trzecich z wyjątkiem Twojej własnej instancji Odoo.</span></p>
-                <p><strong>Przesyłanie danych:</strong> <span>Rozszerzenie komunikuje się bezpośrednio z TWOJĄ instancją Odoo przez HTTPS. Twoje dane uwierzytelniające i dane Odoo nigdy nie są wysyłane do dewelopera rozszerzenia ani żadnej strony trzeciej.</span></p>
-                <p><strong>Zarządzanie pamięcią podręczną:</strong> <span>Zbuforowane dane są automatycznie czyszczone po 5 minutach lub gdy klikniesz przycisk odświeżania. Możesz również wyczyścić wszystkie zbuforowane dane, usuwając rozszerzenie.</span></p>
+                <p><strong>Przechowywanie:</strong> <span>Konfiguracja i pamięć podręczna są przechowywane w magazynie Chrome, w Twojej przeglądarce. Jeśli używasz synchronizacji Chrome, Chrome kopiuje adres Twojego Odoo, Twój klucz API i Twoje preferencje na Twoje konto Google i na Twoje inne urządzenia.</span></p>
+                <p><strong>Przesyłanie danych:</strong> <span>Rozszerzenie komunikuje się bezpośrednio z TWOJĄ instancją Odoo przez HTTPS. Twoje dane uwierzytelniające Odoo nigdy nie są wysyłane do dewelopera rozszerzenia.</span></p>
+                <p><strong>Zarządzanie pamięcią podręczną:</strong> <span>Dane z pamięci podręcznej przestają być używane po kilku minutach i są usuwane, gdy klikniesz przycisk odświeżania lub połączysz się z innym Odoo. Usunięcie Rozszerzenia usuwa je z tej przeglądarki.</span></p>
             </section>
 
             <section class="policy-section">
@@ -171,40 +179,49 @@
                     <li>Twój adres e-mail do zarządzania kontem i paragonów</li>
                     <li>Informacje o płatności (przetwarzane bezpiecznie przez Stripe, nieprzechowywane przez Rozszerzenie)</li>
                     <li>Status subskrypcji i informacje rozliczeniowe</li>
+                    <li>Identyfikator instalacji, gdy aktywujesz licencję, aby odróżnić Twoje urządzenia</li>
                 </ul>
                 <p><strong>Polityka Prywatności Polar:</strong> <a href="https://polar.sh/legal/privacy" target="_blank">https://polar.sh/legal/privacy</a></p>
                 <p><strong>Ważne:</strong> <span>Dane płatnicze są obsługiwane całkowicie przez Polar i Stripe. Rozszerzenie nigdy nie otrzymuje ani nie przechowuje informacji o Twojej karcie kredytowej.</span></p>
 
+                <h3>Cena według kraju</h3>
+                <p>Aby pokazać Ci cenę dla Twojego kraju, Rozszerzenie wysyła zapytanie do ParityDeals (https://www.paritydeals.com/), które ustala kraj na podstawie Twojego połączenia. ParityDeals nie otrzymuje od Rozszerzenia niczego poza samym zapytaniem.</p>
+
                 <h3>InboxSDK (<span>Integracja z Gmail</span>)</h3>
-                <p>Rozszerzenie używa InboxSDK (https://www.inboxsdk.com/) do integracji z interfejsem Gmail. InboxSDK to biblioteka, która pomaga Rozszerzeniu wchodzić w interakcję z UI Gmail w celu wyświetlania panelu bocznego i wykrywania kontaktów e-mail. InboxSDK nie zbiera, nie przesyła ani nie przechowuje Twoich danych e-mailowych.</p>
+                <p>Rozszerzenie używa InboxSDK (https://www.inboxsdk.com/) do integracji z interfejsem Gmaila: do wyświetlania panelu bocznego i wykrywania kontaktów z e-maila, który otwierasz.</p>
 
                 <h3>PostHog (<span>Analityka</span>)</h3>
-                <p>Rozszerzenie używa PostHog (https://posthog.com/) do anonimowej analityki użytkowania. PostHog pomaga nam zrozumieć, jak rozszerzenie jest używane i identyfikować problemy. Zbierane dane obejmują:</p>
+                <p>Rozszerzenie używa PostHog (https://posthog.com/) do analityki użytkowania. PostHog pomaga nam zrozumieć, jak rozszerzenie jest używane, i identyfikować problemy. Zbierane dane obejmują:</p>
                 <ul>
-                    <li>Anonimowy identyfikator użytkownika (losowy UUID, niepowiązany z Twoją tożsamością)</li>
+                    <li>Identyfikator instalacji (losowy kod). Jeśli aktywujesz PLUS, jest on powiązany z Twoją licencją.</li>
                     <li>Zdarzenia użycia funkcji (np. "e-mail zalogowany", "rekord utworzony")</li>
-                    <li>Raporty o błędach do debugowania (bez danych osobowych ani treści e-maili)</li>
-                    <li>A boolean flag indicating whether your Odoo user has access to more than one company (used to know whether multi-company features are relevant). The list of companies and their names are NOT sent.</li>
+                    <li>Raporty o błędach do debugowania, bez treści e-maili (zob. Raporty o błędach poniżej)</li>
+                    <li>Flaga logiczna wskazująca, czy Twój użytkownik Odoo ma dostęp do więcej niż jednej firmy (używana, aby wiedzieć, czy funkcje wielofirmowe są istotne). Lista firm i ich nazwy NIE są wysyłane.</li>
                 </ul>
                 <p><strong>Polityka prywatności PostHog:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
-                <p><strong>Rezygnacja:</strong> <span>Statystyki użycia możesz wyłączyć w dowolnym momencie w Settings > General („Share anonymous usage data”). To ustawienie dotyczy statystyk użycia; raporty o błędach opisano poniżej.</span></p>
-                <p><strong>Raporty o błędach:</strong> <span>Raporty o błędach są wysyłane niezależnie od ustawienia analityki, ponieważ opisują stan aplikacji, a nie Twoją aktywność. Każdy raport zawiera komunikat błędu, techniczny ślad stosu, wersję rozszerzenia oraz losowy identyfikator instalacji — nigdy treści wiadomości, danych uwierzytelniających ani danych z Odoo. Podstawą prawną jest nasz uzasadniony interes w wykrywaniu i usuwaniu awarii. W każdej chwili możesz wnieść sprzeciw, pisząc na adres</span> <a href="mailto:odoointegrations.team@gmail.com">odoointegrations.team@gmail.com</a>.</p>
+                <p><strong>Rezygnacja:</strong> <span>Analitykę użycia możesz wyłączyć w dowolnym momencie w „Settings > General” („Share anonymous usage data”). To ustawienie obejmuje większość statystyk użycia; raporty o błędach (opisane poniżej) i kilka zdarzeń usługowych, takich jak zmiana planu, są wysyłane mimo to.</span></p>
+                <p><strong>Raporty o błędach:</strong> <span>Raporty o błędach są wysyłane niezależnie od ustawienia analityki, ponieważ opisują stan aplikacji, a nie Twoją aktywność. Każdy raport zawiera komunikat błędu i jego szczegóły techniczne, wersje Rozszerzenia i Odoo oraz losowy identyfikator instalacji — nigdy treści e-maili ani danych uwierzytelniających. Jeśli błąd pochodzi z Twojego Odoo, raport zawiera komunikat błędu Odoo, który może zawierać adres Twojej instancji. Podstawą prawną jest nasz uzasadniony interes w wykrywaniu i usuwaniu usterek. Jeśli masz lub miałeś PLUS, możesz w każdej chwili wnieść sprzeciw, pisząc z adresu e-mail przypisanego do licencji na adres</span> <a href="mailto:odoointegrations.team@gmail.com">odoointegrations.team@gmail.com</a>.</p>
             </section>
 
             <section class="policy-section">
                 <h2>Udostępnianie danych stronom trzecim</h2>
-                <p><strong>NIE udostępniamy Twoich danych żadnym stronom trzecim w celach reklamowych, analitycznych ani handlu danymi.</strong></p>
-                <p>Rozszerzenie komunikuje się tylko z:</p>
+                <p><strong>NIE sprzedajemy Twoich danych ani nie udostępniamy ich w celach reklamowych ani do handlu danymi.</strong></p>
+                <p>Rozszerzenie i jego usługi komunikują się z:</p>
                 <ul>
                     <li><strong>Twoją instancją Odoo:</strong> <span>Rozszerzenie wysyła żądania API do skonfigurowanego przez Ciebie URL instancji Odoo w celu pobierania i tworzenia rekordów</span></li>
-                    <li><strong>Polar:</strong> <span>Tylko do zarządzania subskrypcjami (e-mail, status subskrypcji, przetwarzanie płatności)</span></li>
-                    <li><strong>PostHog:</strong> <span>Anonimowe statystyki użycia (korzystanie z funkcji) i raporty o błędach. Bez danych osobowych oraz treści wiadomości/Odoo. Statystyki użycia można wyłączyć w Settings > General („Share anonymous usage data”).</span></li>
+                    <li><strong>Polar:</strong> <span>Tylko do zarządzania subskrypcjami (e-mail, identyfikator instalacji, status subskrypcji, przetwarzanie płatności)</span></li>
+                    <li><strong>PostHog:</strong> <span>Statystyki użycia i raporty o błędach, bez treści e-maili. Większość statystyk użycia można wyłączyć w „Settings > General” („Share anonymous usage data”); zob. Rezygnacja.</span></li>
+                    <li><strong>ParityDeals:</strong> <span>Tylko po to, aby pokazać Ci cenę dla Twojego kraju</span></li>
+                    <li><strong>API Gmaila (Google):</strong> <span>Tylko jeśli włączysz automatyczne rejestrowanie</span></li>
+                    <li><strong>Google Forms:</strong> <span>Ankieta przy odinstalowaniu, tylko jeśli ją wyślesz</span></li>
+                    <li><strong>GitHub:</strong> <span>Wewnętrzne powiadomienia o subskrypcjach PLUS z problemami, bez adresu e-mail ani imienia i nazwiska</span></li>
                 </ul>
+                <p>PostHog przechowuje dane analityczne w Unii Europejskiej (Frankfurt). Inne podmioty, takie jak GitHub, mogą przetwarzać dane poza nią.</p>
                 <p>Rozszerzenie NIE:</p>
                 <ul>
                     <li>Sprzedaje Twoich danych brokerom danych</li>
                     <li>Udostępnia danych w celach reklamowych</li>
-                    <li>Wysyła danych Gmail lub Odoo na serwery dewelopera rozszerzenia</li>
+                    <li>Wysyła treści Twoich e-maili ani Twoich rekordów Odoo do dewelopera rozszerzenia</li>
                 </ul>
             </section>
 
@@ -213,12 +230,12 @@
                 <p><span>Wykorzystanie i przekazywanie przez Integrację Odoo dla Gmail informacji otrzymanych z interfejsów API Google jest zgodne z</span> <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API Services User Data Policy</a>, <span>w tym wymogami Ograniczonego Użytkowania.</span></p>
                 <p><strong>Zgodność z Ograniczonym Użytkowaniem:</strong></p>
                 <ul>
-                    <li>The Extension only accesses Gmail data when (a) you explicitly open an email, or (b) you have explicitly enabled auto-logging and linked a thread to an Odoo record (a per-thread opt-in)</li>
-                    <li>Dane e-mail są wykorzystywane wyłącznie do ujawnionego celu: integracji z Twoim Odoo CRM</li>
+                    <li>Rozszerzenie odczytuje Twoje e-maile tylko wtedy, gdy (a) otwierasz e-mail, (b) skonfigurowałeś powiadomienia Odoo (PLUS), aby odczytywać e-maile, które wysyła Ci Twoje Odoo, lub (c) włączyłeś automatyczne rejestrowanie i powiązałeś wątek z rekordem Odoo (zgoda wyrażana osobno dla każdego wątku)</li>
+                    <li>Dane odczytane przez API Gmaila są wykorzystywane wyłącznie do ujawnionego celu: rejestrowania tych e-maili w Twoim Odoo</li>
                     <li>Żadne dane Gmail nie są wykorzystywane do wyświetlania reklam</li>
-                    <li>Dane Gmail nie są przekazywane stronom trzecim (z wyjątkiem Twojej własnej instancji Odoo)</li>
+                    <li>Dane Gmaila odczytane przez API Gmaila są wysyłane wyłącznie do Twojej własnej instancji Odoo</li>
                     <li>Dane Gmail nie są wykorzystywane do określania zdolności kredytowej ani celów pożyczkowych</li>
-                    <li>The Extension only requests the gmail.readonly OAuth scope. It cannot send, modify, archive or delete emails on your behalf</li>
+                    <li>Rozszerzenie żąda wyłącznie zakresu OAuth gmail.readonly. Nie może wysyłać, modyfikować, archiwizować ani usuwać e-maili w Twoim imieniu</li>
                 </ul>
             </section>
 
@@ -229,7 +246,7 @@
                 <h3>Wymagane uprawnienia (przyznawane przy instalacji)</h3>
                 <ul>
                     <li><strong>scripting:</strong> <span>Wymagane do wstrzykiwania interfejsu panelu bocznego do Gmail</span></li>
-                    <li><strong>storage:</strong> <span>Wymagane do zapisywania konfiguracji Odoo i buforowania odpowiedzi API lokalnie</span></li>
+                    <li><strong>storage:</strong> <span>Wymagane do zapisywania konfiguracji Odoo i buforowania odpowiedzi API w magazynie Chrome</span></li>
                     <li><strong>host_permissions (mail.google.com):</strong> <span>Wymagane do uzyskania dostępu do interfejsu Gmail i wyświetlania panelu bocznego</span></li>
                     <li><strong>host_permissions (*.odoo.com):</strong> <span>Wymagane do komunikacji z instancjami chmurowymi Odoo Online (np. twojafirma.odoo.com) oraz, po kliknięciu „Autodetect Odoo”, do odczytania adresów otwartych kart odoo.com</span></li>
                     <li><strong>host_permissions (api.polar.sh):</strong> <span>Wymagane do zarządzania subskrypcjami i przetwarzania płatności</span></li>
@@ -237,11 +254,11 @@
                 </ul>
 
                 <h3>Opcjonalne uprawnienia (żądane w razie potrzeby)</h3>
-                <p>Rozszerzenie żąda opcjonalnych uprawnień dla niestandardowych instancji Odoo:</p>
+                <p>Rozszerzenie żąda opcjonalnych uprawnień dla samodzielnie hostowanych instancji Odoo i dla automatycznego rejestrowania:</p>
                 <ul>
-                    <li><strong>optional_host_permissions (https://*/*):</strong> <span>Używane TYLKO jeśli łączysz się z samodzielnie hostowaną instancją Odoo na niestandardowej domenie (np. odoo.twojafirma.com lub erp.przyklad.com). To uprawnienie jest żądane tylko gdy jawnie skonfigurujesz niestandardowy URL Odoo.</span></li>
-                    <li><strong>identity:</strong> <span>Used ONLY when you opt into automatic logging. Lets the Extension complete the Google sign-in flow that grants Gmail API access (gmail.readonly scope). Requested at the moment you click "Connect Gmail" in Settings > Email logging.</span></li>
-                    <li><strong>alarms:</strong> <span>Used ONLY when auto-logging is active. Lets the Extension wake up periodically in the background to check for new emails on the threads you have linked. Requested together with the identity permission.</span></li>
+                    <li><strong>optional_host_permissions (https://*/*):</strong> <span>Używane TYLKO, jeśli łączysz się z samodzielnie hostowaną instancją Odoo w niestandardowej domenie (np. odoo.twojafirma.com lub erp.przyklad.com), lub dla domeny API Google (www.googleapis.com), gdy łączysz Gmaila na potrzeby automatycznego rejestrowania. Każdy adres jest żądany tylko wtedy, gdy go potrzebujesz.</span></li>
+                    <li><strong>identity:</strong> <span>Używane TYLKO, gdy zdecydujesz się na automatyczne rejestrowanie. Pozwala Rozszerzeniu przeprowadzić proces logowania Google, który przyznaje dostęp do API Gmaila (zakres gmail.readonly). Żądane, gdy włączysz automatyczne rejestrowanie lub klikniesz „Connect Gmail” w „Settings > Email logging”.</span></li>
+                    <li><strong>alarms:</strong> <span>Używane TYLKO, gdy automatyczne rejestrowanie jest aktywne. Pozwala Rozszerzeniu okresowo wybudzać się w tle, aby sprawdzać, czy w powiązanych przez Ciebie wątkach są nowe e-maile. Żądane, gdy włączysz automatyczne rejestrowanie lub klikniesz „Connect Gmail”.</span></li>
                 </ul>
                 <p><strong>Uwaga:</strong> <span>Rozszerzenie obsługuje tylko połączenia HTTPS ze względów bezpieczeństwa. Połączenia HTTP nie są dozwolone.</span></p>
 
@@ -250,16 +267,17 @@
                 <ul>
                     <li>Skonfigurujesz niestandardowy URL Odoo, który nie jest domeną *.odoo.com</li>
                     <li>Jawnie wybierzesz połączenie z samodzielnie hostowaną instancją Odoo</li>
+                    <li>Połączysz Gmaila na potrzeby automatycznego rejestrowania</li>
                 </ul>
-                <p><strong>Możesz odmówić tych uprawnień</strong> <span>jeśli używasz tylko Odoo Online (*.odoo.com). Rozszerzenie będzie działać normalnie z Odoo Online bez przyznawania opcjonalnych uprawnień.</span></p>
+                <p><strong>Możesz odmówić tych uprawnień</strong> <span>jeśli używasz tylko Odoo Online (*.odoo.com). Rozszerzenie będzie działać normalnie z Odoo Online bez przyznawania opcjonalnych uprawnień, z wyjątkiem automatycznego rejestrowania.</span></p>
 
                 <h3>Dlaczego te opcjonalne uprawnienia?</h3>
                 <p>Wiele organizacji hostuje Odoo na własnych serwerach z niestandardowymi domenami (np. erp.acme.com, odoo.mojafirma.net). Aby wspierać tych użytkowników, Rozszerzenie żąda opcjonalnych szerokich uprawnień. Jednak:</p>
                 <ul>
-                    <li>Te uprawnienia są używane TYLKO do komunikacji z TWOJĄ skonfigurowaną instancją Odoo</li>
+                    <li>Te uprawnienia są używane TYLKO do komunikacji z TWOJĄ skonfigurowaną instancją Odoo oraz, przy automatycznym rejestrowaniu, z API Gmaila firmy Google</li>
                     <li>Nigdy NIE są używane do uzyskiwania dostępu do innych stron internetowych</li>
                     <li>Możesz je odwołać w każdej chwili w ustawieniach Chrome</li>
-                    <li>Rozszerzenie poprosi o nie tylko jeśli wprowadzisz niestandardowy URL Odoo</li>
+                    <li>Rozszerzenie prosi o nie tylko wtedy, gdy wprowadzisz niestandardowy URL Odoo lub połączysz Gmaila na potrzeby automatycznego rejestrowania</li>
                 </ul>
             </section>
 
@@ -267,15 +285,16 @@
                 <h2>Twoje prawa do danych</h2>
                 <p>Masz następujące prawa dotyczące Twoich danych:</p>
                 <ul>
-                    <li><strong>Dostęp:</strong> <span>Wszystkie Twoje dane są przechowywane lokalnie i w Twojej instancji Odoo, którą kontrolujesz</span></li>
-                    <li><strong>Usunięcie:</strong> <span>Możesz wyczyścić wszystkie dane Rozszerzenia poprzez:</span>
+                    <li><strong>Dostęp:</strong> <span>Twoja konfiguracja jest przechowywana w Twojej przeglądarce, a Twoje rekordy w Twoim Odoo, które kontrolujesz. W sprawie Twoich danych o użyciu zob. Usunięcie.</span></li>
+                    <li><strong>Usunięcie:</strong> <span>Możesz usunąć dane Rozszerzenia poprzez:</span>
                         <ul>
                             <li>Kliknięcie przycisku odświeżania (czyści pamięć podręczną)</li>
-                            <li>Usunięcie Rozszerzenia z Chrome (czyści wszystkie lokalne dane)</li>
+                            <li>Usunięcie Rozszerzenia z Chrome (czyści dane przechowywane w tej przeglądarce)</li>
+                            <li>Poproszenie nas o usunięcie Twoich danych o użyciu: jeśli masz lub miałeś PLUS, napisz na adres odoointegrations.team@gmail.com z adresu e-mail przypisanego do licencji, a usuniemy dane o użyciu instalacji powiązanych z Twoją licencją. Jeśli nigdy nie miałeś PLUS, Twoje dane o użyciu nie są powiązane z Twoim imieniem i nazwiskiem ani z Twoim adresem e-mail; możemy ich szukać tylko wtedy, gdy podasz nam adres swojego Odoo, a któryś raport o błędzie go zawiera.</li>
                         </ul>
                     </li>
-                    <li><strong>Przenośność:</strong> <span>Twoje dane pozostają w Twojej instancji Odoo i są dostępne przez funkcje eksportu Odoo</span></li>
-                    <li><strong>Kontrola:</strong> <span>Możesz cofnąć dostęp Rozszerzenia w każdej chwili, usuwając je</span></li>
+                    <li><strong>Przenośność:</strong> <span>Rekordy, które tworzysz, i e-maile, które rejestrujesz, pozostają w Twoim Odoo i możesz je eksportować za pomocą własnych narzędzi Odoo</span></li>
+                    <li><strong>Kontrola:</strong> <span>Możesz w każdej chwili zatrzymać Rozszerzenie, usuwając je. Jeśli połączyłeś Gmaila, możesz też cofnąć jego dostęp w uprawnieniach swojego konta Google.</span></li>
                 </ul>
             </section>
 
@@ -283,11 +302,11 @@
                 <h2>Przechowywanie danych</h2>
                 <p>Rozszerzenie przechowuje dane w następujący sposób:</p>
                 <ul>
-                    <li><strong>Dane konfiguracyjne:</strong> <span>Przechowywane do momentu usunięcia Rozszerzenia</span></li>
-                    <li><strong>Zbuforowane odpowiedzi API:</strong> <span>Automatycznie usuwane po 5 minutach</span></li>
-                    <li><strong>Preferencje użytkownika:</strong> <span>Przechowywane do momentu usunięcia Rozszerzenia</span></li>
+                    <li><strong>Dane konfiguracyjne:</strong> <span>Przechowywane w tej przeglądarce do momentu usunięcia Rozszerzenia</span></li>
+                    <li><strong>Zbuforowane odpowiedzi API:</strong> <span>Przestają być używane po kilku minutach; usuwane, gdy klikniesz odświeżanie lub połączysz się z innym Odoo</span></li>
+                    <li><strong>Preferencje użytkownika:</strong> <span>Przechowywane w tej przeglądarce do momentu usunięcia Rozszerzenia</span></li>
                 </ul>
-                <p>Gdy odinstalujesz Rozszerzenie, wszystkie lokalnie przechowywane dane są automatycznie usuwane przez Chrome.</p>
+                <p>Gdy odinstalujesz Rozszerzenie, Chrome usuwa dane przechowywane w tej przeglądarce. Jeśli używasz synchronizacji Chrome, adres Twojego Odoo, Twój klucz API i Twoje preferencje mogą pozostać na Twoim koncie Google.</p>
             </section>
 
             <section class="policy-section">

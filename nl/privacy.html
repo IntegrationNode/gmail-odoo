@@ -90,7 +90,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1>Privacybeleid</h1>
-            <p class="last-updated"><span>Laatst bijgewerkt</span>: October 18, 2026</p>
+            <p class="last-updated"><span>Laatst bijgewerkt</span>: October 31, 2026</p>
 
             <section class="policy-section">
                 <h2>Overzicht</h2>
@@ -101,11 +101,14 @@
             <section class="policy-section">
                 <h2>Informatie Die Wij Verzamelen</h2>
                 <h3>Gegevens Afkomstig uit Gmail</h3>
-                <p>De Extensie heeft toegang tot de volgende informatie uit Gmail wanneer u expliciet een e-mail opent:</p>
+                <p>De Extensie heeft toegang tot de volgende informatie uit Gmail. Tenzij anders vermeld, alleen uit de e-mail die u opent:</p>
                 <ul>
                     <li><strong>E-mailadressen van afzender en ontvanger:</strong> <span>Gebruikt om overeenkomende contacten in uw Odoo-instantie te zoeken</span></li>
                     <li><strong>E-mailonderwerp en inhoud:</strong> <span>Gebruikt wanneer u ervoor kiest om kansen, taken of tickets aan te maken in Odoo</span></li>
                     <li><strong>E-maildatum en metadata:</strong> <span>Gebruikt voor het loggen van e-mails naar Odoo records</span></li>
+                    <li><strong>Uw Gmail-adres:</strong> <span>Gelezen wanneer Gmail wordt geladen, om te controleren of een PLUS-licentie bij dit account hoort, en om het in te vullen wanneer u zich abonneert</span></li>
+                    <li><strong>Odoo-meldingen (PLUS):</strong> <span>Alleen als u Odoo-meldingen instelt: de Extensie controleert de afzender van de e-mails in uw Gmail-lijsten en leest de e-mails die uw Odoo u stuurt, ook als u ze niet opent, om ze per module te labelen</span></li>
+                    <li><strong>Bijlagen:</strong> <span>Geüpload naar uw Odoo wanneer u een e-mail vastlegt of er een record van aanmaakt</span></li>
                 </ul>
 
                 <h3>Gegevens Afkomstig uit Odoo</h3>
@@ -116,27 +119,28 @@
                     <li>Projecttaken gekoppeld aan contacten</li>
                     <li>Helpdesk tickets gekoppeld aan contacten</li>
                     <li>Bedrijfsinformatie en gerelateerde contacten</li>
+                    <li>Prijsopgaven, verkooporders, financiële cijfers en de berichten waarin het contact voorkomt</li>
                 </ul>
 
-                <h3>Data Accessed for Auto-Logging (Optional)</h3>
-                <p>Automatic logging is an opt-in feature. The Extension only accesses this data after you grant Gmail access in Settings > Email logging ("Connect Gmail") and explicitly link a thread to an Odoo record. Once a thread is linked, the Extension uses Google's Gmail API to:</p>
+                <h3>Gegevens Geraadpleegd voor Automatisch Vastleggen (Optioneel)</h3>
+                <p>Automatisch vastleggen is een opt-in-functie. De Extensie heeft pas toegang tot deze gegevens nadat u Gmail-toegang hebt verleend in Instellingen > E-mails vastleggen ("Gmail verbinden") en expliciet een conversatie aan een Odoo-record hebt gekoppeld. Zodra een conversatie is gekoppeld, gebruikt de Extensie de Gmail API van Google om:</p>
                 <ul>
-                    <li>Periodically check for new messages on the threads you have linked (background polling while at least one mapping is active)</li>
-                    <li>Read the subject, sender, recipients, date and body of those new messages</li>
-                    <li>Post them as internal notes in the Odoo records you linked</li>
+                    <li>Periodiek de ID's van de nieuwe berichten in uw account te controleren om de berichten te vinden in de conversaties die u hebt gekoppeld (alleen zolang ten minste één conversatie gekoppeld is)</li>
+                    <li>Het onderwerp, de afzender, de ontvangers, de datum en de inhoud van de nieuwe berichten in die conversaties te lezen</li>
+                    <li>Ze als interne notities te plaatsen in de Odoo-records die u hebt gekoppeld</li>
                 </ul>
-                <p><strong>Scope:</strong> <span>The Extension only requests the gmail.readonly OAuth scope. It cannot send, modify, archive or delete emails. Automatic logging stops when you turn it off for a thread or for all of them, or remove the Extension. Tokens can also be revoked from your Google Account permissions at any time.</span></p>
+                <p><strong>Scope:</strong> <span>De Extensie vraagt alleen de OAuth-scope gmail.readonly aan. Ze kan geen e-mails verzenden, wijzigen, archiveren of verwijderen. Automatisch vastleggen stopt wanneer u het uitschakelt voor een conversatie of voor alle conversaties, of wanneer u de Extensie verwijdert. Tokens kunnen ook op elk moment worden ingetrokken via de machtigingen van uw Google-account.</span></p>
 
                 <h3>Configuratiegegevens</h3>
-                <p>De Extensie slaat de configuratie van uw Odoo-instantie lokaal op:</p>
+                <p>De Extensie slaat uw configuratie op in de opslag van Chrome, in uw browser:</p>
                 <ul>
                     <li>URL van Odoo-instantie</li>
                     <li>Databasenaam</li>
                     <li>Authenticatiegegevens</li>
                     <li>Gebruikersvoorkeuren (instellingen zichtbare secties)</li>
-                    <li>Gmail OAuth tokens (only when automatic logging is enabled) — required to access the Gmail API on your behalf; revocable from your Google Account</li>
-                    <li>Auto-logging mappings (thread-to-record links and IDs of messages already logged) — stored locally for the duration of each mapping</li>
-                    <li>Active company selection and the list of companies you have access to (multi-company instances) — cached locally to remember which company you are operating in</li>
+                    <li>Gmail OAuth-tokens (alleen als u Gmail verbindt voor automatisch vastleggen) — vereist om namens u toegang te krijgen tot de Gmail API; ze blijven bewaard totdat u de Extensie verwijdert of de toegang intrekt via uw Google-account</li>
+                    <li>Koppelingen voor automatisch vastleggen (koppelingen tussen conversatie en record en ID's van al vastgelegde berichten) — opgeslagen in uw browser zolang elke koppeling bestaat</li>
+                    <li>Actieve bedrijfsselectie en de lijst van bedrijven waartoe u toegang hebt (instanties met meerdere bedrijven) — lokaal gecachet om te onthouden in welk bedrijf u werkt</li>
                 </ul>
 
                 <h3>Geopende Odoo-tabbladen</h3>
@@ -152,15 +156,19 @@
                     <li><strong>E-mails Loggen:</strong> <span>Wanneer u op "E-mail Loggen" knoppen klikt, wordt de e-mailinhoud opgeslagen in de chatter van uw Odoo-instantie</span></li>
                     <li><strong>Zoeken en Filteren:</strong> <span>Zoeken door kansen, taken en tickets gekoppeld aan contacten</span></li>
                     <li><strong>Caching:</strong> <span>Tijdelijk lokaal opslaan van Odoo API-antwoorden om prestaties te verbeteren</span></li>
-                    <li><strong>Auto-Logging:</strong> <span>When you enable auto-logging on a record, the Extension queries your Gmail account in the background to detect new emails on the linked thread and posts them as internal notes in your Odoo instance</span></li>
+                    <li><strong>Automatisch Vastleggen:</strong> <span>Wanneer u automatisch vastleggen inschakelt voor een record, controleert de Extensie op de achtergrond uw Gmail-account op nieuwe e-mails in de gekoppelde conversatie en plaatst ze als interne notities in uw Odoo-instantie</span></li>
+                    <li><strong>Odoo-meldingen (PLUS):</strong> <span>De e-mails die uw Odoo u stuurt per module labelen en tonen waar u bent vermeld</span></li>
+                    <li><strong>Gebruiksstatistieken en Foutrapporten:</strong> <span>Begrijpen hoe de Extensie wordt gebruikt en storingen verhelpen (zie Analytics)</span></li>
+                    <li><strong>Abonnement en Prijs:</strong> <span>Uw PLUS-abonnement beheren, controleren of de licentie bij uw Gmail-account hoort en u de prijs voor uw land tonen (zie Diensten van Derden)</span></li>
+                    <li><strong>Automatische Detectie van Odoo:</strong> <span>Wanneer u op "Odoo automatisch detecteren" klikt, u uw instantie aanbieden op basis van uw geopende odoo.com-tabbladen</span></li>
                 </ul>
             </section>
 
             <section class="policy-section">
                 <h2>Gegevensopslag en Beveiliging</h2>
-                <p><strong>Alleen Lokale Opslag:</strong> <span>Alle gegevens worden lokaal op uw apparaat opgeslagen met behulp van Chrome's opslag-API's. Er worden geen gegevens verzonden naar servers van derden, behalve naar uw eigen Odoo-instantie.</span></p>
-                <p><strong>Gegevensoverdracht:</strong> <span>De Extensie communiceert rechtstreeks met UW Odoo-instantie via HTTPS. Uw Odoo-inloggegevens en data worden nooit naar de extensie-ontwikkelaar of derden gestuurd.</span></p>
-                <p><strong>Cachebeheer:</strong> <span>Gecachte gegevens worden automatisch na 5 minuten gewist of wanneer u op de vernieuwknop klikt. U kunt ook alle gecachte gegevens wissen door de extensie te verwijderen.</span></p>
+                <p><strong>Opslag:</strong> <span>Configuratie en cache worden opgeslagen in de opslag van Chrome, in uw browser. Als u Chrome-synchronisatie gebruikt, kopieert Chrome uw Odoo-adres, uw API-sleutel en uw voorkeuren naar uw Google-account en uw andere apparaten.</span></p>
+                <p><strong>Gegevensoverdracht:</strong> <span>De Extensie communiceert rechtstreeks met UW Odoo-instantie via HTTPS. Uw Odoo-inloggegevens worden nooit naar de extensie-ontwikkelaar gestuurd.</span></p>
+                <p><strong>Cachebeheer:</strong> <span>Gecachte gegevens worden na enkele minuten niet meer gebruikt en worden gewist wanneer u op de knop Vernieuwen klikt of verbinding maakt met een andere Odoo. Als u de Extensie verwijdert, worden ze uit deze browser gewist.</span></p>
             </section>
 
             <section class="policy-section">
@@ -171,40 +179,49 @@
                     <li>Je e-mailadres voor accountbeheer en bonnen</li>
                     <li>Betalingsinformatie (veilig verwerkt door Stripe, niet opgeslagen door de Extensie)</li>
                     <li>Abonnementsstatus en factureringsinformatie</li>
+                    <li>De installatie-ID, wanneer u een licentie activeert, om uw apparaten van elkaar te onderscheiden</li>
                 </ul>
                 <p><strong>Polar Privacybeleid:</strong> <a href="https://polar.sh/legal/privacy" target="_blank">https://polar.sh/legal/privacy</a></p>
                 <p><strong>Belangrijk:</strong> <span>Betalingsgegevens worden volledig afgehandeld door Polar en Stripe. De Extensie ontvangt of slaat nooit je creditcardgegevens op.</span></p>
 
+                <h3>Prijs per Land</h3>
+                <p>Om u de prijs voor uw land te tonen, raadpleegt de Extensie ParityDeals (https://www.paritydeals.com/), dat het land afleidt uit uw verbinding. Het ontvangt van de Extensie niets anders dan het verzoek zelf.</p>
+
                 <h3>InboxSDK (<span>Gmail Integratie</span>)</h3>
-                <p>De Extensie gebruikt InboxSDK (https://www.inboxsdk.com/) om te integreren met de Gmail-interface. InboxSDK is een bibliotheek die de Extensie helpt om met de Gmail UI te communiceren om de zijbalk weer te geven en e-mailcontacten te detecteren. InboxSDK verzamelt, verzendt of bewaart geen e-mailgegevens.</p>
+                <p>De Extensie gebruikt InboxSDK (https://www.inboxsdk.com/) om te integreren met de Gmail-interface: om de zijbalk weer te geven en de contacten te detecteren van de e-mail die u opent.</p>
 
                 <h3>PostHog (<span>Analytics</span>)</h3>
-                <p>De Extensie gebruikt PostHog (https://posthog.com/) voor anonieme gebruiksanalyses. PostHog helpt ons te begrijpen hoe de extensie wordt gebruikt en problemen te identificeren. Verzamelde gegevens omvatten:</p>
+                <p>De Extensie gebruikt PostHog (https://posthog.com/) voor gebruiksanalyses. PostHog helpt ons te begrijpen hoe de extensie wordt gebruikt en problemen te identificeren. Verzamelde gegevens omvatten:</p>
                 <ul>
-                    <li>Anonieme gebruikers-ID (willekeurige UUID, niet gekoppeld aan uw identiteit)</li>
+                    <li>Installatie-ID (een willekeurige code). Als u PLUS activeert, wordt deze aan uw licentie gekoppeld.</li>
                     <li>Functiegebruiksgebeurtenissen (bijv. "e-mail gelogd", "record aangemaakt")</li>
-                    <li>Foutrapporten voor debugging (geen persoonlijke gegevens of e-mailinhoud)</li>
-                    <li>A boolean flag indicating whether your Odoo user has access to more than one company (used to know whether multi-company features are relevant). The list of companies and their names are NOT sent.</li>
+                    <li>Foutrapporten voor debugging, zonder e-mailinhoud (zie Foutrapporten hieronder)</li>
+                    <li>Een booleaanse vlag die aangeeft of uw Odoo-gebruiker toegang heeft tot meer dan één bedrijf (gebruikt om te weten of functies voor meerdere bedrijven relevant zijn). De lijst van bedrijven en hun namen worden NIET verzonden.</li>
                 </ul>
                 <p><strong>PostHog Privacybeleid:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
-                <p><strong>Uitschakelen:</strong> <span>U kunt gebruiksstatistieken op elk moment uitschakelen via Instellingen > Algemeen ("Anonieme gebruiksgegevens delen"). Die instelling betreft gebruiksstatistieken; foutrapporten worden hieronder beschreven.</span></p>
-                <p><strong>Foutrapporten:</strong> <span>Foutrapporten worden verzonden ongeacht de analyse-instelling, omdat ze de toestand van de applicatie beschrijven en niet uw activiteit. Elk rapport bevat de foutmelding, de technische stacktrace, de versie van de extensie en de willekeurige installatie-ID — nooit e-mailinhoud, inloggegevens of Odoo-gegevens. De rechtsgrond is ons gerechtvaardigd belang om storingen op te sporen en te verhelpen. U kunt hiertegen op elk moment bezwaar maken door te schrijven naar</span> <a href="mailto:odoointegrations.team@gmail.com">odoointegrations.team@gmail.com</a>.</p>
+                <p><strong>Uitschakelen:</strong> <span>U kunt gebruiksanalyses op elk moment uitschakelen via Instellingen > Algemeen ("Anonieme gebruiksgegevens delen"). Die instelling betreft de meeste gebruiksstatistieken; foutrapporten (hieronder beschreven) en enkele servicegebeurtenissen, zoals een planwijziging, worden hoe dan ook verzonden.</span></p>
+                <p><strong>Foutrapporten:</strong> <span>Foutrapporten worden verzonden ongeacht de analyse-instelling, omdat ze de toestand van de applicatie beschrijven en niet uw activiteit. Elk rapport bevat de foutmelding en de technische details ervan, de versies van de Extensie en van Odoo, en de willekeurige installatie-ID — nooit e-mailinhoud of inloggegevens. Als de fout van uw Odoo komt, bevat het rapport de foutmelding van Odoo, die het adres van uw instantie kan bevatten. De rechtsgrond is ons gerechtvaardigd belang om storingen op te sporen en te verhelpen. Als u PLUS hebt of hebt gehad, kunt u op elk moment bezwaar maken door vanaf het e-mailadres van uw licentie te schrijven naar</span> <a href="mailto:odoointegrations.team@gmail.com">odoointegrations.team@gmail.com</a>.</p>
             </section>
 
             <section class="policy-section">
                 <h2>Gegevens Delen met Derden</h2>
-                <p><strong>Wij delen uw gegevens NIET met derden voor reclame, analyse of gegevensmakelaardij.</strong></p>
-                <p>De Extensie communiceert alleen met:</p>
+                <p><strong>Wij verkopen uw gegevens NIET en delen ze niet voor reclamedoeleinden of gegevensmakelaardij.</strong></p>
+                <p>De Extensie en haar diensten communiceren met:</p>
                 <ul>
                     <li><strong>Uw Odoo Instantie:</strong> <span>De Extensie stuurt API-verzoeken naar de Odoo-instantie URL die u configureert om records op te halen en aan te maken</span></li>
-                    <li><strong>Polar:</strong> <span>Alleen voor abonnementsbeheer (e-mail, abonnementsstatus, betalingsverwerking)</span></li>
-                    <li><strong>PostHog:</strong> <span>Anonieme gebruiksstatistieken (functiegebruik) en foutrapporten. Geen persoonsgegevens of e-mail-/Odoo-inhoud. Gebruiksstatistieken kunnen worden uitgeschakeld via Instellingen > Algemeen ("Anonieme gebruiksgegevens delen").</span></li>
+                    <li><strong>Polar:</strong> <span>Alleen voor abonnementsbeheer (e-mail, installatie-ID, abonnementsstatus, betalingsverwerking)</span></li>
+                    <li><strong>PostHog:</strong> <span>Gebruiksstatistieken en foutrapporten, zonder e-mailinhoud. De meeste gebruiksstatistieken kunnen worden uitgeschakeld via Instellingen > Algemeen ("Anonieme gebruiksgegevens delen"); zie Uitschakelen.</span></li>
+                    <li><strong>ParityDeals:</strong> <span>Alleen om u de prijs voor uw land te tonen</span></li>
+                    <li><strong>Gmail API (Google):</strong> <span>Alleen als u automatisch vastleggen inschakelt</span></li>
+                    <li><strong>Google Forms:</strong> <span>De verwijderingsenquête, alleen als u die verstuurt</span></li>
+                    <li><strong>GitHub:</strong> <span>Interne meldingen over PLUS-abonnementen met problemen, zonder e-mailadres of naam</span></li>
                 </ul>
+                <p>PostHog slaat de analysegegevens op in de Europese Unie (Frankfurt). Andere, zoals GitHub, kunnen gegevens daarbuiten verwerken.</p>
                 <p>De Extensie doet NIET:</p>
                 <ul>
                     <li>Uw gegevens verkopen aan gegevensmakelaars</li>
                     <li>Gegevens delen voor reclamedoeleinden</li>
-                    <li>Gmail of Odoo gegevens versturen naar de servers van de extensie-ontwikkelaar</li>
+                    <li>De inhoud van uw e-mails of uw Odoo-records naar de extensie-ontwikkelaar sturen</li>
                 </ul>
             </section>
 
@@ -213,12 +230,12 @@
                 <p><span>Het gebruik en de overdracht van informatie ontvangen van Google API's door Odoo Integratie voor Gmail voldoet aan</span> <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API Services User Data Policy</a>, <span>inclusief de vereisten voor Beperkt Gebruik.</span></p>
                 <p><strong>Naleving Beperkt Gebruik:</strong></p>
                 <ul>
-                    <li>The Extension only accesses Gmail data when (a) you explicitly open an email, or (b) you have explicitly enabled auto-logging and linked a thread to an Odoo record (a per-thread opt-in)</li>
-                    <li>E-mailgegevens worden uitsluitend gebruikt voor het bekendgemaakte doel: integratie met uw Odoo CRM</li>
+                    <li>De Extensie leest uw e-mails alleen wanneer (a) u een e-mail opent, (b) u Odoo-meldingen (PLUS) hebt ingesteld, om de e-mails te lezen die uw Odoo u stuurt, of (c) u automatisch vastleggen hebt ingeschakeld en een conversatie aan een Odoo-record hebt gekoppeld (een opt-in per conversatie)</li>
+                    <li>Gegevens die via de Gmail API worden gelezen, worden uitsluitend gebruikt voor het bekendgemaakte doel: die e-mails vastleggen in uw Odoo</li>
                     <li>Gmail-gegevens worden niet gebruikt voor het tonen van advertenties</li>
-                    <li>Gmail-gegevens worden niet overgedragen aan derden (behalve uw eigen Odoo-instantie)</li>
+                    <li>Gmail-gegevens die via de Gmail API worden gelezen, worden alleen naar uw eigen Odoo-instantie verzonden</li>
                     <li>Gmail-gegevens worden niet gebruikt voor het bepalen van kredietwaardigheid of leningdoeleinden</li>
-                    <li>The Extension only requests the gmail.readonly OAuth scope. It cannot send, modify, archive or delete emails on your behalf</li>
+                    <li>De Extensie vraagt alleen de OAuth-scope gmail.readonly aan. Ze kan namens u geen e-mails verzenden, wijzigen, archiveren of verwijderen</li>
                 </ul>
             </section>
 
@@ -229,7 +246,7 @@
                 <h3>Vereiste Machtigingen (Verleend bij Installatie)</h3>
                 <ul>
                     <li><strong>scripting:</strong> <span>Vereist om de zijbalkinterface in Gmail te injecteren</span></li>
-                    <li><strong>storage:</strong> <span>Vereist om uw Odoo-configuratie op te slaan en API-antwoorden lokaal te cachen</span></li>
+                    <li><strong>storage:</strong> <span>Vereist om uw Odoo-configuratie op te slaan en API-antwoorden te cachen in de opslag van Chrome</span></li>
                     <li><strong>host_permissions (mail.google.com):</strong> <span>Vereist om toegang te krijgen tot de Gmail-interface en de zijbalk weer te geven</span></li>
                     <li><strong>host_permissions (*.odoo.com):</strong> <span>Vereist om te communiceren met Odoo Online cloud-instanties (bijv. uwbedrijf.odoo.com) en, wanneer u op "Odoo automatisch detecteren" klikt, om de adressen van uw geopende odoo.com-tabbladen te lezen</span></li>
                     <li><strong>host_permissions (api.polar.sh):</strong> <span>Vereist voor abonnementsbeheer en betalingsverwerking</span></li>
@@ -237,11 +254,11 @@
                 </ul>
 
                 <h3>Optionele Machtigingen (Aangevraagd Wanneer Nodig)</h3>
-                <p>De Extensie vraagt optionele machtigingen aan voor aangepaste Odoo-instanties:</p>
+                <p>De Extensie vraagt optionele machtigingen aan voor zelf-gehoste Odoo-instanties en voor automatisch vastleggen:</p>
                 <ul>
-                    <li><strong>optional_host_permissions (https://*/*):</strong> <span>Alleen gebruikt als u verbinding maakt met een zelf-gehoste Odoo-instantie op een aangepast domein (bijv. odoo.uwbedrijf.com of erp.voorbeeld.com). Deze machtiging wordt alleen aangevraagd wanneer u expliciet een aangepaste Odoo URL configureert.</span></li>
-                    <li><strong>identity:</strong> <span>Used ONLY when you opt into automatic logging. Lets the Extension complete the Google sign-in flow that grants Gmail API access (gmail.readonly scope). Requested at the moment you click "Connect Gmail" in Settings > Email logging.</span></li>
-                    <li><strong>alarms:</strong> <span>Used ONLY when auto-logging is active. Lets the Extension wake up periodically in the background to check for new emails on the threads you have linked. Requested together with the identity permission.</span></li>
+                    <li><strong>optional_host_permissions (https://*/*):</strong> <span>ALLEEN gebruikt als u verbinding maakt met een zelf-gehoste Odoo-instantie op een aangepast domein (bijv. odoo.uwbedrijf.com of erp.voorbeeld.com), of voor het API-domein van Google (www.googleapis.com) wanneer u Gmail verbindt voor automatisch vastleggen. Elk adres wordt alleen aangevraagd wanneer u het nodig hebt.</span></li>
+                    <li><strong>identity:</strong> <span>ALLEEN gebruikt wanneer u kiest voor automatisch vastleggen. Hiermee kan de Extensie de Google-aanmelding voltooien die toegang geeft tot de Gmail API (scope gmail.readonly). Aangevraagd wanneer u automatisch vastleggen inschakelt of op "Gmail verbinden" klikt in Instellingen > E-mails vastleggen.</span></li>
+                    <li><strong>alarms:</strong> <span>ALLEEN gebruikt wanneer automatisch vastleggen actief is. Hiermee kan de Extensie periodiek op de achtergrond actief worden om te controleren op nieuwe e-mails in de conversaties die u hebt gekoppeld. Aangevraagd wanneer u automatisch vastleggen inschakelt of op "Gmail verbinden" klikt.</span></li>
                 </ul>
                 <p><strong>Opmerking:</strong> <span>De Extensie ondersteunt alleen HTTPS-verbindingen voor beveiliging. HTTP-verbindingen zijn niet toegestaan.</span></p>
 
@@ -250,16 +267,17 @@
                 <ul>
                     <li>U een aangepaste Odoo URL configureert die geen *.odoo.com domein is</li>
                     <li>U expliciet kiest om verbinding te maken met een zelf-gehoste Odoo-instantie</li>
+                    <li>U Gmail verbindt voor automatisch vastleggen</li>
                 </ul>
-                <p><strong>U kunt deze machtigingen weigeren</strong> <span>als u alleen Odoo Online (*.odoo.com) gebruikt. De Extensie werkt normaal met Odoo Online zonder optionele machtigingen te verlenen.</span></p>
+                <p><strong>U kunt deze machtigingen weigeren</strong> <span>als u alleen Odoo Online (*.odoo.com) gebruikt. De Extensie werkt normaal met Odoo Online zonder optionele machtigingen te verlenen, behalve automatisch vastleggen.</span></p>
 
                 <h3>Waarom Deze Optionele Machtigingen?</h3>
                 <p>Veel organisaties hosten Odoo op hun eigen servers met aangepaste domeinen (bijv. erp.acme.com, odoo.mijnbedrijf.nl). Om deze gebruikers te ondersteunen, vraagt de Extensie optionele brede machtigingen aan. Echter:</p>
                 <ul>
-                    <li>Deze machtigingen worden ALLEEN gebruikt om te communiceren met UW geconfigureerde Odoo-instantie</li>
+                    <li>Deze machtigingen worden ALLEEN gebruikt om te communiceren met UW geconfigureerde Odoo-instantie en, bij automatisch vastleggen, met de Gmail API van Google</li>
                     <li>Ze worden NOOIT gebruikt om toegang te krijgen tot andere websites</li>
                     <li>U kunt ze op elk moment intrekken in Chrome-instellingen</li>
-                    <li>De Extensie vraagt ze alleen aan als u een aangepaste Odoo URL invoert</li>
+                    <li>De Extensie vraagt ze alleen aan als u een aangepaste Odoo URL invoert of Gmail verbindt voor automatisch vastleggen</li>
                 </ul>
             </section>
 
@@ -267,15 +285,16 @@
                 <h2>Uw Gegevensrechten</h2>
                 <p>U heeft de volgende rechten met betrekking tot uw gegevens:</p>
                 <ul>
-                    <li><strong>Toegang:</strong> <span>Al uw gegevens worden lokaal opgeslagen en in uw Odoo-instantie, die u beheert</span></li>
-                    <li><strong>Verwijdering:</strong> <span>U kunt alle Extensiegegevens wissen door:</span>
+                    <li><strong>Toegang:</strong> <span>Uw configuratie wordt opgeslagen in uw browser en uw records in uw Odoo, die u zelf beheert. Zie Verwijdering voor uw gebruiksgegevens.</span></li>
+                    <li><strong>Verwijdering:</strong> <span>U kunt de gegevens van de Extensie verwijderen door:</span>
                         <ul>
                             <li>Op de vernieuwknop te klikken (wist cache)</li>
-                            <li>De Extensie uit Chrome te verwijderen (wist alle lokale gegevens)</li>
+                            <li>De Extensie uit Chrome te verwijderen (wist de gegevens die in deze browser zijn opgeslagen)</li>
+                            <li>Ons te vragen uw gebruiksgegevens te verwijderen: als u PLUS hebt of hebt gehad, schrijf dan vanaf het e-mailadres van uw licentie naar odoointegrations.team@gmail.com en wij verwijderen de gebruiksgegevens van de installaties die aan uw licentie zijn gekoppeld. Als u nooit PLUS hebt gehad, zijn uw gebruiksgegevens niet gekoppeld aan uw naam of uw e-mailadres; wij kunnen ze alleen zoeken als u ons uw Odoo-adres geeft en een foutrapport dat adres bevat.</li>
                         </ul>
                     </li>
-                    <li><strong>Overdraagbaarheid:</strong> <span>Uw gegevens blijven in uw Odoo-instantie en zijn toegankelijk via Odoo's exportfuncties</span></li>
-                    <li><strong>Controle:</strong> <span>U kunt de toegang van de Extensie op elk moment intrekken door deze te verwijderen</span></li>
+                    <li><strong>Overdraagbaarheid:</strong> <span>De records die u aanmaakt en de e-mails die u vastlegt blijven in uw Odoo, en u kunt ze exporteren met de eigen tools van Odoo</span></li>
+                    <li><strong>Controle:</strong> <span>U kunt de Extensie op elk moment stoppen door deze te verwijderen. Als u Gmail hebt verbonden, kunt u de toegang ook intrekken in de machtigingen van uw Google-account.</span></li>
                 </ul>
             </section>
 
@@ -283,11 +302,11 @@
                 <h2>Gegevensbewaring</h2>
                 <p>De Extensie bewaart gegevens als volgt:</p>
                 <ul>
-                    <li><strong>Configuratiegegevens:</strong> <span>Opgeslagen totdat u de Extensie verwijdert</span></li>
-                    <li><strong>Gecachte API-antwoorden:</strong> <span>Automatisch verwijderd na 5 minuten</span></li>
-                    <li><strong>Gebruikersvoorkeuren:</strong> <span>Opgeslagen totdat u de Extensie verwijdert</span></li>
+                    <li><strong>Configuratiegegevens:</strong> <span>Opgeslagen in deze browser totdat u de Extensie verwijdert</span></li>
+                    <li><strong>Gecachte API-antwoorden:</strong> <span>Worden na enkele minuten niet meer gebruikt; gewist wanneer u op Vernieuwen klikt of verbinding maakt met een andere Odoo</span></li>
+                    <li><strong>Gebruikersvoorkeuren:</strong> <span>Opgeslagen in deze browser totdat u de Extensie verwijdert</span></li>
                 </ul>
-                <p>Wanneer u de Extensie verwijdert, worden alle lokaal opgeslagen gegevens automatisch door Chrome verwijderd.</p>
+                <p>Wanneer u de Extensie verwijdert, verwijdert Chrome de gegevens die in deze browser zijn opgeslagen. Als u Chrome-synchronisatie gebruikt, kunnen uw Odoo-adres, uw API-sleutel en uw voorkeuren in uw Google-account blijven staan.</p>
             </section>
 
             <section class="policy-section">

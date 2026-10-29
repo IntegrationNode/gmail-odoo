@@ -90,7 +90,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1>Privacy Policy</h1>
-            <p class="last-updated"><span>Last updated</span>: October 18, 2026</p>
+            <p class="last-updated"><span>Last updated</span>: October 31, 2026</p>
 
             <section class="policy-section">
                 <h2>Overview</h2>
@@ -101,11 +101,14 @@
             <section class="policy-section">
                 <h2>Information We Collect</h2>
                 <h3>Data Accessed from Gmail</h3>
-                <p>The Extension accesses the following information from Gmail when you explicitly open an email:</p>
+                <p>The Extension accesses the following information from Gmail. Except where noted, only from the email you open:</p>
                 <ul>
                     <li><strong>Sender and recipient email addresses:</strong> <span>Used to search for matching contacts in your Odoo instance</span></li>
                     <li><strong>Email subject and body:</strong> <span>Used when you choose to create opportunities, tasks, or tickets in Odoo</span></li>
                     <li><strong>Email date and metadata:</strong> <span>Used for logging emails to Odoo records</span></li>
+                    <li><strong>Your Gmail address:</strong> <span>Read when Gmail loads, to check that a PLUS license belongs to this account, and to fill it in when you subscribe</span></li>
+                    <li><strong>Odoo notifications (PLUS):</strong> <span>Only if you set up Odoo notifications: the Extension checks the sender of the emails in your Gmail lists and reads those your Odoo sends you, even if you don't open them, to label them by module</span></li>
+                    <li><strong>Attachments:</strong> <span>Uploaded to your Odoo when you log an email or create a record from it</span></li>
                 </ul>
 
                 <h3>Data Accessed from Odoo</h3>
@@ -116,26 +119,27 @@
                     <li>Project tasks associated with contacts</li>
                     <li>Helpdesk tickets associated with contacts</li>
                     <li>Company information and related contacts</li>
+                    <li>Quotations, sales orders, financial figures and the messages the contact appears in</li>
                 </ul>
 
-                <h3>Data Accessed for Auto-Logging (Optional)</h3>
+                <h3>Data Accessed for Automatic Logging (Optional)</h3>
                 <p>Automatic logging is an opt-in feature. The Extension only accesses this data after you grant Gmail access in Settings > Email logging ("Connect Gmail") and explicitly link a thread to an Odoo record. Once a thread is linked, the Extension uses Google's Gmail API to:</p>
                 <ul>
-                    <li>Periodically check for new messages on the threads you have linked (background polling while at least one mapping is active)</li>
-                    <li>Read the subject, sender, recipients, date and body of those new messages</li>
+                    <li>Periodically check the identifiers of the new messages in your account to find those in the threads you have linked (only while at least one thread is linked)</li>
+                    <li>Read the subject, sender, recipients, date and body of the new messages in those threads</li>
                     <li>Post them as internal notes in the Odoo records you linked</li>
                 </ul>
                 <p><strong>Scope:</strong> <span>The Extension only requests the gmail.readonly OAuth scope. It cannot send, modify, archive or delete emails. Automatic logging stops when you turn it off for a thread or for all of them, or remove the Extension. Tokens can also be revoked from your Google Account permissions at any time.</span></p>
 
                 <h3>Configuration Data</h3>
-                <p>The Extension stores your Odoo instance configuration locally:</p>
+                <p>The Extension stores your configuration in Chrome's storage, in your browser:</p>
                 <ul>
                     <li>Odoo instance URL</li>
                     <li>Database name</li>
                     <li>Authentication credentials</li>
                     <li>User preferences (visible sections settings)</li>
-                    <li>Gmail OAuth tokens (only when automatic logging is enabled) — required to access the Gmail API on your behalf; revocable from your Google Account</li>
-                    <li>Auto-logging mappings (thread-to-record links and IDs of messages already logged) — stored locally for the duration of each mapping</li>
+                    <li>Gmail OAuth tokens (only if you connect Gmail for automatic logging) — required to access the Gmail API on your behalf; they stay until you remove the Extension or revoke access from your Google Account</li>
+                    <li>Automatic logging links (thread-to-record links and IDs of messages already logged) — stored in your browser while each link exists</li>
                     <li>Active company selection and the list of companies you have access to (multi-company instances) — cached locally to remember which company you are operating in</li>
                 </ul>
 
@@ -152,15 +156,19 @@
                     <li><strong>Log Emails:</strong> <span>When you click "Log Email" buttons, the email content is saved to your Odoo instance's chatter</span></li>
                     <li><strong>Search and Filter:</strong> <span>Search through opportunities, tasks, and tickets associated with contacts</span></li>
                     <li><strong>Caching:</strong> <span>Temporarily cache Odoo API responses locally to improve performance</span></li>
-                    <li><strong>Auto-Logging:</strong> <span>When you enable auto-logging on a record, the Extension queries your Gmail account in the background to detect new emails on the linked thread and posts them as internal notes in your Odoo instance</span></li>
+                    <li><strong>Automatic Logging:</strong> <span>When you turn on automatic logging for a record, the Extension checks your Gmail account in the background for new emails on the linked thread and posts them as internal notes in your Odoo instance</span></li>
+                    <li><strong>Odoo Notifications (PLUS):</strong> <span>Label the emails your Odoo sends you by module and show where you were mentioned</span></li>
+                    <li><strong>Usage Statistics and Error Reports:</strong> <span>Understand how the Extension is used and fix faults (see Analytics)</span></li>
+                    <li><strong>Subscription and Price:</strong> <span>Manage your PLUS subscription, check that the license belongs to your Gmail account, and show you the price for your country (see Third-Party Services)</span></li>
+                    <li><strong>Odoo Autodetection:</strong> <span>When you click "Autodetect Odoo", offer you your instance from your open odoo.com tabs</span></li>
                 </ul>
             </section>
 
             <section class="policy-section">
                 <h2>Data Storage and Security</h2>
-                <p><strong>Local Storage Only:</strong> <span>All data is stored locally on your device using Chrome's storage APIs. No data is transmitted to any third-party servers except your own Odoo instance.</span></p>
-                <p><strong>Data Transmission:</strong> <span>The Extension communicates directly with YOUR Odoo instance using HTTPS. Your Odoo credentials and data are never sent to the extension developer or any third party.</span></p>
-                <p><strong>Cache Management:</strong> <span>Cached data is automatically cleared after 5 minutes or when you click the refresh button. You can also clear all cached data by removing the extension.</span></p>
+                <p><strong>Storage:</strong> <span>Configuration and cache are stored in Chrome's storage, in your browser. If you use Chrome sync, Chrome copies your Odoo address, your API key and your preferences to your Google account and your other devices.</span></p>
+                <p><strong>Data Transmission:</strong> <span>The Extension communicates directly with YOUR Odoo instance using HTTPS. Your Odoo credentials are never sent to the extension developer.</span></p>
+                <p><strong>Cache Management:</strong> <span>Cached data stops being used after a few minutes and is deleted when you click the refresh button or connect to another Odoo. Removing the Extension deletes it from this browser.</span></p>
             </section>
 
             <section class="policy-section">
@@ -171,40 +179,49 @@
                     <li>Your email address for account management and receipts</li>
                     <li>Payment information (processed securely by Stripe, not stored by the Extension)</li>
                     <li>Subscription status and billing information</li>
+                    <li>The installation ID, when you activate a license, to tell your devices apart</li>
                 </ul>
                 <p><strong>Polar Privacy Policy:</strong> <a href="https://polar.sh/legal/privacy" target="_blank">https://polar.sh/legal/privacy</a></p>
                 <p><strong>Important:</strong> <span>Payment data is handled entirely by Polar and Stripe. The Extension never receives or stores your credit card information.</span></p>
 
+                <h3>Price by Country</h3>
+                <p>To show you the price for your country, the Extension asks ParityDeals (https://www.paritydeals.com/), which infers the country from your connection. It receives nothing from the Extension other than the request itself.</p>
+
                 <h3>InboxSDK (<span>Gmail Integration</span>)</h3>
-                <p>The Extension uses InboxSDK (https://www.inboxsdk.com/) to integrate with Gmail's interface. InboxSDK is a library that helps the Extension interact with Gmail's UI to display the sidebar and detect email contacts. InboxSDK does not collect, transmit, or store your email data.</p>
+                <p>The Extension uses InboxSDK (https://www.inboxsdk.com/) to integrate with Gmail's interface: to display the sidebar and detect the contacts of the email you open.</p>
 
                 <h3>PostHog (<span>Analytics</span>)</h3>
-                <p>The Extension uses PostHog (https://posthog.com/) for anonymous usage analytics. PostHog helps us understand how the extension is used and identify issues. Data collected includes:</p>
+                <p>The Extension uses PostHog (https://posthog.com/) for usage analytics. PostHog helps us understand how the extension is used and identify issues. Data collected includes:</p>
                 <ul>
-                    <li>Anonymous user ID (random UUID, not linked to your identity)</li>
+                    <li>Installation ID (a random code). If you activate PLUS, it is associated with your license.</li>
                     <li>Feature usage events (e.g., "email logged", "record created")</li>
-                    <li>Error reports for debugging (no personal data or email content)</li>
+                    <li>Error reports for debugging, without email content (see Crash reports below)</li>
                     <li>A boolean flag indicating whether your Odoo user has access to more than one company (used to know whether multi-company features are relevant). The list of companies and their names are NOT sent.</li>
                 </ul>
                 <p><strong>PostHog Privacy Policy:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
-                <p><strong>Opt-out:</strong> <span>You can disable usage analytics at any time in Settings > General ("Share anonymous usage data"). That setting covers usage statistics; crash reports are described below.</span></p>
-                <p><strong>Crash reports:</strong> <span>Crash reports are sent regardless of the analytics setting, because they describe the state of the application rather than your activity. Each report contains the error message, the technical stack trace, the extension version and the random installation ID — never email content, credentials or Odoo records. The legal basis is our legitimate interest in detecting and fixing faults. You can object at any time by writing to</span> <a href="mailto:odoointegrations.team@gmail.com">odoointegrations.team@gmail.com</a>.</p>
+                <p><strong>Opt-out:</strong> <span>You can disable usage analytics at any time in Settings > General ("Share anonymous usage data"). That setting covers most usage statistics; crash reports (described below) and a few service events, such as a change of plan, are sent regardless.</span></p>
+                <p><strong>Crash reports:</strong> <span>Crash reports are sent regardless of the analytics setting, because they describe the state of the application rather than your activity. Each report contains the error message and its technical details, the versions of the Extension and of Odoo, and the random installation ID — never email content or credentials. If the error comes from your Odoo, the report includes Odoo's error message, which may contain the address of your instance. The legal basis is our legitimate interest in detecting and fixing faults. If you have or had PLUS, you can object at any time by writing from your license email to</span> <a href="mailto:odoointegrations.team@gmail.com">odoointegrations.team@gmail.com</a>.</p>
             </section>
 
             <section class="policy-section">
                 <h2>Third-Party Data Sharing</h2>
-                <p><strong>We do NOT share your data with any third parties for advertising, analytics, or data brokering purposes.</strong></p>
-                <p>The Extension only communicates with:</p>
+                <p><strong>We do NOT sell your data or share it for advertising or data brokering purposes.</strong></p>
+                <p>The Extension and its services communicate with:</p>
                 <ul>
                     <li><strong>Your Odoo Instance:</strong> <span>The Extension sends API requests to the Odoo instance URL you configure to retrieve and create records</span></li>
-                    <li><strong>Polar:</strong> <span>Only for subscription management (email, subscription status, payment processing)</span></li>
-                    <li><strong>PostHog:</strong> <span>Anonymous usage statistics (feature usage) and crash reports. No PII or email/Odoo content. Usage statistics can be disabled in Settings > General ("Share anonymous usage data").</span></li>
+                    <li><strong>Polar:</strong> <span>Only for subscription management (email, installation ID, subscription status, payment processing)</span></li>
+                    <li><strong>PostHog:</strong> <span>Usage statistics and error reports, without email content. Most usage statistics can be disabled in Settings > General ("Share anonymous usage data"); see Opt-out.</span></li>
+                    <li><strong>ParityDeals:</strong> <span>Only to show you the price for your country</span></li>
+                    <li><strong>Gmail API (Google):</strong> <span>Only if you turn on automatic logging</span></li>
+                    <li><strong>Google Forms:</strong> <span>The uninstall survey, only if you submit it</span></li>
+                    <li><strong>GitHub:</strong> <span>Internal notices about PLUS subscriptions with problems, with no email or name</span></li>
                 </ul>
+                <p>PostHog stores the analytics in the European Union (Frankfurt). Others, such as GitHub, may process data outside it.</p>
                 <p>The Extension does NOT:</p>
                 <ul>
                     <li>Sell your data to data brokers</li>
                     <li>Share data for advertising purposes</li>
-                    <li>Send Gmail or Odoo data to the extension developer's servers</li>
+                    <li>Send the content of your emails or your Odoo records to the extension developer</li>
                 </ul>
             </section>
 
@@ -213,10 +230,10 @@
                 <p><span>Odoo Integration for Gmail's use and transfer of information received from Google APIs adheres to</span> <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API Services User Data Policy</a>, <span>including the Limited Use requirements.</span></p>
                 <p><strong>Limited Use Compliance:</strong></p>
                 <ul>
-                    <li>The Extension only accesses Gmail data when (a) you explicitly open an email, or (b) you have explicitly enabled auto-logging and linked a thread to an Odoo record (a per-thread opt-in)</li>
-                    <li>Email data is used exclusively for the disclosed purpose: integrating with your Odoo CRM</li>
+                    <li>The Extension only reads your emails when (a) you open an email, (b) you have set up Odoo notifications (PLUS), to read the emails your Odoo sends you, or (c) you have turned on automatic logging and linked a thread to an Odoo record (a per-thread opt-in)</li>
+                    <li>Data read through the Gmail API is used exclusively for the disclosed purpose: logging those emails into your Odoo</li>
                     <li>No Gmail data is used for serving advertisements</li>
-                    <li>Gmail data is not transferred to third parties (except your own Odoo instance)</li>
+                    <li>Gmail data read through the Gmail API is only sent to your own Odoo instance</li>
                     <li>Gmail data is not used for determining creditworthiness or lending purposes</li>
                     <li>The Extension only requests the gmail.readonly OAuth scope. It cannot send, modify, archive or delete emails on your behalf</li>
                 </ul>
@@ -229,7 +246,7 @@
                 <h3>Required Permissions (Granted at Installation)</h3>
                 <ul>
                     <li><strong>scripting:</strong> <span>Required to inject the sidebar interface into Gmail</span></li>
-                    <li><strong>storage:</strong> <span>Required to save your Odoo configuration and cache API responses locally</span></li>
+                    <li><strong>storage:</strong> <span>Required to save your Odoo configuration and cache API responses in Chrome's storage</span></li>
                     <li><strong>host_permissions (mail.google.com):</strong> <span>Required to access Gmail's interface and display the sidebar</span></li>
                     <li><strong>host_permissions (*.odoo.com):</strong> <span>Required to communicate with Odoo Online cloud instances (e.g., yourcompany.odoo.com) and, when you click "Autodetect Odoo", to read the addresses of your open odoo.com tabs</span></li>
                     <li><strong>host_permissions (api.polar.sh):</strong> <span>Required for subscription management and payment processing</span></li>
@@ -237,11 +254,11 @@
                 </ul>
 
                 <h3>Optional Permissions (Requested When Needed)</h3>
-                <p>The Extension requests optional permissions for custom Odoo instances:</p>
+                <p>The Extension requests optional permissions for self-hosted Odoo instances and for automatic logging:</p>
                 <ul>
-                    <li><strong>optional_host_permissions (https://*/*):</strong> <span>Used ONLY if you connect to a self-hosted Odoo instance on a custom domain (e.g., odoo.yourcompany.com or erp.example.com). This permission is only requested when you explicitly configure a custom Odoo URL.</span></li>
-                    <li><strong>identity:</strong> <span>Used ONLY when you opt into automatic logging. Lets the Extension complete the Google sign-in flow that grants Gmail API access (gmail.readonly scope). Requested at the moment you click "Connect Gmail" in Settings > Email logging.</span></li>
-                    <li><strong>alarms:</strong> <span>Used ONLY when auto-logging is active. Lets the Extension wake up periodically in the background to check for new emails on the threads you have linked. Requested together with the identity permission.</span></li>
+                    <li><strong>optional_host_permissions (https://*/*):</strong> <span>Used ONLY if you connect to a self-hosted Odoo instance on a custom domain (e.g., odoo.yourcompany.com or erp.example.com), or for Google's API domain (www.googleapis.com) when you connect Gmail for automatic logging. Each address is requested only when you need it.</span></li>
+                    <li><strong>identity:</strong> <span>Used ONLY when you opt into automatic logging. Lets the Extension complete the Google sign-in flow that grants Gmail API access (gmail.readonly scope). Requested when you turn on automatic logging or click "Connect Gmail" in Settings > Email logging.</span></li>
+                    <li><strong>alarms:</strong> <span>Used ONLY when automatic logging is active. Lets the Extension wake up periodically in the background to check for new emails on the threads you have linked. Requested when you turn on automatic logging or click "Connect Gmail".</span></li>
                 </ul>
                 <p><strong>Note:</strong> <span>The Extension only supports HTTPS connections for security. HTTP connections are not allowed.</span></p>
 
@@ -250,16 +267,17 @@
                 <ul>
                     <li>You configure a custom Odoo URL that is not an *.odoo.com domain</li>
                     <li>You explicitly choose to connect to a self-hosted Odoo instance</li>
+                    <li>You connect Gmail for automatic logging</li>
                 </ul>
-                <p><strong>You can deny these permissions</strong> <span>if you only use Odoo Online (*.odoo.com). The Extension will work normally with Odoo Online without granting optional permissions.</span></p>
+                <p><strong>You can deny these permissions</strong> <span>if you only use Odoo Online (*.odoo.com). The Extension will work normally with Odoo Online without granting optional permissions, except automatic logging.</span></p>
 
                 <h3>Why These Optional Permissions?</h3>
                 <p>Many organizations host Odoo on their own servers with custom domains (e.g., erp.acme.com, odoo.mycompany.net). To support these users, the Extension requests optional broad permissions. However:</p>
                 <ul>
-                    <li>These permissions are ONLY used to communicate with YOUR configured Odoo instance</li>
+                    <li>These permissions are ONLY used to communicate with YOUR configured Odoo instance and, with automatic logging, with Google's Gmail API</li>
                     <li>They are NEVER used to access other websites</li>
                     <li>You can revoke them at any time in Chrome settings</li>
-                    <li>The Extension will only request them if you enter a custom Odoo URL</li>
+                    <li>The Extension only requests them if you enter a custom Odoo URL or connect Gmail for automatic logging</li>
                 </ul>
             </section>
 
@@ -267,15 +285,16 @@
                 <h2>Your Data Rights</h2>
                 <p>You have the following rights regarding your data:</p>
                 <ul>
-                    <li><strong>Access:</strong> <span>All your data is stored locally and in your Odoo instance, which you control</span></li>
-                    <li><strong>Deletion:</strong> <span>You can clear all Extension data by:</span>
+                    <li><strong>Access:</strong> <span>Your configuration is stored in your browser and your records in your Odoo, which you control. For your usage data, see Deletion.</span></li>
+                    <li><strong>Deletion:</strong> <span>You can delete the Extension's data by:</span>
                         <ul>
                             <li>Clicking the refresh button (clears cache)</li>
-                            <li>Removing the Extension from Chrome (clears all local data)</li>
+                            <li>Removing the Extension from Chrome (clears the data stored in this browser)</li>
+                            <li>Asking us to delete your usage data: if you have or had PLUS, write to odoointegrations.team@gmail.com from your license email and we will delete the usage data of the installations linked to your license. If you never had PLUS, your usage data is not linked to your name or your email; we can only look for it if you give us your Odoo address and an error report contains it.</li>
                         </ul>
                     </li>
-                    <li><strong>Portability:</strong> <span>Your data remains in your Odoo instance and is accessible via Odoo's export features</span></li>
-                    <li><strong>Control:</strong> <span>You can revoke the Extension's access at any time by removing it</span></li>
+                    <li><strong>Portability:</strong> <span>The records you create and the emails you log stay in your Odoo, and you can export them with Odoo's own tools</span></li>
+                    <li><strong>Control:</strong> <span>You can stop the Extension at any time by removing it. If you connected Gmail, you can also revoke its access in your Google Account permissions.</span></li>
                 </ul>
             </section>
 
@@ -283,11 +302,11 @@
                 <h2>Data Retention</h2>
                 <p>The Extension retains data as follows:</p>
                 <ul>
-                    <li><strong>Configuration Data:</strong> <span>Stored until you remove the Extension</span></li>
-                    <li><strong>Cached API Responses:</strong> <span>Automatically deleted after 5 minutes</span></li>
-                    <li><strong>User Preferences:</strong> <span>Stored until you remove the Extension</span></li>
+                    <li><strong>Configuration Data:</strong> <span>Stored in this browser until you remove the Extension</span></li>
+                    <li><strong>Cached API Responses:</strong> <span>Stop being used after a few minutes; deleted when you click refresh or connect to another Odoo</span></li>
+                    <li><strong>User Preferences:</strong> <span>Stored in this browser until you remove the Extension</span></li>
                 </ul>
-                <p>When you uninstall the Extension, all locally stored data is automatically removed by Chrome.</p>
+                <p>When you uninstall the Extension, Chrome removes the data stored in this browser. If you use Chrome sync, your Odoo address, your API key and your preferences can stay in your Google account.</p>
             </section>
 
             <section class="policy-section">
