@@ -60,7 +60,7 @@
       "description": "Szukasz alternatywy dla Odoo Gmail Plugin? Nasze rozszerzenie Chrome nie wymaga klucza API, pokazuje więcej Twojego Odoo obok każdego e-maila i działa na każdej instancji Odoo bez zmian w kodzie.",
       "canonical": "https://integrationnode.com/gmail-odoo/pl/odoo-gmail-plugin-alternative.html",
       "ogTitle": "Najlepsza alternatywa dla Odoo Gmail Plugin",
-      "ogDescription": "Twoje kontakty, szanse, oferty i faktury z Odoo obok każdego e-maila. Bez klucza API i działa na każdej instancji Odoo.",
+      "ogDescription": "Twoje kontakty, szanse i oferty z Odoo oraz sytuacja finansowa klienta obok każdego e-maila. Bez klucza API i działa na każdej instancji Odoo.",
       "twitterTitle": "Najlepsza alternatywa dla Odoo Gmail Plugin",
       "twitterDescription": "Bez klucza API, bez kodu, więcej Twojego Odoo w Gmailu. Przełącz się w 2 minuty."
     },
@@ -208,7 +208,7 @@
         "financial": "Informacje finansowe",
         "financialDesc": "Przeglądaj faktury, należności i zobowiązania",
         "settings": "Panel ustawień",
-        "settingsDesc": "Wybierz, które sekcje pojawiają się w panelu: Szanse sprzedaży, Zadania, Zgłoszenia, Oferty, Zamówienia sprzedaży, Firma, Powiązane kontakty, Wiadomości w Odoo i Informacje finansowe",
+        "settingsDesc": "Wybierz, które sekcje pojawiają się w panelu: „Opportunities”, „Tasks”, „Tickets”, „Quotations”, „Sales orders”, „Company information”, „Related contacts”, „Messages in Odoo” i „Financial information”",
         "quoteLevels": "Poziomy cytowania",
         "quoteLevelsDesc": "Kontroluj ile historii rozmowy zawrzeć podczas logowania",
         "grouping": "Grupowanie Rekordów",
@@ -297,7 +297,7 @@
       "multiple3": "Tego samego rekordu nie można połączyć dwa razy z tego samego wątku — duplikaty są odrzucane.",
       "managingTitle": "Zarządzanie automatycznym rejestrowaniem",
       "fromSidebarTitle": "Z panelu bocznego (dla wątku)",
-      "fromSidebarDesc": "Gdy otwarty wątek ma włączone automatyczne rejestrowanie dla któregoś rekordu, na górze panelu bocznego pojawia się sekcja „Automatic logging (N)”:",
+      "fromSidebarDesc": "Gdy otwarty wątek ma włączone automatyczne rejestrowanie dla któregoś rekordu, na górze panelu bocznego pojawia się sekcja „Automatic logging” z liczbą powiązanych rekordów:",
       "fromSidebar1": "Kliknij sekcję, aby ją rozwinąć i zobaczyć wszystkie rekordy powiązane z bieżącym wątkiem",
       "fromSidebar2": "Kliknij nazwę rekordu, aby otworzyć go w Odoo",
       "fromSidebar3": "Kliknij przycisk ✕, aby wyłączyć automatyczne rejestrowanie dla tego rekordu",
@@ -334,11 +334,11 @@
     },
     "recentActivities": {
       "title": "Nawigacja po wiadomościach w Odoo",
-      "intro": "Sekcja Wiadomości w Odoo wyświetla najnowsze wiadomości i rozmowy z rekordu kontaktu w Odoo, dzięki czemu widzisz, co zostało powiedziane, nie opuszczając Gmail.",
+      "intro": "Sekcja „Messages in Odoo” pokazuje najnowsze e-maile i notatki z Odoo, w których pojawia się kontakt — w jego rekordzie albo w szansie, zadaniu, zamówieniu… — dzięki czemu widzisz, co zostało powiedziane, nie opuszczając Gmaila.",
       "timestampTitle": "Sprawdzenie, kiedy dokładnie wysłano wiadomość",
       "timestampDesc": "Każdy wpis pokazuje datę względną, np. „5 dni temu\". Najedź na datę, aby zobaczyć dokładny dzień i godzinę, sformatowane zgodnie z językiem Twojej przeglądarki.",
       "jumpTitle": "Przejście do konkretnej wiadomości w Odoo",
-      "jumpDesc": "Kliknij wpis w sekcji Wiadomości w Odoo, aby otworzyć powiązany rekord Odoo w nowej karcie. W Odoo 18 i nowszych kliknięcie idzie o krok dalej: Odoo przewija do tej konkretnej wiadomości i ją wyróżnia. W Odoo 16 i 17 rekord otwiera się normalnie — kliknięcie nadal oszczędza Ci nawigacji, ale musisz sam przewinąć, aby znaleźć wiadomość."
+      "jumpDesc": "Kliknij wpis w sekcji „Messages in Odoo”, aby otworzyć powiązany rekord Odoo w nowej karcie. W Odoo 18 i nowszych kliknięcie idzie o krok dalej: Odoo przewija do tej konkretnej wiadomości i ją wyróżnia. W Odoo 16 i 17 rekord otwiera się normalnie — kliknięcie nadal oszczędza Ci nawigacji, ale musisz sam przewinąć, aby znaleźć wiadomość."
     },
     "opportunities": {
       "title": "Zarządzanie szansami sprzedaży",
@@ -1271,7 +1271,7 @@
       "notices": "Powiadomienia Odoo na każdym koncie Gmail",
       "noticesDesc": "Powiadomienia dostają teraz etykiety na każdym koncie Gmail w przeglądarce, nie tylko na pierwszym.",
       "permission": "Łączenie, gdy uprawnienie było już przyznane",
-      "permissionDesc": "Łączenie z własnym Odoo nie kończy się już błędem, gdy Chrome nie może ponownie poprosić o przyznane wcześniej uprawnienie.",
+      "permissionDesc": "Łączenie nie kończy się już błędem, gdy Chrome nie może ponownie poprosić o przyznane wcześniej uprawnienie, w Odoo Online lub na własnym serwerze.",
       "overdue": "Przeterminowane faktury, które naprawdę są po terminie",
       "overdueDesc": "Liczba przeterminowanych faktur obejmuje tylko te po terminie płatności, według dzisiejszej daty Twojego użytkownika Odoo."
     },
