@@ -229,7 +229,7 @@
                         <li><a href="#subscription"><span class="material-symbols-outlined">credit_card</span> <span>Subskrypcja</span></a></li>
                         <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span>Logowanie e-maili</span></a></li>
                         <li><a href="#record-menu"><span class="material-symbols-outlined">more_vert</span> <span>Akcje na rekordzie</span></a></li>
-                        <li><a href="#autolog"><span class="material-symbols-outlined">sync</span> <span>Auto-logging</span></a></li>
+                        <li><a href="#autolog"><span class="material-symbols-outlined">sync</span> <span>Automatyczne rejestrowanie</span></a></li>
                         <li><a href="#related-contacts"><span class="material-symbols-outlined">groups</span> <span>Powiązane kontakty</span></a></li>
                         <li><a href="#recent-activities"><span class="material-symbols-outlined">history</span> <span>Wiadomości w Odoo</span></a></li>
                         <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Szanse sprzedaży</span></a></li>
@@ -237,7 +237,7 @@
                         <li><a href="#sales-orders"><span class="material-symbols-outlined">receipt_long</span> <span>Zamówienia sprzedaży</span></a></li>
                         <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Zadania i zgłoszenia</span></a></li>
                         <li><a href="#financial"><span class="material-symbols-outlined">account_balance</span> <span>Informacje finansowe</span></a></li>
-                        <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Powiadomienia</span></a></li>
+                        <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Powiadomienia Odoo</span></a></li>
                         <li><a href="#multi-company"><span class="material-symbols-outlined">business</span> <span>Wiele firm</span></a></li>
                         <li><a href="#troubleshooting"><span class="material-symbols-outlined">help</span> <span>Rozwiązywanie problemów</span></a></li>
                         <li><a href="#faq"><span class="material-symbols-outlined">quiz</span> <span>FAQ</span></a></li>
@@ -251,7 +251,7 @@
                     <ol>
                         <li>Zainstaluj rozszerzenie i otwórz Gmail.</li>
                         <li>Zaloguj się do swojego Odoo w tej samej przeglądarce Chrome — rozszerzenie korzysta z Twojej aktywnej sesji.</li>
-                        <li>Wpisz adres URL swojego Odoo (np. https://twojafirma.odoo.com — HTTPS, bez ukośnika na końcu) i kliknij Połącz.</li>
+                        <li>Wpisz adres URL swojego Odoo (np. https://twojafirma.odoo.com — HTTPS, bez ukośnika na końcu) i kliknij „Connect to Odoo”. W odoo.com możesz też kliknąć „Autodetect Odoo”, aby znaleźć je w otwartej karcie.</li>
                     </ol>
                     <span>Otwórz dowolny e-mail, a Twój kontakt z Odoo pojawi się w panelu bocznym. To wszystko — bez klucza API, bez kodu.</span>
                 </div>
@@ -284,22 +284,22 @@
                         <li><strong>Otwórz Gmail</strong><br><span>Przejdź do mail.google.com i otwórz dowolny e-mail, aby zobaczyć panel boczny.</span></li>
                         <li><strong>Zaloguj się do Odoo</strong><br><span>Upewnij się, że jesteś zalogowany do swojej instancji Odoo w tej samej przeglądarce — rozszerzenie łączy się przy użyciu Twojej aktywnej sesji.</span></li>
                         <li><strong>Wprowadź swój URL Odoo</strong><br><span>Wprowadź adres URL Twojej instancji Odoo (np. https://twojafirma.odoo.com). Użyj HTTPS i nie dodawaj końcowego ukośnika.</span></li>
-                        <li><strong>Połącz</strong><br><span>Kliknij Połącz, a rozszerzenie zweryfikuje Twoją aktywną sesję. Klucz API jest opcjonalny — potrzebny tylko do automatycznego rejestrowania w tle lub jako rozwiązanie awaryjne, gdy sesja wygaśnie.</span></li>
+                        <li><strong>Połącz</strong><br><span>Kliknij „Connect to Odoo”, a rozszerzenie sprawdzi Twoją aktywną sesję. Klucz API jest opcjonalny: potrzebuje go automatyczne rejestrowanie, a służy też jako zapas, gdy sesja wygaśnie.</span></li>
                     </ol>
                     <div class="warning-box" style="background: #e8f4f8; border-color: #0288d1;">
                         <span class="material-symbols-outlined" style="color: #0288d1;">info</span>
                         <span><span>Dodanie klucza API jest opcjonalne. Jeśli go dodasz, kroki tworzenia różnią się w zależności od wersji Odoo.</span> <a href="blog/odoo-api-key-setup.html">Zobacz szczegółowy przewodnik dla swojej wersji →</a></span>
                     </div>
                     <h3>Aktualizacja konfiguracji</h3>
-                    <p>Aby zmienić URL Odoo, wyloguj się i połącz ponownie:</p>
+                    <p>Aby połączyć rozszerzenie z innym Odoo:</p>
                     <ol>
-                        <li>Kliknij przycisk menu (trzy pionowe kropki ⋮) w panelu bocznym</li>
-                        <li>Wybierz Wyloguj</li>
-                        <li>Wprowadź nowe dane</li>
+                        <li>Kliknij przycisk menu (trzy pionowe kropki ⋮) w nagłówku panelu i wybierz „Settings”</li>
+                        <li>Otwórz „Connection” i kliknij „Change Odoo”</li>
+                        <li>Wpisz nowy adres i połącz się</li>
                     </ol>
-                    <p>Aby później dodać lub zaktualizować klucz API, otwórz Ustawienia → Konto → Połączenie — bez konieczności wylogowywania.</p>
+                    <p>Aby później dodać lub zmienić klucz API, otwórz „Settings” → „Connection”. Tam też jest „Log out”, na dole sekcji.</p>
                     <h3>Decydowanie, kiedy otwiera się panel</h3>
-                    <p>Domyślnie panel Odoo otwiera się sam przy każdym otwartym e-mailu. Aby otwierać go tylko wtedy, gdy jest potrzebny, wyłącz opcję „Otwieraj panel boczny automatycznie" w Ustawienia → Konto → Preferencje. Panel pozostanie zamknięty, dopóki nie klikniesz ikony Odoo na prawym pasku bocznym Gmaila. Zmiana działa od razu, bez przeładowywania Gmaila.</p>
+                    <p>Domyślnie panel Odoo otwiera się sam przy każdym otwartym e-mailu. Aby otwierać go tylko wtedy, gdy jest potrzebny, wyłącz opcję „Open the panel when you open an email” w „Settings” → „General”. Panel pozostanie zamknięty, dopóki nie klikniesz ikony Odoo na prawym pasku bocznym Gmaila. Zmiana działa od razu, bez przeładowywania Gmaila.</p>
                 </section>
 
                 <!-- Features Overview Section -->
@@ -313,12 +313,12 @@
                         <li><strong>Tworzenie rekordów</strong>: <span>Twórz leady, partnerów, zadania i zgłoszenia</span></li>
                         <li><strong>Ograniczone przeglądanie rekordów</strong>: <span>Przeglądaj pierwsze 5 szans, zadań i zgłoszeń</span></li>
                         <li><strong>Odśwież</strong>: <span>Ręcznie odśwież dane kontaktu</span></li>
-                        <li><strong>Wskaźnik czasu ładowania</strong>: <span>Zobacz jak szybko załadował się panel boczny</span></li>
+                        <li><strong>Cofnij</strong>: <span>Zarejestrowałeś e-mail w złym rekordzie? Kliknij „Undo” w powiadomieniu, które to potwierdza</span></li>
                     </ul>
                     <h3><span>Plan PLUS</span> <span class="feature-badge badge-plus">Plus</span></h3>
                     <p>Wszystko z FREE, plus:</p>
                     <ul>
-                        <li><strong>Zaawansowane wyszukiwanie</strong>: <span>Szukaj we wszystkich szansach, zadaniach i zgłoszeniach (do 50 wyników)</span></li>
+                        <li><strong>Zaawansowane wyszukiwanie</strong>: <span>Wszystkie rekordy każdej sekcji, strona po stronie, z wyszukiwaniem w szansach, zadaniach i zgłoszeniach (FREE pokazuje pierwsze 5)</span></li>
                         <li><strong>Zakładki Kontakt/Firma</strong>: <span>Przełączaj między informacjami o kontakcie i firmie</span></li>
                         <li><strong>Powiązane kontakty</strong>: <span>Znajdź współpracowników z tej samej firmy</span></li>
                         <li><strong>Informacje finansowe</strong>: <span>Przeglądaj faktury, należności i zobowiązania</span></li>
@@ -327,9 +327,9 @@
                         <li><strong>Grupowanie Rekordów</strong>: <span>Grupuj szanse, zadania i zgłoszenia według etapu lub statusu</span></li>
                         <li><strong>Uczestnicy E-maila</strong>: <span>Zobacz informacje kontaktowe Odoo wszystkich uczestników e-maila</span></li>
                         <li><strong>Wiadomości w Odoo</strong>: <span>Zobacz ostatnie wiadomości z konwersacji Odoo dla każdego kontaktu</span></li>
-                        <li><strong>Organizacja Powiadomień</strong>: <span>Identyfikuj i organizuj e-maile powiadomień Odoo za pomocą odznak modułów, wykrywania wzmianek i szybkiego filtrowania</span></li>
-                        <li><strong>Auto-logging</strong>: <span>Link a Gmail thread to one or more Odoo records and have every new email logged automatically into their chatter (currently in private beta)</span></li>
-                        <li><strong>Multi-Company Support</strong>: <span>Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company</span></li>
+                        <li><strong>Powiadomienia Odoo</strong>: <span>Rozpoznawaj e-maile z powiadomieniami Odoo w skrzynce po etykiecie modułu, sprawdzaj, gdzie Cię wspomniano, i otwieraj je wszystkie jednym skrótem</span></li>
+                        <li><strong>Automatyczne rejestrowanie</strong>: <span>Połącz wątek Gmaila z jednym lub kilkoma rekordami Odoo, a każdy nowy e-mail sam trafi do ich chattera (na razie w prywatnej becie)</span></li>
+                        <li><strong>Wiele firm</strong>: <span>Przełączaj się między firmami, do których masz dostęp w Odoo, z wyszukiwaniem kontaktu w innych firmach, gdy e-mail pasuje do partnera z innej firmy</span></li>
                         <li><strong>Oczekujące oferty</strong>: <span>Zobacz w panelu oferty kontaktu w wersji roboczej i wysłane, wraz z kwotą i czasem oczekiwania każdej z nich na odpowiedź</span></li>
                         <li><strong>Potwierdzone zamówienia</strong>: <span>Przeglądaj zamówienia sprzedaży już potwierdzone dla kontaktu — z numerem, kwotą i datą — i zapisuj wiadomości o dostawie lub fakturowaniu przy właściwym zamówieniu</span></li>
                     </ul>
@@ -341,7 +341,7 @@
 
                     <h3>Jak subskrybować PLUS</h3>
                     <ol class="steps-list">
-                        <li>Kliknij "Ulepsz do PLUS" w menu panelu bocznego (trzy kropki w nagłówku)</li>
+                        <li>Kliknij „Try Plus for 14 days” w menu panelu (trzy kropki w nagłówku) lub w „Settings” → „Plan”</li>
                         <li>Dokończ proces płatności w Polar</li>
                         <li>Otrzymaj klucz licencyjny przez e-mail</li>
                     </ol>
@@ -350,16 +350,16 @@
                     <p>Wprowadź klucz licencyjny jednym z tych sposobów:</p>
                     <ul>
                         <li>Okno modalne pojawi się zaraz po płatności - wprowadź tam swoją licencję</li>
-                        <li>Przejdź do Ustawienia > Konto > Aktywuj licencję</li>
-                        <li>Kliknij "Ulepsz do PLUS" ponownie i wybierz "Mam już licencję"</li>
+                        <li>Przejdź do „Settings” → „Plan” i kliknij „I already have a license”</li>
+                        <li>W oknie Plus, które otwiera się z „Try Plus for 14 days”, kliknij „I already have a license”</li>
                     </ul>
 
                     <div class="info-box">
-                        <strong>Informacje o licencji:</strong> <span>Twoja licencja działa na maksymalnie 3 instancjach (różne komputery lub przeglądarki). Musi być używana z tym samym kontem Gmail, które zostało użyte do zakupu.</span>
+                        <strong>Informacje o licencji:</strong> <span>Twoja licencja działa na maksymalnie 3 instancjach (różne komputery lub przeglądarki). Musi być używana z tym samym kontem Gmail, które zostało użyte do zakupu. Aby zwolnić komputer, kliknij „Deactivate here” w „Settings” → „Plan”.</span>
                     </div>
 
                     <div class="info-box">
-                        <strong>Bezpłatny okres próbny:</strong> <span>PLUS zawiera 14-dniowy bezpłatny okres próbny. Opłata nie zostanie pobrana do końca okresu próbnego. Anuluj w każdej chwili, aby uniknąć opłat.</span>
+                        <strong>Bezpłatny okres próbny:</strong> <span>PLUS zawiera 14-dniowy bezpłatny okres próbny. Okres próbny wymaga karty, ale opłata nie zostanie pobrana przed jego końcem. Anuluj w każdej chwili wcześniej, aby uniknąć opłat.</span>
                     </div>
 
                     <div class="info-box">
@@ -369,7 +369,7 @@
                     <h3>Jak anulować subskrypcję</h3>
                     <p>Możesz anulować subskrypcję PLUS w każdej chwili:</p>
                     <ol class="steps-list">
-                        <li>Przejdź do portalu klienta Polar (link w e-mailu z zakupem)</li>
+                        <li>W „Settings” → „Plan” kliknij „Manage subscription”, aby otworzyć portal klienta Polar (link jest też w e-mailu z zakupem)</li>
                         <li>Zaloguj się e-mailem użytym do subskrypcji</li>
                         <li>Kliknij "Anuluj subskrypcję" w szczegółach subskrypcji</li>
                     </ol>
@@ -383,9 +383,9 @@
                     <ol class="steps-list">
                         <li>Otwórz e-mail, który chcesz zalogować</li>
                         <li>Zobacz kontakt w panelu bocznym</li>
-                        <li>Znajdź rekord, do którego chcesz zalogować (szansa, zadanie lub zgłoszenie)</li>
-                        <li>Kliknij ikonę koperty obok rekordu</li>
-                        <li>Przycisk zmieni się na zielony znacznik po zalogowaniu</li>
+                        <li>Aby zarejestrować go przy kontakcie, kliknij „Log email” pod jego nazwą</li>
+                        <li>Aby zarejestrować go przy szansie, zadaniu, zgłoszeniu, ofercie lub zamówieniu, kliknij ikonę koperty w jego wierszu</li>
+                        <li>Powiadomienie potwierdza, gdzie został zarejestrowany, z przyciskiem „Undo” na wypadek pomyłki. Koperta pokazuje potem znacznik</li>
                     </ol>
                     <h3>Co jest logowane</h3>
                     <ul>
@@ -394,7 +394,7 @@
                         <li>Informacje o nadawcy/odbiorcy</li>
                         <li>Data i godzina</li>
                         <li>Wszystkie załączniki (pliki, obrazy, PDF)</li>
-                        <li>Stopka "Zalogowano ze skrzynki Gmail"</li>
+                        <li>Stopka „Logged from Gmail in 1-click”</li>
                     </ul>
                     <div class="info-box">
                         <strong>Logowane jako notatka wewnętrzna:</strong> <span>E-maile są logowane jako notatki wewnętrzne w chatterze Odoo. Oznacza to, że tylko użytkownicy wewnętrzni (pracownicy) mogą je zobaczyć. Użytkownicy portalu (klienci) NIE zobaczą zalogowanych e-maili. Powiadomienia są wysyłane tylko do wewnętrznych obserwujących rekord.</span>
@@ -414,13 +414,13 @@
                 <!-- Record Actions Menu Section -->
                 <section id="record-menu" class="guide-section">
                     <h2><span class="material-symbols-outlined">more_vert</span> <span>Akcje na rekordzie</span></h2>
-                    <p>Każdy wiersz szansy sprzedaży, zadania, zgłoszenia i oferty ma własne menu akcji. Najedź wskaźnikiem na wiersz i kliknij przycisk ⋮, który pojawi się przy jego prawej krawędzi.</p>
+                    <p>Każdy wiersz szansy sprzedaży, zadania, zgłoszenia, oferty, zamówienia i powiązanego kontaktu ma własne menu akcji. Najedź wskaźnikiem na wiersz i kliknij przycisk ⋮, który pojawi się przy jego prawej krawędzi. Menu zawsze zaczyna się od „Open in Odoo” i „Copy link”.</p>
 
                     <h3>Kopiowanie linku do rekordu</h3>
                     <p>Kopiuje bezpośredni link do tego rekordu w Odoo, gotowy do wklejenia w odpowiedzi lub na czacie. Prowadzi do tego samego rekordu, który otwiera kliknięcie wiersza.</p>
 
-                    <h3><span>Włączanie i wyłączanie automatycznego logowania</span> <span class="feature-badge badge-plus">Plus</span></h3>
-                    <p>Łączy bieżący wątek z tym rekordem lub usuwa to powiązanie. Opcja pojawia się tylko wtedy, gdy automatyczne logowanie jest dostępne dla wątku. W trybie pauzy pozostaje widoczna, ale nieaktywna, dzięki czemu odróżnisz wstrzymane powiązanie od takiego, którego nigdy nie utworzono.</p>
+                    <h3><span>Włączanie i wyłączanie automatycznego rejestrowania</span> <span class="feature-badge badge-plus">Plus</span></h3>
+                    <p>„Turn on automatic logging” łączy bieżący wątek z tym rekordem, a „Turn off automatic logging” usuwa to powiązanie. Opcja pojawia się tylko wtedy, gdy automatyczne rejestrowanie jest dostępne dla wątku. W trybie pauzy pozostaje widoczna, ale nieaktywna, dzięki czemu odróżnisz wstrzymane powiązanie od takiego, którego nigdy nie utworzono.</p>
 
                     <h3>Zamykanie menu</h3>
                     <p>Opcje, które nie dotyczą danego wiersza, są pomijane, a nie wyszarzane — menu pokazuje tylko to, co faktycznie możesz zrobić. Kliknij poza menu lub naciśnij Esc, aby je zamknąć bez uruchamiania żadnej akcji.</p>
@@ -428,82 +428,83 @@
 
                 <!-- Auto-logging Section -->
                 <section id="autolog" class="guide-section">
-                    <h2><span class="material-symbols-outlined">sync</span> <span>Auto-logging</span> <span class="feature-badge badge-plus">Plus</span></h2>
-                    <p>Auto-logging links a Gmail thread to one or more Odoo records so that every new email in that thread is logged into the record's chatter automatically — no need to click the envelope icon for each reply.</p>
+                    <h2><span class="material-symbols-outlined">sync</span> <span>Automatyczne rejestrowanie</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>Automatyczne rejestrowanie łączy wątek Gmaila z jednym lub kilkoma rekordami Odoo, tak aby każdy nowy e-mail w tym wątku sam trafiał do chattera rekordu — bez klikania ikony koperty przy każdej odpowiedzi.</p>
 
                     <div class="info-box">
-                        <strong>Private Beta:</strong> <span>Auto-logging is currently in private beta. It will be available to all PLUS subscribers soon. To request early access, contact support.</span>
+                        <strong>Prywatna beta:</strong> <span>Automatyczne rejestrowanie jest w prywatnej becie. Wkrótce będzie dostępne dla wszystkich subskrybentów PLUS. Jeśli chcesz je wypróbować wcześniej, napisz do nas przez „Send feedback” w menu panelu.</span>
                     </div>
 
-                    <h3>Requirements</h3>
+                    <h3>Wymagania</h3>
                     <ul>
-                        <li>PLUS plan (and beta access during private beta)</li>
-                        <li>Gmail API connection (granted from Settings > Auto-logging > Connect)</li>
-                        <li>Auto-logging toggle enabled in Settings > Auto-logging</li>
+                        <li>Plan PLUS (i dostęp do bety w czasie prywatnej bety)</li>
+                        <li>Klucz API, dodany w „Settings” → „Connection”. Automatyczne rejestrowanie działa w tle, także przy zamkniętym Gmailu, więc nie może korzystać z sesji przeglądarki</li>
+                        <li>Włączony przełącznik „Turn on automatic logging” w „Settings” → „Email logging”</li>
+                        <li>Połączony Gmail: kliknij „Connect Gmail” w „Settings” → „Email logging”</li>
                     </ul>
 
-                    <h3>How to Activate Auto-logging on a Thread</h3>
+                    <h3>Jak włączyć automatyczne rejestrowanie w wątku</h3>
                     <ol class="steps-list">
-                        <li>Open the email thread in Gmail and view the contact in the sidebar</li>
-                        <li>Find the record you want to track (opportunity, task, ticket, or contact)</li>
-                        <li>For an opportunity, task or ticket, open the row's ⋮ menu and choose Activate auto-log. For the contact itself, use the auto-log button on the contact card. A confirmation toast appears and a green icon stays in the row while auto-log is active</li>
-                        <li>From now on, every new email in this thread is logged automatically into the chatter of that record</li>
+                        <li>Otwórz wątek w Gmailu i wyświetl kontakt w panelu bocznym</li>
+                        <li>Znajdź rekord, który chcesz śledzić (szansę, zadanie, zgłoszenie, zamówienie lub sam kontakt)</li>
+                        <li>Dla rekordu z listy otwórz jego menu ⋮ i wybierz „Turn on automatic logging”. Dla samego kontaktu użyj przycisku automatycznego rejestrowania obok „Log email”. Powiadomienie to potwierdza, a ikona synchronizacji zostaje obok nazwy rekordu, dopóki automatyczne rejestrowanie jest włączone</li>
+                        <li>Od tej chwili każdy nowy e-mail w tym wątku jest automatycznie rejestrowany w chatterze tego rekordu</li>
                     </ol>
                     <div class="info-box warning">
-                        <strong>Only future emails:</strong> <span>Auto-logging is purely forward-looking. Emails that already existed in the thread before activation are NOT logged retroactively. To log older emails, use the manual envelope button as usual.</span>
+                        <strong>Tylko przyszłe e-maile:</strong> <span>Automatyczne rejestrowanie działa tylko do przodu. E-maile, które były w wątku przed włączeniem, NIE są rejestrowane wstecz. Aby zarejestrować starsze e-maile, użyj jak zwykle przycisku koperty.</span>
                     </div>
 
-                    <h3>What Gets Logged</h3>
-                    <p>Each new email is added as an internal note in the record's chatter, with:</p>
+                    <h3>Co jest rejestrowane</h3>
+                    <p>Każdy nowy e-mail jest dodawany jako notatka wewnętrzna w chatterze rekordu, wraz z:</p>
                     <ul>
-                        <li>A Gmail-style header (From, To, Date, Subject)</li>
-                        <li>The email body without quoted history</li>
-                        <li>The original date of the email (not the time it was processed)</li>
-                        <li>Linked partners — recipients are matched in Odoo by email and attached to the message</li>
-                        <li>An "Auto-logged from Gmail" footer linking back to the extension</li>
+                        <li>Nagłówkiem w stylu Gmaila (Od, Do, Data, Temat)</li>
+                        <li>Treścią e-maila bez cytowanej historii</li>
+                        <li>Oryginalną datą e-maila (nie chwilą jego przetworzenia)</li>
+                        <li>Powiązanymi partnerami — odbiorcy są wyszukiwani w Odoo po adresie i przypisywani do wiadomości</li>
+                        <li>Stopką „Auto-logged from Gmail” z linkiem do rozszerzenia</li>
                     </ul>
                     <div class="info-box">
-                        <strong>Logged as Internal Note:</strong> <span>Auto-logged emails are saved as internal notes (mt_note), not public messages. Only internal Odoo users can see them — portal users (customers) won't.</span>
+                        <strong>Rejestrowane jako notatka wewnętrzna:</strong> <span>E-maile rejestrowane automatycznie są zapisywane jako notatki wewnętrzne (mt_note), a nie wiadomości publiczne. Widzą je tylko wewnętrzni użytkownicy Odoo — użytkownicy portalu (klienci) nie.</span>
                     </div>
 
-                    <h3>Linking a Thread to Several Records</h3>
-                    <p>You can activate auto-logging for the same thread on multiple records (for example, an opportunity and a task related to the same conversation):</p>
+                    <h3>Łączenie wątku z kilkoma rekordami</h3>
+                    <p>Możesz włączyć automatyczne rejestrowanie tego samego wątku w kilku rekordach (na przykład w szansie i zadaniu dotyczących tej samej rozmowy):</p>
                     <ul>
-                        <li>1 thread → 1 record: standard case.</li>
-                        <li>1 thread → several records: every new email is logged on each linked record sequentially.</li>
-                        <li>The same record cannot be linked twice from the same thread — duplicates are rejected.</li>
+                        <li>1 wątek → 1 rekord: zwykły przypadek.</li>
+                        <li>1 wątek → kilka rekordów: każdy nowy e-mail jest rejestrowany w każdym powiązanym rekordzie, jeden po drugim.</li>
+                        <li>Tego samego rekordu nie można połączyć dwa razy z tego samego wątku — duplikaty są odrzucane.</li>
                     </ul>
 
-                    <h3>Managing Active Auto-logs</h3>
-                    <h4>From the sidebar (per thread)</h4>
-                    <p>When the open thread has any active mappings, an "Auto-logging (N)" section appears at the top of the sidebar:</p>
+                    <h3>Zarządzanie automatycznym rejestrowaniem</h3>
+                    <h4>Z panelu bocznego (dla wątku)</h4>
+                    <p>Gdy otwarty wątek ma włączone automatyczne rejestrowanie dla któregoś rekordu, na górze panelu bocznego pojawia się sekcja „Automatic logging (N)”:</p>
                     <ul>
-                        <li>Click the section to expand it and see every record linked to the current thread</li>
-                        <li>Click on a record's name to open it in Odoo</li>
-                        <li>Click the ✕ button to deactivate auto-logging for that specific record</li>
+                        <li>Kliknij sekcję, aby ją rozwinąć i zobaczyć wszystkie rekordy powiązane z bieżącym wątkiem</li>
+                        <li>Kliknij nazwę rekordu, aby otworzyć go w Odoo</li>
+                        <li>Kliknij przycisk ✕, aby wyłączyć automatyczne rejestrowanie dla tego rekordu</li>
                     </ul>
-                    <h4>From Settings (across all threads)</h4>
-                    <p>Open Settings > Auto-logging to manage every active mapping:</p>
+                    <h4>Z ustawień (wszystkie wątki)</h4>
+                    <p>Otwórz „Settings” → „Email logging”, aby zarządzać wszystkimi wątkami z automatycznym rejestrowaniem:</p>
                     <ul>
-                        <li>Enable or disable auto-logging globally with a single toggle</li>
-                        <li>Connect or reconnect the Gmail API</li>
-                        <li>See the list of active mappings, the count, and the time of the last successful check</li>
-                        <li>Deactivate all mappings at once with the "Deactivate all" button</li>
+                        <li>Włącz lub wyłącz automatyczne rejestrowanie we wszystkich wątkach jednym przełącznikiem</li>
+                        <li>Połącz Gmaila lub połącz go ponownie</li>
+                        <li>Zobacz wątki z automatycznym rejestrowaniem, ile ich jest i kiedy było ostatnie sprawdzenie</li>
+                        <li>Wyłącz je wszystkie naraz przyciskiem „Deactivate all”</li>
                     </ul>
 
-                    <h3>Limits & Edge Cases</h3>
+                    <h3>Ograniczenia i przypadki szczególne</h3>
                     <ul>
-                        <li><strong>Not retroactive</strong>: <span>Only emails that arrive after activation are logged. Existing emails must be logged manually.</span></li>
-                        <li><strong>Auto-cleanup after 90 days</strong>: <span>A mapping with no new email activity for 90 days is removed automatically. Activate it again to resume tracking.</span></li>
-                        <li><strong>Record deleted in Odoo</strong>: <span>If the linked record is deleted in Odoo, the mapping is removed automatically the next time the extension tries to log into it.</span></li>
-                        <li><strong>Gmail disconnected</strong>: <span>If the Gmail API connection expires or is revoked, auto-logging stops for all threads until you reconnect from Settings > Auto-logging.</span></li>
+                        <li><strong>Nie działa wstecz</strong>: <span>Rejestrowane są tylko e-maile, które przyjdą po włączeniu. Istniejące e-maile trzeba zarejestrować ręcznie.</span></li>
+                        <li><strong>Automatyczne czyszczenie po 90 dniach</strong>: <span>Powiązanie bez nowego e-maila przez 90 dni jest usuwane automatycznie. Włącz je ponownie, aby kontynuować.</span></li>
+                        <li><strong>Rekord usunięty w Odoo</strong>: <span>Jeśli powiązany rekord zostanie usunięty w Odoo, powiązanie znika automatycznie przy następnej próbie rejestrowania w nim.</span></li>
+                        <li><strong>Gmail rozłączony</strong>: <span>Jeśli połączenie z Gmailem wygaśnie lub zostanie cofnięte, automatyczne rejestrowanie zatrzymuje się we wszystkich wątkach, dopóki nie połączysz go ponownie w „Settings” → „Email logging”.</span></li>
                     </ul>
                 </section>
 
                 <!-- Related Contacts Section -->
                 <section id="related-contacts" class="guide-section">
                     <h2><span class="material-symbols-outlined">groups</span> <span>Praca z powiązanymi kontaktami</span> <span class="feature-badge badge-plus">Plus</span></h2>
-                    <p>Sekcja Powiązane kontakty w panelu bocznym zawiera listę współpracowników z tej samej firmy co nadawca wiadomości. Z tego miejsca możesz wykonywać szybkie akcje na każdym kontakcie, nie opuszczając Gmail.</p>
+                    <p>Sekcja Powiązane kontakty w panelu bocznym zawiera listę współpracowników z tej samej firmy co nadawca wiadomości. Stamtąd, albo z menu ⋮ każdego kontaktu, możesz wykonywać szybkie akcje, nie opuszczając Gmaila.</p>
 
                     <h3>Otwarcie kontaktu w Odoo</h3>
                     <p>Kliknij w dowolnym miejscu karty kontaktu — awatar, imię i nazwisko lub stanowisko — aby otworzyć rekord tego kontaktu w Odoo w nowej karcie.</p>
@@ -586,12 +587,12 @@
                         <li>Kliknij wiersz, aby otworzyć ofertę w Odoo.</li>
                         <li>Kliknij ikonę koperty, aby zapisać bieżący e-mail w chatterze tej oferty.</li>
                         <li>Kliknij Utwórz, aby rozpocząć nową ofertę dla kontaktu i dokończyć ją w Odoo.</li>
-                        <li>Otwórz menu ⋮ wiersza, aby skopiować link do oferty, a przy dłuższej liście skorzystaj z wyszukiwarki.</li>
+                        <li>Otwórz menu ⋮ wiersza, aby otworzyć ofertę w Odoo lub skopiować do niej link, a przy dłuższej liście skorzystaj z wyszukiwarki.</li>
                     </ul>
                     <p>Po potwierdzeniu oferta opuszcza tę listę i przechodzi do Potwierdzonych zamówień sprzedaży, gdzie możesz dalej zapisywać kolejną korespondencję.</p>
 
                     <div class="info-box">
-                        <span>Nie pracujesz z ofertami? Ukryj sekcję w Ustawienia → Personalizacja.</span>
+                        <span>Nie pracujesz z ofertami? Ukryj sekcję w „Settings” → „Panel”.</span>
                     </div>
                 </section>
 
@@ -619,13 +620,13 @@
                     <ul>
                         <li>Kliknij wiersz, aby otworzyć zamówienie w Odoo.</li>
                         <li>Kliknij ikonę koperty, aby zapisać otwartą wiadomość w rozmowie tego zamówienia. Zamówienie, w którym wiadomość już jest, jest oznaczone i nie pozwala zapisać jej po raz drugi.</li>
-                        <li>Otwórz menu ⋮ w wierszu, aby skopiować odnośnik do zamówienia albo włączyć zapis automatyczny — kolejne wiadomości z wątku trafią wtedy do zamówienia bez Twojego udziału.</li>
+                        <li>Otwórz menu ⋮ w wierszu, aby skopiować odnośnik do zamówienia albo włączyć automatyczne rejestrowanie — kolejne wiadomości z wątku trafią wtedy do zamówienia bez Twojego udziału.</li>
                         <li>Skorzystaj z wyszukiwania, aby znaleźć zamówienie po numerze. To sposób, by dotrzeć do starszego zamówienia, którego nie ma wśród najnowszych.</li>
                     </ul>
                     <p>Sekcja nie tworzy zamówień: zamówienie powstaje z potwierdzenia oferty w Odoo, a nie z przeczytania wiadomości.</p>
 
                     <div class="info-box">
-                        <span>Nie śledzisz zamówień ze skrzynki? Ukryj sekcję w Ustawienia → Personalizacja.</span>
+                        <span>Nie śledzisz zamówień ze skrzynki? Ukryj sekcję w „Settings” → „Panel”.</span>
                     </div>
                 </section>
 
@@ -671,14 +672,14 @@
                     <p>Wartość zerowa jest pomijana, a nie pokazywana jako zero: sekcja wymienia tylko to, co rzeczywiście ma wartość. Gdy nic nie ma wartości i nic nie jest przeterminowane, sekcja wcale się nie pojawia — to normalna sytuacja kontaktu bez historii fakturowania.</p>
 
                     <div class="info-box">
-                        <span>Nie potrzebujesz liczb w skrzynce? Ukryj sekcję w Ustawienia → Personalizacja.</span>
+                        <span>Nie potrzebujesz liczb w skrzynce? Ukryj sekcję w „Settings” → „Panel”.</span>
                     </div>
                 </section>
 
                 <!-- Notification Organization Section -->
                 <section id="notifications" class="guide-section">
-                    <h2><span class="material-symbols-outlined">notifications</span> <span>Organizacja Powiadomień</span> <span class="feature-badge badge-plus">Plus</span></h2>
-                    <p>Organizuj e-maile z powiadomieniami Odoo bezpośrednio w skrzynce odbiorczej Gmail. Rozszerzenie identyfikuje e-maile z powiadomieniami od Odoo i dodaje wizualne odznaki, abyś mógł natychmiast zobaczyć, do którego modułu należą i czy zostałeś wspomniany.</p>
+                    <h2><span class="material-symbols-outlined">notifications</span> <span>Powiadomienia Odoo</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>Organizuj e-maile z powiadomieniami Odoo bezpośrednio w skrzynce odbiorczej Gmail. Rozszerzenie rozpoznaje powiadomienia z Odoo i nadaje im etykiety, abyś od razu widział, do którego modułu należą i czy zostałeś wspomniany.</p>
 
                     <h3>Wymaganie wstępne: Włącz Powiadomienia E-mail w Odoo</h3>
                     <p>Aby ta funkcja działała, Twój użytkownik Odoo musi być skonfigurowany do otrzymywania powiadomień e-mailem (nie w skrzynce Odoo):</p>
@@ -694,54 +695,54 @@
                     <h3>Konfiguracja</h3>
                     <ol class="steps-list">
                         <li><strong>Znajdź swój e-mail powiadomień w Odoo</strong><br><span>Sprawdź ostatni e-mail z powiadomieniem Odoo w Gmailu i zobacz adres nadawcy (np. notifications@twojafirma.com). Alternatywnie zapytaj administratora Odoo o wychodzący adres e-mail powiadomień.</span></li>
-                        <li><strong>Otwórz Ustawienia rozszerzenia</strong><br><span>Na pasku bocznym Gmaila kliknij przycisk menu (trzy pionowe kropki) i wybierz Ustawienia.</span></li>
-                        <li><strong>Wprowadź e-mail powiadomień</strong><br><span>Przejdź do zakładki Powiadomienia i wklej adres e-mail. Rozszerzenie natychmiast zacznie identyfikować e-maile z powiadomieniami.</span></li>
+                        <li><strong>Otwórz „Settings” rozszerzenia</strong><br><span>W nagłówku panelu kliknij przycisk menu (trzy pionowe kropki) i wybierz „Settings”.</span></li>
+                        <li><strong>Wprowadź e-mail powiadomień</strong><br><span>Otwórz sekcję „Odoo notifications”, wklej adres w pole „Notification sender” i kliknij „Save”. Rozszerzenie od razu zacznie rozpoznawać powiadomienia.</span></li>
                     </ol>
                     <div class="info-box">
                         <strong>Wskazówka:</strong> <span>Jeśli nie wiesz, jakiego e-maila Odoo używa do powiadomień, sprawdź ostatni e-mail z powiadomieniem w Gmailu i zobacz adres nadawcy.</span>
                     </div>
 
-                    <h3>Odznaki Modułów</h3>
-                    <p>Kolorowe odznaki pojawiają się obok e-maili z powiadomieniami w Twojej skrzynce, pokazując, który moduł Odoo wygenerował powiadomienie:</p>
+                    <h3>Etykiety modułów</h3>
+                    <p>Obok każdego powiadomienia w skrzynce pojawia się etykieta z modułem Odoo, który je wysłał; każdy moduł ma własny kolor:</p>
                     <ul>
-                        <li>Szansa (CRM) — fioletowa odznaka</li>
-                        <li>Zadanie (Projekt) — niebieska odznaka</li>
-                        <li>Zgłoszenie (Helpdesk) — pomarańczowa odznaka</li>
-                        <li>Faktura (Fakturowanie) — zielona odznaka</li>
-                        <li>I więcej: Zakupy, Mailing, Karta czasu pracy, itp.</li>
+                        <li>Opportunity — szansa (CRM)</li>
+                        <li>Task — zadanie (Projekt)</li>
+                        <li>Ticket — zgłoszenie (Helpdesk)</li>
+                        <li>Invoice — faktura (Fakturowanie)</li>
+                        <li>I więcej: Sales order, Purchase, Time off, Event, Mailing…</li>
                     </ul>
 
-                    <h3>Odznaki Wzmianek</h3>
-                    <p>Gdy ktoś wspomina Cię w rekordzie Odoo (używając @ lub imienia), specjalna odznaka pojawia się na e-mailu z powiadomieniem:</p>
+                    <h3>Etykieta wzmianki</h3>
+                    <p>Gdy ktoś wspomni Cię w rekordzie Odoo (przez @ lub z imienia), powiadomienie dostaje etykietę „Mention”:</p>
                     <ul>
-                        <li><strong>Czerwona odznaka "Wspomniany"</strong>: <span>Masz nieprzeczytaną wzmiankę — nie otworzyłeś tego wątku w Gmailu od wzmianki</span></li>
-                        <li><strong>Szara odznaka "Wspomniany"</strong>: <span>Już widziałeś tę wzmiankę — otworzyłeś wątek w Gmailu po wzmiance</span></li>
+                        <li><strong>Czerwona etykieta „Mention”</strong>: <span>Masz nieprzeczytaną wzmiankę — nie otworzyłeś tego wątku w Gmailu od wzmianki</span></li>
+                        <li><strong>Szara etykieta „Mention”</strong>: <span>Już widziałeś tę wzmiankę — otworzyłeś wątek w Gmailu po wzmiance</span></li>
                     </ul>
                     <div class="info-box">
                         <strong>Jak to działa:</strong> <span>Wykrywanie wzmianek opiera się na wiadomościach przechowywanych w rekordzie Odoo, nie na samym e-mailu. Rozszerzenie sprawdza chatter rekordu w poszukiwaniu @wzmianek lub odniesień do Twojego imienia. To oznacza:</span>
                         <ul style="margin-top: 0.5rem;">
-                            <li>Jeśli niedawno przeszedłeś z "Zarządzaj w Odoo" na "Zarządzaj przez e-maile", starsze wątki mogą pokazywać odznakę "Wspomniany" dla wzmianek, które miały miejsce przed rozpoczęciem otrzymywania e-maili — nawet jeśli wzmianka nie pojawi się w żadnym e-mailu Gmail.</li>
-                            <li>Status przeczytane/nieprzeczytane jest określany na podstawie tego, czy otworzyłeś wątek w Gmailu po wzmiance. Po otwarciu wątku odznaka zmienia kolor na szary.</li>
+                            <li>Jeśli niedawno przeszedłeś z "Zarządzaj w Odoo" na "Zarządzaj przez e-maile", starsze wątki mogą pokazywać etykietę „Mention” dla wzmianek sprzed rozpoczęcia otrzymywania e-maili — nawet jeśli wzmianka nie pojawi się w żadnym e-mailu Gmail.</li>
+                            <li>Status przeczytane/nieprzeczytane zależy od tego, czy otworzyłeś wątek w Gmailu po wzmiance. Po otwarciu wątku etykieta staje się szara.</li>
                         </ul>
                     </div>
 
                     <h3>Szybki Dostęp</h3>
-                    <p>Skrót "Odoo Notifications" pojawia się na lewym pasku bocznym Gmaila, pod Twoimi etykietami. Kliknij, aby natychmiast przefiltrować skrzynkę i pokazać tylko e-maile z powiadomieniami Odoo.</p>
+                    <p>Na lewym pasku bocznym Gmaila, pod Twoimi etykietami, pojawia się skrót „Odoo notifications”. Kliknij go, aby przefiltrować skrzynkę i pokazać tylko powiadomienia Odoo.</p>
                     <div class="info-box">
-                        <strong>Uwaga:</strong> <span>Skrót pojawia się dopiero po skonfigurowaniu e-maila powiadomień w Ustawienia > Powiadomienia.</span>
+                        <strong>Uwaga:</strong> <span>Skrót pojawia się dopiero po ustawieniu nadawcy powiadomień w „Settings” → „Odoo notifications”.</span>
                     </div>
 
                     <h3>Przeglądanie po modułach</h3>
-                    <p>Skrót „Powiadomienia Odoo” rozwija się w podpozycje — Szanse, Zadania, Zgłoszenia, Faktury i inne — każda z własnym licznikiem nieprzeczytanych, aby przejść od razu do powiadomień jednego modułu.</p>
+                    <p>Skrót „Odoo notifications” rozwija się w podpozycje — Opportunities, Tasks, Tickets, Invoices i inne — każda z własnym licznikiem nieprzeczytanych, aby przejść od razu do powiadomień jednego modułu.</p>
                     <p>Powiadomienia z modeli spoza tego katalogu są zbierane w ogólnej pozycji „Odoo”, zamiast wypadać z listy.</p>
                     <p>Pojawiają się tylko kategorie modułów, z których faktycznie otrzymujesz powiadomienia.</p>
 
                     <h3>Dostosowanie</h3>
-                    <p>Każda funkcja powiadomień może być włączona/wyłączona niezależnie w Ustawienia > Powiadomienia:</p>
+                    <p>Każdą część można włączyć lub wyłączyć w „Settings” → „Odoo notifications”:</p>
                     <ul>
-                        <li>Odznaki modułów — pokaż/ukryj kolorowe odznaki modułów</li>
-                        <li>Odznaki wzmianek — pokaż/ukryj odznaki wykrywania wzmianek</li>
-                        <li>Skrót paska bocznego — pokaż/ukryj link Odoo Notifications na pasku bocznym Gmaila</li>
+                        <li>„Module label” — pokaż lub ukryj etykiety modułów</li>
+                        <li>„Mention label” — pokaż lub ukryj etykiety wzmianek</li>
+                        <li>„Shortcut in the Gmail sidebar” — pokaż lub ukryj „Odoo notifications” na pasku bocznym Gmaila</li>
                     </ul>
                 </section>
 
@@ -757,11 +758,11 @@
                     </ul>
 
                     <h3>Selektor firmy</h3>
-                    <p>Gdy masz dostęp do więcej niż jednej firmy, w nagłówku panelu bocznego, obok przycisku ustawień (⚙), pojawia się ikona budynku:</p>
+                    <p>Gdy masz dostęp do więcej niż jednej firmy, w nagłówku panelu, obok przycisku menu (⋮), pojawia się ikona budynku:</p>
                     <ul>
                         <li>Najedź na ikonę, aby zobaczyć nazwę aktywnej firmy ("Operating in {firma}")</li>
-                        <li>Kliknij ikonę, aby otworzyć listę wszystkich firm, do których masz dostęp</li>
-                        <li>Wybierz firmę przyciskami opcji. Lista się zamyka, a panel boczny odświeża się z danymi nowej firmy</li>
+                        <li>Kliknij ikonę, aby otworzyć menu ze wszystkimi firmami, do których masz dostęp. Aktywna jest wyróżniona</li>
+                        <li>Wybierz firmę. Menu się zamyka, a panel boczny odświeża się z danymi nowej firmy</li>
                         <li>Jeśli masz dostęp tylko do jednej firmy, ikona się nie pojawia</li>
                     </ul>
                     <div class="info-box">
@@ -773,7 +774,7 @@
                     <ul>
                         <li><strong>Rekordy, które widzisz</strong>: <span>Szanse sprzedaży, zadania, zgłoszenia i kontakty na liście panelu bocznego są filtrowane do widocznych w aktywnej firmie</span></li>
                         <li><strong>Rekordy, które tworzysz</strong>: <span>Nowe leady, zadania, zgłoszenia i kontakty tworzone z panelu bocznego są przypisywane do aktywnej firmy</span></li>
-                        <li><strong>Automatycznie logowane e-maile</strong>: <span>E-maile przetwarzane przez automatyczne logowanie są publikowane w firmie, do której należy powiązany rekord (zobacz uwagę o automatycznym logowaniu poniżej)</span></li>
+                        <li><strong>E-maile rejestrowane automatycznie</strong>: <span>E-maile rejestrowane automatycznie są publikowane w firmie, do której należy powiązany rekord (zobacz „Automatyczne rejestrowanie między firmami” poniżej)</span></li>
                     </ul>
 
                     <h3>Wyszukiwanie kontaktów między firmami</h3>
@@ -794,8 +795,8 @@
                         <strong>Ważne:</strong> <span>Udostępnienie kontaktu lub firmy wszystkim Twoim firmom zmienia jego widoczność dla każdego użytkownika z dostępem do tych firm. Rozszerzenie prosi o potwierdzenie przed zapisaniem.</span>
                     </div>
 
-                    <h3>Automatyczne logowanie między firmami</h3>
-                    <p>Gdy aktywujesz automatyczne logowanie na rekordzie, rozszerzenie zapamiętuje, do której firmy ten rekord należy. Nowe e-maile w tym wątku są zawsze logowane we właściwej firmie, nawet jeśli później zmienisz aktywną firmę w panelu bocznym.</p>
+                    <h3>Automatyczne rejestrowanie między firmami</h3>
+                    <p>Gdy włączasz automatyczne rejestrowanie dla rekordu, rozszerzenie zapamiętuje, do której firmy ten rekord należy. Nowe e-maile w tym wątku są zawsze rejestrowane we właściwej firmie, nawet jeśli później zmienisz aktywną firmę w panelu bocznym.</p>
 
                     <h3>Zachowanie w planie FREE</h3>
                     <p>Jeśli w planie FREE masz dostęp do kilku firm, rozszerzenie używa Twojej domyślnej firmy w Odoo do wszystkich operacji. Ikona selektora się nie pojawia, a wyszukiwanie między firmami nie jest oferowane. Przejście na PLUS odblokowuje oba.</p>
@@ -820,7 +821,7 @@
                     </ol>
                     <h3>Komunikat "Kontakt nie znaleziony"</h3>
                     <ul>
-                        <li><strong>E-mail nie znajduje się w Odoo</strong>: <span>Kliknij "Utwórz kontakt", aby go dodać</span></li>
+                        <li><strong>E-mail nie znajduje się w Odoo</strong>: <span>Kliknij „Save in Odoo”, aby go dodać</span></li>
                         <li><strong>Adres jest zapisany inaczej</strong>: <span>Wielkość liter nie jest problemem: adres zapisany w Odoo jako John@Acme.com pasuje do john@acme.com. Dopasowanie psuje dopiero naprawdę inny adres — alias, dodatkowa kropka albo inna domena. Zaktualizuj e-mail w Odoo lub utwórz nowy kontakt.</span></li>
                     </ul>
                     <h3>Sekcja się nie pojawia</h3>
@@ -828,7 +829,7 @@
                     <ol>
                         <li><strong>Moduł nie jest zainstalowany</strong>: <span>Szanse sprzedaży wymagają CRM, Zadania — Projektu, Zgłoszenia — Helpdesku (Enterprise), Oferty — Sprzedaży, a Informacje finansowe — Księgowości.</span></li>
                         <li><strong>Twój użytkownik Odoo nie ma uprawnień</strong>: <span>Rozszerzenie ukrywa sekcję, gdy Twój użytkownik nie może tworzyć rekordów tego typu — sam dostęp do odczytu nie wystarczy. Poproś o uprawnienie administratora Odoo.</span></li>
-                        <li><strong>Sam ją wyłączyłeś</strong>: <span>Sprawdź Ustawienia → Personalizacja: sekcja ukryta w tym miejscu pozostaje ukryta przy każdym e-mailu.</span></li>
+                        <li><strong>Sam ją wyłączyłeś</strong>: <span>Sprawdź „Settings” → „Panel”: sekcja ukryta w tym miejscu pozostaje ukryta przy każdym e-mailu.</span></li>
                     </ol>
                     <h3>Panel boczny jest pusty lub nic się nie ładuje po połączeniu</h3>
                     <p>To prawie zawsze kwestia sesji logowania, a nie klucza API. Sprawdź po kolei:</p>
@@ -841,7 +842,7 @@
                     <h3>„Sesja wygasła” lub prośba o ponowne połączenie</h3>
                     <p>Twoja sesja Odoo wygasła. Po prostu otwórz Odoo, zaloguj się ponownie, a rozszerzenie połączy się na nowo — nic więcej nie trzeba robić.</p>
                     <div class="info-box">
-                        <span>Opcjonalny klucz API można dodać jako rozwiązanie awaryjne, aby funkcje działające w tle działały dalej, gdy sesja wygaśnie: Ustawienia → Konto → Połączenie.</span>
+                        <span>Opcjonalny klucz API można dodać jako zapas, aby funkcje działające w tle działały dalej, gdy sesja wygaśnie: „Settings” → „Connection”.</span>
                     </div>
                     <h3>Okno uprawnień nie pojawia się (samodzielnie hostowane Odoo)</h3>
                     <p>Podczas łączenia z samodzielnie hostowaną instancją Odoo (niestandardowy URL), Chrome wymaga dodatkowych uprawnień. Jeśli okno uprawnień się nie pojawia:</p>
@@ -869,7 +870,7 @@
                     </div>
                     <div class="faq-item">
                         <h4>P: Czy potrzebuję klucza API?</h4>
-                        <p>Nie. Wystarczy adres URL Twojego Odoo i aktywna sesja Odoo w tej samej przeglądarce. Klucz API jest opcjonalny — tylko do automatycznego rejestrowania w tle (PLUS) lub jako rozwiązanie awaryjne, gdy sesja wygaśnie.</p>
+                        <p>Nie. Wystarczy adres URL Twojego Odoo i aktywna sesja Odoo w tej samej przeglądarce. Klucz API jest opcjonalny — tylko do automatycznego rejestrowania (PLUS) lub jako zapas, gdy sesja wygaśnie.</p>
                     </div>
                     <div class="faq-item">
                         <h4>P: Czy moje dane są bezpieczne?</h4>
@@ -878,7 +879,7 @@
                     <h3>Subskrypcja</h3>
                     <div class="faq-item">
                         <h4>P: Jaka jest różnica między FREE a PLUS?</h4>
-                        <p>FREE zawiera podstawowe funkcje (przeglądanie kontaktów, logowanie e-maili, ograniczone rekordy). PLUS dodaje zaawansowane wyszukiwanie, informacje finansowe, powiązane kontakty, organizację e-maili z powiadomieniami i opcje personalizacji.</p>
+                        <p>FREE obejmuje przeglądanie kontaktów, rejestrowanie e-maili, tworzenie rekordów i pierwsze 5 rekordów każdej sekcji. PLUS dodaje wszystkie rekordy z wyszukiwaniem i grupowaniem, oferty i zamówienia, wiadomości w Odoo, informacje finansowe, powiązane kontakty, powiadomienia Odoo, wiele firm i personalizację.</p>
                     </div>
                     <div class="faq-item">
                         <h4>P: Czy mogę anulować subskrypcję PLUS w każdej chwili?</h4>

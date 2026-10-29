@@ -229,7 +229,7 @@
                         <li><a href="#subscription"><span class="material-symbols-outlined">credit_card</span> <span>Abonnement</span></a></li>
                         <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span>E-mail Loggen</span></a></li>
                         <li><a href="#record-menu"><span class="material-symbols-outlined">more_vert</span> <span>Recordacties</span></a></li>
-                        <li><a href="#autolog"><span class="material-symbols-outlined">sync</span> <span>Auto-logging</span></a></li>
+                        <li><a href="#autolog"><span class="material-symbols-outlined">sync</span> <span>Automatisch vastleggen</span></a></li>
                         <li><a href="#related-contacts"><span class="material-symbols-outlined">groups</span> <span>Gerelateerde contacten</span></a></li>
                         <li><a href="#recent-activities"><span class="material-symbols-outlined">history</span> <span>Berichten in Odoo</span></a></li>
                         <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Kansen</span></a></li>
@@ -237,7 +237,7 @@
                         <li><a href="#sales-orders"><span class="material-symbols-outlined">receipt_long</span> <span>Verkooporders</span></a></li>
                         <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Taken & Tickets</span></a></li>
                         <li><a href="#financial"><span class="material-symbols-outlined">account_balance</span> <span>Financiële inzichten</span></a></li>
-                        <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Notificaties</span></a></li>
+                        <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Odoo-meldingen</span></a></li>
                         <li><a href="#multi-company"><span class="material-symbols-outlined">business</span> <span>Multi-bedrijf</span></a></li>
                         <li><a href="#troubleshooting"><span class="material-symbols-outlined">help</span> <span>Probleemoplossing</span></a></li>
                         <li><a href="#faq"><span class="material-symbols-outlined">quiz</span> <span>Veelgestelde Vragen</span></a></li>
@@ -251,7 +251,7 @@
                     <ol>
                         <li>Installeer de extensie en open Gmail.</li>
                         <li>Log in op uw Odoo in dezelfde Chrome-browser — de extensie gebruikt uw actieve sessie.</li>
-                        <li>Voer uw Odoo-URL in (bijv. https://uwbedrijf.odoo.com — HTTPS, zonder slash aan het einde) en klik op Verbinden.</li>
+                        <li>Voer uw Odoo-URL in (bijv. https://uwbedrijf.odoo.com — HTTPS, zonder slash aan het einde) en klik op Verbinden met Odoo. Bij odoo.com kunt u ook op Odoo automatisch detecteren klikken om het in een open tabblad te vinden.</li>
                     </ol>
                     <span>Open een willekeurige e-mail en uw Odoo-contact verschijnt in de zijbalk. Dat is alles — geen API-sleutel, geen code.</span>
                 </div>
@@ -284,22 +284,22 @@
                         <li><strong>Open Gmail</strong><br><span>Navigeer naar mail.google.com en open een e-mail om de zijbalk te bekijken.</span></li>
                         <li><strong>Log in bij Odoo</strong><br><span>Zorg dat u in dezelfde browser bent ingelogd bij uw Odoo-instantie — de extensie maakt verbinding via uw actieve sessie.</span></li>
                         <li><strong>Voer uw Odoo URL in</strong><br><span>Voer de URL van uw Odoo-instantie in (bijv. https://uwbedrijf.odoo.com). Gebruik HTTPS en voeg geen afsluitende schuine streep toe.</span></li>
-                        <li><strong>Verbinden</strong><br><span>Klik op Verbinden en de extensie verifieert uw actieve sessie. Een API-sleutel is optioneel — alleen nodig voor automatisch loggen op de achtergrond, of als terugval als uw sessie verloopt.</span></li>
+                        <li><strong>Verbinden</strong><br><span>Klik op Verbinden met Odoo en de extensie controleert uw actieve sessie. Een API-sleutel is optioneel: automatisch vastleggen heeft er een nodig, en hij dient ook als reserve als uw sessie verloopt.</span></li>
                     </ol>
                     <div class="warning-box" style="background: #e8f4f8; border-color: #0288d1;">
                         <span class="material-symbols-outlined" style="color: #0288d1;">info</span>
                         <span><span>Een API-sleutel toevoegen is optioneel. Als u er een toevoegt, verschillen de aanmaakstappen per Odoo-versie.</span> <a href="blog/odoo-api-key-setup.html">Bekijk de gedetailleerde handleiding voor uw versie →</a></span>
                     </div>
                     <h3>Configuratie Bijwerken</h3>
-                    <p>Om uw Odoo URL te wijzigen, log uit en maak opnieuw verbinding:</p>
+                    <p>Om de extensie met een andere Odoo te verbinden:</p>
                     <ol>
-                        <li>Klik op de menuknop (drie verticale puntjes ⋮) in de zijbalk</li>
-                        <li>Selecteer Uitloggen</li>
-                        <li>Voer uw nieuwe gegevens in</li>
+                        <li>Klik op de menuknop (drie verticale puntjes ⋮) in de kop van het paneel en kies Instellingen</li>
+                        <li>Open Verbinding en klik op Andere Odoo</li>
+                        <li>Voer het nieuwe adres in en maak verbinding</li>
                     </ol>
-                    <p>Om uw API-sleutel later toe te voegen of bij te werken, opent u Instellingen → Account → Verbinding — zonder uit te loggen.</p>
+                    <p>Om uw API-sleutel later toe te voegen of te wijzigen, opent u Instellingen → Verbinding. Daar vindt u ook Uitloggen, onderaan de sectie.</p>
                     <h3>Bepalen wanneer het paneel opengaat</h3>
-                    <p>Standaard gaat het Odoo-paneel vanzelf open bij elke e-mail die u opent. Wilt u het alleen openen wanneer u het nodig hebt, schakel dan "Zijbalk automatisch openen" uit bij Instellingen → Account → Voorkeuren. Het paneel blijft dan dicht tot u op het Odoo-icoon in de rechterzijbalk van Gmail klikt. De wijziging geldt meteen, zonder Gmail opnieuw te laden.</p>
+                    <p>Standaard gaat het Odoo-paneel vanzelf open bij elke e-mail die u opent. Wilt u het alleen openen wanneer u het nodig hebt, schakel dan "Het paneel openen als u een e-mail opent" uit bij Instellingen → Algemeen. Het paneel blijft dan dicht tot u op het Odoo-icoon in de rechterzijbalk van Gmail klikt. De wijziging geldt meteen, zonder Gmail opnieuw te laden.</p>
                 </section>
 
                 <!-- Features Overview Section -->
@@ -313,12 +313,12 @@
                         <li><strong>Records Aanmaken</strong>: <span>Maak leads, partners, taken en tickets aan</span></li>
                         <li><strong>Beperkt Records Bekijken</strong>: <span>Bekijk de eerste 5 kansen, taken en tickets</span></li>
                         <li><strong>Vernieuwen</strong>: <span>Handmatig contactgegevens vernieuwen</span></li>
-                        <li><strong>Laadtijd Indicator</strong>: <span>Zie hoe snel de zijbalk is geladen</span></li>
+                        <li><strong>Ongedaan maken</strong>: <span>Een e-mail bij het verkeerde record vastgelegd? Klik op Ongedaan maken in de melding die het bevestigt</span></li>
                     </ul>
                     <h3><span>PLUS Abonnement</span> <span class="feature-badge badge-plus">Plus</span></h3>
                     <p>Alles in GRATIS, plus:</p>
                     <ul>
-                        <li><strong>Geavanceerd Zoeken</strong>: <span>Zoek door alle kansen, taken en tickets (tot 50 resultaten)</span></li>
+                        <li><strong>Geavanceerd Zoeken</strong>: <span>Alle records van elke sectie, pagina voor pagina, met zoeken in kansen, taken en tickets (GRATIS toont de eerste 5)</span></li>
                         <li><strong>Contact/Bedrijf Tabbladen</strong>: <span>Schakel tussen contact- en bedrijfsinformatie</span></li>
                         <li><strong>Gerelateerde Contacten</strong>: <span>Vind collega's van hetzelfde bedrijf</span></li>
                         <li><strong>Financiële Inzichten</strong>: <span>Bekijk facturatie, vorderingen en schulden</span></li>
@@ -327,9 +327,9 @@
                         <li><strong>Record Groepering</strong>: <span>Groepeer opportunities, taken en tickets op fase of status</span></li>
                         <li><strong>E-maildeelnemers</strong>: <span>Bekijk Odoo-contactinformatie van alle e-maildeelnemers</span></li>
                         <li><strong>Berichten in Odoo</strong>: <span>Bekijk recente berichten uit Odoo-gesprekken voor elk contact</span></li>
-                        <li><strong>Notificatie-organisatie</strong>: <span>Identificeer en organiseer Odoo-notificatie-e-mails met modulebadges, vermeldingsdetectie en snelle filtering</span></li>
-                        <li><strong>Auto-logging</strong>: <span>Link a Gmail thread to one or more Odoo records and have every new email logged automatically into their chatter (currently in private beta)</span></li>
-                        <li><strong>Multi-Company Support</strong>: <span>Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company</span></li>
+                        <li><strong>Odoo-meldingen</strong>: <span>Herken Odoo-meldingen in uw inbox aan een label per module, zie waar u bent vermeld en open ze allemaal via één snelkoppeling</span></li>
+                        <li><strong>Automatisch vastleggen</strong>: <span>Koppel een Gmail-conversatie aan een of meer Odoo-records, en elke nieuwe e-mail wordt vanzelf in hun chatter vastgelegd (voorlopig in privébèta)</span></li>
+                        <li><strong>Meerdere bedrijven</strong>: <span>Wissel tussen de bedrijven waartoe u in Odoo toegang hebt, en vind een contact in een ander bedrijf wanneer een e-mail bij een relatie van dat bedrijf hoort</span></li>
                         <li><strong>Openstaande offertes</strong>: <span>Bekijk in het paneel de concept- en verzonden offertes van het contact, met het bedrag en hoelang elke offerte al op antwoord wacht</span></li>
                         <li><strong>Bevestigde orders</strong>: <span>Bekijk de al bevestigde verkooporders van het contact, met referentie, bedrag en datum, en log e-mails over levering of facturatie op de juiste order</span></li>
                     </ul>
@@ -341,7 +341,7 @@
 
                     <h3>Hoe u zich Abonneert op PLUS</h3>
                     <ol class="steps-list">
-                        <li>Klik op "Upgraden naar PLUS" in het zijbalkmenu (drie puntjes in de koptekst)</li>
+                        <li>Klik op "Probeer Plus 14 dagen" in het menu van het paneel (drie puntjes in de kop) of bij Instellingen → Abonnement</li>
                         <li>Voltooi het afrekenproces bij Polar</li>
                         <li>Ontvang uw licentiesleutel via e-mail</li>
                     </ol>
@@ -350,16 +350,16 @@
                     <p>Voer uw licentiesleutel in op een van deze manieren:</p>
                     <ul>
                         <li>Een modaal verschijnt direct na het afrekenen - voer uw licentie daar in</li>
-                        <li>Ga naar Instellingen > Account > Licentie Activeren</li>
-                        <li>Klik opnieuw op "Upgraden naar PLUS" en selecteer "Ik heb al een licentie"</li>
+                        <li>Ga naar Instellingen → Abonnement en klik op "Ik heb al een licentie"</li>
+                        <li>Klik in het Plus-venster dat opent via "Probeer Plus 14 dagen" op "Ik heb al een licentie"</li>
                     </ul>
 
                     <div class="info-box">
-                        <strong>Licentie Informatie:</strong> <span>Uw licentie werkt op maximaal 3 instanties (verschillende computers of browsers). Deze moet worden gebruikt met hetzelfde Gmail-account dat is gebruikt voor de aankoop.</span>
+                        <strong>Licentie Informatie:</strong> <span>Uw licentie werkt op maximaal 3 instanties (verschillende computers of browsers). Deze moet worden gebruikt met hetzelfde Gmail-account dat is gebruikt voor de aankoop. Om een computer vrij te maken, klikt u op "Hier deactiveren" bij Instellingen → Abonnement.</span>
                     </div>
 
                     <div class="info-box">
-                        <strong>Gratis Proefperiode:</strong> <span>PLUS bevat een gratis proefperiode van 14 dagen. Er worden geen kosten in rekening gebracht tot de proefperiode eindigt. Zeg op elk moment op om kosten te vermijden.</span>
+                        <strong>Gratis Proefperiode:</strong> <span>PLUS bevat een gratis proefperiode van 14 dagen. Voor de proefperiode is een kaart nodig, maar er wordt pas na afloop iets afgeschreven. Zeg op elk moment daarvoor op om kosten te vermijden.</span>
                     </div>
 
                     <div class="info-box">
@@ -369,7 +369,7 @@
                     <h3>Hoe u Uw Abonnement Opzegt</h3>
                     <p>U kunt uw PLUS abonnement op elk moment opzeggen:</p>
                     <ol class="steps-list">
-                        <li>Ga naar het Polar klantenportaal (link in uw aankoop-e-mail)</li>
+                        <li>Klik bij Instellingen → Abonnement op "Abonnement beheren" om het Polar-klantenportaal te openen (de link staat ook in uw aankoop-e-mail)</li>
                         <li>Log in met het e-mailadres dat is gebruikt voor uw abonnement</li>
                         <li>Klik op "Abonnement Opzeggen" in uw abonnementsgegevens</li>
                     </ol>
@@ -383,9 +383,9 @@
                     <ol class="steps-list">
                         <li>Open de e-mail die u wilt loggen</li>
                         <li>Bekijk het contact in de zijbalk</li>
-                        <li>Zoek het record waaraan u wilt loggen (kans, taak of ticket)</li>
-                        <li>Klik op het envelopicoontje naast het record</li>
-                        <li>De knop verandert in een groen vinkje wanneer gelogd</li>
+                        <li>Om hem bij het contact vast te leggen, klikt u op E-mail vastleggen, onder de naam</li>
+                        <li>Om hem bij een kans, taak, ticket, prijsopgave of order vast te leggen, klikt u op het envelopicoontje in de rij</li>
+                        <li>Een melding bevestigt waar hij is vastgelegd, met Ongedaan maken voor als u het verkeerde record koos. De envelop toont daarna een vinkje</li>
                     </ol>
                     <h3>Wat Wordt Gelogd</h3>
                     <ul>
@@ -394,7 +394,7 @@
                         <li>Afzender/ontvanger informatie</li>
                         <li>Datum en tijd</li>
                         <li>Alle bijlagen (bestanden, afbeeldingen, PDF's)</li>
-                        <li>"Gelogd vanuit Gmail Inbox" voettekst</li>
+                        <li>Voettekst "Logged from Gmail in 1-click"</li>
                     </ul>
                     <div class="info-box">
                         <strong>Gelogd als Interne Notitie:</strong> <span>E-mails worden gelogd als interne notities in Odoo's chatter. Dit betekent dat alleen interne gebruikers (medewerkers) ze kunnen zien. Portal-gebruikers (klanten) zullen de gelogde e-mails NIET zien. Meldingen worden alleen verzonden naar interne volgers van het record.</span>
@@ -414,13 +414,13 @@
                 <!-- Record Actions Menu Section -->
                 <section id="record-menu" class="guide-section">
                     <h2><span class="material-symbols-outlined">more_vert</span> <span>Acties op een record</span></h2>
-                    <p>Elke rij van een verkoopkans, taak, ticket of prijsopgave heeft een eigen actiemenu. Beweeg de muis over de rij en klik op de knop ⋮ die aan de rechterkant verschijnt.</p>
+                    <p>Elke rij van een verkoopkans, taak, ticket, prijsopgave, order of gerelateerd contact heeft een eigen actiemenu. Beweeg de muis over de rij en klik op de knop ⋮ die aan de rechterkant verschijnt. Het menu begint altijd met Openen in Odoo en Link kopiëren.</p>
 
                     <h3>Een link naar het record kopiëren</h3>
                     <p>Kopieert een directe link naar dat record in Odoo, klaar om in een antwoord of chat te plakken. De link wijst naar hetzelfde record dat de rij opent wanneer u erop klikt.</p>
 
-                    <h3><span>Automatisch loggen in- of uitschakelen</span> <span class="feature-badge badge-plus">Plus</span></h3>
-                    <p>Koppelt het huidige gesprek aan dat record, of ontkoppelt het. De optie verschijnt alleen wanneer automatisch loggen beschikbaar is voor het gesprek. Tijdens een pauze blijft ze zichtbaar maar uitgeschakeld, zodat u een gepauzeerde koppeling kunt onderscheiden van een koppeling die nooit is gemaakt.</p>
+                    <h3><span>Automatisch vastleggen in- of uitschakelen</span> <span class="feature-badge badge-plus">Plus</span></h3>
+                    <p>Auto-vastleggen inschakelen koppelt het huidige gesprek aan dat record; Auto-vastleggen uitschakelen ontkoppelt het. De optie verschijnt alleen wanneer automatisch vastleggen beschikbaar is voor het gesprek. Tijdens een pauze blijft ze zichtbaar maar uitgeschakeld, zodat u een gepauzeerde koppeling kunt onderscheiden van een koppeling die nooit is gemaakt.</p>
 
                     <h3>Het menu sluiten</h3>
                     <p>Opties die niet op een rij van toepassing zijn, worden weggelaten in plaats van grijs weergegeven — het menu toont dus alleen wat u echt kunt doen. Klik buiten het menu of druk op Esc om het te sluiten zonder iets te activeren.</p>
@@ -428,82 +428,83 @@
 
                 <!-- Auto-logging Section -->
                 <section id="autolog" class="guide-section">
-                    <h2><span class="material-symbols-outlined">sync</span> <span>Auto-logging</span> <span class="feature-badge badge-plus">Plus</span></h2>
-                    <p>Auto-logging links a Gmail thread to one or more Odoo records so that every new email in that thread is logged into the record's chatter automatically — no need to click the envelope icon for each reply.</p>
+                    <h2><span class="material-symbols-outlined">sync</span> <span>Automatisch vastleggen</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>Automatisch vastleggen koppelt een Gmail-conversatie aan een of meer Odoo-records, zodat elke nieuwe e-mail in die conversatie vanzelf in de chatter van het record wordt vastgelegd — zonder bij elk antwoord op het envelopicoontje te klikken.</p>
 
                     <div class="info-box">
-                        <strong>Private Beta:</strong> <span>Auto-logging is currently in private beta. It will be available to all PLUS subscribers soon. To request early access, contact support.</span>
+                        <strong>Privébèta:</strong> <span>Automatisch vastleggen is in privébèta. Binnenkort is het beschikbaar voor alle PLUS-abonnees. Wilt u het eerder proberen, schrijf ons dan via Feedback sturen in het menu van het paneel.</span>
                     </div>
 
-                    <h3>Requirements</h3>
+                    <h3>Vereisten</h3>
                     <ul>
-                        <li>PLUS plan (and beta access during private beta)</li>
-                        <li>Gmail API connection (granted from Settings > Auto-logging > Connect)</li>
-                        <li>Auto-logging toggle enabled in Settings > Auto-logging</li>
+                        <li>PLUS-abonnement (en toegang tot de bèta tijdens de privébèta)</li>
+                        <li>Een API-sleutel, toegevoegd bij Instellingen → Verbinding. Automatisch vastleggen werkt op de achtergrond, ook met Gmail dicht, en kan dus uw browsersessie niet gebruiken</li>
+                        <li>De schakelaar "Automatisch vastleggen inschakelen" aan, bij Instellingen → E-mails vastleggen</li>
+                        <li>Gmail verbonden: klik op Gmail verbinden bij Instellingen → E-mails vastleggen</li>
                     </ul>
 
-                    <h3>How to Activate Auto-logging on a Thread</h3>
+                    <h3>Automatisch vastleggen inschakelen voor een conversatie</h3>
                     <ol class="steps-list">
-                        <li>Open the email thread in Gmail and view the contact in the sidebar</li>
-                        <li>Find the record you want to track (opportunity, task, ticket, or contact)</li>
-                        <li>For an opportunity, task or ticket, open the row's ⋮ menu and choose Activate auto-log. For the contact itself, use the auto-log button on the contact card. A confirmation toast appears and a green icon stays in the row while auto-log is active</li>
-                        <li>From now on, every new email in this thread is logged automatically into the chatter of that record</li>
+                        <li>Open de conversatie in Gmail en bekijk het contact in de zijbalk</li>
+                        <li>Zoek het record dat u wilt volgen (een kans, taak, ticket, order of het contact zelf)</li>
+                        <li>Bij een record uit de lijsten opent u het ⋮-menu en kiest u Auto-vastleggen inschakelen. Voor het contact zelf gebruikt u de knop voor automatisch vastleggen naast E-mail vastleggen. Een melding bevestigt het, en een synchronisatie-icoon blijft naast de naam van het record staan zolang automatisch vastleggen aan staat</li>
+                        <li>Vanaf dan wordt elke nieuwe e-mail in deze conversatie automatisch in de chatter van dat record vastgelegd</li>
                     </ol>
                     <div class="info-box warning">
-                        <strong>Only future emails:</strong> <span>Auto-logging is purely forward-looking. Emails that already existed in the thread before activation are NOT logged retroactively. To log older emails, use the manual envelope button as usual.</span>
+                        <strong>Alleen toekomstige e-mails:</strong> <span>Automatisch vastleggen kijkt alleen vooruit. E-mails die al in de conversatie stonden voordat u het inschakelde, worden NIET achteraf vastgelegd. Voor oudere e-mails gebruikt u zoals altijd het envelopicoontje.</span>
                     </div>
 
-                    <h3>What Gets Logged</h3>
-                    <p>Each new email is added as an internal note in the record's chatter, with:</p>
+                    <h3>Wat wordt vastgelegd</h3>
+                    <p>Elke nieuwe e-mail wordt als interne notitie in de chatter van het record toegevoegd, met:</p>
                     <ul>
-                        <li>A Gmail-style header (From, To, Date, Subject)</li>
-                        <li>The email body without quoted history</li>
-                        <li>The original date of the email (not the time it was processed)</li>
-                        <li>Linked partners — recipients are matched in Odoo by email and attached to the message</li>
-                        <li>An "Auto-logged from Gmail" footer linking back to the extension</li>
+                        <li>Een kop zoals in Gmail (Van, Aan, Datum, Onderwerp)</li>
+                        <li>De tekst van de e-mail zonder geciteerde geschiedenis</li>
+                        <li>De oorspronkelijke datum van de e-mail (niet het moment van verwerken)</li>
+                        <li>Gekoppelde relaties — de ontvangers worden in Odoo op adres gezocht en aan het bericht gekoppeld</li>
+                        <li>Een voettekst "Auto-logged from Gmail" met een link naar de extensie</li>
                     </ul>
                     <div class="info-box">
-                        <strong>Logged as Internal Note:</strong> <span>Auto-logged emails are saved as internal notes (mt_note), not public messages. Only internal Odoo users can see them — portal users (customers) won't.</span>
+                        <strong>Vastgelegd als interne notitie:</strong> <span>Automatisch vastgelegde e-mails worden opgeslagen als interne notities (mt_note), niet als openbare berichten. Alleen interne Odoo-gebruikers zien ze — portaalgebruikers (klanten) niet.</span>
                     </div>
 
-                    <h3>Linking a Thread to Several Records</h3>
-                    <p>You can activate auto-logging for the same thread on multiple records (for example, an opportunity and a task related to the same conversation):</p>
+                    <h3>Een conversatie aan meerdere records koppelen</h3>
+                    <p>U kunt automatisch vastleggen voor dezelfde conversatie op meerdere records inschakelen (bijvoorbeeld een kans en een taak over hetzelfde gesprek):</p>
                     <ul>
-                        <li>1 thread → 1 record: standard case.</li>
-                        <li>1 thread → several records: every new email is logged on each linked record sequentially.</li>
-                        <li>The same record cannot be linked twice from the same thread — duplicates are rejected.</li>
+                        <li>1 conversatie → 1 record: het gewone geval.</li>
+                        <li>1 conversatie → meerdere records: elke nieuwe e-mail wordt op elk gekoppeld record vastgelegd, het ene na het andere.</li>
+                        <li>Hetzelfde record kan niet twee keer vanuit dezelfde conversatie worden gekoppeld — dubbele koppelingen worden geweigerd.</li>
                     </ul>
 
-                    <h3>Managing Active Auto-logs</h3>
-                    <h4>From the sidebar (per thread)</h4>
-                    <p>When the open thread has any active mappings, an "Auto-logging (N)" section appears at the top of the sidebar:</p>
+                    <h3>Automatisch vastleggen beheren</h3>
+                    <h4>Vanuit de zijbalk (per conversatie)</h4>
+                    <p>Wanneer de geopende conversatie bij minstens één record automatisch vastleggen aan heeft, verschijnt bovenaan de zijbalk een sectie "Automatisch vastleggen (N)":</p>
                     <ul>
-                        <li>Click the section to expand it and see every record linked to the current thread</li>
-                        <li>Click on a record's name to open it in Odoo</li>
-                        <li>Click the ✕ button to deactivate auto-logging for that specific record</li>
+                        <li>Klik op de sectie om haar uit te klappen en alle records te zien die aan de huidige conversatie gekoppeld zijn</li>
+                        <li>Klik op de naam van een record om het in Odoo te openen</li>
+                        <li>Klik op de knop ✕ om automatisch vastleggen voor dat ene record uit te schakelen</li>
                     </ul>
-                    <h4>From Settings (across all threads)</h4>
-                    <p>Open Settings > Auto-logging to manage every active mapping:</p>
+                    <h4>Vanuit Instellingen (alle conversaties)</h4>
+                    <p>Open Instellingen → E-mails vastleggen om alle conversaties met automatisch vastleggen te beheren:</p>
                     <ul>
-                        <li>Enable or disable auto-logging globally with a single toggle</li>
-                        <li>Connect or reconnect the Gmail API</li>
-                        <li>See the list of active mappings, the count, and the time of the last successful check</li>
-                        <li>Deactivate all mappings at once with the "Deactivate all" button</li>
+                        <li>Schakel automatisch vastleggen voor alle conversaties in of uit met één schakelaar</li>
+                        <li>Verbind Gmail, of verbind het opnieuw</li>
+                        <li>Bekijk de conversaties met automatisch vastleggen, hoeveel het er zijn en wanneer de laatste controle was</li>
+                        <li>Schakel ze allemaal tegelijk uit met "Alles deactiveren"</li>
                     </ul>
 
-                    <h3>Limits & Edge Cases</h3>
+                    <h3>Grenzen en bijzondere gevallen</h3>
                     <ul>
-                        <li><strong>Not retroactive</strong>: <span>Only emails that arrive after activation are logged. Existing emails must be logged manually.</span></li>
-                        <li><strong>Auto-cleanup after 90 days</strong>: <span>A mapping with no new email activity for 90 days is removed automatically. Activate it again to resume tracking.</span></li>
-                        <li><strong>Record deleted in Odoo</strong>: <span>If the linked record is deleted in Odoo, the mapping is removed automatically the next time the extension tries to log into it.</span></li>
-                        <li><strong>Gmail disconnected</strong>: <span>If the Gmail API connection expires or is revoked, auto-logging stops for all threads until you reconnect from Settings > Auto-logging.</span></li>
+                        <li><strong>Niet met terugwerkende kracht</strong>: <span>Alleen e-mails die binnenkomen nadat u het inschakelt, worden vastgelegd. Bestaande e-mails legt u met de hand vast.</span></li>
+                        <li><strong>Automatisch opruimen na 90 dagen</strong>: <span>Een koppeling zonder nieuwe e-mail gedurende 90 dagen wordt automatisch verwijderd. Schakel haar opnieuw in om verder te gaan.</span></li>
+                        <li><strong>Record verwijderd in Odoo</strong>: <span>Als het gekoppelde record in Odoo wordt verwijderd, verdwijnt de koppeling automatisch zodra de extensie er de volgende keer iets in wil vastleggen.</span></li>
+                        <li><strong>Gmail niet verbonden</strong>: <span>Als de verbinding met Gmail verloopt of wordt ingetrokken, stopt automatisch vastleggen voor alle conversaties tot u opnieuw verbindt via Instellingen → E-mails vastleggen.</span></li>
                     </ul>
                 </section>
 
                 <!-- Related Contacts Section -->
                 <section id="related-contacts" class="guide-section">
                     <h2><span class="material-symbols-outlined">groups</span> <span>Werken met gerelateerde contacten</span> <span class="feature-badge badge-plus">Plus</span></h2>
-                    <p>De sectie Gerelateerde contacten in de zijbalk toont collega's van hetzelfde bedrijf als de afzender van de e-mail. Van daaruit kunt u snelle acties uitvoeren op elk contact zonder Gmail te verlaten.</p>
+                    <p>De sectie Gerelateerde contacten in de zijbalk toont collega's van hetzelfde bedrijf als de afzender van de e-mail. Van daaruit, of via het ⋮-menu van elk contact, kunt u snelle acties uitvoeren zonder Gmail te verlaten.</p>
 
                     <h3>Een contact in Odoo openen</h3>
                     <p>Klik ergens op de contactkaart — de avatar, de naam of de functie — om het record van dat contact te openen in Odoo in een nieuw tabblad.</p>
@@ -586,12 +587,12 @@
                         <li>Klik op een rij om de prijsopgave in Odoo te openen.</li>
                         <li>Klik op het envelop-icoon om de huidige e-mail in de chatter van die prijsopgave te loggen.</li>
                         <li>Klik op Aanmaken om een nieuwe prijsopgave voor het contact te starten en die in Odoo af te ronden.</li>
-                        <li>Open het ⋮-menu van de rij om een link naar de prijsopgave te kopiëren, en gebruik het zoekveld als de lijst lang wordt.</li>
+                        <li>Open het ⋮-menu van de rij om de prijsopgave in Odoo te openen of er een link naar te kopiëren, en gebruik het zoekveld als de lijst lang wordt.</li>
                     </ul>
                     <p>Wanneer u een prijsopgave bevestigt, verlaat die deze lijst en verhuist naar Bevestigde verkooporders, waar u de verdere correspondentie kunt blijven loggen.</p>
 
                     <div class="info-box">
-                        <span>Werkt u niet met prijsopgaven? Verberg de sectie via Instellingen → Personalisatie.</span>
+                        <span>Werkt u niet met prijsopgaven? Verberg de sectie via Instellingen → Paneel.</span>
                     </div>
                 </section>
 
@@ -619,13 +620,13 @@
                     <ul>
                         <li>Klik op een regel om de order in Odoo te openen.</li>
                         <li>Klik op het envelopicoon om de geopende e-mail in het gesprek van die order te loggen. Een order waarin de e-mail al staat, is gemarkeerd en laat geen tweede keer loggen toe.</li>
-                        <li>Open het ⋮-menu van de regel om een link naar de order te kopiëren of om automatisch loggen te activeren, zodat latere e-mails in het gesprek zonder uw tussenkomst op de order belanden.</li>
+                        <li>Open het ⋮-menu van de regel om een link naar de order te kopiëren of om automatisch vastleggen in te schakelen, zodat latere e-mails in het gesprek zonder uw tussenkomst op de order belanden.</li>
                         <li>Gebruik het zoekveld om een order op referentie te vinden. Zo bereikt u een oudere order die niet bij de meest recente staat.</li>
                     </ul>
                     <p>De sectie maakt geen orders aan: een order ontstaat door een prijsopgave in Odoo te bevestigen, niet door een e-mail te lezen.</p>
 
                     <div class="info-box">
-                        <span>Volgt u orders niet op vanuit uw mailbox? Verberg de sectie via Instellingen → Personalisatie.</span>
+                        <span>Volgt u orders niet op vanuit uw mailbox? Verberg de sectie via Instellingen → Paneel.</span>
                     </div>
                 </section>
 
@@ -671,14 +672,14 @@
                     <p>Een bedrag van nul wordt weggelaten in plaats van als nul getoond: de sectie noemt alleen wat echt een waarde heeft. Heeft niets een waarde en staat er niets open, dan verschijnt de sectie helemaal niet — het normale geval bij een contact zonder factuurhistorie.</p>
 
                     <div class="info-box">
-                        <span>Hebt u de cijfers niet nodig in uw mailbox? Verberg de sectie via Instellingen → Personalisatie.</span>
+                        <span>Hebt u de cijfers niet nodig in uw mailbox? Verberg de sectie via Instellingen → Paneel.</span>
                     </div>
                 </section>
 
                 <!-- Notification Organization Section -->
                 <section id="notifications" class="guide-section">
-                    <h2><span class="material-symbols-outlined">notifications</span> <span>Notificatie-organisatie</span> <span class="feature-badge badge-plus">Plus</span></h2>
-                    <p>Organiseer Odoo-notificatie-e-mails direct in uw Gmail-inbox. De extensie identificeert notificatie-e-mails van Odoo en voegt visuele badges toe zodat u direct kunt zien bij welke module ze horen en of u bent vermeld.</p>
+                    <h2><span class="material-symbols-outlined">notifications</span> <span>Odoo-meldingen</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>Organiseer Odoo-meldingen direct in uw Gmail-inbox. De extensie herkent meldingen van Odoo en geeft ze een label, zodat u direct ziet bij welke module ze horen en of u bent vermeld.</p>
 
                     <h3>Vereiste: E-mailnotificaties Inschakelen in Odoo</h3>
                     <p>Om deze functie te laten werken, moet uw Odoo-gebruiker geconfigureerd zijn om notificaties per e-mail te ontvangen (niet in de Odoo-inbox):</p>
@@ -694,41 +695,41 @@
                     <h3>Instellen</h3>
                     <ol class="steps-list">
                         <li><strong>Vind uw notificatie-e-mail in Odoo</strong><br><span>Controleer een recente Odoo-notificatie-e-mail in Gmail en bekijk het afzenderadres (bijv. notifications@uwbedrijf.com). U kunt ook uw Odoo-beheerder vragen naar het uitgaande notificatie-e-mailadres.</span></li>
-                        <li><strong>Open de extensie-instellingen</strong><br><span>Klik in de Gmail-zijbalk op de menuknop (drie verticale puntjes) en selecteer Instellingen.</span></li>
-                        <li><strong>Voer het notificatie-e-mailadres in</strong><br><span>Ga naar het tabblad Notificaties en plak het e-mailadres. De extensie begint direct met het identificeren van notificatie-e-mails.</span></li>
+                        <li><strong>Open de extensie-instellingen</strong><br><span>Klik in de kop van het paneel op de menuknop (drie verticale puntjes) en kies Instellingen.</span></li>
+                        <li><strong>Voer het notificatie-e-mailadres in</strong><br><span>Open de sectie Odoo-meldingen, plak het adres bij Afzender van de meldingen en klik op Opslaan. De extensie herkent de meldingen meteen.</span></li>
                     </ol>
                     <div class="info-box">
                         <strong>Tip:</strong> <span>Als u niet zeker weet welk e-mailadres Odoo gebruikt voor notificaties, controleer dan een recente notificatie-e-mail in Gmail en bekijk het afzenderadres.</span>
                     </div>
 
-                    <h3>Modulebadges</h3>
-                    <p>Kleurgecodeerde badges verschijnen naast notificatie-e-mails in uw inbox, en tonen welke Odoo-module de notificatie heeft gegenereerd:</p>
+                    <h3>Modulelabels</h3>
+                    <p>Naast elke melding in uw inbox toont een label welke Odoo-module haar stuurde, elke module in een eigen kleur:</p>
                     <ul>
-                        <li>Kans (CRM) — paarse badge</li>
-                        <li>Taak (Project) — blauwe badge</li>
-                        <li>Ticket (Helpdesk) — oranje badge</li>
-                        <li>Factuur (Facturatie) — groene badge</li>
-                        <li>En meer: Inkoop, Mailing, Urenstaat, etc.</li>
+                        <li>Kans (CRM)</li>
+                        <li>Taak (Project)</li>
+                        <li>Ticket (Helpdesk)</li>
+                        <li>Factuur (Facturatie)</li>
+                        <li>En meer: Order, Inkoop, Verlof, Afspraak, Mailing…</li>
                     </ul>
 
-                    <h3>Vermeldingsbadges</h3>
-                    <p>Wanneer iemand u vermeldt in een Odoo-record (met @ of bij naam), verschijnt een speciale badge op de notificatie-e-mail:</p>
+                    <h3>Vermeldingslabel</h3>
+                    <p>Wanneer iemand u vermeldt in een Odoo-record (met @ of bij naam), krijgt de melding het label Vermelding:</p>
                     <ul>
-                        <li><strong>Rode "Vermeld"-badge</strong>: <span>U heeft een ongelezen vermelding — u heeft deze thread in Gmail niet geopend sinds de vermelding</span></li>
-                        <li><strong>Grijze "Vermeld"-badge</strong>: <span>U heeft deze vermelding al gezien — u heeft de thread in Gmail geopend na de vermelding</span></li>
+                        <li><strong>Rood label Vermelding</strong>: <span>U heeft een ongelezen vermelding — u heeft deze thread in Gmail niet geopend sinds de vermelding</span></li>
+                        <li><strong>Grijs label Vermelding</strong>: <span>U heeft deze vermelding al gezien — u heeft de thread in Gmail geopend na de vermelding</span></li>
                     </ul>
                     <div class="info-box">
                         <strong>Hoe het werkt:</strong> <span>Vermeldingsdetectie is gebaseerd op de berichten die zijn opgeslagen in het Odoo-record, niet op de e-mail zelf. De extensie controleert de chatter van het record op @vermeldingen of verwijzingen naar uw naam. Dit betekent:</span>
                         <ul style="margin-top: 0.5rem;">
-                            <li>Als u onlangs bent overgeschakeld van "Beheer in Odoo" naar "Beheer via e-mails", kunnen oudere threads een "Vermeld"-badge tonen voor vermeldingen die plaatsvonden voordat u e-mails begon te ontvangen — ook al verschijnt de vermelding niet in een Gmail-e-mail.</li>
-                            <li>De gelezen/ongelezen status wordt bepaald door of u de thread in Gmail heeft geopend na de vermelding. Zodra u de thread opent, wordt de badge grijs.</li>
+                            <li>Als u onlangs bent overgeschakeld van "Beheer in Odoo" naar "Beheer via e-mails", kunnen oudere conversaties het label Vermelding tonen voor vermeldingen van voordat u e-mails begon te ontvangen — ook al staat de vermelding in geen enkele Gmail-e-mail.</li>
+                            <li>De status gelezen/ongelezen hangt af van of u de conversatie in Gmail hebt geopend na de vermelding. Zodra u haar opent, wordt het label grijs.</li>
                         </ul>
                     </div>
 
                     <h3>Snelle Toegang</h3>
-                    <p>Een "Odoo Notifications"-snelkoppeling verschijnt in de linker zijbalk van Gmail, onder uw labels. Klik erop om uw inbox direct te filteren en alleen Odoo-notificatie-e-mails te tonen.</p>
+                    <p>In de linkerzijbalk van Gmail, onder uw labels, verschijnt de snelkoppeling "Odoo-meldingen". Klik erop om uw inbox te filteren en alleen Odoo-meldingen te tonen.</p>
                     <div class="info-box">
-                        <strong>Opmerking:</strong> <span>De snelkoppeling verschijnt pas na het configureren van een notificatie-e-mail in Instellingen > Notificaties.</span>
+                        <strong>Opmerking:</strong> <span>De snelkoppeling verschijnt pas nadat u de afzender van de meldingen hebt ingesteld bij Instellingen → Odoo-meldingen.</span>
                     </div>
 
                     <h3>Navigeren per module</h3>
@@ -737,11 +738,11 @@
                     <p>Er verschijnen alleen categorieën van de modules waarvan u daadwerkelijk meldingen ontvangt.</p>
 
                     <h3>Aanpassing</h3>
-                    <p>Elke notificatiefunctie kan onafhankelijk worden in-/uitgeschakeld in Instellingen > Notificaties:</p>
+                    <p>Elk onderdeel kunt u in- of uitschakelen bij Instellingen → Odoo-meldingen:</p>
                     <ul>
-                        <li>Modulebadges — kleurgecodeerde modulebadges tonen/verbergen</li>
-                        <li>Vermeldingsbadges — vermeldingsdetectiebadges tonen/verbergen</li>
-                        <li>Zijbalk-snelkoppeling — Odoo Notifications-link in de Gmail-zijbalk tonen/verbergen</li>
+                        <li>Modulelabel — de modulelabels tonen of verbergen</li>
+                        <li>Vermeldingslabel — de vermeldingslabels tonen of verbergen</li>
+                        <li>Snelkoppeling in de zijbalk van Gmail — "Odoo-meldingen" in de zijbalk van Gmail tonen of verbergen</li>
                     </ul>
                 </section>
 
@@ -757,11 +758,11 @@
                     </ul>
 
                     <h3>De bedrijfskiezer</h3>
-                    <p>Wanneer u toegang heeft tot meer dan één bedrijf, verschijnt een gebouwpictogram in de koptekst van de zijbalk, naast de instellingenknop (⚙):</p>
+                    <p>Wanneer u toegang hebt tot meer dan één bedrijf, verschijnt een gebouwpictogram in de kop van het paneel, naast de menuknop (⋮):</p>
                     <ul>
                         <li>Beweeg over het pictogram om de naam van het actieve bedrijf te zien ("Operating in {bedrijf}")</li>
-                        <li>Klik op het pictogram om een lijst te openen met alle bedrijven waartoe u toegang heeft</li>
-                        <li>Kies een bedrijf met de keuzerondjes. De lijst sluit en de zijbalk ververst met gegevens van het nieuwe bedrijf</li>
+                        <li>Klik op het pictogram om een menu te openen met alle bedrijven waartoe u toegang hebt. Het actieve bedrijf is gemarkeerd</li>
+                        <li>Kies een bedrijf. Het menu sluit en de zijbalk ververst met gegevens van het nieuwe bedrijf</li>
                         <li>Als u maar tot één bedrijf toegang heeft, wordt het pictogram niet getoond</li>
                     </ul>
                     <div class="info-box">
@@ -773,7 +774,7 @@
                     <ul>
                         <li><strong>Records die u ziet</strong>: <span>Verkoopkansen, taken, tickets en contacten in de zijbalk worden gefilterd op wat zichtbaar is in het actieve bedrijf</span></li>
                         <li><strong>Records die u aanmaakt</strong>: <span>Nieuwe leads, taken, tickets en contacten die u vanuit de zijbalk aanmaakt, worden toegewezen aan het actieve bedrijf</span></li>
-                        <li><strong>Automatisch gelogde e-mails</strong>: <span>E-mails die door automatisch loggen worden verwerkt, worden geplaatst in het bedrijf waartoe het gekoppelde record behoort (zie de opmerking over automatisch loggen hieronder)</span></li>
+                        <li><strong>Automatisch vastgelegde e-mails</strong>: <span>E-mails die automatisch worden vastgelegd, komen in het bedrijf waartoe het gekoppelde record behoort (zie "Automatisch vastleggen over bedrijven heen" hieronder)</span></li>
                     </ul>
 
                     <h3>Contacten zoeken over bedrijven heen</h3>
@@ -794,8 +795,8 @@
                         <strong>Belangrijk:</strong> <span>Het delen van een contact of bedrijf met al uw bedrijven verandert de zichtbaarheid ervan voor elke gebruiker met toegang tot die bedrijven. De extensie vraagt om bevestiging voor het opslaan.</span>
                     </div>
 
-                    <h3>Automatisch loggen over bedrijven heen</h3>
-                    <p>Wanneer u automatisch loggen activeert op een record, onthoudt de extensie tot welk bedrijf dat record behoort. Nieuwe e-mails in die conversatie worden altijd in het juiste bedrijf gelogd, ook als u daarna het actieve bedrijf in de zijbalk heeft gewisseld.</p>
+                    <h3>Automatisch vastleggen over bedrijven heen</h3>
+                    <p>Wanneer u automatisch vastleggen inschakelt voor een record, onthoudt de extensie tot welk bedrijf dat record behoort. Nieuwe e-mails in die conversatie worden altijd in het juiste bedrijf vastgelegd, ook als u daarna het actieve bedrijf in de zijbalk hebt gewisseld.</p>
 
                     <h3>Gedrag in het GRATIS-plan</h3>
                     <p>Als u in het GRATIS-plan toegang heeft tot meerdere bedrijven, gebruikt de extensie voor elke bewerking uw standaardbedrijf in Odoo. Het kiezerpictogram verschijnt niet en zoeken over bedrijven heen wordt niet aangeboden. Upgraden naar PLUS ontgrendelt beide.</p>
@@ -820,7 +821,7 @@
                     </ol>
                     <h3>"Contact Niet Gevonden" Bericht</h3>
                     <ul>
-                        <li><strong>E-mail niet in Odoo</strong>: <span>Klik op "Contact Aanmaken" om deze toe te voegen</span></li>
+                        <li><strong>E-mail niet in Odoo</strong>: <span>Klik op "Opslaan in Odoo" om het toe te voegen</span></li>
                         <li><strong>Het adres is anders geschreven</strong>: <span>Hoofdletters zijn niet het probleem: een adres dat in Odoo staat als John@Acme.com komt wel degelijk overeen met john@acme.com. Wat de match breekt is een echt ander adres — een alias, een punt te veel of een ander domein. Werk het e-mailadres in Odoo bij, of maak een nieuw contact aan.</span></li>
                     </ul>
                     <h3>Een sectie verschijnt niet</h3>
@@ -828,7 +829,7 @@
                     <ol>
                         <li><strong>De module is niet geïnstalleerd</strong>: <span>Verkoopkansen vereist CRM, Taken vereist Project, Tickets vereist Helpdesk (Enterprise), Prijsopgaven vereist Verkoop en Financieel inzicht vereist Boekhouding.</span></li>
                         <li><strong>Uw Odoo-gebruiker heeft geen rechten</strong>: <span>De extensie verbergt een sectie wanneer uw gebruiker dat type record niet mag aanmaken — alleen-lezen toegang is niet genoeg. Vraag uw Odoo-beheerder om het recht.</span></li>
-                        <li><strong>U hebt hem uitgezet</strong>: <span>Kijk bij Instellingen → Personalisatie: een sectie die daar verborgen is, blijft bij elke e-mail verborgen.</span></li>
+                        <li><strong>U hebt hem uitgezet</strong>: <span>Kijk bij Instellingen → Paneel: een sectie die daar verborgen is, blijft bij elke e-mail verborgen.</span></li>
                     </ol>
                     <h3>De zijbalk is leeg of er laadt niets na het verbinden</h3>
                     <p>Dit ligt bijna altijd aan de inlogsessie, niet aan een API-sleutel. Controleer, in volgorde:</p>
@@ -841,7 +842,7 @@
                     <h3>“Sessie verlopen” of u wordt gevraagd opnieuw te verbinden</h3>
                     <p>Uw Odoo-sessie is verlopen. Open gewoon Odoo, log opnieuw in en de extensie verbindt opnieuw — verder niets te beheren.</p>
                     <div class="info-box">
-                        <span>Een optionele API-sleutel kan als terugval worden toegevoegd, zodat achtergrondfuncties blijven werken als de sessie verloopt: Instellingen → Account → Verbinding.</span>
+                        <span>Een optionele API-sleutel kan als reserve worden toegevoegd, zodat achtergrondfuncties blijven werken als de sessie verloopt: Instellingen → Verbinding.</span>
                     </div>
                     <h3>Machtigingspopup verschijnt niet (Self-Hosted Odoo)</h3>
                     <p>Bij het verbinden met een zelf-gehoste Odoo-instantie (aangepaste URL) heeft Chrome extra machtigingen nodig. Als de machtigingspopup niet verschijnt:</p>
@@ -869,7 +870,7 @@
                     </div>
                     <div class="faq-item">
                         <h4>V: Heb ik een API-sleutel nodig?</h4>
-                        <p>Nee. Alleen uw Odoo-URL en een actieve Odoo-sessie in dezelfde browser. Een API-sleutel is optioneel — alleen voor automatisch loggen op de achtergrond (PLUS) of als terugval als uw sessie verloopt.</p>
+                        <p>Nee. Alleen uw Odoo-URL en een actieve Odoo-sessie in dezelfde browser. Een API-sleutel is optioneel — alleen voor automatisch vastleggen (PLUS) of als reserve als uw sessie verloopt.</p>
                     </div>
                     <div class="faq-item">
                         <h4>V: Zijn mijn gegevens veilig?</h4>
@@ -878,7 +879,7 @@
                     <h3>Abonnement</h3>
                     <div class="faq-item">
                         <h4>V: Wat is het verschil tussen GRATIS en PLUS?</h4>
-                        <p>GRATIS bevat basisfuncties (contacten bekijken, e-mail loggen, beperkte records). PLUS voegt geavanceerd zoeken, financiële inzichten, gerelateerde contacten, organisatie van notificatie-e-mails en aanpassingsopties toe.</p>
+                        <p>GRATIS bevat contacten bekijken, e-mails vastleggen, records aanmaken en de eerste 5 records van elke sectie. PLUS voegt alle records toe met zoeken en groeperen, prijsopgaven en orders, Berichten in Odoo, financiële informatie, gerelateerde contacten, Odoo-meldingen, meerdere bedrijven en personalisatie.</p>
                     </div>
                     <div class="faq-item">
                         <h4>V: Kan ik mijn PLUS abonnement op elk moment opzeggen?</h4>

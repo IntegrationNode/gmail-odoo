@@ -229,7 +229,7 @@
                         <li><a href="#subscription"><span class="material-symbols-outlined">credit_card</span> <span>Subscription</span></a></li>
                         <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span>Email Logging</span></a></li>
                         <li><a href="#record-menu"><span class="material-symbols-outlined">more_vert</span> <span>Record actions</span></a></li>
-                        <li><a href="#autolog"><span class="material-symbols-outlined">sync</span> <span>Auto-logging</span></a></li>
+                        <li><a href="#autolog"><span class="material-symbols-outlined">sync</span> <span>Automatic logging</span></a></li>
                         <li><a href="#related-contacts"><span class="material-symbols-outlined">groups</span> <span>Related contacts</span></a></li>
                         <li><a href="#recent-activities"><span class="material-symbols-outlined">history</span> <span>Messages in Odoo</span></a></li>
                         <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span>Opportunities</span></a></li>
@@ -237,7 +237,7 @@
                         <li><a href="#sales-orders"><span class="material-symbols-outlined">receipt_long</span> <span>Sales orders</span></a></li>
                         <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span>Tasks & Tickets</span></a></li>
                         <li><a href="#financial"><span class="material-symbols-outlined">account_balance</span> <span>Financial insights</span></a></li>
-                        <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Notifications</span></a></li>
+                        <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span>Odoo notifications</span></a></li>
                         <li><a href="#multi-company"><span class="material-symbols-outlined">business</span> <span>Multi-Company</span></a></li>
                         <li><a href="#troubleshooting"><span class="material-symbols-outlined">help</span> <span>Troubleshooting</span></a></li>
                         <li><a href="#faq"><span class="material-symbols-outlined">quiz</span> <span>FAQ</span></a></li>
@@ -251,7 +251,7 @@
                     <ol>
                         <li>Install the extension and open Gmail.</li>
                         <li>Sign in to your Odoo in the same Chrome browser — the extension uses your active session.</li>
-                        <li>Enter your Odoo URL (e.g. https://yourcompany.odoo.com — HTTPS, no trailing slash) and click Connect.</li>
+                        <li>Enter your Odoo URL (e.g. https://yourcompany.odoo.com — HTTPS, no trailing slash) and click Connect to Odoo. On odoo.com you can also click Autodetect Odoo to find it in an open tab.</li>
                     </ol>
                     <span>Open any email and your Odoo contact appears in the sidebar. That's it — no API key, no code.</span>
                 </div>
@@ -284,22 +284,22 @@
                         <li><strong>Open Gmail</strong><br><span>Navigate to mail.google.com and open any email to view the sidebar.</span></li>
                         <li><strong>Sign in to Odoo</strong><br><span>Make sure you're logged in to your Odoo instance in the same browser — the extension connects using your active session.</span></li>
                         <li><strong>Enter your Odoo URL</strong><br><span>Enter your Odoo instance URL (e.g., https://yourcompany.odoo.com). Use HTTPS and don't include a trailing slash.</span></li>
-                        <li><strong>Connect</strong><br><span>Click Connect and the extension verifies your active session. An API key is optional — only needed for background auto-logging, or as a fallback if your session expires.</span></li>
+                        <li><strong>Connect</strong><br><span>Click Connect to Odoo and the extension checks your active session. An API key is optional — automatic logging needs one, and it also works as a backup if your session expires.</span></li>
                     </ol>
                     <div class="warning-box" style="background: #e8f4f8; border-color: #0288d1;">
                         <span class="material-symbols-outlined" style="color: #0288d1;">info</span>
                         <span><span>Adding an API key is optional. If you add one, the steps to create it vary between Odoo versions.</span> <a href="blog/odoo-api-key-setup.html">See the detailed guide for your version →</a></span>
                     </div>
                     <h3>Updating Configuration</h3>
-                    <p>To change your Odoo URL, log out and reconnect:</p>
+                    <p>To connect the extension to a different Odoo:</p>
                     <ol>
-                        <li>Click the menu button (three vertical dots ⋮) in the sidebar</li>
-                        <li>Select Log out</li>
-                        <li>Enter your new details</li>
+                        <li>Click the menu button (three vertical dots ⋮) in the panel header and choose Settings</li>
+                        <li>Open Connection and click Change Odoo</li>
+                        <li>Enter the new address and connect</li>
                     </ol>
-                    <p>To add or update your API key later, open Settings → Account → Connection — no need to log out.</p>
+                    <p>To add or change your API key later, open Settings → Connection. Log out is there too, at the bottom of the section.</p>
                     <h3>Choosing When the Sidebar Opens</h3>
-                    <p>By default the Odoo panel opens on its own every time you open an email. To open it only when you need it, turn off “Open sidebar automatically” in Settings → Account → Preferences. The panel then stays closed until you click the Odoo icon in Gmail's right sidebar. The change applies immediately, with no need to reload Gmail.</p>
+                    <p>By default the Odoo panel opens on its own every time you open an email. To open it only when you need it, turn off “Open the panel when you open an email” in Settings → General. The panel then stays closed until you click the Odoo icon in Gmail's right sidebar. The change applies immediately, with no need to reload Gmail.</p>
                 </section>
 
                 <!-- Features Overview Section -->
@@ -313,12 +313,12 @@
                         <li><strong>Record Creation</strong>: <span>Create leads, partners, tasks, and tickets</span></li>
                         <li><strong>Limited Record Viewing</strong>: <span>View first 5 opportunities, tasks, and tickets</span></li>
                         <li><strong>Refresh</strong>: <span>Manually refresh contact data</span></li>
-                        <li><strong>Load Time Indicator</strong>: <span>See how fast the sidebar loaded</span></li>
+                        <li><strong>Undo</strong>: <span>Logged an email to the wrong record? Click Undo in the notice that confirms it</span></li>
                     </ul>
                     <h3><span>PLUS Plan</span> <span class="feature-badge badge-plus">Plus</span></h3>
                     <p>Everything in FREE, plus:</p>
                     <ul>
-                        <li><strong>Advanced Search</strong>: <span>Search across all opportunities, tasks, and tickets (up to 50 results)</span></li>
+                        <li><strong>Advanced Search</strong>: <span>Every record in each section, page by page, with search across opportunities, tasks and tickets (FREE shows the first 5)</span></li>
                         <li><strong>Contact/Company Tabs</strong>: <span>Switch between contact and company information</span></li>
                         <li><strong>Related Contacts</strong>: <span>Find colleagues from the same company</span></li>
                         <li><strong>Financial Insights</strong>: <span>View invoicing, receivables, and payables</span></li>
@@ -327,8 +327,8 @@
                         <li><strong>Record Grouping</strong>: <span>Group opportunities, tasks, and tickets by stage or status</span></li>
                         <li><strong>Email Participants</strong>: <span>View Odoo contact information for all email participants</span></li>
                         <li><strong>Messages in Odoo</strong>: <span>See recent messages from Odoo's conversations for each contact</span></li>
-                        <li><strong>Notification Organization</strong>: <span>Identify and organize Odoo notification emails with module badges, mention detection, and quick-access filtering</span></li>
-                        <li><strong>Auto-logging</strong>: <span>Link a Gmail thread to one or more Odoo records and have every new email logged automatically into their chatter (currently in private beta)</span></li>
+                        <li><strong>Odoo notifications</strong>: <span>Spot Odoo notification emails in your inbox with a label for each module, see where you were mentioned, and open them all from one shortcut</span></li>
+                        <li><strong>Automatic logging</strong>: <span>Link a Gmail thread to one or more Odoo records and have every new email logged automatically into their chatter (currently in private beta)</span></li>
                         <li><strong>Multi-Company Support</strong>: <span>Switch between the companies you have access to in Odoo, with cross-company contact lookup when an email matches a partner that lives in a different company</span></li>
                         <li><strong>Pending quotations</strong>: <span>See the contact's draft and sent quotations in the sidebar, with the amount and how long each one has been waiting for an answer</span></li>
                         <li><strong>Confirmed orders</strong>: <span>See the sales orders already confirmed for the contact, with the reference, total and date, and log emails about delivery or invoicing to the right order</span></li>
@@ -341,7 +341,7 @@
 
                     <h3>How to Subscribe to PLUS</h3>
                     <ol class="steps-list">
-                        <li>Click "Upgrade to PLUS" from the sidebar menu (three dots in the header)</li>
+                        <li>Click “Try Plus for 14 days” in the panel's menu (three dots in the header), or in Settings → Plan</li>
                         <li>Complete the checkout process at Polar</li>
                         <li>Receive your license key via email</li>
                     </ol>
@@ -350,16 +350,16 @@
                     <p>Enter your license key in one of these ways:</p>
                     <ul>
                         <li>A modal will appear right after checkout - enter your license there</li>
-                        <li>Go to Settings > Account > Activate License</li>
-                        <li>Click "Upgrade to PLUS" again and select "I already have a license"</li>
+                        <li>Go to Settings → Plan and click “I already have a license”</li>
+                        <li>In the Plus window that opens from “Try Plus for 14 days”, click “I already have a license”</li>
                     </ul>
 
                     <div class="info-box">
-                        <strong>License Information:</strong> <span>Your license works on up to 3 instances (different computers or browsers). It must be used with the same Gmail account used for purchase.</span>
+                        <strong>License Information:</strong> <span>Your license works on up to 3 instances (different computers or browsers). It must be used with the same Gmail account used for purchase. To free a computer, click “Deactivate here” in Settings → Plan.</span>
                     </div>
 
                     <div class="info-box">
-                        <strong>Free Trial:</strong> <span>PLUS includes a 14-day free trial. You won't be charged until the trial period ends. Cancel anytime before to avoid charges.</span>
+                        <strong>Free Trial:</strong> <span>PLUS includes a 14-day free trial. The trial asks for a card, but you won't be charged until it ends. Cancel anytime before to avoid charges.</span>
                     </div>
 
                     <div class="info-box">
@@ -369,7 +369,7 @@
                     <h3>How to Cancel Your Subscription</h3>
                     <p>You can cancel your PLUS subscription at any time:</p>
                     <ol class="steps-list">
-                        <li>Go to the Polar customer portal (link in your purchase email)</li>
+                        <li>In Settings → Plan, click “Manage subscription” to open the Polar customer portal (the link is also in your purchase email)</li>
                         <li>Log in with the email used for your subscription</li>
                         <li>Click "Cancel Subscription" in your subscription details</li>
                     </ol>
@@ -383,9 +383,9 @@
                     <ol class="steps-list">
                         <li>Open the email you want to log</li>
                         <li>View the contact in the sidebar</li>
-                        <li>Find the record you want to log to (opportunity, task, or ticket)</li>
-                        <li>Click the envelope icon next to the record</li>
-                        <li>The button changes to a green checkmark when logged</li>
+                        <li>To log it on the contact, click Log email under their name</li>
+                        <li>To log it on an opportunity, task, ticket, quotation or sales order, click the envelope icon on its row</li>
+                        <li>A notice confirms where it was logged, with Undo in case you picked the wrong record. The envelope then shows a check mark</li>
                     </ol>
                     <h3>What Gets Logged</h3>
                     <ul>
@@ -394,7 +394,7 @@
                         <li>Sender/recipient information</li>
                         <li>Date and time</li>
                         <li>All attachments (files, images, PDFs)</li>
-                        <li>"Logged from Gmail Inbox" footer</li>
+                        <li>“Logged from Gmail in 1-click” footer</li>
                     </ul>
                     <div class="info-box">
                         <strong>Logged as Internal Note:</strong> <span>Emails are logged as internal notes in Odoo's chatter. This means only internal users (employees) can see them. Portal users (customers) will NOT see logged emails. Notifications are only sent to internal followers of the record.</span>
@@ -414,13 +414,13 @@
                 <!-- Record Actions Menu Section -->
                 <section id="record-menu" class="guide-section">
                     <h2><span class="material-symbols-outlined">more_vert</span> <span>Actions on a record</span></h2>
-                    <p>Every opportunity, task, ticket and quotation row has its own actions menu. Move the pointer over the row and click the ⋮ button that appears on its right edge.</p>
+                    <p>Every opportunity, task, ticket, quotation, sales order and related contact has its own actions menu. Move the pointer over the row and click the ⋮ button that appears on its right edge. The menu always starts with Open in Odoo and Copy link.</p>
 
                     <h3>Copy a link to the record</h3>
                     <p>Copies a direct link to that record in Odoo, ready to paste into a reply or a chat. It points to the same record the row opens when you click it.</p>
 
-                    <h3><span>Turn auto-log on or off</span> <span class="feature-badge badge-plus">Plus</span></h3>
-                    <p>Links the current thread to that record, or unlinks it. The option only appears when auto-logging is available for the thread. While auto-logging is paused it is shown but disabled, so you can tell a paused mapping from one that was never set up.</p>
+                    <h3><span>Turn automatic logging on or off</span> <span class="feature-badge badge-plus">Plus</span></h3>
+                    <p>Turn on automatic logging links the current thread to that record; Turn off automatic logging unlinks it. The option only appears when automatic logging is available for the thread. While it is paused, it is shown but disabled, so you can tell a paused link from one that was never set up.</p>
 
                     <h3>Closing the menu</h3>
                     <p>Options that don't apply to a row are left out rather than greyed out, so the menu only ever shows what you can actually do. Click anywhere outside it, or press Escape, to close it without triggering anything.</p>
@@ -428,29 +428,30 @@
 
                 <!-- Auto-logging Section -->
                 <section id="autolog" class="guide-section">
-                    <h2><span class="material-symbols-outlined">sync</span> <span>Auto-logging</span> <span class="feature-badge badge-plus">Plus</span></h2>
-                    <p>Auto-logging links a Gmail thread to one or more Odoo records so that every new email in that thread is logged into the record's chatter automatically — no need to click the envelope icon for each reply.</p>
+                    <h2><span class="material-symbols-outlined">sync</span> <span>Automatic logging</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>Automatic logging links a Gmail thread to one or more Odoo records so that every new email in that thread is logged into the record's chatter on its own — no need to click the envelope icon for each reply.</p>
 
                     <div class="info-box">
-                        <strong>Private Beta:</strong> <span>Auto-logging is currently in private beta. It will be available to all PLUS subscribers soon. To request early access, contact support.</span>
+                        <strong>Private Beta:</strong> <span>Automatic logging is currently in private beta. It will be available to all PLUS subscribers soon. To request early access, write to us from Send feedback in the panel's menu.</span>
                     </div>
 
                     <h3>Requirements</h3>
                     <ul>
-                        <li>PLUS plan (and beta access during private beta)</li>
-                        <li>Gmail API connection (granted from Settings > Auto-logging > Connect)</li>
-                        <li>Auto-logging toggle enabled in Settings > Auto-logging</li>
+                        <li>PLUS plan (and beta access during the private beta)</li>
+                        <li>An API key, added in Settings → Connection. Automatic logging works in the background, even with Gmail closed, so it can't use your browser session</li>
+                        <li>The “Turn on automatic logging” switch on, in Settings → Email logging</li>
+                        <li>Gmail connected: click Connect Gmail in Settings → Email logging</li>
                     </ul>
 
-                    <h3>How to Activate Auto-logging on a Thread</h3>
+                    <h3>How to Turn On Automatic Logging in a Thread</h3>
                     <ol class="steps-list">
                         <li>Open the email thread in Gmail and view the contact in the sidebar</li>
-                        <li>Find the record you want to track (opportunity, task, ticket, or contact)</li>
-                        <li>For an opportunity, task or ticket, open the row's ⋮ menu and choose Activate auto-log. For the contact itself, use the auto-log button on the contact card. A confirmation toast appears and a green icon stays in the row while auto-log is active</li>
+                        <li>Find the record you want to follow (an opportunity, task, ticket, sales order, or the contact itself)</li>
+                        <li>For a record in one of the lists, open its ⋮ menu and choose Turn on automatic logging. For the contact itself, use the automatic logging button next to Log email. A notice confirms it, and a sync icon stays next to the record's name while automatic logging is on</li>
                         <li>From now on, every new email in this thread is logged automatically into the chatter of that record</li>
                     </ol>
                     <div class="info-box warning">
-                        <strong>Only future emails:</strong> <span>Auto-logging is purely forward-looking. Emails that already existed in the thread before activation are NOT logged retroactively. To log older emails, use the manual envelope button as usual.</span>
+                        <strong>Only future emails:</strong> <span>Automatic logging only looks forward. Emails that were already in the thread before you turned it on are NOT logged retroactively. To log older emails, use the envelope button as usual.</span>
                     </div>
 
                     <h3>What Gets Logged</h3>
@@ -463,47 +464,47 @@
                         <li>An "Auto-logged from Gmail" footer linking back to the extension</li>
                     </ul>
                     <div class="info-box">
-                        <strong>Logged as Internal Note:</strong> <span>Auto-logged emails are saved as internal notes (mt_note), not public messages. Only internal Odoo users can see them — portal users (customers) won't.</span>
+                        <strong>Logged as Internal Note:</strong> <span>Emails logged automatically are saved as internal notes (mt_note), not public messages. Only internal Odoo users can see them — portal users (customers) won't.</span>
                     </div>
 
                     <h3>Linking a Thread to Several Records</h3>
-                    <p>You can activate auto-logging for the same thread on multiple records (for example, an opportunity and a task related to the same conversation):</p>
+                    <p>You can turn on automatic logging for the same thread on several records (for example, an opportunity and a task about the same conversation):</p>
                     <ul>
-                        <li>1 thread → 1 record: standard case.</li>
-                        <li>1 thread → several records: every new email is logged on each linked record sequentially.</li>
+                        <li>1 thread → 1 record: the usual case.</li>
+                        <li>1 thread → several records: every new email is logged on each linked record, one after another.</li>
                         <li>The same record cannot be linked twice from the same thread — duplicates are rejected.</li>
                     </ul>
 
-                    <h3>Managing Active Auto-logs</h3>
+                    <h3>Managing Automatic Logging</h3>
                     <h4>From the sidebar (per thread)</h4>
-                    <p>When the open thread has any active mappings, an "Auto-logging (N)" section appears at the top of the sidebar:</p>
+                    <p>When the open thread has automatic logging on for any record, an “Automatic logging (N)” section appears at the top of the sidebar:</p>
                     <ul>
                         <li>Click the section to expand it and see every record linked to the current thread</li>
                         <li>Click on a record's name to open it in Odoo</li>
-                        <li>Click the ✕ button to deactivate auto-logging for that specific record</li>
+                        <li>Click the ✕ button to turn off automatic logging for that specific record</li>
                     </ul>
                     <h4>From Settings (across all threads)</h4>
-                    <p>Open Settings > Auto-logging to manage every active mapping:</p>
+                    <p>Open Settings → Email logging to manage every thread with automatic logging:</p>
                     <ul>
-                        <li>Enable or disable auto-logging globally with a single toggle</li>
-                        <li>Connect or reconnect the Gmail API</li>
-                        <li>See the list of active mappings, the count, and the time of the last successful check</li>
-                        <li>Deactivate all mappings at once with the "Deactivate all" button</li>
+                        <li>Turn automatic logging on or off for all threads with a single switch</li>
+                        <li>Connect Gmail, or reconnect it</li>
+                        <li>See the threads with automatic logging, how many there are, and when it last checked</li>
+                        <li>Turn them all off at once with “Deactivate all”</li>
                     </ul>
 
                     <h3>Limits & Edge Cases</h3>
                     <ul>
-                        <li><strong>Not retroactive</strong>: <span>Only emails that arrive after activation are logged. Existing emails must be logged manually.</span></li>
-                        <li><strong>Auto-cleanup after 90 days</strong>: <span>A mapping with no new email activity for 90 days is removed automatically. Activate it again to resume tracking.</span></li>
-                        <li><strong>Record deleted in Odoo</strong>: <span>If the linked record is deleted in Odoo, the mapping is removed automatically the next time the extension tries to log into it.</span></li>
-                        <li><strong>Gmail disconnected</strong>: <span>If the Gmail API connection expires or is revoked, auto-logging stops for all threads until you reconnect from Settings > Auto-logging.</span></li>
+                        <li><strong>Not retroactive</strong>: <span>Only emails that arrive after you turn it on are logged. Existing emails must be logged by hand.</span></li>
+                        <li><strong>Automatic cleanup after 90 days</strong>: <span>A link with no new email for 90 days is removed automatically. Turn it on again to resume.</span></li>
+                        <li><strong>Record deleted in Odoo</strong>: <span>If the linked record is deleted in Odoo, the link is removed automatically the next time the extension tries to log into it.</span></li>
+                        <li><strong>Gmail disconnected</strong>: <span>If the Gmail connection expires or is revoked, automatic logging stops for all threads until you reconnect from Settings → Email logging.</span></li>
                     </ul>
                 </section>
 
                 <!-- Related Contacts Section -->
                 <section id="related-contacts" class="guide-section">
                     <h2><span class="material-symbols-outlined">groups</span> <span>Working with related contacts</span> <span class="feature-badge badge-plus">Plus</span></h2>
-                    <p>The Related Contacts section in the sidebar lists colleagues from the same company as the email's sender. From there you can take quick actions on each contact without leaving Gmail.</p>
+                    <p>The Related Contacts section in the sidebar lists colleagues from the same company as the email's sender. From there, or from each contact's ⋮ menu, you can take quick actions on each contact without leaving Gmail.</p>
 
                     <h3>Open a contact in Odoo</h3>
                     <p>Click anywhere on the contact card — the avatar, the name, or the job title — to open that contact's record in Odoo in a new tab.</p>
@@ -586,12 +587,12 @@
                         <li>Click a row to open the quotation in Odoo.</li>
                         <li>Click the envelope icon to log the current email into that quotation's chatter.</li>
                         <li>Click Create to start a new quotation for the contact and finish it in Odoo.</li>
-                        <li>Open the row's ⋮ menu to copy a link to the quotation, and use the search box when the list gets long.</li>
+                        <li>Open the row's ⋮ menu to open the quotation in Odoo or copy a link to it, and use the search box when the list gets long.</li>
                     </ul>
                     <p>When you confirm a quotation it leaves this list and moves to Confirmed sales orders, where you can keep logging the correspondence that follows.</p>
 
                     <div class="info-box">
-                        <span>Don't work with quotations? Hide the section from Settings → Personalization.</span>
+                        <span>Don't work with quotations? Hide the section from Settings → Panel.</span>
                     </div>
                 </section>
 
@@ -619,13 +620,13 @@
                     <ul>
                         <li>Click a row to open the order in Odoo.</li>
                         <li>Click the envelope icon to log the current email into that order's conversation. An order the email is already logged into is marked as such, and can't be logged twice.</li>
-                        <li>Open the row's ⋮ menu to copy a link to the order, or to activate auto-log so later emails in the thread are filed on the order without you doing anything.</li>
+                        <li>Open the row's ⋮ menu to copy a link to the order, or to turn on automatic logging so later emails in the thread are filed on the order without you doing anything.</li>
                         <li>Use the search box to find an order by reference. It is the way to reach an older order that isn't among the most recent ones.</li>
                     </ul>
                     <p>The section doesn't create orders: an order comes from confirming a quotation in Odoo, not from reading an email.</p>
 
                     <div class="info-box">
-                        <span>Don't follow up on orders from your inbox? Hide the section from Settings → Personalization.</span>
+                        <span>Don't follow up on orders from your inbox? Hide the section from Settings → Panel.</span>
                     </div>
                 </section>
 
@@ -671,14 +672,14 @@
                     <p>A figure worth zero is left out instead of being shown as zero, so the section only lists what actually has a value. When nothing has a value and there is nothing overdue, the section stays out of the sidebar altogether — which is the normal case for a contact with no invoicing history.</p>
 
                     <div class="info-box">
-                        <span>Don't need the numbers in your inbox? Hide the section from Settings → Personalization.</span>
+                        <span>Don't need the numbers in your inbox? Hide the section from Settings → Panel.</span>
                     </div>
                 </section>
 
                 <!-- Notification Organization Section -->
                 <section id="notifications" class="guide-section">
-                    <h2><span class="material-symbols-outlined">notifications</span> <span>Notification Organization</span> <span class="feature-badge badge-plus">Plus</span></h2>
-                    <p>Organize Odoo notification emails directly in your Gmail inbox. The extension identifies notification emails from Odoo and adds visual badges so you can instantly see which module they belong to and whether you've been mentioned.</p>
+                    <h2><span class="material-symbols-outlined">notifications</span> <span>Odoo notifications</span> <span class="feature-badge badge-plus">Plus</span></h2>
+                    <p>Organize Odoo notification emails directly in your Gmail inbox. The extension recognizes notification emails from Odoo and labels them, so you can instantly see which module they belong to and whether you've been mentioned.</p>
 
                     <h3>Prerequisite: Enable Email Notifications in Odoo</h3>
                     <p>For this feature to work, your Odoo user must be configured to receive notifications by email (not in the Odoo inbox):</p>
@@ -694,54 +695,54 @@
                     <h3>Setup</h3>
                     <ol class="steps-list">
                         <li><strong>Find your notification email in Odoo</strong><br><span>Check a recent Odoo notification email in Gmail and look at the sender address (e.g., notifications@yourcompany.com). Alternatively, ask your Odoo administrator for the outgoing notification email.</span></li>
-                        <li><strong>Open extension Settings</strong><br><span>In the Gmail sidebar, click the menu button (three vertical dots) and select Settings.</span></li>
-                        <li><strong>Enter the notification email</strong><br><span>Go to the Notifications tab and paste the email address. The extension will start identifying notification emails immediately.</span></li>
+                        <li><strong>Open extension Settings</strong><br><span>In the panel header, click the menu button (three vertical dots) and choose Settings.</span></li>
+                        <li><strong>Enter the notification email</strong><br><span>Open the Odoo notifications section, paste the address into Notification sender and click Save. The extension starts recognizing notification emails right away.</span></li>
                     </ol>
                     <div class="info-box">
                         <strong>Tip:</strong> <span>If you're not sure which email Odoo uses for notifications, check a recent notification email in Gmail and look at the sender address.</span>
                     </div>
 
-                    <h3>Module Badges</h3>
-                    <p>Color-coded badges appear next to notification emails in your inbox, showing which Odoo module triggered the notification:</p>
+                    <h3>Module labels</h3>
+                    <p>A label next to each notification email in your inbox shows which Odoo module sent it, and each module has its own color:</p>
                     <ul>
-                        <li>Opportunity (CRM) — purple badge</li>
-                        <li>Task (Project) — blue badge</li>
-                        <li>Ticket (Helpdesk) — orange badge</li>
-                        <li>Invoice (Invoicing) — green badge</li>
-                        <li>And more: Purchase, Mailing, Timesheet, etc.</li>
+                        <li>Opportunity (CRM)</li>
+                        <li>Task (Project)</li>
+                        <li>Ticket (Helpdesk)</li>
+                        <li>Invoice (Invoicing)</li>
+                        <li>And more: Sales order, Purchase, Time off, Event, Mailing…</li>
                     </ul>
 
-                    <h3>Mention Badges</h3>
-                    <p>When someone mentions you in an Odoo record (using @ or by name), a special badge appears on the notification email:</p>
+                    <h3>Mention label</h3>
+                    <p>When someone mentions you in an Odoo record (using @ or by name), a Mention label appears on the notification email:</p>
                     <ul>
-                        <li><strong>Red "Mentioned" badge</strong>: <span>You have an unread mention — you haven't opened this email thread in Gmail since the mention</span></li>
-                        <li><strong>Gray "Mentioned" badge</strong>: <span>You've already seen this mention — you opened the thread in Gmail after being mentioned</span></li>
+                        <li><strong>Red Mention label</strong>: <span>You have an unread mention — you haven't opened this email thread in Gmail since the mention</span></li>
+                        <li><strong>Gray Mention label</strong>: <span>You've already seen this mention — you opened the thread in Gmail after being mentioned</span></li>
                     </ul>
                     <div class="info-box">
                         <strong>How it works:</strong> <span>Mention detection is based on the messages stored in the Odoo record, not the email itself. The extension checks the record's chatter for @mentions or references to your name. This means:</span>
                         <ul style="margin-top: 0.5rem;">
-                            <li>If you recently switched from "Handle in Odoo" to "Handle by Emails", older threads may show a "Mentioned" badge for mentions that happened before you started receiving emails — even though the mention won't appear in any Gmail email.</li>
-                            <li>The read/unread status is determined by whether you've opened the email thread in Gmail after being mentioned. Once you open the thread, the badge turns gray.</li>
+                            <li>If you recently switched from "Handle in Odoo" to "Handle by Emails", older threads may show a Mention label for mentions that happened before you started receiving emails — even though the mention won't appear in any Gmail email.</li>
+                            <li>The read/unread status is determined by whether you've opened the email thread in Gmail after being mentioned. Once you open the thread, the label turns gray.</li>
                         </ul>
                     </div>
 
                     <h3>Quick-Access Shortcut</h3>
-                    <p>An "Odoo Notifications" shortcut appears in Gmail's left sidebar, below your labels. Click it to instantly filter your inbox and show only Odoo notification emails.</p>
+                    <p>An “Odoo notifications” shortcut appears in Gmail's left sidebar, below your labels. Click it to filter your inbox and show only Odoo notification emails.</p>
                     <div class="info-box">
-                        <strong>Note:</strong> <span>The shortcut only appears after you configure a notification email in Settings > Notifications.</span>
+                        <strong>Note:</strong> <span>The shortcut only appears after you set the notification sender in Settings → Odoo notifications.</span>
                     </div>
 
                     <h3>Browse by module</h3>
-                    <p>The "Odoo Notifications" shortcut expands into sub-entries — Opportunities, Tasks, Tickets, Invoices and so on — each with its own unread count, so you can jump straight to the notifications of one module.</p>
+                    <p>The “Odoo notifications” shortcut expands into sub-entries — Opportunities, Tasks, Tickets, Invoices and so on — each with its own unread count, so you can jump straight to the notifications of one module.</p>
                     <p>Notifications coming from models outside that catalogue are grouped under a generic Odoo entry instead of being left out.</p>
                     <p>Categories only appear for the modules you actually receive notifications from.</p>
 
                     <h3>Customization</h3>
-                    <p>Each notification feature can be toggled independently in Settings > Notifications:</p>
+                    <p>Each part can be turned on or off in Settings → Odoo notifications:</p>
                     <ul>
-                        <li>Module badges — show/hide the color-coded module badges</li>
-                        <li>Mention badges — show/hide the mention detection badges</li>
-                        <li>Sidebar shortcut — show/hide the Odoo Notifications link in Gmail's sidebar</li>
+                        <li>Module label — show or hide the module labels</li>
+                        <li>Mention label — show or hide the mention labels</li>
+                        <li>Shortcut in the Gmail sidebar — show or hide “Odoo notifications” in Gmail's sidebar</li>
                     </ul>
                 </section>
 
@@ -757,11 +758,11 @@
                     </ul>
 
                     <h3>The Company Selector</h3>
-                    <p>When you have access to more than one company, a building icon appears in the sidebar header, next to the settings (⚙) button:</p>
+                    <p>When you have access to more than one company, a building icon appears in the panel header, next to the menu (⋮) button:</p>
                     <ul>
                         <li>Hover the icon to see the active company name ("Operating in {company}")</li>
-                        <li>Click the icon to open a dropdown listing every company you have access to</li>
-                        <li>Pick a company with the radio buttons. The dropdown closes and the sidebar refreshes with data from the new company</li>
+                        <li>Click the icon to open a menu with every company you have access to. The active one is highlighted</li>
+                        <li>Pick a company. The menu closes and the sidebar refreshes with data from the new company</li>
                         <li>If you have access to only one company, the icon is not shown</li>
                     </ul>
                     <div class="info-box">
@@ -773,7 +774,7 @@
                     <ul>
                         <li><strong>Records you see</strong>: <span>Opportunities, tasks, tickets and partners listed in the sidebar are filtered to those visible in the active company</span></li>
                         <li><strong>Records you create</strong>: <span>New leads, tasks, tickets and contacts created from the sidebar are assigned to the active company</span></li>
-                        <li><strong>Auto-logged emails</strong>: <span>Emails processed by auto-logging are posted in the company that owns the linked record (see the Auto-logging note below)</span></li>
+                        <li><strong>Emails logged automatically</strong>: <span>Emails logged by automatic logging are posted in the company that owns the linked record (see Automatic Logging Across Companies below)</span></li>
                     </ul>
 
                     <h3>Cross-Company Contact Lookup</h3>
@@ -794,8 +795,8 @@
                         <strong>Important:</strong> <span>Sharing a contact or company across all your companies changes its visibility for every user with access to those companies. The extension asks for confirmation before saving.</span>
                     </div>
 
-                    <h3>Auto-logging Across Companies</h3>
-                    <p>When you activate auto-logging on a record, the extension remembers the company that record belongs to. New emails on that thread are always logged in the right company, even if you've switched the active company in the sidebar afterwards.</p>
+                    <h3>Automatic Logging Across Companies</h3>
+                    <p>When you turn on automatic logging for a record, the extension remembers the company that record belongs to. New emails on that thread are always logged in the right company, even if you've switched the active company in the sidebar afterwards.</p>
 
                     <h3>Behavior on the FREE Plan</h3>
                     <p>If you have access to several companies on the FREE plan, the extension uses your default company in Odoo for every operation. The selector icon does not appear, and cross-company lookups are not offered. Upgrading to PLUS unlocks both.</p>
@@ -820,7 +821,7 @@
                     </ol>
                     <h3>"Contact Not Found" Message</h3>
                     <ul>
-                        <li><strong>Email not in Odoo</strong>: <span>Click "Create Contact" to add them</span></li>
+                        <li><strong>Email not in Odoo</strong>: <span>Click “Save in Odoo” to add them</span></li>
                         <li><strong>The address is written differently</strong>: <span>Capitalisation is not the problem: an address stored in Odoo as John@Acme.com does match john@acme.com. What breaks the match is a genuinely different address — an alias, an extra dot, or another domain. Update the email in Odoo, or create a new contact.</span></li>
                     </ul>
                     <h3>A Section Doesn't Appear</h3>
@@ -828,7 +829,7 @@
                     <ol>
                         <li><strong>The module isn't installed</strong>: <span>Opportunities needs CRM, Tasks needs Project, Tickets needs Helpdesk (Enterprise), Quotations needs Sales, and Financial Insights needs Accounting.</span></li>
                         <li><strong>Your Odoo user lacks permission</strong>: <span>The extension hides a section when your user can't create that type of record — read-only access isn't enough. Ask your Odoo administrator to grant it.</span></li>
-                        <li><strong>You switched it off</strong>: <span>Check Settings → Personalization: a section hidden there stays hidden on every email.</span></li>
+                        <li><strong>You switched it off</strong>: <span>Check Settings → Panel: a section hidden there stays hidden on every email.</span></li>
                     </ol>
                     <h3>The Sidebar Is Empty or Nothing Loads After Connecting</h3>
                     <p>This is almost always the login session, not an API key. Check, in order:</p>
@@ -841,7 +842,7 @@
                     <h3>"Session Expired" or You're Asked to Reconnect</h3>
                     <p>Your Odoo session timed out. Just open Odoo, sign in again, and the extension reconnects — nothing else to manage.</p>
                     <div class="info-box">
-                        <span>An optional API key can be added as a fallback so background features keep working when the session drops: Settings → Account → Connection.</span>
+                        <span>An optional API key can be added as a backup so background features keep working when the session drops: Settings → Connection.</span>
                     </div>
                     <h3>Permission Popup Not Appearing (Self-Hosted Odoo)</h3>
                     <p>When connecting to a self-hosted Odoo instance (custom URL), Chrome requires additional permissions. If the permission popup doesn't appear:</p>
@@ -869,7 +870,7 @@
                     </div>
                     <div class="faq-item">
                         <h4>Q: Do I need an API key?</h4>
-                        <p>No. Just your Odoo URL and an active Odoo session in the same browser. An API key is optional — only for background auto-logging (PLUS) or as a fallback if your session expires.</p>
+                        <p>No. Just your Odoo URL and an active Odoo session in the same browser. An API key is optional — only for automatic logging (PLUS) or as a backup if your session expires.</p>
                     </div>
                     <div class="faq-item">
                         <h4>Q: Is my data secure?</h4>
@@ -878,7 +879,7 @@
                     <h3>Subscription</h3>
                     <div class="faq-item">
                         <h4>Q: What's the difference between FREE and PLUS?</h4>
-                        <p>FREE includes basic features (contact viewing, email logging, limited records). PLUS adds advanced search, financial insights, related contacts, notification email organization, and customization options.</p>
+                        <p>FREE includes contact viewing, email logging, record creation and the first 5 records of each section. PLUS adds every record with search and grouping, quotations and orders, Messages in Odoo, financial information, related contacts, Odoo notifications, several companies and customization.</p>
                     </div>
                     <div class="faq-item">
                         <h4>Q: Can I cancel my PLUS subscription anytime?</h4>
