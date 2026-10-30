@@ -707,7 +707,7 @@
     "subtitle": "Survolez chaque démo pour voir l'extension en action",
     "search": {
       "title": "Recherche en temps réel",
-      "description": "Filtrez les opportunités, tâches et tickets instantanément pendant la saisie. Trouvez ce dont vous avez besoin en millisecondes.",
+      "description": "Filtrez les opportunités, tâches et tickets pendant la saisie, et enregistrez l'e-mail au bon endroit.",
       "badge": "Fonction PLUS"
     },
     "createContact": {

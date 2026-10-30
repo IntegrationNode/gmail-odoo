@@ -707,7 +707,7 @@
     "subtitle": "Passa il mouse su ogni demo per vedere l'estensione in azione",
     "search": {
       "title": "Ricerca in Tempo Reale",
-      "description": "Filtra opportunità, attività e ticket istantaneamente mentre digiti. Trova ciò che ti serve in millisecondi.",
+      "description": "Filtra opportunità, attività e ticket mentre digiti e registra l'email nel record giusto.",
       "badge": "Funzionalità PLUS"
     },
     "createContact": {

@@ -707,7 +707,7 @@
     "subtitle": "Hover over each demo to see the extension in action",
     "search": {
       "title": "Real-time Search",
-      "description": "Filter opportunities, tasks, and tickets instantly as you type. Find what you need in milliseconds.",
+      "description": "Filter opportunities, tasks, and tickets as you type, and log the email to the right record.",
       "badge": "PLUS Feature"
     },
     "createContact": {

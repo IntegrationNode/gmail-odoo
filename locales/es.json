@@ -163,7 +163,7 @@
     "subtitle": "Pasa el cursor sobre cada demo para ver la extensión en funcionamiento",
     "search": {
       "title": "Búsqueda en Tiempo Real",
-      "description": "Filtra oportunidades, tareas y tickets instantáneamente mientras escribes. Encuentra lo que necesitas en milisegundos.",
+      "description": "Filtra oportunidades, tareas y tickets mientras escribes, y registra el correo donde corresponde.",
       "badge": "Función PLUS"
     },
     "createContact": {
