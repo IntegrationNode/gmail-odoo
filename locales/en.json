@@ -875,7 +875,7 @@
     },
     "team": {
       "name": "Team",
-      "badge": "3+ users",
+      "badge": "From 3 seats",
       "perUserMonth": "/user/month",
       "annualAvailable": "Annual billing available",
       "description": "For teams that need centralized management",
@@ -883,7 +883,9 @@
       "feature1": "Centralized team billing",
       "feature2": "Seat management portal",
       "feature3": "20% less from 5 seats and 28% from 10",
-      "cta": "Try Free for 14 Days"
+      "cta": "Try Free for 14 Days",
+      "perSeatMonth": "/seat/month",
+      "ctaTeamPage": "See the team plan"
     },
     "comparison": {
       "title": "Detailed Feature Comparison",

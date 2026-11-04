@@ -875,7 +875,7 @@
     },
     "team": {
       "name": "Team",
-      "badge": "3+ utilisateurs",
+      "badge": "Dès 3 sièges",
       "perUserMonth": "/utilisateur/mois",
       "annualAvailable": "Facturation annuelle disponible",
       "description": "Pour les équipes qui ont besoin d'une gestion centralisée",
@@ -883,7 +883,9 @@
       "feature1": "Facturation centralisée de l'équipe",
       "feature2": "Portail de gestion des sièges",
       "feature3": "20 % de moins dès 5 sièges et 28 % dès 10",
-      "cta": "Essai Gratuit de 14 Jours"
+      "cta": "Essai Gratuit de 14 Jours",
+      "perSeatMonth": "/siège/mois",
+      "ctaTeamPage": "Voir l’offre équipe"
     },
     "comparison": {
       "title": "Comparaison détaillée des fonctionnalités",

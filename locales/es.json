@@ -289,7 +289,7 @@
     },
     "team": {
       "name": "Team",
-      "badge": "3+ usuarios",
+      "badge": "Desde 3 asientos",
       "perUserMonth": "/usuario/mes",
       "annualAvailable": "Facturación anual disponible",
       "description": "Para equipos que necesitan gestión centralizada",
@@ -297,7 +297,9 @@
       "feature1": "Facturación centralizada del equipo",
       "feature2": "Portal de gestión de asientos",
       "feature3": "20 % menos desde 5 asientos y 28 % desde 10",
-      "cta": "Prueba Gratis 14 Días"
+      "cta": "Prueba Gratis 14 Días",
+      "perSeatMonth": "/asiento/mes",
+      "ctaTeamPage": "Ver el plan de equipo"
     },
     "comparison": {
       "title": "Comparación Detallada de Funciones",

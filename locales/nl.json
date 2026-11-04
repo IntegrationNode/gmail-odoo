@@ -875,7 +875,7 @@
     },
     "team": {
       "name": "Team",
-      "badge": "3+ gebruikers",
+      "badge": "Vanaf 3 plekken",
       "perUserMonth": "/gebruiker/maand",
       "annualAvailable": "Jaarlijkse facturering beschikbaar",
       "description": "Voor teams die gecentraliseerd beheer nodig hebben",
@@ -883,7 +883,9 @@
       "feature1": "Gecentraliseerde teamfacturering",
       "feature2": "Portaal voor plaatsbeheer",
       "feature3": "20% minder vanaf 5 plekken en 28% vanaf 10",
-      "cta": "14 Dagen Gratis Proberen"
+      "cta": "14 Dagen Gratis Proberen",
+      "perSeatMonth": "/plek/maand",
+      "ctaTeamPage": "Bekijk het teamabonnement"
     },
     "comparison": {
       "title": "Gedetailleerde Functievergelijking",

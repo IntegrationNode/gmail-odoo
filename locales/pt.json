@@ -875,7 +875,7 @@
     },
     "team": {
       "name": "Team",
-      "badge": "3+ usuários",
+      "badge": "A partir de 3 assentos",
       "perUserMonth": "/usuário/mês",
       "annualAvailable": "Faturamento anual disponível",
       "description": "Para equipes que precisam de gestão centralizada",
@@ -883,7 +883,9 @@
       "feature1": "Faturamento centralizado da equipe",
       "feature2": "Portal de gestão de assentos",
       "feature3": "20% a menos a partir de 5 assentos e 28% a partir de 10",
-      "cta": "Teste Grátis por 14 Dias"
+      "cta": "Teste Grátis por 14 Dias",
+      "perSeatMonth": "/assento/mês",
+      "ctaTeamPage": "Ver o plano de equipe"
     },
     "comparison": {
       "title": "Comparação Detalhada de Recursos",

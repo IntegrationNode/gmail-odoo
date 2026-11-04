@@ -875,7 +875,7 @@
     },
     "team": {
       "name": "Team",
-      "badge": "3+ Benutzer",
+      "badge": "Ab 3 Plätzen",
       "perUserMonth": "/Benutzer/Monat",
       "annualAvailable": "Jährliche Abrechnung verfügbar",
       "description": "Für Teams, die eine zentrale Verwaltung benötigen",
@@ -883,7 +883,9 @@
       "feature1": "Zentrale Teamabrechnung",
       "feature2": "Platzverwaltungsportal",
       "feature3": "20 % weniger ab 5 Plätzen und 28 % ab 10",
-      "cta": "14 Tage Kostenlos Testen"
+      "cta": "14 Tage Kostenlos Testen",
+      "perSeatMonth": "/Platz/Monat",
+      "ctaTeamPage": "Team-Tarif ansehen"
     },
     "comparison": {
       "title": "Detaillierter Funktionsvergleich",

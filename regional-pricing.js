@@ -39,10 +39,10 @@
         }
     };
 
-    // El enlace de pago de Team en Polar (spec 080). Vacío hasta W2: mientras lo esté, el botón «Prueba
-    // gratis 14 días» de la página de Team sigue llevando a la ficha de la tienda, como la tarjeta de hoy.
-    // No se publica antes de que la 1.0.1.0 esté en la tienda (FR-012).
-    const TEAM_CHECKOUT_URL = '';
+    // El enlace de pago de Team en Polar (spec 080, «Gmail Team»). Vacío, el botón «Prueba gratis 14 días»
+    // de la página de Team lleva a la ficha de la tienda. La web no se publica antes de que la 1.0.1.0 esté
+    // en la tienda (FR-012).
+    const TEAM_CHECKOUT_URL = 'https://buy.polar.sh/polar_cl_UdW7crmQsOzyE3pN1aKbRDrgK0gbKrUoMTBje1YQca0';
     // Los idiomas del sitio que se mandan al pago de Polar como `locale` (el portugués del sitio es `pt`).
     const SITE_LANGS = ['en', 'es', 'fr', 'de', 'it', 'pt', 'nl', 'pl'];
 

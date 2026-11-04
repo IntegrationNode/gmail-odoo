@@ -875,7 +875,7 @@
     },
     "team": {
       "name": "Team",
-      "badge": "3+ utenti",
+      "badge": "Da 3 posti",
       "perUserMonth": "/utente/mese",
       "annualAvailable": "Fatturazione annuale disponibile",
       "description": "Per i team che necessitano di gestione centralizzata",
@@ -883,7 +883,9 @@
       "feature1": "Fatturazione centralizzata del team",
       "feature2": "Portale di gestione posti",
       "feature3": "20% in meno da 5 posti e 28% da 10",
-      "cta": "Prova Gratis per 14 Giorni"
+      "cta": "Prova Gratis per 14 Giorni",
+      "perSeatMonth": "/posto/mese",
+      "ctaTeamPage": "Vedi il piano team"
     },
     "comparison": {
       "title": "Confronto Dettagliato Funzionalità",

@@ -875,7 +875,7 @@
     },
     "team": {
       "name": "Team",
-      "badge": "3+ użytkowników",
+      "badge": "Od 3 miejsc",
       "perUserMonth": "/użytkownik/miesiąc",
       "annualAvailable": "Rozliczenie roczne dostępne",
       "description": "Dla zespołów potrzebujących scentralizowanego zarządzania",
@@ -883,7 +883,9 @@
       "feature1": "Centralne rozliczanie zespołu",
       "feature2": "Portal zarządzania miejscami",
       "feature3": "20% mniej od 5 miejsc i 28% od 10",
-      "cta": "Wypróbuj Za Darmo przez 14 Dni"
+      "cta": "Wypróbuj Za Darmo przez 14 Dni",
+      "perSeatMonth": "/miejsce/miesiąc",
+      "ctaTeamPage": "Zobacz plan zespołowy"
     },
     "comparison": {
       "title": "Szczegółowe porównanie funkcji",
