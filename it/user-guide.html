@@ -227,6 +227,7 @@
                         <li><a href="#configuration"><span class="material-symbols-outlined">settings</span> <span>Configurazione</span></a></li>
                         <li><a href="#features"><span class="material-symbols-outlined">star</span> <span>Panoramica Funzionalità</span></a></li>
                         <li><a href="#subscription"><span class="material-symbols-outlined">credit_card</span> <span>Abbonamento</span></a></li>
+                        <li><a href="#team"><span class="material-symbols-outlined">groups</span> <span>Piano team</span></a></li>
                         <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span>Logging Email</span></a></li>
                         <li><a href="#record-menu"><span class="material-symbols-outlined">more_vert</span> <span>Azioni sul record</span></a></li>
                         <li><a href="#autolog"><span class="material-symbols-outlined">sync</span> <span>Registrazione automatica</span></a></li>
@@ -374,6 +375,41 @@
                         <li>Clicca "Annulla Abbonamento" nei dettagli del tuo abbonamento</li>
                     </ol>
                     <p>Le tue funzionalità PLUS rimarranno attive fino alla fine del periodo di fatturazione corrente.</p>
+                </section>
+
+                <!-- Plan de equipo (spec 080, tablero «Spec080-guia-equipo»). Las anclas team-invite, team-invited y
+                     team-switch son la interfaz con la extensión y con el pago de Polar: no se cambian sin cambiarlos. -->
+                <section id="team" class="guide-section">
+                    <h2><span class="material-symbols-outlined">groups</span> <span>Piano team</span></h2>
+                    <p><span>Il piano team dà Plus a ogni persona del tuo team con un’unica fattura. Prezzo e prova:</span> <a href="team.html">la pagina Team →</a></p>
+
+                    <h3 id="team-invite">Invitare il tuo team</h3>
+                    <p>Se paghi il piano team, sei tu a distribuire i posti. Ogni persona riceve un’email e attiva la propria chiave.</p>
+                    <ol class="steps-list">
+                        <li><strong>Entra nel portale di Polar</strong> <span>Con l’email con cui hai pagato; Polar ti manda un codice per entrare.</span> <a href="https://polar.sh/integration-node/portal" target="_blank" rel="noopener">Apri il portale →</a></li>
+                        <li><strong>Apri «Seat Management» e invita</strong> <span>Scrivi l’indirizzo Gmail di ogni persona. Se usi anche tu l’estensione, assegnati un posto.</span></li>
+                        <li><strong>Fatto</strong> <span>A ogni persona arriva un’email di Polar. Cosa deve fare è in «Ti ha invitato il tuo team», qui sotto.</span></li>
+                    </ol>
+                    <div class="info-box"><span>Qualcuno lascia il team? Togligli il posto nel portale e dallo a un’altra persona.</span></div>
+
+                    <h3 id="team-invited">Ti ha invitato il tuo team</h3>
+                    <p>Chi paga il piano ti ha dato un posto. La tua chiave è solo tua e funziona nel Gmail con cui sei stato invitato.</p>
+                    <ol class="steps-list">
+                        <li><strong>Accetta il posto</strong> <span>Apri l’email di invito di Polar e clicca su «Claim seat».</span></li>
+                        <li><strong>Copia la tua chiave</strong> <span>Nel portale di Polar, copia la tua chiave di licenza. Il team compare lì con il nome di chi paga.</span></li>
+                        <li><strong>Attivala in Gmail</strong> <span>Nel pannello dell’estensione: ⋮ › Impostazioni › Piano › Ho già una licenza. Incolla la chiave e clicca su Attiva.</span></li>
+                    </ol>
+                    <div class="info-box"><span>Avevi già Plus in questo browser? La chiave del posto sostituisce la tua quando la attivi.</span></div>
+                    <div class="info-box"><span>Non ti è arrivata l’email? Chiedila a chi paga il piano.</span></div>
+
+                    <h3 id="team-switch">Passare da Plus a Team</h3>
+                    <p>Se paghi già Plus, non serve annullare. Il cambio si applica subito e Polar scala quello che non hai usato.</p>
+                    <ol class="steps-list">
+                        <li><strong>Entra nel portale di Polar</strong> <span>Con l’email con cui paghi Plus.</span> <a href="https://polar.sh/integration-node/portal" target="_blank" rel="noopener">Vai al portale →</a></li>
+                        <li><strong>Cambia piano</strong> <span>Clicca su «Change plan» e scegli Team, mensile o annuale.</span></li>
+                        <li><strong>Distribuisci i posti</strong> <span>In «Seat Management», regola i posti e invita il tuo team, come in «Invitare il tuo team».</span></li>
+                    </ol>
+                    <div class="warning-box"><span class="material-symbols-outlined">warning</span><span>Non si torna indietro. Per tornare a Plus individuale bisogna annullare Team e acquistare di nuovo Plus.</span></div>
                 </section>
 
                 <!-- Email Logging Section -->
@@ -1017,6 +1053,30 @@
                 dropdown.classList.remove('open');
             }
         });
+    })();
+    </script>
+
+    <!-- Vuelta del pago de Team (spec 080, research R4): Polar vuelve siempre a la Guía en inglés
+         (user-guide.html?from=checkout#team-invite). Desde la raíz, si el navegador está en otro idioma del
+         sitio, se va a esa carpeta y se conserva el ancla. -->
+    <script>
+    (function() {
+        var SITE_LANGS = ['es', 'fr', 'de', 'it', 'pt', 'nl', 'pl'];
+        var params = new URLSearchParams(window.location.search);
+        if (params.get('from') !== 'checkout') return;
+        var parts = window.location.pathname.split('/');
+        for (var i = 0; i < parts.length; i++) {
+            if (SITE_LANGS.indexOf(parts[i]) >= 0) return; // ya está en una carpeta de idioma
+        }
+        var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
+        for (var j = 0; j < langs.length; j++) {
+            var code = String(langs[j]).toLowerCase().split('-')[0];
+            if (code === 'en') return;
+            if (SITE_LANGS.indexOf(code) >= 0) {
+                window.location.replace(code + '/user-guide.html' + (window.location.hash || '#team-invite'));
+                return;
+            }
+        }
     })();
     </script>
 

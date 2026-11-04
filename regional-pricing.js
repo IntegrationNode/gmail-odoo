@@ -21,10 +21,30 @@
             annualDiscount: 0.8 // 20% off for annual
         },
         team: {
+            // `pricePerUser` y `annualDiscount` los usan la tarjeta de Precios y su insignia anual
+            // (calculateSavings): no quitarlos.
             pricePerUser: 19,
-            annualDiscount: 0.8
+            annualDiscount: 0.8,
+            // Precio por asiento de cada tramo (spec 080), por volumen y sin saltos: el tamaño del equipo
+            // decide el precio de todos sus asientos. El anual son cifras fijas, las de Polar: calcularlo
+            // daría 131,328 en el tramo de 10 o más y Polar cobra 131,33.
+            tiers: [
+                { key: 't1', monthly: 19.00, annual: 182.40 },
+                { key: 't2', monthly: 15.20, annual: 145.92 },
+                { key: 't3', monthly: 13.68, annual: 131.33 }
+            ],
+            // La ilustración de la página de Team: una factura al mes de 5 asientos (tramo 5-9).
+            illustrationSeats: 5,
+            illustrationTier: 't2'
         }
     };
+
+    // El enlace de pago de Team en Polar (spec 080). Vacío hasta W2: mientras lo esté, el botón «Prueba
+    // gratis 14 días» de la página de Team sigue llevando a la ficha de la tienda, como la tarjeta de hoy.
+    // No se publica antes de que la 1.0.1.0 esté en la tienda (FR-012).
+    const TEAM_CHECKOUT_URL = '';
+    // Los idiomas del sitio que se mandan al pago de Polar como `locale` (el portugués del sitio es `pt`).
+    const SITE_LANGS = ['en', 'es', 'fr', 'de', 'it', 'pt', 'nl', 'pl'];
 
     const CACHE_DURATION_MS = 60 * 60 * 1000; // 1 hour
     // Mismo deal que consume la extension (PARITY_DEALS_CONFIG.PRODUCT_ID en
@@ -99,9 +119,25 @@
      */
     function calculateTeamPrices(discountPercent) {
         const multiplier = 1 - (discountPercent / 100);
-        return {
+        const prices = {
             perUser: splitPrice(PLANS.team.pricePerUser * multiplier)
         };
+        // Por asiento, con el descuento del país: lo que muestra la tabla de la página de Team. Puede
+        // diferir en algún céntimo de lo que cobra Polar, que aplica el descuento al total (decisión A de
+        // la spec 080, SC-001).
+        PLANS.team.tiers.forEach(function(tier) {
+            prices[tier.key + 'm'] = splitPrice(roundCents(tier.monthly * multiplier));
+            prices[tier.key + 'a'] = splitPrice(roundCents(tier.annual * multiplier));
+        });
+        // Un total se calcula como Polar, sobre el total: este sí coincide al céntimo con el pago.
+        var illusTier = PLANS.team.tiers.find(function(t) { return t.key === PLANS.team.illustrationTier; });
+        prices.illus = splitPrice(roundCents(PLANS.team.illustrationSeats * illusTier.monthly * multiplier));
+        return prices;
+    }
+
+    /** Redondea a céntimos antes de partir el precio: splitPrice daría «9.100» con 9,996. */
+    function roundCents(raw) {
+        return Math.round(raw * 100) / 100;
     }
 
     /**
@@ -119,9 +155,14 @@
                 monthly: splitPrice(PLANS.plus.monthlyPrice),
                 annualList: splitPrice(PLANS.plus.monthlyPrice * 12)
             },
-            team: {
-                perUser: splitPrice(PLANS.team.pricePerUser)
-            }
+            team: (function() {
+                var list = { perUser: splitPrice(PLANS.team.pricePerUser) };
+                PLANS.team.tiers.forEach(function(tier) {
+                    list[tier.key + 'm'] = splitPrice(tier.monthly);
+                    list[tier.key + 'a'] = splitPrice(tier.annual);
+                });
+                return list;
+            })()
         };
     }
 
@@ -314,9 +355,12 @@
                         }
                     }
 
-                    // Match Team offers
+                    // Match Team offers (por asiento, tramo de 3-4)
                     if (allPrices.team && offer.name === 'Team Monthly') {
                         offer.price = formatPriceText(allPrices.team.perUser.integer, allPrices.team.perUser.cents);
+                        modified = true;
+                    } else if (allPrices.team && offer.name === 'Team Yearly') {
+                        offer.price = formatPriceText(allPrices.team.t1a.integer, allPrices.team.t1a.cents);
                         modified = true;
                     }
                 });
@@ -353,6 +397,57 @@
             discount_percentage: discountPercent,
             is_vpn: !!(data && (data.isVpn || data.isProxy || data.isTor)),
             pd_resolved: !!data
+        });
+    }
+
+    // ===========================================
+    // TEAM CHECKOUT (spec 080)
+    // ===========================================
+
+    /** El idioma de esta página del sitio: la carpeta (`es/`, `pt/`…) o el inglés de la raíz. */
+    function siteLang() {
+        var parts = window.location.pathname.split('/');
+        for (var i = 0; i < parts.length; i++) {
+            if (SITE_LANGS.indexOf(parts[i]) > 0) return parts[i];
+        }
+        return 'en';
+    }
+
+    /**
+     * Prepara los botones `[data-team-checkout]` de la página de Team.
+     *
+     * Con TEAM_CHECKOUT_URL (W2), llevan al pago de Team con el código del país de ParityDeals
+     * (`discount_code`, salvo con VPN, proxy o Tor: entonces no hay descuento, como en el precio), el
+     * idioma de la página (`locale`; si Polar no lo tiene, enseña el inglés) y la etiqueta de campaña de la
+     * página. Sin él (W1), se quedan como están: a la ficha de la tienda. En los dos casos, el clic se cuenta
+     * en GA4.
+     *
+     * @param {Object|null} data - Respuesta de ParityDeals, o null
+     */
+    function updateTeamCheckout(data) {
+        var buttons = document.querySelectorAll('[data-team-checkout]');
+        if (!buttons.length) return;
+        var vpn = !!(data && (data.isVpn || data.isProxy || data.isTor));
+        var code = data && !vpn && data.couponCode ? String(data.couponCode) : '';
+
+        if (TEAM_CHECKOUT_URL) {
+            var params = new URLSearchParams();
+            if (code) params.set('discount_code', code);
+            params.set('locale', siteLang());
+            params.set('utm_source', 'web');
+            params.set('utm_medium', 'team_page');
+            params.set('utm_campaign', 'team');
+            var href = TEAM_CHECKOUT_URL + (TEAM_CHECKOUT_URL.indexOf('?') >= 0 ? '&' : '?') + params.toString();
+            buttons.forEach(function(el) { el.setAttribute('href', href); });
+        }
+
+        buttons.forEach(function(el) {
+            if (el.dataset.teamCheckoutTracked) return;
+            el.dataset.teamCheckoutTracked = '1';
+            el.addEventListener('click', function() {
+                if (typeof gtag !== 'function') return;
+                gtag('event', 'team_checkout_clicked', { discount_code_applied: !!(TEAM_CHECKOUT_URL && code) });
+            });
         });
     }
 
@@ -449,6 +544,7 @@
         if (!data) {
             console.log('[RegionalPricing] No discount data available, using default prices');
             trackPricingView(null, 0);
+            updateTeamCheckout(null);
             showPrices();
             return;
         }
@@ -514,6 +610,7 @@
             // Update Schema.org structured data
             updateSchemaOrg(allPrices);
         } finally {
+            updateTeamCheckout(data);
             showPrices();
         }
     }

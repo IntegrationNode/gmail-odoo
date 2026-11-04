@@ -19,6 +19,15 @@
       "twitterTitle": "Prijzen - Odoo Integratie voor Gmail",
       "twitterDescription": "Gratis en PLUS abonnementen beschikbaar. Begin gratis, upgrade wanneer u geavanceerde functies nodig heeft."
     },
+    "team": {
+      "title": "Teamabonnement - Odoo-integratie voor Gmail",
+      "description": "Plus voor uw hele team op één factuur, en u bepaalt wie toegang heeft. Prijs per plek vanaf 3 personen, 14 dagen gratis proberen.",
+      "canonical": "https://integrationnode.com/gmail-odoo/nl/team.html",
+      "ogTitle": "Teamabonnement - Odoo-integratie voor Gmail",
+      "ogDescription": "Plus voor uw hele team op één factuur, en u bepaalt wie toegang heeft. Prijs per plek vanaf 3 personen, 14 dagen gratis proberen.",
+      "twitterTitle": "Teamabonnement - Odoo-integratie voor Gmail",
+      "twitterDescription": "Plus voor uw hele team op één factuur, en u bepaalt wie toegang heeft. Prijs per plek vanaf 3 personen, 14 dagen gratis proberen."
+    },
     "userGuide": {
       "title": "Gebruikershandleiding - Odoo Integratie voor Gmail",
       "description": "Volledige gebruikershandleiding voor Odoo Integratie voor Gmail - Leer hoe u alle functies installeert, configureert en gebruikt, inclusief e-mail loggen, CRM-kansen, taken en tickets.",
@@ -125,7 +134,8 @@
       "multiCompany": "Multi-bedrijf",
       "troubleshooting": "Probleemoplossing",
       "faq": "Veelgestelde Vragen",
-      "subscription": "Abonnement"
+      "subscription": "Abonnement",
+      "team": "Teamabonnement"
     },
     "quickStart": {
       "title": "Snelstart (2 minuten, geen API-sleutel)",
@@ -643,6 +653,47 @@
       "cancelStep2": "Log in met het e-mailadres dat is gebruikt voor uw abonnement",
       "cancelStep3": "Klik op \"Abonnement Opzeggen\" in uw abonnementsgegevens",
       "cancelNote": "Uw PLUS functies blijven actief tot het einde van uw huidige factureringsperiode."
+    },
+    "team": {
+      "title": "Teamabonnement",
+      "intro": "Het teamabonnement geeft iedereen in uw team Plus, op één factuur. Prijs en proefperiode:",
+      "introLink": "de Team-pagina →",
+      "invite": {
+        "title": "Uw team uitnodigen",
+        "intro": "Als u het teamabonnement betaalt, verdeelt u de plekken. Iedereen krijgt een e-mail en activeert een eigen sleutel.",
+        "s1t": "Log in op het Polar-portaal",
+        "s1x": "Met het e-mailadres waarmee u hebt betaald; Polar stuurt u een code om in te loggen.",
+        "s1link": "Portaal openen →",
+        "s2t": "Open „Seat Management” en nodig uit",
+        "s2x": "Vul het Gmail-adres van iedere persoon in. Gebruikt u de extensie zelf ook, wijs uzelf dan een plek toe.",
+        "s3t": "Klaar",
+        "s3x": "Iedereen krijgt een e-mail van Polar. Wat ze moeten doen staat hieronder, bij „Uitgenodigd door uw team”.",
+        "note": "Verlaat iemand het team? Neem de plek terug in het portaal en geef die aan iemand anders."
+      },
+      "invited": {
+        "title": "Uitgenodigd door uw team",
+        "intro": "Wie het abonnement betaalt, heeft u een plek gegeven. Uw sleutel is alleen van u en werkt in de Gmail waarmee u bent uitgenodigd.",
+        "s1t": "Accepteer de plek",
+        "s1x": "Open de uitnodiging van Polar en klik op „Claim seat”.",
+        "s2t": "Kopieer uw sleutel",
+        "s2x": "Kopieer in het Polar-portaal uw licentiesleutel. Het team staat daar onder de naam van wie betaalt.",
+        "s3t": "Activeer hem in Gmail",
+        "s3x": "In het paneel van de extensie: ⋮ › Instellingen › Abonnement › Ik heb een licentie. Plak de sleutel en klik op Activeren.",
+        "note1": "Had u al Plus in deze browser? De sleutel van de plek vervangt de uwe zodra u hem activeert.",
+        "note2": "Geen e-mail ontvangen? Vraag het aan wie het abonnement betaalt."
+      },
+      "switch": {
+        "title": "Van Plus naar Team",
+        "intro": "Betaalt u al voor Plus, dan hoeft u niet op te zeggen. De wijziging geldt meteen en Polar verrekent wat u niet hebt gebruikt.",
+        "s1t": "Log in op het Polar-portaal",
+        "s1x": "Met het e-mailadres waarmee u Plus betaalt.",
+        "s1link": "Naar het portaal →",
+        "s2t": "Wijzig het abonnement",
+        "s2x": "Klik op „Change plan” en kies Team, maandelijks of jaarlijks.",
+        "s3t": "Verdeel de plekken",
+        "s3x": "Stel in „Seat Management” de plekken in en nodig uw team uit, zoals bij „Uw team uitnodigen”.",
+        "warn": "Er is geen weg terug. Om terug te gaan naar Plus voor één persoon moet u Team opzeggen en opnieuw Plus nemen."
+      }
     }
   },
   "nav": {
@@ -831,7 +882,7 @@
       "everythingInPlus": "Alles in PLUS, plus:",
       "feature1": "Gecentraliseerde teamfacturering",
       "feature2": "Portaal voor plaatsbeheer",
-      "feature3": "Volumekorting vanaf 5 gebruikers",
+      "feature3": "20% minder vanaf 5 plekken en 28% vanaf 10",
       "cta": "14 Dagen Gratis Proberen"
     },
     "comparison": {
@@ -866,6 +917,88 @@
       "subtitle": "Begin met ons Gratis abonnement en upgrade wanneer u geavanceerde functies nodig heeft.",
       "getStarted": "Gratis Beginnen",
       "upgrade": "Upgraden naar PLUS"
+    }
+  },
+  "teamPage": {
+    "hero": {
+      "eyebrow": "Teamabonnement · vanaf 3 personen",
+      "title1": "Plus voor uw team,",
+      "title2": "op één factuur",
+      "subtitle": "U betaalt één abonnement voor het hele team en u bepaalt wie toegang heeft: u geeft of ontneemt een plek in een oogwenk, zonder iets nieuws te kopen.",
+      "cta": "14 dagen gratis proberen",
+      "seePrices": "Prijzen bekijken",
+      "chip1": "Centrale facturatie",
+      "chip2": "Mensen erbij of eraf wanneer u wilt",
+      "chip3": "Een prijs die daalt als u groeit",
+      "trialNote": "Voor de proefperiode is een kaart nodig. Zegt u op voor het einde, dan wordt er niets in rekening gebracht."
+    },
+    "illus": {
+      "team": "Uw team",
+      "seats": "Plekken",
+      "active": "Actief",
+      "invited": "Uitgenodigd",
+      "remove": "Verwijderen",
+      "placeholder": "email@uwbedrijf.nl",
+      "invite": "Uitnodigen",
+      "invoice": "Eén factuur per maand · 5 plekken",
+      "caption": "Illustratie · beheerd in het Polar-portaal",
+      "domain": "uwbedrijf.nl"
+    },
+    "why": {
+      "eyebrow": "Waarom Team",
+      "title": "Wat u wint ten opzichte van één Plus per persoon",
+      "subtitle": "Dezelfde Plus voor iedereen; wat verandert is hoe u betaalt en beheert.",
+      "c1t": "Eén factuur voor het hele team",
+      "c1x": "Eén abonnement en één factuur per maand of per jaar. Geen losse kaarten meer en geen Plus terugbetalen aan iedereen.",
+      "c2t": "U bepaalt wie toegang heeft",
+      "c2x": "U geeft een plek met het e-mailadres van de persoon. Verlaat iemand het team, dan neemt u de plek terug en geeft u die aan iemand anders, zonder iets te kopen.",
+      "c3t": "Groei wanneer het nodig is",
+      "c3x": "U voegt plekken toe als er iemand bijkomt. En hoe groter het team, hoe minder u per plek betaalt: tot 28% minder."
+    },
+    "price": {
+      "eyebrow": "Prijs",
+      "title": "U betaalt per plek",
+      "subtitle": "Een plek is één persoon in het team met Plus. De grootte van het team bepaalt de prijs van alle plekken.",
+      "colSize": "Teamgrootte",
+      "colMonthly": "Maandelijks, per plek",
+      "colAnnual": "Jaarlijks, per plek",
+      "annualSave": "· 20% minder",
+      "tier1": "3 – 4 plekken",
+      "tier2": "5 – 9 plekken",
+      "tier3": "10 of meer",
+      "tier2badge": "20% minder",
+      "tier3badge": "28% minder",
+      "perMonth": "/maand",
+      "perYear": "/jaar",
+      "previous": "Vorige prijs",
+      "footnote": "Exclusief btw · Minimaal 3 plekken · U betaalt de plekken die u koopt, ook als er een vrij blijft · 5 plekken kosten evenveel als 4"
+    },
+    "plus": {
+      "eyebrow": "Elke plek met volledige Plus",
+      "title": "Alles wat u in Plus hebt gezien, voor iedere persoon",
+      "p1": "Alle records van elke sectie, met zoeken en groeperen",
+      "p2": "Verkoopkansen, offertes, orders en facturen van de klant naast de e-mail",
+      "p3": "Meerdere bedrijven en de Odoo-meldingen geordend in Gmail",
+      "p4": "Iedereen activeert een eigen sleutel in de eigen Gmail",
+      "imgAlt": "Het paneel van de extensie in Gmail met een Odoo-klant"
+    },
+    "faq": {
+      "eyebrow": "Vragen",
+      "title": "Voordat u begint",
+      "q1": "Kan ik mensen toevoegen of verwijderen?",
+      "a1": "Ja, wanneer u wilt, via het portaal. U verhoogt of verlaagt het aantal plekken en geeft of ontneemt elke plek met het e-mailadres van de persoon.",
+      "q2": "Hoe wordt er gefactureerd?",
+      "a2": "Per kaart, via Polar, dat één factuur voor het hele team uitreikt, per maand of per jaar.",
+      "q3": "Ik betaal al voor Plus. Wat nu?",
+      "a3": "Zet uw Plus om naar Team zonder op te zeggen: de wijziging geldt meteen en Polar verrekent wat u niet hebt gebruikt.",
+      "q4": "Hoe verdeel ik het over het team?",
+      "a4": "U nodigt iedereen per e-mail uit en die activeert de sleutel in de eigen Gmail. Stap voor stap, in de Handleiding."
+    },
+    "final": {
+      "title": "Probeer Team 14 dagen met uw team",
+      "subtitle": "Vanaf 3 plekken · Zegt u op voor het einde, dan betaalt u niets",
+      "cta": "14 dagen gratis proberen",
+      "guide": "Handleiding: teamabonnement →"
     }
   },
   "privacyPage": {

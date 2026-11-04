@@ -19,6 +19,15 @@
       "twitterTitle": "Preise - Odoo Integration für Gmail",
       "twitterDescription": "Kostenlose und PLUS-Pläne verfügbar. Starten Sie kostenlos, upgraden Sie für erweiterte Funktionen."
     },
+    "team": {
+      "title": "Team-Tarif - Odoo-Integration für Gmail",
+      "description": "Plus für Ihr ganzes Team mit einer Rechnung, und Sie entscheiden, wer Zugriff hat. Preis pro Platz ab 3 Personen, 14 Tage kostenlos testen.",
+      "canonical": "https://integrationnode.com/gmail-odoo/de/team.html",
+      "ogTitle": "Team-Tarif - Odoo-Integration für Gmail",
+      "ogDescription": "Plus für Ihr ganzes Team mit einer Rechnung, und Sie entscheiden, wer Zugriff hat. Preis pro Platz ab 3 Personen, 14 Tage kostenlos testen.",
+      "twitterTitle": "Team-Tarif - Odoo-Integration für Gmail",
+      "twitterDescription": "Plus für Ihr ganzes Team mit einer Rechnung, und Sie entscheiden, wer Zugriff hat. Preis pro Platz ab 3 Personen, 14 Tage kostenlos testen."
+    },
     "userGuide": {
       "title": "Benutzerhandbuch - Odoo Integration für Gmail",
       "description": "Vollständiges Benutzerhandbuch für Odoo Integration für Gmail - Erfahren Sie, wie Sie alle Funktionen installieren, konfigurieren und nutzen, einschließlich E-Mail-Protokollierung, CRM-Chancen, Aufgaben und Tickets.",
@@ -125,7 +134,8 @@
       "multiCompany": "Mehrere Unternehmen",
       "troubleshooting": "Fehlerbehebung",
       "faq": "FAQ",
-      "subscription": "Abonnement"
+      "subscription": "Abonnement",
+      "team": "Team-Tarif"
     },
     "quickStart": {
       "title": "Schnellstart (2 Minuten, kein API-Schlüssel)",
@@ -643,6 +653,47 @@
       "cancelStep2": "Melden Sie sich mit der E-Mail an, die Sie für Ihr Abonnement verwendet haben",
       "cancelStep3": "Klicken Sie auf \"Abonnement kündigen\" in Ihren Abonnementdetails",
       "cancelNote": "Ihre PLUS-Funktionen bleiben bis zum Ende Ihres aktuellen Abrechnungszeitraums aktiv."
+    },
+    "team": {
+      "title": "Team-Tarif",
+      "intro": "Der Team-Tarif gibt jeder Person in Ihrem Team Plus, mit einer einzigen Rechnung. Preis und Test:",
+      "introLink": "die Team-Seite →",
+      "invite": {
+        "title": "Ihr Team einladen",
+        "intro": "Wenn Sie den Team-Tarif bezahlen, verteilen Sie die Plätze. Jede Person erhält eine E-Mail und aktiviert ihren eigenen Schlüssel.",
+        "s1t": "Melden Sie sich im Polar-Portal an",
+        "s1x": "Mit der E-Mail, mit der Sie bezahlt haben; Polar schickt Ihnen einen Code zur Anmeldung.",
+        "s1link": "Portal öffnen →",
+        "s2t": "Öffnen Sie „Seat Management“ und laden Sie ein",
+        "s2x": "Geben Sie die Gmail-Adresse jeder Person ein. Wenn Sie die Erweiterung auch nutzen, weisen Sie sich einen Platz zu.",
+        "s3t": "Fertig",
+        "s3x": "Jede Person erhält eine E-Mail von Polar. Was sie tun muss, steht unten unter „Von Ihrem Team eingeladen“.",
+        "note": "Verlässt jemand das Team? Entziehen Sie ihm den Platz im Portal und geben Sie ihn einer anderen Person."
+      },
+      "invited": {
+        "title": "Von Ihrem Team eingeladen",
+        "intro": "Die Person, die den Tarif bezahlt, hat Ihnen einen Platz gegeben. Ihr Schlüssel gehört nur Ihnen und funktioniert in dem Gmail, mit dem Sie eingeladen wurden.",
+        "s1t": "Nehmen Sie den Platz an",
+        "s1x": "Öffnen Sie die Einladungs-E-Mail von Polar und klicken Sie auf „Claim seat“.",
+        "s2t": "Kopieren Sie Ihren Schlüssel",
+        "s2x": "Kopieren Sie im Polar-Portal Ihren Lizenzschlüssel. Das Team erscheint dort unter dem Namen der zahlenden Person.",
+        "s3t": "Aktivieren Sie ihn in Gmail",
+        "s3x": "Im Panel der Erweiterung: ⋮ › Einstellungen › Tarif › Ich habe bereits eine Lizenz. Fügen Sie den Schlüssel ein und klicken Sie auf Aktivieren.",
+        "note1": "Hatten Sie in diesem Browser schon Plus? Der Schlüssel des Platzes ersetzt Ihren, wenn Sie ihn aktivieren.",
+        "note2": "Keine E-Mail erhalten? Fragen Sie die Person, die den Tarif bezahlt."
+      },
+      "switch": {
+        "title": "Von Plus zu Team wechseln",
+        "intro": "Wenn Sie schon Plus bezahlen, müssen Sie nicht kündigen. Die Änderung gilt sofort und Polar verrechnet, was Sie nicht genutzt haben.",
+        "s1t": "Melden Sie sich im Polar-Portal an",
+        "s1x": "Mit der E-Mail, mit der Sie Plus bezahlen.",
+        "s1link": "Zum Portal →",
+        "s2t": "Wechseln Sie den Tarif",
+        "s2x": "Klicken Sie auf „Change plan“ und wählen Sie Team, monatlich oder jährlich.",
+        "s3t": "Verteilen Sie die Plätze",
+        "s3x": "Passen Sie unter „Seat Management“ die Plätze an und laden Sie Ihr Team ein, wie unter „Ihr Team einladen“.",
+        "warn": "Es gibt keinen Weg zurück. Um wieder zu Plus für eine Person zu wechseln, müssen Sie Team kündigen und Plus neu abschließen."
+      }
     }
   },
   "nav": {
@@ -831,7 +882,7 @@
       "everythingInPlus": "Alles in PLUS, plus:",
       "feature1": "Zentrale Teamabrechnung",
       "feature2": "Platzverwaltungsportal",
-      "feature3": "Mengenrabatte ab 5 Benutzern",
+      "feature3": "20 % weniger ab 5 Plätzen und 28 % ab 10",
       "cta": "14 Tage Kostenlos Testen"
     },
     "comparison": {
@@ -866,6 +917,88 @@
       "subtitle": "Starten Sie mit unserem kostenlosen Plan und upgraden Sie, wenn Sie erweiterte Funktionen benötigen.",
       "getStarted": "Kostenlos starten",
       "upgrade": "Auf PLUS upgraden"
+    }
+  },
+  "teamPage": {
+    "hero": {
+      "eyebrow": "Team-Tarif · ab 3 Personen",
+      "title1": "Plus für Ihr Team,",
+      "title2": "mit einer einzigen Rechnung",
+      "subtitle": "Sie zahlen ein Abonnement für das ganze Team und entscheiden, wer Zugriff hat: Sie vergeben oder entziehen einen Platz im Handumdrehen, ohne etwas neu zu kaufen.",
+      "cta": "14 Tage kostenlos testen",
+      "seePrices": "Preise ansehen",
+      "chip1": "Zentrale Abrechnung",
+      "chip2": "Zu- und Abgänge jederzeit",
+      "chip3": "Ein Preis, der mit dem Wachstum sinkt",
+      "trialNote": "Für den Test ist eine Karte nötig. Wenn Sie vor dem Ende kündigen, wird nichts berechnet."
+    },
+    "illus": {
+      "team": "Ihr Team",
+      "seats": "Plätze",
+      "active": "Aktiv",
+      "invited": "Eingeladen",
+      "remove": "Entfernen",
+      "placeholder": "email@ihrefirma.de",
+      "invite": "Einladen",
+      "invoice": "Eine Rechnung pro Monat · 5 Plätze",
+      "caption": "Illustration · verwaltet im Polar-Portal",
+      "domain": "ihrefirma.de"
+    },
+    "why": {
+      "eyebrow": "Warum Team",
+      "title": "Was Sie gegenüber einem Plus pro Person gewinnen",
+      "subtitle": "Dasselbe Plus für alle; anders ist, wie Sie es bezahlen und verwalten.",
+      "c1t": "Eine Rechnung für das ganze Team",
+      "c1x": "Ein Abonnement und eine Rechnung pro Monat oder Jahr. Keine verstreuten Karten und kein Erstatten des Plus an jede Person.",
+      "c2t": "Sie entscheiden, wer Zugriff hat",
+      "c2x": "Sie vergeben einen Platz mit der E-Mail der Person. Verlässt jemand das Team, entziehen Sie den Platz und geben ihn einer anderen Person, ohne etwas zu kaufen.",
+      "c3t": "Wachsen, wenn Sie es brauchen",
+      "c3x": "Sie fügen Plätze hinzu, wenn jemand dazukommt. Und je größer das Team, desto weniger zahlen Sie pro Platz: bis zu 28 % weniger."
+    },
+    "price": {
+      "eyebrow": "Preis",
+      "title": "Sie zahlen pro Platz",
+      "subtitle": "Ein Platz ist eine Person im Team mit Plus. Die Teamgröße bestimmt den Preis aller Plätze.",
+      "colSize": "Teamgröße",
+      "colMonthly": "Monatlich, pro Platz",
+      "colAnnual": "Jährlich, pro Platz",
+      "annualSave": "· 20 % weniger",
+      "tier1": "3 – 4 Plätze",
+      "tier2": "5 – 9 Plätze",
+      "tier3": "10 oder mehr",
+      "tier2badge": "20 % weniger",
+      "tier3badge": "28 % weniger",
+      "perMonth": "/Monat",
+      "perYear": "/Jahr",
+      "previous": "Vorheriger Preis",
+      "footnote": "Zzgl. Steuern · Mindestens 3 Plätze · Sie zahlen die gekauften Plätze, auch wenn einer frei bleibt · 5 Plätze kosten so viel wie 4"
+    },
+    "plus": {
+      "eyebrow": "Jeder Platz mit vollem Plus",
+      "title": "Alles, was Sie in Plus gesehen haben, für jede Person",
+      "p1": "Alle Datensätze jedes Bereichs, mit Suche und Gruppierung",
+      "p2": "Verkaufschancen, Angebote, Aufträge und Rechnungen des Kunden neben der E-Mail",
+      "p3": "Mehrere Unternehmen und die Odoo-Benachrichtigungen sortiert in Gmail",
+      "p4": "Jede Person aktiviert ihren eigenen Schlüssel in ihrem Gmail",
+      "imgAlt": "Das Panel der Erweiterung in Gmail mit einem Odoo-Kunden"
+    },
+    "faq": {
+      "eyebrow": "Fragen",
+      "title": "Bevor Sie beginnen",
+      "q1": "Kann ich Personen hinzufügen oder entfernen?",
+      "a1": "Ja, jederzeit im Portal. Sie erhöhen oder verringern die Plätze und vergeben oder entziehen jeden mit der E-Mail der Person.",
+      "q2": "Wie wird abgerechnet?",
+      "a2": "Per Karte über Polar, das eine einzige Rechnung für das ganze Team ausstellt, monatlich oder jährlich.",
+      "q3": "Ich zahle schon Plus. Was tun?",
+      "a3": "Wechseln Sie Ihr Plus ohne Kündigung zu Team: Die Änderung gilt sofort und Polar verrechnet, was Sie nicht genutzt haben.",
+      "q4": "Wie verteile ich es im Team?",
+      "a4": "Sie laden jede Person per E-Mail ein, und sie aktiviert ihren Schlüssel in ihrem Gmail. Schritt für Schritt in der Anleitung."
+    },
+    "final": {
+      "title": "Testen Sie Team 14 Tage mit Ihrem Team",
+      "subtitle": "Ab 3 Plätzen · Wenn Sie vor dem Ende kündigen, wird nichts berechnet",
+      "cta": "14 Tage kostenlos testen",
+      "guide": "Anleitung: Team-Tarif →"
     }
   },
   "privacyPage": {

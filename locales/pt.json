@@ -19,6 +19,15 @@
       "twitterTitle": "Preços - Integração Odoo para Gmail",
       "twitterDescription": "Planos Free e PLUS disponíveis. Comece grátis, atualize quando precisar de recursos avançados."
     },
+    "team": {
+      "title": "Plano de equipe - Integração Odoo para Gmail",
+      "description": "Plus para toda a sua equipe em uma só fatura, e você decide quem tem acesso. Preço por assento a partir de 3 pessoas e 14 dias de teste grátis.",
+      "canonical": "https://integrationnode.com/gmail-odoo/pt/team.html",
+      "ogTitle": "Plano de equipe - Integração Odoo para Gmail",
+      "ogDescription": "Plus para toda a sua equipe em uma só fatura, e você decide quem tem acesso. Preço por assento a partir de 3 pessoas e 14 dias de teste grátis.",
+      "twitterTitle": "Plano de equipe - Integração Odoo para Gmail",
+      "twitterDescription": "Plus para toda a sua equipe em uma só fatura, e você decide quem tem acesso. Preço por assento a partir de 3 pessoas e 14 dias de teste grátis."
+    },
     "userGuide": {
       "title": "Guia do Usuário - Integração Odoo para Gmail",
       "description": "Guia completo do usuário para Integração Odoo para Gmail - Aprenda como instalar, configurar e usar todos os recursos incluindo registro de e-mail, oportunidades CRM, tarefas e tickets.",
@@ -125,7 +134,8 @@
       "multiCompany": "Multiempresa",
       "troubleshooting": "Solução de Problemas",
       "faq": "FAQ",
-      "subscription": "Assinatura"
+      "subscription": "Assinatura",
+      "team": "Plano de equipe"
     },
     "quickStart": {
       "title": "Início rápido (2 minutos, sem chave de API)",
@@ -643,6 +653,47 @@
       "cancelStep2": "Faça login com o e-mail usado na sua assinatura",
       "cancelStep3": "Clique em \"Cancelar Assinatura\" nos detalhes da sua assinatura",
       "cancelNote": "Seus recursos PLUS permanecerão ativos até o final do seu período de faturamento atual."
+    },
+    "team": {
+      "title": "Plano de equipe",
+      "intro": "O plano de equipe dá o Plus a cada pessoa da sua equipe em uma só fatura. Preço e teste:",
+      "introLink": "a página do Team →",
+      "invite": {
+        "title": "Convidar sua equipe",
+        "intro": "Se você paga o plano de equipe, é você quem distribui os assentos. Cada pessoa recebe um e-mail e ativa a própria chave.",
+        "s1t": "Entre no portal da Polar",
+        "s1x": "Com o e-mail com que você pagou; a Polar envia um código para entrar.",
+        "s1link": "Abrir o portal →",
+        "s2t": "Abra «Seat Management» e convide",
+        "s2x": "Digite o e-mail do Gmail de cada pessoa. Se você também usa a extensão, atribua um assento a si mesmo.",
+        "s3t": "Pronto",
+        "s3x": "Cada pessoa recebe um e-mail da Polar. O que ela precisa fazer está em «Sua equipe te convidou», logo abaixo.",
+        "note": "Alguém saiu da equipe? Retire o assento no portal e passe para outra pessoa."
+      },
+      "invited": {
+        "title": "Sua equipe te convidou",
+        "intro": "Quem paga o plano te deu um assento. Sua chave é só sua e funciona no Gmail em que você foi convidado.",
+        "s1t": "Aceite o assento",
+        "s1x": "Abra o e-mail de convite da Polar e clique em «Claim seat».",
+        "s2t": "Copie sua chave",
+        "s2x": "No portal da Polar, copie sua chave de licença. A equipe aparece lá com o nome de quem paga.",
+        "s3t": "Ative no Gmail",
+        "s3x": "No painel da extensão: ⋮ › Configurações › Plano › Já tenho uma licença. Cole a chave e clique em Ativar.",
+        "note1": "Você já tinha o Plus neste navegador? A chave do assento substitui a sua quando você a ativa.",
+        "note2": "Não recebeu o e-mail? Peça a quem paga o plano."
+      },
+      "switch": {
+        "title": "Passar do Plus para o Team",
+        "intro": "Se você já paga o Plus, não precisa cancelar. A mudança vale na hora e a Polar desconta o que você não usou.",
+        "s1t": "Entre no portal da Polar",
+        "s1x": "Com o e-mail com que você paga o Plus.",
+        "s1link": "Ir para o portal →",
+        "s2t": "Mude de plano",
+        "s2x": "Clique em «Change plan» e escolha Team, mensal ou anual.",
+        "s3t": "Distribua os assentos",
+        "s3x": "Em «Seat Management», ajuste os assentos e convide sua equipe, como em «Convidar sua equipe».",
+        "warn": "Não tem volta. Para voltar ao Plus individual, é preciso cancelar o Team e assinar o Plus de novo."
+      }
     }
   },
   "nav": {
@@ -831,7 +882,7 @@
       "everythingInPlus": "Tudo no PLUS, mais:",
       "feature1": "Faturamento centralizado da equipe",
       "feature2": "Portal de gestão de assentos",
-      "feature3": "Descontos por volume a partir de 5 usuários",
+      "feature3": "20% a menos a partir de 5 assentos e 28% a partir de 10",
       "cta": "Teste Grátis por 14 Dias"
     },
     "comparison": {
@@ -866,6 +917,88 @@
       "subtitle": "Comece com nosso plano Grátis e atualize quando precisar de recursos avançados.",
       "getStarted": "Começar Grátis",
       "upgrade": "Atualizar para PLUS"
+    }
+  },
+  "teamPage": {
+    "hero": {
+      "eyebrow": "Plano de equipe · a partir de 3 pessoas",
+      "title1": "Plus para a sua equipe,",
+      "title2": "em uma só fatura",
+      "subtitle": "Você paga uma assinatura para a equipe toda e decide quem tem acesso: atribui ou retira um assento num instante, sem comprar nada novo.",
+      "cta": "Teste grátis por 14 dias",
+      "seePrices": "Ver preços",
+      "chip1": "Faturamento centralizado",
+      "chip2": "Entradas e saídas quando quiser",
+      "chip3": "Um preço que cai quando você cresce",
+      "trialNote": "O teste pede um cartão. Se você cancelar antes do fim, nada é cobrado."
+    },
+    "illus": {
+      "team": "Sua equipe",
+      "seats": "Assentos",
+      "active": "Ativo",
+      "invited": "Convidado",
+      "remove": "Remover",
+      "placeholder": "email@suaempresa.com.br",
+      "invite": "Convidar",
+      "invoice": "Uma fatura por mês · 5 assentos",
+      "caption": "Ilustração · gerenciado no portal da Polar",
+      "domain": "suaempresa.com.br"
+    },
+    "why": {
+      "eyebrow": "Por que Team",
+      "title": "O que você ganha em relação a um Plus por pessoa",
+      "subtitle": "O mesmo Plus para todos; o que muda é como você paga e gerencia.",
+      "c1t": "Uma fatura para a equipe toda",
+      "c1x": "Uma só assinatura e uma só fatura por mês ou por ano. Nada de cartões avulsos nem de reembolsar o Plus de cada pessoa.",
+      "c2t": "Você decide quem tem acesso",
+      "c2x": "Você atribui um assento com o e-mail da pessoa. Se alguém sair da equipe, você retira o assento e passa para outra pessoa, sem comprar nada.",
+      "c3t": "Cresça quando precisar",
+      "c3x": "Você adiciona assentos quando alguém entra. E quanto maior a equipe, menos você paga por assento: até 28% a menos."
+    },
+    "price": {
+      "eyebrow": "Preço",
+      "title": "Você paga por assento",
+      "subtitle": "Um assento é uma pessoa da equipe com Plus. O tamanho da equipe define o preço de todos os assentos.",
+      "colSize": "Tamanho da equipe",
+      "colMonthly": "Mensal, por assento",
+      "colAnnual": "Anual, por assento",
+      "annualSave": "· 20% a menos",
+      "tier1": "3 – 4 assentos",
+      "tier2": "5 – 9 assentos",
+      "tier3": "10 ou mais",
+      "tier2badge": "20% a menos",
+      "tier3badge": "28% a menos",
+      "perMonth": "/mês",
+      "perYear": "/ano",
+      "previous": "Preço anterior",
+      "footnote": "Impostos não incluídos · Mínimo de 3 assentos · Você paga os assentos que compra, mesmo que algum fique livre · 5 assentos custam o mesmo que 4"
+    },
+    "plus": {
+      "eyebrow": "Cada assento, com o Plus completo",
+      "title": "Tudo o que você viu no Plus, para cada pessoa",
+      "p1": "Todos os registros de cada seção, com busca e agrupamento",
+      "p2": "Oportunidades, orçamentos, pedidos e faturas do cliente ao lado do e-mail",
+      "p3": "Várias empresas e os avisos do Odoo organizados no Gmail",
+      "p4": "Cada pessoa ativa a própria chave no seu Gmail",
+      "imgAlt": "O painel da extensão no Gmail com um cliente do Odoo"
+    },
+    "faq": {
+      "eyebrow": "Perguntas",
+      "title": "Antes de começar",
+      "q1": "Posso adicionar ou remover pessoas?",
+      "a1": "Sim, quando quiser, pelo portal. Você aumenta ou diminui os assentos e atribui ou retira cada um com o e-mail da pessoa.",
+      "q2": "Como é cobrado?",
+      "a2": "No cartão, pela Polar, que emite uma só fatura para a equipe toda, mensal ou anual.",
+      "q3": "Já pago o Plus. O que faço?",
+      "a3": "Passe o seu Plus para Team sem cancelar: a mudança vale na hora e a Polar desconta o que você não usou.",
+      "q4": "Como distribuo na equipe?",
+      "a4": "Você convida cada pessoa por e-mail e ela ativa a chave no Gmail dela. Passo a passo, no Guia."
+    },
+    "final": {
+      "title": "Teste o Team por 14 dias com a sua equipe",
+      "subtitle": "A partir de 3 assentos · Se você cancelar antes do fim, nada é cobrado",
+      "cta": "Teste grátis por 14 dias",
+      "guide": "Guia: plano de equipe →"
     }
   },
   "privacyPage": {

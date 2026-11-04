@@ -19,6 +19,15 @@
       "twitterTitle": "Tarifs - Intégration Odoo pour Gmail",
       "twitterDescription": "Plans Gratuit et PLUS disponibles. Commencez gratuitement, passez à la version supérieure pour les fonctionnalités avancées."
     },
+    "team": {
+      "title": "Offre équipe - Intégration Odoo pour Gmail",
+      "description": "Plus pour toute votre équipe sur une seule facture, et vous décidez qui a accès. Prix par siège dès 3 personnes et 14 jours d’essai gratuit.",
+      "canonical": "https://integrationnode.com/gmail-odoo/fr/team.html",
+      "ogTitle": "Offre équipe - Intégration Odoo pour Gmail",
+      "ogDescription": "Plus pour toute votre équipe sur une seule facture, et vous décidez qui a accès. Prix par siège dès 3 personnes et 14 jours d’essai gratuit.",
+      "twitterTitle": "Offre équipe - Intégration Odoo pour Gmail",
+      "twitterDescription": "Plus pour toute votre équipe sur une seule facture, et vous décidez qui a accès. Prix par siège dès 3 personnes et 14 jours d’essai gratuit."
+    },
     "userGuide": {
       "title": "Guide d'utilisation - Intégration Odoo pour Gmail",
       "description": "Guide complet pour l'intégration Odoo pour Gmail - Apprenez à installer, configurer et utiliser toutes les fonctionnalités, y compris l'enregistrement d'emails, les opportunités CRM, les tâches et les tickets.",
@@ -125,7 +134,8 @@
       "multiCompany": "Multi-sociétés",
       "troubleshooting": "Dépannage",
       "faq": "FAQ",
-      "subscription": "Abonnement"
+      "subscription": "Abonnement",
+      "team": "Offre équipe"
     },
     "quickStart": {
       "title": "Démarrage rapide (2 minutes, sans clé API)",
@@ -643,6 +653,47 @@
       "cancelStep2": "Connectez-vous avec l'email utilisé pour votre abonnement",
       "cancelStep3": "Cliquez sur \"Annuler l'abonnement\" dans les détails de votre abonnement",
       "cancelNote": "Vos fonctionnalités PLUS resteront actives jusqu'à la fin de votre période de facturation en cours."
+    },
+    "team": {
+      "title": "Offre équipe",
+      "intro": "L’offre équipe donne Plus à chaque personne de votre équipe sur une seule facture. Prix et essai :",
+      "introLink": "la page Team →",
+      "invite": {
+        "title": "Inviter votre équipe",
+        "intro": "Si vous payez l’offre équipe, c’est vous qui répartissez les sièges. Chaque personne reçoit un e-mail et active sa propre clé.",
+        "s1t": "Connectez-vous au portail Polar",
+        "s1x": "Avec l’e-mail utilisé pour payer ; Polar vous envoie un code pour vous connecter.",
+        "s1link": "Ouvrir le portail →",
+        "s2t": "Ouvrez « Seat Management » et invitez",
+        "s2x": "Saisissez l’adresse Gmail de chaque personne. Si vous utilisez aussi l’extension, attribuez-vous un siège.",
+        "s3t": "C’est fait",
+        "s3x": "Chaque personne reçoit un e-mail de Polar. Ce qu’elle doit faire se trouve dans « Invité par votre équipe », ci-dessous.",
+        "note": "Quelqu’un quitte l’équipe ? Retirez-lui son siège dans le portail et donnez-le à une autre personne."
+      },
+      "invited": {
+        "title": "Invité par votre équipe",
+        "intro": "La personne qui paie l’offre vous a attribué un siège. Votre clé est à vous seul et fonctionne dans le Gmail avec lequel vous avez été invité.",
+        "s1t": "Acceptez le siège",
+        "s1x": "Ouvrez l’e-mail d’invitation de Polar et cliquez sur « Claim seat ».",
+        "s2t": "Copiez votre clé",
+        "s2x": "Dans le portail Polar, copiez votre clé de licence. L’équipe y apparaît sous le nom de la personne qui paie.",
+        "s3t": "Activez-la dans Gmail",
+        "s3x": "Dans le panneau de l’extension : ⋮ › Paramètres › Formule › J'ai déjà une licence. Collez la clé et cliquez sur Activer.",
+        "note1": "Vous aviez déjà Plus dans ce navigateur ? La clé du siège remplace la vôtre quand vous l’activez.",
+        "note2": "Vous n’avez pas reçu l’e-mail ? Demandez-le à la personne qui paie l’offre."
+      },
+      "switch": {
+        "title": "Passer de Plus à Team",
+        "intro": "Si vous payez déjà Plus, inutile d’annuler. Le changement s’applique tout de suite et Polar déduit ce que vous n’avez pas utilisé.",
+        "s1t": "Connectez-vous au portail Polar",
+        "s1x": "Avec l’e-mail utilisé pour payer Plus.",
+        "s1link": "Aller au portail →",
+        "s2t": "Changez d’offre",
+        "s2x": "Cliquez sur « Change plan » et choisissez Team, mensuel ou annuel.",
+        "s3t": "Répartissez les sièges",
+        "s3x": "Dans « Seat Management », ajustez les sièges et invitez votre équipe, comme dans « Inviter votre équipe ».",
+        "warn": "Pas de retour en arrière. Pour revenir à Plus individuel, il faut annuler Team et reprendre Plus."
+      }
     }
   },
   "nav": {
@@ -831,7 +882,7 @@
       "everythingInPlus": "Tout dans PLUS, plus :",
       "feature1": "Facturation centralisée de l'équipe",
       "feature2": "Portail de gestion des sièges",
-      "feature3": "Réductions par volume à partir de 5 utilisateurs",
+      "feature3": "20 % de moins dès 5 sièges et 28 % dès 10",
       "cta": "Essai Gratuit de 14 Jours"
     },
     "comparison": {
@@ -866,6 +917,88 @@
       "subtitle": "Commencez avec notre plan Gratuit et passez à la version supérieure quand vous avez besoin de fonctionnalités avancées.",
       "getStarted": "Commencer gratuitement",
       "upgrade": "Passer à PLUS"
+    }
+  },
+  "teamPage": {
+    "hero": {
+      "eyebrow": "Offre équipe · dès 3 personnes",
+      "title1": "Plus pour votre équipe,",
+      "title2": "sur une seule facture",
+      "subtitle": "Vous payez un seul abonnement pour toute l’équipe et vous décidez qui a accès : vous attribuez ou retirez un siège en un instant, sans rien racheter.",
+      "cta": "Essai gratuit de 14 jours",
+      "seePrices": "Voir les prix",
+      "chip1": "Facturation centralisée",
+      "chip2": "Ajouts et départs à tout moment",
+      "chip3": "Un prix qui baisse quand vous grandissez",
+      "trialNote": "L’essai demande une carte. Si vous l’annulez avant la fin, rien n’est facturé."
+    },
+    "illus": {
+      "team": "Votre équipe",
+      "seats": "Sièges",
+      "active": "Actif",
+      "invited": "Invité",
+      "remove": "Retirer",
+      "placeholder": "email@votreentreprise.com",
+      "invite": "Inviter",
+      "invoice": "Une facture par mois · 5 sièges",
+      "caption": "Illustration · se gère dans le portail Polar",
+      "domain": "votreentreprise.com"
+    },
+    "why": {
+      "eyebrow": "Pourquoi Team",
+      "title": "Ce que vous gagnez par rapport à un Plus par personne",
+      "subtitle": "Le même Plus pour chacun ; ce qui change, c’est la façon de le payer et de le gérer.",
+      "c1t": "Une facture pour toute l’équipe",
+      "c1x": "Un seul abonnement et une seule facture chaque mois ou chaque année. Plus de cartes éparpillées ni de Plus à rembourser à chacun.",
+      "c2t": "Vous décidez qui a accès",
+      "c2x": "Vous attribuez un siège avec l’e-mail de la personne. Si quelqu’un quitte l’équipe, vous lui retirez son siège et le donnez à quelqu’un d’autre, sans rien acheter.",
+      "c3t": "Grandissez quand vous en avez besoin",
+      "c3x": "Vous ajoutez des sièges quand quelqu’un arrive. Et plus l’équipe est grande, moins vous payez par siège : jusqu’à 28 % de moins."
+    },
+    "price": {
+      "eyebrow": "Prix",
+      "title": "Vous payez par siège",
+      "subtitle": "Un siège, c’est une personne de l’équipe avec Plus. La taille de l’équipe fixe le prix de tous ses sièges.",
+      "colSize": "Taille de l’équipe",
+      "colMonthly": "Mensuel, par siège",
+      "colAnnual": "Annuel, par siège",
+      "annualSave": "· 20 % de moins",
+      "tier1": "3 – 4 sièges",
+      "tier2": "5 – 9 sièges",
+      "tier3": "10 ou plus",
+      "tier2badge": "20 % de moins",
+      "tier3badge": "28 % de moins",
+      "perMonth": "/mois",
+      "perYear": "/an",
+      "previous": "Prix précédent",
+      "footnote": "Taxes non incluses · Minimum 3 sièges · Vous payez les sièges achetés, même si l’un d’eux reste libre · 5 sièges coûtent autant que 4"
+    },
+    "plus": {
+      "eyebrow": "Chaque siège, avec Plus complet",
+      "title": "Tout ce que vous avez vu dans Plus, pour chaque personne",
+      "p1": "Tous les enregistrements de chaque section, avec recherche et regroupement",
+      "p2": "Les opportunités, devis, commandes et factures du client à côté de l’e-mail",
+      "p3": "Plusieurs sociétés, et les notifications d’Odoo classées dans Gmail",
+      "p4": "Chaque personne active sa propre clé dans son Gmail",
+      "imgAlt": "Le panneau de l’extension dans Gmail avec un client Odoo"
+    },
+    "faq": {
+      "eyebrow": "Questions",
+      "title": "Avant de commencer",
+      "q1": "Puis-je ajouter ou retirer des personnes ?",
+      "a1": "Oui, quand vous voulez, depuis le portail. Vous augmentez ou réduisez les sièges et attribuez ou retirez chacun avec l’e-mail de la personne.",
+      "q2": "Comment est-ce facturé ?",
+      "a2": "Par carte, via Polar, qui émet une seule facture pour toute l’équipe, par mois ou par an.",
+      "q3": "Je paie déjà Plus, que faire ?",
+      "a3": "Passez votre Plus à Team sans l’annuler : le changement s’applique tout de suite et Polar déduit ce que vous n’avez pas utilisé.",
+      "q4": "Comment le répartir dans l’équipe ?",
+      "a4": "Vous invitez chaque personne par e-mail et elle active sa clé dans son Gmail. Étape par étape, dans le Guide."
+    },
+    "final": {
+      "title": "Essayez Team 14 jours avec votre équipe",
+      "subtitle": "Dès 3 sièges · Si vous l’annulez avant la fin, rien n’est facturé",
+      "cta": "Essai gratuit de 14 jours",
+      "guide": "Guide : offre équipe →"
     }
   },
   "privacyPage": {

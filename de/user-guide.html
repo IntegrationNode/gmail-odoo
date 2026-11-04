@@ -227,6 +227,7 @@
                         <li><a href="#configuration"><span class="material-symbols-outlined">settings</span> <span>Konfiguration</span></a></li>
                         <li><a href="#features"><span class="material-symbols-outlined">star</span> <span>Funktionsübersicht</span></a></li>
                         <li><a href="#subscription"><span class="material-symbols-outlined">credit_card</span> <span>Abonnement</span></a></li>
+                        <li><a href="#team"><span class="material-symbols-outlined">groups</span> <span>Team-Tarif</span></a></li>
                         <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span>E-Mail-Protokollierung</span></a></li>
                         <li><a href="#record-menu"><span class="material-symbols-outlined">more_vert</span> <span>Datensatz-Aktionen</span></a></li>
                         <li><a href="#autolog"><span class="material-symbols-outlined">sync</span> <span>Automatische Protokollierung</span></a></li>
@@ -374,6 +375,41 @@
                         <li>Klicken Sie auf "Abonnement kündigen" in Ihren Abonnementdetails</li>
                     </ol>
                     <p>Ihre PLUS-Funktionen bleiben bis zum Ende Ihres aktuellen Abrechnungszeitraums aktiv.</p>
+                </section>
+
+                <!-- Plan de equipo (spec 080, tablero «Spec080-guia-equipo»). Las anclas team-invite, team-invited y
+                     team-switch son la interfaz con la extensión y con el pago de Polar: no se cambian sin cambiarlos. -->
+                <section id="team" class="guide-section">
+                    <h2><span class="material-symbols-outlined">groups</span> <span>Team-Tarif</span></h2>
+                    <p><span>Der Team-Tarif gibt jeder Person in Ihrem Team Plus, mit einer einzigen Rechnung. Preis und Test:</span> <a href="team.html">die Team-Seite →</a></p>
+
+                    <h3 id="team-invite">Ihr Team einladen</h3>
+                    <p>Wenn Sie den Team-Tarif bezahlen, verteilen Sie die Plätze. Jede Person erhält eine E-Mail und aktiviert ihren eigenen Schlüssel.</p>
+                    <ol class="steps-list">
+                        <li><strong>Melden Sie sich im Polar-Portal an</strong> <span>Mit der E-Mail, mit der Sie bezahlt haben; Polar schickt Ihnen einen Code zur Anmeldung.</span> <a href="https://polar.sh/integration-node/portal" target="_blank" rel="noopener">Portal öffnen →</a></li>
+                        <li><strong>Öffnen Sie „Seat Management“ und laden Sie ein</strong> <span>Geben Sie die Gmail-Adresse jeder Person ein. Wenn Sie die Erweiterung auch nutzen, weisen Sie sich einen Platz zu.</span></li>
+                        <li><strong>Fertig</strong> <span>Jede Person erhält eine E-Mail von Polar. Was sie tun muss, steht unten unter „Von Ihrem Team eingeladen“.</span></li>
+                    </ol>
+                    <div class="info-box"><span>Verlässt jemand das Team? Entziehen Sie ihm den Platz im Portal und geben Sie ihn einer anderen Person.</span></div>
+
+                    <h3 id="team-invited">Von Ihrem Team eingeladen</h3>
+                    <p>Die Person, die den Tarif bezahlt, hat Ihnen einen Platz gegeben. Ihr Schlüssel gehört nur Ihnen und funktioniert in dem Gmail, mit dem Sie eingeladen wurden.</p>
+                    <ol class="steps-list">
+                        <li><strong>Nehmen Sie den Platz an</strong> <span>Öffnen Sie die Einladungs-E-Mail von Polar und klicken Sie auf „Claim seat“.</span></li>
+                        <li><strong>Kopieren Sie Ihren Schlüssel</strong> <span>Kopieren Sie im Polar-Portal Ihren Lizenzschlüssel. Das Team erscheint dort unter dem Namen der zahlenden Person.</span></li>
+                        <li><strong>Aktivieren Sie ihn in Gmail</strong> <span>Im Panel der Erweiterung: ⋮ › Einstellungen › Tarif › Ich habe bereits eine Lizenz. Fügen Sie den Schlüssel ein und klicken Sie auf Aktivieren.</span></li>
+                    </ol>
+                    <div class="info-box"><span>Hatten Sie in diesem Browser schon Plus? Der Schlüssel des Platzes ersetzt Ihren, wenn Sie ihn aktivieren.</span></div>
+                    <div class="info-box"><span>Keine E-Mail erhalten? Fragen Sie die Person, die den Tarif bezahlt.</span></div>
+
+                    <h3 id="team-switch">Von Plus zu Team wechseln</h3>
+                    <p>Wenn Sie schon Plus bezahlen, müssen Sie nicht kündigen. Die Änderung gilt sofort und Polar verrechnet, was Sie nicht genutzt haben.</p>
+                    <ol class="steps-list">
+                        <li><strong>Melden Sie sich im Polar-Portal an</strong> <span>Mit der E-Mail, mit der Sie Plus bezahlen.</span> <a href="https://polar.sh/integration-node/portal" target="_blank" rel="noopener">Zum Portal →</a></li>
+                        <li><strong>Wechseln Sie den Tarif</strong> <span>Klicken Sie auf „Change plan“ und wählen Sie Team, monatlich oder jährlich.</span></li>
+                        <li><strong>Verteilen Sie die Plätze</strong> <span>Passen Sie unter „Seat Management“ die Plätze an und laden Sie Ihr Team ein, wie unter „Ihr Team einladen“.</span></li>
+                    </ol>
+                    <div class="warning-box"><span class="material-symbols-outlined">warning</span><span>Es gibt keinen Weg zurück. Um wieder zu Plus für eine Person zu wechseln, müssen Sie Team kündigen und Plus neu abschließen.</span></div>
                 </section>
 
                 <!-- Email Logging Section -->
@@ -1017,6 +1053,30 @@
                 dropdown.classList.remove('open');
             }
         });
+    })();
+    </script>
+
+    <!-- Vuelta del pago de Team (spec 080, research R4): Polar vuelve siempre a la Guía en inglés
+         (user-guide.html?from=checkout#team-invite). Desde la raíz, si el navegador está en otro idioma del
+         sitio, se va a esa carpeta y se conserva el ancla. -->
+    <script>
+    (function() {
+        var SITE_LANGS = ['es', 'fr', 'de', 'it', 'pt', 'nl', 'pl'];
+        var params = new URLSearchParams(window.location.search);
+        if (params.get('from') !== 'checkout') return;
+        var parts = window.location.pathname.split('/');
+        for (var i = 0; i < parts.length; i++) {
+            if (SITE_LANGS.indexOf(parts[i]) >= 0) return; // ya está en una carpeta de idioma
+        }
+        var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
+        for (var j = 0; j < langs.length; j++) {
+            var code = String(langs[j]).toLowerCase().split('-')[0];
+            if (code === 'en') return;
+            if (SITE_LANGS.indexOf(code) >= 0) {
+                window.location.replace(code + '/user-guide.html' + (window.location.hash || '#team-invite'));
+                return;
+            }
+        }
     })();
     </script>
 

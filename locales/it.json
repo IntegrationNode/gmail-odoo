@@ -19,6 +19,15 @@
       "twitterTitle": "Prezzi - Integrazione Odoo per Gmail",
       "twitterDescription": "Piani Free e PLUS disponibili. Inizia gratis, aggiorna quando hai bisogno di funzionalità avanzate."
     },
+    "team": {
+      "title": "Piano team - Integrazione Odoo per Gmail",
+      "description": "Plus per tutto il team con un’unica fattura, e decidi tu chi ha accesso. Prezzo per posto da 3 persone e 14 giorni di prova gratuita.",
+      "canonical": "https://integrationnode.com/gmail-odoo/it/team.html",
+      "ogTitle": "Piano team - Integrazione Odoo per Gmail",
+      "ogDescription": "Plus per tutto il team con un’unica fattura, e decidi tu chi ha accesso. Prezzo per posto da 3 persone e 14 giorni di prova gratuita.",
+      "twitterTitle": "Piano team - Integrazione Odoo per Gmail",
+      "twitterDescription": "Plus per tutto il team con un’unica fattura, e decidi tu chi ha accesso. Prezzo per posto da 3 persone e 14 giorni di prova gratuita."
+    },
     "userGuide": {
       "title": "Guida Utente - Integrazione Odoo per Gmail",
       "description": "Guida utente completa per Integrazione Odoo per Gmail - Scopri come installare, configurare e utilizzare tutte le funzionalità incluso il logging email, opportunità CRM, attività e ticket.",
@@ -125,7 +134,8 @@
       "multiCompany": "Multi-azienda",
       "troubleshooting": "Risoluzione Problemi",
       "faq": "FAQ",
-      "subscription": "Abbonamento"
+      "subscription": "Abbonamento",
+      "team": "Piano team"
     },
     "quickStart": {
       "title": "Avvio rapido (2 minuti, senza chiave API)",
@@ -643,6 +653,47 @@
       "cancelStep2": "Accedi con l'email usata per l'abbonamento",
       "cancelStep3": "Clicca \"Annulla Abbonamento\" nei dettagli del tuo abbonamento",
       "cancelNote": "Le tue funzionalità PLUS rimarranno attive fino alla fine del periodo di fatturazione corrente."
+    },
+    "team": {
+      "title": "Piano team",
+      "intro": "Il piano team dà Plus a ogni persona del tuo team con un’unica fattura. Prezzo e prova:",
+      "introLink": "la pagina Team →",
+      "invite": {
+        "title": "Invitare il tuo team",
+        "intro": "Se paghi il piano team, sei tu a distribuire i posti. Ogni persona riceve un’email e attiva la propria chiave.",
+        "s1t": "Entra nel portale di Polar",
+        "s1x": "Con l’email con cui hai pagato; Polar ti manda un codice per entrare.",
+        "s1link": "Apri il portale →",
+        "s2t": "Apri «Seat Management» e invita",
+        "s2x": "Scrivi l’indirizzo Gmail di ogni persona. Se usi anche tu l’estensione, assegnati un posto.",
+        "s3t": "Fatto",
+        "s3x": "A ogni persona arriva un’email di Polar. Cosa deve fare è in «Ti ha invitato il tuo team», qui sotto.",
+        "note": "Qualcuno lascia il team? Togligli il posto nel portale e dallo a un’altra persona."
+      },
+      "invited": {
+        "title": "Ti ha invitato il tuo team",
+        "intro": "Chi paga il piano ti ha dato un posto. La tua chiave è solo tua e funziona nel Gmail con cui sei stato invitato.",
+        "s1t": "Accetta il posto",
+        "s1x": "Apri l’email di invito di Polar e clicca su «Claim seat».",
+        "s2t": "Copia la tua chiave",
+        "s2x": "Nel portale di Polar, copia la tua chiave di licenza. Il team compare lì con il nome di chi paga.",
+        "s3t": "Attivala in Gmail",
+        "s3x": "Nel pannello dell’estensione: ⋮ › Impostazioni › Piano › Ho già una licenza. Incolla la chiave e clicca su Attiva.",
+        "note1": "Avevi già Plus in questo browser? La chiave del posto sostituisce la tua quando la attivi.",
+        "note2": "Non ti è arrivata l’email? Chiedila a chi paga il piano."
+      },
+      "switch": {
+        "title": "Passare da Plus a Team",
+        "intro": "Se paghi già Plus, non serve annullare. Il cambio si applica subito e Polar scala quello che non hai usato.",
+        "s1t": "Entra nel portale di Polar",
+        "s1x": "Con l’email con cui paghi Plus.",
+        "s1link": "Vai al portale →",
+        "s2t": "Cambia piano",
+        "s2x": "Clicca su «Change plan» e scegli Team, mensile o annuale.",
+        "s3t": "Distribuisci i posti",
+        "s3x": "In «Seat Management», regola i posti e invita il tuo team, come in «Invitare il tuo team».",
+        "warn": "Non si torna indietro. Per tornare a Plus individuale bisogna annullare Team e acquistare di nuovo Plus."
+      }
     }
   },
   "nav": {
@@ -831,7 +882,7 @@
       "everythingInPlus": "Tutto in PLUS, più:",
       "feature1": "Fatturazione centralizzata del team",
       "feature2": "Portale di gestione posti",
-      "feature3": "Sconti per volume da 5+ utenti",
+      "feature3": "20% in meno da 5 posti e 28% da 10",
       "cta": "Prova Gratis per 14 Giorni"
     },
     "comparison": {
@@ -866,6 +917,88 @@
       "subtitle": "Inizia con il nostro piano Gratis e aggiorna quando hai bisogno di funzionalità avanzate.",
       "getStarted": "Inizia Gratis",
       "upgrade": "Passa a PLUS"
+    }
+  },
+  "teamPage": {
+    "hero": {
+      "eyebrow": "Piano team · da 3 persone",
+      "title1": "Plus per il tuo team,",
+      "title2": "con un’unica fattura",
+      "subtitle": "Paghi un solo abbonamento per tutto il team e decidi tu chi ha accesso: assegni o togli un posto in un attimo, senza comprare niente di nuovo.",
+      "cta": "Prova gratis 14 giorni",
+      "seePrices": "Vedi i prezzi",
+      "chip1": "Fatturazione centralizzata",
+      "chip2": "Ingressi e uscite quando vuoi",
+      "chip3": "Un prezzo che scende quando cresci",
+      "trialNote": "La prova richiede una carta. Se la annulli prima che finisca, non paghi nulla."
+    },
+    "illus": {
+      "team": "Il tuo team",
+      "seats": "Posti",
+      "active": "Attivo",
+      "invited": "Invitato",
+      "remove": "Togli",
+      "placeholder": "email@tuaazienda.it",
+      "invite": "Invita",
+      "invoice": "Una fattura al mese · 5 posti",
+      "caption": "Illustrazione · si gestisce nel portale di Polar",
+      "domain": "tuaazienda.it"
+    },
+    "why": {
+      "eyebrow": "Perché Team",
+      "title": "Cosa ci guadagni rispetto a un Plus per persona",
+      "subtitle": "Lo stesso Plus per tutti; cambia come lo paghi e come lo gestisci.",
+      "c1t": "Una fattura per tutto il team",
+      "c1x": "Un solo abbonamento e una sola fattura ogni mese o ogni anno. Niente carte sparse né Plus da rimborsare a ciascuno.",
+      "c2t": "Decidi tu chi ha accesso",
+      "c2x": "Assegni un posto con l’email della persona. Se qualcuno lascia il team, gli togli il posto e lo dai a un altro, senza comprare nulla.",
+      "c3t": "Cresci quando ti serve",
+      "c3x": "Aggiungi posti quando entra qualcuno. E più il team è grande, meno paghi per posto: fino al 28% in meno."
+    },
+    "price": {
+      "eyebrow": "Prezzo",
+      "title": "Paghi per posto",
+      "subtitle": "Un posto è una persona del team con Plus. La dimensione del team decide il prezzo di tutti i suoi posti.",
+      "colSize": "Dimensione del team",
+      "colMonthly": "Mensile, per posto",
+      "colAnnual": "Annuale, per posto",
+      "annualSave": "· 20% in meno",
+      "tier1": "3 – 4 posti",
+      "tier2": "5 – 9 posti",
+      "tier3": "10 o più",
+      "tier2badge": "20% in meno",
+      "tier3badge": "28% in meno",
+      "perMonth": "/mese",
+      "perYear": "/anno",
+      "previous": "Prezzo precedente",
+      "footnote": "Imposte escluse · Minimo 3 posti · Paghi i posti che compri, anche se qualcuno resta libero · 5 posti costano come 4"
+    },
+    "plus": {
+      "eyebrow": "Ogni posto, con Plus completo",
+      "title": "Tutto quello che hai visto in Plus, per ogni persona",
+      "p1": "Tutti i record di ogni sezione, con ricerca e raggruppamento",
+      "p2": "Opportunità, preventivi, ordini e fatture del cliente accanto all’email",
+      "p3": "Più aziende e gli avvisi di Odoo ordinati in Gmail",
+      "p4": "Ogni persona attiva la propria chiave nel suo Gmail",
+      "imgAlt": "Il pannello dell’estensione in Gmail con un cliente Odoo"
+    },
+    "faq": {
+      "eyebrow": "Domande",
+      "title": "Prima di iniziare",
+      "q1": "Posso aggiungere o togliere persone?",
+      "a1": "Sì, quando vuoi, dal portale. Aumenti o riduci i posti e assegni o togli ciascuno con l’email della persona.",
+      "q2": "Come viene fatturato?",
+      "a2": "Con carta, su Polar, che emette un’unica fattura per tutto il team, mensile o annuale.",
+      "q3": "Pago già Plus, cosa faccio?",
+      "a3": "Passi il tuo Plus a Team senza annullarlo: il cambio si applica subito e Polar scala quello che non hai usato.",
+      "q4": "Come lo distribuisco nel team?",
+      "a4": "Inviti ogni persona per email e attiva la sua chiave nel suo Gmail. Passo per passo, nella Guida."
+    },
+    "final": {
+      "title": "Prova Team 14 giorni con il tuo team",
+      "subtitle": "Da 3 posti · Se la annulli prima che finisca, non paghi nulla",
+      "cta": "Prova gratis 14 giorni",
+      "guide": "Guida: piano team →"
     }
   },
   "privacyPage": {

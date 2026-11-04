@@ -19,6 +19,15 @@
       "twitterTitle": "Pricing - Odoo Integration for Gmail",
       "twitterDescription": "Free and PLUS plans available. Start free, upgrade when you need advanced features."
     },
+    "team": {
+      "title": "Team plan - Odoo Integration for Gmail",
+      "description": "Plus for your whole team on a single invoice, and you decide who has access. Per-seat pricing from 3 people, with a 14-day free trial.",
+      "canonical": "https://integrationnode.com/gmail-odoo/team.html",
+      "ogTitle": "Team plan - Odoo Integration for Gmail",
+      "ogDescription": "Plus for your whole team on a single invoice, and you decide who has access. Per-seat pricing from 3 people, with a 14-day free trial.",
+      "twitterTitle": "Team plan - Odoo Integration for Gmail",
+      "twitterDescription": "Plus for your whole team on a single invoice, and you decide who has access. Per-seat pricing from 3 people, with a 14-day free trial."
+    },
     "userGuide": {
       "title": "User Guide - Odoo Integration for Gmail",
       "description": "Complete user guide for Odoo Integration for Gmail - Learn how to install, configure, and use all features including email logging, CRM opportunities, tasks, and tickets.",
@@ -125,7 +134,8 @@
       "multiCompany": "Multi-Company",
       "troubleshooting": "Troubleshooting",
       "faq": "FAQ",
-      "subscription": "Subscription"
+      "subscription": "Subscription",
+      "team": "Team plan"
     },
     "quickStart": {
       "title": "Quick Start (2 minutes, no API key)",
@@ -643,6 +653,47 @@
       "cancelStep2": "Log in with the email used for your subscription",
       "cancelStep3": "Click \"Cancel Subscription\" in your subscription details",
       "cancelNote": "Your PLUS features will remain active until the end of your current billing period."
+    },
+    "team": {
+      "title": "Team plan",
+      "intro": "The team plan gives Plus to each person on your team on a single invoice. Price and trial:",
+      "introLink": "the Team page →",
+      "invite": {
+        "title": "Invite your team",
+        "intro": "If you pay for the team plan, you hand out the seats. Each person gets an email and activates their own key.",
+        "s1t": "Sign in to the Polar portal",
+        "s1x": "With the email you paid with; Polar sends you a code to sign in.",
+        "s1link": "Open the portal →",
+        "s2t": "Open «Seat Management» and invite",
+        "s2x": "Enter each person’s Gmail address. If you use the extension too, assign yourself a seat.",
+        "s3t": "Done",
+        "s3x": "Each person gets an email from Polar. What they need to do is in «Invited by your team», below.",
+        "note": "Someone leaving the team? Remove their seat in the portal and give it to someone else."
+      },
+      "invited": {
+        "title": "Invited by your team",
+        "intro": "The person who pays for the plan has given you a seat. Your key is yours alone and works in the Gmail you were invited with.",
+        "s1t": "Accept the seat",
+        "s1x": "Open the invitation email from Polar and click «Claim seat».",
+        "s2t": "Copy your key",
+        "s2x": "In the Polar portal, copy your license key. The team shows up there under the name of whoever pays.",
+        "s3t": "Activate it in Gmail",
+        "s3x": "In the extension panel: ⋮ › Settings › Plan › I already have a license. Paste the key and click Activate.",
+        "note1": "Already had Plus in this browser? The seat key replaces yours when you activate it.",
+        "note2": "Didn’t get the email? Ask the person who pays for the plan."
+      },
+      "switch": {
+        "title": "Switch from Plus to Team",
+        "intro": "If you already pay for Plus, there’s no need to cancel. The change applies right away and Polar credits what you haven’t used.",
+        "s1t": "Sign in to the Polar portal",
+        "s1x": "With the email you pay for Plus with.",
+        "s1link": "Go to the portal →",
+        "s2t": "Change plan",
+        "s2x": "Click «Change plan» and pick Team, monthly or yearly.",
+        "s3t": "Hand out the seats",
+        "s3x": "In «Seat Management», set the seats and invite your team, as in «Invite your team».",
+        "warn": "There’s no going back. To return to individual Plus you have to cancel Team and buy Plus again."
+      }
     }
   },
   "nav": {
@@ -831,7 +882,7 @@
       "everythingInPlus": "Everything in PLUS, plus:",
       "feature1": "Centralized team billing",
       "feature2": "Seat management portal",
-      "feature3": "Volume discounts from 5+ users",
+      "feature3": "20% less from 5 seats and 28% from 10",
       "cta": "Try Free for 14 Days"
     },
     "comparison": {
@@ -866,6 +917,88 @@
       "subtitle": "Start with our Free plan and upgrade when you need advanced features.",
       "getStarted": "Get Started Free",
       "upgrade": "Upgrade to PLUS"
+    }
+  },
+  "teamPage": {
+    "hero": {
+      "eyebrow": "Team plan · from 3 people",
+      "title1": "Plus for your team,",
+      "title2": "on a single invoice",
+      "subtitle": "You pay one subscription for the whole team and you decide who has access: give or take a seat in a moment, without buying anything new.",
+      "cta": "Try free for 14 days",
+      "seePrices": "See prices",
+      "chip1": "Centralized billing",
+      "chip2": "Add or remove people anytime",
+      "chip3": "A price that drops as you grow",
+      "trialNote": "The trial asks for a card. Cancel before it ends and nothing is charged."
+    },
+    "illus": {
+      "team": "Your team",
+      "seats": "Seats",
+      "active": "Active",
+      "invited": "Invited",
+      "remove": "Remove",
+      "placeholder": "email@yourcompany.com",
+      "invite": "Invite",
+      "invoice": "One invoice a month · 5 seats",
+      "caption": "Illustration · managed in the Polar portal",
+      "domain": "yourcompany.com"
+    },
+    "why": {
+      "eyebrow": "Why Team",
+      "title": "What you gain over one Plus per person",
+      "subtitle": "The same Plus for everyone; what changes is how you pay for it and manage it.",
+      "c1t": "One invoice for the whole team",
+      "c1x": "One subscription and one invoice every month or year. No loose cards, no reimbursing everyone for their Plus.",
+      "c2t": "You decide who has access",
+      "c2x": "Give a seat with the person’s email. If someone leaves the team, take back their seat and give it to someone else, without buying anything.",
+      "c3t": "Grow when you need to",
+      "c3x": "Add seats when someone joins. And the bigger the team, the less you pay per seat: up to 28% less."
+    },
+    "price": {
+      "eyebrow": "Pricing",
+      "title": "You pay per seat",
+      "subtitle": "A seat is one person on the team with Plus. The size of the team sets the price of all its seats.",
+      "colSize": "Team size",
+      "colMonthly": "Monthly, per seat",
+      "colAnnual": "Yearly, per seat",
+      "annualSave": "· 20% less",
+      "tier1": "3 – 4 seats",
+      "tier2": "5 – 9 seats",
+      "tier3": "10 or more",
+      "tier2badge": "20% less",
+      "tier3badge": "28% less",
+      "perMonth": "/month",
+      "perYear": "/year",
+      "previous": "Previous price",
+      "footnote": "Taxes not included · Minimum 3 seats · You pay for the seats you buy, even if one is unassigned · 5 seats cost the same as 4"
+    },
+    "plus": {
+      "eyebrow": "Every seat, with full Plus",
+      "title": "Everything you’ve seen in Plus, for each person",
+      "p1": "Every record in each section, with search and grouping",
+      "p2": "The customer’s opportunities, quotations, orders and invoices next to the email",
+      "p3": "Several companies, and Odoo notifications sorted in Gmail",
+      "p4": "Each person activates their own key in their Gmail",
+      "imgAlt": "The extension panel in Gmail with an Odoo customer"
+    },
+    "faq": {
+      "eyebrow": "Questions",
+      "title": "Before you start",
+      "q1": "Can I add or remove people?",
+      "a1": "Yes, whenever you want, from the portal. Raise or lower the seats, and give or take each one with the person’s email.",
+      "q2": "How is it billed?",
+      "a2": "By card, through Polar, which issues a single invoice for the whole team, monthly or yearly.",
+      "q3": "I already pay for Plus. What do I do?",
+      "a3": "Switch your Plus to Team without cancelling: the change applies right away and Polar credits what you haven’t used.",
+      "q4": "How do I share it with the team?",
+      "a4": "Invite each person by email and they activate their key in their Gmail. Step by step, in the User Guide."
+    },
+    "final": {
+      "title": "Try Team for 14 days with your team",
+      "subtitle": "From 3 seats · Cancel before it ends and nothing is charged",
+      "cta": "Try free for 14 days",
+      "guide": "Guide: team plan →"
     }
   },
   "privacyPage": {

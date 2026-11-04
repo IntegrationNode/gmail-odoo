@@ -19,6 +19,15 @@
       "twitterTitle": "Precios - Integración de Odoo para Gmail",
       "twitterDescription": "Planes Gratis y PLUS disponibles. Empieza gratis, actualiza cuando necesites funciones avanzadas."
     },
+    "team": {
+      "title": "Plan de equipo - Integración de Odoo para Gmail",
+      "description": "Plus para todo tu equipo con una sola factura: tú decides quién tiene acceso. Precio por asiento desde 3 personas y 14 días de prueba gratis.",
+      "canonical": "https://integrationnode.com/gmail-odoo/es/team.html",
+      "ogTitle": "Plan de equipo - Integración de Odoo para Gmail",
+      "ogDescription": "Plus para todo tu equipo con una sola factura: tú decides quién tiene acceso. Precio por asiento desde 3 personas y 14 días de prueba gratis.",
+      "twitterTitle": "Plan de equipo - Integración de Odoo para Gmail",
+      "twitterDescription": "Plus para todo tu equipo con una sola factura: tú decides quién tiene acceso. Precio por asiento desde 3 personas y 14 días de prueba gratis."
+    },
     "userGuide": {
       "title": "Guía de Usuario - Integración de Odoo para Gmail",
       "description": "Guía completa de Integración de Odoo para Gmail - Aprende a instalar, configurar y usar todas las funciones incluyendo registro de emails, oportunidades CRM, tareas y tickets.",
@@ -287,7 +296,7 @@
       "everythingInPlus": "Todo en PLUS, más:",
       "feature1": "Facturación centralizada del equipo",
       "feature2": "Portal de gestión de asientos",
-      "feature3": "Descuentos por volumen a partir de 5 usuarios",
+      "feature3": "20 % menos desde 5 asientos y 28 % desde 10",
       "cta": "Prueba Gratis 14 Días"
     },
     "comparison": {
@@ -324,6 +333,88 @@
       "upgrade": "Actualizar a PLUS"
     }
   },
+  "teamPage": {
+    "hero": {
+      "eyebrow": "Plan de equipo · desde 3 personas",
+      "title1": "Plus para tu equipo,",
+      "title2": "con una sola factura",
+      "subtitle": "Pagas una suscripción para todo el equipo y tú decides quién tiene acceso: das o quitas un asiento en un momento, sin comprar nada nuevo.",
+      "cta": "Prueba gratis 14 días",
+      "seePrices": "Ver precios",
+      "chip1": "Facturación centralizada",
+      "chip2": "Altas y bajas cuando quieras",
+      "chip3": "Precio que baja al crecer",
+      "trialNote": "La prueba pide tarjeta. Si la cancelas antes de que termine, no se cobra nada."
+    },
+    "illus": {
+      "team": "Tu equipo",
+      "seats": "Asientos",
+      "active": "Activo",
+      "invited": "Invitado",
+      "remove": "Quitar",
+      "placeholder": "correo@tuempresa.com",
+      "invite": "Invitar",
+      "invoice": "Una factura al mes · 5 asientos",
+      "caption": "Ilustración · se gestiona en el portal de Polar",
+      "domain": "tuempresa.com"
+    },
+    "why": {
+      "eyebrow": "Por qué Team",
+      "title": "Lo que ganas frente a un Plus por persona",
+      "subtitle": "Mismo Plus para cada uno; lo que cambia es cómo lo pagas y lo gestionas.",
+      "c1t": "Una factura para todo el equipo",
+      "c1x": "Una sola suscripción y una sola factura cada mes o cada año. Nada de tarjetas sueltas ni de reembolsar a cada persona su Plus.",
+      "c2t": "Tú decides quién tiene acceso",
+      "c2x": "Das un asiento con el correo de la persona. Si alguien deja el equipo, le quitas el asiento y se lo das a otra, sin comprar nada.",
+      "c3t": "Crece cuando lo necesites",
+      "c3x": "Añades asientos cuando entra alguien. Y cuanto más grande el equipo, menos pagas por asiento: hasta un 28 % menos."
+    },
+    "price": {
+      "eyebrow": "Precio",
+      "title": "Pagas por asiento",
+      "subtitle": "Un asiento es una persona del equipo con Plus. El tamaño del equipo decide el precio de todos sus asientos.",
+      "colSize": "Tamaño del equipo",
+      "colMonthly": "Mensual, por asiento",
+      "colAnnual": "Anual, por asiento",
+      "annualSave": "· 20 % menos",
+      "tier1": "3 – 4 asientos",
+      "tier2": "5 – 9 asientos",
+      "tier3": "10 o más",
+      "tier2badge": "20 % menos",
+      "tier3badge": "28 % menos",
+      "perMonth": "/mes",
+      "perYear": "/año",
+      "previous": "Precio anterior",
+      "footnote": "Impuestos no incluidos · Mínimo 3 asientos · Pagas los asientos que compras, aunque alguno quede libre · Con 5 asientos pagas lo mismo que con 4"
+    },
+    "plus": {
+      "eyebrow": "Cada asiento, con Plus completo",
+      "title": "Lo mismo que ya has visto en Plus, para cada persona",
+      "p1": "Todos los registros de cada sección, con búsqueda y agrupación",
+      "p2": "Oportunidades, presupuestos, pedidos y facturas del cliente junto al correo",
+      "p3": "Varias compañías y los avisos de Odoo ordenados en Gmail",
+      "p4": "Cada persona activa su propia clave en su Gmail",
+      "imgAlt": "El panel de la extensión en Gmail con un cliente de Odoo"
+    },
+    "faq": {
+      "eyebrow": "Preguntas",
+      "title": "Antes de empezar",
+      "q1": "¿Puedo añadir o quitar personas?",
+      "a1": "Sí, cuando quieras, desde el portal. Subes o bajas los asientos y das o quitas cada uno con el correo de la persona.",
+      "q2": "¿Cómo se factura?",
+      "a2": "Con tarjeta, en Polar, que emite una sola factura por todo el equipo, al mes o al año.",
+      "q3": "Ya pago Plus, ¿qué hago?",
+      "a3": "Pasas tu Plus a Team sin cancelar: el cambio se aplica al momento y Polar descuenta lo que no has usado.",
+      "q4": "¿Cómo se reparte entre el equipo?",
+      "a4": "Invitas a cada persona por correo y activa su clave en su Gmail. Paso a paso, en la Guía."
+    },
+    "final": {
+      "title": "Prueba Team 14 días con tu equipo",
+      "subtitle": "Desde 3 asientos · Si la cancelas antes de que termine, no se cobra nada",
+      "cta": "Prueba gratis 14 días",
+      "guide": "Guía: plan de equipo →"
+    }
+  },
   "userGuide": {
     "header": {
       "title": "Guía de Usuario",
@@ -348,7 +439,8 @@
       "multiCompany": "Multi-compañía",
       "troubleshooting": "Solución de Problemas",
       "faq": "Preguntas Frecuentes",
-      "subscription": "Suscripción"
+      "subscription": "Suscripción",
+      "team": "Plan de equipo"
     },
     "quickStart": {
       "title": "Inicio rápido (2 minutos, sin API key)",
@@ -866,6 +958,47 @@
       "cancelStep2": "Inicia sesión con el email usado para tu suscripción",
       "cancelStep3": "Haz clic en \"Cancelar Suscripción\" en los detalles de tu suscripción",
       "cancelNote": "Tus funciones PLUS permanecerán activas hasta el final de tu período de facturación actual."
+    },
+    "team": {
+      "title": "Plan de equipo",
+      "intro": "El plan de equipo da Plus a cada persona de tu equipo con una sola factura. Precio y prueba:",
+      "introLink": "la página de Team →",
+      "invite": {
+        "title": "Invitar a tu equipo",
+        "intro": "Si pagas el plan de equipo, tú repartes los asientos. Cada persona recibe un correo y activa su propia clave.",
+        "s1t": "Entra en el portal de Polar",
+        "s1x": "Con el correo con el que pagaste; Polar te manda un código para entrar.",
+        "s1link": "Abrir el portal →",
+        "s2t": "Abre «Seat Management» e invita",
+        "s2x": "Escribe el correo de Gmail de cada persona. Si tú también usas la extensión, asígnate un asiento.",
+        "s3t": "Listo",
+        "s3x": "A cada persona le llega un correo de Polar. Lo que tiene que hacer está en «Te invitó tu equipo», aquí debajo.",
+        "note": "¿Alguien deja el equipo? Quítale el asiento en el portal y dáselo a otra persona."
+      },
+      "invited": {
+        "title": "Te invitó tu equipo",
+        "intro": "Quien paga el plan te ha dado un asiento. Tu clave es solo tuya y funciona en el Gmail al que te invitaron.",
+        "s1t": "Acepta el asiento",
+        "s1x": "Abre el correo de invitación de Polar y pulsa «Claim seat».",
+        "s2t": "Copia tu clave",
+        "s2x": "En el portal de Polar, copia tu clave de licencia. El equipo aparece allí con el nombre de quien paga.",
+        "s3t": "Actívala en Gmail",
+        "s3x": "En el panel de la extensión: ⋮ › Configuración › Plan › Ya tengo una licencia. Pega la clave y pulsa Activar.",
+        "note1": "¿Ya tenías Plus en este navegador? La clave del asiento sustituye a la tuya al activarla.",
+        "note2": "¿No te llegó el correo? Pídeselo a quien paga el plan."
+      },
+      "switch": {
+        "title": "Pasar de Plus a Team",
+        "intro": "Si ya pagas Plus, no hace falta cancelar. El cambio se aplica al momento y Polar descuenta lo que no has usado.",
+        "s1t": "Entra en el portal de Polar",
+        "s1x": "Con el correo con el que pagas Plus.",
+        "s1link": "Ir al portal →",
+        "s2t": "Cambia de plan",
+        "s2x": "Pulsa «Change plan» y elige Team, mensual o anual.",
+        "s3t": "Reparte los asientos",
+        "s3x": "En «Seat Management», ajusta los asientos e invita a tu equipo, como en «Invitar a tu equipo».",
+        "warn": "No hay vuelta atrás. Para volver a Plus individual hay que cancelar Team y contratar Plus de nuevo."
+      }
     }
   },
   "privacyPage": {
