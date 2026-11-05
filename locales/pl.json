@@ -668,7 +668,7 @@
         "s2x": "Wpisz adres Gmail każdej osoby. Jeśli sam też korzystasz z rozszerzenia, przydziel sobie miejsce.",
         "s3t": "Gotowe",
         "s3x": "Każda osoba dostaje e-mail od Polar. Co ma zrobić, opisujemy niżej, w „Zaprosił Cię zespół”.",
-        "note": "Ktoś odchodzi z zespołu? Odbierz mu miejsce w portalu i daj je innej osobie."
+        "note": "Ktoś odchodzi z zespołu? Odbierz mu miejsce w portalu i daj je innej osobie. Odebranie miejsca nie obniża rachunku: żeby płacić mniej, zmniejsz też liczbę miejsc."
       },
       "invited": {
         "title": "Zaprosił Cię zespół",
@@ -691,7 +691,7 @@
         "s2t": "Zmień plan",
         "s2x": "Kliknij „Change plan” i wybierz Team, miesięczny lub roczny.",
         "s3t": "Rozdziel miejsca",
-        "s3x": "W „Seat Management” ustaw liczbę miejsc i zaproś zespół, jak w „Zaproś swój zespół”.",
+        "s3x": "Twój klucz Plus nadal działa i zajmuje już jedno z miejsc. W „Seat Management” ustaw liczbę miejsc i zaproś zespół, jak w „Zaproś swój zespół”.",
         "warn": "Nie ma powrotu. Aby wrócić do indywidualnego Plus, trzeba anulować Team i kupić Plus od nowa."
       }
     }

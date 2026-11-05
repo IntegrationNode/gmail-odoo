@@ -668,7 +668,7 @@
         "s2x": "Enter each person’s Gmail address. If you use the extension too, assign yourself a seat.",
         "s3t": "Done",
         "s3x": "Each person gets an email from Polar. What they need to do is in «Invited by your team», below.",
-        "note": "Someone leaving the team? Remove their seat in the portal and give it to someone else."
+        "note": "Someone leaving the team? Remove their seat in the portal and give it to someone else. Removing a seat doesn't lower your bill: to pay less, also lower the number of seats."
       },
       "invited": {
         "title": "Invited by your team",
@@ -691,7 +691,7 @@
         "s2t": "Change plan",
         "s2x": "Click «Change plan» and pick Team, monthly or yearly.",
         "s3t": "Hand out the seats",
-        "s3x": "In «Seat Management», set the seats and invite your team, as in «Invite your team».",
+        "s3x": "Your Plus key keeps working and already takes one of the seats. In «Seat Management», set the seats and invite your team, as in «Invite your team».",
         "warn": "There’s no going back. To return to individual Plus you have to cancel Team and buy Plus again."
       }
     }

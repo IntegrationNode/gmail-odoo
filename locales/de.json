@@ -668,7 +668,7 @@
         "s2x": "Geben Sie die Gmail-Adresse jeder Person ein. Wenn Sie die Erweiterung auch nutzen, weisen Sie sich einen Platz zu.",
         "s3t": "Fertig",
         "s3x": "Jede Person erhält eine E-Mail von Polar. Was sie tun muss, steht unten unter „Von Ihrem Team eingeladen“.",
-        "note": "Verlässt jemand das Team? Entziehen Sie ihm den Platz im Portal und geben Sie ihn einer anderen Person."
+        "note": "Verlässt jemand das Team? Entziehen Sie ihm den Platz im Portal und geben Sie ihn einer anderen Person. Das Entziehen des Platzes senkt die Rechnung nicht: Um weniger zu zahlen, verringern Sie auch die Anzahl der Plätze."
       },
       "invited": {
         "title": "Von Ihrem Team eingeladen",
@@ -691,7 +691,7 @@
         "s2t": "Wechseln Sie den Tarif",
         "s2x": "Klicken Sie auf „Change plan“ und wählen Sie Team, monatlich oder jährlich.",
         "s3t": "Verteilen Sie die Plätze",
-        "s3x": "Passen Sie unter „Seat Management“ die Plätze an und laden Sie Ihr Team ein, wie unter „Ihr Team einladen“.",
+        "s3x": "Ihr Plus-Schlüssel bleibt gültig und belegt bereits einen der Plätze. Passen Sie unter „Seat Management“ die Plätze an und laden Sie Ihr Team ein, wie unter „Ihr Team einladen“.",
         "warn": "Es gibt keinen Weg zurück. Um wieder zu Plus für eine Person zu wechseln, müssen Sie Team kündigen und Plus neu abschließen."
       }
     }

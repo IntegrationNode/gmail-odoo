@@ -668,7 +668,7 @@
         "s2x": "Saisissez l’adresse Gmail de chaque personne. Si vous utilisez aussi l’extension, attribuez-vous un siège.",
         "s3t": "C’est fait",
         "s3x": "Chaque personne reçoit un e-mail de Polar. Ce qu’elle doit faire se trouve dans « Invité par votre équipe », ci-dessous.",
-        "note": "Quelqu’un quitte l’équipe ? Retirez-lui son siège dans le portail et donnez-le à une autre personne."
+        "note": "Quelqu’un quitte l’équipe ? Retirez-lui son siège dans le portail et donnez-le à une autre personne. Retirer le siège ne baisse pas la facture : pour payer moins, réduisez aussi le nombre de sièges."
       },
       "invited": {
         "title": "Invité par votre équipe",
@@ -691,7 +691,7 @@
         "s2t": "Changez d’offre",
         "s2x": "Cliquez sur « Change plan » et choisissez Team, mensuel ou annuel.",
         "s3t": "Répartissez les sièges",
-        "s3x": "Dans « Seat Management », ajustez les sièges et invitez votre équipe, comme dans « Inviter votre équipe ».",
+        "s3x": "Votre clé Plus reste valable et occupe déjà l’un des sièges. Dans « Seat Management », ajustez les sièges et invitez votre équipe, comme dans « Inviter votre équipe ».",
         "warn": "Pas de retour en arrière. Pour revenir à Plus individuel, il faut annuler Team et reprendre Plus."
       }
     }

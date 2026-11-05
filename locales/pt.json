@@ -668,7 +668,7 @@
         "s2x": "Digite o e-mail do Gmail de cada pessoa. Se você também usa a extensão, atribua um assento a si mesmo.",
         "s3t": "Pronto",
         "s3x": "Cada pessoa recebe um e-mail da Polar. O que ela precisa fazer está em «Sua equipe te convidou», logo abaixo.",
-        "note": "Alguém saiu da equipe? Retire o assento no portal e passe para outra pessoa."
+        "note": "Alguém saiu da equipe? Retire o assento no portal e passe para outra pessoa. Retirar o assento não reduz a fatura: para pagar menos, diminua também o número de assentos."
       },
       "invited": {
         "title": "Sua equipe te convidou",
@@ -691,7 +691,7 @@
         "s2t": "Mude de plano",
         "s2x": "Clique em «Change plan» e escolha Team, mensal ou anual.",
         "s3t": "Distribua os assentos",
-        "s3x": "Em «Seat Management», ajuste os assentos e convide sua equipe, como em «Convidar sua equipe».",
+        "s3x": "Sua chave Plus continua valendo e já ocupa um dos assentos. Em «Seat Management», ajuste os assentos e convide sua equipe, como em «Convidar sua equipe».",
         "warn": "Não tem volta. Para voltar ao Plus individual, é preciso cancelar o Team e assinar o Plus de novo."
       }
     }

@@ -668,7 +668,7 @@
         "s2x": "Vul het Gmail-adres van iedere persoon in. Gebruikt u de extensie zelf ook, wijs uzelf dan een plek toe.",
         "s3t": "Klaar",
         "s3x": "Iedereen krijgt een e-mail van Polar. Wat ze moeten doen staat hieronder, bij „Uitgenodigd door uw team”.",
-        "note": "Verlaat iemand het team? Neem de plek terug in het portaal en geef die aan iemand anders."
+        "note": "Verlaat iemand het team? Neem de plek terug in het portaal en geef die aan iemand anders. De plek terugnemen verlaagt de factuur niet: verlaag ook het aantal plekken om minder te betalen."
       },
       "invited": {
         "title": "Uitgenodigd door uw team",
@@ -691,7 +691,7 @@
         "s2t": "Wijzig het abonnement",
         "s2x": "Klik op „Change plan” en kies Team, maandelijks of jaarlijks.",
         "s3t": "Verdeel de plekken",
-        "s3x": "Stel in „Seat Management” de plekken in en nodig uw team uit, zoals bij „Uw team uitnodigen”.",
+        "s3x": "Uw Plus-sleutel blijft geldig en neemt al een van de plekken in. Stel in „Seat Management” de plekken in en nodig uw team uit, zoals bij „Uw team uitnodigen”.",
         "warn": "Er is geen weg terug. Om terug te gaan naar Plus voor één persoon moet u Team opzeggen en opnieuw Plus nemen."
       }
     }

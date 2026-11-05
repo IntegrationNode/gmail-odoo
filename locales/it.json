@@ -668,7 +668,7 @@
         "s2x": "Scrivi l’indirizzo Gmail di ogni persona. Se usi anche tu l’estensione, assegnati un posto.",
         "s3t": "Fatto",
         "s3x": "A ogni persona arriva un’email di Polar. Cosa deve fare è in «Ti ha invitato il tuo team», qui sotto.",
-        "note": "Qualcuno lascia il team? Togligli il posto nel portale e dallo a un’altra persona."
+        "note": "Qualcuno lascia il team? Togligli il posto nel portale e dallo a un’altra persona. Togliere il posto non abbassa la fattura: per pagare meno, riduci anche il numero di posti."
       },
       "invited": {
         "title": "Ti ha invitato il tuo team",
@@ -691,7 +691,7 @@
         "s2t": "Cambia piano",
         "s2x": "Clicca su «Change plan» e scegli Team, mensile o annuale.",
         "s3t": "Distribuisci i posti",
-        "s3x": "In «Seat Management», regola i posti e invita il tuo team, come in «Invitare il tuo team».",
+        "s3x": "La tua chiave Plus resta valida e occupa già uno dei posti. In «Seat Management», regola i posti e invita il tuo team, come in «Invitare il tuo team».",
         "warn": "Non si torna indietro. Per tornare a Plus individuale bisogna annullare Team e acquistare di nuovo Plus."
       }
     }
