@@ -1411,6 +1411,20 @@
       "install": "Install Extension",
       "viewPricing": "View Pricing"
     },
+    "v1010": {
+      "team": "Team plan",
+      "teamDesc": "One plan for the whole team: a single invoice, and you choose who gets a seat. If you already have Plus, switch from Settings › Plan.",
+      "invite": "Invite your team",
+      "inviteDesc": "From the ⋮ menu, open a Gmail draft with an invitation you send yourself.",
+      "plusList": "What you get with Plus",
+      "plusListDesc": "With no email open, a short list shows the Plus features worth trying, like the company view or Odoo notices in Gmail, and ticks them off as you use them.",
+      "licenseKey": "Find your license key",
+      "licenseKeyDesc": "The activation window links straight to your Polar purchases, where your key is.",
+      "nameless": "Addresses without a name",
+      "namelessDesc": "Invoice and delivery addresses with no name of their own no longer turn the panel into an error. They show the name Odoo gives them and an icon for their type.",
+      "appOdoo": "Search for Odoo notices",
+      "appOdooDesc": "Searching app:odoo in Gmail now shows only your Odoo notices (Plus)."
+    },
     "v1000": {
       "look": "A refreshed panel",
       "lookDesc": "A cleaner design, with colors, type and buttons similar to Gmail's, and Settings in six sections. Your Odoo data is the same, just easier to read.",

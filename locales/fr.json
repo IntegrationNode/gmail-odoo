@@ -1411,6 +1411,20 @@
       "install": "Installer l'extension",
       "viewPricing": "Voir les tarifs"
     },
+    "v1010": {
+      "team": "Offre équipe",
+      "teamDesc": "Une offre pour toute l’équipe : une seule facture, et vous choisissez qui a un siège. Si vous avez déjà Plus, changez depuis Paramètres › Formule.",
+      "invite": "Invitez votre équipe",
+      "inviteDesc": "Depuis le menu ⋮, ouvrez un brouillon Gmail avec une invitation que vous envoyez vous-même.",
+      "plusList": "Ce que vous avez avec Plus",
+      "plusListDesc": "Sans e-mail ouvert, une courte liste montre les fonctionnalités Plus à essayer, comme la vue entreprise ou les notifications Odoo dans Gmail, et les coche au fur et à mesure.",
+      "licenseKey": "Retrouvez votre clé de licence",
+      "licenseKeyDesc": "La fenêtre d’activation mène directement à vos achats Polar, où se trouve votre clé.",
+      "nameless": "Adresses sans nom",
+      "namelessDesc": "Les adresses de facturation et de livraison sans nom propre n’affichent plus d’erreur dans le panneau. Elles apparaissent avec le nom que leur donne Odoo et une icône de leur type.",
+      "appOdoo": "Rechercher les notifications Odoo",
+      "appOdooDesc": "Rechercher app:odoo dans Gmail affiche désormais uniquement vos notifications Odoo (Plus)."
+    },
     "v1000": {
       "look": "Un panneau repensé",
       "lookDesc": "Un design plus épuré, avec des couleurs, une police et des boutons proches de ceux de Gmail, et des Paramètres en six sections. Vos données Odoo sont les mêmes, plus lisibles.",

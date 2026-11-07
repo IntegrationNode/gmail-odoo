@@ -1411,6 +1411,20 @@
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
     },
+    "v1010": {
+      "team": "Teamabonnement",
+      "teamDesc": "Eén abonnement voor het hele team: één factuur, en u kiest wie een plek krijgt. Heeft u al Plus? Stap over via Instellingen › Abonnement.",
+      "invite": "Nodig uw team uit",
+      "inviteDesc": "Open via het menu ⋮ een Gmail-concept met een uitnodiging die u zelf verstuurt.",
+      "plusList": "Wat u met Plus heeft",
+      "plusListDesc": "Zonder geopende e-mail toont een korte lijst de Plus-functies die het proberen waard zijn, zoals de bedrijfsweergave of Odoo-meldingen in Gmail, en vinkt ze af zodra u ze gebruikt.",
+      "licenseKey": "Vind uw licentiesleutel",
+      "licenseKeyDesc": "Het activeringsvenster leidt direct naar uw aankopen bij Polar, waar uw sleutel staat.",
+      "nameless": "Adressen zonder naam",
+      "namelessDesc": "Factuur- en afleveradressen zonder eigen naam zetten het paneel niet meer op een fout. Ze verschijnen met de naam die Odoo ze geeft en een pictogram voor hun type.",
+      "appOdoo": "Odoo-meldingen zoeken",
+      "appOdooDesc": "Zoeken op app:odoo in Gmail toont nu alleen uw Odoo-meldingen (Plus)."
+    },
     "v1000": {
       "look": "Een vernieuwd paneel",
       "lookDesc": "Een rustiger ontwerp, met kleuren, letters en knoppen die lijken op die van Gmail, en Instellingen in zes secties. Uw Odoo-gegevens zijn dezelfde, alleen beter leesbaar.",
