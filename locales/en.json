@@ -1411,6 +1411,16 @@
       "install": "Install Extension",
       "viewPricing": "View Pricing"
     },
+    "v1020": {
+      "dbChanged": "When your Odoo database changes",
+      "dbChangedDesc": "If your Odoo address now opens a different database, for example after an upgrade, the panel tells you and connects to the new one in one click. If the database is gone, it says so instead of showing an error.",
+      "plusLost": "When Plus stops being active",
+      "plusLostDesc": "If a payment doesn't go through or your subscription ends, the panel tells you once, with a link to review your subscription. Already paid? “I've paid, check again” in Settings › Plan brings Plus back without reloading Gmail.",
+      "noticesNoReload": "Odoo notifications without reloading Gmail",
+      "noticesNoReloadDesc": "After you upgrade to Plus or connect Odoo, your Odoo notifications are labeled in Gmail right away, without reloading the page.",
+      "reloadGmail": "“Reload Gmail” after an update",
+      "reloadGmailDesc": "When a Gmail tab loses contact with the extension, usually right after it updates, the panel asks you to reload Gmail and gives you the button, instead of showing an error."
+    },
     "v1010": {
       "team": "Team plan",
       "teamDesc": "One plan for the whole team: a single invoice, and you choose who gets a seat. If you already have Plus, switch from Settings › Plan.",

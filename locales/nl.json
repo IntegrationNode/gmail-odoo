@@ -1411,6 +1411,16 @@
       "install": "Extensie Installeren",
       "viewPricing": "Prijzen Bekijken"
     },
+    "v1020": {
+      "dbChanged": "Als uw Odoo-database verandert",
+      "dbChangedDesc": "Opent uw Odoo-adres nu een andere database, bijvoorbeeld na een upgrade, dan meldt het paneel dat en maakt het met één klik verbinding met de nieuwe. Bestaat de database niet meer, dan zegt het dat in plaats van een foutmelding te tonen.",
+      "plusLost": "Als Plus niet meer actief is",
+      "plusLostDesc": "Gaat een betaling niet door of loopt uw abonnement af, dan meldt het paneel dat één keer, met een link om uw abonnement te controleren. Al betaald? Met „Betaald, opnieuw controleren” onder Instellingen › Abonnement krijgt u Plus terug zonder Gmail opnieuw te laden.",
+      "noticesNoReload": "Odoo-meldingen zonder Gmail opnieuw te laden",
+      "noticesNoReloadDesc": "Na de overstap naar Plus of het verbinden met Odoo krijgen uw Odoo-meldingen in Gmail meteen hun label, zonder de pagina opnieuw te laden.",
+      "reloadGmail": "„Laad Gmail opnieuw” na een update",
+      "reloadGmailDesc": "Verliest een Gmail-tabblad het contact met de extensie, meestal vlak na een update, dan vraagt het paneel u Gmail opnieuw te laden en geeft het u de knop, in plaats van een foutmelding te tonen."
+    },
     "v1010": {
       "team": "Teamabonnement",
       "teamDesc": "Eén abonnement voor het hele team: één factuur, en u kiest wie een plek krijgt. Heeft u al Plus? Stap over via Instellingen › Abonnement.",

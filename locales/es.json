@@ -1411,6 +1411,16 @@
       "install": "Instalar Extensión",
       "viewPricing": "Ver Precios"
     },
+    "v1020": {
+      "dbChanged": "Cuando cambia tu base de datos de Odoo",
+      "dbChangedDesc": "Si tu dirección de Odoo abre ahora otra base de datos, por ejemplo tras una actualización, el panel te lo dice y se conecta a la nueva con un clic. Si la base de datos ya no está, te lo dice en vez de mostrar un error.",
+      "plusLost": "Cuando Plus deja de estar activo",
+      "plusLostDesc": "Si un pago no se completa o tu suscripción termina, el panel te avisa una vez, con un enlace para revisar tu suscripción. ¿Ya pagaste? «Ya pagué, comprobar», en Configuración › Plan, te devuelve Plus sin recargar Gmail.",
+      "noticesNoReload": "Avisos de Odoo sin recargar Gmail",
+      "noticesNoReloadDesc": "Al pasar a Plus o conectar Odoo, tus avisos de Odoo se etiquetan en Gmail al momento, sin recargar la página.",
+      "reloadGmail": "«Recarga Gmail» tras una actualización",
+      "reloadGmailDesc": "Cuando una pestaña de Gmail pierde el contacto con la extensión, casi siempre justo después de actualizarse, el panel te pide recargar Gmail y te da el botón, en vez de mostrar un error."
+    },
     "v1010": {
       "team": "Plan de equipo",
       "teamDesc": "Un plan para todo el equipo: una sola factura y tú eliges quién tiene asiento. Si ya tienes Plus, pásate desde Configuración › Plan.",

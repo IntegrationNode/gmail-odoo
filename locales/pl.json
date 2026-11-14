@@ -1411,6 +1411,16 @@
       "install": "Zainstaluj rozszerzenie",
       "viewPricing": "Zobacz cennik"
     },
+    "v1020": {
+      "dbChanged": "Gdy zmienia się Twoja baza danych Odoo",
+      "dbChangedDesc": "Jeśli Twój adres Odoo otwiera teraz inną bazę danych, na przykład po aktualizacji, panel Cię o tym informuje i łączy się z nową jednym kliknięciem. Jeśli bazy danych już nie ma, mówi o tym zamiast pokazywać błąd.",
+      "plusLost": "Gdy Plus przestaje być aktywny",
+      "plusLostDesc": "Jeśli płatność nie przejdzie albo Twoja subskrypcja się skończy, panel powiadomi Cię raz, z linkiem do sprawdzenia subskrypcji. Już zapłacone? „Opłacone, sprawdź ponownie” w Ustawienia › Plan przywraca Plus bez przeładowania Gmaila.",
+      "noticesNoReload": "Powiadomienia Odoo bez przeładowania Gmaila",
+      "noticesNoReloadDesc": "Po przejściu na Plus lub połączeniu z Odoo Twoje powiadomienia Odoo od razu dostają etykietę w Gmailu, bez przeładowania strony.",
+      "reloadGmail": "„Przeładuj Gmaila” po aktualizacji",
+      "reloadGmailDesc": "Gdy karta Gmaila traci kontakt z rozszerzeniem, zwykle tuż po jego aktualizacji, panel prosi o przeładowanie Gmaila i daje Ci do tego przycisk, zamiast pokazywać błąd."
+    },
     "v1010": {
       "team": "Plan zespołowy",
       "teamDesc": "Jeden plan dla całego zespołu: jedna faktura, a Ty decydujesz, kto dostaje miejsce. Jeśli masz już Plus, przejdź w Ustawienia › Plan.",

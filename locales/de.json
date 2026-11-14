@@ -1411,6 +1411,16 @@
       "install": "Erweiterung installieren",
       "viewPricing": "Preise anzeigen"
     },
+    "v1020": {
+      "dbChanged": "Wenn sich Ihre Odoo-Datenbank ändert",
+      "dbChangedDesc": "Öffnet Ihre Odoo-Adresse jetzt eine andere Datenbank, etwa nach einem Upgrade, sagt Ihnen das Panel Bescheid und verbindet sich mit einem Klick mit der neuen. Gibt es die Datenbank nicht mehr, sagt es Ihnen das, statt einen Fehler anzuzeigen.",
+      "plusLost": "Wenn Plus nicht mehr aktiv ist",
+      "plusLostDesc": "Geht eine Zahlung nicht durch oder endet Ihr Abonnement, weist Sie das Panel einmal darauf hin, mit einem Link, um Ihr Abonnement zu prüfen. Schon bezahlt? „Bezahlt, erneut prüfen“ unter Einstellungen › Tarif holt Plus zurück, ohne Gmail neu zu laden.",
+      "noticesNoReload": "Odoo-Benachrichtigungen ohne Neuladen von Gmail",
+      "noticesNoReloadDesc": "Nach dem Wechsel zu Plus oder dem Verbinden mit Odoo werden Ihre Odoo-Benachrichtigungen in Gmail sofort gekennzeichnet, ohne die Seite neu zu laden.",
+      "reloadGmail": "„Gmail neu laden“ nach einem Update",
+      "reloadGmailDesc": "Verliert ein Gmail-Tab den Kontakt zur Erweiterung, meist direkt nach einem Update, bittet Sie das Panel, Gmail neu zu laden, und bietet Ihnen die Schaltfläche dafür an, statt einen Fehler anzuzeigen."
+    },
     "v1010": {
       "team": "Team-Tarif",
       "teamDesc": "Ein Tarif für das ganze Team: eine Rechnung, und Sie entscheiden, wer einen Platz bekommt. Wenn Sie schon Plus haben, wechseln Sie unter Einstellungen › Tarif.",
