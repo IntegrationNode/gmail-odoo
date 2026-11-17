@@ -1,1 +1,54 @@
-{"offers": []}
+{
+  "offers": [
+    {
+      "id": "black-friday-2026",
+      "starts": "2026-11-23T00:00",
+      "ends": "2026-12-01T23:59",
+      "audience": "free",
+      "texts": {
+        "en": {
+          "label": "Black Friday",
+          "title": "Extra 25% off Plus yearly",
+          "body": "On top of your price, for the first year.",
+          "banner": "Extra 25% off your price on the yearly plan, for the first year"
+        },
+        "es": {
+          "label": "Black Friday",
+          "title": "25 % extra en Plus anual",
+          "body": "Sobre tu precio, el primer año.",
+          "banner": "25 % extra sobre tu precio en el plan anual, el primer año"
+        },
+        "fr": {
+          "label": "Black Friday",
+          "title": "25 % de remise en plus sur Plus annuel",
+          "body": "Sur votre prix, la première année.",
+          "banner": "25 % de remise en plus sur votre prix avec le plan annuel, la première année"
+        },
+        "de": {
+          "label": "Black Friday",
+          "title": "Zusätzlich 25 % auf Plus jährlich",
+          "body": "Auf Ihren Preis, im ersten Jahr.",
+          "banner": "Zusätzlich 25 % auf Ihren Preis im Jahresplan, im ersten Jahr"
+        },
+        "it": {
+          "label": "Black Friday",
+          "title": "25% di sconto in più su Plus annuale",
+          "body": "Sul tuo prezzo, per il primo anno.",
+          "banner": "25% di sconto in più sul tuo prezzo con il piano annuale, per il primo anno"
+        },
+        "nl": {
+          "label": "Black Friday",
+          "title": "25% extra korting op Plus jaarlijks",
+          "body": "Op uw prijs, het eerste jaar.",
+          "banner": "25% extra korting op uw prijs bij het jaarplan, het eerste jaar"
+        },
+        "pt_BR": {
+          "label": "Black Friday",
+          "title": "25% a mais de desconto no Plus anual",
+          "body": "Sobre o seu preço, no primeiro ano.",
+          "banner": "25% a mais de desconto sobre o seu preço no plano anual, no primeiro ano"
+        }
+      }
+    }
+  ]
+}
